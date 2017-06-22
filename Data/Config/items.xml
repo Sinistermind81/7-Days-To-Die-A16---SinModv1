@@ -9435,12 +9435,101 @@ Mesh files no longer used:
 	<property name="IsDeveloper" value="true"/>
 </item>
 
-
-<!--
-<item id="1501" name="superWrench">
+  <!-- Admin Tools -->
+  <item id="1500" name="Admin_Tool">
+    <property name="Degradation" value="500" param1="false" />
+    <property name="DegradationBreaksAfter" value="false" />
+    <property name="Stacknumber" value="1" />
+    <property name="Meshfile" value="Items/Weapons/Melee/Axe/stone_axePrefab" />
+    <property name="Material" value="stone" />
+    <property name="RepairTools" value="rockSmall" />
+    <property name="HoldType" value="32" />
+    <property name="Weight" value="5" />
+    <property name="Candrop" value="false" />
+    <property name="IsDeveloper" value="true" />
+    <property class="Action0">
+      <property name="Class" value="Melee" />
+      <property name="Delay" value="0.35" />
+      <property name="Range" value="15" />
+      <property name="Sphere" value="0.1" />
+      <property name="SupportHarvesting" value="false" />
+      <property name="ToolCategory.Butcher" value="0" />
+    </property>
+    <property class="Action1">
+      <property name="Class" value="Repair" />
+      <property name="Delay" value="0.2" />
+      <property name="Repair_amount" value="5000" />
+      <property name="Upgrade_hit_offset" value="-10" />
+    </property>
+    <property class="Attributes">
+      <property name="BlockDamage" value="10000,10000" />
+      <property name="DegradationRate" value="0,0" />
+    </property>
+  </item>
+  
+  <item id="1501" name="Admin_Pill">
+    <property name="Meshfile" value="Items/Health/painkillersPrefab" />
+    <property name="Material" value="organic" />
+    <property name="HoldType" value="16" />
+    <property name="Candrop" value="false" />
+    <property name="IsDeveloper" value="true" />
+    <property class="Action1">
+      <property name="Class" value="Eat" />
+      <property name="Delay" value="1.0" />
+      <property name="Use_time" value="..." />
+      <property name="Gain_health" value="100" />
+      <property name="Gain_food" value="35" />
+      <property name="Gain_water" value="35" />
+      <property name="Sound_start" value="UseActions/player_painkillers" />
+      <property name="Debuff" value="freezing,hypo1,hypo2,hypo3,overheated,heat1,heat2,drowning,bleeding,burning,burningSmall,infection,infection2,infection3,foodPoisoning,sprainedLeg,internalBleeding,dysentery,dysentery2,brokenLeg,AlcoholPoisoning" />
+    </property>
+  </item>
+  
+  <item id="1502" name="Admin_Machete">
+    <property name="Extends" value="machete" />
+    <property name="Meshfile" value="Items/Weapons/Melee/Knives/machetePrefab"/>
+    <property name="CustomIconTint" value="ff0000"/>
+    <property name="Degradation" value="500" param1="false" />
+    <property name="Candrop" value="false" />
+    <property name="IsDeveloper" value="true" />
+    <property class="Action0">
+      <property name="Delay" value="0.2" />
+      <property name="Range" value="100" />
+      <property name="Block_range" value="20" />
+      <property name="DamageBlock" value="0" />
+      <property name="DamageEntity" value="1000" />
+      <property name="Stamina_usage" value="1" />
+      <property name="ToolCategory.Butcher" value="0" />
+      <property name="SupportHarvesting" value="false" />
+    </property>
+    <property class="Attributes">
+      <property name="EntityDamage" value="1000,1000" />
+      <property name="DegradationRate" value="0,0" />
+      <property name="DismembermentBaseChance" value="5,5"/>
+    </property>
+  </item>
+  
+  <item id="1503" name="Admin_25Skillpoints">
+    <property name="CustomIconTint" value="ff0000" />
+    <property name="Candrop" value="false" />
+    <property name="IsDeveloper" value="true" />
+    <property name="Stacknumber" value="5" />
+    <property name="Meshfile" value="Items/Misc/paper" />
+    <property name="HoldType" value="21" />
+    <property name="Material" value="Survivor Notes" />
+    <property name="Weight" value="1" />
+    <property name="FuelValue" value="20" />
+    <property name="Group" value="Survival" />
+    <property class="Action1">
+      <property name="Class" value="Quest" />
+      <property name="QuestGiven" value="adminskill" />
+      <property name="Delay" value="0" />
+    </property>
+  </item>
+  
+<item id="1504" name="Admin_superWrench">
 	<property name="Extends" value="wrench"/>
-	<property name="CustomIcon" value="wrench"/>
-	<property name="CustomIconTint" value="ffa0a0"/>
+  <property name="CustomIconTint" value="ff0000"/>
 	<Property name="TintColor" value="255,160,160"/>
 	<property name="IsDeveloper" value="true"/>
 	<property class="Attributes">
@@ -9449,10 +9538,9 @@ Mesh files no longer used:
 	</property>
 </item>
 
-
-<item id="1502" name="gunSuperDigger">
+<item id="1505" name="Admin_gunSuperDigger">
 	<property name="CustomIcon" value="gunMP5"/>
-	<property name="CustomIconTint" value="ffa0a0"/>
+  <property name="CustomIconTint" value="ff0000"/>
 	<Property name="TintColor" value="255,160,160"/>
 	<property name="IsDeveloper" value="true"/>
 	<property name="Meshfile" value="Items/Weapons/Ranged/MP5/MP5Prefab"/>
@@ -9496,10 +9584,9 @@ Mesh files no longer used:
 	</property>
 	</item>
 
-<item id="1503" name="gunJustDie">
+<item id="1506" name="Admin_gunJustDie">
 	<property name="CustomIcon" value="gunPistol"/>
-	<property name="CustomIconTint" value="ffa0a0"/>
-	<Property name="TintColor" value="255,160,160"/>
+	<property name="CustomIconTint" value="ff0000"/>
 	<property name="IsDeveloper" value="true"/>
 	<property name="Meshfile" value="Items/Weapons/Ranged/Pistol/PistolPrefab"/>
 	<property name="Material" value="organic"/>
@@ -9540,7 +9627,7 @@ Mesh files no longer used:
 	</property>
 	</item>
 
-<item id="1504" name="hammerOfGod">
+<item id="1507" name="Admin_hammerOfGod">
 	<property name="IsDeveloper" value="true"/>
 	<property name="CustomIcon" value="clawHammer"/> <property name="CustomIconTint" value="ffa0a0"/>
 	<property name="Meshfile" value="Items/Tools/hammerPrefab"/>
@@ -9564,5 +9651,37 @@ Mesh files no longer used:
 		<property name="DismembermentBaseChance" value="1"/>
 	</property>
 </item>
--->
+
+  <item id="1508" name="survivorNoteCollection">
+    <property name="DescriptionKey" value="survivorNoteCollectionDesc"/>
+    <property name="Meshfile" value="Items/Misc/paper" />
+    <property name="HoldType" value="21" />
+    <property name="Material" value="Survivor Notes" />
+    <property name="Weight" value="5" />
+    <property name="Stacknumber" value="500" />
+    <property name="FuelValue" value="20" />
+    <property name="Group" value="Survival" />
+    <property class="Action1">
+      <property name="Class" value="Quest" />
+      <property name="QuestGiven" value="survivorNoteCollection" />
+      <property name="Delay" value="0" />
+    </property>
+  </item>
+  
+  <item id="1509" name="survivorNotes">
+    <property name="DescriptionKey" value="survivorNotes2Desc"/>
+    <property name="Meshfile" value="Items/Misc/paper" />
+    <property name="HoldType" value="21" />
+    <property name="Material" value="Survivor Notes" />
+    <property name="Weight" value="1" />
+    <property name="Stacknumber" value="500" />
+    <property name="FuelValue" value="20" />
+    <property name="Group" value="Survival" />
+    <property class="Action1">
+      <property name="Class" value="Quest" />
+      <property name="QuestGiven" value="survivorNotes" />
+      <property name="Delay" value="0" />
+    </property>
+  </item>
+  
 </items>
