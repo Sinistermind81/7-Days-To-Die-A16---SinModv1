@@ -2660,37 +2660,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="electricParts" count="5"/>
 	<ingredient name="electronicParts" count="5"/>
 </recipe>
+
+  <!--SinMod Custom Recipes-->
+  
 </recipes>
-<!-- To do (maybe / later)
-<recipe name="steelArrowHead" count="1" craft_area="forge" craft_tool="calipers" material_based="true">
-
-<recipe name="homelyFurRug" count="1">
-	<ingredient name="animalHide" count="20" />
-	<ingredient name="wood" count="10"/>
-</recipe>
-<recipe name="book" count="1">
-	<ingredient name="paper" count="64"/>
-</recipe>
-
-<recipe name="wood" count="4">
-	<ingredient name="woodDebris" count="1"/>
-</recipe>
-<recipe name="morticianDrawer" count="1" craft_area="workbench">
-	<ingredient name="forgedSteel" count="12"/>
-	<ingredient name="mechanicalParts" count="8"/>
-</recipe>
-<recipe name="furnaceDrawer" count="1" craft_area="workbench">
-	<ingredient name="forgedIron" count="12"/>
-	<ingredient name="mechanicalParts" count="8"/>
-</recipe>
-
-
-mattress?
-boardedWindowsSheet4
-window02
-storeShelving01Double
-storeShelving01Top
-storeShelving01TopDouble
-Bookcases
-black iron railings.
--->
