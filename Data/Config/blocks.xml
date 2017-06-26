@@ -939,13 +939,14 @@ NOT the TextureNumber.
 	<property name="IsDeveloper" value="true"/>
 </block>
 
+  <!--SinMod Admin Resource Blocks-->
+  
   <block id="74" name="Admin_StoneOre">
     <property name="Extends" value="stone" />
     <property name="CustomIcon" value="Admin_StoneOre" />
     <property name="IsDeveloper" value="true" />
     <property name="DowngradeBlock" value="Admin_StoneOreUpgrader" />
   </block>
-
   <block id="75" name="Admin_StoneOreUpgrader">
     <property name="Extends" value="asphalt" />
     <property name="CustomIcon" value="DonotUse" />

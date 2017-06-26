@@ -2368,7 +2368,7 @@ Mesh files no longer used:
       <property name="Crosshair_max_distance" value="30"/>
       <!-- 30 -->
       <property name="Magazine_size" value="1"/>
-      <property name="Magazine_items" value="steelArrow,flamingArrow"/>
+      <property name="Magazine_items" value="steelArrow,flamingArrow,carbonArrow"/>
       <property name="Rays_spread" value="0.011"/>
       <property name="Reload_time" value=".9"/>
       <property name="Bullet_icon" value="uzi"/>
@@ -2631,6 +2631,22 @@ Mesh files no longer used:
     </property>
   </item>
 
+  <item id="168" name="carbonArrow">
+    <property name="Extends" value="ironArrow"/>
+    <property name="EconomicValue" value="76"/>
+    <property name="EconomicBundleSize" value="5"/>
+    <property class="Action1">
+      <property name="Velocity" value="90"/>
+      <property name="Gravity" value="-1"/>
+      <property name="LifeTime" value="12"/>
+    </property>
+    <property class="Attributes">
+      <property name="EntityDamage" value="45,70"/>
+      <property name="BlockDamage" value="6,11"/>
+      <property name="ApplyBuff" value=".7,.7" param1="arrowCriticalBleedout"/>
+    </property>
+  </item>
+  
   <!-- <item id="170" name="crossbowBolt">
 	<property name="Meshfile" value="Items/Weapons/Ranged/Bows/Crossbow/crossbowBoltStonePrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/crossbow_bolt_dropped_stonePrefab"/>
@@ -9147,6 +9163,19 @@ Mesh files no longer used:
     <property name="CraftingSkillGroup" value="craftSkillWeapons"/>
   </item>
 
+  <item id="1343" name="carbonArrowHead">
+    <property name="Meshfile" value="Items/Misc/sackPrefab"/>
+    <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+    <property name="Material" value="metal"/>
+    <property name="HoldType" value="45"/>
+    <property name="Stacknumber" value="500"/>
+    <!-- STK resource -->
+    <property name="EconomicValue" value="56"/>
+    <property name="EconomicBundleSize" value="5"/>
+    <property name="Group" value="Resources,Ammo/Weapons"/>
+    <property name="CraftingSkillGroup" value="craftSkillWeapons"/>
+  </item>
+  
   <item id="1345" name="coal">
     <property name="Meshfile" value="Items/Misc/sackPrefab"/>
     <property name="DropMeshfile" value="Items/Misc/coalDroppedPrefab"/>
