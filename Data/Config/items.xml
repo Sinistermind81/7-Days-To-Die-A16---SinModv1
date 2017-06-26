@@ -10145,7 +10145,23 @@ Mesh files no longer used:
     </property>
   </item>
 
-  <item id="1508" name="survivorNoteCollection">
+  <item id="1508" name="Admin_gasCan">
+    <property name="IsDeveloper" value="true"/>
+    <property name="Meshfile" value="Items/Misc/sackPrefab"/>
+    <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+    <property name="HoldType" value="45"/>
+    <property name="Material" value="MFuelBarrel"/>
+    <property name="Stacknumber" value="1000"/>
+    <!-- STK resource -->
+    <property name="FuelValue" value="10000"/>
+    <property name="EconomicValue" value="83"/>
+    <!-- oil barrel 500 -->
+    <property name="EconomicBundleSize" value="100"/>
+    <property name="CraftingSkillGroup" value="craftSkillScience"/>
+    <property name="Group" value="Resources,Chemicals"/>
+  </item>
+  
+  <item id="1525" name="survivorNoteCollection">
     <property name="DescriptionKey" value="survivorNoteCollectionDesc"/>
     <property name="Meshfile" value="Items/Misc/paper" />
     <property name="HoldType" value="21" />
@@ -10161,7 +10177,7 @@ Mesh files no longer used:
     </property>
   </item>
 
-  <item id="1509" name="survivorNotes">
+  <item id="1526" name="survivorNotes">
     <property name="DescriptionKey" value="survivorNotes2Desc"/>
     <property name="Meshfile" value="Items/Misc/paper" />
     <property name="HoldType" value="21" />
@@ -10255,6 +10271,7 @@ Mesh files no longer used:
   </item>
   
   <!-- Recipe Books Mod -->
+  
   <item id="2026" name="skillbookAthletics">
     <property name="DescriptionKey" value="skillbookAthleticsDesc"/>
     <property name="Extends" value="schematicMaster" />
@@ -10808,6 +10825,7 @@ Mesh files no longer used:
   </item>
 
   <!-- Modded Quest Items -->
+  
   <item id="2700" name="questItem">
     <property name="Meshfile" value="Items/Misc/sackPrefab" />
     <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
