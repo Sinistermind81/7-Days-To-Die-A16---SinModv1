@@ -1159,6 +1159,32 @@
 		</effect>
 	</perk>
 
+  <perk name="Plumbing" icon="misc_crafting" description_key="Max out this perk to learn how to craft plumbing kits to repair sinks for a clean source of drinking water." title_key="Plumbing" max_level="14" skill_point_cost_multiplier="0" skill_point_cost_per_level="1" group="crafting">
+    <recipe name="plumbingKit" unlock_level="14"/>
+    <recipe name="workingCabinetSink" unlock_level="14"/>
+    <recipe name="workingGranitSink" unlock_level="14"/>
+  </perk>
+
+  <perk name="Oven Repair" icon="misc_crafting" description_key="Max out this perk to learn how to craft Oven Repair kits to repair ovens for cooking without needing fuel." title_key="Oven Repair" max_level="14" skill_point_cost_multiplier="0" skill_point_cost_per_level="1" group="crafting">
+    <recipe name="ovenKit" unlock_level="14"/>
+    <recipe name="workstationOven" unlock_level="14"/>
+  </perk>
+
+  <perk name="Lockpicks" icon="run" description_key="Max out this perk to learn how to make lockpicks to unlock gun safes. Doesn't work on doors." title_key="Safecracker" max_level="10" skill_point_cost_multiplier="0" skill_point_cost_per_level="1" group="tools">
+    <recipe name="Lockpkick" unlock_level="10"/>
+  </perk>
+
+  <perk name="Pottery" icon="misc_crafting" description_key="Max out this perk to learning pottery can teach you how to craft clay bowls, plates and clay Amphora which are all essential for cooking recipes." title_key="Pottery" max_level="3" skill_point_cost_multiplier="0" skill_point_cost_per_level="1" group="crafting">
+    <recipe name="bowl" unlock_level="3"/>
+    <recipe name="dinnerPlate" unlock_level="3"/>
+    <recipe name="clayBucket" unlock_level="3"/>
+  </perk>
+  <!--
+  <perk name="Security" icon="misc_crafting" description_key="Learn how to craft hidden doors." title_key="Security Measures" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="crafting">
+    <recipe name="hiddenWoodDoor" unlock_level="1"/>
+    <recipe name="hiddenConcreteDoor" unlock_level="1"/>
+    <recipe name="Remote" unlock_level="1"/>
+  </perk>-->
 <!--
 	<perk name="Test1" icon="paint_bucket"  max_level="5" skill_point_cost_multiplier="1.4" skill_point_cost_per_level="5" group="tools">
 	</perk>

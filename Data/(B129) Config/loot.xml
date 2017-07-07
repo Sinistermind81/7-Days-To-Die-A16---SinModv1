@@ -2292,7 +2292,6 @@
     <item name="bandage" count="1"/>
     <item name="torch"/>
     <item name="bedroll"/>
-    <item name="keystoneBlock"/>
   </lootgroup>
 
   <lootgroup name="HunterClass" count="all">
@@ -2434,5 +2433,9 @@
 
   <lootcontainer id="101" count="1" size="8,4" destroy_on_close="true" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="1" loot_quality_template="classTemplate">
     <item group="legendarymelee"/>
+  </lootcontainer>
+
+  <!--Working Oven and Sink -->
+  <lootcontainer id="102" size="10,9" sound_open="UseActions/open_cupboard" sound_close="UseActions/close_cupboard" >
   </lootcontainer>
 </lootcontainers>

@@ -347,6 +347,7 @@ After accepting this scroll you will receive your Profession Selection item, use
     <!--reward type="Item" id="Daily Quest(Empty)" value="1" /-->
     <!--Have not made the dailiy quests yet-->
     <reward type="Item" id="ProfessionSelection" value="1" />
+    <reward type="Item" id="keystoneBlock" value="1"/>
   </quest>
 
   <!--SinMod Class Perks-->
@@ -461,7 +462,6 @@ World's End!!!." difficulty="hard">
     <reward type="Item" id="repairKit" value="4"/>
     <reward type="Item" id="762mmBullet" value="120"/>
     <reward type="Item" id="ak47Schematic" value="1"/>
-    <reward type="Item" id="keystoneBlock" value="1"/>
     <reward type="Item" id="challengeClassVeteran" count="1"/>
     <reward type="Item" id="perkVeteran" value="1"/>
   </quest>
@@ -615,8 +615,8 @@ and then loot box. Be safe out there it's a dangerous
 World's End!!!." difficulty="hard">
     <reward type="Item" id="gunHuntingRifle" value="250-300"/>
     <reward type="Item" id="TapedWildBugoutBag" value="1"/>
-	<reward type="Item" id="BugoutKey" value="1" />
-    <reward type="Item" id="genericAmmoBox" value="3" />
+	  <reward type="Item" id="BugoutKey" value="1" />
+    <reward type="Item" id="genericAmmoBox" value="1" />
     <reward type="Item" id="casinoCoin" value="150"/>
     <reward type="Item" id="perkWildcard" value="1" />
   </quest>

@@ -263,8 +263,7 @@
 	<property name="ChestExplosionDamageMultiplier" value=".85"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
-<!--
-<entity_class name="zombieBehemoth" extends="zombieTemplateMale">
+  <!--entity_class name="zombieBehemoth" extends="zombieTemplateMale">
 	<property name="Prefab" value="NPC4m"/>
 	<property name="SoundRandom" value="Enemies/Base_Zombie_Male2/zombiemale2roam"/>
 	<property name="SoundAlert" value="Enemies/Base_Zombie_Male2/zombiemale2alert"/>
@@ -279,14 +278,13 @@
 	<property name="ExperienceGain" value="8982"/>
 	<property name="MaxHealth" value="5000"/>
 	<property name="DeadBodyHitPoints" value="700"/>
-	<property name="PhysicsBody" value="zombieStandardFemale"/>
+	<property name="PhysicsBody" value="w"/>
 	<property name="RootMotion" value="true"/>
 	<property name="HasDeathAnim" value="true"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1"/>
 	<property name="HandItem" value="handZombieBehemoth"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
-</entity_class>
--->
+</entity_class-->
 
 <!-- Missing: zombieBehemothRadiated -->
 <!-- Missing: zombieBehemothFeral -->
