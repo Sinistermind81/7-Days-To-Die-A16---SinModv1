@@ -380,6 +380,10 @@
 			<multiply skill_level="70,100" value="1.23,1.28"/>
 		</effect>
 	</action_skill>
+  <perk name="Pistol Magazine Extention" icon="pistol" description_key="Learn to increase the magazine size of Pistols." title_key=" Pistol Magazine Extention" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="firearms">
+    <requirement perk_level="1" required_skill_name="Pistols" required_skill_level="65" />
+    <recipe name="pistolExtClip" unlock_level="1" />
+  </perk>
 	<perk name="The Outlaw" icon="pistol" description_key="theOutlawDesc" title_key="theOutlaw" max_level="5" skill_point_cost_multiplier="1.43" skill_point_cost_per_level="5" group="firearms">
 		<requirement perk_level="1" required_skill_name="Pistols" required_skill_level="1"/>
 		<requirement perk_level="2" required_skill_name="Pistols" required_skill_level="10"/>
@@ -395,7 +399,7 @@
 			<multiply skill_level="5" value="1.56250"/>
 		</effect>
 	</perk>
-	<perk name="Dead Shot" icon="pistol" description_key="deadShotDesc" title_key="deadShot" max_level="3" skill_point_cost_multiplier="2" skill_point_cost_per_level="4" group="firearms">
+  <perk name="Dead Shot" icon="pistol" description_key="deadShotDesc" title_key="deadShot" max_level="3" skill_point_cost_multiplier="2" skill_point_cost_per_level="4" group="firearms">
 		<requirement perk_level="1" required_skill_name="Pistols" required_skill_level="20"/>
 		<requirement perk_level="2" required_skill_name="Pistols" required_skill_level="40"/>
 		<requirement perk_level="3" required_skill_name="Pistols" required_skill_level="80"/>
@@ -406,6 +410,7 @@
 			<add skill_level="3" value="0.20"/>
 		</effect>
 	</perk>
+  
 	<action_skill name="Shotguns" exp_to_level="150" icon="shotgun" description_key="shotgunsDesc" title_key="shotguns" group="firearms">
 		<effect name="EntityDamage">
 			<multiply skill_level="1,5" value="1,1.04"/>
@@ -417,7 +422,11 @@
 			<multiply skill_level="70,100" value="1.23,1.28"/>
 		</effect>
 	</action_skill>
-	<perk name="Boom Stick" icon="shotgun" description_key="boomStickDesc" title_key="boomStick" max_level="5" skill_point_cost_multiplier="1.43" skill_point_cost_per_level="5" group="firearms">
+  <perk name="Shotgun Magazine Extention" icon="shotgun" description_key="Learn to increase the magazine size of Shotguns." title_key="Shotgun Magazine Extention" max_level="1" skill_point_cost_multiplier="1" skill_point_cost_per_level="3" group="firearms">
+    <requirement perk_level="1" required_skill_name="Shotguns" required_skill_level="65" />
+    <recipe name="ShotgunExtClip" unlock_level="1" />
+  </perk>
+  	<perk name="Boom Stick" icon="shotgun" description_key="boomStickDesc" title_key="boomStick" max_level="5" skill_point_cost_multiplier="1.43" skill_point_cost_per_level="5" group="firearms">
 		<requirement perk_level="1" required_skill_name="Shotguns" required_skill_level="1"/>
 		<requirement perk_level="2" required_skill_name="Shotguns" required_skill_level="10"/>
 		<requirement perk_level="3" required_skill_name="Shotguns" required_skill_level="20"/>
@@ -455,7 +464,15 @@
 			<multiply skill_level="70,100" value="1.23,1.28"/>
 		</effect>
 	</action_skill>
-	<perk name="Better Lead Than Dead" icon="rifle" description_key="betterLeadThanDeadDesc" title_key="betterLeadThanDead" max_level="5" skill_point_cost_multiplier="1.43" skill_point_cost_per_level="5" group="firearms">
+    <perk name="Sniper Magazine Extention" icon="rifle" description_key="Learn to increase the magazine size of Sniper Rifles." title_key="Sniper Rifle Magazine Extention" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="firearms">
+    <requirement perk_level="1" required_skill_name="Rifles" required_skill_level="65" />
+    <recipe name="SniperExtClip" unlock_level="1" />
+  </perk>
+    <perk name="MP5 Magazine Extention" icon="rifle" description_key="Learn to increase the magazine size of MP5s." title_key="MP5 Magazine Extention" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="firearms">
+    <requirement perk_level="1" required_skill_name="Rifles" required_skill_level="65" />
+    <recipe name="mp5ExtClip" unlock_level="1" />
+  </perk>
+  <perk name="Better Lead Than Dead" icon="rifle" description_key="betterLeadThanDeadDesc" title_key="betterLeadThanDead" max_level="5" skill_point_cost_multiplier="1.43" skill_point_cost_per_level="5" group="firearms">
 		<requirement perk_level="1" required_skill_name="Rifles" required_skill_level="1"/>
 		<requirement perk_level="2" required_skill_name="Rifles" required_skill_level="10"/>
 		<requirement perk_level="3" required_skill_name="Rifles" required_skill_level="20"/>
@@ -1159,17 +1176,20 @@
 		</effect>
 	</perk>
 
-  <perk name="Plumbing" icon="misc_crafting" description_key="Max out this perk to learn how to craft plumbing kits to repair sinks for a clean source of drinking water." title_key="Plumbing" max_level="14" skill_point_cost_multiplier="0" skill_point_cost_per_level="1" group="crafting">
-    <recipe name="plumbingKit" unlock_level="14"/>
-    <recipe name="workingCabinetSink" unlock_level="14"/>
-    <recipe name="workingGranitSink" unlock_level="14"/>
+  <perk name="Plumbing" icon="misc_crafting" description_key="Max out this perk to learn how to craft plumbing kits to repair sinks for a clean source of drinking water." title_key="Plumbing" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="crafting">
+    <recipe name="plumbingKit" unlock_level="1"/>
+    <recipe name="workingCabinetSink" unlock_level="1"/>
+    <recipe name="workingGranitSink" unlock_level="1"/>
   </perk>
 
-  <perk name="Oven Repair" icon="misc_crafting" description_key="Max out this perk to learn how to craft Oven Repair kits to repair ovens for cooking without needing fuel." title_key="Oven Repair" max_level="14" skill_point_cost_multiplier="0" skill_point_cost_per_level="1" group="crafting">
-    <recipe name="ovenKit" unlock_level="14"/>
-    <recipe name="workstationOven" unlock_level="14"/>
+  <perk name="Oven Repair" icon="misc_crafting" description_key="Max out this perk to learn how to craft Oven Repair kits to repair ovens for cooking without needing fuel." title_key="Oven Repair" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="crafting">
+    <recipe name="ovenKit" unlock_level="1"/>
+    <recipe name="workstationOven" unlock_level="1"/>
   </perk>
 
+  
+  
+  
   <perk name="Lockpicks" icon="run" description_key="Max out this perk to learn how to make lockpicks to unlock gun safes. Doesn't work on doors." title_key="Safecracker" max_level="10" skill_point_cost_multiplier="0" skill_point_cost_per_level="1" group="tools">
     <recipe name="Lockpkick" unlock_level="10"/>
   </perk>

@@ -422,6 +422,15 @@ repeatable="false" category_key="challenge" offer="Hunter's are trained in track
     <reward type="SkillPoints" value="50" />
   </quest>
 
+  <!--<quest id="perkEngineer" name="Engineer Skills" subtitle="Engineer Skills" description="This teaches you the skills of the class." icon="misc_crafting"
+  repeatable="false" category_key="challenge" offer="The Engineer has experience in the world of electricity." difficulty="easy">
+    <reward type="skill" id="craftSkillScience" value="1" />
+    <reward type="skill" id="Oven Repair" value="1" />
+    <reward type="skill" id="craftSkillTools" value="1"/>
+    <reward type="skill" id="electricBatteryBankPerk" value="1"/>
+    <reward type="skill" id="electricBasicsPerk" value="1"/>
+  </quest>-->
+
   <!--SinMod Class Selection-->
   <quest id="Hunter_Class" name="Im a Hunter" subtitle="Im a Hunter" description="This returns your items to you" icon="ui_game_symbol_treasure"
 repeatable="false" category_key="challenge" offer="By clicking accept you will collect your
@@ -620,6 +629,27 @@ World's End!!!." difficulty="hard">
     <reward type="Item" id="casinoCoin" value="150"/>
     <reward type="Item" id="perkWildcard" value="1" />
   </quest>
+
+  <!--<quest id="Engineer_Class" name="Engineer Class" subtitle="Engineer Class" description="This returns your items to you" icon="ui_game_symbol_treasure"
+  repeatable="false" category_key="challenge" offer="By clicking accept you will collect your
+bugout bag you left for the end of the world.
+Once you click accept you will recieve a TapedBugoutBag.
+Place TapedBugoutBox on stable ground and 
+use the BugoutKey on Box to remove lock
+and then loot box. Be safe out there it's a dangerous 
+World's End!!!." difficulty="hard">
+    <reward type="Item" id="gunPistol" value="200"/>
+    <reward type="Item" id="9mmBullet" value="72"/>
+    <reward type="Item" id="TapedBugoutBag" value="1"/>
+    <reward type="Item" id="BugoutKey" value="1" />
+    <reward type="Item" id="wireTool" value="150"/>
+    <reward type="Item" id="electricwirerelay" value="2" />
+    <reward type="Item" id="electrictimerrelay" value="1" />
+    <reward type="Item" id="repairKit" value="4"/>
+    <reward type="Item" id="pistolBook" value="1"/>
+    <reward type="Item" id="challengeClassEngineer" value="1"/>
+    <reward type="Item" id="perkEngineer" value="1" />
+  </quest>-->
   
   <!--SinMod Class Quests -->
   <!-- Miner -->
@@ -895,7 +925,7 @@ repeatable="false" category_key="challenge" offer="You've survived IED's and MRE
 		repeatable="false" category_key="challenge" offer="Keeping your wound's clean is very important.  Make sure to disinfect." difficulty="Medium">
     <objective type="Craft" id="firstAidKit" value="3" />
     <objective type="Craft" id="disinfectantBandage" value="5" />
-    <reward type="Skill" id="craftSkillScience" value="3" />
+    <reward type="Skill" id="craftSkillScience" value="1" />
     <reward type="Skill" id="Medicine" value="3" />
     <reward type="Item" id="painkillers" value="3" />
     <reward type="Quest" id="challenge_medic3" />
@@ -908,6 +938,70 @@ repeatable="false" category_key="challenge" offer="You've survived IED's and MRE
     <reward type="Skill" id="Medicine" value="5" />
   </quest>
 
+  <!--Engineer-->
+  <!--
+  <quest id="challenge_engineer1" group_name_key="quest_engineer" name="Engineer Quest 1/3" subtitle="Engineer Challenge 1" description="Engineer!!!!!" icon="ui_game_symbol_wrench" repeatable="false" category_key="challenge" offer_key="challenge_Engineer_offer" difficulty="easy">
+    <objective type="Craft" id="ductTape" value="5" />
+    <objective type="Craft" id="glue" value="5" />
+    <reward type="Skill" id="craftSkillScience" value="3" />
+    <reward type="Skill" id="BadMechanic" value="1" />
+    <reward type="SkillPoints" value="1" />
+    <reward type="Quest" id="challenge_Engineer2" />
+  </quest>
+  <quest id="challenge_engineer2" group_name_key="quest_engineer" name="Engineer Quest 2/3" subtitle="Engineer Challenge 2" description_key="Engineer!!!!!" icon="ui_game_symbol_wrench" repeatable="false" category_key="challenge" offer_key="challenge_Engineer2_offer" difficulty="easy">
+    <objective type="FetchKeep" id="electricParts" value="10" />
+    <objective type="FetchKeep" id="electronicParts" value="10" />
+    <objective type="FetchKeep" id="mechanicalParts" value="10" />
+    <reward type="Quest" id="challenge_Engineer3" />
+    <reward type="SkillPoints" value="1" />
+  </quest>
+  <quest id="challenge_engineer3" group_name_key="quest_engineer" name="Engineer Quest 3/3" subtitle="Engineer Challenge 3" description="Engineer!!!!!" icon="ui_game_symbol_wrench" repeatable="false" category_key="challenge" offer_key="challenge_Engineer3_offer" difficulty="easy">
+    <objective type="FetchKeep" id="clawHammer" value="1" />
+    <objective type="FetchKeep" id="carBattery" value="1" />
+    <objective type="FetchKeep" id="wireTool" value="1" />
+    <reward type="SkillPoints" value="1" />
+  </quest>-->
+
+
+  <!--Farmer-->
+  <!--<quest id="challenge_Farmer" name_key="challenge_Profession" subtitle_key="challenge_Farmer_subtitle" description_key="challenge_Farmer_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Farmer_offer" difficulty="easy">
+    <objective type="FetchKeep" id="stick" value="5" />
+    <objective type="FetchKeep" id="rockSmall" value="5" />
+    <objective type="Craft" id="StoneHoe" value="1" />
+    <reward type="SkillPoints" value="1" />
+    <reward type="Quest" id="challenge_Farmer2" />
+    <reward type="Quest" id="challenge_Farmer3" />
+    <reward type="Quest" id="challenge_Farmer4" />
+    <reward type="Quest" id="challenge_Farmer5" />
+  </quest>
+  <quest id="challenge_Farmer2" name_key="challenge_Profession" subtitle_key="challenge_Farmer2_subtitle" description_key="challenge_Farmer2_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Farmer2_offer" difficulty="easy">
+    <objective type="FetchKeep" id="stick" value="10" />
+    <objective type="FetchKeep" id="shortMetalPipe" value="2" />
+    <objective type="FetchKeep" id="scrapIron" value="5" />
+    <objective type="FetchKeep" id="FiberRope" value="3" />
+    <objective type="Craft" id="BearTrap" value="1" />
+    <reward type="SkillPoints" value="1" />
+  </quest>
+  <quest id="challenge_Farmer3" name_key="challenge_Profession" subtitle_key="challenge_Farmer3_subtitle" description_key="challenge_Farmer3_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Farmer3_offer" difficulty="easy">
+    <objective type="FetchKeep" id="FarmerBook" value="1" />
+    <reward type="SkillPoints" value="1" />
+  </quest>
+  <quest id="challenge_Farmer4" name_key="challenge_Profession" subtitle_key="challenge_Farmer4_subtitle" description_key="challenge_Farmer4_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Farmer4_offer" difficulty="easy">
+    <objective type="FetchKeep" id="herbalAntibiotics" value="1" />
+    <reward type="SkillPoints" value="1" />
+  </quest>
+  <quest id="challenge_Farmer5" name_key="challenge_Profession" subtitle_key="challenge_Farmer5_subtitle" description_key="challenge_Farmer5_offer" icon="ui_game_symbol_knife" repeatable="false" category_key="challenge" offer_key="challenge_Farmer5_offer" difficulty="easy">
+    <objective type="BlockPlace" id="youngWheat" value="1" />
+    <objective type="BlockPlace" id="carrotSprout" value="1" />
+    <objective type="BlockPlace" id="plantedAloe1" value="1" />
+    <objective type="BlockPlace" id="YuccaCactus01" value="1" />
+    <objective type="BlockPlace" id="plantedCoffee1" value="1" />
+    <objective type="BlockPlace" id="plantedChrysanthemum1" value="1" />
+    <objective type="BlockPlace" id="plantedApple1m" value="1" />
+    <objective type="BlockPlace" id="plantedYucca1" value="1" />
+    <reward type="SkillPoints" value="1" />
+  </quest>-->
+  
   <!-- Ammo Box -->
   <quest id="AmmoSupply9mm" name="Ammo Supply" subtitle="Ammo Supply" description="Open this to get some ammo for your gun." icon="misc_crafting"
   repeatable="true" category_key="challenge" offer="Open this to get some ammo for your gun." difficulty="easy">

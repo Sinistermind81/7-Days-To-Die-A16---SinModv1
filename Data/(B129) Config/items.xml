@@ -439,9 +439,9 @@ Mesh files no longer used:
       <property name="Crosshair_max_distance" value="6"/>
       <!-- 6 -->
       <property name="Magazine_size" value="15"/>
-      <property name="Magazine_items" value="9mmBullet"/>
-      <property name="Magazine_item_ray_counts" value="1"/>
-      <property name="Magazine_item_ray_spreads" value="0.85"/>
+      <property name="Magazine_items" value="9mmBullet, 9mmBulletHP, 9mmBulletINC"/>
+      <property name="Magazine_item_ray_counts" value="1, 1, 1"/>
+      <property name="Magazine_item_ray_spreads" value="0.85, 0.85, 0.85"/>
       <!-- .85 -->
       <property name="Reload_time" value="2"/>
       <property name="Bullet_icon" value="pistol"/>
@@ -566,9 +566,9 @@ Mesh files no longer used:
       <property name="Crosshair_max_distance" value="9"/>
       <!-- 9 -->
       <property name="Magazine_size" value="6"/>
-      <property name="Magazine_items" value="44MagBullet"/>
-      <property name="Magazine_item_ray_counts" value="1"/>
-      <property name="Magazine_item_ray_spreads" value="0.87"/>
+      <property name="Magazine_items" value="44MagBullet, 44MagBulletHP, 44MagBulletINC"/>
+      <property name="Magazine_item_ray_counts" value="1, 1, 1"/>
+      <property name="Magazine_item_ray_spreads" value="0.87, 0.87, 0.87"/>
       <!-- .87 -->
       <property name="Reload_time" value="4"/>
       <property name="Bullet_icon" value="pistol"/>
@@ -631,9 +631,9 @@ Mesh files no longer used:
       <property name="Crosshair_max_distance" value="49"/>
       <!-- 49 -->
       <property name="Magazine_size" value="8"/>
-      <property name="Magazine_items" value="shotgunShell"/>
-      <property name="Magazine_item_ray_counts" value="9"/>
-      <property name="Magazine_item_ray_spreads" value="0.74"/>
+      <property name="Magazine_items" value="shotgunShell, SiegeShell"/>
+      <property name="Magazine_item_ray_counts" value="9, 9"/>
+      <property name="Magazine_item_ray_spreads" value="0.74, 0.74"/>
       <!-- .74 -->
       <property name="Reload_time" value="2.6"/>
       <property name="Bullet_icon" value="uzi"/>
@@ -698,9 +698,9 @@ Mesh files no longer used:
       <property name="Crosshair_max_distance" value="28"/>
       <!-- 28 -->
       <property name="Magazine_size" value="8"/>
-      <property name="Magazine_items" value="shotgunShell, shotgunSlug"/>
-      <property name="Magazine_item_ray_counts" value="8, 1"/>
-      <property name="Magazine_item_ray_spreads" value="0.835,0.605"/>
+      <property name="Magazine_items" value="shotgunShell, shotgunSlug, SiegeShell, shotgunShellINC"/>
+      <property name="Magazine_item_ray_counts" value="8, 1, 8, 8"/>
+      <property name="Magazine_item_ray_spreads" value="0.835,0.605, 0.835, 0.835"/>
       <!-- .835 / .605 -->
       <property name="Reload_time" value="2.6"/>
       <property name="Bullet_icon" value="uzi"/>
@@ -768,9 +768,9 @@ Mesh files no longer used:
       <property name="Crosshair_max_distance" value="9"/>
       <!-- 9 -->
       <property name="Magazine_size" value="30"/>
-      <property name="Magazine_items" value="9mmBullet"/>
-      <property name="Magazine_item_ray_counts" value="1"/>
-      <property name="Magazine_item_ray_spreads" value="0"/>
+      <property name="Magazine_items" value="9mmBullet, 9mmBulletHP, 9mmBulletINC"/>
+      <property name="Magazine_item_ray_counts" value="1, 1, 1"/>
+      <property name="Magazine_item_ray_spreads" value="0, 0, 0"/>
       <property name="Reload_time" value="4.1"/>
       <property name="Bullet_icon" value="uzi"/>
       <property name="Sound_start" value="mp5_fire_start"/>
@@ -837,9 +837,9 @@ Mesh files no longer used:
       <property name="Crosshair_max_distance" value="16"/>
       <!-- 16 -->
       <property name="Magazine_size" value="30"/>
-      <property name="Magazine_items" value="762mmBullet"/>
-      <property name="Magazine_item_ray_counts" value="1"/>
-      <property name="Magazine_item_ray_spreads" value="0"/>
+      <property name="Magazine_items" value="762mmBullet, 762mmBulletHP, 762mmBulletINC"/>
+      <property name="Magazine_item_ray_counts" value="1, 1, 1"/>
+      <property name="Magazine_item_ray_spreads" value="0, 0, 0"/>
       <property name="Reload_time" value="3.9"/>
       <property name="Bullet_icon" value="uzi"/>
       <property name="Sound_start" value="ak47_fire_start"/>
@@ -907,9 +907,9 @@ Mesh files no longer used:
       <property name="Crosshair_max_distance" value="36"/>
       <!-- 36 -->
       <property name="Magazine_size" value="1"/>
-      <property name="Magazine_items" value="762mmBullet"/>
-      <property name="Magazine_item_ray_counts" value="1"/>
-      <property name="Magazine_item_ray_spreads" value="0"/>
+      <property name="Magazine_items" value="762mmBullet, 762mmBulletHP, 762mmBulletINC"/>
+      <property name="Magazine_item_ray_counts" value="1, 1, 1"/>
+      <property name="Magazine_item_ray_spreads" value="0, 0, 0"/>
       <property name="Reload_time" value="2.66"/>
       <property name="Bullet_icon" value="uzi"/>
       <property name="Sound_start" value="hunting_rifle_fire"/>
@@ -971,9 +971,9 @@ Mesh files no longer used:
       <property name="Crosshair_max_distance" value="54"/>
       <!-- 54 -->
       <property name="Magazine_size" value="5"/>
-      <property name="Magazine_items" value="762mmBullet"/>
-      <property name="Magazine_item_ray_counts" value="1"/>
-      <property name="Magazine_item_ray_spreads" value="0"/>
+      <property name="Magazine_items" value="762mmBullet, 762mmBulletHP, 762mmBulletINC"/>
+      <property name="Magazine_item_ray_counts" value="1, 1, 1"/>
+      <property name="Magazine_item_ray_spreads" value="0, 0, 0"/>
       <property name="Reload_time" value="2.5"/>
       <property name="Bullet_icon" value="uzi"/>
       <property name="Sound_start" value="sniperrifle_fire"/>
@@ -1849,7 +1849,7 @@ Mesh files no longer used:
       <property name="Sound_start" value="swoosh"/>
       <property name="Stamina_usage" value="6.5"/>
       <property name="DamageBonus.head" value="3"/>
-      <property name="DamageBonus.earth" value="2"/>
+      <property name="DamageBonus.earth" value="0"/>
       <property name="DamageBonus.glass" value="1"/>
       <property name="DamageBonus.stone" value="0"/>
       <property name="DamageBonus.metal" value="0"/>
@@ -6679,8 +6679,73 @@ Mesh files no longer used:
     <property name="ActionExp" value="10"/>
   </item>
 
-  <!-- dev item to test buff variables
-<item id="669" name="redPill">
+  <item id="669" name="survivorredPill">
+    <property name="Meshfile" value="Items/Health/painkillersPrefab"/>
+    <property name="Material" value="organic"/>
+    <property name="HoldType" value="16"/>
+    <property name="CreativeMode" value="none"/>
+    <property name="CustomIcon" value="painkillers"/>
+    <property name="CustomIconTint" value="ff4040"/>
+    <property name="SellableToTrader" value="false"/>
+    <property class="Action0">
+      <property name="Class" value="UseOther"/>
+      <property name="Delay" value="1.0"/>
+      <property name="Use_time" value="..."/>
+      <property name="Sound_start" value="player_painkillers"/>
+      <property name="Gain_food" value="-10"/>
+      <property name="Gain_water" value="-10"/>
+      <property name="Gain_wellness" value="10"/>
+      <property name="Buff" value="survivorPill"/>
+    </property>
+    <property class="Action1">
+      <property name="Class" value="Eat"/>
+      <property name="Delay" value="1.0"/>
+      <property name="Use_time" value="..."/>
+      <property name="Sound_start" value="player_painkillers"/>
+      <property name="Gain_food" value="-10"/>
+      <property name="Gain_water" value="-10"/>
+      <property name="Gain_wellness" value="10"/>
+      <property name="Buff" value="survivorPill"/>
+    </property>
+    <property name="ActionSkillGroup" value="Medicine"/>
+    <property name="CraftingSkillGroup" value="craftSkillScience"/>
+    <property name="Group" value="Science"/>
+  </item>
+
+  <item id="670" name="survivorbluePill">
+    <property name="Meshfile" value="Items/Health/painkillersPrefab"/>
+    <property name="Material" value="organic"/>
+    <property name="HoldType" value="16"/>
+    <property name="CreativeMode" value="none"/>
+    <property name="CustomIcon" value="painkillers"/>
+    <property name="CustomIconTint" value="ff4040"/>
+    <property name="SellableToTrader" value="false"/>
+    <property class="Action0">
+      <property name="Class" value="UseOther"/>
+      <property name="Delay" value="1.0"/>
+      <property name="Use_time" value="..."/>
+      <property name="Sound_start" value="player_painkillers"/>
+      <property name="Gain_food" value="-10"/>
+      <property name="Gain_water" value="-10"/>
+      <property name="Gain_wellness" value="10"/>
+      <property name="Buff" value="survivorPill"/>
+    </property>
+    <property class="Action1">
+      <property name="Class" value="Eat"/>
+      <property name="Delay" value="1.0"/>
+      <property name="Use_time" value="..."/>
+      <property name="Sound_start" value="player_painkillers"/>
+      <property name="Gain_food" value="-10"/>
+      <property name="Gain_water" value="-10"/>
+      <property name="Gain_wellness" value="10"/>
+      <property name="Buff" value="survivorPill"/>
+    </property>
+    <property name="ActionSkillGroup" value="Medicine"/>
+    <property name="CraftingSkillGroup" value="craftSkillScience"/>
+    <property name="Group" value="Science"/>
+  </item>
+  
+  <!--<item id="669" name="redPill">
 	<property name="Meshfile" value="Items/Health/painkillersPrefab"/>
 	<property name="Material" value="organic"/>
 	<property name="HoldType" value="16"/>
@@ -8383,7 +8448,7 @@ Mesh files no longer used:
     <property name="Extends" value="questMaster"/>
     <property name="CreativeMode" value="None"/>
     <property name="DescriptionKey" value="qc_ZombieGroupDesc"/>
-    <property name="CustomIcon" value="challengeQuestMaster"/>
+    <property name="CustomIcon" value="theChallenge"/>
     <property name="EconomicValue" value="400"/>
   </item>
 
@@ -9949,7 +10014,7 @@ Mesh files no longer used:
     <property name="CreativeMode" value="None" />
   </item>
 
-<!--SinMod Begins Here-->
+  <!--SinMod Begins Here-->
   <!--SinMod Admin Tools-->
   <item id="1501" name="Admin_superWrench">
     <property name="Extends" value="wrench"/>
@@ -10153,18 +10218,18 @@ Mesh files no longer used:
       <property name="DismembermentBaseChance" value="5,5"/>
     </property>
   </item>
-  
+
   <!--SinMod Class Kits-->
   <item id="1520" name="StartWorldsEnd(README)">
     <property name="Extends" value="questMaster" />
-    <property name="Description" value="StartWorldsEnd"/>
+    <property name="CustomIcon" value="ChooseAProfession"/>
+    <property name="Description" value="StartWorldsEndDesc"/>
     <property class="Action1">
       <property name="QuestGiven" value="StartWorldsEnd" />
     </property>
   </item>
   <item id="1521" name="BugoutKey">
-    <property name="CustomIcon" value="steelDart" />
-    <property name="CustomIconTint" value="0a4b1f"/>
+    <property name="CustomIcon" value="ProfessionKey" />
     <property name="Degradation" value="125" param1="true" />
     <property name="Meshfile" value="Items/Misc/paper" />
     <property name="DescriptionKey" value="classKeyDesc"/>
@@ -10182,8 +10247,7 @@ Mesh files no longer used:
   </item>
   <item id="1522" name="ProfessionSelection">
     <property name="DescriptionKey" value="classSelectionDesc"/>
-    <property name="CustomIcon" value="questMaster" />
-    <property name="CustomIconTint" value="ff0000"/>
+    <property name="CustomIcon" value="ProfessionSelection" />
     <property name="Meshfile" value="Items/Misc/Book" />
     <property name="Material" value="organic" />
     <property name="HoldType" value="21" />
@@ -10197,7 +10261,7 @@ Mesh files no longer used:
     </property>
   </item>
   <item id="1523" name="genericAmmoBox">
-    <property name="CustomIcon" value="cntMunitionsBox" />
+    <property name="CustomIcon" value="genericAmmoBox" />
     <property name="DescriptionKey" value="genericAmmoBoxDesc"/>
     <property name="Meshfile" value="Items/Misc/sackPrefab" />
     <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
@@ -10211,11 +10275,11 @@ Mesh files no longer used:
     </property>
     <property name="Group" value="Resources" />
   </item>
-  
+
   <!--SinMod Ammo Supply-->
   <item id="1524" name="ammoSupply9mm">
     <property name="Extends" value="challengeQuestMaster" />
-    <property name="CustomIcon" value="cntMunitionsBox" />
+    <property name="CustomIcon" value="ammoSupply9mm" />
     <property name="DescriptionKey" value="ammoSupplyDesc"/>
     <property class="Action1">
       <property name="QuestGiven" value="AmmoSupply9mm" />
@@ -10223,7 +10287,7 @@ Mesh files no longer used:
   </item>
   <item id="1525" name="ammoSupply44Mag">
     <property name="Extends" value="challengeQuestMaster" />
-    <property name="CustomIcon" value="cntMunitionsBox" />
+    <property name="CustomIcon" value="ammoSupply44Mag" />
     <property name="DescriptionKey" value="ammoSupplyDesc"/>
     <property class="Action1">
       <property name="QuestGiven" value="AmmoSupply44Mag" />
@@ -10231,7 +10295,7 @@ Mesh files no longer used:
   </item>
   <item id="1526" name="ammoSupply762mm">
     <property name="Extends" value="challengeQuestMaster" />
-    <property name="CustomIcon" value="cntMunitionsBox" />
+    <property name="CustomIcon" value="ammoSupply762mm" />
     <property name="DescriptionKey" value="ammoSupplyDesc"/>
     <property class="Action1">
       <property name="QuestGiven" value="AmmoSupply762mm" />
@@ -10239,7 +10303,7 @@ Mesh files no longer used:
   </item>
   <item id="1527" name="ammoSupplyShotgun">
     <property name="Extends" value="challengeQuestMaster" />
-    <property name="CustomIcon" value="cntMunitionsBox" />
+    <property name="CustomIcon" value="ammoSupplyShotgun" />
     <property name="DescriptionKey" value="ammoSupplyDesc"/>
     <property class="Action1">
       <property name="QuestGiven" value="AmmoSupplyShotgun" />
@@ -10247,269 +10311,1737 @@ Mesh files no longer used:
   </item>
 
   <!--SinMod Ammo Dismantling-->
-<item id="1528" name="dismantle9mmBullets30">
-	<property name="Extends" value="challengeQuestMaster" />
-	<property name="CustomIcon" value="cntMunitionsBox" />
-  <property name="CustomIconTint" value="bec904" />
-  <property name="DescriptionKey" value="dismantleammo"/>
-	<property class="Action1">
-	<property name="QuestGiven" value="9mmDismantle30" />
-	</property>
-</item>
-<item id="1530" name="dismantle44MagBullets30">
-	<property name="Extends" value="challengeQuestMaster" />
-	<property name="CustomIcon" value="cntMunitionsBox" />
-  <property name="CustomIconTint" value="bec904" />
-	<property name="DescriptionKey" value="dismantleammo"/>
-	<property class="Action1">
-	<property name="QuestGiven" value="44MagDismantle30" />
-	</property>
-</item>
-<item id="1531" name="dismantle762mmBullets30">
-	<property name="Extends" value="challengeQuestMaster" />
-	<property name="CustomIcon" value="cntMunitionsBox" />
-  <property name="CustomIconTint" value="bec904" />
-	<property name="DescriptionKey" value="dismantleammo"/>
-	<property class="Action1">
-	<property name="QuestGiven" value="762mmDismantle30" />
-	</property>
-</item>
-<item id="1532" name="dismantleShotgunShells30">
-	<property name="Extends" value="challengeQuestMaster" />
-	<property name="CustomIcon" value="cntMunitionsBox" />
-  <property name="CustomIconTint" value="bec904" />
-	<property name="DescriptionKey" value="dismantleammo"/>
-	<property class="Action1">
-	<property name="QuestGiven" value="ShotgunShellDismantle30" />
-	</property>
-</item>
-<item id="1533" name="dismantle9mmBullets">
-	<property name="Extends" value="challengeQuestMaster" />
-	<property name="CustomIcon" value="cntMunitionsBox" />
-  <property name="CustomIconTint" value="db6706" />
-	<property name="DescriptionKey" value="dismantleammo"/>
-	<property class="Action1">
-	<property name="QuestGiven" value="9mmDismantle" />
-	</property>
-</item>
-<item id="1535" name="dismantle44MagBullets">
-	<property name="Extends" value="challengeQuestMaster" />
-	<property name="CustomIcon" value="cntMunitionsBox" />
-  <property name="CustomIconTint" value="db6706" />
-	<property name="DescriptionKey" value="dismantleammo"/>
-	<property class="Action1">
-	<property name="QuestGiven" value="44MagDismantle" />
-	</property>
-</item>
-<item id="1536" name="dismantle762mmBullets">
-	<property name="Extends" value="challengeQuestMaster" />
-	<property name="CustomIcon" value="cntMunitionsBox" />
-  <property name="CustomIconTint" value="db6706" />
-	<property name="DescriptionKey" value="dismantleammo"/>
-	<property class="Action1">
-	<property name="QuestGiven" value="762mmDismantle" />
-	</property>
-</item>
-<item id="1537" name="dismantleShotgunShells">
-	<property name="Extends" value="challengeQuestMaster" />
-	<property name="CustomIcon" value="cntMunitionsBox" />
-  <property name="CustomIconTint" value="db6706" />
-	<property name="DescriptionKey" value="dismantleammo"/>
-	<property class="Action1">
-	<property name="QuestGiven" value="ShotgunShellDismantle" />
-	</property>
-</item>
-  
+  <item id="1528" name="dismantle9mmBullets30">
+    <property name="Extends" value="challengeQuestMaster" />
+    <property name="CustomIcon" value="dismantle9mmBullets" />
+    <property name="CustomIconTint" value="bec904" />
+    <property name="DescriptionKey" value="dismantleammo"/>
+    <property class="Action1">
+      <property name="QuestGiven" value="9mmDismantle30" />
+    </property>
+  </item>
+  <item id="1530" name="dismantle44MagBullets30">
+    <property name="Extends" value="challengeQuestMaster" />
+    <property name="CustomIcon" value="dismantle44MagBullets" />
+    <property name="DescriptionKey" value="dismantleammo"/>
+    <property class="Action1">
+      <property name="QuestGiven" value="44MagDismantle30" />
+    </property>
+  </item>
+  <item id="1531" name="dismantle762mmBullets30">
+    <property name="Extends" value="challengeQuestMaster" />
+    <property name="CustomIcon" value="dismantle762mmBullets" />
+    <property name="DescriptionKey" value="dismantleammo"/>
+    <property class="Action1">
+      <property name="QuestGiven" value="762mmDismantle30" />
+    </property>
+  </item>
+  <item id="1532" name="dismantleShotgunShells30">
+    <property name="Extends" value="challengeQuestMaster" />
+    <property name="CustomIcon" value="dismantleShotgunShells" />
+    <property name="DescriptionKey" value="dismantleammo"/>
+    <property class="Action1">
+      <property name="QuestGiven" value="ShotgunShellDismantle30" />
+    </property>
+  </item>
+  <item id="1533" name="dismantle9mmBullets">
+    <property name="Extends" value="challengeQuestMaster" />
+    <property name="CustomIcon" value="dismantle9mmBullets" />
+    <property name="DescriptionKey" value="dismantleammo"/>
+    <property class="Action1">
+      <property name="QuestGiven" value="9mmDismantle" />
+    </property>
+  </item>
+  <item id="1535" name="dismantle44MagBullets">
+    <property name="Extends" value="challengeQuestMaster" />
+    <property name="CustomIcon" value="dismantle44MagBullets" />
+    <property name="DescriptionKey" value="dismantleammo"/>
+    <property class="Action1">
+      <property name="QuestGiven" value="44MagDismantle" />
+    </property>
+  </item>
+  <item id="1536" name="dismantle762mmBullets">
+    <property name="Extends" value="challengeQuestMaster" />
+    <property name="CustomIcon" value="dismantle762mmBullets" />
+    <property name="DescriptionKey" value="dismantleammo"/>
+    <property class="Action1">
+      <property name="QuestGiven" value="762mmDismantle" />
+    </property>
+  </item>
+  <item id="1537" name="dismantleShotgunShells">
+    <property name="Extends" value="challengeQuestMaster" />
+    <property name="CustomIcon" value="dismantleShotgunShells" />
+    <property name="DescriptionKey" value="dismantleammo"/>
+    <property class="Action1">
+      <property name="QuestGiven" value="ShotgunShellDismantle" />
+    </property>
+  </item>
+
   <!--SinMod Class Mod-->
   <item id="1550" name="Hunter Class">
     <property name="Extends" value="questMaster" />
-    <property name="CustomIconTint" value="ff0000"/>
+    <property name="CustomIcon" value="Class_Hunter"/>
     <property class="Action1">
       <property name="QuestGiven" value="Hunter_Class" />
     </property>
-    </item>  
+  </item>
   <item id="1551" name="Builder Class">
     <property name="Extends" value="questMaster" />
-    <property name="CustomIconTint" value="ff0000"/>
+    <property name="CustomIcon" value="Class_Builder"/>
     <property class="Action1">
       <property name="QuestGiven" value="Builder_Class" />
     </property>
-    </item>  
+  </item>
   <item id="1553" name="Veteran Class">
     <property name="Extends" value="questMaster" />
-    <property name="CustomIconTint" value="ff0000"/>
+    <property name="CustomIcon" value="Class_Veteran"/>
     <property class="Action1">
       <property name="QuestGiven" value="Veteran_Class" />
     </property>
-    </item>
+  </item>
   <item id="1554" name="Bruiser Class">
     <property name="Extends" value="questMaster" />
-    <property name="CustomIconTint" value="ff0000"/>
+    <property name="CustomIcon" value="Class_Bruiser"/>
     <property class="Action1">
       <property name="QuestGiven" value="Bruiser_Class" />
     </property>
-    </item>
+  </item>
   <item id="1555" name="Gunman Class">
     <property name="Extends" value="questMaster" />
-    <property name="CustomIconTint" value="ff0000"/>
+    <property name="CustomIcon" value="Class_Gunman"/>
     <property class="Action1">
       <property name="QuestGiven" value="Gunman_Class" />
     </property>
-    </item> 
+  </item>
   <item id="1556" name="Miner Class">
     <property name="Extends" value="questMaster" />
-    <property name="CustomIconTint" value="ff0000"/>
+    <property name="CustomIcon" value="Class_Miner"/>
     <property class="Action1">
       <property name="QuestGiven" value="Miner_Class" />
     </property>
-    </item>
+  </item>
   <item id="1557" name="Survivor Class">
     <property name="Extends" value="questMaster" />
-    <property name="CustomIconTint" value="ff0000"/>
+    <property name="CustomIcon" value="Class_Survivor"/>
     <property class="Action1">
       <property name="QuestGiven" value="Survivor_Class" />
     </property>
-    </item>
+  </item>
   <item id="1558" name="Medic Class">
     <property name="Extends" value="questMaster" />
-    <property name="CustomIconTint" value="ff0000"/>
+    <property name="CustomIcon" value="Class_Medic"/>
     <property class="Action1">
       <property name="QuestGiven" value="Medic_Class" />
     </property>
-    </item>
+  </item>
   <item id="1559" name="Wildcard Class">
     <property name="Extends" value="questMaster" />
-    <property name="CustomIconTint" value="ff0000"/>
+    <property name="CustomIcon" value="Class_Wildcard"/>
     <property class="Action1">
       <property name="QuestGiven" value="Wildcard_Class" />
     </property>
-    </item>
+  </item>
+
+  <!--SinMod Ammo Extra-->
+  <item id="1600" name="pistolExtMag">
+    <property name="Extends" value="gunPistol" />
+    <property name="DescriptionKey" value="gunpistolExtMagDesc" />
+    <property name="CustomIcon" value="gunpistolExtMag" />
+    <property class="Parts">
+      <property name="Pump" value="Mag_Extender" />
+    </property>
+    <property class="Action0">
+      <property name="Magazine_size" value="30" />
+      <property name="ActionExp" value="5" />
+      <property name="ActionExpBonusMultiplier" value="4" />
+    </property>
+  </item>
+  <item id="1601" name="mp5ExtMag">
+    <property name="Extends" value="gunMP5" />
+    <property name="DescriptionKey" value="gunmp5ExtMagDesc" />
+    <property name="CustomIcon" value="gunmp5ExtMag" />
+    <property class="Parts">
+      <property name="Pump" value="Mag_Extender" />
+    </property>
+    <property class="Action0">
+      <property name="Magazine_size" value="60" />
+      <property name="ActionExp" value="5" />
+      <property name="ActionExpBonusMultiplier" value="4" />
+    </property>
+  </item>
+  <item id="1602" name="ShotgunExtMag">
+    <property name="Extends" value="gunPumpShotgun" />
+    <property name="DescriptionKey" value="gunShotgunExtMagDesc" />
+    <property name="CustomIcon" value="gunShotgunExtMag" />
+    <property class="Parts">
+      <property name="Pump" value="Mag_Extender" />
+    </property>
+    <property class="Action0">
+      <property name="Magazine_size" value="16" />
+      <property name="ActionExp" value="5" />
+      <property name="ActionExpBonusMultiplier" value="4" />
+    </property>
+  </item>
+  <item id="1603" name="SniperExtMag">
+    <property name="Extends" value="gunSniperRifle" />
+    <property name="DescriptionKey" value="gunSniperExtMagDesc" />
+    <property name="CustomIcon" value="gunSniperExtMag" />
+    <property class="Parts">
+      <property name="Pump" value="Mag_Extender" />
+    </property>
+    <property class="Action0">
+      <property name="Magazine_size" value="10" />
+      <property name="ActionExp" value="5" />
+      <property name="ActionExpBonusMultiplier" value="4" />
+    </property>
+  </item>
+  <item id="1604" name="Mag_Extender">
+    <property name="Extends" value="partsMaster" />
+    <property name="DescriptionKey" value="gunMag_ExtenderDesc" />
+    <property name="CustomIcon" value="gunMag_Extender" />
+    <property name="PartType" value="Pump" />
+    <property name="Weight" value="10" />
+    <property class="Attributes">
+      <property name="Accuracy" value=".8,0.01" />
+      <property name="DegradationMax" value="1500,9000" />
+    </property>
+  </item>  
+
+  <item id="1635" name="9mmBulletHP">
+    <property name="Extends" value="9mmBullet" />
+    <property name="CustomIcon" value="bullet9mmHP"/>
+    <property name="DescriptionKey" value="BulletHPDesc"/>
+    <property class="Attributes">
+      <property name="GetQualityFromWeapon" value="true" />
+      <property name="EntityDamage" value="10,10" />
+      <property name="BlockDamage" value="4,5" />
+      <property name="ApplyBuff" value="0.7,0.7" param1="stunned" />
+    </property>
+  </item>
+  <item id="1636" name="9mmBulletINC">
+    <property name="Extends" value="9mmBullet"/>
+    <property name="CustomIcon" value="bullet9mmINC"/>
+    <property name="DescriptionKey" value="BulletINCDesc"/>
+    <property class="Attributes">
+      <property name="GetQualityFromWeapon" value="true" />
+      <property name="BlockDamage" value="5,7" />
+      <property name="ApplyBuff" value="1,1" param1="burningSmall" />
+    </property>
+  </item>
+  <item id="1637" name="44MagBulletHP">
+    <property name="Extends" value="44MagBullet" />
+    <property name="CustomIcon" value="bullet44MagHP"/>
+    <property name="DescriptionKey" value="BulletHPDesc"/>
+    <property class="Attributes">
+      <property name="GetQualityFromWeapon" value="true" />
+      <property name="EntityDamage" value="10,12" />
+      <property name="BlockDamage" value="5,7" />
+      <property name="ApplyBuff" value="0.7,0.7" param1="stunned" />
+    </property>
+  </item>
+  <item id="1638" name="44MagBulletINC">
+    <property name="Extends" value="44MagBullet" />
+    <property name="CustomIcon" value="bullet44MagINC"/>
+    <property name="DescriptionKey" value="BulletINCDesc"/>
+    <property class="Attributes">
+      <property name="GetQualityFromWeapon" value="true" />
+      <property name="BlockDamage" value="5,7" />
+      <property name="ApplyBuff" value="1,1" param1="burningSmall" />
+    </property>
+  </item>
+  <item id="1641" name="762mmBulletHP">
+    <property name="Extends" value="762mmBullet" />
+    <property name="CustomIcon" value="bullet762mmHP"/>
+    <property name="DescriptionKey" value="BulletHPDesc"/>
+    <property class="Attributes">
+      <property name="GetQualityFromWeapon" value="true" />
+      <property name="EntityDamage" value="10,12" />
+      <property name="BlockDamage" value="5,7" />
+      <property name="ApplyBuff" value="0.7,0.7" param1="stunned" />
+    </property>
+  </item>
+  <item id="1642" name="762mmBulletINC">
+    <property name="Extends" value="762mmBullet" />
+    <property name="CustomIcon" value="bullet762mmINC"/>
+    <property name="DescriptionKey" value="BulletINCDesc"/>
+    <property class="Attributes">
+      <property name="GetQualityFromWeapon" value="true" />
+      <property name="BlockDamage" value="5,7" />
+      <property name="ApplyBuff" value="1,1" param1="burningSmall" />
+    </property>
+  </item>
+  <item id="1643" name="SiegeShell">
+    <property name="Meshfile" value="Items/Weapons/Ranged/SawedOffPumpShotgun/shotgunShellPrefab" />
+    <property name="CustomIcon" value="bulletSiegeShell"/>
+    <property name="Material" value="lead" />
+    <property name="HoldType" value="21" />
+    <property name="Stacknumber" value="250" />
+    <!-- STK ammo -->
+    <property name="DropScale" value="4" />
+    <property name="Group" value="Ammo/Weapons" />
+    <property name="DescriptionKey" value="SiegeShellDesc"/>
+    <property class="Attributes">
+      <property name="GetQualityFromWeapon" value="true" />
+      <property name="EntityDamage" value="3.6,9" />
+      <property name="BlockDamage" value="30,40" />
+      <property name="DamageBonus.wood" value="25" />
+    </property>
+    <property name="CraftingSkillGroup" value="Gun Smithing"/>
+  </item>
+  <item id="1644" name="shotgunShellINC">
+    <property name="Meshfile" value="Items/Weapons/Ranged/SawedOffPumpShotgun/shotgunShellPrefab" />
+    <property name="CustomIcon" value="bulletshotgunShellINC"/>
+    <property name="Material" value="lead" />
+    <property name="HoldType" value="21" />
+    <property name="Stacknumber" value="250" />
+    <!-- STK ammo -->
+    <property name="DropScale" value="4" />
+    <property name="Group" value="Ammo/Weapons" />
+    <property name="DescriptionKey" value="ShotgunShellINCDesc"/>
+    <property class="Attributes">
+      <property name="GetQualityFromWeapon" value="true" />
+      <property name="EntityDamage" value="7,15" />
+      <property name="BlockDamage" value="14,17" />
+      <property name="ApplyBuff" value="1,1" param1="burningSmall" />
+    </property>
+    <property name="CraftingSkillGroup" value="Gun Smithing"/>
+  </item>
+  <item id="1645" name="HollowTip">
+    <property name="Extends" value="bulletTip" />
+    <property name="DescriptionKey" value="HollowTipDesc"/>
+    <!-- Test to see if this is still needed <property name="Weight" value="5" /> -->
+  </item>
 
   <!--SinMod Steel Armor Add-on-->
   <item id="1708" name="steelBoots">
-		<property name="Extends" value="ironBoots" />
-		<property name="CustomIcon" value="scrapBoots" />
-		<property name="CustomIconTint" value="696B67" />
-		<property name="Degradation" value="270" param1="true" />
-		<property name="RepairTools" value="forgedSteel" />
-		<property class="Attributes">
-			<property name="ConcussiveProtection" value="0.4, 0.9" />
-			<property name="PunctureProtection" value="0.4, 0.8" />
-			<property name="FireProtection" value="0.05, 0.2" />
-			<property name="RadiationProtection" value="0.05, 0.2" />
-			<property name="DegradationMax" value="40,600" />
-		</property>
-		<property class="UMA">
-			<property name="Mesh" value="armor_scrap_metal_feet" />
-			<property name="Overlay" value="gear_swat_helmet" />
-			<property name="Layer" value="0" />
-			<property name="UISlot" value="Footwear" />
-		</property>
-	</item>
-	<item id="1709" name="steelLegs">
-		<property name="Extends" value="scrapLegArmor" />
-		<property name="CustomIcon" value="scrapLegArmor" />
-		<property name="CustomIconTint" value="696B67" />
-		<property name="Degradation" value="270" param1="true" />
-		<property name="RepairTools" value="forgedSteel" />
-		<property class="Attributes">
-			<property name="ConcussiveProtection" value="0.4, 0.9" />
-			<property name="PunctureProtection" value="0.3, 0.6" />
-			<property name="FireProtection" value="0.05, 0.2" />
-			<property name="RadiationProtection" value="0.05, 0.2" />
-			<property name="DegradationMax" value="40,600" />
-		</property>
-		<property class="UMA">
-			<property name="Overlay0" value="gear_swat_helmet" />
-			<property name="Layer" value="3" />
-			<property name="UISlot" value="LegArmor" />
-		</property>
-	</item>
-	<item id="1710" name="steelChestplate">
-		<property name="Extends" value="scrapChestArmor" />
-		<property name="CustomIcon" value="scrapChestArmor" />
-		<property name="CustomIconTint" value="696B67" />
-		<property name="Degradation" value="270" param1="true" />
-		<property name="RepairTools" value="forgedSteel" />
-		<property class="Attributes">
-			<property name="ConcussiveProtection" value="0.4, 0.9" />
-			<property name="PunctureProtection" value="0.4, 0.6" />
-			<property name="FireProtection" value="0.05, 0.2" />
-			<property name="RadiationProtection" value="0.05, 0.2" />
-			<property name="DegradationMax" value="40,600" />
-		</property>
-		<property class="UMA">
-			<property name="Overlay0" value="gear_swat_helmet" />
-			<property name="Layer" value="2" />
-			<property name="UISlot" value="ChestArmor" />
-		</property>
-	</item>
-	<item id="1711" name="steelHelmet">
-		<property name="Extends" value="scrapBoots" />
-		<property name="CustomIcon" value="scrapHelmet" />
-		<property name="CustomIconTint" value="696B67" />
-		<property name="Meshfile" value="Items/Clothing/Head/swatHelmetPrefab" />
-		<property name="HoldType" value="21" />
-		<property name="Degradation" value="270" param1="true" />
-		<property name="RepairTools" value="forgedSteel" />
-		<property name="CraftingIngredientTime" value="5" />
-		<property name="EquipSlot" value="Head" />
-		<property class="Attributes">
-			<property name="ConcussiveProtection" value="0.4, 0.9" />
-			<property name="PunctureProtection" value="0.4, 0.8" />
-			<property name="FireProtection" value="0.08, 0.3" />
-			<property name="RadiationProtection" value="0.08, 0.3" />
-			<property name="DegradationMax" value="40,600" />
-		</property>
-		<property class="UMA">
-			<property name="Mesh" value="armor_scrapmetal_helmet" />
-			<property name="Overlay" value="gear_swat_helmet" />
-			<property name="Layer" value="2" />
-			<property name="UISlot" value="Headgear, xEyewear" />
-			<property name="ShowHair" value="true" />
-		</property>
-	</item>
-	<item id="1712" name="steelGloves">
-		<property name="Extends" value="ironGloves" />
-		<property name="CustomIcon" value="scrapGloves" />
-		<property name="CustomIconTint" value="696B67" />
-		<property name="Degradation" value="270" param1="true" />
-		<property name="RepairTools" value="forgedSteel" />
-		<property class="Attributes">
-			<property name="ConcussiveProtection" value="0.4, 0.9" />
-			<property name="PunctureProtection" value="0.4, 0.9" />
-			<property name="FireProtection" value="0.08, 0.3" />
-			<property name="RadiationProtection" value="0.08, 0.3" />
-			<property name="DegradationMax" value="40,600" />
-		</property>
-		<property class="UMA">
-			<property name="Mesh" value="armor_scrap_metal_hands" />
-			<property name="Overlay" value="gear_swat_helmet" />
-			<property name="Layer" value="3" />
-		</property>
-	</item>
-  
-  <!--SinMod Hidden Door Remote-->
-  <!--item id="1954" name="Remote">
-    <property name="Degradation" value="125" param1="true" />
-    <property name="DescriptionKey" value="RemoteDesc"/>
-    <property name="Meshfile" value="Items/Crafting/ingotAluminum" />
-    <property name="Material" value="metal" />
+    <property name="Extends" value="ironBoots" />
+    <property name="CustomIcon" value="scrapBoots" />
+    <property name="CustomIconTint" value="696B67" />
+    <property name="Degradation" value="270" param1="true" />
+    <property name="RepairTools" value="forgedSteel" />
+    <property class="Attributes">
+      <property name="ConcussiveProtection" value="0.4, 0.9" />
+      <property name="PunctureProtection" value="0.4, 0.8" />
+      <property name="FireProtection" value="0.05, 0.2" />
+      <property name="RadiationProtection" value="0.05, 0.2" />
+      <property name="DegradationMax" value="40,600" />
+    </property>
+    <property class="UMA">
+      <property name="Mesh" value="armor_scrap_metal_feet" />
+      <property name="Overlay" value="gear_swat_helmet" />
+      <property name="Layer" value="0" />
+      <property name="UISlot" value="Footwear" />
+    </property>
+  </item>
+  <item id="1709" name="steelLegs">
+    <property name="Extends" value="scrapLegArmor" />
+    <property name="CustomIcon" value="scrapLegArmor" />
+    <property name="CustomIconTint" value="696B67" />
+    <property name="Degradation" value="270" param1="true" />
+    <property name="RepairTools" value="forgedSteel" />
+    <property class="Attributes">
+      <property name="ConcussiveProtection" value="0.4, 0.9" />
+      <property name="PunctureProtection" value="0.3, 0.6" />
+      <property name="FireProtection" value="0.05, 0.2" />
+      <property name="RadiationProtection" value="0.05, 0.2" />
+      <property name="DegradationMax" value="40,600" />
+    </property>
+    <property class="UMA">
+      <property name="Overlay0" value="gear_swat_helmet" />
+      <property name="Layer" value="3" />
+      <property name="UISlot" value="LegArmor" />
+    </property>
+  </item>
+  <item id="1710" name="steelChestplate">
+    <property name="Extends" value="scrapChestArmor" />
+    <property name="CustomIcon" value="scrapChestArmor" />
+    <property name="CustomIconTint" value="696B67" />
+    <property name="Degradation" value="270" param1="true" />
+    <property name="RepairTools" value="forgedSteel" />
+    <property class="Attributes">
+      <property name="ConcussiveProtection" value="0.4, 0.9" />
+      <property name="PunctureProtection" value="0.4, 0.6" />
+      <property name="FireProtection" value="0.05, 0.2" />
+      <property name="RadiationProtection" value="0.05, 0.2" />
+      <property name="DegradationMax" value="40,600" />
+    </property>
+    <property class="UMA">
+      <property name="Overlay0" value="gear_swat_helmet" />
+      <property name="Layer" value="2" />
+      <property name="UISlot" value="ChestArmor" />
+    </property>
+  </item>
+  <item id="1711" name="steelHelmet">
+    <property name="Extends" value="scrapBoots" />
+    <property name="CustomIcon" value="scrapHelmet" />
+    <property name="CustomIconTint" value="696B67" />
+    <property name="Meshfile" value="Items/Clothing/Head/swatHelmetPrefab" />
     <property name="HoldType" value="21" />
-    <property name="Stacknumber" value="1" />
+    <property name="Degradation" value="270" param1="true" />
+    <property name="RepairTools" value="forgedSteel" />
+    <property name="CraftingIngredientTime" value="5" />
+    <property name="EquipSlot" value="Head" />
+    <property class="Attributes">
+      <property name="ConcussiveProtection" value="0.4, 0.9" />
+      <property name="PunctureProtection" value="0.4, 0.8" />
+      <property name="FireProtection" value="0.08, 0.3" />
+      <property name="RadiationProtection" value="0.08, 0.3" />
+      <property name="DegradationMax" value="40,600" />
+    </property>
+    <property class="UMA">
+      <property name="Mesh" value="armor_scrapmetal_helmet" />
+      <property name="Overlay" value="gear_swat_helmet" />
+      <property name="Layer" value="2" />
+      <property name="UISlot" value="Headgear, xEyewear" />
+      <property name="ShowHair" value="true" />
+    </property>
+  </item>
+  <item id="1712" name="steelGloves">
+    <property name="Extends" value="ironGloves" />
+    <property name="CustomIcon" value="scrapGloves" />
+    <property name="CustomIconTint" value="696B67" />
+    <property name="Degradation" value="270" param1="true" />
+    <property name="RepairTools" value="forgedSteel" />
+    <property class="Attributes">
+      <property name="ConcussiveProtection" value="0.4, 0.9" />
+      <property name="PunctureProtection" value="0.4, 0.9" />
+      <property name="FireProtection" value="0.08, 0.3" />
+      <property name="RadiationProtection" value="0.08, 0.3" />
+      <property name="DegradationMax" value="40,600" />
+    </property>
+    <property class="UMA">
+      <property name="Mesh" value="armor_scrap_metal_hands" />
+      <property name="Overlay" value="gear_swat_helmet" />
+      <property name="Layer" value="3" />
+    </property>
+  </item>
+
+  <item id="1715" name="steelToeBoots">
+    <property name="DescriptionKey" value="steelToeBootsDesc"/>
+    <property name="CustomIcon" value="militaryBoots" />
+    <property name="CustomIconTint" value="828285" />
+    <property name="Insulation" value="6"/>
+    <property name="Waterproof" value="0.12"/>
+    <property name="Encumbrance" value="0.08"/>
+    <property name="DegradationBreaksAfter" value="false" />
+    <property name="HoldType" value="45" />
+    <property name="Meshfile" value="Items/Misc/sackPrefab" />
+    <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+    <property name="Weight" value="5" />
+    <property name="Material" value="cloth" />
+    <property name="EquipSlot" value="Feet" />
+    <property class="Attributes">
+      <property name="ConcussiveProtection" value="0.15,0.35" />
+      <property name="PunctureProtection" value="0.15,0.35" />
+      <property name="FireProtection" value="0.1,0.2" />
+      <property name="RadiationProtection" value="0.075,0.15" />
+      <property name="DegradationMax" value="200,300" />
+    </property>
+    <property class="UMA">
+      <property name="Mesh" value="armor_kevlar_boots" />
+      <property name="Overlay0" value="armor_kevlar_boots" />
+      <property name="Layer" value="0" />
+      <property name="UISlot" value="Footwear" />
+      <property name="Overlay0Tint" value="51, 51, 51" />
+    </property>
+  </item>
+
+  <!--SinMod Expanded Food-->
+  <item id="1770" name="bowl">
+    <property name="DescriptionKey" value="bowlDesc"/>
+    <property name="Meshfile" value="Items/Crafting/clay_bowl" />
+    <property name="Material" value="organic" />
+    <property name="HoldType" value="3" />
+    <property name="Group" value="Resources" />
+    <property name="Stacknumber" value="50" />
+    <property class="Action0">
+      <property name="Class" value="ExchangeItem" />
+      <property name="Delay" value="1.0" />
+      <property name="Change_item_to" value="bowlWater" />
+      <property name="Focused_blockname_1" value="workingCabinetSink" />
+      <property name="Focused_blockname_2" value="workingGranitSink" />
+      <property name="Sound_start" value="UseActions/bucketfill_water" />
+    </property>
     <property class="Action1">
-      <property name="Class" value="Repair" />
-      <property name="Delay" value="0.4" />
-      <property name="Upgrade_hit_offset" value="-2" />
-      <property name="Sound_start" value="UseActions/repair_block" />
-      <property name="Allowed_upgrade_items" value="Remote" />
+      <property name="Class" value="ExchangeItem" />
+      <property name="Delay" value="1.0" />
+      <property name="Change_item_to" value="bowlMurkyWater" />
+      <property name="Do_block_action" value="deplete1" />
+      <property name="Focused_blockname_1" value="water" />
+      <property name="Focused_blockname_2" value="waterMoving" />
+      <property name="Focused_blockname_3" value="waterStaticBucket" />
+      <property name="Focused_blockname_4" value="waterMovingBucket" />
+      <property name="Focused_blockname_5" value="waterSource8" />
+      <property name="Sound_start" value="UseActions/bucketfill_water" />
     </property>
-    <property name="Group" value="Tools/Traps" />
     <property class="Preview">
-      <property name="Zoom" value="8" />
-      <property name="Pos" value="-0.1,-0.7" />
+      <property name="Zoom" value="30" />
+      <property name="Pos" value="0,-0.03" />
+      <property name="Rot" value="90,45,0" />
     </property>
-  </item-->
+  </item>
+  <item id="1771" name="bowlMurkyWater">
+    <property name="Meshfile" value="Items/Crafting/clay_bowl" />
+    <property name="DescriptionKey" value="bowlMurkyDesc"/>
+    <property name="Material" value="organic" />
+    <property name="HoldType" value="3" />
+    <property name="Weight" value="12" />
+    <property name="Group" value="Food/Cooking" />
+    <property name="Stacknumber" value="50" />
+    <property name="CraftingIngredientTime" value="20" />
+    <property class="Action1">
+      <property name="Class" value="Eat" />
+      <property name="Delay" value="1" />
+      <property name="Use_time" value="..." />
+      <property name="Gain_health" value="0" />
+      <property name="Gain_stamina" value="5" />
+      <property name="Gain_food" value="0" />
+      <property name="Gain_water" value="15" />
+      <property name="Gain_sickness" value="15" />
+      <property name="Gain_wellness" value="-0.1" />
+      <property name="Sound_start" value="UseActions/player_drinking" />
+      <property name="Create_item" value="bowl" />
+      <property name="Buff" value="dysentery" />
+      <property name="Buff_chance" value="0.5" />
+    </property>
+    <property class="Preview">
+      <property name="Zoom" value="30" />
+      <property name="Pos" value="0,-0.03" />
+      <property name="Rot" value="90,45,0" />
+    </property>
+  </item>
+  <item id="1772" name="bowlWater">
+    <property name="DescriptionKey" value="bowlWaterDesc"/>
+    <property name="Meshfile" value="Items/Crafting/clay_bowl" />
+    <property name="DescriptionKey" value="bowlWaterDesc"/>
+    <property name="Material" value="organic" />
+    <property name="HoldType" value="3" />
+    <property name="Weight" value="12" />
+    <property name="Group" value="Food/Cooking" />
+    <property name="CraftingIngredientTime" value="15" />
+    <property name="Stacknumber" value="50" />
+    <property class="Action1">
+      <property name="Class" value="Eat" />
+      <property name="Delay" value="1" />
+      <property name="Use_time" value="..." />
+      <property name="Gain_health" value="0" />
+      <property name="Gain_stamina" value="20" />
+      <property name="Gain_food" value="0" />
+      <property name="Gain_water" value="20" />
+      <property name="Sound_start" value="UseActions/player_drinking" />
+      <property name="Create_item" value="bowl" />
+    </property>
+    <property class="Preview">
+      <property name="Zoom" value="30" />
+      <property name="Pos" value="0,-0.03" />
+      <property name="Rot" value="90,45,0" />
+    </property>
+  </item>
+  <item id="1773" name="blueberryJam">
+    <property name="Meshfile" value="Items/Food/bottled_waterPrefab" />
+    <property name="DescriptionKey" value="blueberryJamDesc"/>
+    <property name="Material" value="glass" />
+    <property name="HoldType" value="3" />
+    <property name="Weight" value="12" />
+    <property name="Group" value="Food/Cooking" />
+    <property name="Stacknumber" value="50" />
+    <property class="Action1">
+      <property name="Class" value="Eat" />
+      <property name="Delay" value="1" />
+      <property name="Use_time" value="..." />
+      <property name="Gain_health" value="0" />
+      <property name="Gain_stamina" value="20" />
+      <property name="Gain_food" value="12" />
+      <property name="Gain_water" value="12" />
+      <property name="Sound_start" value="UseActions/player_eating" />
+      <property name="Create_item" value="emptyJar" />
+    </property>
+    <property class="Preview">
+      <property name="Zoom" value="23" />
+      <property name="Pos" value="0.18,-0.15" />
+      <property name="Rot" value="0,-45,0" />
+    </property>
+    <property name="CraftingSkillGroup" value="Cooking"/>
+  </item>
+  <item id="1774" name="canChunkyMeatStew">
+    <property name="Extends" value="canBeef" />
+    <property name="Meshfile" value="Items/Food/can_beefPrefab" />
+    <property name="DescriptionKey" value="cannedFoodDesc"/>
+    <property class="Action1">
+      <property name="Gain_health" value="5" />
+      <property name="Gain_food" value="50" />
+      <property name="Gain_water" value="0" />
+      <property name="Gain_wellness" value="1" />
+    </property>
+  </item>
+  <item id="1775" name="canMeatStew">
+    <property name="Extends" value="canBeef" />
+    <property name="DescriptionKey" value="cannedFoodDesc"/>
+    <property class="Action1">
+      <property name="Gain_health" value="3" />
+      <property name="Gain_food" value="20" />
+      <property name="Gain_water" value="0" />
+      <property name="Gain_wellness" value="0.4" />
+    </property>
+  </item>
+  <item id="1776" name="canVegetableStew">
+    <property name="Extends" value="canBeef" />
+    <property name="DescriptionKey" value="cannedFoodDesc"/>
+    <property class="Action1">
+      <property name="Gain_health" value="5" />
+      <property name="Gain_food" value="7" />
+      <property name="Gain_water" value="0" />
+    </property>
+  </item>
+  <item id="1777" name="stewChunkyMeat">
+    <property name="Extends" value="meatStew" />
+    <property name="DescriptionKey" value="stewChunkyMeatDesc"/>
+    <property class="Action1">
+      <property name="Gain_health" value="1" />
+      <property name="Gain_food" value="50" />
+      <property name="Gain_wellness" value="1" />
+    </property>
+    <property name="CraftingSkillGroup" value="Cooking"/>
+  </item>
+  <item id="1778" name="bowlFruit">
+    <property name="Meshfile" value="Items/Food/venison_stewPrefab" />
+    <property name="DescriptionKey" value="bowlFruitDesc"/>
+    <property name="Material" value="organic" />
+    <property name="HoldType" value="23" />
+    <property name="Group" value="Food/Cooking" />
+    <property class="Action1">
+      <property name="Class" value="Eat" />
+      <property name="Delay" value="1.0" />
+      <property name="Use_time" value="..." />
+      <property name="Gain_health" value="5" />
+      <property name="Gain_food" value="15" />
+      <property name="Gain_water" value="20" />
+      <property name="Gain_stamina" value="20" />
+      <property name="Gain_wellness" value="2" />
+      <property name="Create_item" value="bowl" />
+      <property name="Sound_start" value="UseActions/player_eating" />
+    </property>
+    <property name="Group" value="Food/Cooking" />
+    <property class="Preview">
+      <property name="Zoom" value="30" />
+      <property name="Pos" value="0,-0.03" />
+      <property name="Rot" value="90,45,0" />
+    </property>
+    <property name="CraftingSkillGroup" value="Cooking"/>
+  </item>
+  <item id="1779" name="cornbreadJam">
+    <property name="Extends" value="cornBread" />
+    <property name="DescriptionKey" value="cornbreadJamDesc"/>
+    <property class="Action1">
+      <property name="Gain_food" value="6" />
+      <property name="Gain_wellness" value="0.5" />
+    </property>
+    <property name="CraftingSkillGroup" value="Cooking"/>
+  </item>
+  <item id="1780" name="soupChunkyBeef">
+    <property name="CraftingIngredientTime" value="15" />
+    <property name="Meshfile" value="Items/Food/venison_stewPrefab" />
+    <property name="DescriptionKey" value="soupDesc"/>
+    <property name="Material" value="organic" />
+    <property name="HoldType" value="23" />
+    <property name="Group" value="Food/Cooking" />
+    <property name="Stacknumber" value="50" />
+    <property class="Action1">
+      <property name="Class" value="Eat" />
+      <property name="Delay" value="1.0" />
+      <property name="Use_time" value="..." />
+      <property name="Gain_health" value="20" />
+      <property name="Gain_food" value="30" />
+      <property name="Gain_water" value="3" />
+      <property name="Create_item" value="bowl" />
+      <property name="Sound_start" value="UseActions/player_drinking" />
+    </property>
+    <property name="Smell" value="largeSmell" />
+    <property name="Group" value="Food/Cooking" />
+    <property class="Preview">
+      <property name="Zoom" value="30" />
+      <property name="Pos" value="0,-0.03" />
+      <property name="Rot" value="90,45,0" />
+    </property>
+    <property name="CraftingSkillGroup" value="Cooking"/>
+  </item>
+  <item id="1781" name="soupChicken">
+    <property name="Extends" value="soupChunkyBeef" />
+  </item>
+  <item id="1782" name="soupLamb">
+    <property name="Extends" value="soupChunkyBeef" />
+  </item>
+  <item id="1783" name="bowlChili">
+    <property name="Extends" value="soupChunkyBeef" />
+    <property class="Action1">
+      <property name="Gain_health" value="10" />
+      <property name="Gain_food" value="20" />
+      <property name="Gain_water" value="-10" />
+      <property name="Gain_gas" value="30" />
+    </property>
+  </item>
+  <item id="1784" name="bowlMiso">
+    <property name="Extends" value="soupChunkyBeef" />
+    <property class="Action1">
+      <property name="Gain_health" value="2" />
+      <property name="Gain_food" value="10" />
+      <property name="Gain_water" value="20" />
+    </property>
+  </item>
+  <item id="1785" name="soupPea">
+    <property name="Extends" value="soupChunkyBeef" />
+    <property class="Action1">
+      <property name="Gain_health" value="0" />
+      <property name="Gain_food" value="10" />
+    </property>
+  </item>
+  <item id="1786" name="bowlPasta">
+    <property name="Extends" value="soupChunkyBeef" />
+    <property class="Action1">
+      <property name="Gain_health" value="0" />
+      <property name="Gain_food" value="14" />
+      <property name="Gain_water" value="0" />
+    </property>
+  </item>
+  <item id="1787" name="bowlSoup">
+    <property name="Extends" value="soupChunkyBeef" />
+    <property class="Action1">
+      <property name="Gain_health" value="2" />
+      <property name="Gain_food" value="10" />
+      <property name="Gain_water" value="20" />
+    </property>
+  </item>
+  <item id="1788" name="bowlStock">
+    <property name="Extends" value="soupChunkyBeef" />
+    <property class="Action1">
+      <property name="Gain_health" value="2" />
+      <property name="Gain_food" value="10" />
+      <property name="Gain_water" value="20" />
+    </property>
+  </item>
+  <item id="1789" name="creamedCorn">
+    <property name="CraftingIngredientTime" value="15" />
+    <property name="Meshfile" value="Items/Food/venison_stewPrefab" />
+    <property name="Material" value="organic" />
+    <property name="HoldType" value="23" />
+    <property name="Group" value="Food/Cooking" />
+    <property name="Stacknumber" value="50" />
+    <property class="Action1">
+      <property name="Class" value="Eat" />
+      <property name="Delay" value="1.0" />
+      <property name="Use_time" value="..." />
+      <property name="Gain_health" value="5" />
+      <property name="Gain_food" value="6" />
+      <property name="Gain_water" value="20" />
+      <property name="Gain_stamina" value="4" />
+      <property name="Gain_wellness" value="0.16" />
+      <property name="Create_item" value="bowl" />
+      <property name="Sound_start" value="UseActions/player_drinking" />
+    </property>
+    <property name="Smell" value="smallSmell" />
+    <property name="Group" value="Food/Cooking" />
+    <property class="Preview">
+      <property name="Zoom" value="30" />
+      <property name="Pos" value="0,-0.03" />
+      <property name="Rot" value="90,45,0" />
+    </property>
+    <property name="CraftingSkillGroup" value="Cooking"/>
+  </item>
+  <item id="1790" name="soupMushroom">
+    <property name="CraftingIngredientTime" value="15" />
+    <property name="Meshfile" value="Items/Food/venison_stewPrefab" />
+    <property name="Material" value="organic" />
+    <property name="HoldType" value="23" />
+    <property name="Group" value="Food/Cooking" />
+    <property name="Stacknumber" value="50" />
+    <property class="Action1">
+      <property name="Class" value="Eat" />
+      <property name="Delay" value="1.0" />
+      <property name="Use_time" value="..." />
+      <property name="Gain_food" value="15" />
+      <property name="Gain_water" value="20" />
+      <property name="Gain_wellness" value="0.5" />
+      <property name="Create_item" value="bowl" />
+      <property name="Sound_start" value="UseActions/player_drinking" />
+    </property>
+    <property name="Smell" value="smallSmell" />
+    <property name="Group" value="Food/Cooking" />
+    <property class="Preview">
+      <property name="Zoom" value="30" />
+      <property name="Pos" value="0,-0.03" />
+      <property name="Rot" value="90,45,0" />
+    </property>
+    <property name="CraftingSkillGroup" value="Cooking"/>
+  </item>
+  <item id="1791" name="Mead">
+    <property name="Extends" value="beer" />
+    <property name="DescriptionKey" value="MeadDesc"/>
+    <property class="Action1">
+      <property name="Gain_stamina" value="25" />
+      <property name="Gain_wellness" value="0.2" />
+    </property>
+  </item>
+  <item id="1792" name="meadBlueberry">
+    <property name="Extends" value="beer" />
+    <property name="DescriptionKey" value="meadBlueberryDesc"/>
+    <property class="Action1">
+      <property name="Gain_stamina" value="26" />
+      <property name="Gain_wellness" value="0.3" />
+      <property name="Gain_water" value="5" />
+    </property>
+  </item>
+  <item id="1793" name="warmsoupChunkyBeef">
+    <property name="Extends" value="soupChunkyBeef" />
+    <property name="DescriptionKey" value="warmBowlDesc"/>
+    <property class="Action1">
+      <property name="Gain_health" value="23" />
+      <property name="Gain_food" value="35" />
+      <property name="Gain_water" value="6" />
+      <property name="Gain_wellness" value="1" />
+      <property name="Buff" value="stewWarming" />
+    </property>
+    <property name="Smell" value="exLargeSmell" />
+  </item>
+  <item id="1794" name="warmsoupChicken">
+    <property name="Extends" value="soupChunkyBeef" />
+    <property name="DescriptionKey" value="warmBowlDesc"/>
+    <property class="Action1">
+      <property name="Gain_health" value="25" />
+      <property name="Gain_food" value="33" />
+      <property name="Gain_water" value="3" />
+      <property name="Gain_wellness" value="1" />
+      <property name="Buff" value="stewWarming" />
+    </property>
+    <property name="Smell" value="exLargeSmell" />
+  </item>
+  <item id="1795" name="warmsoupLamb">
+    <property name="Extends" value="soupChunkyBeef" />
+    <property name="DescriptionKey" value="warmBowlDesc"/>
+    <property class="Action1">
+      <property name="Gain_health" value="13" />
+      <property name="Gain_food" value="33" />
+      <property name="Gain_water" value="5" />
+      <property name="Gain_wellness" value="1" />
+      <property name="Buff" value="stewWarming" />
+    </property>
+    <property name="Smell" value="exLargeSmell" />
+  </item>
+  <item id="1796" name="warmbowlChili">
+    <property name="Extends" value="soupChunkyBeef" />
+    <property name="DescriptionKey" value="warmBowlDesc"/>
+    <property class="Action1">
+      <property name="Gain_health" value="13" />
+      <property name="Gain_food" value="23" />
+      <property name="Gain_water" value="-13" />
+      <property name="Gain_gas" value="33" />
+      <property name="Gain_wellness" value="1" />
+      <property name="Buff" value="stewWarming" />
+    </property>
+    <property name="Smell" value="exLargeSmell" />
+  </item>
+  <item id="1797" name="warmbowlMiso">
+    <property name="Extends" value="soupChunkyBeef" />
+    <property name="DescriptionKey" value="warmBowlDesc"/>
+    <property class="Action1">
+      <property name="Gain_health" value="2" />
+      <property name="Gain_food" value="13" />
+      <property name="Gain_water" value="20" />
+      <property name="Buff" value="stewWarming" />
+    </property>
+    <property name="Smell" value="largeSmell" />
+  </item>
+  <item id="1798" name="warmsoupPea">
+    <property name="Extends" value="soupChunkyBeef" />
+    <property name="DescriptionKey" value="warmBowlDesc"/>
+    <property class="Action1">
+      <property name="Gain_health" value="0" />
+      <property name="Gain_food" value="13" />
+      <property name="Gain_wellness" value="1" />
+      <property name="Buff" value="stewWarming" />
+    </property>
+    <property name="Smell" value="smallSmell" />
+  </item>
+  <item id="1799" name="warmbowlPasta">
+    <property name="Extends" value="soupChunkyBeef" />
+    <property name="DescriptionKey" value="warmBowlDesc"/>
+    <property class="Action1">
+      <property name="Gain_health" value="0" />
+      <property name="Gain_food" value="18" />
+      <property name="Gain_water" value="0" />
+      <property name="Gain_wellness" value="1" />
+      <property name="Buff" value="stewWarming" />
+    </property>
+    <property name="Smell" value="exLargeSmell" />
+  </item>
+  <item id="1800" name="warmbowlSoup">
+    <property name="Extends" value="soupChunkyBeef" />
+    <property name="DescriptionKey" value="warmBowlDesc"/>
+    <property class="Action1">
+      <property name="Gain_health" value="5" />
+      <property name="Gain_food" value="13" />
+      <property name="Gain_water" value="23" />
+      <property name="Gain_wellness" value="1" />
+      <property name="Buff" value="stewWarming" />
+    </property>
+    <property name="Smell" value="exLargeSmell" />
+  </item>
+  <item id="1801" name="warmbowlStock">
+    <property name="Extends" value="soupChunkyBeef" />
+    <property name="DescriptionKey" value="warmBowlDesc"/>
+    <property class="Action1">
+      <property name="Gain_health" value="5" />
+      <property name="Gain_food" value="13" />
+      <property name="Gain_water" value="23" />
+      <property name="Gain_wellness" value="1" />
+      <property name="Buff" value="stewWarming" />
+    </property>
+    <property name="Smell" value="exLargeSmell" />
+  </item>
+  <item id="1802" name="honeyHam">
+    <property name="Extends" value="boiledMeat" />
+    <property class="Action1">
+      <property name="Gain_food" value="22" />
+      <property name="Gain_wellness" value="1" />
+    </property>
+    <property name="Smell" value="mediumSmell" />
+  </item>
+  <item id="1803" name="scrambledEggs">
+    <property name="CraftingIngredientTime" value="3" />
+    <property name="Meshfile" value="Items/Misc/parcelPrefab" />
+    <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+    <property name="Material" value="organic" />
+    <property name="HoldType" value="31" />
+    <property name="Stacknumber" value="50" />
+    <property class="Action1">
+      <property name="Class" value="Eat" />
+      <property name="Delay" value="1.0" />
+      <property name="Use_time" value="..." />
+      <property name="Gain_health" value="1" />
+      <property name="Gain_food" value="10" />
+      <property name="Gain_water" value="0" />
+      <property name="Buff" value="eatFood_3_Trigger" />
+      <property name="Gain_wellness" value="0.4" />
+      <property name="Sound_start" value="UseActions/player_eating" />
+    </property>
+    <property name="Group" value="Food/Cooking" />
+    <property name="CraftingSkillGroup" value="Cooking"/>
+  </item>
+  <item id="1804" name="Omelet">
+    <property name="Meshfile" value="Items/Food/blueberry_pie" />
+    <property name="Material" value="organic" />
+    <property name="HoldType" value="23" />
+    <property name="Stacknumber" value="50" />
+    <property class="Action1">
+      <property name="Class" value="Eat" />
+      <property name="Delay" value="1.0" />
+      <property name="Use_time" value="..." />
+      <property name="Gain_health" value="2" />
+      <property name="Gain_food" value="23" />
+      <property name="Gain_water" value="1" />
+      <property name="Buff" value="eatFood_3_Trigger" />
+      <property name="Gain_wellness" value="0.4" />
+      <property name="Sound_start" value="UseActions/player_eating" />
+    </property>
+    <property name="Group" value="Food/Cooking" />
+    <property name="Smell" value="smallSmell" />
+    <property name="CraftingSkillGroup" value="Cooking"/>
+  </item>
+  <item id="1805" name="drinkEnergy">
+    <property name="Extends" value="foodHoney" />
+    <property name="DescriptionKey" value="drinkEnergyDesc"/>
+    <property class="Action0">
+      <property name="Class" value="ExchangeItem" />
+      <property name="Delay" value="1.0" />
+      <property name="Change_item_to" value="colddrinkEnergy" />
+      <property name="Focused_blockname_1" value="cntFridgeTop" />
+      <property name="Focused_blockname_2" value="cntFridgeBottom" />
+      <property name="Focused_blockname_6" value="cntBeerCooler" />
+      <property name="Focused_blockname_7" value="cntCooler" />
+      <property name="Focused_blockname_8" value="cntFridge" />
+      <property name="Sound_start" value="UseActions/bucketfill_water" />
+    </property>
+    <property class="Action1">
+      <property name="Class" value="Eat" />
+      <property name="Delay" value="1" />
+      <property name="Use_time" value="..." />
+      <property name="Gain_health" value="3" />
+      <property name="Gain_food" value="0" />
+      <property name="Gain_water" value="5" />
+      <property name="Gain_stamina" value="40" />
+      <property name="Gain_wellness" value="0.7" />
+      <property name="Gain_water" value="25" />
+      <property name="Buff" value="energyDrink" />
+      <property name="Debuff" value="dysentery" />
+    </property>
+  </item>
+  <item id="1806" name="baconEggSandwich">
+    <property name="Meshfile" value="Items/Misc/parcelPrefab" />
+    <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+    <property name="Material" value="organic" />
+    <property name="HoldType" value="21" />
+    <property name="Group" value="Food/Cooking" />
+    <property name="Stacknumber" value="50" />
+    <property class="Action1">
+      <property name="Class" value="Eat" />
+      <property name="Delay" value="1.0" />
+      <property name="Gain_health" value="3" />
+      <property name="Gain_food" value="25" />
+      <property name="Gain_wellness" value="1.8" />
+      <property name="Sound_start" value="UseActions/player_eating" />
+    </property>
+    <property name="Group" value="Food/Cooking" />
+    <property class="Preview">
+      <property name="Zoom" value="25" />
+      <property name="Pos" value="0,-0.05" />
+      <property name="Rot" value="90,45,0" />
+    </property>
+    <property name="CraftingSkillGroup" value="Cooking"/>
+  </item>
+  <item id="1807" name="Apple">
+    <property name="CustomIcon" value="apple" />
+    <property name="Meshfile" value="Items/Misc/parcel" />
+    <property name="Material" value="organic" />
+    <property name="HoldType" value="15" />
+    <property name="CraftingIngredientTime" value="5" />
+    <property name="Stacknumber" value="50" />
+    <property class="Action1">
+      <property name="Class" value="Eat" />
+      <property name="Delay" value="1.0" />
+      <property name="Use_time" value="..." />
+      <property name="Gain_health" value="0" />
+      <property name="Gain_food" value="3" />
+      <property name="Gain_water" value="0" />
+      <property name="Sound_start" value="UseActions/player_eating" />
+    </property>
+    <property name="Group" value="Food/Cooking" />
+  </item>
+  <item id="1808" name="applePie">
+    <property name="Extends" value="blueberryPie" />
+    <property class="Action1">
+      <property name="Gain_food" value="15" />
+    </property>
+    <property name="CraftingSkillGroup" value="Cooking"/>
+  </item>
+  <item id="1809" name="appleCider">
+    <property name="Extends" value="beer" />
+    <property name="DescriptionKey" value="appleCiderDesc"/>
+    <property class="Action1">
+      <property name="Gain_food" value="0" />
+      <property name="Gain_water" value="5" />
+      <property name="Gain_stamina" value="20" />
+      <property name="Gain_wellness" value="0" />
+      <property name="Create_item" value="emptyJar" />
+      <property name="Buff" value="DrinkBeer" />
+    </property>
+  </item>
+  <item id="1810" name="grillSteak">
+    <property name="Extends" value="grilledMeat" />
+    <property class="Action1">
+      <property name="Gain_food" value="23" />
+    </property>
+    <property name="Smell" value="exLargeSmell" />
+  </item>
+  <item id="1811" name="Bread">
+    <property name="Meshfile" value="Items/Misc/parcelPrefab" />
+    <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+    <property name="Material" value="organic" />
+    <property name="HoldType" value="15" />
+    <property name="Stacknumber" value="50" />
+    <!-- STK food -->
+    <property class="Action1">
+      <property name="Class" value="Eat" />
+      <property name="Delay" value="1.0" />
+      <property name="Use_time" value="..." />
+      <property name="Gain_health" value="0" />
+      <property name="Gain_food" value="5" />
+      <property name="Gain_water" value="0" />
+      <property name="Gain_wellness" value="0.4" />
+      <property name="Sound_start" value="UseActions/player_eating" />
+    </property>
+    <property name="Group" value="Food/Cooking" />
+    <property name="CraftingSkillGroup" value="Cooking"/>
+  </item>
+  <item id="1812" name="Hamburger">
+    <property name="Meshfile" value="Items/Misc/parcelPrefab" />
+    <property name="Material" value="organic" />
+    <property name="HoldType" value="31" />
+    <property name="Stacknumber" value="50" />
+    <!-- STK food -->
+    <property class="Action1">
+      <property name="Class" value="Eat" />
+      <property name="Delay" value="2.1" />
+      <property name="Use_time" value="..." />
+      <property name="Gain_health" value="2" />
+      <property name="Gain_food" value="20" />
+      <property name="Gain_water" value="-1" />
+      <property name="Gain_wellness" value="0.5" />
+      <property name="Sound_start" value="UseActions/player_eating" />
+    </property>
+    <property name="Smell" value="exLargeSmell" />
+    <property name="Group" value="Food/Cooking" />
+    <property name="CraftingSkillGroup" value="Cooking"/>
+  </item>
+  <item id="1813" name="Grapes">
+    <property name="Meshfile" value="Items/Food/blueberriesPrefab" />
+    <property name="Material" value="organic" />
+    <property name="HoldType" value="23" />
+    <property name="Stacknumber" value="500" />
+    <!-- STK resource -->
+    <property name="CraftingIngredientTime" value="5" />
+    <property class="Action1">
+      <property name="Class" value="Eat" />
+      <property name="Delay" value="1.0" />
+      <property name="Use_time" value="..." />
+      <property name="Gain_health" value="0" />
+      <property name="Gain_food" value="1" />
+      <property name="Gain_water" value="1" />
+      <property name="Gain_wellness" value="0" />
+      <property name="Sound_start" value="UseActions/player_eating" />
+    </property>
+    <property name="DropScale" value="4" />
+    <property name="Group" value="Food/Cooking" />
+  </item>
+  <item id="1814" name="assortedVegetables">
+    <property name="Meshfile" value="Items/Food/blueberriesPrefab" />
+    <property name="Material" value="assortedVegetables" />
+    <property name="HoldType" value="23" />
+    <property name="Stacknumber" value="500" />
+    <!-- STK resource -->
+    <property name="CraftingIngredientTime" value="5" />
+    <property name="Weight" value="5" />
+    <property class="Action1">
+      <property name="Class" value="Eat" />
+      <property name="Delay" value="1.0" />
+      <property name="Use_time" value="..." />
+      <property name="Gain_health" value="0" />
+      <property name="Gain_food" value="1" />
+      <property name="Gain_water" value="1" />
+      <property name="Gain_wellness" value="0" />
+      <property name="Sound_start" value="UseActions/player_eating" />
+    </property>
+    <property name="DropScale" value="4" />
+    <property name="Group" value="Food/Cooking" />
+    <property name="CraftingSkillGroup" value="Cooking"/>
+  </item>
+  <item id="1815" name="biscuit">
+    <property name="Extends" value="cornBread" />
+    <property class="Action1">
+      <property name="Gain_health" value="1" />
+      <property name="Gain_food" value="10" />
+    </property>
+  </item>
+  <item id="1816" name="mealBreakfast">
+    <property name="Meshfile" value="Items/Misc/parcelPrefab" />
+    <property name="Material" value="organic" />
+    <property name="HoldType" value="31" />
+    <property name="Stacknumber" value="50" />
+    <!-- STK food -->
+    <property class="Action1">
+      <property name="Class" value="Eat" />
+      <property name="Delay" value="1.0" />
+      <property name="Use_time" value="..." />
+      <property name="Gain_health" value="10" />
+      <property name="Gain_food" value="38" />
+      <property name="Gain_water" value="5" />
+      <property name="Gain_wellness" value="2" />
+      <property name="Sound_start" value="UseActions/player_eating" />
+      <property name="Create_item" value="dinnerPlate" />
+    </property>
+    <property name="Smell" value="exLargeSmell" />
+    <property name="Group" value="Food/Cooking" />
+    <property name="CraftingSkillGroup" value="Cooking"/>
+  </item>
+  <item id="1817" name="mealDinner">
+    <property name="Meshfile" value="Items/Misc/parcelPrefab" />
+    <property name="Material" value="organic" />
+    <property name="HoldType" value="31" />
+    <property name="Stacknumber" value="50" />
+    <!-- STK food -->
+    <property class="Action1">
+      <property name="Class" value="Eat" />
+      <property name="Delay" value="1.0" />
+      <property name="Use_time" value="..." />
+      <property name="Gain_health" value="10" />
+      <property name="Gain_food" value="40" />
+      <property name="Gain_water" value="5" />
+      <property name="Gain_wellness" value="2" />
+      <property name="Sound_start" value="UseActions/player_eating" />
+      <property name="Create_item" value="dinnerPlate" />
+    </property>
+    <property name="Smell" value="exLargeSmell" />
+    <property name="Group" value="Food/Cooking" />
+    <property name="CraftingSkillGroup" value="Cooking"/>
+  </item>
+  <item id="1818" name="Wheat">
+    <property name="Meshfile" value="Items/Misc/parcel" />
+    <property name="Material" value="organic" />
+    <property name="HoldType" value="15" />
+    <property name="CraftingIngredientTime" value="5" />
+    <property name="Stacknumber" value="500" />
+    <!-- STK food -->
+    <property class="Action1">
+      <property name="Class" value="Eat" />
+      <property name="Delay" value="1.0" />
+      <property name="Use_time" value="..." />
+      <property name="Gain_health" value="0" />
+      <property name="Gain_food" value="3" />
+      <property name="Gain_water" value="0" />
+      <property name="Sound_start" value="UseActions/player_eating" />
+    </property>
+    <property name="Group" value="Food/Cooking" />
+  </item>
+  <item id="1822" name="coldbottledWater">
+    <property name="CustomIcon" value="bottledWater" />
+    <property name="Extends" value="bottledWater" />
+    <property class="Action0">
+      <property name="Class" value="ExchangeItem" />
+      <property name="Delay" value="1.0" />
+      <property name="Change_item_to" value="bottledWater" />
+      <property name="Focused_blockname_1" value="campfire" />
+      <property name="Focused_blockname_2" value="campfire" />
+      <property name="Focused_blockname_3" value="campfire" />
+      <property name="Focused_blockname_4" value="campfire" />
+      <property name="Focused_blockname_5" value="campfire" />
+      <property name="Focused_blockname_6" value="campfire" />
+      <property name="Focused_blockname_7" value="campfire" />
+      <property name="Focused_blockname_8" value="campfire" />
+      <property name="Focused_blockname_9" value="campfire" />
+      <property name="Sound_start" value="UseActions/bucketfill_water" />
+    </property>
+    <property class="Action1">
+      <property name="Buff" value="yuccaJuiceCooling" />
+    </property>
+    <property name="DescriptionKey" value="coldDrinkDesc"/>
+  </item>
+  <item id="1823" name="coldgoldenRodTea">
+    <property name="CustomIcon" value="goldenRodTea" />
+    <property name="Extends" value="goldenRodTea" />
+    <property class="Action1">
+      <property name="Buff" value="yuccaJuiceCooling" />
+    </property>
+    <property name="DescriptionKey" value="coldDrinkDesc"/>
+  </item>
+  <item id="1824" name="coldredTea">
+    <property name="CustomIcon" value="redTea" />
+    <property name="Extends" value="redTea" />
+    <property class="Action1">
+      <property name="Buff" value="yuccaJuiceCooling" />
+    </property>
+    <property name="DescriptionKey" value="coldDrinkDesc"/>
+  </item>
+  <item id="1825" name="coldcoffee">
+    <property name="CustomIcon" value="coffee" />
+    <property name="Extends" value="coffee" />
+    <property class="Action1">
+      <property name="Buff" value="yuccaJuiceCooling" />
+    </property>
+    <property name="DescriptionKey" value="coldDrinkDesc"/>
+  </item>
+  <item id="1826" name="colddrinkEnergy">
+    <property name="CustomIcon" value="drinkEnergy" />
+    <property name="Extends" value="drinkEnergy" />
+    <property class="Action1">
+      <property name="Buff" value="yuccaJuiceCooling" />
+    </property>
+    <property name="DescriptionKey" value="coldDrinkDesc"/>
+  </item>
+  <item id="1827" name="waterPurified">
+    <property name="Meshfile" value="Items/Food/honeyPrefab" />
+    <property name="DescriptionKey" value="waterPurifiedDesc"/>
+    <property name="Material" value="glass" />
+    <property name="HoldType" value="3" />
+    <property name="Group" value="Food/Cooking" />
+    <property name="Stacknumber" value="50" />
+    <!-- STK food -->
+    <property class="Action0">
+      <property name="Class" value="ExchangeItem" />
+      <property name="Delay" value="1.0" />
+      <property name="Change_item_to" value="coldwaterPurified" />
+      <property name="Focused_blockname_1" value="cntFridgeTop" />
+      <property name="Focused_blockname_2" value="cntFridgeBottom" />
+      <property name="Focused_blockname_6" value="cntBeerCooler" />
+      <property name="Focused_blockname_7" value="cntCooler" />
+      <property name="Focused_blockname_8" value="cntFridge" />
+      <property name="Sound_start" value="UseActions/bucketfill_water" />
+    </property>
+    <property class="Action1">
+      <property name="Class" value="Eat" />
+      <property name="Delay" value="1" />
+      <property name="Use_time" value="..." />
+      <property name="Gain_health" value="5" />
+      <property name="Gain_stamina" value="30" />
+      <property name="Gain_wellness" value="0.3" />
+      <property name="Gain_water" value="20" />
+      <property name="Sound_start" value="UseActions/player_drinking" />
+      <property name="Create_item" value="emptyJar" />
+      <property name="Debuff" value="dysentery" />
+    </property>
+    <property class="Preview">
+      <property name="Zoom" value="23" />
+      <property name="Pos" value="0.18,-0.15" />
+      <property name="Rot" value="0,-45,0" />
+    </property>
+  </item>
+  <item id="1828" name="coldwaterPurified">
+    <property name="CustomIcon" value="waterPurified" />
+    <property name="Extends" value="waterPurified" />
+    <property class="Action1">
+      <property name="Buff" value="yuccaJuiceCooling" />
+    </property>
+    <property name="DescriptionKey" value="coldDrinkDesc"/>
+  </item>
+  <item id="1839" name="flour">
+    <property name="DescriptionKey" value="flourDesc"/>
+    <property name="Meshfile" value="Items/Misc/sackPrefab" />
+    <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+    <property name="Material" value="organic" />
+    <property name="HoldType" value="3" />
+    <property name="Stacknumber" value="500" />
+    <property class="Preview">
+      <property name="Zoom" value="28" />
+      <property name="Pos" value="0,-0.05" />
+      <property name="Rot" value="90,45,0" />
+    </property>
+    <property name="Group" value="Resources" />
+    <property name="CraftingSkillGroup" value="Cooking"/>
+  </item>
+  <item id="1840" name="dinnerPlate">
+    <property name="DescriptionKey" value="dinnerPlateDesc"/>
+    <property name="Meshfile" value="Items/Misc/sackPrefab" />
+    <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+    <property name="Material" value="organic" />
+    <property name="HoldType" value="3" />
+    <property name="Stacknumber" value="50" />
+    <property class="Preview">
+      <property name="Zoom" value="28" />
+      <property name="Pos" value="0,-0.05" />
+      <property name="Rot" value="90,45,0" />
+    </property>
+    <property name="Group" value="Resources" />
+  </item>
+  <item id="1841" name="biscuitJam">
+    <property name="Extends" value="cornBread" />
+    <property class="Action1">
+      <property name="Gain_health" value="1" />
+      <property name="Gain_food" value="13" />
+    </property>
+  </item>
+  <item id="1842" name="steakSandwich">
+    <property name="Meshfile" value="Items/Misc/parcelPrefab" />
+    <property name="Material" value="organic" />
+    <property name="HoldType" value="31" />
+    <property name="Stacknumber" value="50" />
+    <!-- STK food -->
+    <property class="Action1">
+      <property name="Class" value="Eat" />
+      <property name="Delay" value="2.1" />
+      <property name="Use_time" value="..." />
+      <property name="Gain_health" value="2" />
+      <property name="Gain_food" value="25" />
+      <property name="Gain_water" value="-1" />
+      <property name="Gain_wellness" value="0.5" />
+      <property name="Sound_start" value="UseActions/player_eating" />
+    </property>
+    <property name="Smell" value="exLargeSmell" />
+    <property name="Group" value="Food/Cooking" />
+    <property name="CraftingSkillGroup" value="Cooking"/>
+  </item>
+  <item id="1843" name="militaryRation">
+    <property name="DescriptionKey" value="militaryRationDesc"/>
+    <property name="Meshfile" value="Items/Misc/parcelPrefab" />
+    <property name="Material" value="organic" />
+    <property name="HoldType" value="31" />
+    <property name="Stacknumber" value="50" />
+    <!-- STK food -->
+    <property class="Action1">
+      <property name="Class" value="Eat" />
+      <property name="Delay" value="2.1" />
+      <property name="Use_time" value="..." />
+      <property name="Gain_health" value="2" />
+      <property name="Gain_food" value="25" />
+      <property name="Gain_water" value="10" />
+      <property name="Gain_wellness" value="0.5" />
+      <property name="Sound_start" value="UseActions/player_eating" />
+    </property>
+    <property name="Group" value="Food/Cooking" />
+  </item>
+  <item id="1845" name="tunaSandwich">
+    <property name="Meshfile" value="Items/Misc/parcelPrefab" />
+    <property name="Material" value="organic" />
+    <property name="HoldType" value="31" />
+    <property name="Stacknumber" value="50" />
+    <!-- STK food -->
+    <property class="Action1">
+      <property name="Class" value="Eat" />
+      <property name="Delay" value="2.1" />
+      <property name="Use_time" value="..." />
+      <property name="Gain_health" value="2" />
+      <property name="Gain_food" value="17" />
+      <property name="Gain_water" value="0" />
+      <property name="Gain_wellness" value="0.4" />
+      <property name="Sound_start" value="UseActions/player_eating" />
+    </property>
+    <property name="Group" value="Food/Cooking" />
+    <property name="CraftingSkillGroup" value="Cooking"/>
+  </item>
+  <item id="1846" name="mysteryMeat">
+    <property name="Extends" value="rottingFlesh" />
+    <property name="DescriptionKey" value="mysteryMeatDesc"/>
+    <property name="CustomIcon" value="rottingFlesh" />
+    <property class="Action1">
+      <property name="Gain_health" value="-5" />
+      <property name="Gain_food" value="20" />
+      <property name="Gain_water" value="-5" />
+      <property name="Gain_stamina" value="-10" />
+      <property name="Gain_sickness" value="20" />
+      <property name="Buff" value="peculiarTaste" />
+      <property name="Buff_chance" value="1" />
+    </property>
+  </item>
+  <item id="1847" name="bagChips">
+    <property name="Extends" value="cornBread" />
+    <property name="DescriptionKey" value="bagChipsDesc"/>
+    <property name="Meshfile" value="Items/Misc/parcelPrefab" />
+    <property class="Action1">
+      <property name="Gain_food" value="5" />
+      <property name="Gain_water" value="-5" />
+      <property name="Gain_wellness" value="0" />
+    </property>
+  </item>
+  <item id="1848" name="bagChipsHot">
+    <property name="Extends" value="cornBread" />
+    <property name="DescriptionKey" value="bagChipsHotDesc"/>
+    <property name="Meshfile" value="Items/Misc/parcelPrefab" />
+    <property class="Action1">
+      <property name="Gain_food" value="5" />
+      <property name="Gain_water" value="-10" />
+      <property name="Gain_wellness" value="0" />
+    </property>
+  </item>
+  <item id="1849" name="candybar">
+    <property name="Extends" value="cornBread" />
+    <property name="DescriptionKey" value="candybarDesc"/>
+    <property name="Meshfile" value="Items/Misc/parcelPrefab" />
+    <property class="Action1">
+      <property name="Gain_food" value="5" />
+      <property name="Gain_water" value="0" />
+      <property name="Gain_wellness" value="0" />
+    </property>
+  </item>
+  <item id="1850" name="ramenNoodles">
+    <property name="Extends" value="cornBread" />
+    <property name="DescriptionKey" value="ramenNoodlesDesc"/>
+    <property name="Meshfile" value="Items/Misc/parcelPrefab" />
+    <property class="Action1">
+      <property name="Gain_food" value="5" />
+      <property name="Gain_water" value="-5" />
+      <property name="Gain_wellness" value="0" />
+    </property>
+  </item>
+  <item id="1851" name="bowlRamenNoodles">
+    <property name="Meshfile" value="Items/Food/venison_stewPrefab" />
+    <property name="DescriptionKey" value="bowlRamenNoodles"/>
+    <property name="Material" value="organic" />
+    <property name="HoldType" value="23" />
+    <property name="Group" value="Food/Cooking" />
+    <property name="Stacknumber" value="50" />
+    <property class="Action1">
+      <property name="Class" value="Eat" />
+      <property name="Delay" value="1.0" />
+      <property name="Use_time" value="..." />
+      <property name="Gain_health" value="0" />
+      <property name="Gain_food" value="14" />
+      <property name="Gain_water" value="3" />
+      <property name="Create_item" value="bowl" />
+      <property name="Sound_start" value="UseActions/player_drinking" />
+    </property>
+    <property name="Group" value="Food/Cooking" />
+    <property class="Preview">
+      <property name="Zoom" value="30" />
+      <property name="Pos" value="0,-0.03" />
+      <property name="Rot" value="90,45,0" />
+    </property>
+    <property name="CraftingSkillGroup" value="Cooking"/>
+  </item>
+  <item id="1854" name="canPetfood">
+    <property name="Extends" value="canBeef" />
+    <property name="DescriptionKey" value="canPetfoodDesc"/>
+    <property name="Meshfile" value="Items/Food/can_dogfoodPrefab" />
+    <property class="Action1">
+      <property name="Class" value="Eat" />
+      <property name="Delay" value="2.0" />
+      <property name="Use_time" value="..." />
+      <property name="Gain_health" value="2" />
+      <property name="Gain_food" value="5" />
+      <property name="Gain_water" value="-2" />
+      <property name="Gain_gas" value="0" />
+      <property name="Sound_start" value="UseActions/player_eating" />
+      <property name="Create_item" value="canEmpty" />
+    </property>
+    <property name="Group" value="Food/Cooking" />
+  </item>
+
+  <item id="1855" name="dough">
+    <property name="Meshfile" value="Items/Misc/parcelPrefab" />
+    <property name="CustomIcon" value="dough" />
+    <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+    <property name="Material" value="organic" />
+    <property name="HoldType" value="15" />
+    <property name="Stacknumber" value="50" />
+    <!-- STK food -->
+    <property class="Action1">
+      <property name="Class" value="Eat" />
+      <property name="Delay" value="1.0" />
+      <property name="Use_time" value="..." />
+      <property name="Gain_health" value="0" />
+      <property name="Gain_food" value="5" />
+      <property name="Gain_water" value="1" />
+      <property name="Gain_wellness" value="0.2" />
+      <property name="Sound_start" value="UseActions/player_eating" />
+    </property>
+    <property name="Group" value="Food/Cooking" />
+    <!--property name="CraftingSkillGroup" value="Cooking"/-->
+  </item>
+  <item id="1856" name="Orange">
+    <property name="CustomIcon" value="orange" />
+    <property name="Meshfile" value="Items/Misc/parcel" />
+    <property name="Material" value="organic" />
+    <property name="HoldType" value="15" />
+    <property name="CraftingIngredientTime" value="5" />
+    <property name="Stacknumber" value="50" />
+    <property class="Action1">
+      <property name="Class" value="Eat" />
+      <property name="Delay" value="1.0" />
+      <property name="Use_time" value="..." />
+      <property name="Gain_health" value="5" />
+      <property name="Gain_food" value="3" />
+      <property name="Gain_water" value="0" />
+      <property name="Sound_start" value="UseActions/player_eating" />
+    </property>
+    <property name="Group" value="Food/Cooking" />
+  </item>
+  <item id="1857" name="orangeJuice">
+    <property name="Extends" value="beer" />
+    <property name="DescriptionKey" value="orangeJuiceDesc"/>
+    <property class="Action1">
+      <property name="Gain_food" value="0" />
+      <property name="Gain_water" value="5" />
+      <property name="Gain_stamina" value="20" />
+      <property name="Gain_wellness" value="0" />
+      <property name="Create_item" value="emptyJar" />
+      <property name="Buff" value="vitaminC" />
+    </property>
+  </item>
+
+  <!-- Health Items -->
+  <item id="1920" name="Peroxide">
+    <property name="DescriptionKey" value="PeroxideDesc"/>
+    <property name="Meshfile" value="Items/Food/coffeePrefab" />
+    <property name="Material" value="organic" />
+    <property name="HoldType" value="3" />
+    <property name="Stacknumber" value="50" />
+    <property name="Group" value="Chemicals" />
+    <property class="Preview">
+      <property name="Zoom" value="28" />
+      <property name="Pos" value="0,-0.05" />
+      <property name="Rot" value="90,45,0" />
+    </property>
+  </item>
+  <item id="1921" name="drinkHealth">
+    <property name="DescriptionKey" value="drinkHealthDesc"/>
+    <property name="Meshfile" value="Items/Food/honeyPrefab" />
+    <property name="Material" value="glass" />
+    <property name="HoldType" value="3" />
+    <property name="Group" value="Food/Cooking" />
+    <property name="Stacknumber" value="50" />
+    <property class="Action1">
+      <property name="Class" value="Eat" />
+      <property name="Delay" value="1" />
+      <property name="Use_time" value="..." />
+      <property name="Gain_health" value="30" />
+      <property name="Gain_stamina" value="10" />
+      <property name="Gain_wellness" value="1" />
+      <property name="Gain_water" value="25" />
+      <property name="Sound_start" value="UseActions/player_drinking" />
+      <property name="Create_item" value="emptyJar" />
+      <property name="Debuff" value="dysentery" />
+    </property>
+    <property class="Preview">
+      <property name="Zoom" value="23" />
+      <property name="Pos" value="0.18,-0.15" />
+      <property name="Rot" value="0,-45,0" />
+    </property>
+  </item>
+  <item id="1923" name="purificationTablets">
+    <property name="DescriptionKey" value="purificationTabletsDesc"/>
+    <property name="Meshfile" value="Items/Health/painkillersPrefab" />
+    <property name="Material" value="organic" />
+    <property name="HoldType" value="16" />
+    <property name="Stacknumber" value="50" />
+    <property class="Preview">
+      <property name="Zoom" value="28" />
+      <property name="Pos" value="-0.02,-0.1" />
+      <property name="Rot" value="90,45,0" />
+    </property>
+  </item>
+  <item id="1924" name="medicalSplint">
+    <property name="Extends" value="splint" />
+    <property name="DescriptionKey" value="medicalSplintDesc"/>
+    <property class="Action0">
+      <property name="Buff" value="medicalsplint,firstAid" />
+      <property name="Debuff" value="sprainedLeg" />
+    </property>
+    <property class="Action1">
+      <property name="Buff" value="medicalsplint,firstAid" />
+      <property name="Debuff" value="sprainedLeg" />
+    </property>
+  </item>
+  <item id="1925" name="disinfectantBandage">
+    <property name="Extends" value="bandage" />
+    <property name="DescriptionKey" value="disinfectantBandageDesc"/>
+    <property class="Action0">
+      <property name="Debuff" value="bleeding,arrowCriticalBleedout,burning,infection" />
+    </property>
+    <property class="Action1">
+      <property name="Debuff" value="bleeding,arrowCriticalBleedout,burning,infection" />
+    </property>
+  </item>
+
+  <item id="1949" name="speedPill">
+    <property name="DescriptionKey" value="speedPillDesc"/>
+    <property name="Meshfile" value="Items/Health/painkillersPrefab" />
+    <property name="Material" value="organic" />
+    <property name="HoldType" value="16" />
+    <property name="Stacknumber" value="5" />
+    <property class="Action1">
+      <property name="Class" value="Eat" />
+      <property name="Delay" value="1.0" />
+      <property name="Use_time" value="..." />
+      <property name="Gain_health" value="0" />
+      <property name="Gain_food" value="0" />
+      <property name="Gain_water" value="-5" />
+      <property name="Sound_start" value="UseActions/player_painkillers" />
+      <property name="Buff" value="speedBoost" />
+    </property>
+    <property name="ActionExp" value="5"/>
+    <property name="ActionSkillGroup" value="Medicine"/>
+    <property name="CraftingSkillGroup" value="Science"/>
+    <property name="Group" value="Medicine" />
+  </item>
+  <item id="1950" name="weedCleaver">
+    <property name="DescriptionKey" value="weedCleaverDesc"/>
+    <property name="Meshfile" value="Items/Weapons/Melee/Knives/machetePrefab" />
+    <property name="Material" value="metal" />
+    <property name="Degradation" value="500" param1="false" />
+    <property name="HoldType" value="47" />
+    <property name="Stacknumber" value="1" />
+    <property name="RepairTools" value="forgedIron" />
+    <property name="DegradationBreaksAfter" value="false" />
+    <property name="SoundJammed" value="ItemNeedsRepair" />
+    <property name="SoundDestroy" value="wooddestroy1" />
+    <property class="Action0">
+      <property name="Class" value="Melee" />
+      <property name="Delay" value="0.2" />
+      <property name="Range" value="2" />
+      <property name="Sphere" value="0.1" />
+      <property name="Block_range" value="10" />
+      <property name="DamageBlock" value="0" />
+      <property name="Sound_start" value="swoosh" />
+      <property name="Stamina_usage" value="4" />
+      <property name="DamageBonus.plants" value="25" />
+      <property name="DamageBonus.leaves" value="25" />
+      <property name="ToolCategory.Pluck" value="1" />
+      <property name="ToolCategory.Farm" value="1" />
+    </property>
+    <property class="Attributes">
+      <property name="EntityDamage" value="8,10" />
+      <property name="DegradationMax" value="250,750" />
+      <property name="DegradationRate" value="2,1" />
+      <property name="DismembermentBaseChance" value="0.1,0.1"/>
+      <property name="DismembermentBonus" value="0,0"/>
+    </property>
+  </item>
+  <item id="1951" name="fuelLog">
+    <property name="DescriptionKey" value="fuelLogDesc"/>
+    <property name="Meshfile" value="Items/Misc/sackPrefab" />
+    <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+    <property name="Material" value="organic" />
+    <property name="HoldType" value="3" />
+    <property name="Stacknumber" value="50" />
+    <property name="FuelValue" value="1080" />
+    <property name="Group" value="Chemicals" />
+    <property name="CraftingSkillGroup" value="Science"/>
+    <property class="Preview">
+      <property name="Zoom" value="28" />
+      <property name="Pos" value="0,-0.05" />
+      <property name="Rot" value="90,45,0" />
+    </property>
+  </item>
+  <item id="1959" name="tantalizingMagazine">
+    <property name="DescriptionKey" value="tantalizingMagazineDesc"/>
+    <property name="Meshfile" value="Items/Misc/Book" />
+    <property name="Material" value="paper" />
+    <property name="HoldType" value="21" />
+    <property name="Stacknumber" value="50" />
+    <property class="Action1">
+      <property name="Class" value="Eat" />
+      <property name="Delay" value="1.0" />
+      <property name="Use_time" value="..." />
+      <property name="Gain_health" value="10" />
+      <property name="Gain_food" value="0" />
+      <property name="Gain_stamina" value="-25" />
+      <property name="Gain_water" value="0" />
+    </property>
+    <property class="Preview">
+      <property name="Zoom" value="35" />
+      <property name="Pos" value="0,-0.05" />
+      <property name="Rot" value="90,45,0" />
+    </property>
+    <property name="EconomicValue" value="15" />
+  </item>
+  <item id="1960" name="Clingwrap">
+    <property name="DescriptionKey" value="ClingwrapDesc"/>
+    <property name="Meshfile" value="Items/Misc/sackPrefab" />
+    <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+    <property name="Material" value="organic" />
+    <property name="HoldType" value="3" />
+    <property name="Stacknumber" value="100" />
+    <property class="Preview">
+      <property name="Zoom" value="28" />
+      <property name="Pos" value="0,-0.05" />
+      <property name="Rot" value="90,45,0" />
+    </property>
+  </item>
+  <item id="1961" name="stripsClingwrap">
+    <property name="DescriptionKey" value="stripsClingwrapDesc"/>
+    <property name="Meshfile" value="Items/Misc/sackPrefab" />
+    <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+    <property name="Material" value="organic" />
+    <property name="HoldType" value="3" />
+    <property name="Stacknumber" value="100" />
+    <property class="Preview">
+      <property name="Zoom" value="28" />
+      <property name="Pos" value="0,-0.05" />
+      <property name="Rot" value="90,45,0" />
+    </property>
+    <property name="Group" value="Food/Cooking" />
+  </item>
+  <item id="1962" name="sealedMeat">
+    <property name="DescriptionKey" value="sealedMeatDesc"/>
+    <property name="Meshfile" value="Items/Misc/sackPrefab" />
+    <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+    <property name="Material" value="organic" />
+    <property name="HoldType" value="3" />
+    <property name="Stacknumber" value="50" />
+    <property name="Group" value="Chemicals" />
+    <property class="Preview">
+      <property name="Zoom" value="28" />
+      <property name="Pos" value="0,-0.05" />
+      <property name="Rot" value="90,45,0" />
+    </property>
+    <property name="Group" value="Food/Cooking" />
+  </item>
+
 
   <!--SinMod Extra Parts-->
   <item id="1963" name="gearMechanism">
@@ -10577,114 +12109,71 @@ Mesh files no longer used:
     <property name="Group" value="Resources" />
     <property name="CraftingIngredientTime" value="1" />
   </item>
-  	<item id="1968" name="survivorNoteCollection">
-	<property name="DescriptionKey" value="survivorNoteCollectionDesc"/>
-	<property name="Meshfile" value="Items/Misc/paper" />
-	<property name="HoldType" value="21" />
-	<property name="Material" value="Survivor Notes" />
-	<property name="Weight" value="5" />
-	<property name="Stacknumber" value="500" />
-	<property name="FuelValue" value="20" />
-	<property name="Group" value="Survival" />
-	<property class="Action1">
-		<property name="Class" value="Quest" />
-		<property name="QuestGiven" value="survivorNoteCollection" />
-		<property name="Delay" value="0" />
-	</property>
-	</item>
-	<item id="1969" name="survivorNotes">
-	<property name="DescriptionKey" value="survivorNotes2Desc"/>
-	<property name="Meshfile" value="Items/Misc/paper" />
-	<property name="HoldType" value="21" />
-	<property name="Material" value="Survivor Notes" />
-	<property name="Weight" value="1" />
-	<property name="Stacknumber" value="500" />
-	<property name="FuelValue" value="20" />
-	<property name="Group" value="Survival" />
-	<property class="Action1">
-		<property name="Class" value="Quest" />
-		<property name="QuestGiven" value="survivorNotes" />
-		<property name="Delay" value="0" />
-	</property>
-	</item>
+  <item id="1968" name="survivorNoteCollection">
+    <property name="DescriptionKey" value="survivorNoteCollectionDesc"/>
+    <property name="Meshfile" value="Items/Misc/paper" />
+    <property name="HoldType" value="21" />
+    <property name="Material" value="Survivor Notes" />
+    <property name="Weight" value="5" />
+    <property name="Stacknumber" value="500" />
+    <property name="FuelValue" value="20" />
+    <property name="Group" value="Survival" />
+    <property class="Action1">
+      <property name="Class" value="Quest" />
+      <property name="QuestGiven" value="survivorNoteCollection" />
+      <property name="Delay" value="0" />
+    </property>
+  </item>
+  <item id="1969" name="survivorNotes">
+    <property name="DescriptionKey" value="survivorNotes2Desc"/>
+    <property name="Meshfile" value="Items/Misc/paper" />
+    <property name="HoldType" value="21" />
+    <property name="Material" value="Survivor Notes" />
+    <property name="Weight" value="1" />
+    <property name="Stacknumber" value="500" />
+    <property name="FuelValue" value="20" />
+    <property name="Group" value="Survival" />
+    <property class="Action1">
+      <property name="Class" value="Quest" />
+      <property name="QuestGiven" value="survivorNotes" />
+      <property name="Delay" value="0" />
+    </property>
+  </item>
+  <item id="1970" name="Lockpick">
+    <property name="Degradation" value="125" param1="true" />
+    <property name="DescriptionKey" value="LockpickDesc"/>
+    <property name="Meshfile" value="Items/Weapons/Melee/Knives/boneShivPrefab" />
+    <property name="Material" value="organic" />
+    <property name="HoldType" value="1" />
+    <property name="Group" value="Resources" />
+    <property name="Stacknumber" value="10" />
+    <property class="Action1">
+      <property name="Class" value="Repair" />
+      <property name="Delay" value="0.53" />
+      <property name="Upgrade_hit_offset" value="-1" />
+      <property name="Sound_start" value="UseActions/repair_block" />
+      <property name="Allowed_upgrade_items" value="Lockpick" />
+    </property>
+  </item>
+  <item id="1971" name="butcherKnife">
+    <property name="Extends" value="huntingKnife" />
+    <property name="DescriptionKey" value="butcherKnifeDesc"/>
+    <property class="Action0">
+      <property name="ToolCategory.Butcher" value="1" />
+      <property name="ToolCategory.ButcherExtra" value="1" />
+    </property>
+  </item>
+  <item id="1972" name="skinningKnife">
+    <property name="Extends" value="huntingKnife" />
+    <property name="DescriptionKey" value="skinningKnifeDesc"/>
+    <property class="Action0">
+      <property name="ToolCategory.Butcher" value="1" />
+      <property name="ToolCategory.Skinner" value="1" />
+    </property>
+  </item>
   
-  
-  <item id="1994" name="scrapIronAxe">
-	<property name="Meshfile" value="Items/Weapons/Melee/Axe/stone_axePrefab" />
-	<property name="Material" value="metal" />
-	<property name="RepairTools" value="scrapIron" />
-	<property name="HoldType" value="32" />
-	<property name="EconomicValue" value="5" />
-	<property name="EconomicBundleSize" value="1" />
-	<property name="SellableToTrader" value="false" />
- 	<property name="DegradationBreaksAfter" value="false" />
-	<property name="SoundJammed" value="ItemNeedsRepair" />
-	<property name="SoundDestroy" value="wooddestroy1" />
-	<property name="FuelValue" value="12" />
-	<property class="Action0"> <!-- AttackAction -->
-		<property name="Class" value="Melee" />
-		<property name="Delay" value="0.8" />
-		<property name="Range" value="2.1" />
-		<property name="Block_range" value="3" />
-		<property name="Sphere" value="0.1" />
-		<property name="Sound_start" value="swoosh" />
-		<property name="Stamina_usage" value="3" />
-		<property name="DamageBonus.head" value="5" />
-		<property name="DamageBonus.glass" value="25" />
-		<property name="DamageBonus.wood" value="1" />
-		<property name="DamageBonus.metal" value="0.5" />
-		<property name="DamageBonus.earth" value="0.25" />
-		<property name="DamageBonus.organic" value="1" />
-		<property name="ActionExp" value="2" />
-		<property name="ToolCategory.Butcher" value="0.5" />
-		<property name="ToolCategory.Lumberjack" value="0.5" />
-	</property>
-	<property class="Attributes">
-		<property name="EntityDamage" value="6,14" />
-		<property name="BlockDamage" value="20,35" />
-		<property name="DegradationMax" value="100,600" />
-		<property name="DegradationRate" value="2,2" />
-		<property name="DismembermentBaseChance" value="0,0"/>
-		<property name="DismembermentBonus" value="0,0"/>
-	</property>
-	<property name="Group" value="Tools/Traps,Basics" />
-	<property name="ActionSkillGroup" value="Axes"/>
-	<property name="CraftingSkillGroup" value="Tool Smithing"/>
-	<property name="RepairExpMultiplier" value="5.5"/>
-</item>
-<item id="1995" name="scrapIronPickaxe">
-	<property name="Extends" value="pickaxeIron" />
-	<property name="RepairTools" value="scrapIron" />
-	<property name="EconomicValue" value="5" />
-	<property class="Attributes">
-		<property name="EntityDamage" value="5,10" />
-		<property name="BlockDamage" value="19,30" />
-		<property name="DegradationMax" value="200,600" />
-		<property name="DegradationRate" value="2,2" />
-	</property>
-</item>
-<item id="1996" name="scrapIronShovel">
-	<property name="Extends" value="shovelIron" />
-	<property name="RepairTools" value="scrapIron" />
-	<property name="EconomicValue" value="5" />
-	<property class="Attributes">
-		<property name="EntityDamage" value="6,13" />
-		<property name="BlockDamage" value="16,40" />
-		<property name="DegradationMax" value="200,600" />
-		<property name="DegradationRate" value="2,2" />
-	</property>
-</item>
-<item id="1997" name="scrapIronShiv">
-	<property name="Extends" value="boneShiv" />
-	<property class="Attributes">
-		<property name="EntityDamage" value="8,16" />
-		<property name="DegradationMax" value="200,600" />
-		<property name="DegradationRate" value="2,2" />
-	</property>
-</item>
-  
-  <!--SinMod Farm Items-->
-  <!--item id="1971" name="seedPack">
+  <!--SinMod Seeds-->
+  <item id="1973" name="seedPack">
     <property name="DescriptionKey" value="seedPackDesc"/>
     <property name="Meshfile" value="Items/Misc/sackPrefab" />
     <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
@@ -10696,251 +12185,349 @@ Mesh files no longer used:
       <property name="Pos" value="0,-0.05" />
       <property name="Rot" value="90,45,0" />
     </property>
-  </item-->
+  </item>
+  <item id="1974" name="fiberPulp">
+    <property name="DescriptionKey" value="fiberPulpDesc"/>
+    <property name="Meshfile" value="Items/Crafting/plant_fibers" />
+    <property name="Material" value="plants" />
+    <property name="HoldType" value="16" />
+    <property name="Stacknumber" value="1000" />
+    <!-- STK resource -->
+    <property name="FuelValue" value="5" />
+    <property name="Group" value="Resources" />
+  </item>
+ 
 
-  
+  <item id="1989" name="soap">
+    <property name="DescriptionKey" value="soapDesc"/>
+    <property name="Meshfile" value="Items/Misc/sackPrefab" />
+    <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+    <property name="Material" value="organic" />
+    <property name="HoldType" value="45" />
+    <property name="Stacknumber" value="1000" />
+    <!-- STK resource -->
+    <property class="Action1">
+      <property name="Class" value="Eat" />
+      <property name="Delay" value="1.0" />
+      <property name="Use_time" value="..." />
+      <property name="Gain_health" value="1" />
+      <property name="Gain_food" value="0" />
+      <property name="Gain_water" value="0" />
+      <property name="Gain_wellness" value="0.5" />
+      <property name="Debuff" value="dysentery" />
+    </property>
+  </item>
+
+  <item id="1994" name="scrapIronAxe">
+    <property name="Meshfile" value="Items/Weapons/Melee/Axe/stone_axePrefab" />
+    <property name="Material" value="metal" />
+    <property name="RepairTools" value="scrapIron" />
+    <property name="HoldType" value="32" />
+    <property name="EconomicValue" value="5" />
+    <property name="EconomicBundleSize" value="1" />
+    <property name="SellableToTrader" value="false" />
+    <property name="DegradationBreaksAfter" value="false" />
+    <property name="SoundJammed" value="ItemNeedsRepair" />
+    <property name="SoundDestroy" value="wooddestroy1" />
+    <property name="FuelValue" value="12" />
+    <property class="Action0">
+      <!-- AttackAction -->
+      <property name="Class" value="Melee" />
+      <property name="Delay" value="0.8" />
+      <property name="Range" value="2.1" />
+      <property name="Block_range" value="3" />
+      <property name="Sphere" value="0.1" />
+      <property name="Sound_start" value="swoosh" />
+      <property name="Stamina_usage" value="3" />
+      <property name="DamageBonus.head" value="5" />
+      <property name="DamageBonus.glass" value="25" />
+      <property name="DamageBonus.wood" value="1" />
+      <property name="DamageBonus.metal" value="0.5" />
+      <property name="DamageBonus.earth" value="0.25" />
+      <property name="DamageBonus.organic" value="1" />
+      <property name="ActionExp" value="2" />
+      <property name="ToolCategory.Butcher" value="0.5" />
+      <property name="ToolCategory.Lumberjack" value="0.5" />
+    </property>
+    <property class="Attributes">
+      <property name="EntityDamage" value="6,14" />
+      <property name="BlockDamage" value="20,35" />
+      <property name="DegradationMax" value="100,600" />
+      <property name="DegradationRate" value="2,2" />
+      <property name="DismembermentBaseChance" value="0,0"/>
+      <property name="DismembermentBonus" value="0,0"/>
+    </property>
+    <property name="Group" value="Tools/Traps,Basics" />
+    <property name="ActionSkillGroup" value="Axes"/>
+    <property name="CraftingSkillGroup" value="Tool Smithing"/>
+    <property name="RepairExpMultiplier" value="5.5"/>
+  </item>
+  <item id="1995" name="scrapIronPickaxe">
+    <property name="Extends" value="pickaxeIron" />
+    <property name="RepairTools" value="scrapIron" />
+    <property name="EconomicValue" value="5" />
+    <property class="Attributes">
+      <property name="EntityDamage" value="5,10" />
+      <property name="BlockDamage" value="19,30" />
+      <property name="DegradationMax" value="200,600" />
+      <property name="DegradationRate" value="2,2" />
+    </property>
+  </item>
+  <item id="1996" name="scrapIronShovel">
+    <property name="Extends" value="shovelIron" />
+    <property name="RepairTools" value="scrapIron" />
+    <property name="EconomicValue" value="5" />
+    <property class="Attributes">
+      <property name="EntityDamage" value="6,13" />
+      <property name="BlockDamage" value="16,40" />
+      <property name="DegradationMax" value="200,600" />
+      <property name="DegradationRate" value="2,2" />
+    </property>
+  </item>
+  <item id="1997" name="scrapIronShiv">
+    <property name="Extends" value="boneShiv" />
+    <property class="Attributes">
+      <property name="EntityDamage" value="8,16" />
+      <property name="DegradationMax" value="200,600" />
+      <property name="DegradationRate" value="2,2" />
+    </property>
+  </item>
+
+
   <!--SinMod Recipe Books-->
-	<item id="2025" name="recipebookLoki">
-	<property name="Extends" value="challengeQuestMaster" />
-	<property name="CustomIcon" value="schematicMaster" />
-	<property name="DescriptionKey" value="recipebookLokiDesc"/>
-	<property class="Action1">
-		<property name="QuestGiven" value="challenge_Loki" />
-	</property>
-	</item>
-	<item id="2026" name="skillbookAthletics">
-		<property name="DescriptionKey" value="skillbookAthleticsDesc"/>
-		<property name="Extends" value="schematicMaster" />
-		<property class="Action1">
-			<property name="Skills_to_gain" value="Athletics,Athletics,Athletics" />
-		</property>
-	</item>
-	<item id="2027" name="skillbookBuilding">
-		<property name="DescriptionKey" value="skillbookBuildingDesc"/>
-		<property name="Extends" value="schematicMaster" />
-		<property class="Action1">
-			<property name="Skills_to_gain" value="Miscellaneous Crafting,Tool Smithing,Construction Tools" />
-		</property>
-	</item>
-<!--	<item id="2029" name="skillbookUnarmed">
+  <item id="2026" name="skillbookAthletics">
+    <property name="DescriptionKey" value="skillbookAthleticsDesc"/>
+    <property name="Extends" value="schematicMaster" />
+    <property class="Action1">
+      <property name="Skills_to_gain" value="Athletics,Athletics,Athletics" />
+    </property>
+  </item>
+  <item id="2027" name="skillbookBuilding">
+    <property name="DescriptionKey" value="skillbookBuildingDesc"/>
+    <property name="Extends" value="schematicMaster" />
+    <property class="Action1">
+      <property name="Skills_to_gain" value="Miscellaneous Crafting,Tool Smithing,Construction Tools" />
+    </property>
+  </item>
+  <!--	<item id="2029" name="skillbookUnarmed">
 		<property name="DescriptionKey" value="skillbookUnarmedDesc"/>
 		<property name="Extends" value="schematicMaster" />
 		<property class="Action1">
 			<property name="Skills_to_gain" value="Unarmed,Unarmed,Unarmed" />
 		</property>
 	</item> -->
-	<item id="2030" name="skillbookBarter">
-		<property name="DescriptionKey" value="skillbookBarterDesc"/>
-		<property name="Extends" value="schematicMaster" />
-		<property class="Action1">
-			<property name="Skills_to_gain" value="Barter,Barter,Barter" />
-		</property>
-	</item>
-	<item id="2031" name="skillbookTools">
-		<property name="DescriptionKey" value="skillbookToolsDesc"/>
-		<property name="Extends" value="schematicMaster" />
-		<property class="Action1">
-			<property name="Skills_to_gain" value="Tool Smithing,Tool Smithing,Construction Tools" />
-		</property>
-	</item>
-	<item id="2032" name="skillbookBlunt">
-		<property name="DescriptionKey" value="skillbookBluntDesc"/>
-		<property name="Extends" value="schematicMaster" />
-		<property class="Action1">
-			<property name="Skills_to_gain" value="Blunt Weapons,Blunt Weapons,Blunt Weapons" />
-		</property>
-	</item>
-	<item id="2033" name="skillbookTailor">
-		<property name="DescriptionKey" value="skillbookTailorDesc"/>
-		<property name="Extends" value="schematicMaster" />
-		<property class="Action1">
-			<property name="Skills_to_gain" value="Tailoring,Tailoring,Blade Weapons" />
-		</property>
-	</item>
-	<item id="2034" name="skillbookRogue">
-		<property name="DescriptionKey" value="skillbookRogueDesc"/>
-		<property name="Extends" value="schematicMaster" />
-		<property class="Action1">
-			<property name="Skills_to_gain" value="Light Armor,Blade Weapons,Athletics,Lockpicks" />
-		</property>
-	</item>
-	<item id="2035" name="skillbookWasteland">
-		<property name="DescriptionKey" value="skillbookWastelandDesc"/>
-		<property name="Extends" value="schematicMaster" />
-		<property class="Action1">
-			<property name="Skills_to_gain" value="Scavenging,Archery,Weapon Smithing,Advance Traps,Advance Traps" />
-		</property>
-	</item>
-	<item id="2036" name="skillbookBlacksmith">
-		<property name="DescriptionKey" value="skillbookBlacksmithDesc"/>
-		<property name="Extends" value="schematicMaster" />
-		<property class="Action1">
-			<property name="Skills_to_gain" value="Armor Smithing,Heavy Armor,Weapon Smithing" />
-		</property>
-	</item>
-	<item id="2037" name="skillbookMedical">
-		<property name="DescriptionKey" value="skillbookMedicalDesc"/>
-		<property name="Extends" value="schematicMaster" />
-		<property class="Action1">
-			<property name="Skills_to_gain" value="Medicine,Medicine,Medicine" />
-		</property>
-	</item>
-	<item id="2038" name="skillbookChemistry">
-		<property name="DescriptionKey" value="skillbookChemistryDesc"/>
-		<property name="Extends" value="schematicMaster" />
-		<property class="Action1">
-			<property name="Skills_to_gain" value="Science,Science,Science" />
-		</property>
-	</item>
-	<item id="2039" name="skillbookGunsmoke">
-		<property name="DescriptionKey" value="skillbookGunsmokeDesc"/>
-		<property name="Extends" value="schematicMaster" />
-		<property class="Action1">
-			<property name="Skills_to_gain" value="Pistols,Pistols,Pistols" />
-		</property>
-	</item>
-	<item id="2040" name="skillbookRifles">
-		<property name="DescriptionKey" value="skillbookRiflesDesc"/>
-		<property name="Extends" value="schematicMaster" />
-		<property class="Action1">
-			<property name="Skills_to_gain" value="Rifles,Rifles,Rifles" />
-		</property>
-	</item>
-	<item id="2041" name="skillbookShotguns">
-		<property name="DescriptionKey" value="skillbookShotgunsDesc"/>
-		<property name="Extends" value="schematicMaster" />
-		<property class="Action1">
-			<property name="Skills_to_gain" value="Shotguns,Shotguns,Shotguns" />
-		</property>
-	</item>
-	<item id="2042" name="skillbookGunSmith">
-		<property name="DescriptionKey" value="skillbookGunSmithDesc"/>
-		<property name="Extends" value="schematicMaster" />
-		<property class="Action1">
-			<property name="Skills_to_gain" value="Gun Smithing,Gun Smithing,Gun Smithing" />
-		</property>
-	</item>
-	<item id="2043" name="skillbookArchery">
-		<property name="Extends" value="schematicMaster" />
-		<property name="DescriptionKey" value="skillbookArcheryDesc"/>
-		<property class="Action1">
-			<property name="Skills_to_gain" value="Archery,Archery,Archery" />
-		</property>
-	</item>
-	<item id="2044" name="recipebookMasonry">
-		<property name="DescriptionKey" value="recipebookMasonryDesc"/>
-		<property name="Extends" value="schematicMaster" />
-		<property class="Action1">
-			<property name="Skills_to_gain" value="Mining Tools,Mining Tools,Mining Tools" />
-		</property>
-	</item>
-	<item id="2047" name="skillbookAssaultRifle">
-		<property name="DescriptionKey" value="skillbookAssaultRifleDesc"/>
-		<property name="Extends" value="schematicMaster" />
-		<property class="Action1">
-			<property name="Skills_to_gain" value="Assault Rifles,Assault Rifles,Assault Rifles" />
-		</property>
-	</item>
-	<item id="2048" name="skillbookRocket">
-		<property name="DescriptionKey" value="skillbookRocketDesc"/>
-		<property name="Extends" value="schematicMaster" />
-		<property name="CustomIcon" value="rocketLauncherSchematic" />
-		<property class="Action1">
-			<property name="Skills_to_gain" value="Gun Rocket,Gun Rocket,Gun Rocket" />
-		</property>
-	</item>
-	<item id="2049" name="skillbookCrossbow">
-		<property name="DescriptionKey" value="skillbookCrossbowDesc"/>
-		<property name="Extends" value="schematicMaster" />
-		<property class="Action1">
-			<property name="Skills_to_gain" value="Archery,Archery,Weapon Smithing,Weapon Smithing,Crossbow,Crossbow" />
-		</property>
-	</item>
-	<item id="2050" name="recipebookElectronics">
-		<property name="DescriptionKey" value="recipebookElectronicsDesc"/>
-		<property name="Extends" value="schematicMaster" />
-		<property class="Action1">
-			<property name="Skills_to_gain" value="Electric Lights,Electric Lights,Electric Lights" />
-		</property>
-	</item>
-	<item id="2051" name="recipebookSinks">
-		<property name="DescriptionKey" value="recipebookSinksDesc"/>
-		<property name="Extends" value="schematicMaster" />
-		<property class="Action1">
-			<property name="Skills_to_gain" value="Plumbing,Plumbing" />
-		</property>
-	</item>
-	<item id="2052" name="recipebookOven">
-		<property name="DescriptionKey" value="recipebookOvenDesc"/>
-		<property name="Extends" value="schematicMaster" />
-		<property class="Action1">
-			<property name="Skills_to_gain" value="Mechanical,Oven Repair,Oven Repair" />
-		</property>
-	</item>
-	<item id="2053" name="skillbookLockpick">
-		<property name="DescriptionKey" value="skillbookLockpickDesc"/>
-		<property name="Extends" value="schematicMaster" />
-		<property class="Action1">
-			<property name="Skills_to_gain" value="Lockpicks,Lockpicks,Lockpicks" />
-		</property>
-	</item>
-	<item id="2054" name="recipebookAnimalTraps">
-		<property name="DescriptionKey" value="recipebookAnimalTrapsDesc"/>
-		<property name="Extends" value="challengeQuestMaster" />
-		<property name="CustomIcon" value="recipebookAnimalTraps" />
-		<property class="Action1">
-			<property name="QuestGiven" value="challenge_animaltrap" />
-		</property>
-	</item>
-	<item id="2055" name="recipebookPottery">
-		<property name="DescriptionKey" value="recipebookPotteryDesc"/>
-		<property name="Extends" value="schematicMaster" />
-		<property class="Action1">
-			<property name="Skills_to_gain" value="Pottery,Pottery,Pottery" />
-		</property>
-	</item>
-	<item id="2056" name="recipebookNailgun">
-		<property name="DescriptionKey" value="recipebookNailgunDesc"/>
-		<property name="Extends" value="schematicMaster" />
-		<property class="Action1">
-			<property name="Skills_to_gain" value="Nailgun,Nailgun,Nailgun,Nailgun" />
-		</property>
-	</item>
-	<item id="2057" name="skillbookBlades">
-		<property name="DescriptionKey" value="skillbookBladesDesc"/>
-		<property name="Extends" value="schematicMaster" />
-		<property class="Action1">
-			<property name="Skills_to_gain" value="Blade Weapons,Blade Weapons,Blade Weapons" />
-		</property>
-	</item>
-	<item id="2058" name="recipebookSecurity">
-		<property name="DescriptionKey" value="recipebookSecurityDesc"/>
-		<property name="Extends" value="schematicMaster" />
-		<property class="Action1">
-			<property name="Skills_to_gain" value="Security" />
-		</property>
-	</item>
-	<item id="2062" name="skillbookKnight">
-		<property name="DescriptionKey" value="skillbookKnightDesc"/>
-		<property name="Extends" value="schematicMaster" />
-		<property class="Action1">
-			<property name="Skills_to_gain" value="Heavy Armor,Heavy Armor,Blade Weapons" />
-		</property>
-	</item>
-	<item id="2063" name="skillbookMining">
-		<property name="DescriptionKey" value="skillbookMiningDesc"/>
-		<property name="Extends" value="schematicMaster" />
-		<property class="Action1">
-			<property name="Skills_to_gain" value="Mining Tools,Mining Tools,Mining Tools" />
-		</property>
-	</item>
-	<item id="2064" name="skillbookHunter">
-		<property name="DescriptionKey" value="skillbookHuntergDesc"/>
-		<property name="Extends" value="schematicMaster" />
-		<property class="Action1">
-			<property name="Skills_to_gain" value="Blade Weapons,Archery,Leatherworking,Leatherworking,Leather Tanning,Leather Tanning" />
-		</property>
-	</item>
+  <item id="2030" name="skillbookBarter">
+    <property name="DescriptionKey" value="skillbookBarterDesc"/>
+    <property name="Extends" value="schematicMaster" />
+    <property class="Action1">
+      <property name="Skills_to_gain" value="Barter,Barter,Barter" />
+    </property>
+  </item>
+  <item id="2031" name="skillbookTools">
+    <property name="DescriptionKey" value="skillbookToolsDesc"/>
+    <property name="Extends" value="schematicMaster" />
+    <property class="Action1">
+      <property name="Skills_to_gain" value="Tool Smithing,Tool Smithing,Construction Tools" />
+    </property>
+  </item>
+  <item id="2032" name="skillbookBlunt">
+    <property name="DescriptionKey" value="skillbookBluntDesc"/>
+    <property name="Extends" value="schematicMaster" />
+    <property class="Action1">
+      <property name="Skills_to_gain" value="Blunt Weapons,Blunt Weapons,Blunt Weapons" />
+    </property>
+  </item>
+  <item id="2033" name="skillbookTailor">
+    <property name="DescriptionKey" value="skillbookTailorDesc"/>
+    <property name="Extends" value="schematicMaster" />
+    <property class="Action1">
+      <property name="Skills_to_gain" value="Tailoring,Tailoring,Blade Weapons" />
+    </property>
+  </item>
+  <item id="2034" name="skillbookRogue">
+    <property name="DescriptionKey" value="skillbookRogueDesc"/>
+    <property name="Extends" value="schematicMaster" />
+    <property class="Action1">
+      <property name="Skills_to_gain" value="Light Armor,Blade Weapons,Athletics,Lockpicks" />
+    </property>
+  </item>
+  <item id="2035" name="skillbookWasteland">
+    <property name="DescriptionKey" value="skillbookWastelandDesc"/>
+    <property name="Extends" value="schematicMaster" />
+    <property class="Action1">
+      <property name="Skills_to_gain" value="Scavenging,Archery,Weapon Smithing,Advance Traps,Advance Traps" />
+    </property>
+  </item>
+  <item id="2036" name="skillbookBlacksmith">
+    <property name="DescriptionKey" value="skillbookBlacksmithDesc"/>
+    <property name="Extends" value="schematicMaster" />
+    <property class="Action1">
+      <property name="Skills_to_gain" value="Armor Smithing,Heavy Armor,Weapon Smithing" />
+    </property>
+  </item>
+  <item id="2037" name="skillbookMedical">
+    <property name="DescriptionKey" value="skillbookMedicalDesc"/>
+    <property name="Extends" value="schematicMaster" />
+    <property class="Action1">
+      <property name="Skills_to_gain" value="Medicine,Medicine,Medicine" />
+    </property>
+  </item>
+  <item id="2038" name="skillbookChemistry">
+    <property name="DescriptionKey" value="skillbookChemistryDesc"/>
+    <property name="Extends" value="schematicMaster" />
+    <property class="Action1">
+      <property name="Skills_to_gain" value="Science,Science,Science" />
+    </property>
+  </item>
+  <item id="2039" name="skillbookGunsmoke">
+    <property name="DescriptionKey" value="skillbookGunsmokeDesc"/>
+    <property name="Extends" value="schematicMaster" />
+    <property class="Action1">
+      <property name="Skills_to_gain" value="Pistols,Pistols,Pistols" />
+    </property>
+  </item>
+  <item id="2040" name="skillbookRifles">
+    <property name="DescriptionKey" value="skillbookRiflesDesc"/>
+    <property name="Extends" value="schematicMaster" />
+    <property class="Action1">
+      <property name="Skills_to_gain" value="Rifles,Rifles,Rifles" />
+    </property>
+  </item>
+  <item id="2041" name="skillbookShotguns">
+    <property name="DescriptionKey" value="skillbookShotgunsDesc"/>
+    <property name="Extends" value="schematicMaster" />
+    <property class="Action1">
+      <property name="Skills_to_gain" value="Shotguns,Shotguns,Shotguns" />
+    </property>
+  </item>
+  <item id="2042" name="skillbookGunSmith">
+    <property name="DescriptionKey" value="skillbookGunSmithDesc"/>
+    <property name="Extends" value="schematicMaster" />
+    <property class="Action1">
+      <property name="Skills_to_gain" value="Gun Smithing,Gun Smithing,Gun Smithing" />
+    </property>
+  </item>
+  <item id="2043" name="skillbookArchery">
+    <property name="Extends" value="schematicMaster" />
+    <property name="DescriptionKey" value="skillbookArcheryDesc"/>
+    <property class="Action1">
+      <property name="Skills_to_gain" value="Archery,Archery,Archery" />
+    </property>
+  </item>
+  <item id="2044" name="recipebookMasonry">
+    <property name="DescriptionKey" value="recipebookMasonryDesc"/>
+    <property name="Extends" value="schematicMaster" />
+    <property class="Action1">
+      <property name="Skills_to_gain" value="Mining Tools,Mining Tools,Mining Tools" />
+    </property>
+  </item>
+  <item id="2047" name="skillbookAssaultRifle">
+    <property name="DescriptionKey" value="skillbookAssaultRifleDesc"/>
+    <property name="Extends" value="schematicMaster" />
+    <property class="Action1">
+      <property name="Skills_to_gain" value="Assault Rifles,Assault Rifles,Assault Rifles" />
+    </property>
+  </item>
+  <item id="2048" name="skillbookRocket">
+    <property name="DescriptionKey" value="skillbookRocketDesc"/>
+    <property name="Extends" value="schematicMaster" />
+    <property name="CustomIcon" value="rocketLauncherSchematic" />
+    <property class="Action1">
+      <property name="Skills_to_gain" value="Gun Rocket,Gun Rocket,Gun Rocket" />
+    </property>
+  </item>
+  <item id="2049" name="skillbookCrossbow">
+    <property name="DescriptionKey" value="skillbookCrossbowDesc"/>
+    <property name="Extends" value="schematicMaster" />
+    <property class="Action1">
+      <property name="Skills_to_gain" value="Archery,Archery,Weapon Smithing,Weapon Smithing,Crossbow,Crossbow" />
+    </property>
+  </item>
+  <item id="2050" name="recipebookElectronics">
+    <property name="DescriptionKey" value="recipebookElectronicsDesc"/>
+    <property name="Extends" value="schematicMaster" />
+    <property class="Action1">
+      <property name="Skills_to_gain" value="Electric Lights,Electric Lights,Electric Lights" />
+    </property>
+  </item>
+  <item id="2051" name="recipebookSinks">
+    <property name="DescriptionKey" value="recipebookSinksDesc"/>
+    <property name="Extends" value="schematicMaster" />
+    <property class="Action1">
+      <property name="Skills_to_gain" value="Plumbing,Plumbing" />
+    </property>
+  </item>
+  <item id="2052" name="recipebookOven">
+    <property name="DescriptionKey" value="recipebookOvenDesc"/>
+    <property name="Extends" value="schematicMaster" />
+    <property class="Action1">
+      <property name="Skills_to_gain" value="Mechanical,Oven Repair,Oven Repair" />
+    </property>
+  </item>
+  <item id="2053" name="skillbookLockpick">
+    <property name="DescriptionKey" value="skillbookLockpickDesc"/>
+    <property name="Extends" value="schematicMaster" />
+    <property class="Action1">
+      <property name="Skills_to_gain" value="Lockpicks,Lockpicks,Lockpicks" />
+    </property>
+  </item>
+  <item id="2054" name="recipebookAnimalTraps">
+    <property name="DescriptionKey" value="recipebookAnimalTrapsDesc"/>
+    <property name="Extends" value="challengeQuestMaster" />
+    <property name="CustomIcon" value="recipebookAnimalTraps" />
+    <property class="Action1">
+      <property name="QuestGiven" value="challenge_animaltrap" />
+    </property>
+  </item>
+  <item id="2055" name="recipebookPottery">
+    <property name="DescriptionKey" value="recipebookPotteryDesc"/>
+    <property name="Extends" value="schematicMaster" />
+    <property class="Action1">
+      <property name="Skills_to_gain" value="Pottery,Pottery,Pottery" />
+    </property>
+  </item>
+  <item id="2056" name="recipebookNailgun">
+    <property name="DescriptionKey" value="recipebookNailgunDesc"/>
+    <property name="Extends" value="schematicMaster" />
+    <property class="Action1">
+      <property name="Skills_to_gain" value="Nailgun,Nailgun,Nailgun,Nailgun" />
+    </property>
+  </item>
+  <item id="2057" name="skillbookBlades">
+    <property name="DescriptionKey" value="skillbookBladesDesc"/>
+    <property name="Extends" value="schematicMaster" />
+    <property class="Action1">
+      <property name="Skills_to_gain" value="Blade Weapons,Blade Weapons,Blade Weapons" />
+    </property>
+  </item>
+  <item id="2058" name="recipebookSecurity">
+    <property name="DescriptionKey" value="recipebookSecurityDesc"/>
+    <property name="Extends" value="schematicMaster" />
+    <property class="Action1">
+      <property name="Skills_to_gain" value="Security" />
+    </property>
+  </item>
+  <item id="2062" name="skillbookKnight">
+    <property name="DescriptionKey" value="skillbookKnightDesc"/>
+    <property name="Extends" value="schematicMaster" />
+    <property class="Action1">
+      <property name="Skills_to_gain" value="Heavy Armor,Heavy Armor,Blade Weapons" />
+    </property>
+  </item>
+  <item id="2063" name="skillbookMining">
+    <property name="DescriptionKey" value="skillbookMiningDesc"/>
+    <property name="Extends" value="schematicMaster" />
+    <property class="Action1">
+      <property name="Skills_to_gain" value="Mining Tools,Mining Tools,Mining Tools" />
+    </property>
+  </item>
+  <item id="2064" name="skillbookHunter">
+    <property name="DescriptionKey" value="skillbookHuntergDesc"/>
+    <property name="Extends" value="schematicMaster" />
+    <property class="Action1">
+      <property name="Skills_to_gain" value="Blade Weapons,Archery,Leatherworking,Leatherworking,Leather Tanning,Leather Tanning" />
+    </property>
+  </item>
   <!--SinMod Colored Armor -->
   <!--Leather Red -->
   <item id="2102" name="leatherHoodRed">
@@ -12675,8 +14262,114 @@ Mesh files no longer used:
       <property name="Overlay0Tint" value="51, 51, 51" />
     </property>
   </item>
-  
+
+  <!--SinMod Class Preks-->
+  <item id="2400" name="perkSurvivor">
+    <property name="Extends" value="questMaster" />
+    <property name="CustomIcon" value="perkClass"/>
+    <!--property name="CustomIcon" value="expGain" /-->
+    <property name="DescriptionKey" value="perkClassDesc"/>
+    <property class="Action1">
+      <property name="QuestGiven" value="perkSurvivor" />
+    </property>
+  </item>
+  <item id="2401" name="perkMiner">
+    <property name="Extends" value="questMaster" />
+    <property name="CustomIcon" value="perkClass"/>
+    <!--property name="CustomIcon" value="expGain" /-->
+    <property name="DescriptionKey" value="perkClassDesc"/>
+    <property class="Action1">
+      <property name="QuestGiven" value="perkMiner" />
+    </property>
+  </item>
+  <item id="2402" name="perkHunter">
+    <property name="Extends" value="questMaster" />
+    <property name="CustomIcon" value="perkClass"/>
+    <!--property name="CustomIcon" value="expGain" /-->
+    <property name="DescriptionKey" value="perkClassDesc"/>
+    <property class="Action1">
+      <property name="QuestGiven" value="perkHunter" />
+    </property>
+  </item>
+  <item id="2403" name="perkGunman">
+    <property name="Extends" value="questMaster" />
+    <property name="CustomIcon" value="perkClass"/>
+    <!--property name="CustomIcon" value="expGain" /-->
+    <property name="DescriptionKey" value="perkClassDesc"/>
+    <property class="Action1">
+      <property name="QuestGiven" value="perkGunman" />
+    </property>
+  </item>
+  <item id="2403" name="perkMedic">
+    <property name="Extends" value="questMaster" />
+    <property name="CustomIcon" value="perkClass"/>
+    <!--property name="CustomIcon" value="expGain" /-->
+    <property name="DescriptionKey" value="perkClassDesc"/>
+    <property class="Action1">
+      <property name="QuestGiven" value="perkMedic" />
+    </property>
+  </item>
+  <item id="2404" name="perkBruiser">
+    <property name="Extends" value="questMaster" />
+    <property name="CustomIcon" value="perkClass"/>
+    <!--property name="CustomIcon" value="expGain" /-->
+    <property name="DescriptionKey" value="perkClassDesc"/>
+    <property class="Action1">
+      <property name="QuestGiven" value="perkBruiser" />
+    </property>
+  </item>
+  <item id="2405" name="perkVeteran">
+    <property name="Extends" value="questMaster" />
+    <property name="CustomIcon" value="perkClass"/>
+    <!--property name="CustomIcon" value="expGain" /-->
+    <property name="DescriptionKey" value="perkClassDesc"/>
+    <property class="Action1">
+      <property name="QuestGiven" value="perkVeteran" />
+    </property>
+  </item>
+  <item id="2406" name="perkBuilder">
+    <property name="Extends" value="questMaster" />
+    <property name="CustomIcon" value="perkClass"/>
+    <!--property name="CustomIcon" value="expGain" /-->
+    <property name="DescriptionKey" value="perkClassDesc"/>
+    <property class="Action1">
+      <property name="QuestGiven" value="perkBuilder" />
+    </property>
+  </item>
+  <item id="2407" name="perkWildcard">
+    <property name="Extends" value="questMaster" />
+    <property name="CustomIcon" value="perkClass"/>
+    <!--property name="CustomIcon" value="expGain" /-->
+    <property name="DescriptionKey" value="perkClassDesc"/>
+    <property class="Action1">
+      <property name="QuestGiven" value="perkWildcard" />
+    </property>
+  </item>
+  <item id="2408" name="perkEngineer">
+    <property name="Extends" value="questMaster" />
+    <property name="CustomIcon" value="perkClass"/>
+    <!--property name="CustomIcon" value="expGain" /-->
+    <property name="DescriptionKey" value="perkClassDesc"/>
+    <property class="Action1">
+      <property name="QuestGiven" value="perkEngineer" />
+    </property>
+  </item>
+
   <!--SinMod Class Quests -->
+  <item id="2609" name="challengeClassEngineer">
+    <property name="Extends" value="questMaster" />
+    <property name="CustomIconTint" value="ff0000"/>
+    <property class="Action1">
+      <property name="QuestGiven" value="challenge_engineer1" />
+    </property>
+  </item>
+  <item id="2610" name="challengeSticky">
+    <property name="Extends" value="challengeQuestMaster" />
+    <property name="CustomIconTint" value="781B8F" />
+    <property class="Action1">
+      <property name="QuestGiven" value="challenge_sticky" />
+    </property>
+  </item>
   <item id="2611" name="challengeClassMiner">
     <property name="Extends" value="questMaster" />
     <property name="CustomIconTint" value="ff0000"/>
@@ -12686,7 +14379,7 @@ Mesh files no longer used:
   </item>
   <item id="2612" name="challengeClassHunter">
     <property name="Extends" value="questMaster" />
-        <property name="CustomIconTint" value="ff0000"/>
+    <property name="CustomIconTint" value="ff0000"/>
     <property class="Action1">
       <property name="QuestGiven" value="challenge_hunter1" />
     </property>
@@ -12728,8 +14421,8 @@ Mesh files no longer used:
   </item>
   <item id="2618" name="challengeClassBruiser">
     <property name="Extends" value="questMaster" />
-        <property name="CustomIconTint" value="ff0000"/>
-<property class="Action1">
+    <property name="CustomIconTint" value="ff0000"/>
+    <property class="Action1">
       <property name="QuestGiven" value="challenge_bruiser1" />
     </property>
   </item>
@@ -12740,436 +14433,337 @@ Mesh files no longer used:
       <property name="QuestGiven" value="challenge_medic1" />
     </property>
   </item>
-
-  <!--SinMod Class Preks-->
-  <item id="2620" name="perkSurvivor">
-    <property name="Extends" value="questMaster" />
-    <property name="CustomIconTint" value="00ff00"/>
-    <!--property name="CustomIcon" value="expGain" /-->
-    <property name="DescriptionKey" value="perkClassDesc"/>
-    <property class="Action1">
-      <property name="QuestGiven" value="perkSurvivor" />
-    </property>
-  </item>
-  <item id="2621" name="perkMiner">
-    <property name="Extends" value="questMaster" />
-    <property name="CustomIconTint" value="00ff00"/>
-    <!--property name="CustomIcon" value="expGain" /-->
-    <property name="DescriptionKey" value="perkClassDesc"/>
-    <property class="Action1">
-      <property name="QuestGiven" value="perkMiner" />
-    </property>
-  </item>
-  <item id="2622" name="perkHunter">
-    <property name="Extends" value="questMaster" />
-    <property name="CustomIconTint" value="00ff00"/>
-    <!--property name="CustomIcon" value="expGain" /-->
-    <property name="DescriptionKey" value="perkClassDesc"/>
-    <property class="Action1">
-      <property name="QuestGiven" value="perkHunter" />
-    </property>
-  </item>
-  <item id="2623" name="perkGunman">
-    <property name="Extends" value="questMaster" />
-    <property name="CustomIconTint" value="00ff00"/>
-    <!--property name="CustomIcon" value="expGain" /-->
-    <property name="DescriptionKey" value="perkClassDesc"/>
-    <property class="Action1">
-      <property name="QuestGiven" value="perkGunman" />
-    </property>
-  </item>
-  <item id="2624" name="perkMedic">
-    <property name="Extends" value="questMaster" />
-        <property name="CustomIconTint" value="00ff00"/>
-<!--property name="CustomIcon" value="expGain" /-->
-    <property name="DescriptionKey" value="perkClassDesc"/>
-    <property class="Action1">
-      <property name="QuestGiven" value="perkMedic" />
-    </property>
-  </item>
-  <item id="2625" name="perkBruiser">
-    <property name="Extends" value="questMaster" />
-    <property name="CustomIconTint" value="00ff00"/>
-    <!--property name="CustomIcon" value="expGain" /-->
-    <property name="DescriptionKey" value="perkClassDesc"/>
-    <property class="Action1">
-      <property name="QuestGiven" value="perkBruiser" />
-    </property>
-  </item>
-  <item id="2626" name="perkVeteran">
-    <property name="Extends" value="questMaster" />
-    <property name="CustomIconTint" value="00ff00"/>
-    <!--property name="CustomIcon" value="expGain" /-->
-    <property name="DescriptionKey" value="perkClassDesc"/>
-    <property class="Action1">
-      <property name="QuestGiven" value="perkVeteran" />
-    </property>
-  </item>
-  <item id="2627" name="perkBuilder">
-    <property name="Extends" value="questMaster" />
-    <property name="CustomIconTint" value="00ff00"/>
-    <!--property name="CustomIcon" value="expGain" /-->
-    <property name="DescriptionKey" value="perkClassDesc"/>
-    <property class="Action1">
-      <property name="QuestGiven" value="perkBuilder" />
-    </property>
-  </item>
-  <item id="2628" name="perkWildcard">
-    <property name="Extends" value="questMaster" />
-    <property name="CustomIconTint" value="00ff00"/>
-    <!--property name="CustomIcon" value="expGain" /-->
-    <property name="DescriptionKey" value="perkClassDesc"/>
-    <property class="Action1">
-      <property name="QuestGiven" value="perkWildcard" />
-    </property>
-  </item>
   
+
+
   <!-- Modded Quests -->
-<item id="2620" name="challengeBigBadBosses">
-	<property name="Extends" value="challengeQuestMaster" />
-	<property name="CustomIconTint" value="781B8F" />
-	<property class="Action1">
-		<property name="QuestGiven" value="challenge_bigbadbosses" />
-	</property>
-</item>
-<item id="2621" name="challengeAnkleBitters">
-	<property name="Extends" value="challengeQuestMaster" />
-	<property name="CustomIconTint" value="781B8F" />
-	<property class="Action1">
-		<property name="QuestGiven" value="challenge_anklebitters" />
-	</property>
-</item>
+  <item id="2620" name="challengeBigBadBosses">
+    <property name="Extends" value="challengeQuestMaster" />
+    <property name="CustomIconTint" value="781B8F" />
+    <property class="Action1">
+      <property name="QuestGiven" value="challenge_bigbadbosses" />
+    </property>
+  </item>
+  <item id="2621" name="challengeAnkleBitters">
+    <property name="Extends" value="challengeQuestMaster" />
+    <property name="CustomIconTint" value="781B8F" />
+    <property class="Action1">
+      <property name="QuestGiven" value="challenge_anklebitters" />
+    </property>
+  </item>
 
-<item id="2623" name="challengeLightThemUp">
-	<property name="Extends" value="challengeQuestMaster" />
-	<property name="CustomIconTint" value="781B8F" />
-	<property class="Action1">
-		<property name="QuestGiven" value="challenge_lightthemup" />
-	</property>
-</item>
-<item id="2624" name="challengeDogEatDog">
-	<property name="Extends" value="challengeQuestMaster" />
-	<property name="CustomIconTint" value="781B8F" />
-	<property class="Action1">
-		<property name="QuestGiven" value="challenge_dogeatdog" />
-	</property>
-</item>
-<item id="2625" name="challengeFeedTheMole">
-	<property name="Extends" value="challengeQuestMaster" />
-	<property name="CustomIconTint" value="781B8F" />
-	<property class="Action1">
-		<property name="QuestGiven" value="challenge_feedthemole" />
-	</property>
-</item>
-<item id="2626" name="challengeTakingNote">
-	<property name="Extends" value="challengeQuestMaster" />
-	<property name="CustomIconTint" value="781B8F" />
-	<property class="Action1">
-		<property name="QuestGiven" value="challenge_takingnote" />
-	</property>
-</item>
-<item id="2627" name="challengeCookbook">
-	<property name="Extends" value="schematicMaster" />
-	<property name="CustomIcon" value="challengeCookbook" />
-	<property name="DescriptionKey" value="challengeCookbookDesc"/>
-	<property class="Action1">
-		<property name="Skills_to_gain" value="Cooking,Cooking,Cooking,Cooking,Cooking" />
-	</property>
-</item>
-<item id="2628" name="challengeHotrod">
-	<property name="Extends" value="challengeQuestMaster" />
-	<property name="CustomIconTint" value="781B8F" />
-	<property name="DescriptionKey" value="challengeHotrodDesc"/>
-	<property class="Action1">
-		<property name="QuestGiven" value="challenge_hotrod" />
-	</property>
-</item>
-<item id="2629" name="challengeSurvivorJournal">
-	<property name="Extends" value="challengeQuestMaster" />
-	<property name="CustomIconTint" value="781B8F" />
-	<property name="DescriptionKey" value="challengeSurvivorJournalDesc"/>
-	<property class="Action1">
-		<property name="QuestGiven" value="challenge_journal" />
-	</property>
-</item>
-<item id="2630" name="challengeLockpick">
-	<property name="Extends" value="challengeQuestMaster" />
-	<property name="CustomIconTint" value="781B8F" />
-	<property name="DescriptionKey" value="challengeLockpickDesc"/>
-	<property class="Action1">
-		<property name="QuestGiven" value="challenge_lockpick" />
-	</property>
-</item>
-<item id="2631" name="challengeKickz">
-	<property name="Extends" value="challengeQuestMaster" />
-	<property name="CustomIconTint" value="781B8F" />
-	<property name="DescriptionKey" value="challengeKickzDesc"/>
-	<property class="Action1">
-	<property name="QuestGiven" value="challenge_Kickz" />
-	</property>
-</item>
-<item id="2635" name="challengeJock">
-	<property name="Extends" value="challengeQuestMaster" />
-	<property name="CustomIconTint" value="781B8F" />
-	<property class="Action1">
-	<property name="QuestGiven" value="challenge_jock" />
-	</property>
-</item>
-<item id="2636" name="challengeReaper">
-	<property name="Extends" value="challengeQuestMaster" />
-	<property name="CustomIconTint" value="781B8F" />
-	<property class="Action1">
-	<property name="QuestGiven" value="challenge_reaper" />
-	</property>
-</item>
-<item id="2637" name="challengeWalmart">
-	<property name="Extends" value="challengeQuestMaster" />
-	<property name="CustomIconTint" value="781B8F" />
-	<property class="Action1">
-	<property name="QuestGiven" value="challenge_walmart" />
-	</property>
-</item>
-<item id="2638" name="challengeWedding">
-	<property name="Extends" value="challengeQuestMaster" />
-	<property name="EconomicValue" value="100" />
-	<property name="CustomIconTint" value="FFD900" />
-	<property class="Action1">
-	<property name="QuestGiven" value="challenge_weddingring" />
-	</property>
-</item>
-<item id="2639" name="challengeWallet">
-	<property name="Extends" value="challengeQuestMaster" />
-	<property name="EconomicValue" value="100" />
-	<property name="CustomIconTint" value="FFD900" />
-	<property class="Action1">
-	<property name="QuestGiven" value="challenge_wallet" />
-	</property>
-</item>
-<item id="2640" name="challengeBooks">
-	<property name="Extends" value="challengeQuestMaster" />
-	<property name="EconomicValue" value="100" />
-	<property name="CustomIconTint" value="FFD900" />
-	<property class="Action1">
-	<property name="QuestGiven" value="challenge_books" />
-	</property>
-</item>
-<item id="2641" name="challengeChildsHappiness">
-	<property name="Extends" value="challengeQuestMaster" />
-	<property name="EconomicValue" value="100" />
-	<property name="CustomIconTint" value="FFD900" />
-	<property class="Action1">
-	<property name="QuestGiven" value="challenge_childshappiness" />
-	</property>
-</item>
-<item id="2642" name="challengeToilet">
-	<property name="Extends" value="challengeQuestMaster" />
-	<property name="EconomicValue" value="100" />
-	<property name="CustomIconTint" value="FFD900" />
-	<property class="Action1">
-	<property name="QuestGiven" value="challenge_toilet" />
-	</property>
-</item>
-<item id="2643" name="challengeWalkman">
-	<property name="Extends" value="challengeQuestMaster" />
-	<property name="EconomicValue" value="100" />
-	<property name="CustomIconTint" value="FFD900" />
-	<property class="Action1">
-	<property name="QuestGiven" value="challenge_walkman" />
-	</property>
-</item>
-<item id="2644" name="challengeCondoms">
-	<property name="Extends" value="challengeQuestMaster" />
-	<property name="EconomicValue" value="100" />
-	<property name="CustomIconTint" value="FFD900" />
-	<property class="Action1">
-	<property name="QuestGiven" value="challenge_condoms" />
-	</property>
-</item>
-<item id="2645" name="challengeBaseball">
-	<property name="Extends" value="challengeQuestMaster" />
-	<property name="EconomicValue" value="100" />
-	<property name="CustomIconTint" value="FFD900" />
-	<property class="Action1">
-	<property name="QuestGiven" value="challenge_baseball" />
-	</property>
-</item>
-<item id="2646" name="challengeCards">
-	<property name="Extends" value="challengeQuestMaster" />
-	<property name="EconomicValue" value="100" />
-	<property name="CustomIconTint" value="FFD900" />
-	<property class="Action1">
-	<property name="QuestGiven" value="challenge_cards" />
-	</property>
-</item>
-<item id="2647" name="challengeCigarettes">
-	<property name="Extends" value="challengeQuestMaster" />
-	<property name="EconomicValue" value="100" />
-	<property name="CustomIconTint" value="FFD900" />
-	<property class="Action1">
-	<property name="QuestGiven" value="challenge_cigarettes" />
-	</property>
-</item>
-<item id="2648" name="challengeArtist">
-	<property name="Extends" value="challengeQuestMaster" />
-	<property name="EconomicValue" value="100" />
-	<property name="CustomIconTint" value="FFD900" />
-	<property class="Action1">
-	<property name="QuestGiven" value="challenge_artsupplies" />
-	</property>
-</item>
-<item id="2649" name="challengeSoap">
-	<property name="Extends" value="challengeQuestMaster" />
-	<property name="EconomicValue" value="100" />
-	<property name="CustomIconTint" value="FFD900" />
-	<property class="Action1">
-	<property name="QuestGiven" value="challenge_soap" />
-	</property>
-</item>
-<item id="2650" name="challengeBong">
-	<property name="Extends" value="challengeQuestMaster" />
-	<property name="EconomicValue" value="100" />
-	<property name="CustomIconTint" value="FFD900" />
-	<property class="Action1">
-	<property name="QuestGiven" value="challenge_bong" />
-	</property>
-</item>
-<item id="2651" name="challengeSouls">
-	<property name="Extends" value="challengeQuestMaster" />
-	<property name="EconomicValue" value="100" />
-	<property name="CustomIconTint" value="FFD900" />
-	<property class="Action1">
-	<property name="QuestGiven" value="challenge_souls" />
-	</property>
-</item>
-  
-  
+  <item id="2623" name="challengeLightThemUp">
+    <property name="Extends" value="challengeQuestMaster" />
+    <property name="CustomIconTint" value="781B8F" />
+    <property class="Action1">
+      <property name="QuestGiven" value="challenge_lightthemup" />
+    </property>
+  </item>
+  <item id="2624" name="challengeDogEatDog">
+    <property name="Extends" value="challengeQuestMaster" />
+    <property name="CustomIconTint" value="781B8F" />
+    <property class="Action1">
+      <property name="QuestGiven" value="challenge_dogeatdog" />
+    </property>
+  </item>
+  <item id="2625" name="challengeFeedTheMole">
+    <property name="Extends" value="challengeQuestMaster" />
+    <property name="CustomIconTint" value="781B8F" />
+    <property class="Action1">
+      <property name="QuestGiven" value="challenge_feedthemole" />
+    </property>
+  </item>
+  <item id="2626" name="challengeTakingNote">
+    <property name="Extends" value="challengeQuestMaster" />
+    <property name="CustomIconTint" value="781B8F" />
+    <property class="Action1">
+      <property name="QuestGiven" value="challenge_takingnote" />
+    </property>
+  </item>
+  <item id="2627" name="challengeCookbook">
+    <property name="Extends" value="schematicMaster" />
+    <property name="CustomIcon" value="challengeCookbook" />
+    <property name="DescriptionKey" value="challengeCookbookDesc"/>
+    <property class="Action1">
+      <property name="Skills_to_gain" value="Cooking,Cooking,Cooking,Cooking,Cooking" />
+    </property>
+  </item>
+  <item id="2628" name="challengeHotrod">
+    <property name="Extends" value="challengeQuestMaster" />
+    <property name="CustomIconTint" value="781B8F" />
+    <property name="DescriptionKey" value="challengeHotrodDesc"/>
+    <property class="Action1">
+      <property name="QuestGiven" value="challenge_hotrod" />
+    </property>
+  </item>
+  <item id="2629" name="challengeSurvivorJournal">
+    <property name="Extends" value="challengeQuestMaster" />
+    <property name="CustomIconTint" value="781B8F" />
+    <property name="DescriptionKey" value="challengeSurvivorJournalDesc"/>
+    <property class="Action1">
+      <property name="QuestGiven" value="challenge_journal" />
+    </property>
+  </item>
+  <item id="2630" name="challengeLockpick">
+    <property name="Extends" value="challengeQuestMaster" />
+    <property name="CustomIconTint" value="781B8F" />
+    <property name="DescriptionKey" value="challengeLockpickDesc"/>
+    <property class="Action1">
+      <property name="QuestGiven" value="challenge_lockpick" />
+    </property>
+  </item>
+  <item id="2631" name="challengeKickz">
+    <property name="Extends" value="challengeQuestMaster" />
+    <property name="CustomIconTint" value="781B8F" />
+    <property name="DescriptionKey" value="challengeKickzDesc"/>
+    <property class="Action1">
+      <property name="QuestGiven" value="challenge_Kickz" />
+    </property>
+  </item>
+  <item id="2635" name="challengeJock">
+    <property name="Extends" value="challengeQuestMaster" />
+    <property name="CustomIconTint" value="781B8F" />
+    <property class="Action1">
+      <property name="QuestGiven" value="challenge_jock" />
+    </property>
+  </item>
+  <item id="2636" name="challengeReaper">
+    <property name="Extends" value="challengeQuestMaster" />
+    <property name="CustomIconTint" value="781B8F" />
+    <property class="Action1">
+      <property name="QuestGiven" value="challenge_reaper" />
+    </property>
+  </item>
+  <item id="2637" name="challengeWalmart">
+    <property name="Extends" value="challengeQuestMaster" />
+    <property name="CustomIconTint" value="781B8F" />
+    <property class="Action1">
+      <property name="QuestGiven" value="challenge_walmart" />
+    </property>
+  </item>
+  <item id="2638" name="challengeWedding">
+    <property name="Extends" value="challengeQuestMaster" />
+    <property name="EconomicValue" value="100" />
+    <property name="CustomIconTint" value="FFD900" />
+    <property class="Action1">
+      <property name="QuestGiven" value="challenge_weddingring" />
+    </property>
+  </item>
+  <item id="2639" name="challengeWallet">
+    <property name="Extends" value="challengeQuestMaster" />
+    <property name="EconomicValue" value="100" />
+    <property name="CustomIconTint" value="FFD900" />
+    <property class="Action1">
+      <property name="QuestGiven" value="challenge_wallet" />
+    </property>
+  </item>
+  <item id="2640" name="challengeBooks">
+    <property name="Extends" value="challengeQuestMaster" />
+    <property name="EconomicValue" value="100" />
+    <property name="CustomIconTint" value="FFD900" />
+    <property class="Action1">
+      <property name="QuestGiven" value="challenge_books" />
+    </property>
+  </item>
+  <item id="2641" name="challengeChildsHappiness">
+    <property name="Extends" value="challengeQuestMaster" />
+    <property name="EconomicValue" value="100" />
+    <property name="CustomIconTint" value="FFD900" />
+    <property class="Action1">
+      <property name="QuestGiven" value="challenge_childshappiness" />
+    </property>
+  </item>
+  <item id="2642" name="challengeToilet">
+    <property name="Extends" value="challengeQuestMaster" />
+    <property name="EconomicValue" value="100" />
+    <property name="CustomIconTint" value="FFD900" />
+    <property class="Action1">
+      <property name="QuestGiven" value="challenge_toilet" />
+    </property>
+  </item>
+  <item id="2643" name="challengeWalkman">
+    <property name="Extends" value="challengeQuestMaster" />
+    <property name="EconomicValue" value="100" />
+    <property name="CustomIconTint" value="FFD900" />
+    <property class="Action1">
+      <property name="QuestGiven" value="challenge_walkman" />
+    </property>
+  </item>
+  <item id="2644" name="challengeCondoms">
+    <property name="Extends" value="challengeQuestMaster" />
+    <property name="EconomicValue" value="100" />
+    <property name="CustomIconTint" value="FFD900" />
+    <property class="Action1">
+      <property name="QuestGiven" value="challenge_condoms" />
+    </property>
+  </item>
+  <item id="2645" name="challengeBaseball">
+    <property name="Extends" value="challengeQuestMaster" />
+    <property name="EconomicValue" value="100" />
+    <property name="CustomIconTint" value="FFD900" />
+    <property class="Action1">
+      <property name="QuestGiven" value="challenge_baseball" />
+    </property>
+  </item>
+  <item id="2646" name="challengeCards">
+    <property name="Extends" value="challengeQuestMaster" />
+    <property name="EconomicValue" value="100" />
+    <property name="CustomIconTint" value="FFD900" />
+    <property class="Action1">
+      <property name="QuestGiven" value="challenge_cards" />
+    </property>
+  </item>
+  <item id="2647" name="challengeCigarettes">
+    <property name="Extends" value="challengeQuestMaster" />
+    <property name="EconomicValue" value="100" />
+    <property name="CustomIconTint" value="FFD900" />
+    <property class="Action1">
+      <property name="QuestGiven" value="challenge_cigarettes" />
+    </property>
+  </item>
+  <item id="2648" name="challengeArtist">
+    <property name="Extends" value="challengeQuestMaster" />
+    <property name="EconomicValue" value="100" />
+    <property name="CustomIconTint" value="FFD900" />
+    <property class="Action1">
+      <property name="QuestGiven" value="challenge_artsupplies" />
+    </property>
+  </item>
+  <item id="2649" name="challengeSoap">
+    <property name="Extends" value="challengeQuestMaster" />
+    <property name="EconomicValue" value="100" />
+    <property name="CustomIconTint" value="FFD900" />
+    <property class="Action1">
+      <property name="QuestGiven" value="challenge_soap" />
+    </property>
+  </item>
+  <item id="2650" name="challengeBong">
+    <property name="Extends" value="challengeQuestMaster" />
+    <property name="EconomicValue" value="100" />
+    <property name="CustomIconTint" value="FFD900" />
+    <property class="Action1">
+      <property name="QuestGiven" value="challenge_bong" />
+    </property>
+  </item>
+  <item id="2651" name="challengeSouls">
+    <property name="Extends" value="challengeQuestMaster" />
+    <property name="EconomicValue" value="100" />
+    <property name="CustomIconTint" value="FFD900" />
+    <property class="Action1">
+      <property name="QuestGiven" value="challenge_souls" />
+    </property>
+  </item>
+
+
   <!--SinMod Quest Items -->
-<item id="2700" name="questItem">
-	<property name="Meshfile" value="Items/Misc/sackPrefab" />
-	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
-	<property name="Material" value="organic" />
-	<property name="Weight" value="5" />
-	<property name="HoldType" value="45" />
-	<property name="Stacknumber" value="5" />
-	<property name="DropScale" value="4" />
-	<property name="IsDeveloper" value="true" />
-	<property name="EconomicValue" value="50" />
-</item>
-<item id="2701" name="questItemRing">
-	<property name="Extends" value="questItem" />
-  <property name="CustomIcon" value="questMaster" />
-  <property name="CustomIconTint" value="f000ff" />
-	<property name="EconomicValue" value="200" />
-</item>
-<item id="2702" name="questItemRing2">
-	<property name="Extends" value="questItem" />
-<property name="CustomIcon" value="questMaster" />
-  <property name="CustomIconTint" value="f000ff" />
-</item>
-<item id="2703" name="questItemWallet">
-	<property name="Extends" value="questItem" />
-  <property name="CustomIcon" value="questMaster" />
-  <property name="CustomIconTint" value="f000ff" />
-	<property name="EconomicValue" value="150" />
-</item>
-<item id="2704" name="questItemBook">
-	<property name="Extends" value="questItem" />
-  <property name="CustomIcon" value="questMaster" />
-  <property name="CustomIconTint" value="f000ff" />
-	<property name="Meshfile" value="Items/Misc/Book" />
-	<property name="Material" value="paper" />
-	<property name="Weight" value="15" />
-</item>
-<item id="2705" name="questItemTeddy">
-	<property name="Extends" value="questItem" />
-  <property name="CustomIcon" value="questMaster" />
-  <property name="CustomIconTint" value="f000ff" />
-	<property name="Material" value="cloth" />
-	<property name="EconomicValue" value="5" />
-</item>
-<item id="2706" name="questItemToiletPaper">
-	<property name="Extends" value="questItem" />
-  <property name="CustomIcon" value="questMaster" />
-  <property name="CustomIconTint" value="f000ff" />
-	<property class="Action1">
-		<property name="Class" value="Eat" />
-		<property name="Delay" value="1.0" />
-		<property name="Use_time" value="..." />
-		<property name="Gain_health" value="0" />
-		<property name="Gain_food" value="0" />
-		<property name="Gain_water" value="0" />
-		<property name="Debuff" value="dysentery" />
-	</property>
-</item>
-<item id="2707" name="questItemGameboy">
-	<property name="Extends" value="questItem" />
-  <property name="CustomIcon" value="questMaster" />
-  <property name="CustomIconTint" value="f000ff" />
-	<property name="EconomicValue" value="150" />
-	<property name="Material" value="MelectronicParts" />
-	<property name="Weight" value="3" />
-</item>
-<item id="2708" name="questItemWalkman">
-	<property name="Extends" value="questItem" />
-  <property name="CustomIcon" value="questMaster" />
-  <property name="CustomIconTint" value="f000ff" />
-	<property name="EconomicValue" value="150" />
-	<property name="Material" value="MelectronicParts" />
-	<property name="Weight" value="3" />
-</item>
-<item id="2709" name="questItemCondoms">
-	<property name="Extends" value="questItem" />
-  <property name="CustomIcon" value="questMaster" />
-  <property name="CustomIconTint" value="f000ff" />
-	<property name="EconomicValue" value="150" />
-</item>
-<item id="2710" name="questItemBaseball">
-	<property name="Extends" value="questItem" />
-<property name="CustomIcon" value="questMaster" />
-  <property name="CustomIconTint" value="f000ff" />
-</item>
-<item id="2711" name="questItemCards">
-	<property name="Extends" value="questItem" />
-<property name="CustomIcon" value="questMaster" />
-  <property name="CustomIconTint" value="f000ff" />
-</item>
-<item id="2712" name="questItemCigarettes">
-	<property name="Extends" value="questItem" />
-  <property name="CustomIcon" value="questMaster" />
-  <property name="CustomIconTint" value="f000ff" />
-	<property name="EconomicValue" value="150" />
-</item>
-<item id="2713" name="questItemArtSupplies">
-	<property name="Extends" value="questItem" />
-  <property name="CustomIcon" value="questMaster" />
-  <property name="CustomIconTint" value="f000ff" />
-	<property name="EconomicValue" value="10" />
-</item>
-<item id="2714" name="questItemColoringBook">
-	<property name="Extends" value="questItem" />
-  <property name="CustomIcon" value="questMaster" />
-  <property name="CustomIconTint" value="f000ff" />
-	<property name="Material" value="paper" />
-	<property name="Weight" value="10" />
-	<property name="EconomicValue" value="5" />
-</item>
-<item id="2715" name="questItemBong">
-	<property name="Extends" value="questItem" />
-  <property name="CustomIcon" value="questMaster" />
-  <property name="CustomIconTint" value="f000ff" />
-	<property name="Material" value="glass" />
-	<property name="Weight" value="20" />
-	<property name="EconomicValue" value="15" />
-</item>
-<item id="2716" name="questItemSoul">
-	<property name="Extends" value="questItem"/>
-  <property name="CustomIcon" value="questMaster" />
-  <property name="CustomIconTint" value="f000ff" />
-	<property name="EconomicValue" value="25"/>
-</item>
-  
-  
-  
+  <item id="2700" name="questItem">
+    <property name="Meshfile" value="Items/Misc/sackPrefab" />
+    <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+    <property name="Material" value="organic" />
+    <property name="Weight" value="5" />
+    <property name="HoldType" value="45" />
+    <property name="Stacknumber" value="5" />
+    <property name="DropScale" value="4" />
+    <property name="IsDeveloper" value="true" />
+    <property name="EconomicValue" value="50" />
+  </item>
+  <item id="2701" name="questItemRing">
+    <property name="Extends" value="questItem" />
+    <property name="CustomIcon" value="questItemRing" />
+    <property name="EconomicValue" value="200" />
+  </item>
+  <item id="2702" name="questItemRing2">
+    <property name="Extends" value="questItem" />
+    <property name="CustomIcon" value="questItemRing2" />
+  </item>
+  <item id="2703" name="questItemWallet">
+    <property name="Extends" value="questItem" />
+    <property name="CustomIcon" value="questItemWallet" />
+    <property name="EconomicValue" value="150" />
+  </item>
+  <item id="2704" name="questItemBook">
+    <property name="Extends" value="questItem" />
+    <property name="CustomIcon" value="questItemBook" />
+    <property name="Meshfile" value="Items/Misc/Book" />
+    <property name="Material" value="paper" />
+    <property name="Weight" value="15" />
+  </item>
+  <item id="2705" name="questItemTeddy">
+    <property name="Extends" value="questItem" />
+    <property name="CustomIcon" value="questItemTeddy" />
+    <property name="Material" value="cloth" />
+    <property name="EconomicValue" value="5" />
+  </item>
+  <item id="2706" name="questItemToiletPaper">
+    <property name="Extends" value="questItem" />
+    <property name="CustomIcon" value="questItemToiletPaper" />
+    <property class="Action1">
+      <property name="Class" value="Eat" />
+      <property name="Delay" value="1.0" />
+      <property name="Use_time" value="..." />
+      <property name="Gain_health" value="0" />
+      <property name="Gain_food" value="0" />
+      <property name="Gain_water" value="0" />
+      <property name="Debuff" value="dysentery" />
+    </property>
+  </item>
+  <item id="2707" name="questItemGameboy">
+    <property name="Extends" value="questItem" />
+    <property name="CustomIcon" value="questItemGameboy" />
+    <property name="EconomicValue" value="150" />
+    <property name="Material" value="MelectronicParts" />
+    <property name="Weight" value="3" />
+  </item>
+  <item id="2708" name="questItemWalkman">
+    <property name="Extends" value="questItem" />
+    <property name="CustomIcon" value="questItemWalkman" />
+    <property name="EconomicValue" value="150" />
+    <property name="Material" value="MelectronicParts" />
+    <property name="Weight" value="3" />
+  </item>
+  <item id="2709" name="questItemCondoms">
+    <property name="Extends" value="questItem" />
+    <property name="CustomIcon" value="questItemCondoms" />
+    <property name="EconomicValue" value="150" />
+  </item>
+  <item id="2710" name="questItemBaseball">
+    <property name="Extends" value="questItem" />
+    <property name="CustomIcon" value="questItemBaseball" />
+  </item>
+  <item id="2711" name="questItemCards">
+    <property name="Extends" value="questItem" />
+    <property name="CustomIcon" value="questItemCards" />
+  </item>
+  <item id="2712" name="questItemCigarettes">
+    <property name="Extends" value="questItem" />
+    <property name="CustomIcon" value="questItemCigarettes" />
+    <property name="EconomicValue" value="150" />
+  </item>
+  <item id="2713" name="questItemArtSupplies">
+    <property name="Extends" value="questItem" />
+    <property name="CustomIcon" value="questItemArtSupplies" />
+    <property name="EconomicValue" value="10" />
+  </item>
+  <item id="2714" name="questItemColoringBook">
+    <property name="Extends" value="questItem" />
+    <property name="CustomIcon" value="questItemColoringBook" />
+    <property name="Material" value="paper" />
+    <property name="Weight" value="10" />
+    <property name="EconomicValue" value="5" />
+  </item>
+  <item id="2715" name="questItemBong">
+    <property name="Extends" value="questItem" />
+    <property name="CustomIcon" value="questItemBong" />
+    <property name="Material" value="glass" />
+    <property name="Weight" value="20" />
+    <property name="EconomicValue" value="15" />
+  </item>
+  <item id="2716" name="questItemSoul">
+    <property name="Extends" value="questItem"/>
+    <property name="CustomIcon" value="questItemSoul" />
+    <property name="EconomicValue" value="25"/>
+  </item>
+
   <!--SinMod Legendary Weapons-->
   <item id="2800" name="legendaryClubSpiked">
     <property name="Extends" value="clubIron" />
@@ -13302,6 +14896,6 @@ Mesh files no longer used:
       <property name="DismembermentBonus" value="0,0.00036"/>
     </property>
   </item>
-  
-  
+
+
 </items>

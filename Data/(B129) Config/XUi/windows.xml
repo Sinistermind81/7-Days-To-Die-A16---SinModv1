@@ -696,7 +696,7 @@
         <!-- <sprite depth="1" color="[lightGrey]" type="sliced" pos="3,-3" width="381" height="739" />
 				<sprite depth="1" color="[darkGrey]" type="sliced" width="304" height="697" pos="6,-5"/> -->
         <!-- PLAYER IMAGE -->
-        <texture depth="1" name="ToolBeltBackground" texture="@http://botmanhosting.com/imgs/player.jpg" material="Materials/Transparent Colored"/>
+        <texture depth="1" name="ToolBeltBackground" texture="@https://cdn.discordapp.com/attachments/292953518242004992/333277725102178304/characterBG3.png" material="Materials/Transparent Colored"/>
         <texture depth="2" name="playerPreview" material="Materials/Transparent Colored" size="255,702" globalopacity="false"/>
 
         <rect pos="3,-3">

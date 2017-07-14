@@ -84,6 +84,10 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
     <wildcard_forge_category />
   </recipe>
 
+  <recipe name="assortedVegetables" count="1" tooltip="ttScrapVeggies" craft_time="0.1" craft_exp_gain="0">
+    <wildcard_forge_category />
+  </recipe>
+
   <!-- * * * * * * * * * * * * main recipes * * * * * * * * * * * * -->
 
   <recipe name="44MagBullet" count="1" craft_area="workbench">
@@ -2725,29 +2729,6 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
     <ingredient name="genericAmmoBox" count="1"/>
   </recipe>
 
-  <!--SinMod Hidden Door Mod-->
-  <!--
-  <recipe name="Remote" count="1" >
-    <ingredient name="forgedIron" count="5"  />
-    <ingredient name="electricParts" count="5"/>
-  </recipe>
-  <recipe name="gearMechanism" count="1" >
-    <ingredient name="mechanicalParts" count="2"/>
-  </recipe>
-  <recipe name="hiddenWoodDoor" count="1" craft_area="workbench">
-    <ingredient name="wood" count="180"/>
-    <ingredient name="mechanicalParts" count="2" />
-    <ingredient name="spring" count="4"/>
-    <ingredient name="gearMechanism" count="1" />
-  </recipe>
-  <recipe name="hiddenConcreteDoor" count="1" craft_area="workbench">
-    <ingredient name="concreteBlock" count="4"/>
-    <ingredient name="mechanicalParts" count="2" />
-    <ingredient name="spring" count="4"/>
-    <ingredient name="gearMechanism" count="1" />
-  </recipe>
-  -->
-  
   <!--SinMod Working Stove and Sink-->
   <recipe name="workstationOven" count="1">
     <ingredient name="forgedIron" count="20" />
@@ -2777,384 +2758,370 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
     <ingredient name="shortMetalPipe" count="10"/>
   </recipe>
 
-  <!-- Expanded Player Storage Mod -->
-  <recipe name="cntEPSMunitionsBox" count="1" craft_area="workstationDecor">
-    <ingredient name="forgedIron" count="6" />
-  </recipe>
-  <recipe name="cntEPSCardboardBox" count="1" craft_area="workstationDecor">
-    <ingredient name="paper" count="16" />
-    <ingredient name="ductTape" count="1" />
-  </recipe>
-  <recipe name="cntEPSFileCabinet" count="1" craft_area="workstationDecor">
-    <ingredient name="forgedIron" count="10" />
-  </recipe>
-  <recipe name="cntEPSLockers" count="1" craft_area="workstationDecor">
-    <ingredient name="forgedIron" count="2" />
-  </recipe>
-  <recipe name="cntEPSFridge" count="1" craft_area="workstationDecor">
-    <ingredient name="forgedIron" count="10"/>
-    <ingredient name="shortMetalPipe" count="2"/>
-    <ingredient name="electricParts" count="8"/>
-    <ingredient name="electronicParts" count="2"/>
-  </recipe>
-  <recipe name="cntEPSFridgeBottom" count="1" craft_area="workstationDecor">
-    <ingredient name="forgedIron" count="4"/>
-    <ingredient name="shortMetalPipe" count="2"/>
-    <ingredient name="electricParts" count="4"/>
-    <ingredient name="electronicParts" count="1"/>
-  </recipe>
-  <recipe name="cntEPSFridgeTop" count="1" craft_area="workstationDecor">
-    <ingredient name="forgedIron" count="4"/>
-    <ingredient name="shortMetalPipe" count="2"/>
-    <ingredient name="electricParts" count="4"/>
-    <ingredient name="electronicParts" count="1"/>
-  </recipe>
-  <recipe name="cntEPSBookcase" count="1" craft_area="workstationDecor">
-    <ingredient name="wood" count="10"  />
-  </recipe>
-  <recipe name="cntEPSMedicineCabinet" count="1" craft_area="workstationDecor">
-    <ingredient name="wood" count="8"  />
-  </recipe>
-  <recipe name="cntEPSPillCase" count="1" craft_area="workstationDecor">
-    <ingredient name="wood" count="8"  />
-  </recipe>
-  <recipe name="cntEPSBeerCooler" count="1" craft_area="workstationDecor">
-    <ingredient name="forgedIron" count="4"/>
-    <ingredient name="shortMetalPipe" count="3"/>
-    <ingredient name="electricParts" count="5"/>
-    <ingredient name="electronicParts" count="1"/>
-  </recipe>
-  <recipe name="cntEPSWallSafe" count="1" craft_area="workstationDecor">
-    <ingredient name="forgedIron" count="10"/>
-    <ingredient name="spring" count="2"/>
-  </recipe>
-  <recipe name="cntEPSCoffin" count="1" craft_area="workstationDecor">
-    <ingredient name="wood" count="10"  />
-  </recipe>
-  <recipe name="cntEPSGasPump" count="1" craft_area="workstationDecor">
-    <ingredient name="forgedIron" count="15" />
-    <ingredient name="shortMetalPipe" count="5" />
-  </recipe>
-  <recipe name="cntEPSDrawer" count="1" craft_area="workstationDecor">
-    <ingredient name="forgedIron" count="10"/>
-    <ingredient name="spring" count="2"/>
-  </recipe>
-
   <!-- Expanded Farming Mod -->
-  <recipe name="seedWheat" count="1" >
+  <recipe name="plantedWheat1" count="1" >
     <ingredient name="Wheat" count="1" />
   </recipe>
-  <recipe name="seedGrape" count="1" >
+  <recipe name="plantedGrape1" count="1" >
     <ingredient name="Grapes" count="1" />
   </recipe>
-  <recipe name="seedApple" count="1" >
+  <recipe name="plantedApple1" count="1" >
     <ingredient name="Apple" count="1" />
   </recipe>
-  <recipe name="yuccaSeed" count="1" craft_time="1">
+  <recipe name="plantedOrange1" count="1" >
+    <ingredient name="Orange" count="1" />
+  </recipe>
+  <recipe name="plantedYucca1" count="1" craft_time="1">
     <!--farmAlt1<recipe name="plantedYucca1" count="1">farmAlt2-->
     <ingredient name="foodYuccaFruit" count="1"/>
   </recipe>
 
   <!-- Seed Pack -->
-  <recipe name="yuccaSeed" count="1" >
+  <recipe name="plantedYucca1" count="1" >
     <ingredient name="seedPack" count="1" />
   </recipe>
-  <recipe name="aloeSeed" count="1" >
+  <recipe name="plantedAloe1" count="1" >
     <ingredient name="seedPack" count="1" />
   </recipe>
-  <recipe name="chrysanthemumSeed" count="1" >
+  <recipe name="plantedChrysanthemum1" count="1" >
     <ingredient name="seedPack" count="1" />
   </recipe>
-  <recipe name="seedWheat" count="1" >
+  <recipe name="plantedWheat1" count="1" >
     <ingredient name="seedPack" count="1" />
   </recipe>
-  <recipe name="seedGrape" count="1" >
+  <recipe name="plantedGrape1" count="1" >
     <ingredient name="seedPack" count="1" />
   </recipe>
-  <recipe name="hopSeed" count="1" >
+  <recipe name="plantedHop1" count="1" >
     <ingredient name="seedPack" count="1" />
   </recipe>
-  <recipe name="seedApple" count="1" >
+  <recipe name="plantedApple1" count="1" >
     <ingredient name="seedPack" count="1" />
   </recipe>
-  <recipe name="blueberrySeed" count="1">
+  <recipe name="plantedOrange1" count="1" >
+    <ingredient name="seedPack" count="1" />
+  </recipe>
+  <recipe name="plantedBlueberry1" count="1">
     <ingredient name="seedPack" count="1"/>
   </recipe>
-  <recipe name="cornSeed" count="1">
+  <recipe name="plantedCorn1" count="1">
     <ingredient name="seedPack" count="1"/>
   </recipe>
-  <recipe name="cottonSeed" count="1">
+  <recipe name="plantedCotton1" count="1">
     <ingredient name="seedPack" count="1"/>
   </recipe>
-  <recipe name="goldenrodSeed" count="1">
+  <recipe name="plantedGoldenrod1" count="1">
     <ingredient name="seedPack" count="1"/>
   </recipe>
-  <recipe name="potatoSeed" count="1">
+  <recipe name="plantedPotato1" count="1">
+    <ingredient name="seedPack" count="1"/>
+  </recipe>
+  <recipe name="plantedMushroom1" count="1">
     <ingredient name="seedPack" count="1"/>
   </recipe>
 
   <!--SinMod Expanded Food-->
-
-  <recipe name="assortedVegetables" count="1" tooltip="ttScrapVeggies" craft_time="0.1" craft_exp_gain="0">
-    <wildcard_forge_category />
+  <recipe name="stripsClingwrap" count="7">
+    <ingredient name="Clingwrap" count="1" />
   </recipe>
-  
-    <recipe name="bowl" count="1" craft_area="campfire">
-        <ingredient name="clayLump" count="3"/>
-    </recipe>
-    <recipe name="dinnerPlate" count="1" craft_area="campfire">
-        <ingredient name="clayLump" count="4"/>
-    </recipe>
-	<recipe name="baconEggSandwich" count="1">
-        <ingredient name="baconAndEggs" count="2"/>
-        <ingredient name="Bread" count="1"/>
-    </recipe>
-	<recipe name="scrambledEggs" count="1" craft_area="campfire" craft_tool="cookingPot">
-        <ingredient name="egg" count="2"/>
-        <ingredient name="animalFat" count="1"/>
-    </recipe>
-	<recipe name="Omelet" count="1" craft_area="campfire" craft_tool="cookingPot">
-        <ingredient name="egg" count="2"/>
-        <ingredient name="animalFat" count="1"/>
-        <ingredient name="rawMeat" count="1"/>
-    </recipe>
-	<recipe name="stewChunkyMeat" count="1" craft_area="campfire" craft_tool="cookingPot">
-		<ingredient name="bowlWater" count="1" />
-        <ingredient name="rawMeat" count="3"/>
-    </recipe>
-	<recipe name="applePie" count="1" craft_area="campfire" craft_tool="cookingPot">
+  <recipe name="rawMeat" count="1">
+    <ingredient name="sealedMeat" count="1" />
+  </recipe>
+  <recipe name="sealedMeat" count="1" craft_time="0.1">
+    <ingredient name="rawMeat" count="1" />
+    <ingredient name="stripsClingwrap" count="1" />
+  </recipe>
+  <recipe name="flour" count="1">
+    <ingredient name="Wheat" count="5"/>
+  </recipe>
+  <recipe name="bowl" count="1" craft_area="campfire">
+    <ingredient name="clayLump" count="3"/>
+  </recipe>
+  <recipe name="dinnerPlate" count="1" craft_area="campfire">
+    <ingredient name="clayLump" count="4"/>
+  </recipe>
+  <recipe name="baconEggSandwich" count="1">
+    <ingredient name="baconAndEggs" count="2"/>
+    <ingredient name="Bread" count="1"/>
+  </recipe>
+  <recipe name="scrambledEggs" count="1" craft_area="campfire" craft_tool="cookingPot">
+    <ingredient name="egg" count="2"/>
+    <ingredient name="animalFat" count="1"/>
+  </recipe>
+  <recipe name="Omelet" count="1" craft_area="campfire" craft_tool="cookingPot">
+    <ingredient name="egg" count="2"/>
+    <ingredient name="animalFat" count="1"/>
+    <ingredient name="rawMeat" count="1"/>
+  </recipe>
+  <recipe name="stewChunkyMeat" count="1" craft_area="campfire" craft_tool="cookingPot">
+    <ingredient name="bowlWater" count="1" />
+    <ingredient name="rawMeat" count="3"/>
+  </recipe>
+  <recipe name="applePie" count="1" craft_area="campfire" craft_tool="cookingPot">
     <ingredient name="egg" count="1" />
-    <ingredient name="flour" count="1" />
+    <ingredient name="dough" count="1" />
     <ingredient name="bowlWater" count="1" />
     <ingredient name="Apple" count="3" />
   </recipe>
-	<recipe name="appleCider" count="1" craft_area="chemistryStation">
+    <recipe name="appleCider" count="1" craft_area="chemistryStation">
     <ingredient name="Apple" count="2" />
     <ingredient name="emptyJar" count="1" />
   </recipe>
-	<recipe name="blueberryJam" count="1">
+  <recipe name="orangeJuice" count="1" craft_area="chemistryStation">
+    <ingredient name="Orange" count="2" />
+    <ingredient name="emptyJar" count="1" />
+  </recipe>
+  <recipe name="blueberryJam" count="1">
     <ingredient name="blueberries" count="12" />
     <ingredient name="emptyJar" count="1" />
   </recipe>
-	<recipe name="canMeatStew" count="1">
+  <recipe name="canMeatStew" count="1">
     <ingredient name="meatStew" count="1" />
     <ingredient name="canEmpty" count="1" />
   </recipe>
-	<recipe name="canLokiStew" count="1" >
-    <ingredient name="lokiStew" count="1" />
-    <ingredient name="canEmpty" count="1" />
-  </recipe>
-	<recipe name="canVegetableStew" count="1">
+  <recipe name="canVegetableStew" count="1">
     <ingredient name="vegetableStew" count="1" />
     <ingredient name="canEmpty" count="1" />
   </recipe>
-    <recipe name="canChunkyMeatStew" count="1">
+  <recipe name="canChunkyMeatStew" count="1">
     <ingredient name="stewChunkyMeat" count="1" />
     <ingredient name="canEmpty" count="1" />
   </recipe>
-	<recipe name="bowlFruit" count="1">
+  <recipe name="bowlFruit" count="1">
     <ingredient name="bowl" count="1" />
     <ingredient name="foodYuccaFruit" count="3" />
     <ingredient name="blueberries" count="3" />
     <ingredient name="Grapes" count="3" />
-	</recipe>
-	<recipe name="bowlFruit" count="1">
+  </recipe>
+  <recipe name="bowlFruit" count="1">
     <ingredient name="bowl" count="1" />
     <ingredient name="canPears" count="2" />
-	</recipe>
-	<recipe name="cornbreadJam" count="1">
+  </recipe>
+  <recipe name="cornbreadJam" count="1">
     <ingredient name="cornBread" count="1" />
     <ingredient name="blueberries" count="1" />
-	</recipe>
-	<recipe name="soupChunkyBeef" count="1">
+  </recipe>
+  <recipe name="soupChunkyBeef" count="1">
     <ingredient name="bowl" count="1" />
     <ingredient name="canBeef" count="2" />
-	</recipe>
-	<recipe name="soupChicken" count="1">
+  </recipe>
+  <recipe name="soupChicken" count="1">
     <ingredient name="bowl" count="1" />
     <ingredient name="canChicken" count="2" />
-	</recipe>
-	<recipe name="soupLamb" count="1">
+  </recipe>
+  <recipe name="soupLamb" count="1">
     <ingredient name="bowl" count="1" />
     <ingredient name="canLamb" count="2" />
-	</recipe>
-	<recipe name="bowlChili" count="1">
+  </recipe>
+  <recipe name="bowlChili" count="1">
     <ingredient name="bowl" count="1" />
     <ingredient name="canChili" count="2" />
-	</recipe>
-	<recipe name="bowlMiso" count="1">
+  </recipe>
+  <recipe name="bowlMiso" count="1">
     <ingredient name="bowl" count="1" />
     <ingredient name="canMiso" count="2" />
-	</recipe>
-	<recipe name="soupPea" count="1">
+  </recipe>
+  <recipe name="soupPea" count="1">
     <ingredient name="bowl" count="1" />
     <ingredient name="canPeas" count="2" />
-	</recipe>
-	<recipe name="bowlPasta" count="1">
+  </recipe>
+  <recipe name="bowlPasta" count="1">
     <ingredient name="bowl" count="1" />
     <ingredient name="canPasta" count="2" />
-	</recipe>
-	<recipe name="bowlSoup" count="1">
+  </recipe>
+  <recipe name="bowlSoup" count="1">
     <ingredient name="bowl" count="1" />
     <ingredient name="canSoup" count="2" />
-	</recipe>
-	<recipe name="bowlStock" count="1">
+  </recipe>
+  <recipe name="bowlStock" count="1">
     <ingredient name="bowl" count="1" />
     <ingredient name="canStock" count="2" />
-	</recipe>
-	<recipe name="warmsoupChunkyBeef" count="1" craft_area="campfire" craft_tool="cookingPot">
+  </recipe>
+  <recipe name="warmsoupChunkyBeef" count="1" craft_area="campfire" craft_tool="cookingPot">
     <ingredient name="soupChunkyBeef" count="1" />
-	</recipe>
-	<recipe name="warmsoupChicken" count="1" craft_area="campfire" craft_tool="cookingPot">
+  </recipe>
+<recipe name="warmsoupChicken" count="1" craft_area="campfire" craft_tool="cookingPot">
     <ingredient name="soupChicken" count="1" />
-	</recipe>
-	<recipe name="warmsoupLamb" count="1" craft_area="campfire" craft_tool="cookingPot">
+  </recipe>
+  <recipe name="warmsoupLamb" count="1" craft_area="campfire" craft_tool="cookingPot">
     <ingredient name="soupLamb" count="1" />
-	</recipe>
-	<recipe name="warmbowlChili" count="1" craft_area="campfire" craft_tool="cookingPot">
+  </recipe>
+  <recipe name="warmbowlChili" count="1" craft_area="campfire" craft_tool="cookingPot">
     <ingredient name="bowlChili" count="1" />
-	</recipe>
-	<recipe name="warmbowlMiso" count="1" craft_area="campfire" craft_tool="cookingPot">
+  </recipe>
+  <recipe name="warmbowlMiso" count="1" craft_area="campfire" craft_tool="cookingPot">
     <ingredient name="bowlMiso" count="1" />
-	</recipe>
-	<recipe name="warmsoupPea" count="1" craft_area="campfire" craft_tool="cookingPot">
+  </recipe>
+  <recipe name="warmsoupPea" count="1" craft_area="campfire" craft_tool="cookingPot">
     <ingredient name="soupPea" count="1" />
-	</recipe>
-	<recipe name="warmbowlPasta" count="1" craft_area="campfire" craft_tool="cookingPot">
+  </recipe>
+  <recipe name="warmbowlPasta" count="1" craft_area="campfire" craft_tool="cookingPot">
     <ingredient name="bowlPasta" count="1" />
-	</recipe>
-	<recipe name="warmbowlSoup" count="1" craft_area="campfire" craft_tool="cookingPot">
+  </recipe>
+  <recipe name="warmbowlSoup" count="1" craft_area="campfire" craft_tool="cookingPot">
     <ingredient name="bowlSoup" count="1" />
-	</recipe>
-	<recipe name="warmbowlStock" count="1" craft_area="campfire" craft_tool="cookingPot">
+  </recipe>
+  <recipe name="warmbowlStock" count="1" craft_area="campfire" craft_tool="cookingPot">
     <ingredient name="bowlStock" count="1" />
-	</recipe>
-	<recipe name="creamedCorn" count="1" craft_area="campfire" craft_tool="cookingPot">
+  </recipe>
+  <recipe name="creamedCorn" count="1" craft_area="campfire" craft_tool="cookingPot">
     <ingredient name="bowlWater" count="1" />
     <ingredient name="corn" count="2" />
-	</recipe>
-    <recipe name="bowlWater" count="1" craft_area="campfire" craft_tool="cookingPot">
-        <ingredient name="bowlMurkyWater" count="1"/>
-    </recipe>
-<!--    <recipe name="bowlWater" count="1">
-        <ingredient name="snowHarvested" count="1" />
-        <ingredient name="bowl" count="1" />
-    </recipe>	-->
-    <recipe name="soupMushroom" count="1" craft_area="campfire" craft_tool="cookingPot">
-        <ingredient name="bowlWater" count="1"/>
+  </recipe>
+  <recipe name="bowlWater" count="1" craft_area="campfire" craft_tool="cookingPot">
+    <ingredient name="bowlMurkyWater" count="1"/>
+  </recipe>
+  <recipe name="soupMushroom" count="1" craft_area="campfire" craft_tool="cookingPot">
+    <ingredient name="bowlWater" count="1"/>
     <ingredient name="mushrooms" count="3" />
-    </recipe>
-	<recipe name="Mead" count="1" craft_area="chemistryStation">
-        <ingredient name="Wheat" count="1"/>
-        <ingredient name="bottledWater" count="1"/>
-		<ingredient name="foodHoney" count="1"/>
-    </recipe>
-	<recipe name="meadBlueberry" count="1" craft_area="chemistryStation">
-        <ingredient name="Wheat" count="1"/>
-        <ingredient name="bottledWater" count="1"/>
-		<ingredient name="foodHoney" count="1"/>
-		<ingredient name="blueberries" count="1"/>
-    </recipe>
-	<recipe name="bottledWater" count="1">
-         <ingredient name="purificationTablets" count="1" />      
+  </recipe>
+  <recipe name="Mead" count="1" craft_area="chemistryStation">
+    <ingredient name="Wheat" count="1"/>
+    <ingredient name="bottledWater" count="1"/>
+    <ingredient name="foodHoney" count="1"/>
+  </recipe>
+  <recipe name="meadBlueberry" count="1" craft_area="chemistryStation">
+    <ingredient name="Wheat" count="1"/>
+    <ingredient name="bottledWater" count="1"/>
+    <ingredient name="foodHoney" count="1"/>
+    <ingredient name="blueberries" count="1"/>
+  </recipe>
+  <recipe name="bottledWater" count="1">
+    <ingredient name="purificationTablets" count="1" />
     <ingredient name="bottledRiverWater" count="1" />
-    </recipe>     
-    <recipe name="waterPurified" count="1">
-         <ingredient name="purificationTablets" count="1" />  
-         <ingredient name="bottledWater" count="1" />
-    </recipe>  
-    <recipe name="honeyHam" count="1" craft_area="campfire" craft_tool="cookingGrill">
-        <ingredient name="foodHoney" count="1"/>
-        <ingredient name="boiledMeat" count="1"/>
-    </recipe>
-    <recipe name="drinkHealth" count="1">
-        <ingredient name="painkillers" count="1" />  
-		<ingredient name="vitamins" count="1" />  
-        <ingredient name="bottledWater" count="1" />
-    </recipe>
-	<recipe name="vegetableStew" count="1" craft_area="campfire" craft_tool="cookingPot">
-	<ingredient name="bowlWater" count="1" />
+  </recipe>
+  <recipe name="waterPurified" count="1">
+    <ingredient name="purificationTablets" count="1" />
+    <ingredient name="bottledWater" count="1" />
+  </recipe>
+  <recipe name="honeyHam" count="1" craft_area="campfire" craft_tool="cookingGrill">
+    <ingredient name="foodHoney" count="1"/>
+    <ingredient name="boiledMeat" count="1"/>
+  </recipe>
+  <recipe name="drinkHealth" count="1">
+    <ingredient name="painkillers" count="1" />
+    <ingredient name="vitamins" count="1" />
+    <ingredient name="bottledWater" count="1" />
+  </recipe>
+  <recipe name="vegetableStew" count="1" craft_area="campfire" craft_tool="cookingPot">
+    <ingredient name="bowlWater" count="1" />
     <ingredient name="assortedVegetables" count="6" />
   </recipe>
-<recipe name="biscuit" count="1" craft_area="campfire" craft_tool="bowlWater">
-	<ingredient name="flour" count="1"/>
-</recipe>
-<recipe name="biscuitJam" count="1">
-	<ingredient name="biscuit" count="1"/>
+  <recipe name="biscuit" count="1" craft_area="campfire" craft_tool="cookingPot">
+    <ingredient name="dough" count="1"/>
+  </recipe>
+  <recipe name="biscuitJam" count="1">
+    <ingredient name="biscuit" count="1"/>
     <ingredient name="blueberries" count="1" />
-</recipe>
-<recipe name="Bread" count="1" craft_area="campfire" craft_tool="bowlWater">
-	<ingredient name="flour" count="1"/>
-</recipe>
-<recipe name="grillSteak" count="1" craft_area="campfire" craft_tool="cookingGrill">
-	<ingredient name="rawMeat" count="3"/>
-</recipe>
-<recipe name="steakSandwich" count="1">
-	<ingredient name="grillSteak" count="1"/>
-	<ingredient name="Bread" count="2"/>
-</recipe>
-<recipe name="Hamburger" count="1" craft_area="campfire" craft_tool="cookingGrill">
-	<ingredient name="rawMeat" count="1"/>
-	<ingredient name="Bread" count="2"/>
-</recipe>
-<recipe name="mealBreakfast" count="1" craft_area="campfire" craft_tool="cookingPot">
-	<ingredient name="rawMeat" count="3"/>
-	<ingredient name="egg" count="3"/>
-	<ingredient name="dinnerPlate" count="1"/>
-</recipe>
-<recipe name="mealDinner" count="1" craft_area="campfire" craft_tool="cookingPot">
-	<ingredient name="rawMeat" count="5"/>
-	<ingredient name="assortedVegetables" count="4"/>
-	<ingredient name="dinnerPlate" count="1"/>
-</recipe>
-<recipe name="tunaSandwich" count="1">
-	<ingredient name="canTuna" count="1"/>
-	<ingredient name="Bread" count="2"/>
-</recipe>
-<recipe name="bowlRamenNoodles" count="1" craft_area="campfire" craft_tool="cookingPot">
+  </recipe>
+  <recipe name="Bread" count="1" craft_area="campfire" craft_tool="cookingPot">
+    <ingredient name="dough" count="1"/>
+  </recipe>
+  <recipe name="dough" count="1">
+    <ingredient name="flour" count="1"/>
+    <ingredient name="bowlWater" count="1"/>
+  </recipe>
+  <recipe name="grillSteak" count="1" craft_area="campfire" craft_tool="cookingGrill">
+    <ingredient name="rawMeat" count="3"/>
+  </recipe>
+  <recipe name="steakSandwich" count="1">
+    <ingredient name="grillSteak" count="1"/>
+    <ingredient name="Bread" count="2"/>
+  </recipe>
+  <recipe name="Hamburger" count="1" craft_area="campfire" craft_tool="cookingGrill">
+    <ingredient name="rawMeat" count="1"/>
+    <ingredient name="Bread" count="2"/>
+  </recipe>
+  <recipe name="mealBreakfast" count="1" craft_area="campfire" craft_tool="cookingPot">
+    <ingredient name="rawMeat" count="3"/>
+    <ingredient name="egg" count="3"/>
+    <ingredient name="dinnerPlate" count="1"/>
+  </recipe>
+  <recipe name="mealDinner" count="1" craft_area="campfire" craft_tool="cookingPot">
+    <ingredient name="rawMeat" count="5"/>
+    <ingredient name="assortedVegetables" count="4"/>
+    <ingredient name="dinnerPlate" count="1"/>
+  </recipe>
+  <recipe name="tunaSandwich" count="1">
+    <ingredient name="canTuna" count="1"/>
+    <ingredient name="Bread" count="2"/>
+  </recipe>
+  <recipe name="bowlRamenNoodles" count="1" craft_area="campfire" craft_tool="cookingPot">
     <ingredient name="ramenNoodles" count="1" />
-	<ingredient name="bowlWater" count="1" />
-</recipe>
-	<recipe name="fishPie" count="1" craft_area="campfire" craft_tool="cookingPot">
-    <ingredient name="egg" count="1" />
-    <ingredient name="flour" count="1" />
     <ingredient name="bowlWater" count="1" />
-    <ingredient name="canSalmon" count="2" />
   </recipe>
   
-  </recipes>
+  <recipe name="SniperExtMag" count="1"  craft_area="assembly">
+    <ingredient name="flashlight02" count="0" />
+    <ingredient name="partsSniperRifle_barrel" count="1" />
+    <ingredient name="partsSniperRifle_receiver" count="1" />
+    <ingredient name="partsSniperRifle_stock" count="1" />
+    <ingredient name="Mag_Extender" count="1" />
+  </recipe>
+  <recipe name="mp5ExtMag" count="1"  craft_area="assembly">
+    <ingredient name="flashlight02" count="0" />
+    <ingredient name="partsMP5_stock" count="1" />
+    <ingredient name="partsMP5_receiver" count="1" />
+    <ingredient name="partsMP5_barrel" count="1" />
+    <ingredient name="Mag_Extender" count="1" />
+  </recipe>
+  <recipe name="ShotgunExtMag" count="1"  craft_area="assembly">
+    <ingredient name="flashlight02" count="0" />
+    <ingredient name="partsPumpShotgun_barrel" count="1" />
+    <ingredient name="partsPumpShotgun_receiver" count="1" />
+    <ingredient name="Mag_Extender" count="1" />
+    <ingredient name="partsPumpShotgun_stock" count="1" />
+  </recipe>
+  <recipe name="pistolExtMag" count="1"  craft_area="assembly">
+    <ingredient name="flashlight02" count="0" />
+    <ingredient name="Mag_Extender" count="1" />
+    <ingredient name="partsPistol_barrel" count="1" />
+    <ingredient name="partsPistol_receiver" count="1" />
+    <ingredient name="partsPistol_grip" count="1" />
+  </recipe>
 
-
-<!-- To do (maybe / later)
-<recipe name="steelArrowHead" count="1" craft_area="forge" craft_tool="calipers" material_based="true">
-
-<recipe name="homelyFurRug" count="1">
-	<ingredient name="animalHide" count="20" />
-	<ingredient name="wood" count="10"/>
-</recipe>
-<recipe name="book" count="1">
-	<ingredient name="paper" count="64"/>
-</recipe>
-
-<recipe name="wood" count="4">
-	<ingredient name="woodDebris" count="1"/>
-</recipe>
-<recipe name="morticianDrawer" count="1" craft_area="workbench">
-	<ingredient name="forgedSteel" count="12"/>
-	<ingredient name="mechanicalParts" count="8"/>
-</recipe>
-<recipe name="furnaceDrawer" count="1" craft_area="workbench">
-	<ingredient name="forgedIron" count="12"/>
-	<ingredient name="mechanicalParts" count="8"/>
-</recipe>
-
-
-mattress?
-boardedWindowsSheet4
-window02
-storeShelving01Double
-storeShelving01Top
-storeShelving01TopDouble
-Bookcases
-black iron railings.
--->
+  <recipe name="HollowTip" count="1" craft_area="forge" craft_tool="anvil" material_based="true">
+    <ingredient name="unit_lead" count="1"/>
+    <ingredient name="unit_clay" count="1"/>
+  </recipe>
+  <recipe name="44MagBulletHP" count="1" craft_area="workbench">
+    <ingredient name="HollowTip" count="1"/>
+    <ingredient name="gunPowder" count="3"/>
+    <ingredient name="bulletCasing" count="1"/>
+  </recipe>
+  <recipe name="44MagBulletINC" count="1" craft_area="workbench">
+    <ingredient name="HollowTip" count="1"/>
+    <ingredient name="gunPowder" count="3"/>
+    <ingredient name="bulletCasing" count="1"/>
+  </recipe>
+  <recipe name="762mmBulletHP" count="1" craft_area="workbench">
+    <ingredient name="HollowTip" count="1"/>
+    <ingredient name="gunPowder" count="3"/>
+    <ingredient name="bulletCasing" count="1"/>
+  </recipe>
+  <recipe name="762mmBulletINC" count="1" craft_area="workbench">
+    <ingredient name="HollowTip" count="1"/>
+    <ingredient name="gunPowder" count="3"/>
+    <ingredient name="bulletCasing" count="1"/>
+  </recipe>
+  <recipe name="9mmBulletHP" count="1" craft_area="workbench">
+    <ingredient name="HollowTip" count="1"/>
+    <ingredient name="gunPowder" count="1"/>
+    <ingredient name="bulletCasing" count="1"/>
+  </recipe>
+  <recipe name="9mmBulletINC" count="1" craft_area="workbench">
+    <ingredient name="HollowTip" count="1" />
+    <ingredient name="gunPowder" count="1"/>
+    <ingredient name="bulletCasing" count="1"/>
+  </recipe>
+  <recipe name="SiegeShell" count="3" craft_area="workbench">
+    <ingredient name="buckshot" count="2"/>
+    <ingredient name="gunPowder" count="1"/>
+    <ingredient name="paper" count="1"/>
+  </recipe>
+  <recipe name="shotgunShellINC" count="1" craft_area="workbench">
+    <ingredient name="buckshot" count="1"/>
+    <ingredient name="gunPowder" count="2"/>
+    <ingredient name="paper" count="1"/>
+  </recipe>
+</recipes>

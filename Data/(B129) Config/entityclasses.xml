@@ -1939,7 +1939,7 @@
 	<property name="SoundLanding" value="SupplyDrops/Supply_Crate_Land"/>
 	<property name="TimeStayAfterDeath" value="0"/>
 	<!-- If set this entity shows on the map -->
-	<!--<property name="MapIcon" value="map_supply_crate"/> -->
+	<property name="MapIcon" value="map_supply_crate"/>
 </entity_class>
 
 <entity_class name="Backpack">
@@ -2194,6 +2194,28 @@
 	<property name="NPCID" value="traderric"/>
 </entity_class>
 
+  <!-- Donor Crate -->
+  <entity_class name="DonorCrate">
+  <property name="Mesh" value="SupplyCrate/SupplyCrateEntityPrefab"/>
+  <property name="ModelType" value="SupplyCrate"/>
+  <property name="HasRagdoll" value="false"/>
+  <property name="Prefab" value="SupplyCrate"/>
+  <property name="Class" value="EntitySupplyCrate"/>
+  <property name="Parent" value="SupplyCrates"/>
+  <property name="Faction" value="none"/>
+  <property name="MaxHealth" value="200"/>
+  <property name="Weight" value="100"/>
+  <property name="SurfaceCategory" value="wood"/>
+  <property name="ParticleOnDeath" value="supply_crate_gib_Prefab"/>
+  <property name="LootListAlive" value="103"/>
+  <property name="LootListAliveMP" value="103"/>
+  <property name="IsEnemyEntity" value="false"/>
+  <property name="SoundParachuteOpen" value="SupplyDrops/Parachute_Opens"/>
+  <property name="SoundLanding" value="SupplyDrops/Supply_Crate_Land"/>
+  <property name="TimeStayAfterDeath" value="0"/>
+  <!-- If set this entity shows on the map -->
+  <property name="MapIcon" value="map_supply_crate"/>
+  </entity_class>
 </entity_classes>
 <!-- Radiated, harder to decap
 	<property name="HeadDismemberBaseChance" value="-.15"/>

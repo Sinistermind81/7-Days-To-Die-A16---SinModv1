@@ -4906,6 +4906,50 @@ group desc for stuff like metal siding
     <property name="Model" value="Plumbing/toilet03" param1="main_mesh"/>
   </block>
 
+  <block id="437" name="trapAdhesive">
+    <property name="DescriptionKey" value="trapAdhesiveDesc"/>
+    <property name="CustomIcon" value="drywallWhitePlate" />
+    <property name="Material" value="MbarbedFence" />
+    <property name="Shape" value="New"/>
+    <property name="Model" value="Plate"/>
+    <property name="Texture" value="217" />
+    <drop event="Destroy" count="0" />
+    <property name="Group" value="Building" />
+    <drop event="Fall" count="0"/>
+  </block>
+  
+  <block id="438" name="trapFire">
+    <property name="DescriptionKey" value="trapFireDesc"/>
+    <property name="Class" value="Damage" />
+    <property name="Damage" value="1" />
+    <property name="Damage_received" value="13" />
+    <property name="BuffsWhenWalkedOn" value="burning" />
+    <property name="Material" value="Msteel" />
+    <property name="Texture" value="355,352,352,352,352,352" />
+    <property name="DowngradeBlock" value="trapFireEmpty" />
+    <drop event="Destroy" count="0" prob="1" />
+    <drop event="Fall" name="scrapMetalPile" count="1" prob="1.0"  stick_chance="1" />
+    <property name="Group" value="Tools/Traps" />
+    <property class="RepairItems">
+      <property name="gasCan" value="20" />
+    </property>
+  </block>
+  <block id="439" name="trapFireEmpty">
+    <property name="CustomIcon" value="trapFire" />
+    <property name="Material" value="Msteel" />
+    <property name="Texture" value="356,352,352,352,352,352" />
+    <property class="UpgradeBlock">
+      <property name="ToBlock" value="trapFire" />
+      <property name="Item" value="gasCan" />
+      <property name="ItemCount" value="10" />
+      <property name="UpgradeHitCount" value="1" />
+    </property>
+    <drop event="Destroy" count="0" prob="1" />
+    <drop event="Fall" name="scrapMetalPile" count="1" prob="1.0"  stick_chance="1" />
+    <property class="RepairItems">
+      <property name="forgedIron" value="5" />
+    </property>
+  </block>
   <!--
 kind of free
 
@@ -5618,7 +5662,8 @@ kind of free
   </block>
 
   <block id="527" name="plantedHop1">
-    <property name="Extends" value="cropsGrowingMaster" param1="CustomIcon,DescriptionKey"/>
+    <property name="Extends" value="cropsGrowingMaster" param1="DescriptionKey"/>
+    <property name="CustomIcon" value="seedHops"/>
     <property name="Texture" value="447"/>
     <property name="PlantGrowing.Next" value="plantedHop2"/>
     <property name="EconomicValue" value="250"/>
@@ -5645,6 +5690,7 @@ kind of free
 
   <block id="530" name="plantedMushroom1">
     <property name="Material" value="Mmushrooms"/>
+    <property name="CustomIcon" value="seedMushroom"/>
     <property name="LightOpacity" value="0"/>
     <property name="Shape" value="Ext3dModel"/>
     <property name="Texture" value="293"/>
@@ -5694,8 +5740,8 @@ kind of free
   </block>
 
   <block id="533" name="plantedYucca1">
-    <property name="Extends" value="cropsGrowingMaster" param1="CustomIcon,DescriptionKey"/>
-    <property name="CustomIcon" value="plantedYucca3Harvest"/>
+    <property name="Extends" value="cropsGrowingMaster" param1="DescriptionKey"/>
+    <property name="CustomIcon" value="seedYucca"/>
     <property name="Material" value="Mcorn"/>
     <property name="Shape" value="ModelEntity"/>
     <property name="Model" value="Entities/Plants/plant_yucca_sproutPrefab"/>
@@ -9372,7 +9418,8 @@ kind of free
   </block>
 
   <block id="855" name="plantedAloe1">
-    <property name="Extends" value="cropsGrowingMaster" param1="CustomIcon,DescriptionKey"/>
+    <property name="Extends" value="cropsGrowingMaster" param1="DescriptionKey"/>
+    <property name="CustomIcon" value="seedAloe"/>
     <property name="Material" value="Mcorn"/>
     <property name="Shape" value="ModelEntity"/>
     <property name="Model" value="Entities/Plants/plant_aloe1_Prefab"/>
@@ -9473,7 +9520,8 @@ kind of free
   <!-- 4 Free -->
 
   <block id="869" name="plantedChrysanthemum1">
-    <property name="Extends" value="cropsGrowingMaster" param1="CustomIcon,DescriptionKey"/>
+    <property name="Extends" value="cropsGrowingMaster" param1="DescriptionKey"/>
+    <property name="CustomIcon" value="seedChrysanthemum"/>
     <property name="Texture" value="550"/>
     <property name="PlantGrowing.Next" value="plantedChrysanthemum2"/>
     <property name="Group" value="Food/Cooking"/>
@@ -15878,11 +15926,12 @@ kind of free
     <drop event="Destroy" name="20k Slot Machine" count="1" />
     <property name="CanPickup" value="false" />
   </block>
-  <block id="1595" name="20k Slot Machine Rolled">
+u<block id="1595" name="20k Slot Machine Rolled">
     <property name="Class" value="Loot" />
     <property name="Material" value="Msteel" />
     <property name="MaxDamage" value="2000000000" />
     <property name="IsDeveloper" value="true" />
+    <property name="CustomIcon" value="DonotUse" />
     <property name="Shape" value="Ext3dModel" />
     <property name="Mesh" value="models" />
     <property name="Model" value="Industrial/control_panel_top_06" param1="main_mesh" />
@@ -15924,6 +15973,7 @@ kind of free
     <property name="Material" value="Msteel" />
     <property name="MaxDamage" value="2000000000" />
     <property name="IsDeveloper" value="true" />
+    <property name="CustomIcon" value="DonotUse" />
     <property name="Shape" value="Ext3dModel" />
     <property name="Mesh" value="models" />
     <property name="Model" value="Industrial/control_panel_base_01" param1="main_mesh" />
@@ -16591,7 +16641,7 @@ kind of free
   <block id="1690" name="TapedBugoutBag">
     <property name="DescriptionKey" value="classHunterDesc"/>
     <property name="Group" value="Class System" />
-    <property name="CustomIcon" value="cntMunitionsBox" />
+    <property name="CustomIcon" value="BugoutBag" />
     <!--		<property name="CustomIcon" value="suitcase" /> -->
     <property name="Material" value="wood+wood" />
     <property name="Shape" value="Ext3dModel" />
@@ -16626,7 +16676,7 @@ kind of free
   <block id="1692" name="TapedWildBugoutBag">
     <property name="DescriptionKey" value="classHunterDesc"/>
     <property name="Group" value="Class System" />
-    <property name="CustomIcon" value="cntMunitionsBox" />
+    <property name="CustomIcon" value="WildBugoutBag" />
     <!--		<property name="CustomIcon" value="suitcase" /> -->
     <property name="Material" value="wood+wood" />
     <property name="Shape" value="Ext3dModel" />
@@ -16699,6 +16749,222 @@ kind of free
     <property name="Extends" value="cntVendingMachine" />
     <property name="MaxDamage" value="2000000" />
     <property name="TraderID" value="31" />
+  </block>
+
+  <!--SinMod Farming-->
+  <block id="1715" name="plantedApple1">
+    <property name="Class" value="UpgradeRated" />
+    <property name="CustomIcon" value="seedApple"/>
+    <property name="DescriptionKey" value="plantedApple1Desc"/>
+    <property name="Material" value="plants" />
+    <property name="Shape" value="BillboardPlant" />
+    <property name="Mesh" value="grass" />
+    <property name="Texture" value="393" />
+    <property name="Collide" value="melee" />
+    <property name="Place" value="Door" />
+    <property name="UpgradeRated.ToBlock" value="plantedApple2" />
+    <property name="UpgradeRated.Rate" value="15" />
+  </block>
+  <block id="1716" name="plantedApple2">
+    <property name="Class" value="PlantGrowing" />
+    <property name="Material" value="leaves" />
+    <property name="Shape" value="ModelEntity" />
+    <property name="Texture" value="292" />
+    <property name="Model" value="Entities/Trees/AzaleaPrefab" />
+    <property name="Collide" value="melee" />
+    <property name="Place" value="Door" />
+    <drop event="Destroy" count="0" />
+    <property class="PlantGrowing">
+      <property name="Next" value="plantedApple3" />
+      <property name="GrowthRate" value="120" />
+      <property name="FertileLevel" value="1" />
+      <property name="IsRandom" value="false" />
+    </property>
+  </block>
+  <block id="1717" name="plantedApple3">
+    <property name="Material" value="wood" />
+    <property name="Place" value="Door" />
+    <property name="Shape" value="ModelEntity" />
+    <property name="Texture" value="116" />
+    <property name="Tag" value="TreeTrunk" />
+    <property name="BigDecorationRadius" value="1" />
+    <property name="Model" value="Entities/Trees/Maple20Prefab" />
+    <property name="ParticleOnDeath" value="treeGib_burnt" />
+    <property name="ModelOffset" value="0,-1.2,0" />
+    <drop event="Destroy" name="Apple" count="1" prob="1" />
+    <drop event="Destroy" name="Apple" count="1" prob="0.6" />
+    <drop event="Harvest" name="Apple" count="2,3" tool_category="Pluck"/>
+    <property name="UpwardsCount" value="3" />
+    <property name="DowngradeBlock" value="plantedAppleEmpty" />
+    <property name="MaxDamage" value="40" />
+  </block>
+  <block id="1718" name="plantedAppleEmpty">
+    <property name="Class" value="PlantGrowing" />
+    <property name="Material" value="wood" />
+    <property name="Place" value="Door" />
+    <property name="Shape" value="ModelEntity" />
+    <property name="Texture" value="116" />
+    <property name="Tag" value="TreeTrunk" />
+    <property name="BigDecorationRadius" value="1" />
+    <property name="Model" value="Entities/Trees/White_Oak22Prefab" />
+    <property name="ParticleOnDeath" value="treeGib_burnt" />
+    <property name="ModelOffset" value="0,-0.3,0" />
+    <drop event="Harvest" name="wood" count="25" />
+    <drop event="Destroy" name="wood" count="12" prob="1" />
+    <drop event="Destroy" name="seedApple" count="1,2" prob=".5" />
+    <property name="UpwardsCount" value="3" />
+    <property class="PlantGrowing">
+      <property name="Next" value="plantedApple3" />
+      <property name="GrowthRate" value="60" />
+      <property name="FertileLevel" value="1" />
+      <property name="IsRandom" value="false" />
+    </property>
+  </block>
+  <block id="1719" name="plantedWheat1">
+    <property name="Class" value="PlantGrowing" />
+    <property name="CustomIcon" value="seedWheat"/>
+    <property name="DescriptionKey" value="plantedWheat1Desc"/>
+    <property name="Material" value="plants" />
+    <property name="Shape" value="BillboardPlant" />
+    <property name="Mesh" value="grass" />
+    <property name="Texture" value="393" />
+    <property name="Collide" value="melee" />
+    <property name="IsTerrainDecoration" value="true" />
+    <property class="PlantGrowing">
+      <property name="Next" value="plantedWheat2" />
+      <property name="GrowthRate" value="180" />
+      <property name="FertileLevel" value="5" />
+      <property name="IsRandom" value="false" />
+    </property>
+    <property name="Group" value="Food/Cooking" />
+    <property name="MaxDamage" value="2" />
+  </block>
+  <block id="1720" name="plantedWheat2">
+    <property name="Class" value="CropsGrown" />
+    <property name="Material" value="plants" />
+    <property name="Shape" value="Grass" />
+    <property name="Mesh" value="grass" />
+    <property name="Texture" value="201" />
+    <property name="Collide" value="melee" />
+    <property name="FuelValue" value="1" />
+    <property name="CanDecorateOnSlopes" value="true" />
+    <property name="DropScale" value="2" />
+    <property name="DowngradeBlock" value="plantedWheat1" />
+    <drop event="Destroy" name="Wheat" count="0" />
+    <drop event="Harvest" name="Wheat" tool_category="Pluck" count="2" />
+    <property name="Group" value="Food/Cooking" />
+    <property name="CropsGrown.BonusHarvestDivisor" value="5" />
+  </block>
+  <block id="1721" name="plantedGrape1">
+    <property name="Class" value="PlantGrowing" />
+    <property name="CustomIcon" value="seedGrape"/>
+    <property name="DescriptionKey" value="plantedGrape1Desc"/>
+    <property name="Material" value="plants" />
+    <property name="Shape" value="BillboardPlant" />
+    <property name="Mesh" value="grass" />
+    <property name="Texture" value="393" />
+    <property name="Collide" value="melee" />
+    <property name="IsTerrainDecoration" value="true" />
+    <property class="PlantGrowing">
+      <property name="Next" value="plantedGrape2" />
+      <property name="GrowthRate" value="180" />
+      <property name="FertileLevel" value="5" />
+      <property name="IsRandom" value="false" />
+    </property>
+    <property name="Group" value="Food/Cooking" />
+    <property name="MaxDamage" value="2" />
+  </block>
+  <block id="1722" name="plantedGrape2">
+    <property name="Class" value="CropsGrown" />
+    <property name="Material" value="plants" />
+    <property name="Shape" value="ModelEntity" />
+    <property name="Texture" value="241" />
+    <property name="Collide" value="melee" />
+    <property name="Model" value="Entities/Decor/hangingMossPrefab" />
+    <drop event="Destroy" name="Grapes" count="0" />
+    <drop event="Harvest" name="Grapes" tool_category="Pluck" count="2" />
+    <property name="Group" value="Food/Cooking" />
+    <property name="DowngradeBlock" value="plantedGrape1" />
+    <property name="CropsGrown.BonusHarvestDivisor" value="5" />
+  </block>
+  <block id="1723" name="plantSeed">
+    <property name="DescriptionKey" value="plantSeedDesc"/>
+    <property name="Material" value="plants" />
+    <property name="Shape" value="BillboardPlant" />
+    <property name="Mesh" value="grass" />
+    <property name="Texture" value="393" />
+    <property name="Collide" value="melee" />
+    <property name="IsTerrainDecoration" value="true" />
+    <property name="Group" value="Food/Cooking" />
+    <property name="PlaceAltBlockValue" value="plantedCorn1,plantedPotato1,plantedBlueberry1,plantedCoffee1,plantedCotton1,plantedGoldenrod1,plantedHop1,plantedGrape1,plantedWheat1,plantedChrysanthemum1,plantedAloe1,plantedYucca1,plantedApple1,plantedOrange1" />
+  </block>
+  <block id="1724" name="plantedOrange1">
+    <property name="Class" value="UpgradeRated" />
+    <property name="CustomIcon" value="seedOrange"/>
+    <property name="DescriptionKey" value="plantedOrange1Desc"/>
+    <property name="Material" value="plants" />
+    <property name="Shape" value="BillboardPlant" />
+    <property name="Mesh" value="grass" />
+    <property name="Texture" value="393" />
+    <property name="Collide" value="melee" />
+    <property name="Place" value="Door" />
+    <property name="UpgradeRated.ToBlock" value="plantedOrange2" />
+    <property name="UpgradeRated.Rate" value="15" />
+  </block>
+  <block id="1725" name="plantedOrange2">
+    <property name="Class" value="PlantGrowing" />
+    <property name="Material" value="leaves" />
+    <property name="Shape" value="ModelEntity" />
+    <property name="Texture" value="292" />
+    <property name="Model" value="Entities/Trees/AzaleaPrefab" />
+    <property name="Collide" value="melee" />
+    <property name="Place" value="Door" />
+    <drop event="Destroy" count="0" />
+    <property class="PlantGrowing">
+      <property name="Next" value="plantedOrange3" />
+      <property name="GrowthRate" value="120" />
+      <property name="FertileLevel" value="1" />
+      <property name="IsRandom" value="false" />
+    </property>
+  </block>
+  <block id="1726" name="plantedOrange3">
+    <property name="Material" value="wood" />
+    <property name="Place" value="Door" />
+    <property name="Shape" value="ModelEntity" />
+    <property name="Texture" value="116" />
+    <property name="Tag" value="TreeTrunk" />
+    <property name="BigDecorationRadius" value="1" />
+    <property name="Model" value="Entities/Trees/Maple20Prefab" />
+    <property name="ParticleOnDeath" value="treeGib_burnt" />
+    <property name="ModelOffset" value="0,-1.2,0" />
+    <drop event="Destroy" name="Orange" count="1" prob="1" />
+    <drop event="Destroy" name="Orange" count="1" prob="0.6" />
+    <drop event="Harvest" name="Orange" count="2,3" tool_category="Pluck"/>
+    <property name="UpwardsCount" value="3" />
+    <property name="DowngradeBlock" value="plantedOrangeEmpty" />
+    <property name="MaxDamage" value="40" />
+  </block>
+  <block id="1727" name="plantedOrangeEmpty">
+    <property name="Class" value="PlantGrowing" />
+    <property name="Material" value="wood" />
+    <property name="Place" value="Door" />
+    <property name="Shape" value="ModelEntity" />
+    <property name="Texture" value="116" />
+    <property name="Tag" value="TreeTrunk" />
+    <property name="BigDecorationRadius" value="1" />
+    <property name="Model" value="Entities/Trees/White_Oak22Prefab" />
+    <property name="ParticleOnDeath" value="treeGib_burnt" />
+    <property name="ModelOffset" value="0,-0.3,0" />
+    <drop event="Harvest" name="wood" count="25" />
+    <drop event="Destroy" name="wood" count="12" prob="1" />
+    <drop event="Destroy" name="seedOrange" count="1,2" prob=".5" />
+    <property name="UpwardsCount" value="3" />
+    <property class="PlantGrowing">
+      <property name="Next" value="plantedOrange3" />
+      <property name="GrowthRate" value="60" />
+      <property name="FertileLevel" value="1" />
+      <property name="IsRandom" value="false" />
+    </property>
   </block>
 
 
