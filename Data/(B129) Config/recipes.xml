@@ -2031,7 +2031,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 
   <recipe name="sod" count="1">
     <ingredient name="yuccaFibers" count="1"/>
-    <ingredient name="dirtFragment" count="12"/>
+    <ingredient name="dirtFragment" count="8"/>
   </recipe>
 
   <recipe name="splint" count="1">
@@ -2326,6 +2326,14 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
     <ingredient name="unit_stone" count="5"/>
     <ingredient name="unit_lead" count="5"/>
     <ingredient name="unit_clay" count="3"/>
+  </recipe>
+
+  <recipe name="woodFrameHalf" count="1">
+    <ingredient name="wood" count="5"/>
+  </recipe>
+
+  <recipe name="scrapIronFrameHalf" count="1">
+    <ingredient name="scrapIron" count="15"/>
   </recipe>
 
   <recipe name="woodFrameWedgeIncline" count="1">
@@ -3051,6 +3059,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
     <ingredient name="bowlWater" count="1" />
   </recipe>
   
+  <!--SinMod Extended Mag Weapons-->
   <recipe name="SniperExtMag" count="1"  craft_area="assembly">
     <ingredient name="flashlight02" count="0" />
     <ingredient name="partsSniperRifle_barrel" count="1" />
@@ -3079,7 +3088,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
     <ingredient name="partsPistol_receiver" count="1" />
     <ingredient name="partsPistol_grip" count="1" />
   </recipe>
-
+<!--SinMod Extra Bullets-->
   <recipe name="HollowTip" count="1" craft_area="forge" craft_tool="anvil" material_based="true">
     <ingredient name="unit_lead" count="1"/>
     <ingredient name="unit_clay" count="1"/>
@@ -3124,4 +3133,28 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
     <ingredient name="gunPowder" count="2"/>
     <ingredient name="paper" count="1"/>
   </recipe>
+  
+  <recipe name="Lockpick" count="1" craft_time="20">
+    <ingredient name="scrapIron" count="25"/>
+  </recipe>
+  <recipe name="animalFeed" count="1">
+    <ingredient name="treePlantedMountainPine1m" count="3" />
+  </recipe>
+  <recipe name="animalFeed" count="1">
+    <ingredient name="treePlantedMaple1m" count="3" />
+  </recipe>
+  <recipe name="animalSnare" count="1" craft_area="workbench">
+    <ingredient name="wood" count="5"/>
+    <ingredient name="yuccaFibers" count="6" />
+    <ingredient name="animalFeed" count="2" />
+  </recipe>
+  <recipe name="chickenCoop" count="1" craft_area="workbench">
+    <ingredient name="wood" count="10"/>
+    <ingredient name="yuccaFibers" count="15" />
+    <ingredient name="animalFeed" count="10" />
+  </recipe>
+  <recipe name="survivorNoteCollection" count="1" craft_time="0.5">
+    <ingredient name="survivorNotes" count="5"/>
+  </recipe>
+  
 </recipes>

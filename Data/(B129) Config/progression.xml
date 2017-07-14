@@ -42,7 +42,8 @@
 			<setvalue skill_level="90,100" value="57,60"/>
 		</effect>
 	</player_skill>
-	<perk name="Health Nut" icon="run" description_key="healthNutDesc" title_key="healthNut" max_level="5" skill_point_cost_multiplier="1.43" skill_point_cost_per_level="5" always_fire="true" group="health">
+  <!-- always_fire="true" : If a perk has requirements then it MAY not always fire correctly if/when/because it's not called in conjunction with a skill. This flag skips the particular bit of code. -->
+  <perk name="Health Nut" icon="run" description_key="healthNutDesc" title_key="healthNut" max_level="5" skill_point_cost_multiplier="1.43" skill_point_cost_per_level="5" always_fire="true" group="health">
 		<requirement perk_level="1" required_skill_name="Athletics" required_skill_level="1"/>
 		<requirement perk_level="2" required_skill_name="Athletics" required_skill_level="10"/>
 		<requirement perk_level="3" required_skill_name="Athletics" required_skill_level="20"/>
@@ -119,7 +120,7 @@
 		</effect>
 	</perk>
 
-	<perk name="Quality Joe" icon="quality_joe" description_key="qualityJoeDesc" title_key="qualityJoe" max_level="3" skill_point_cost_multiplier="2" skill_point_cost_per_level="4" group="scavenging">
+	<perk name="Quality Joe" icon="quality_joe" description_key="qualityJoeDesc" title_key="qualityJoe" max_level="3" skill_point_cost_multiplier="2" skill_point_cost_per_level="4" always_fire="true" group="scavenging">
 		<requirement skill_level="1" required_skill_name="Scavenging" required_skill_level="20"/>
 		<requirement skill_level="2" required_skill_name="Scavenging" required_skill_level="40"/>
 		<requirement skill_level="3" required_skill_name="Scavenging" required_skill_level="60"/>
@@ -139,7 +140,16 @@
 			<setvalue skill_level="3" value="5"/>
 		</effect>
 	</perk>
+  
+  <perk name="Animal Hunter" icon="knife" description_key="animalHunterDesc" title_key="animalHunter" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="scavenging">
+    <requirement perk_level="1" required_skill_name="crafting" required_skill_level="20"/>
+		<recipe name="animalFeed" unlock_level="1"/>
+	</perk>
 
+  <perk name="9mm Round Crafting" icon="gunsmithing" description_key="9mmRoundCraftingDesc" title_key="9mmRoundCrafting" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="2" group="firearms">
+		<requirement perk_level="1" required_skill_name="craftSkillGuns" required_skill_level="1"/>
+		<recipe name="9mmBullet" unlock_level="1"/>
+	</perk>
 	<action_skill name="Clothing/Armor" icon="armor_iron" description_key="clothingArmorDesc" title_key="clothingArmor" exp_to_level="57" experience_multiplier="1.0195" group="clothing">
 	<!-- 10 hits to make level 2, 3000 hits to max it... instead of 64000 -->
 		<effect name="ArmorDefense">
@@ -359,6 +369,14 @@
 		<requirement perk_level="3" required_skill_name="Construction Tools" required_skill_level="20"/>
 		<requirement perk_level="4" required_skill_name="Construction Tools" required_skill_level="40"/>
 		<requirement perk_level="5" required_skill_name="Construction Tools" required_skill_level="80"/>
+    <effect name="StaminaDegradation">
+      <multiply perk_level="0" value="1"/>
+      <multiply perk_level="1" value="0.9"/>
+      <multiply perk_level="2" value="0.8"/>
+      <multiply perk_level="3" value="0.7"/>
+      <multiply perk_level="4" value="0.6"/>
+      <multiply perk_level="5" value="0.5"/>
+    </effect>
 		<effect name="HarvestCount">
 			<multiply perk_level="0" value="1"/>
 			<multiply perk_level="1" value="1.10"/>
@@ -854,10 +872,9 @@
 	<perk name="electricTriggersPerk" icon="electric_switch" description_key="electricTriggersDesc" title_key="electricTriggersName" max_level="3" skill_point_cost_multiplier="1.5" skill_point_cost_per_level="3" group="science">
 		<requirement skill_level="1" required_skill_name="craftSkillScience" required_skill_level="2"/>
 		<recipe name="switch" unlock_level="1"/>
-		<recipe name="pressureplate" unlock_level="1"/>
-
+		<recipe name="tripwirepost" unlock_level="1"/>
 		<requirement skill_level="2" required_skill_name="craftSkillScience" required_skill_level="4"/>
-		<recipe name="tripwirepost" unlock_level="2"/>
+		<recipe name="pressureplate" unlock_level="2"/>
 		<recipe name="electrictimerrelay" unlock_level="2"/>
 		<recipe name="pressureplateLong" unlock_level="2"/>
 
@@ -980,6 +997,34 @@
 		<recipe name="leather" unlock_level="1"/>
 	</perk> -->
 
+  <perk name="Cooking" exp_to_level="200" icon="run" description="The higher your skill in cooking the faster you can craft meals. You also gradually unlock new cooking recipes as you level." title="Cooking" group="crafting">
+    <effect name="CraftingTime">
+      <multiply skill_level="1,5" value="1,.931" />
+      <multiply skill_level="5,11" value=".931,.871" />
+      <multiply skill_level="11,19" value=".871,.813" />
+      <multiply skill_level="19,32" value=".813,.741" />
+      <multiply skill_level="32,49" value=".741,.667" />
+      <multiply skill_level="49,70" value=".667,.591" />
+      <multiply skill_level="70,100" value=".591,.5" />
+    </effect>
+    <recipe name="scrambledEggs" unlock_level="5"/>
+    <recipe name="creamedCorn" unlock_level="5"/>
+    <recipe name="Omelet" unlock_level="10"/>
+    <recipe name="baconEggSandwich" unlock_level="10"/>
+    <recipe name="redTea" unlock_level="15"/>
+    <recipe name="biscuit" unlock_level="15"/>
+    <recipe name="applePie" unlock_level="20"/>
+    <recipe name="fishPie" unlock_level="20"/>
+    <recipe name="Bread" unlock_level="20"/>
+    <recipe name="Hamburger" unlock_level="25"/>
+    <recipe name="honeyHam" unlock_level="25"/>
+    <recipe name="steakSandwich" unlock_level="40"/>
+    <recipe name="grillSteak" unlock_level="40"/>
+    <recipe name="stewChunkyMeat" unlock_level="50"/>
+    <recipe name="mealDinner" unlock_level="50"/>
+    <recipe name="mealBreakfast" unlock_level="50"/>
+  </perk>
+
 	<perk name="craftSkillMiscellaneous" max_level="5" skill_point_cost_multiplier="1.2" skill_point_cost_per_level="1" exp_to_level="5000000" exp_gain_multiplier="0"
 		icon="misc_crafting" description_key="craftSkillMiscellaneousDesc" title_key="craftSkillMiscellaneous" group="crafting">
 		<requirement perk_level="2" required_player_level="5"/>
@@ -1024,6 +1069,8 @@
 		</effect>
 	</perk>
 
+  
+  
 	<perk name="paintDecorations" icon="paint_brush" description_key="paintGroupDesc" title_key="paintMagazineDecorations" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="painting">
 		<requirement skill_level="0" required_skill_name="craftSkillMiscellaneous" required_skill_level="0"/>
 		<material_group name="txGroupDecoration" unlock_level="1"/>
@@ -1049,7 +1096,7 @@
 		<material_group name="txGroupWood" unlock_level="1"/>
 	</perk>
 
-	<perk name="The Survivor" icon="run" description_key="theSurvivorDesc" title_key="theSurvivor" max_level="5" skill_point_cost_multiplier="1.4" passive_effect="true" skill_point_cost_per_level="3" group="health">
+	<perk name="The Survivor" icon="run" description_key="theSurvivorDesc" title_key="theSurvivor" max_level="5" skill_point_cost_multiplier="1.4" passive_effect="true" skill_point_cost_per_level="3" always_fire="true" group="health">
 		<requirement perk_level="1" required_player_level="1"/>
 		<requirement perk_level="2" required_player_level="10"/>
 		<requirement perk_level="3" required_player_level="20"/>
@@ -1073,7 +1120,7 @@
 		</effect>
 	</perk>
 
-	<perk name="The Camel" icon="run" description_key="theCamelDesc" title_key="theCamel" max_level="5" skill_point_cost_multiplier="1.4" skill_point_cost_per_level="3" passive_effect="true" group="health">
+	<perk name="The Camel" icon="run" description_key="theCamelDesc" title_key="theCamel" max_level="5" skill_point_cost_multiplier="1.4" skill_point_cost_per_level="3" passive_effect="true" always_fire="true" group="health">
 		<requirement perk_level="1" required_player_level="1"/>
 		<requirement perk_level="2" required_player_level="10"/>
 		<requirement perk_level="3" required_player_level="20"/>
@@ -1106,7 +1153,7 @@
 	</perk>
 	-->
 
-	<perk name="Quicker Crafting" icon="forge" description_key="quickerCraftingDesc" title_key="quickerCrafting" max_level="5" skill_point_cost_multiplier="0" passive_effect="true" skill_point_cost_per_level="4" group="crafting">
+	<perk name="Quicker Crafting" icon="forge" description_key="quickerCraftingDesc" title_key="quickerCrafting" max_level="5" skill_point_cost_multiplier="0" passive_effect="true" skill_point_cost_per_level="4" always_fire="true" group="crafting">
 		<requirement perk_level="1" required_player_level="1"/>
 		<requirement perk_level="2" required_player_level="10"/>
 		<requirement perk_level="3" required_player_level="20"/>
@@ -1121,7 +1168,7 @@
 			<multiply skill_level="5" value="0.5"/>
 		</effect>
 	</perk>
-	<perk name="The Fixer" icon="wrench" description_key="theFixerDesc" title_key="theFixer" max_level="4" skill_point_cost_multiplier="1.58" skill_point_cost_per_level="3" passive_effect="true" group="crafting">
+	<perk name="The Fixer" icon="wrench" description_key="theFixerDesc" title_key="theFixer" max_level="4" skill_point_cost_multiplier="1.58" skill_point_cost_per_level="3" passive_effect="true" always_fire="true" group="crafting">
 		<requirement perk_level="1" required_player_level="1"/>
 		<requirement perk_level="2" required_player_level="10"/>
 		<requirement perk_level="3" required_player_level="20"/>
@@ -1164,12 +1211,12 @@
 		</effect>
 	</player_skill>
 
-	<perk name="Secret Stash" icon="safe" description_key="secretStashDesc" title_key="secretStash" max_level="3" skill_point_cost_multiplier="2" skill_point_cost_per_level="4" group="scavenging">
+	<perk name="Secret Stash" icon="safe" description_key="secretStashDesc" title_key="secretStash" max_level="3" skill_point_cost_multiplier="2" skill_point_cost_per_level="4" always_fire="true" group="scavenging">
 		<requirement perk_level="1" required_skill_name="Barter" required_skill_level="20"/>
 		<requirement perk_level="2" required_skill_name="Barter" required_skill_level="40"/>
 		<requirement perk_level="3" required_skill_name="Barter" required_skill_level="80"/>
 		<effect name="SecretStash">
-			<add perk_level="0" value="0"/>
+			<add skill_level="0" value="0"/>
 			<add skill_level="1" value="500"/>
 			<add skill_level="2" value="1000"/>
 			<add skill_level="3" value="1500"/>
@@ -1187,10 +1234,7 @@
     <recipe name="workstationOven" unlock_level="1"/>
   </perk>
 
-  
-  
-  
-  <perk name="Lockpicks" icon="run" description_key="Max out this perk to learn how to make lockpicks to unlock gun safes. Doesn't work on doors." title_key="Safecracker" max_level="10" skill_point_cost_multiplier="0" skill_point_cost_per_level="1" group="tools">
+  <perk name="Lockpicks" icon="run" description_key="Max out this perk to learn how to make lockpicks to unlock gun safes. Doesn't work on doors." title_key="Safecracker" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="tools">
     <recipe name="Lockpkick" unlock_level="10"/>
   </perk>
 

@@ -677,7 +677,7 @@
   <window name="CharacterFrameWindow" width="327" height="704" panel="Left" controller="CharacterFrameWindow" defaultcolor="[white]" hoveredcolor="[selectedColor]" cursor_area="true" >
     <!--#$-IGS END.-$#-->
     <panel name="SinModInfo" height="704" width="150" pos="-149,-46">
-      <texture depth="1" name="ToolBeltBackground" texture="@https://cdn.discordapp.com/attachments/292953518242004992/292953578669342720/PanelinfoUI.png" material="Materials/Transparent Colored"/>
+      <texture depth="1" name="ToolBeltBackground" texture="@http://www.worldsendpve.com/SinMod/SinModUI/PanelinfoUI.png" material="Materials/Transparent Colored"/>
     </panel>
     <panel name="header" height="43" depth="1" backgroundspritename="ui_game_panel_header">
       
@@ -696,7 +696,7 @@
         <!-- <sprite depth="1" color="[lightGrey]" type="sliced" pos="3,-3" width="381" height="739" />
 				<sprite depth="1" color="[darkGrey]" type="sliced" width="304" height="697" pos="6,-5"/> -->
         <!-- PLAYER IMAGE -->
-        <texture depth="1" name="ToolBeltBackground" texture="@https://cdn.discordapp.com/attachments/292953518242004992/333277725102178304/characterBG3.png" material="Materials/Transparent Colored"/>
+        <texture depth="1" name="ToolBeltBackground" texture="@http://www.worldsendpve.com/SinMod/SinModUI/characterBG3.png" material="Materials/Transparent Colored"/>
         <texture depth="2" name="playerPreview" material="Materials/Transparent Colored" size="255,702" globalopacity="false"/>
 
         <rect pos="3,-3">
@@ -1963,7 +1963,7 @@
     <panel name="header" height="43" depth="1" backgroundspritename="ui_game_panel_header">
       <sprite pos="4,-5" depth="2" name="windowIcon" style="icon32px" sprite="ui_game_symbol_map_trader"/>
       <label style="header.name" size="350,32"/>
-      <label depth="2" pos="340,-8" width="300" height="28" text="{restocklabel} {timeleft}" color="[lightGrey]" justify="right" visible="{showrestock}" />
+      <label depth="2" pos="340,-8" width="300" height="28" text="{restocklabel}: {timeleft}" color="[lightGrey]" justify="right" visible="{showrestock}" />
 
       <label pos="600, -6" depth="2" name="availableMoney" width="64" height="32" text="{availablemoney}" font_size="32" color="[lightGrey]" justify="right" pivot="topright" visible="{isowner}"/>
       <sprite pos="638, -5" depth="2" name="coinIcon" style="icon32px" sprite="ui_game_symbol_coin" color="[lightGrey]" pivot="topright" visible="{isowner}"/>
@@ -2312,7 +2312,7 @@
 
   </window>
 
-  <window name="windowPowerSourceSlots" width="228" height="198" anchor="CenterTop" panel="Left">
+  <window name="windowPowerSourceSlots" width="228" height="198" anchor="CenterTop" panel="Left" cursor_area="true">
     <panel style="header.panel">
       <sprite depth="2" name="windowIcon" style="icon32px" pos="5,-5" sprite="ui_game_symbol_electric_power"/>
       <label style="header.name" text="SLOTS" text_key="xuiSlots" />

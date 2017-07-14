@@ -1,0 +1,473 @@
+Initialize engine version: 5.3.6p8 (c04dd374db98)
+Forcing GfxDevice: Null
+NullGfxDevice:
+    Version:  NULL 1.0 [1.0]
+    Renderer: Null Device
+    Vendor:   Unity Technologies
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\bluefang\servers\server16371\7DaysToDieServer_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\bluefang\servers\server16371\7DaysToDieServer_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\bluefang\servers\server16371\7DaysToDieServer_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\bluefang\servers\server16371\7DaysToDieServer_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\bluefang\servers\server16371\7DaysToDieServer_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\bluefang\servers\server16371\7DaysToDieServer_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\bluefang\servers\server16371\7DaysToDieServer_Data\Managed\Assembly-UnityScript-firstpass.dll (this message is harmless)
+Loading C:\bluefang\servers\server16371\7DaysToDieServer_Data\Managed\Assembly-UnityScript-firstpass.dll into Unity Child Domain
+Platform assembly: C:\bluefang\servers\server16371\7DaysToDieServer_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
+Loading C:\bluefang\servers\server16371\7DaysToDieServer_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
+Platform assembly: C:\bluefang\servers\server16371\7DaysToDieServer_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\bluefang\servers\server16371\7DaysToDieServer_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\bluefang\servers\server16371\7DaysToDieServer_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\bluefang\servers\server16371\7DaysToDieServer_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\bluefang\servers\server16371\7DaysToDieServer_Data\Managed\AmplifyMotion.dll (this message is harmless)
+Loading C:\bluefang\servers\server16371\7DaysToDieServer_Data\Managed\AmplifyMotion.dll into Unity Child Domain
+Platform assembly: C:\bluefang\servers\server16371\7DaysToDieServer_Data\Managed\ICSharpCode.SharpZipLib.dll (this message is harmless)
+Loading C:\bluefang\servers\server16371\7DaysToDieServer_Data\Managed\ICSharpCode.SharpZipLib.dll into Unity Child Domain
+Platform assembly: C:\bluefang\servers\server16371\7DaysToDieServer_Data\Managed\libnoise.dll (this message is harmless)
+Loading C:\bluefang\servers\server16371\7DaysToDieServer_Data\Managed\libnoise.dll into Unity Child Domain
+Platform assembly: C:\bluefang\servers\server16371\7DaysToDieServer_Data\Managed\LogLibrary.dll (this message is harmless)
+Loading C:\bluefang\servers\server16371\7DaysToDieServer_Data\Managed\LogLibrary.dll into Unity Child Domain
+Platform assembly: C:\bluefang\servers\server16371\7DaysToDieServer_Data\Managed\ProfileAttribute.dll (this message is harmless)
+Loading C:\bluefang\servers\server16371\7DaysToDieServer_Data\Managed\ProfileAttribute.dll into Unity Child Domain
+Platform assembly: C:\bluefang\servers\server16371\7DaysToDieServer_Data\Managed\NSpeex.dll (this message is harmless)
+Loading C:\bluefang\servers\server16371\7DaysToDieServer_Data\Managed\NSpeex.dll into Unity Child Domain
+Platform assembly: C:\bluefang\servers\server16371\7DaysToDieServer_Data\Managed\enum2int.dll (this message is harmless)
+Loading C:\bluefang\servers\server16371\7DaysToDieServer_Data\Managed\enum2int.dll into Unity Child Domain
+Platform assembly: C:\bluefang\servers\server16371\7DaysToDieServer_Data\Managed\NCalc.dll (this message is harmless)
+Loading C:\bluefang\servers\server16371\7DaysToDieServer_Data\Managed\NCalc.dll into Unity Child Domain
+Platform assembly: C:\bluefang\servers\server16371\7DaysToDieServer_Data\Managed\EasyAntiCheat.Client.dll (this message is harmless)
+Loading C:\bluefang\servers\server16371\7DaysToDieServer_Data\Managed\EasyAntiCheat.Client.dll into Unity Child Domain
+Platform assembly: C:\bluefang\servers\server16371\7DaysToDieServer_Data\Managed\EasyAntiCheat.Server.dll (this message is harmless)
+Loading C:\bluefang\servers\server16371\7DaysToDieServer_Data\Managed\EasyAntiCheat.Server.dll into Unity Child Domain
+Platform assembly: C:\bluefang\servers\server16371\7DaysToDieServer_Data\Managed\System.Drawing.dll (this message is harmless)
+Loading C:\bluefang\servers\server16371\7DaysToDieServer_Data\Managed\System.Drawing.dll into Unity Child Domain
+Platform assembly: C:\bluefang\servers\server16371\7DaysToDieServer_Data\Managed\System.Windows.Forms.dll (this message is harmless)
+Loading C:\bluefang\servers\server16371\7DaysToDieServer_Data\Managed\System.Windows.Forms.dll into Unity Child Domain
+Platform assembly: C:\bluefang\servers\server16371\7DaysToDieServer_Data\Managed\LitJson.dll (this message is harmless)
+Loading C:\bluefang\servers\server16371\7DaysToDieServer_Data\Managed\LitJson.dll into Unity Child Domain
+- Completed reload, in  0.061 seconds
+Platform assembly: C:\bluefang\servers\server16371\7DaysToDieServer_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\bluefang\servers\server16371\7DaysToDieServer_Data\Managed\System.dll (this message is harmless)
+Platform assembly: C:\bluefang\servers\server16371\7DaysToDieServer_Data\Managed\System.Xml.dll (this message is harmless)
+Platform assembly: C:\bluefang\servers\server16371\7DaysToDieServer_Data\Managed\UnityScript.Lang.dll (this message is harmless)
+Platform assembly: C:\bluefang\servers\server16371\7DaysToDieServer_Data\Managed\Boo.Lang.dll (this message is harmless)
+UnloadTime: 1.229920 ms
+HDR Render Texture not supported, disabling HDR on reflection probe.
+ 
+(Filename:  Line: 257)
+
+2017-07-14T04:27:23 0.029 INF Awake
+Unable to add 'painkillers' to the Localization dictionary.
+An element with the same key already exists in the dictionary.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Unable to add 'gunmp5ExtMagDesc' to the Localization dictionary.
+An element with the same key already exists in the dictionary.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Unable to add 'bowlDesc' to the Localization dictionary.
+An element with the same key already exists in the dictionary.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Unable to add 'bowl' to the Localization dictionary.
+An element with the same key already exists in the dictionary.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+2017-07-14T04:27:24 0.077 INF Version: Alpha 16 (b138) Compatibility Version: Alpha 16, Build: Windows 64 Bit
+2017-07-14T04:27:24 0.077 INF System information:
+2017-07-14T04:27:24 0.078 INF    OS: Windows 7 Service Pack 1 (6.1.7601) 64bit
+2017-07-14T04:27:24 0.078 INF    CPU: Intel(R) Xeon(R) CPU E5-1650 v4 @ 3.60GHz (cores: 12)
+2017-07-14T04:27:24 0.078 INF    RAM: 65424 MB
+2017-07-14T04:27:24 0.078 INF    GPU: Null Device (128 MB)
+2017-07-14T04:27:24 0.085 INF    Graphics API: NULL 1.0 [1.0] (shader level 2.0)
+2017-07-14T04:27:24 0.094 INF Last played version: Alpha 16
+2017-07-14T04:27:24 0.095 INF Local UTC offset: -5 hours
+2017-07-14T04:27:24 0.096 INF Command line arguments: C:\bluefang\servers\server16371\7DaysToDieServer.exe -quit -batchmode -nographics -ServerMaxPlayerCount=30 -ServerName=!Worlds End PvEvP [SinMod] -GameName=SinModA16v1 -GameWorld=Random Gen -ServerPort=22710 -ControlPanelEnabled=true -ControlPanelPort=22720 -ControlPanelPassword=78cougar -TelnetEnabled=true -TelnetPort=22730 -TelnetPassword=78cougar -ServerDescription=End of the world at is best!!! -ServerWebsiteURL=www.worldsendpve.com -SaveGameFolder=saves -ServerAdminSlots=0 -configfile=config\serverconfig.xml -dedicated
+2017-07-14T04:27:24 0.099 INF Parsing server configfile: config\serverconfig.xml
+2017-07-14T04:27:24 0.137 INF Parsing server configfile successfully completed
+2017-07-14T04:27:24 0.137 INF Starting dedicated server level=Random Gen game name=SinModA16v1
+2017-07-14T04:27:24 0.138 INF Maximum allowed players: 30
+2017-07-14T04:27:24 0.138 INF Game mode: GameModeSurvivalMP
+2017-07-14T04:27:24 0.138 INF Dedicated server only build
+2017-07-14T04:27:24 0.141 INF Not running in Big Picture Mode, no on-screen keyboard available
+2017-07-14T04:27:24 0.142 INF Starting PlayerInputManager...
+2017-07-14T04:27:24 0.159 INF InControl (version 1.6.8 build 8730, native module = False, XInput = False)
+2017-07-14T04:27:24 0.265 INF Starting UserProfileManager...
+2017-07-14T04:27:24 0.396 INF Texture quality is set to 3
+2017-07-14T04:27:24 0.499 INF [NET] Disabling protocol: UNET
+2017-07-14T04:27:24 0.505 INF NET: InitCallbacks
+2017-07-14T04:27:24 0.507 INF [MODS] Start loading
+2017-07-14T04:27:24 0.508 INF [MODS] Trying to load from Allocs_CommandExtensions
+Non platform assembly: C:\bluefang\servers\server16371\Mods\Allocs_CommandExtensions\AllocsCommands.dll (this message is harmless)
+2017-07-14T04:27:24 0.519 INF [MODS] Loaded Mod: Allocs command extensions (12)
+2017-07-14T04:27:24 0.520 INF [MODS] Trying to load from Allocs_CommonFunc
+Non platform assembly: C:\bluefang\servers\server16371\Mods\Allocs_CommonFunc\7dtd-server-fixes.dll (this message is harmless)
+2017-07-14T04:27:24 0.521 INF [MODS] Found ModAPI, creating instance
+2017-07-14T04:27:24 0.521 INF [MODS] Loaded Mod: Allocs server fixes (14)
+2017-07-14T04:27:24 0.521 INF [MODS] Trying to load from Allocs_WebAndMapRendering
+Non platform assembly: C:\bluefang\servers\server16371\Mods\Allocs_WebAndMapRendering\MapRendering.dll (this message is harmless)
+2017-07-14T04:27:24 0.523 INF [MODS] Found ModAPI, creating instance
+2017-07-14T04:27:24 0.523 INF [MODS] Loaded Mod: Allocs MapRendering and Webinterface (19)
+2017-07-14T04:27:24 0.523 INF [MODS] Trying to load from CoppisAdditions
+Non platform assembly: C:\bluefang\servers\server16371\Mods\CoppisAdditions\CoppisAdditions.dll (this message is harmless)
+2017-07-14T04:27:24 0.525 INF [MODS] Found ModAPI, creating instance
+2017-07-14T04:27:24 0.525 INF [MODS] Loaded Mod: Coppis command additions (3.0)
+2017-07-14T04:27:24 0.525 INF [MODS] Trying to load from SinModIcons
+2017-07-14T04:27:24 0.526 INF [MODS] Loaded Mod: SinMod Icons (A16v1)
+2017-07-14T04:27:24 0.526 INF [MODS] Loading done
+2017-07-14T04:27:24 0.537 INF Loading permissions file at 'saves/serveradmin.xml'
+2017-07-14T04:27:24 0.566 INF Loading permissions file done.
+2017-07-14T04:27:24 0.608 INF SdtdLog: No config found
+2017-07-14T04:27:25 1.281 INF Reloading serveradmin.xml
+2017-07-14T04:27:25 1.282 INF Loading permissions file at 'saves/serveradmin.xml'
+2017-07-14T04:27:25 1.287 INF Loading permissions file done.
+UMA Overlay loading took 758 ms
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+UMA Slot loading took 3 ms
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+HDR Render Texture not supported, disabling HDR on reflection probe.
+ 
+(Filename:  Line: 257)
+
+HDR Render Texture not supported, disabling HDR on reflection probe.
+ 
+(Filename:  Line: 257)
+
+WARNING: Shader Unsupported: 'Suimono/effect_refractDroplets' - Setting to default shader.
+WARNING: Shader Unsupported: 'Suimono/effect_refractionViewDepth' - Setting to default shader.
+WARNING: Shader Unsupported: 'Code/GoggleEyed' - Setting to default shader.
+2017-07-14T04:27:32 8.903 INF WorldStaticData.Init() needed 7.122s
+Platform assembly: C:\bluefang\servers\server16371\7DaysToDieServer_Data\Managed\System.Configuration.dll (this message is harmless)
+2017-07-14T04:27:32 8.935 INF Started Telnet on 22730
+2017-07-14T04:27:32 9.007 INF Loading permissions file at 'saves/webpermissions.xml'
+2017-07-14T04:27:32 9.009 INF Loading permissions file done.
+2017-07-14T04:27:32 9.019 INF Started Webserver on 22722
+2017-07-14T04:27:32 9.021 INF Awake done
+2017-07-14T04:27:33 9.205 INF Atlas reset took 119 ms
+2017-07-14T04:27:33 9.205 INF Atlas load took 182 ms
+Platform assembly: C:\bluefang\servers\server16371\7DaysToDieServer_Data\Managed\Mono.Posix.dll (this message is harmless)
+Fallback handler could not load library C:/bluefang/servers/server16371/7DaysToDieServer_Data/Mono/libc
+Fallback handler could not load library C:/bluefang/servers/server16371/7DaysToDieServer_Data/Mono/.\libc
+Fallback handler could not load library C:/bluefang/servers/server16371/7DaysToDieServer_Data/Mono/libc
+2017-07-14T04:27:33 9.328 INF NET: Starting server protocols
+2017-07-14T04:27:33 9.354 INF NET: Unity NW server started
+2017-07-14T04:27:33 9.355 INF [Steamworks.NET] NET: Server started
+2017-07-14T04:27:33 9.356 INF StartGame
+Setting up 3 worker threads for Enlighten.
+  Thread -> id: 4ca0 -> priority: 1 
+  Thread -> id: 97a8 -> priority: 1 
+  Thread -> id: 4158 -> priority: 1 
+2017-07-14T04:27:33 9.621 INF Atlas reset took 92 ms
+2017-07-14T04:27:33 9.949 INF Atlas resized to fit more icons. Old 1561 icons, 4096x4096, now 1867 icons, 8192x4096
+2017-07-14T04:27:34 10.440 INF Adding 307 sprites to atlas took 959 ms
+2017-07-14T04:27:34 10.502 INF Persistent GamePrefs saved
+GamePref.AdminFileName = serveradmin.xml
+GamePref.AirDropFrequency = 72
+GamePref.AirDropMarker = True
+GamePref.AutopilotMode = 0
+GamePref.BedrollDeadZoneSize = 15
+GamePref.BlockDurabilityModifier = 100
+GamePref.BloodMoonEnemyCount = 8
+GamePref.BuildCreate = False
+GamePref.ConnectToServerIP = 127.0.0.1
+GamePref.ConnectToServerPort = 26900
+GamePref.ControlPanelEnabled = True
+GamePref.ControlPanelPort = 22720
+GamePref.CraftTimer = 
+GamePref.CreateLevelDim = 8
+GamePref.CreateLevelName = My Level
+GamePref.CreativeMenuEnabled = False
+GamePref.DayCount = 3
+GamePref.DayLightLength = 18
+GamePref.DayNightLength = 50
+GamePref.DebugMenuEnabled = False
+GamePref.DebugMenuShowTasks = False
+GamePref.DebugStopEnemiesMoving = False
+GamePref.DropOnDeath = 0
+GamePref.DropOnQuit = 0
+GamePref.DynamicSpawner = 
+GamePref.EACEnabled = True
+GamePref.EnemyDifficulty = 0
+GamePref.EnemySpawnMode = True
+GamePref.FavoriteServersList = 
+GamePref.FragLimit = 20
+GamePref.GameDifficulty = 3
+GamePref.GameGuidClient = 
+GamePref.GameMode = GameModeSurvivalMP
+GamePref.GameName = SinModA16v1
+GamePref.GameNameClient = My Game
+GamePref.GameVersion = Alpha 16
+GamePref.GameWorld = Random Gen
+GamePref.HideCommandExecutionLog = 0
+GamePref.JoiningOptions = True
+GamePref.LandClaimDeadZone = 30
+GamePref.LandClaimDecayMode = 0
+GamePref.LandClaimExpiryTime = 3
+GamePref.LandClaimOfflineDurabilityModifier = 4
+GamePref.LandClaimOnlineDurabilityModifier = 4
+GamePref.LandClaimSize = 41
+GamePref.LastGameResetRevision = 0
+GamePref.LootAbundance = 100
+GamePref.LootRespawnDays = 30
+GamePref.LootTimer = 
+GamePref.MatchLength = 10
+GamePref.MaxSpawnedAnimals = 50
+GamePref.MaxSpawnedZombies = 60
+GamePref.MaxUncoveredMapChunksPerPlayer = 131072
+GamePref.NoGraphicsMode = True
+GamePref.OptionsAA = 0
+GamePref.OptionsAllowController = False
+GamePref.OptionsAmbientVolumeLevel = 0.5
+GamePref.OptionsAudioOcclusion = False
+GamePref.OptionsBackgroundGlobalOpacity = 0.75
+GamePref.OptionsBloom = False
+GamePref.OptionsControllerVibration = True
+GamePref.OptionsDeferredLighting = True
+GamePref.OptionsDOF = False
+GamePref.OptionsFieldOfView = 50
+GamePref.OptionsForegroundGlobalOpacity = 1
+GamePref.OptionsGamma = 0.375
+GamePref.OptionsGraphicsQuality = 1
+GamePref.OptionsGrassDistance = 1
+GamePref.OptionsHudOpacity = 1
+GamePref.OptionsHudSize = 2
+GamePref.OptionsImageEffects = False
+GamePref.OptionsInterfaceSensitivity = 0.75
+GamePref.OptionsInvertMouse = False
+GamePref.OptionsLODDistance = 0.5
+GamePref.OptionsMicVolumeLevel = 0.75
+GamePref.OptionsMotionBlur = 0
+GamePref.OptionsMouseSensitivity = 0.5
+GamePref.OptionsMusicVolumeLevel = 0.2
+GamePref.OptionsObjectBlur = False
+GamePref.OptionsOverallAudioVolumeLevel = 1
+GamePref.OptionsPlayerModel = playerMale
+GamePref.OptionsPlayerModelTexture = Player/Male/Player_male
+GamePref.OptionsReflectedShadows = False
+GamePref.OptionsReflectionBounces = 0
+GamePref.OptionsReflectionCullList = Default
+GamePref.OptionsReflectionFarClip = 3000
+GamePref.OptionsReflectionQuality = 0
+GamePref.OptionsReflectionRefreshMode = ViaScripting
+GamePref.OptionsReflectionRefreshRate = 0
+GamePref.OptionsReflectionShadowDistance = 60
+GamePref.OptionsReflectionTimeSlicingMode = IndividualFaces
+GamePref.OptionsResolution = 0
+GamePref.OptionsScreenBoundsValue = 1
+GamePref.OptionsShadowDistance = 0
+GamePref.OptionsShowCompass = True
+GamePref.OptionsShowCrosshair = True
+GamePref.OptionsSSAO = False
+GamePref.OptionsStabSpawnBlocksOnGround = True
+GamePref.OptionsSunShafts = False
+GamePref.OptionsTempCelsius = False
+GamePref.OptionsTextureQuality = 2
+GamePref.OptionsTreeQuality = 1
+GamePref.OptionsUMATextureQuality = 1
+GamePref.OptionsViewDistance = 8
+GamePref.OptionsVoiceChatEnabled = True
+GamePref.OptionsVoiceVolumeLevel = 0.75
+GamePref.OptionsVsync = 1
+GamePref.OptionsWaterParticleLimiter = 0
+GamePref.OptionsWaterQuality = 0
+GamePref.PersistentPlayerProfiles = False
+GamePref.PlayerAutologin = False
+GamePref.PlayerId = 
+GamePref.PlayerKillingMode = 2
+GamePref.PlayerName = Player
+GamePref.PlayerSafeZoneHours = 5
+GamePref.PlayerSafeZoneLevel = 5
+GamePref.PlayerToken = 
+GamePref.RebuildMap = False
+GamePref.SaveGameFolder = saves
+GamePref.SelectionContextMode = 0
+GamePref.SelectionOperationMode = 0
+GamePref.ServerAdminSlots = 0
+GamePref.ServerAdminSlotsPermission = 0
+GamePref.ServerDescription = End of the world at is best!!!
+GamePref.ServerDisabledNetworkProtocols = UNET
+GamePref.ServerIP = 
+GamePref.ServerIsPublic = True
+GamePref.ServerMaxPlayerCount = 30
+GamePref.ServerName = !Worlds End PvEvP [SinMod]
+GamePref.ServerPort = 22710
+GamePref.ServerReservedSlots = 0
+GamePref.ServerReservedSlotsPermission = 100
+GamePref.ServerWebsiteURL = www.worldsendpve.com
+GamePref.ShowFriendPlayerOnMap = True
+GamePref.TelnetEnabled = True
+GamePref.TelnetPort = 22730
+GamePref.ZombiePlayers = True
+GamePref.ZombiesRun = 0
+GameStat.AirDropFrequency = 0
+GameStat.AirDropMarker = False
+GameStat.AnimalCount = 0
+GameStat.BlockDurabilityModifier = 1
+GameStat.BloodMoonEnemyCount = 8
+GameStat.ChunkStabilityEnabled = True
+GameStat.CraftTimer = 
+GameStat.CurrentRoundIx = 0
+GameStat.DayLightLength = 18
+GameStat.DayLimitActive = False
+GameStat.DayLimitThisRound = 0
+GameStat.Difficulty = 2
+GameStat.DropOnDeath = 1
+GameStat.DropOnQuit = 0
+GameStat.EnemyCount = 0
+GameStat.EnemyDifficulty = Normal
+GameStat.EnemySpawnMode = True
+GameStat.FragLimitActive = False
+GameStat.FragLimitThisRound = 0
+GameStat.GameDifficulty = 2
+GameStat.GameModeId = 0
+GameStat.GameState = 0
+GameStat.GlobalMessageToShow = 
+GameStat.IsCreativeMenuEnabled = False
+GameStat.IsFlyingEnabled = False
+GameStat.IsPlayerCollisionEnabled = True
+GameStat.IsPlayerDamageEnabled = True
+GameStat.IsResetMapOnRestart = False
+GameStat.IsSaveSupplyCrates = True
+GameStat.IsSpawnEnemies = True
+GameStat.IsSpawnNearOtherPlayer = False
+GameStat.IsTeleportEnabled = False
+GameStat.IsVersionCheckDone = False
+GameStat.LandClaimDeadZone = 30
+GameStat.LandClaimDecayMode = 0
+GameStat.LandClaimExpiryTime = 3
+GameStat.LandClaimOfflineDurabilityModifier = 32
+GameStat.LandClaimOnlineDurabilityModifier = 32
+GameStat.LandClaimSize = 41
+GameStat.LoadScene = 
+GameStat.LootTimer = 
+GameStat.PlayerKillingMode = KillStrangersOnly
+GameStat.ScoreDiedMultiplier = -5
+GameStat.ScorePlayerKillMultiplier = 1
+GameStat.ScoreZombieKillMultiplier = 1
+GameStat.ShowAllPlayersOnMap = False
+GameStat.ShowFriendPlayerOnMap = True
+GameStat.ShowSpawnWindow = False
+GameStat.ShowWindow = 
+GameStat.ShowZombieCounter = False
+GameStat.TimeLimitActive = False
+GameStat.TimeLimitThisRound = 0
+GameStat.TimeOfDayIncPerSec = 20
+GameStat.ZombieHordeMeter = False
+2017-07-14T04:27:34 10.590 INF StartAsServer
+2017-07-14T04:27:34 10.740 INF createWorld: Random Gen, SinModA16v1, GameModeSurvivalMP
+2017-07-14T04:27:34 10.846 INF Started thread KO
+2017-07-14T04:27:34 10.846 INF Started thread thread_Regenerating
+2017-07-14T04:27:34 10.939 INF World.Load: Random Gen
+2017-07-14T04:27:34 10.959 INF Started thread thread_Pathfinder
+2017-07-14T04:27:34 10.967 INF SelectionBoxManager.Instance: SelectionBoxes (SelectionBoxManager)
+2017-07-14T04:27:34 10.970 INF Started thread thread_GenerateChunks
+2017-07-14T04:27:34 10.993 INF Loading and parsing of generator took 23ms
+WARNING: Shader Unsupported: 'Legacy/Shader GroundPlane' - Pass '' has no vertex shader
+WARNING: Shader Unsupported: 'Legacy/Shader GroundPlane' - Setting to default shader.
+2017-07-14T04:27:35 11.319 INF ************************Weather Packages Created FROM BIOMES  :D ************************
+WARNING: Shader Unsupported: 'Skybox/SkyboxFog' - Setting to default shader.
+2017-07-14T04:27:35 11.565 INF createWorld() done
+2017-07-14T04:27:35 11.566 INF Loading players.xml
+2017-07-14T04:27:35 11.833 INF Modified file (server will go to the modded category): Data/Config/blocks.xml has invalid hash
+2017-07-14T04:27:35 11.834 INF Modified file (server will go to the modded category): Data/Config/buffs.xml has invalid hash
+2017-07-14T04:27:35 11.835 INF Modified file (server will go to the modded category): Data/Config/entityclasses.xml has invalid hash
+2017-07-14T04:27:35 11.842 INF Modified file (server will go to the modded category): Data/Config/items.xml has invalid hash
+2017-07-14T04:27:35 11.843 INF Modified file (server will go to the modded category): Data/Config/loot.xml has invalid hash
+2017-07-14T04:27:35 11.844 INF Modified file (server will go to the modded category): Data/Config/materials.xml has invalid hash
+2017-07-14T04:27:35 11.845 INF Modified file (server will go to the modded category): Data/Config/progression.xml has invalid hash
+2017-07-14T04:27:35 11.846 INF Modified file (server will go to the modded category): Data/Config/quests.xml has invalid hash
+2017-07-14T04:27:35 11.847 INF Modified file (server will go to the modded category): Data/Config/recipes.xml has invalid hash
+2017-07-14T04:27:35 11.849 INF Modified file (server will go to the modded category): Data/Config/sounds.xml has invalid hash
+2017-07-14T04:27:35 11.850 INF Modified file (server will go to the modded category): Data/Config/traders.xml has invalid hash
+2017-07-14T04:27:35 11.851 INF Modified file (server will go to the modded category): Data/Config/xui.xml has invalid hash
+2017-07-14T04:27:35 11.852 INF [EAC] Starting EAC server
+2017-07-14T04:27:35 11.865 INF [EAC] Log: [SetLogCallback] Procedure: 000000003654F320 LogLevel: Debug
+2017-07-14T04:27:38 14.344 EXC An element with the same key already exists in the dictionary.
+ArgumentException: An element with the same key already exists in the dictionary.
+  at System.Collections.Generic.Dictionary`2[System.String,System.Byte[]].Add (System.String key, System.Byte[] value) [0x00000] in <filename unknown>:0 
+  at AllocsFixes.NetConnections.Servers.Web.Handlers.ItemIconHandler.AddIcon (System.String _name, UnityEngine.Texture2D _tex, System.Collections.Generic.Dictionary`2 _tintedIcons) [0x00000] in <filename unknown>:0 
+  at AllocsFixes.NetConnections.Servers.Web.Handlers.ItemIconHandler.LoadIcons () [0x00000] in <filename unknown>:0 
+UnityEngine.DebugLogHandler:Internal_LogException(Exception, Object)
+UnityEngine.DebugLogHandler:LogException(Exception, Object)
+UnityEngine.Logger:LogException(Exception, Object)
+UnityEngine.Debug:LogException(Exception)
+Logger:masterLogException(Exception)
+Logger:Exception(Exception)
+Log:Exception(Exception)
+AllocsFixes.NetConnections.Servers.Web.Handlers.ItemIconHandler:LoadIcons()
+MapRendering.API:GameStartDone()
+ModManager:GameStartDone()
+LT:MoveNext()
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+ 
+(Filename:  Line: -1)
+
+2017-07-14T04:27:38 14.597 INF Web:IconHandler: Icons loaded - 2712 ms
+2017-07-14T04:27:38 14.597 INF StartGame done
+2017-07-14T04:27:38 14.678 INF [Steamworks.NET] GameServer.Init successful
+2017-07-14T04:27:39 15.584 INF [Steamworks.NET] GameServer.LogOn successful, SteamID=90109942004282371
+2017-07-14T04:27:47 23.373 INF Telnet connection from: 158.69.241.234:50737
+2017-07-14T04:27:47 23.373 INF Started thread TelnetClientReceive_158.69.241.234:50737
+2017-07-14T04:27:47 23.373 INF Started thread TelnetClientSend_158.69.241.234:50737
+2017-07-14T04:27:48 24.037 INF Executing command 'lp' by Telnet from 158.69.241.234:50737
+2017-07-14T04:27:51 27.037 INF Executing command 'lp' by Telnet from 158.69.241.234:50737
+2017-07-14T04:27:52 28.336 INF Executing command 'gt' by Telnet from 158.69.241.234:50737
+2017-07-14T04:27:54 30.037 INF Executing command 'lp' by Telnet from 158.69.241.234:50737
+2017-07-14T04:27:57 33.036 INF Executing command 'lp' by Telnet from 158.69.241.234:50737
+2017-07-14T04:28:00 36.036 INF Executing command 'lp' by Telnet from 158.69.241.234:50737
+2017-07-14T04:28:03 39.037 INF Executing command 'lp' by Telnet from 158.69.241.234:50737
+2017-07-14T04:28:04 40.956 ERR IOException in ReadLine for TelnetClientReceive_158.69.241.234:50737: Read failure
+2017-07-14T04:28:04 40.956 ERR Error in TelnetClientSend_158.69.241.234:50737
+2017-07-14T04:28:04 40.956 EXC Write failure
+ObjectDisposedException: The object was used after being disposed.
+  at System.Net.Sockets.Socket.Send (System.Byte[] buf, Int32 offset, Int32 size, SocketFlags flags) [0x00000] in <filename unknown>:0 
+  at System.Net.Sockets.NetworkStream.Write (System.Byte[] buffer, Int32 offset, Int32 size) [0x00000] in <filename unknown>:0 
+Rethrow as IOException: Write failure
+  at System.Net.Sockets.NetworkStream.Write (System.Byte[] buffer, Int32 offset, Int32 size) [0x00000] in <filename unknown>:0 
+  at TelnetConnection.RQ (.ThreadInfo ) [0x00000] in <filename unknown>:0 
+UnityEngine.DebugLogHandler:Internal_LogException(Exception, Object)
+UnityEngine.DebugLogHandler:LogException(Exception, Object)
+UnityEngine.Logger:LogException(Exception, Object)
+UnityEngine.Debug:LogException(Exception)
+Logger:masterLogException(Exception)
+Logger:Exception(Exception)
+Log:Exception(Exception)
+TelnetConnection:RQ(ThreadInfo)
+ThreadManager:PR(Object)
+ 
+(Filename:  Line: -1)
+
+2017-07-14T04:28:04 40.959 INF [NET] PlayerConnected EntityID=-1, PlayerID='', OwnerID='', PlayerName=''
+2017-07-14T04:28:04 40.960 INF Telnet connection closed: 158.69.241.234:50737
+2017-07-14T04:28:04 40.960 INF Exited thread TelnetClientSend_158.69.241.234:50737
+2017-07-14T04:28:05 41.156 INF Exited thread TelnetClientReceive_158.69.241.234:50737
+2017-07-14T04:28:05 41.365 INF PlayerLogin: SinisterMind81/Alpha 16
+2017-07-14T04:28:05 41.366 INF Client IP: 90.174.2.85
+2017-07-14T04:28:05 41.367 INF [Steamworks.NET] Auth.AuthenticateUser()
+2017-07-14T04:28:05 41.367 INF [Steamworks.NET] Authenticating player: SinisterMind81 SteamId: 76561198304905059 TicketLen: 1024 Result: k_EBeginAuthSessionResultOK
+2017-07-14T04:28:05 41.616 INF [Steamworks.NET] Authentication callback. ID: 76561198304905059, owner: 76561198304905059, result: k_EAuthSessionResponseOK
+2017-07-14T04:28:05 41.617 INF Steam authentication successful, registering with EAC: EntityID=-1, PlayerID='76561198304905059', OwnerID='76561198304905059', PlayerName='SinisterMind81'
+2017-07-14T04:28:05 41.617 INF [EAC] Registering user: EntityID=-1, PlayerID='76561198304905059', OwnerID='76561198304905059', PlayerName='SinisterMind81'
+2017-07-14T04:28:05 41.619 INF [EAC] Log: [RegisterClient] Client: 0000000000000001 PlayerGUID: 76561198304905059 PlayerIP: 90.174.2.85 OwnerGUID: 76561198304905059 PlayerName: SinisterMind81
+2017-07-14T04:28:06 42.645 INF [EAC] Log: [Register Client] Success (1/2). Client: 0000000000000001
+2017-07-14T04:28:06 42.645 INF [EAC] Log: [QueueClientUpdate] Client: 0000000000000001 Session: 1 Status: Client Authenticated Message: Client authenticated
+2017-07-14T04:28:06 42.665 INF [EAC] UserStatusHandler callback. Status: ClientAuthenticatedLocal ReqKick: False Message: Client authenticated
+2017-07-14T04:28:07 43.688 INF [EAC] Log: [Register Client] Success (2/2). Client: 0000000000000001
+2017-07-14T04:28:07 43.689 INF [EAC] Log: [QueueClientUpdate] Client: 0000000000000001 Session: 1 Status: Client Authenticated Remotely Message: Client authenticated remotely
+2017-07-14T04:28:07 43.714 INF [EAC] UserStatusHandler callback. Status: ClientAuthenticatedRemote ReqKick: False Message: Client authenticated remotely
+2017-07-14T04:28:07 43.715 INF EAC authentication successful, allowing user: EntityID=-1, PlayerID='76561198304905059', OwnerID='76561198304905059', PlayerName='SinisterMind81'
+2017-07-14T04:28:07 43.715 INF Allowing player with id 76561198304905059
+2017-07-14T04:28:08 44.316 INF Time: 0.54m FPS: 20.00 Heap: 295.5MB Max: 295.5MB Chunks: 0 CGO: 0 Ply: 0 Zom: 0 Ent: 0 (0) Items: 0 CO: 0 RSS: 1169.9MB
+2017-07-14T04:28:10 46.821 INF RequestToEnterGame: 76561198304905059/SinisterMind81
+2017-07-14T04:28:20 56.130 INF RequestToSpawnPlayer: 180, SinisterMind81, 8
+2017-07-14T04:28:20 56.161 INF Created player with id=180
+2017-07-14T04:28:20 56.273 INF Player connected, entityid=180, name=SinisterMind81, steamid=76561198304905059, steamOwner=76561198304905059, ip=90.174.2.85
+2017-07-14T04:28:20 56.273 INF Player set to online: 76561198304905059
