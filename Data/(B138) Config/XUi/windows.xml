@@ -1,20 +1,60 @@
 <windows>
   <window name="HUDLeftStatBars">
-    <grid name="hud" pos="9,98" rows="2" cols="1" width="168" cell_width="168" cell_height="46" repeat_content="false" side="left" >
-      <rect width="168" height="43" controller="HUDStatBar" stat_type="Stamina" visible="{statvisible}">
+    <grid name="hud" pos="9,98" rows="2" cols="2" width="140" cell_width="140" cell_height="46" repeat_content="false" side="left" >
+
+      <!--Stamina-->
+      <rect width="140" height="43" controller="HUDStatBar" stat_type="Stamina" visible="{statvisible}">
         <sprite depth="1" name="border" color="0,0,0,100" height="43" type="sliced"/>
-        <sprite depth="2" pos="3,-3"  name="background" height="37" width="162" color="64,64,64,100" type="sliced" />
-        <sprite depth="3" pos="3,-3"  name="BarContent" sprite="{statimage|once}" type="filled" height="37" width="162" fill="0"  />
+        <sprite depth="2" pos="3,-3"  name="background" height="37" width="134" color="64,64,64,100" type="sliced" />
+        <sprite depth="3" pos="3,-3"  name="BarContent" sprite="{statimage|once}" type="filled" height="37" width="134" fill="0"  />
         <sprite depth="4" name="Icon" atlas="{staticonatlas|once}" sprite="{staticon|once}" size="32,32" pos="8,-6" foregroundlayer="true"/>
         <label depth="6" name="TextContent" pos="0,-8" font_size="28" color="[white]" justify="center" pivot="topleft" text="{statcurrentwithmax}" height="30"/>
       </rect>
 
-      <rect width="168" height="43" controller="HUDStatBar" stat_type="Health" visible="{statvisible}">
+      <!--Health-->
+      <rect width="140" height="43" controller="HUDStatBar" stat_type="Health" visible="{statvisible}">
         <sprite depth="1" name="border" color="0,0,0,100" height="43" type="sliced" />
-        <sprite depth="2" pos="3,-3"  name="background" height="37" width="162" color="64,64,64,100" type="sliced" />
-        <sprite depth="3" pos="3,-3"  name="BarContent" sprite="{statimage|once}" type="filled" height="37" width="162" fill="0" />
+        <sprite depth="2" pos="3,-3"  name="background" height="37" width="134" color="64,64,64,100" type="sliced" />
+        <sprite depth="3" pos="3,-3"  name="BarContent" sprite="{statimage|once}" type="filled" height="37" width="134" fill="0" />
         <sprite depth="4" name="Icon" atlas="{staticonatlas|once}" sprite="{staticon|once}" size="32,32" pos="8,-6" foregroundlayer="true"/>
         <label depth="6" name="TextContent" pos="0,-8" font_size="28" color="[white]" justify="center" pivot="topleft" text="{statcurrentwithmax}" height="30"/>
+      </rect>
+
+      <!--Food-->
+      <rect width="140" height="43" controller="PlayerStatsWindow">
+        <sprite depth="1" name="border" color="0,0,0,100" height="43" type="sliced" />
+        <sprite depth="2" pos="3,-3"  name="background" height="37" width="134" color="64,64,64,100" type="sliced" />
+        <sprite depth="3" pos="3,-3"  name="BarContent" color="52,174,86" fill="{playerfoodfill}" type="filled" height="37" width="134"/>
+        <sprite depth="4" name="Icon" sprite="ui_game_symbol_fork" size="32,32" pos="8,-6" foregroundlayer="true"/>
+        <label depth="6" name="lblFood" pos="0,-8" font_size="28" color="[white]" justify="center" pivot="topleft" text="{playerfood}%[-]" height="30"/>
+      </rect>
+
+      <!--Water-->
+      <rect width="140" height="43" controller="PlayerStatsWindow">
+        <sprite depth="1" name="border" color="0,0,0,100" height="43" type="sliced" />
+        <sprite depth="2" pos="3,-3"  name="background" height="37" width="134" color="64,64,64,100" type="sliced" />
+        <sprite depth="3" pos="3,-3"  name="BarContent" color="52,137,167" fill="{playerwaterfill}" type="filled" height="37" width="134"/>
+        <sprite depth="4" name="Icon" sprite="ui_game_symbol_water" size="32,32" pos="8,-6" foregroundlayer="true"/>
+        <label depth="6" name="lblWater" pos="0,-8" font_size="28" color="[white]" justify="center" pivot="topleft" text="{playerwater}%[-]" height="30"/>
+      </rect>
+    </grid>
+
+    <grid name="hud" pos="288,98" rows="2" cols="1" width="100" cell_width="100" cell_height="46" repeat_content="false" side="left" >
+
+      <!--Elevation-->
+      <rect width="100" height="43">
+        <sprite depth="1" name="border" color="0,0,0,100" height="43" type="sliced" />
+        <sprite depth="2" pos="3,-3"  name="background" height="37" width="94" color="64,64,64,100" type="sliced" />
+        <sprite depth="4" name="elevIcon" size="32,32" pos="3,-3" sprite="ui_game_symbol_climb" color="[iconColor]" foregroundlayer="true"/>
+        <label depth="6" width="68" height="30" pos="25,-8" font_size="22" text=" [DECEA3] {mapelevation} M[-]" effect="outline" justify="center" controller="MapStats" />
+      </rect>
+
+      <!--Core Temp-->
+      <rect width="100" height="43">
+        <sprite depth="1" name="border" color="0,0,0,100" height="43" type="sliced" />
+        <sprite depth="2" pos="3,-3"  name="background" height="37" width="94" color="64,64,64,100" type="sliced" />
+        <sprite depth="4" name="tempIcon" size="32,32" pos="3,-3" sprite="ui_game_symbol_temperature" color="[iconColor]" foregroundlayer="true"/>
+        <label depth="6" width="68" height="30" pos="25,-8" font_size="22" text=" [DECEA3] {playercoretemp}[-]" effect="outline" justify="center" controller="PlayerStatsWindow" />
       </rect>
     </grid>
 
@@ -633,13 +673,18 @@
   </window>
 
   <!--#$-IGS BEGIN: Adding cursor area. -$#-->
+
   <window name="CharacterFrameWindow" width="327" height="704" panel="Left" controller="CharacterFrameWindow" defaultcolor="[white]" hoveredcolor="[selectedColor]" cursor_area="true" >
     <!--#$-IGS END.-$#-->
+    <panel name="SinModInfo" height="704" width="150" pos="-149,-46">
+      <texture depth="1" name="ToolBeltBackground" texture="@https://cdn.discordapp.com/attachments/292953518242004992/292953578669342720/PanelinfoUI.png" material="Materials/Transparent Colored"/>
+    </panel>
     <panel name="header" height="43" depth="1" backgroundspritename="ui_game_panel_header">
-      <sprite depth="2" name="windowIcon" style="icon32px" pos="5,-5" sprite="ui_game_symbol_character"/>
-      <label depth="2" name="characterName" pos="42,-6" width="150" height="32" text="" font_size="32"/>
-      <sprite depth="2" name="windowIcon" width="26" height="26" pos="200,-8" sprite="ui_game_symbol_trophy" color="[mediumGrey]"/>
-      <label depth="2" name="levelNumber" pos="240,-10" width="80" height="28" text="" color="[lightGrey]"/>
+      
+      <sprite depth="3" name="windowIcon" style="icon32px" pos="5,-5" sprite="ui_game_symbol_character"/>
+      <label depth="3" name="characterName" pos="42,-6" width="150" height="32" text="" font_size="32"/>
+      <sprite depth="3" name="windowIcon" width="26" height="26" pos="200,-8" sprite="ui_game_symbol_trophy" color="[mediumGrey]"/>
+      <label depth="3" name="levelNumber" pos="240,-10" width="80" height="28" text="" color="[lightGrey]"/>
     </panel>
 
     <!--#$-IGS BEGIN: Disabling snap for the character preview frame area. Moving the previewFrame down to make space for a new level header. -$#-->
@@ -647,9 +692,11 @@
       <!--*#$-IGS END.-$#-->
       <rect>
         <sprite depth="8" name="backgroundMain" sprite="menu_empty3px" pos="0,0" width="327" height="704" color="[black]" type="sliced" fillcenter="false" />
-        <sprite depth="1" color="[darkGrey]" type="sliced" width="256" />
+        <!--sprite depth="1" color="[darkGrey]" type="sliced" width="256" /-->
         <!-- <sprite depth="1" color="[lightGrey]" type="sliced" pos="3,-3" width="381" height="739" />
 				<sprite depth="1" color="[darkGrey]" type="sliced" width="304" height="697" pos="6,-5"/> -->
+        <!-- PLAYER IMAGE -->
+        <texture depth="1" name="ToolBeltBackground" texture="@https://cdn.discordapp.com/attachments/292953518242004992/333277725102178304/characterBG3.png" material="Materials/Transparent Colored"/>
         <texture depth="2" name="playerPreview" material="Materials/Transparent Colored" size="255,702" globalopacity="false"/>
 
         <rect pos="3,-3">
@@ -1994,6 +2041,27 @@
       </grid>
     </panel>
   </window>
+
+  <!--<window name="windowRespondentName" anchor="CenterCenter">
+		<rect pivot="left">
+			<sprite pos="4,-5" depth="2" name="windowIcon" style="icon32px" sprite="ui_game_symbol_map_trader"/>
+			<label style="header.name" text="TRADER JOEL" width="300" />
+		</rect>
+	</window>
+
+	<window name="windowStatement" pos="0,85" width="1000" height="60" anchor="CenterBottom" controller="DialogStatementWindow">
+		<rect name="content" depth="1" pivot="center">
+			<sprite depth="1" name="backgroundSprite" pos="-500,-5" color="25,25,25,150" />
+			<label depth="3" name="statementLabel" pos="-500,-5" text="{statement}" font_size="30" overflow="resizeheight" justify="center"/>
+		</rect>
+	</window>
+
+	<window name="windowResponses" pos="-650,0" width="600" height="240" anchor="RightCenter">
+		<sprite depth="1" name="background" sprite="ui_game_text_body_back" />
+		<grid name="items" pos="3,-15" rows="6" cols="1" width="590" height="200" cell_width="590" cell_height="40" repeat_content="true" arrangement="vertical" controller="DialogResponseList">
+			<response_entry id="0" />
+		</grid>
+	</window>-->
 
   <window name="windowColorPicker" width="250" height="611" panel="Left">
     <panel name="header" height="43" depth="1" backgroundspritename="ui_game_panel_header">

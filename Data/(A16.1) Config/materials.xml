@@ -1103,37 +1103,5 @@ Do not rename "basic" materials like cloth, metal, or stone. These auto-generate
 	<property name="MaxDamage" value="100" />
 	<property name="Experience" value="3.0"/>
 </material>
-<!--SinMod Materials-->
-  <!--Survivor Notes-->
-  <material id="Survivor Notes">
-    <property name="damage_category" value="cloth" />
-    <property name="surface_category" value="cloth" />
-    <property name="forge_category" value="survivorNotes" />
-    <property name="Hardness" type="float" value="0.1" />
-    <property name="stepsound" value="wood" />
-    <property name="stability_glue" value="24" />
-    <property name="Mass" type="int" value="6" />
-  </material>
-  <material id="assortedVegetables">
-    <property name="damage_category" value="cloth" />
-    <property name="surface_category" value="cloth" />
-    <property name="forge_category" value="assortedVegetables" />
-    <property name="Hardness" type="float" value="1" />
-    <property name="stepsound" value="wood" />
-    <property name="stability_glue" value="24" />
-    <property name="Mass" type="int" value="6" />
-    <property name="MaxDamage" value="20" />
-  </material>
 
-  <material id="Adirt">
-    <property name="damage_category" value="earth" />
-    <property name="surface_category" value="earth" />
-    <property name="Hardness" type="float" value="1" />
-    <property name="stepsound" value="dirt" />
-    <property name="fertile_level" value="5" />
-    <property name="stability_glue" value="20" />
-    <property name="Mass" type="int" value="10" />
-    <property name="MaxDamage" value="2000000000" />
-    <property name="Experience" value="0"/>
-  </material>
 </materials>

@@ -47,9 +47,9 @@
 	<property name="SoundPlayerLandThump" value="PlayerLandThump"/>
 	<property name="MapIcon" value="ui_game_symbol_map_player_arrow"/>
 	<property name="IsEnemyEntity" value="false"/>
-  <!--property name="DropInventoryBlock" value="cntBackpackDropped"/-->
-	<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="StartWorldsEnd(README)"/>
-	<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="StartWorldsEnd(README)"/>
+	<property name="DropInventoryBlock" value="cntBackpackDropped"/>
+	<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="bottledWater,canChili,firstAidBandage,torch,keystoneBlock"/>
+	<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="bottledWater,canChili,firstAidBandage,torch,keystoneBlock"/>
 	<property name="ExperienceGain" value="173"/>
 	<property name="LegsExplosionDamageMultiplier" value="1"/>
 	<property name="ArmsExplosionDamageMultiplier" value="1"/>
@@ -263,8 +263,8 @@
 	<property name="ChestExplosionDamageMultiplier" value=".85"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
-  <!--
-  <entity_class name="zombieBehemoth" extends="zombieTemplateMale">
+<!--
+<entity_class name="zombieBehemoth" extends="zombieTemplateMale">
 	<property name="Prefab" value="NPC4m"/>
 	<property name="SoundRandom" value="Enemies/Base_Zombie_Male2/zombiemale2roam"/>
 	<property name="SoundAlert" value="Enemies/Base_Zombie_Male2/zombiemale2alert"/>
@@ -1240,8 +1240,8 @@
 	<property name="HandItem" value="handZombieStripper"/>
 	<property name="MaxHealth" value="250"/>
 	<property name="ExperienceGain" value="1039"/>
-  <property name="LootListOnDeath" value="84"/>
-  <drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
+	<property name="LootListOnDeath" value="84"/>
+	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
 
 <!-- Missing: zombieStripperRadiated -->
@@ -1942,7 +1942,7 @@
 	<property name="SoundLanding" value="SupplyDrops/Supply_Crate_Land"/>
 	<property name="TimeStayAfterDeath" value="0"/>
 	<!-- If set this entity shows on the map -->
-	<property name="MapIcon" value="map_supply_crate"/>
+	<!--<property name="MapIcon" value="map_supply_crate"/> -->
 </entity_class>
 
 <entity_class name="Backpack">
@@ -1981,7 +1981,7 @@
 	<property name="Faction" value="none"/>
 </entity_class>
 
-<entity_class name="invisibleAnimal"> <!-- A hack to thin the amount of animals spawned -->
+<entity_class name="invisibleAnimal"> <!-- A hack to thin the amount of animals spawned (friendly animals) -->
 	<property name="Mesh" value="Gore/gore_block1_bonesPrefab"/>
 	<property name="ModelType" value="Custom"/>
 	<property name="Prefab" value="Backpack"/>
@@ -1989,6 +1989,18 @@
 	<property name="Parent" value="Animals"/>
 	<property name="TimeStayAfterDeath" value="1"/>
 	<property name="IsEnemyEntity" value="false"/>
+	<property name="LootListOnDeath" value="47"/> <!-- used to determine container X/Y size -->
+	<property name="Faction" value="none"/>
+</entity_class>
+
+<entity_class name="invisibleAnimalEnemy"> <!-- A hack to thin the amount of animals spawned (enemy animals) -->
+	<property name="Mesh" value="Gore/gore_block1_bonesPrefab"/>
+	<property name="ModelType" value="Custom"/>
+	<property name="Prefab" value="Backpack"/>
+	<property name="Class" value="EntityLootContainer"/>
+	<property name="Parent" value="Animals"/>
+	<property name="TimeStayAfterDeath" value="1"/>
+	<property name="IsEnemyEntity" value="true"/>
 	<property name="LootListOnDeath" value="47"/> <!-- used to determine container X/Y size -->
 	<property name="Faction" value="none"/>
 </entity_class>
@@ -2197,28 +2209,6 @@
 	<property name="NPCID" value="traderric"/>
 </entity_class>
 
-  <!-- Donor Crate -->
-  <entity_class name="DonorCrate">
-  <property name="Mesh" value="SupplyCrate/SupplyCrateEntityPrefab"/>
-  <property name="ModelType" value="SupplyCrate"/>
-  <property name="HasRagdoll" value="false"/>
-  <property name="Prefab" value="SupplyCrate"/>
-  <property name="Class" value="EntitySupplyCrate"/>
-  <property name="Parent" value="SupplyCrates"/>
-  <property name="Faction" value="none"/>
-  <property name="MaxHealth" value="200"/>
-  <property name="Weight" value="100"/>
-  <property name="SurfaceCategory" value="wood"/>
-  <property name="ParticleOnDeath" value="supply_crate_gib_Prefab"/>
-  <property name="LootListAlive" value="103"/>
-  <property name="LootListAliveMP" value="103"/>
-  <property name="IsEnemyEntity" value="false"/>
-  <property name="SoundParachuteOpen" value="SupplyDrops/Parachute_Opens"/>
-  <property name="SoundLanding" value="SupplyDrops/Supply_Crate_Land"/>
-  <property name="TimeStayAfterDeath" value="0"/>
-  <!-- If set this entity shows on the map -->
-  <property name="MapIcon" value="map_supply_crate"/>
-  </entity_class>
 </entity_classes>
 <!-- Radiated, harder to decap
 	<property name="HeadDismemberBaseChance" value="-.15"/>
