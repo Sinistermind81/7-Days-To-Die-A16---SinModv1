@@ -496,12 +496,9 @@
     <item name="challengeDogEatDog"/>
     <item name="challengeFeedTheMole"/>
     <item name="challengeTakingNote"/>
-    <item name="challengeHotrod"/>
     <item name="challengeSurvivorJournal"/>
     <item name="challengeLockpick"/>
-    <item name="challengeKickz"/>
     <item name="challengeJock"/>
-    <item name="challengeReaper"/>
     <item name="challengeWalmart"/>
   </lootgroup>
   
@@ -971,7 +968,6 @@
 	<item group="questChallenge" count="1"/>
   <item name="recipebookSinks"/>
   <item name="recipebookOven"/>
-  <item name="recipebookSecurity"/>
 	<!--
 	<item name="handleBarsSchematic"/>
 	<item name="macDyverBook" prob="1.5"/>
@@ -1149,7 +1145,6 @@
   <item group="cupboardFood" prob="0.25"/>
   <item group="cupboardMisc" prob="0.45"/>
   <item name="bottledWater" prob="0.25"/>
-  <item name="challengeCookbook" count="1" prob="0.05"/>
 	<item name="paint" count="5,20" prob="0.15"/>
 </lootgroup>
 
@@ -1444,7 +1439,6 @@
     <item name="skillbookMining"/>
     <item name="recipebookSinks"/>
     <item name="recipebookOven"/>
-    <item name="recipebookSecurity"/>
   </lootgroup>
 
   <lootgroup name="workingStiffs" count="1">
@@ -3098,10 +3092,8 @@
     <item name="nailgunSchematic"/>
     <item name="pistolBook"/>
     <item name="pumpShotgunSchematic"/>
-    <item name="recipebookElectronics"/>
     <item name="recipebookOven"/>
     <item name="recipebookPottery"/>
-    <item name="recipebookSecurity"/>
     <item name="recipebookSinks"/>
     <item name="rocketLauncherSchematic"/>
     <item name="shotgunSlugSchematic"/>

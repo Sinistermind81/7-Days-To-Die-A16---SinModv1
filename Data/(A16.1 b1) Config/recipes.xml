@@ -3135,4 +3135,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
   <recipe name="Lockpick" count="1" craft_time="20">
     <ingredient name="scrapIron" count="25"/>
   </recipe>
+  <recipe name="survivorNoteCollection" count="1" craft_time="0.5">
+    <ingredient name="survivorNotes" count="5"/>
+  </recipe>
 </recipes>

@@ -92,6 +92,7 @@
 		
 		<window_group name="compass" actionSet="false">
 			<window name="windowCompass" />
+      <window name="version" anchor="RightTop" />
 		</window_group>
 		
 		<window_group name="toolTip" actionSet="false">
@@ -137,7 +138,8 @@
 			<window name="mapArea" />
 			<window name="mapTracking" />
 			<window name="mapInvites" />
-		</window_group>
+      <window name="mapCords" />
+    </window_group>
 		
 		<window_group name="players">
 			<window name="players" />

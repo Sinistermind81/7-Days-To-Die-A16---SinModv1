@@ -12313,16 +12313,9 @@ Mesh files no longer used:
     <property name="DescriptionKey" value="skillbookBuildingDesc"/>
     <property name="Extends" value="schematicMaster" />
     <property class="Action1">
-      <property name="Skills_to_gain" value="Miscellaneous Crafting,Tool Smithing,Construction Tools" />
+      <property name="Skills_to_gain" value="craftSkillMiscellaneous,craftSkillTools,Construction Tools" />
     </property>
   </item>
-  <!--	<item id="2029" name="skillbookUnarmed">
-		<property name="DescriptionKey" value="skillbookUnarmedDesc"/>
-		<property name="Extends" value="schematicMaster" />
-		<property class="Action1">
-			<property name="Skills_to_gain" value="Unarmed,Unarmed,Unarmed" />
-		</property>
-	</item> -->
   <item id="2030" name="skillbookBarter">
     <property name="DescriptionKey" value="skillbookBarterDesc"/>
     <property name="Extends" value="schematicMaster" />
@@ -12334,7 +12327,7 @@ Mesh files no longer used:
     <property name="DescriptionKey" value="skillbookToolsDesc"/>
     <property name="Extends" value="schematicMaster" />
     <property class="Action1">
-      <property name="Skills_to_gain" value="Tool Smithing,Tool Smithing,Construction Tools" />
+      <property name="Skills_to_gain" value="craftSkillTools,craftSkillTools,Construction Tools" />
     </property>
   </item>
   <item id="2032" name="skillbookBlunt">
@@ -12348,28 +12341,28 @@ Mesh files no longer used:
     <property name="DescriptionKey" value="skillbookTailorDesc"/>
     <property name="Extends" value="schematicMaster" />
     <property class="Action1">
-      <property name="Skills_to_gain" value="Tailoring,Tailoring,Blade Weapons" />
+      <property name="Skills_to_gain" value="Clothing/Armor,Clothing/Armor,Blade Weapons" />
     </property>
   </item>
   <item id="2034" name="skillbookRogue">
     <property name="DescriptionKey" value="skillbookRogueDesc"/>
     <property name="Extends" value="schematicMaster" />
     <property class="Action1">
-      <property name="Skills_to_gain" value="Light Armor,Blade Weapons,Athletics,Lockpicks" />
+      <property name="Skills_to_gain" value="Clothing/Armor,Blade Weapons,Athletics,Lockpicks" />
     </property>
   </item>
   <item id="2035" name="skillbookWasteland">
     <property name="DescriptionKey" value="skillbookWastelandDesc"/>
     <property name="Extends" value="schematicMaster" />
     <property class="Action1">
-      <property name="Skills_to_gain" value="Scavenging,Archery,Weapon Smithing,Advance Traps,Advance Traps" />
+      <property name="Skills_to_gain" value="Scavenging,Archery,craftSkillWeapons" />
     </property>
   </item>
   <item id="2036" name="skillbookBlacksmith">
     <property name="DescriptionKey" value="skillbookBlacksmithDesc"/>
     <property name="Extends" value="schematicMaster" />
     <property class="Action1">
-      <property name="Skills_to_gain" value="Armor Smithing,Heavy Armor,Weapon Smithing" />
+      <property name="Skills_to_gain" value="craftSkillArmor,craftSkillArmor,craftSkillWeapons" />
     </property>
   </item>
   <item id="2037" name="skillbookMedical">
@@ -12383,7 +12376,7 @@ Mesh files no longer used:
     <property name="DescriptionKey" value="skillbookChemistryDesc"/>
     <property name="Extends" value="schematicMaster" />
     <property class="Action1">
-      <property name="Skills_to_gain" value="Science,Science,Science" />
+      <property name="Skills_to_gain" value="craftSkillScience,craftSkillScience,craftSkillScience" />
     </property>
   </item>
   <item id="2039" name="skillbookGunsmoke">
@@ -12411,7 +12404,7 @@ Mesh files no longer used:
     <property name="DescriptionKey" value="skillbookGunSmithDesc"/>
     <property name="Extends" value="schematicMaster" />
     <property class="Action1">
-      <property name="Skills_to_gain" value="Gun Smithing,Gun Smithing,Gun Smithing" />
+      <property name="Skills_to_gain" value="craftSkillGuns,craftSkillGuns,craftSkillGuns" />
     </property>
   </item>
   <item id="2043" name="skillbookArchery">
@@ -12428,56 +12421,28 @@ Mesh files no longer used:
       <property name="Skills_to_gain" value="Mining Tools,Mining Tools,Mining Tools" />
     </property>
   </item>
-  <item id="2047" name="skillbookAssaultRifle">
-    <property name="DescriptionKey" value="skillbookAssaultRifleDesc"/>
-    <property name="Extends" value="schematicMaster" />
-    <property class="Action1">
-      <property name="Skills_to_gain" value="Assault Rifles,Assault Rifles,Assault Rifles" />
-    </property>
-  </item>
-  <item id="2048" name="skillbookRocket">
-    <property name="DescriptionKey" value="skillbookRocketDesc"/>
-    <property name="Extends" value="schematicMaster" />
-    <property name="CustomIcon" value="rocketLauncherSchematic" />
-    <property class="Action1">
-      <property name="Skills_to_gain" value="Gun Rocket,Gun Rocket,Gun Rocket" />
-    </property>
-  </item>
-  <item id="2049" name="skillbookCrossbow">
-    <property name="DescriptionKey" value="skillbookCrossbowDesc"/>
-    <property name="Extends" value="schematicMaster" />
-    <property class="Action1">
-      <property name="Skills_to_gain" value="Archery,Archery,Weapon Smithing,Weapon Smithing,Crossbow,Crossbow" />
-    </property>
-  </item>
-  <item id="2050" name="recipebookElectronics">
-    <property name="DescriptionKey" value="recipebookElectronicsDesc"/>
-    <property name="Extends" value="schematicMaster" />
-    <property class="Action1">
-      <property name="Skills_to_gain" value="Electric Lights,Electric Lights,Electric Lights" />
-    </property>
-  </item>
   <item id="2051" name="recipebookSinks">
     <property name="DescriptionKey" value="recipebookSinksDesc"/>
     <property name="Extends" value="schematicMaster" />
     <property class="Action1">
-      <property name="Skills_to_gain" value="Plumbing,Plumbing" />
+      <property name="Skills_to_gain" value="Plumbing" />
     </property>
   </item>
   <item id="2052" name="recipebookOven">
     <property name="DescriptionKey" value="recipebookOvenDesc"/>
     <property name="Extends" value="schematicMaster" />
     <property class="Action1">
-      <property name="Skills_to_gain" value="Mechanical,Oven Repair,Oven Repair" />
+      <property name="Skills_to_gain" value="Oven Repair" />
     </property>
   </item>
   <item id="2053" name="skillbookLockpick">
     <property name="DescriptionKey" value="skillbookLockpickDesc"/>
     <property name="Extends" value="schematicMaster" />
     <property class="Action1">
-      <property name="Skills_to_gain" value="Lockpicks,Lockpicks,Lockpicks" />
+      <property name="Skills_to_gain" value="Lockpicks" />
     </property>
   </item>
+  
   <item id="2054" name="recipebookAnimalTraps">
     <property name="DescriptionKey" value="recipebookAnimalTrapsDesc"/>
     <property name="Extends" value="challengeQuestMaster" />
@@ -12490,14 +12455,7 @@ Mesh files no longer used:
     <property name="DescriptionKey" value="recipebookPotteryDesc"/>
     <property name="Extends" value="schematicMaster" />
     <property class="Action1">
-      <property name="Skills_to_gain" value="Pottery,Pottery,Pottery" />
-    </property>
-  </item>
-  <item id="2056" name="recipebookNailgun">
-    <property name="DescriptionKey" value="recipebookNailgunDesc"/>
-    <property name="Extends" value="schematicMaster" />
-    <property class="Action1">
-      <property name="Skills_to_gain" value="Nailgun,Nailgun,Nailgun,Nailgun" />
+      <property name="Skills_to_gain" value="Pottery" />
     </property>
   </item>
   <item id="2057" name="skillbookBlades">
@@ -12507,18 +12465,11 @@ Mesh files no longer used:
       <property name="Skills_to_gain" value="Blade Weapons,Blade Weapons,Blade Weapons" />
     </property>
   </item>
-  <item id="2058" name="recipebookSecurity">
-    <property name="DescriptionKey" value="recipebookSecurityDesc"/>
-    <property name="Extends" value="schematicMaster" />
-    <property class="Action1">
-      <property name="Skills_to_gain" value="Security" />
-    </property>
-  </item>
   <item id="2062" name="skillbookKnight">
     <property name="DescriptionKey" value="skillbookKnightDesc"/>
     <property name="Extends" value="schematicMaster" />
     <property class="Action1">
-      <property name="Skills_to_gain" value="Heavy Armor,Heavy Armor,Blade Weapons" />
+      <property name="Skills_to_gain" value="craftSkillArmor,craftSkillArmor,Blade Weapons" />
     </property>
   </item>
   <item id="2063" name="skillbookMining">
@@ -12532,9 +12483,10 @@ Mesh files no longer used:
     <property name="DescriptionKey" value="skillbookHuntergDesc"/>
     <property name="Extends" value="schematicMaster" />
     <property class="Action1">
-      <property name="Skills_to_gain" value="Blade Weapons,Archery,Leatherworking,Leatherworking,Leather Tanning,Leather Tanning" />
+      <property name="Skills_to_gain" value="Blade Weapons,Archery" />
     </property>
   </item>
+  
   <!--SinMod Colored Armor -->
   <!--Leather Red -->
   <item id="2102" name="leatherHoodRed">
@@ -14441,8 +14393,6 @@ Mesh files no longer used:
     </property>
   </item>
   
-
-
   <!-- Modded Quests -->
   <item id="2620" name="challengeBigBadBosses">
     <property name="Extends" value="challengeQuestMaster" />
@@ -14487,22 +14437,6 @@ Mesh files no longer used:
       <property name="QuestGiven" value="challenge_takingnote" />
     </property>
   </item>
-  <item id="2627" name="challengeCookbook">
-    <property name="Extends" value="schematicMaster" />
-    <property name="CustomIcon" value="challengeCookbook" />
-    <property name="DescriptionKey" value="challengeCookbookDesc"/>
-    <property class="Action1">
-      <property name="Skills_to_gain" value="Cooking,Cooking,Cooking,Cooking,Cooking" />
-    </property>
-  </item>
-  <item id="2628" name="challengeHotrod">
-    <property name="Extends" value="challengeQuestMaster" />
-    <property name="CustomIconTint" value="781B8F" />
-    <property name="DescriptionKey" value="challengeHotrodDesc"/>
-    <property class="Action1">
-      <property name="QuestGiven" value="challenge_hotrod" />
-    </property>
-  </item>
   <item id="2629" name="challengeSurvivorJournal">
     <property name="Extends" value="challengeQuestMaster" />
     <property name="CustomIconTint" value="781B8F" />
@@ -14519,26 +14453,11 @@ Mesh files no longer used:
       <property name="QuestGiven" value="challenge_lockpick" />
     </property>
   </item>
-  <item id="2631" name="challengeKickz">
-    <property name="Extends" value="challengeQuestMaster" />
-    <property name="CustomIconTint" value="781B8F" />
-    <property name="DescriptionKey" value="challengeKickzDesc"/>
-    <property class="Action1">
-      <property name="QuestGiven" value="challenge_Kickz" />
-    </property>
-  </item>
   <item id="2635" name="challengeJock">
     <property name="Extends" value="challengeQuestMaster" />
     <property name="CustomIconTint" value="781B8F" />
     <property class="Action1">
       <property name="QuestGiven" value="challenge_jock" />
-    </property>
-  </item>
-  <item id="2636" name="challengeReaper">
-    <property name="Extends" value="challengeQuestMaster" />
-    <property name="CustomIconTint" value="781B8F" />
-    <property class="Action1">
-      <property name="QuestGiven" value="challenge_reaper" />
     </property>
   </item>
   <item id="2637" name="challengeWalmart">
@@ -14548,6 +14467,8 @@ Mesh files no longer used:
       <property name="QuestGiven" value="challenge_walmart" />
     </property>
   </item>
+  
+  <!--SinMod Collection Quests-->
   <item id="2638" name="challengeWedding">
     <property name="Extends" value="challengeQuestMaster" />
     <property name="EconomicValue" value="100" />
@@ -14652,15 +14573,6 @@ Mesh files no longer used:
       <property name="QuestGiven" value="challenge_bong" />
     </property>
   </item>
-  <item id="2651" name="challengeSouls">
-    <property name="Extends" value="challengeQuestMaster" />
-    <property name="EconomicValue" value="100" />
-    <property name="CustomIconTint" value="FFD900" />
-    <property class="Action1">
-      <property name="QuestGiven" value="challenge_souls" />
-    </property>
-  </item>
-
 
   <!--SinMod Quest Items -->
   <item id="2700" name="questItem">
@@ -14764,11 +14676,6 @@ Mesh files no longer used:
     <property name="Material" value="glass" />
     <property name="Weight" value="20" />
     <property name="EconomicValue" value="15" />
-  </item>
-  <item id="2716" name="questItemSoul">
-    <property name="Extends" value="questItem"/>
-    <property name="CustomIcon" value="questItemSoul" />
-    <property name="EconomicValue" value="25"/>
   </item>
 
   <!--SinMod Legendary Weapons-->
