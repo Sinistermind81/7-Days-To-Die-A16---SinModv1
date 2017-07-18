@@ -386,7 +386,7 @@
     <rect name="contentCraftingInfo" height="381" depth="1" pos="0,-46" >
       <sprite depth="8" name="backgroundMain" sprite="menu_empty3px" pos="0,0" width="603" height="381" color="[black]" type="sliced" fillcenter="false" />
       <sprite color="[mediumGrey]" type="sliced" />
-      <label pos="0,-120" depth="3" name="descriptionText" width="100%" height="150" text="[LEFT CLICK] TO INSPECT AN ITEM, RECIPE OR ACTIVE EFFECT\n[LEFT CLICK] HOLD AND DRAG TO TAKE A STACK\n[LEFT CLICK] TO DROP OR SWAP A STACK\n[RIGHT CLICK] HOLD AND DRAG TO TAKE A HALF STACK\n[RIGHT CLICK] TO DROP ONE ITEM AT A TIME" text_key="xuiEmptyInfoPanelText"  justify="center" font_size="28" />
+      <texture depth="9" name="ToolBeltBackground" texture="@http://www.worldsendpve.com/SinMod/SinModUI/SinModInspect.png" material="Materials/Transparent Colored"/>
     </rect>
   </window>
 
@@ -478,6 +478,7 @@
     <panel name="content" width="100%" height="303" depth="0" pos="0,-46" disableautobackground="true">
       <!-- <sprite name="background" color="[black]" type="sliced" globalopacity="true"/> -->
       <sprite depth="8" name="backgroundMain" sprite="menu_empty3px" pos="0,0" width="603" height="303" color="[black]" type="sliced" fillcenter="false" on_press="true" />
+      <texture depth="9" name="ToolBeltBackground" texture="@http://www.worldsendpve.com/SinMod/SinModUI/SinModInventory.png" material="Materials/Transparent Colored"/>
       <grid depth="1" name="inventory" rows="4" cols="8" pos="3,-3" cell_width="75" cell_height="75" controller="Backpack" repeat_content="true" >
         <item_stack name="0"/>
       </grid>

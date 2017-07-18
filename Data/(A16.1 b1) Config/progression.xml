@@ -1196,7 +1196,7 @@
   </perk>
 
 <perk name="Lockpicks" icon="run" description_key="Max out this perk to learn how to make lockpicks to unlock gun safes. Doesn't work on doors." title_key="Safecracker" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="tools">
-    <recipe name="Lockpkick" unlock_level="10"/>
+    <recipe name="Lockpick" unlock_level="1"/>
   </perk>
 
 <perk name="Pottery" icon="misc_crafting" description_key="Max out this perk to learning pottery can teach you how to craft clay bowls, plates and clay Amphora which are all essential for cooking recipes." title_key="Pottery" max_level="3" skill_point_cost_multiplier="0" skill_point_cost_per_level="1" group="crafting">

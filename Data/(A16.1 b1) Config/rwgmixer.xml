@@ -727,7 +727,7 @@
 		</biome_spawn_rule>
 		
 		<biome_spawn_rule name="radiated">
-			<distance_from_center range="10000,20000"/>
+			<distance_from_center range="17500,20000"/>
 		</biome_spawn_rule>
 		
 		<biome_spawn_rule name="water">
