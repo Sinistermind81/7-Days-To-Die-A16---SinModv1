@@ -252,3 +252,8 @@ ModelManifest.xml
 # ignore file type
 *.rar
 *.zip
+
+# ignore a single file
+7 Days To Die (A16) - SinMod.csproj
+7 Days To Die (A16) - SinMod.sln
+App.config
