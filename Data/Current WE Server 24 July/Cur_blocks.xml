@@ -3973,7 +3973,6 @@ group desc for stuff like metal siding
     <property name="Model" value="Entities/Lighting/street_light01Prefab"/>
     <property name="HandleFace" value="Bottom"/>
     <drop event="Harvest" name="electricParts" count="4,8" tool_category="Disassemble"/>
-    <drop event="Harvest" name="electricalWires" count="0,4" tool_category="Disassemble"/>
     <drop event="Destroy" name="scrapIron" count="1,15"/>
     <drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
     <property name="TakeDelay" value="-1"/>
@@ -3992,7 +3991,6 @@ group desc for stuff like metal siding
     <drop event="Harvest" name="mechanicalParts" count="0,4" tool_category="Disassemble"/>
     <drop event="Harvest" name="shortMetalPipe" count="1,5" tool_category="Disassemble"/>
     <drop event="Harvest" name="scrapIron" count="1,10" tool_category="Disassemble"/>
-    <drop event="Harvest" name="electricalWires" count="0,4" tool_category="Disassemble"/>
     <drop event="Destroy" name="scrapIron" count="1,15"/>
     <drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
     <property name="EconomicValue" value="450"/>
@@ -6455,6 +6453,7 @@ kind of free
     <property name="Model" value="Entities/LootContainers/backpack_droppedPrefab"/>
     <property name="ImposterDontBlock" value="true"/>
     <property name="IsTerrainDecoration" value="true"/>
+    <property name="Collide" value="melee,bullet,arrow,rocket"/>
     <property name="LootList" value="41"/>
     <drop event="Destroy" count="0"/>
   </block>
@@ -7277,21 +7276,7 @@ kind of free
     <property name="TraderID" value="4"/>
     <property name="Buff" value="shockedBuff"/>
   </block>
-
-  <block id="659" name="cntVIPVendingMachine">
-    <property name="Class" value="VendingMachine"/>
-    <property name="Material" value="Mmetal_weak"/>
-    <property name="Texture" value="191,191,190,191,191,191"/>
-    <property name="Place" value="TowardsPlacer90"/>
-    <property name="Group" value="Decor/Miscellaneous"/>
-    <property name="DescriptionKey" value="furnitureGroupDesc"/>
-    <property name="StabilitySupport" value="false"/>
-    <property name="TraderID" value="6"/>
-    <property name="Buff" value="shockedBuff"/>
-    <property class="RepairItems">
-      <property name="forgedIron" value="5"/>
-    </property>
-  </block>
+  <!-- 1 Free -->
 
   <block id="662" name="flagstonePole">
     <property name="Extends" value="flagstoneMaster"/>
@@ -14665,7 +14650,6 @@ kind of free
     <drop event="Harvest" name="scrapIron" count="24" tool_category="harvestingTools"/>
     <drop event="Harvest" name="scrapIron" count="20" tool_category="Disassemble"/>
     <drop event="Harvest" name="electricParts" count="3" tool_category="Disassemble"/>
-    <drop event="Harvest" name="electricalWires" count="0,4" tool_category="Disassemble"/>
     <drop event="Destroy" count="0"/>
     <drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
     <property name="TakeDelay" value="-1"/>
@@ -15058,7 +15042,7 @@ kind of free
     <property name="Model" value="Furniture/coffin" param1="main_mesh"/>
     <property name="MultiBlockDim" value="1,1,2"/>
     <property name="ImposterExchange" value="imposterPlate" param1="1"/>
-    <property name="LootList" value="103"/>
+    <property name="LootList" value="1"/>
     <drop event="Destroy" name="wood" count="1,3"/>
   </block>
 
@@ -16041,7 +16025,7 @@ u<block id="1595" name="20k Slot Machine Rolled">
     <property name="Place" value="TowardsPlacerInverted" />
     <property name="Weight" value="216" />
     <property name="Collide" value="movement,sight,melee,bullet,arrow,rocket" />
-    <property name="LootList" value="106" />
+    <property name="LootList" value="172" />
     <property name="DowngradeBlock" value="20k Slot Machine" />
     <property class="RepairItems">
       <property name="casinoCoin" value="0" />
@@ -16083,7 +16067,7 @@ u<block id="1595" name="20k Slot Machine Rolled">
     <property name="Place" value="TowardsPlacerInverted" />
     <property name="Weight" value="216" />
     <property name="Collide" value="movement,sight,melee,bullet,arrow,rocket" />
-    <property name="LootList" value="105" />
+    <property name="LootList" value="171" />
     <property name="DowngradeBlock" value="1k Slot Machine" />
     <property class="RepairItems">
       <property name="casinoCoin" value="0" />
@@ -16789,9 +16773,7 @@ u<block id="1595" name="20k Slot Machine Rolled">
       <property name="UpgradeHitCount" value="1" />
     </property>
   </block>
-
-  
-  
+    
     <block id="1690" name="TapedBugoutBag">
     <property name="DescriptionKey" value="classHunterDesc"/>
     <property name="Group" value="Class System" />
@@ -17658,7 +17640,6 @@ u<block id="1595" name="20k Slot Machine Rolled">
     <property name="ImposterDontBlock" value="true"/>
     <property name="LootList" value="42"/>
     <drop event="Harvest" name="electricParts" count="2,4" tool_category="Disassemble"/>
-    <drop event="Harvest" name="electricalWires" count="0,4" tool_category="Disassemble"/>
     <drop event="Destroy" count="0"/>
     <drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
     <property name="Group" value="Science"/>
@@ -18209,7 +18190,6 @@ u<block id="1595" name="20k Slot Machine Rolled">
     <drop event="Harvest" name="forgedIron" count="3" tool_category="Disassemble"/>
     <drop event="Harvest" name="electricParts" count="2,3" tool_category="Disassemble"/>
     <drop event="Harvest" name="electronicParts" count="1,2" prob="0.6" tool_category="Disassemble"/>
-    <drop event="Harvest" name="electricalWires" count="0,4" tool_category="Disassemble"/>
     <drop event="Harvest" name="scrapPlastics" count="1,2" tool_category="Disassemble"/>
     <drop event="Destroy" count="0"/>
     <drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
@@ -18245,7 +18225,6 @@ u<block id="1595" name="20k Slot Machine Rolled">
     <drop event="Harvest" name="mechanicalParts" count="3" tool_category="Disassemble"/>
     <drop event="Harvest" name="electricParts" count="3" tool_category="Disassemble"/>
     <drop event="Harvest" name="electronicParts" count="1,2" prob="0.6" tool_category="Disassemble"/>
-    <drop event="Harvest" name="electricalWires" count="0,4" tool_category="Disassemble"/>
     <drop event="Destroy" count="0"/>
     <drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
     <property name="Group" value="Decor/Miscellaneous"/>
@@ -18281,7 +18260,6 @@ u<block id="1595" name="20k Slot Machine Rolled">
     <drop event="Harvest" name="mechanicalParts" count="3" tool_category="Disassemble"/>
     <drop event="Harvest" name="electricParts" count="3" tool_category="Disassemble"/>
     <drop event="Harvest" name="electronicParts" count="1,2" prob="0.6" tool_category="Disassemble"/>
-    <drop event="Harvest" name="electricalWires" count="0,4" tool_category="Disassemble"/>
     <drop event="Destroy" count="0"/>
     <drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
     <property name="Stacknumber" value="1"/>
@@ -18336,7 +18314,6 @@ u<block id="1595" name="20k Slot Machine Rolled">
       <property name="scrapPlastics" value="2"/>
     </property>
     <drop event="Harvest" name="" count="0" tool_category="Disassemble"/>
-    <drop event="Harvest" name="electricalWires" count="0,4" tool_category="Disassemble"/>
     <drop event="Destroy" count="0"/>
     <drop event="Destroy" name="solarbank" count="1" tool_category="Disassemble"/>
     <drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
@@ -18424,7 +18401,6 @@ u<block id="1595" name="20k Slot Machine Rolled">
     </property>
     <drop event="Harvest" name="electricParts" count="0,1" tool_category="Disassemble"/>
     <drop event="Harvest" name="mechanicalParts" count="0,1" tool_category="Disassemble"/>
-    <drop event="Harvest" name="electricalWires" count="0,4" tool_category="Disassemble"/>
     <drop event="Destroy" name="scrapIron" count="5,20" prob="1"/>
     <drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
     <property name="Stacknumber" value="250"/>
@@ -18450,7 +18426,6 @@ u<block id="1595" name="20k Slot Machine Rolled">
       <property name="electricParts" value="2"/>
     </property>
     <drop event="Harvest" name="electricParts" count="0,2" tool_category="Disassemble"/>
-    <drop event="Harvest" name="electricalWires" count="0,4" tool_category="Disassemble"/>
     <drop event="Harvest" name="scrapIron" count="5,10"/>
     <drop event="Destroy" count="0"/>
     <drop event="Destroy" count="0"/>
@@ -18480,7 +18455,6 @@ u<block id="1595" name="20k Slot Machine Rolled">
     </property>
     <drop event="Harvest" name="electricParts" count="0,1" tool_category="Disassemble"/>
     <drop event="Harvest" name="electronicParts" count="0,2" tool_category="Disassemble"/>
-    <drop event="Harvest" name="electricalWires" count="0,4" tool_category="Disassemble"/>
     <drop event="Harvest" name="scrapIron" count="5,10"/>
     <drop event="Destroy" count="0"/>
     <drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
@@ -18527,7 +18501,6 @@ u<block id="1595" name="20k Slot Machine Rolled">
     </property>
     <drop event="Harvest" name="mechanicalParts" count="1,4" tool_category="Disassemble"/>
     <drop event="Harvest" name="electricParts" count="1,3" tool_category="Disassemble"/>
-    <drop event="Harvest" name="electricalWires" count="0,4" tool_category="Disassemble"/>
     <drop event="Harvest" name="scrapIron" count="20,100"/>
     <drop event="Destroy" count="0"/>
     <drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
@@ -18559,7 +18532,6 @@ u<block id="1595" name="20k Slot Machine Rolled">
     </property>
     <drop event="Harvest" name="mechanicalParts" count="1,3" tool_category="Disassemble"/>
     <drop event="Harvest" name="electricParts" count="1,2" tool_category="Disassemble"/>
-    <drop event="Harvest" name="electricalWires" count="0,4" tool_category="Disassemble"/>
     <drop event="Harvest" name="scrapIron" count="20,100"/>
     <drop event="Destroy" count="0"/>
     <drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
@@ -18627,7 +18599,6 @@ u<block id="1595" name="20k Slot Machine Rolled">
     </property>
     <drop event="Harvest" name="electricParts" count="0,1" tool_category="Disassemble"/>
     <drop event="Harvest" name="mechanicalParts" count="0,1" tool_category="Disassemble"/>
-    <drop event="Harvest" name="electricalWires" count="0,4" tool_category="Disassemble"/>
     <drop event="Harvest" name="scrapIron" count="20,100"/>
     <drop event="Destroy" count="0"/>
     <drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
@@ -18658,7 +18629,6 @@ u<block id="1595" name="20k Slot Machine Rolled">
     <drop event="Harvest" name="scrapIron" count="24" tool_category="harvestingTools"/>
     <drop event="Harvest" name="scrapIron" count="20" tool_category="Disassemble"/>
     <drop event="Harvest" name="electricParts" count="3" tool_category="Disassemble"/>
-    <drop event="Harvest" name="electricalWires" count="0,4" tool_category="Disassemble"/>
     <drop event="Destroy" count="0"/>
     <drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
     <property name="OnlySimpleRotations" value="true"/>
