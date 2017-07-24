@@ -241,3 +241,14 @@ ModelManifest.xml
 # FAKE - F# Make
 .fake/
 /Data/(B138) Config
+
+# ignore an entire Directory
+/Val-b129 Config/
+/ItemIcons/
+/Valmod-Overhaul-Master/
+/SinMod Config/
+/
+
+# ignore file type
+*.rar
+*.zip
