@@ -2836,6 +2836,7 @@
     <item group="snowZombieLumberjack"/>
     <item group="snowZombieHunter"/>
   </lootcontainer>
+  
   <!-- Female Zombies  -->
   <lootgroup name="zombieFemaleQuestItems" >
     <item name="questItemCards"/>

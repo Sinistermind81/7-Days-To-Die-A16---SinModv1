@@ -1399,7 +1399,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
   </recipe>
 
   <recipe name="keystoneBlock" count="1" craft_area="workbench">
-    <ingredient name="forgedIron" count="100"/>
+    <ingredient name="forgedIron" count="50"/>
   </recipe>
 
   <recipe name="ladderMetal" count="1">
@@ -3138,4 +3138,34 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
   <recipe name="survivorNoteCollection" count="1" craft_time="0.5">
     <ingredient name="survivorNotes" count="5"/>
   </recipe>
+  <!-- Ammo Conversions -->
+  <recipe name="dismantle9mmBullets" count="1" craft_time = "5" craft_exp_gain="0">
+    <ingredient name="9mmBullet" count="10"/>
+  </recipe>
+  <recipe name="dismantle44MagBullets" count="1" craft_time = "5" craft_exp_gain="0">
+    <ingredient name="44MagBullet" count="10"/>
+  </recipe>
+  <recipe name="dismantle762mmBullets" count="1" craft_time = "5" craft_exp_gain="0">
+    <ingredient name="762mmBullet" count="10"/>
+  </recipe>
+  <recipe name="dismantleShotgunShells" count="1" craft_time = "5" craft_exp_gain="0">
+    <ingredient name="shotgunShell" count="10"/>
+  </recipe>
+
+  <recipe name="dismantle9mmBullets30" count="1" craft_time = "5" craft_exp_gain="0">
+    <ingredient name="9mmBullet" count="30"/>
+  </recipe>
+  <recipe name="dismantle44MagBullets30" count="1" craft_time = "5" craft_exp_gain="0">
+    <ingredient name="44MagBullet" count="30"/>
+  </recipe>
+  <recipe name="dismantle762mmBullets30" count="1" craft_time = "5" craft_exp_gain="0">
+    <ingredient name="762mmBullet" count="30"/>
+  </recipe>
+  <recipe name="dismantleShotgunShells30" count="1" craft_time = "5" craft_exp_gain="0">
+    <ingredient name="shotgunShell" count="30"/>
+  </recipe>
+  <recipe name="bioTank" count="25" craft_time = "150" craft_area="chemistryStation">
+    <ingredient name="rottingFlesh" count="25"/>
+  </recipe>
+  
 </recipes>

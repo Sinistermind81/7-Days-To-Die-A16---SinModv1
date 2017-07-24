@@ -463,7 +463,6 @@ World's End!!!." difficulty="hard">
     <reward type="Item" id="painkillers" value="1"/>
     <reward type="Item" id="bottledWater" value="2"/>
     <reward type="Item" id="bandage" value="1"/>
-    <reward type="Item" id="torch" value="1" />
     <reward type="Item" id="militaryBoots" value="100-170"/>
     <reward type="Item" id="gunAK47" value="100-170"/>
     <reward type="Item" id="huntingKnife" value="200"/>
@@ -485,7 +484,6 @@ and then loot box. Be safe out there it's a dangerous
 World's End!!!." difficulty="hard">
     <reward type="Item" id="TapedBugoutBag" value="1"/>
 	<reward type="Item" id="BugoutKey" value="1" />
-    <reward type="Item" id="torch" value="2"/>
     <reward type="Item" id="bandage" value="2"/>
     <reward type="Item" id="flashlight02" value="1"/>
     <reward type="Item" id="crossbow" value="170"/>

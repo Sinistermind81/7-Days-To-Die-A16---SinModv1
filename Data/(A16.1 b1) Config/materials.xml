@@ -1011,7 +1011,7 @@ Do not rename "basic" materials like cloth, metal, or stone. These auto-generate
 	<property name="stability_glue" value="5" />
 	<property name="Mass" type="int" value="1" />
 	<property name="StabilitySupport" value="false" />
-	<property name="MaxDamage" value="1000" />
+	<property name="MaxDamage" value="5000" />
 	<property name="Experience" value="3.0"/>
 </material>
 
