@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="quests">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" name="quest">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:choice maxOccurs="unbounded">
+                <xs:element maxOccurs="unbounded" name="action">
+                  <xs:complexType>
+                    <xs:attribute name="type" type="xs:string" use="required" />
+                    <xs:attribute name="value" type="xs:string" use="optional" />
+                  </xs:complexType>
+                </xs:element>
+                <xs:element maxOccurs="unbounded" name="objective">
+                  <xs:complexType>
+                    <xs:attribute name="type" type="xs:string" use="required" />
+                    <xs:attribute name="id" type="xs:string" use="optional" />
+                    <xs:attribute name="value" type="xs:string" use="optional" />
+                    <xs:attribute name="optional" type="xs:boolean" use="optional" />
+                  </xs:complexType>
+                </xs:element>
+                <xs:element maxOccurs="unbounded" name="requirement">
+                  <xs:complexType>
+                    <xs:sequence minOccurs="0">
+                      <xs:element maxOccurs="unbounded" name="requirement">
+                        <xs:complexType>
+                          <xs:attribute name="type" type="xs:string" use="required" />
+                          <xs:attribute name="id" type="xs:string" use="required" />
+                        </xs:complexType>
+                      </xs:element>
+                    </xs:sequence>
+                    <xs:attribute name="type" type="xs:string" use="required" />
+                    <xs:attribute name="id" type="xs:string" use="optional" />
+                    <xs:attribute name="value" type="xs:string" use="optional" />
+                  </xs:complexType>
+                </xs:element>
+                <xs:element maxOccurs="unbounded" name="reward">
+                  <xs:complexType>
+                    <xs:attribute name="type" type="xs:string" use="required" />
+                    <xs:attribute name="id" type="xs:string" use="optional" />
+                    <xs:attribute name="value" type="xs:string" use="optional" />
+                    <xs:attribute name="stage" type="xs:string" use="optional" />
+                    <xs:attribute name="optional" type="xs:boolean" use="optional" />
+                    <xs:attribute name="count" type="xs:unsignedByte" use="optional" />
+                  </xs:complexType>
+                </xs:element>
+              </xs:choice>
+            </xs:sequence>
+            <xs:attribute name="id" type="xs:string" use="required" />
+            <xs:attribute name="group_name_key" type="xs:string" use="optional" />
+            <xs:attribute name="name_key" type="xs:string" use="optional" />
+            <xs:attribute name="subtitle_key" type="xs:string" use="optional" />
+            <xs:attribute name="description_key" type="xs:string" use="optional" />
+            <xs:attribute name="icon" type="xs:string" use="required" />
+            <xs:attribute name="category_key" type="xs:string" use="required" />
+            <xs:attribute name="difficulty" type="xs:string" use="optional" />
+            <xs:attribute name="offer_key" type="xs:string" use="optional" />
+            <xs:attribute name="subtitle" type="xs:string" use="optional" />
+            <xs:attribute name="repeatable" type="xs:boolean" use="optional" />
+            <xs:attribute name="name" type="xs:string" use="optional" />
+            <xs:attribute name="description" type="xs:string" use="optional" />
+            <xs:attribute name="offer" type="xs:string" use="optional" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

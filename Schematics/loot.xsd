@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="lootcontainers">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:choice maxOccurs="unbounded">
+          <xs:element name="lootplaceholders">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element maxOccurs="unbounded" name="placeholder">
+                  <xs:complexType mixed="true">
+                    <xs:sequence minOccurs="0">
+                      <xs:element maxOccurs="unbounded" name="block">
+                        <xs:complexType>
+                          <xs:attribute name="name" type="xs:string" use="required" />
+                          <xs:attribute name="prob" type="xs:decimal" use="optional" />
+                        </xs:complexType>
+                      </xs:element>
+                    </xs:sequence>
+                    <xs:attribute name="name" type="xs:string" use="required" />
+                  </xs:complexType>
+                </xs:element>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element name="lootprobtemplates">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element maxOccurs="unbounded" name="lootprobtemplate">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element maxOccurs="unbounded" name="loot">
+                        <xs:complexType>
+                          <xs:attribute name="level" type="xs:string" use="required" />
+                          <xs:attribute name="prob" type="xs:decimal" use="required" />
+                        </xs:complexType>
+                      </xs:element>
+                    </xs:sequence>
+                    <xs:attribute name="name" type="xs:string" use="required" />
+                  </xs:complexType>
+                </xs:element>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element maxOccurs="unbounded" name="lootqualitytemplates">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="lootqualitytemplate">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element maxOccurs="unbounded" name="qualitytemplate">
+                        <xs:complexType>
+                          <xs:sequence>
+                            <xs:element maxOccurs="unbounded" name="loot">
+                              <xs:complexType>
+                                <xs:attribute name="quality" type="xs:string" use="required" />
+                                <xs:attribute name="prob" type="xs:decimal" use="required" />
+                              </xs:complexType>
+                            </xs:element>
+                          </xs:sequence>
+                          <xs:attribute name="level" type="xs:string" use="required" />
+                          <xs:attribute name="default_quality" type="xs:string" use="required" />
+                        </xs:complexType>
+                      </xs:element>
+                    </xs:sequence>
+                    <xs:attribute name="name" type="xs:string" use="required" />
+                  </xs:complexType>
+                </xs:element>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+          <xs:element maxOccurs="unbounded" name="lootgroup">
+            <xs:complexType>
+              <xs:sequence minOccurs="0">
+                <xs:element maxOccurs="unbounded" name="item">
+                  <xs:complexType>
+                    <xs:attribute name="name" type="xs:string" use="optional" />
+                    <xs:attribute name="count" type="xs:string" use="optional" />
+                    <xs:attribute name="group" type="xs:string" use="optional" />
+                    <xs:attribute name="prob" type="xs:decimal" use="optional" />
+                    <xs:attribute name="loot_prob_template" type="xs:string" use="optional" />
+                    <xs:attribute name="quality" type="xs:string" use="optional" />
+                  </xs:complexType>
+                </xs:element>
+              </xs:sequence>
+              <xs:attribute name="name" type="xs:string" use="required" />
+              <xs:attribute name="count" type="xs:string" use="optional" />
+              <xs:attribute name="loot_quality_template" type="xs:string" use="optional" />
+            </xs:complexType>
+          </xs:element>
+          <xs:element maxOccurs="unbounded" name="lootcontainer">
+            <xs:complexType mixed="true">
+              <xs:sequence minOccurs="0">
+                <xs:element maxOccurs="unbounded" name="item">
+                  <xs:complexType>
+                    <xs:attribute name="group" type="xs:string" use="optional" />
+                    <xs:attribute name="prob" type="xs:decimal" use="optional" />
+                    <xs:attribute name="name" type="xs:string" use="optional" />
+                    <xs:attribute name="count" type="xs:string" use="optional" />
+                  </xs:complexType>
+                </xs:element>
+              </xs:sequence>
+              <xs:attribute name="id" type="xs:unsignedByte" use="required" />
+              <xs:attribute name="count" type="xs:string" use="optional" />
+              <xs:attribute name="size" type="xs:string" use="required" />
+              <xs:attribute name="sound_open" type="xs:string" use="required" />
+              <xs:attribute name="sound_close" type="xs:string" use="required" />
+              <xs:attribute name="loot_quality_template" type="xs:string" use="optional" />
+              <xs:attribute name="open_time" type="xs:decimal" use="optional" />
+              <xs:attribute name="destroy_on_close" type="xs:boolean" use="optional" />
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

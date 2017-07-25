@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Sounds">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" name="SoundDataNode">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:choice maxOccurs="unbounded">
+                <xs:element name="AudioSource">
+                  <xs:complexType>
+                    <xs:attribute name="name" type="xs:string" use="required" />
+                  </xs:complexType>
+                </xs:element>
+                <xs:element name="NetworkAudioSource">
+                  <xs:complexType>
+                    <xs:attribute name="name" type="xs:string" use="required" />
+                  </xs:complexType>
+                </xs:element>
+                <xs:element name="Noise">
+                  <xs:complexType>
+                    <xs:attribute name="ID" type="xs:unsignedByte" use="required" />
+                    <xs:attribute name="range" type="xs:unsignedByte" use="required" />
+                    <xs:attribute name="volume" type="xs:unsignedByte" use="required" />
+                    <xs:attribute name="time" type="xs:unsignedByte" use="required" />
+                    <xs:attribute name="muffled_when_crouched" type="xs:decimal" use="optional" />
+                    <xs:attribute name="heat_map_strength" type="xs:decimal" use="optional" />
+                    <xs:attribute name="heat_map_time" type="xs:unsignedByte" use="optional" />
+                  </xs:complexType>
+                </xs:element>
+                <xs:element name="Sequence" />
+                <xs:element name="distantfadestart">
+                  <xs:complexType>
+                    <xs:attribute name="name" type="xs:unsignedByte" use="required" />
+                  </xs:complexType>
+                </xs:element>
+                <xs:element name="distantfadeend">
+                  <xs:complexType>
+                    <xs:attribute name="name" type="xs:unsignedByte" use="required" />
+                  </xs:complexType>
+                </xs:element>
+                <xs:element maxOccurs="unbounded" name="AudioClip">
+                  <xs:complexType>
+                    <xs:attribute name="ClipName" type="xs:string" use="required" />
+                    <xs:attribute name="Loop" type="xs:boolean" use="optional" />
+                    <xs:attribute name="AudioSourceName" type="xs:string" use="optional" />
+                    <xs:attribute name="DistantClip" type="xs:string" use="optional" />
+                    <xs:attribute name="DistantSource" type="xs:string" use="optional" />
+                  </xs:complexType>
+                </xs:element>
+                <xs:element name="LowestPitch">
+                  <xs:complexType>
+                    <xs:attribute name="name" type="xs:decimal" use="required" />
+                  </xs:complexType>
+                </xs:element>
+                <xs:element name="HighestPitch">
+                  <xs:complexType>
+                    <xs:attribute name="name" type="xs:decimal" use="required" />
+                  </xs:complexType>
+                </xs:element>
+                <xs:element name="Channel">
+                  <xs:complexType>
+                    <xs:attribute name="name" type="xs:string" use="required" />
+                  </xs:complexType>
+                </xs:element>
+                <xs:element name="Priority">
+                  <xs:complexType>
+                    <xs:attribute name="name" type="xs:unsignedByte" use="required" />
+                  </xs:complexType>
+                </xs:element>
+                <xs:element name="LocalCrouchVolumeScale">
+                  <xs:complexType>
+                    <xs:attribute name="name" type="xs:decimal" use="required" />
+                  </xs:complexType>
+                </xs:element>
+                <xs:element name="CrouchNoiseScale">
+                  <xs:complexType>
+                    <xs:attribute name="name" type="xs:decimal" use="required" />
+                  </xs:complexType>
+                </xs:element>
+                <xs:element name="NoiseScale">
+                  <xs:complexType>
+                    <xs:attribute name="name" type="xs:decimal" use="required" />
+                  </xs:complexType>
+                </xs:element>
+                <xs:element name="MaxVoices">
+                  <xs:complexType>
+                    <xs:attribute name="name" type="xs:unsignedByte" use="required" />
+                  </xs:complexType>
+                </xs:element>
+                <xs:element name="MaxEntities">
+                  <xs:complexType>
+                    <xs:attribute name="name" type="xs:unsignedByte" use="required" />
+                  </xs:complexType>
+                </xs:element>
+                <xs:element name="MaxRepeatRate">
+                  <xs:complexType>
+                    <xs:attribute name="name" type="xs:decimal" use="required" />
+                  </xs:complexType>
+                </xs:element>
+                <xs:element name="Immediate" />
+                <xs:element name="runningvolumescale">
+                  <xs:complexType>
+                    <xs:attribute name="name" type="xs:unsignedByte" use="required" />
+                  </xs:complexType>
+                </xs:element>
+                <xs:element name="IgnoreDistanceCheck" />
+              </xs:choice>
+            </xs:sequence>
+            <xs:attribute name="name" type="xs:string" use="required" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
