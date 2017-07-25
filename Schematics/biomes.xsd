@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="worldgeneration">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="weather">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element maxOccurs="unbounded" name="property">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element maxOccurs="unbounded" name="property">
+                      <xs:complexType>
+                        <xs:attribute name="name" type="xs:string" use="required" />
+                        <xs:attribute name="value" type="xs:string" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="class" type="xs:string" use="required" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="biomes">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element maxOccurs="unbounded" name="biomemap">
+                <xs:complexType>
+                  <xs:attribute name="id" type="xs:unsignedByte" use="required" />
+                  <xs:attribute name="name" type="xs:string" use="required" />
+                </xs:complexType>
+              </xs:element>
+              <xs:element maxOccurs="unbounded" name="biome">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:choice maxOccurs="unbounded">
+                      <xs:element name="weather">
+                        <xs:complexType>
+                          <xs:sequence>
+                            <xs:choice maxOccurs="unbounded">
+                              <xs:element name="Temperature">
+                                <xs:complexType>
+                                  <xs:attribute name="min" type="xs:byte" use="required" />
+                                  <xs:attribute name="max" type="xs:byte" use="required" />
+                                  <xs:attribute name="prob" type="xs:unsignedByte" use="required" />
+                                </xs:complexType>
+                              </xs:element>
+                              <xs:element maxOccurs="unbounded" name="Fog">
+                                <xs:complexType>
+                                  <xs:attribute name="min" type="xs:unsignedByte" use="required" />
+                                  <xs:attribute name="max" type="xs:unsignedByte" use="required" />
+                                  <xs:attribute name="prob" type="xs:decimal" use="required" />
+                                </xs:complexType>
+                              </xs:element>
+                              <xs:element maxOccurs="unbounded" name="CloudThickness">
+                                <xs:complexType>
+                                  <xs:attribute name="min" type="xs:unsignedByte" use="required" />
+                                  <xs:attribute name="max" type="xs:unsignedByte" use="required" />
+                                  <xs:attribute name="prob" type="xs:decimal" use="required" />
+                                </xs:complexType>
+                              </xs:element>
+                              <xs:element maxOccurs="unbounded" name="Precipitation">
+                                <xs:complexType>
+                                  <xs:attribute name="min" type="xs:unsignedByte" use="required" />
+                                  <xs:attribute name="max" type="xs:unsignedByte" use="required" />
+                                  <xs:attribute name="prob" type="xs:decimal" use="required" />
+                                </xs:complexType>
+                              </xs:element>
+                              <xs:element maxOccurs="unbounded" name="Wind">
+                                <xs:complexType>
+                                  <xs:attribute name="min" type="xs:unsignedByte" use="required" />
+                                  <xs:attribute name="max" type="xs:unsignedByte" use="required" />
+                                  <xs:attribute name="prob" type="xs:decimal" use="required" />
+                                </xs:complexType>
+                              </xs:element>
+                              <xs:element name="ParticleEffect">
+                                <xs:complexType>
+                                  <xs:attribute name="prefab" type="xs:string" use="required" />
+                                  <xs:attribute name="ChunkMargin" type="xs:unsignedByte" use="required" />
+                                </xs:complexType>
+                              </xs:element>
+                            </xs:choice>
+                          </xs:sequence>
+                        </xs:complexType>
+                      </xs:element>
+                      <xs:element name="replacements">
+                        <xs:complexType>
+                          <xs:sequence>
+                            <xs:element name="replace">
+                              <xs:complexType>
+                                <xs:attribute name="source" type="xs:string" use="required" />
+                                <xs:attribute name="target" type="xs:string" use="required" />
+                              </xs:complexType>
+                            </xs:element>
+                          </xs:sequence>
+                        </xs:complexType>
+                      </xs:element>
+                      <xs:element maxOccurs="unbounded" name="subbiome">
+                        <xs:complexType>
+                          <xs:sequence>
+                            <xs:element name="layers">
+                              <xs:complexType>
+                                <xs:sequence>
+                                  <xs:choice maxOccurs="unbounded">
+                                    <xs:element maxOccurs="unbounded" name="layer">
+                                      <xs:complexType>
+                                        <xs:sequence minOccurs="0">
+                                          <xs:element maxOccurs="unbounded" name="resource">
+                                            <xs:complexType>
+                                              <xs:attribute name="blockname" type="xs:string" use="required" />
+                                              <xs:attribute name="cluster" type="xs:unsignedByte" use="optional" />
+                                              <xs:attribute name="prob" type="xs:decimal" use="required" />
+                                              <xs:attribute name="rwgGenerationType" type="xs:string" use="required" />
+                                            </xs:complexType>
+                                          </xs:element>
+                                        </xs:sequence>
+                                        <xs:attribute name="depth" type="xs:string" use="required" />
+                                        <xs:attribute name="blockname" type="xs:string" use="required" />
+                                      </xs:complexType>
+                                    </xs:element>
+                                    <xs:element name="resource">
+                                      <xs:complexType>
+                                        <xs:attribute name="blockname" type="xs:string" use="required" />
+                                        <xs:attribute name="cluster" type="xs:unsignedByte" use="required" />
+                                        <xs:attribute name="prob" type="xs:decimal" use="required" />
+                                        <xs:attribute name="rwgGenerationType" type="xs:string" use="required" />
+                                      </xs:complexType>
+                                    </xs:element>
+                                  </xs:choice>
+                                </xs:sequence>
+                              </xs:complexType>
+                            </xs:element>
+                            <xs:element minOccurs="0" name="decorations">
+                              <xs:complexType>
+                                <xs:sequence>
+                                  <xs:element maxOccurs="unbounded" name="decoration">
+                                    <xs:complexType>
+                                      <xs:attribute name="type" type="xs:string" use="required" />
+                                      <xs:attribute name="name" type="xs:string" use="optional" />
+                                      <xs:attribute name="prob" type="xs:decimal" use="required" />
+                                      <xs:attribute name="rotatemax" type="xs:unsignedByte" use="optional" />
+                                      <xs:attribute name="blockname" type="xs:string" use="optional" />
+                                    </xs:complexType>
+                                  </xs:element>
+                                </xs:sequence>
+                              </xs:complexType>
+                            </xs:element>
+                          </xs:sequence>
+                          <xs:attribute name="prob" type="xs:decimal" use="required" />
+                        </xs:complexType>
+                      </xs:element>
+                      <xs:element name="layers">
+                        <xs:complexType>
+                          <xs:sequence>
+                            <xs:element maxOccurs="unbounded" name="layer">
+                              <xs:complexType>
+                                <xs:sequence minOccurs="0">
+                                  <xs:element maxOccurs="unbounded" name="resource">
+                                    <xs:complexType>
+                                      <xs:attribute name="blockname" type="xs:string" use="required" />
+                                      <xs:attribute name="cluster" type="xs:unsignedByte" use="optional" />
+                                      <xs:attribute name="prob" type="xs:decimal" use="required" />
+                                      <xs:attribute name="rwgGenerationType" type="xs:string" use="required" />
+                                    </xs:complexType>
+                                  </xs:element>
+                                </xs:sequence>
+                                <xs:attribute name="filluptorg" type="xs:unsignedByte" use="optional" />
+                                <xs:attribute name="blockname" type="xs:string" use="required" />
+                                <xs:attribute name="depth" type="xs:string" use="optional" />
+                              </xs:complexType>
+                            </xs:element>
+                          </xs:sequence>
+                        </xs:complexType>
+                      </xs:element>
+                      <xs:element name="spectrum">
+                        <xs:complexType>
+                          <xs:attribute name="name" type="xs:string" use="required" />
+                        </xs:complexType>
+                      </xs:element>
+                      <xs:element name="decorations">
+                        <xs:complexType>
+                          <xs:sequence minOccurs="0">
+                            <xs:element maxOccurs="unbounded" name="decoration">
+                              <xs:complexType>
+                                <xs:attribute name="type" type="xs:string" use="required" />
+                                <xs:attribute name="name" type="xs:string" use="optional" />
+                                <xs:attribute name="prob" type="xs:decimal" use="required" />
+                                <xs:attribute name="rotatemax" type="xs:unsignedByte" use="optional" />
+                                <xs:attribute name="blockname" type="xs:string" use="optional" />
+                              </xs:complexType>
+                            </xs:element>
+                          </xs:sequence>
+                        </xs:complexType>
+                      </xs:element>
+                      <xs:element name="terrain">
+                        <xs:complexType>
+                          <xs:sequence minOccurs="0">
+                            <xs:element name="property">
+                              <xs:complexType>
+                                <xs:attribute name="name" type="xs:string" use="required" />
+                                <xs:attribute name="value" type="xs:unsignedByte" use="required" />
+                              </xs:complexType>
+                            </xs:element>
+                          </xs:sequence>
+                          <xs:attribute name="class" type="xs:string" use="required" />
+                        </xs:complexType>
+                      </xs:element>
+                    </xs:choice>
+                  </xs:sequence>
+                  <xs:attribute name="name" type="xs:string" use="required" />
+                  <xs:attribute name="biomemapcolor" type="xs:string" use="required" />
+                  <xs:attribute name="radiationlevel" type="xs:unsignedByte" use="optional" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="pois">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element maxOccurs="unbounded" name="poi">
+                <xs:complexType>
+                  <xs:sequence minOccurs="0">
+                    <xs:element maxOccurs="unbounded" name="decal">
+                      <xs:complexType>
+                        <xs:attribute name="texture" type="xs:unsignedByte" use="required" />
+                        <xs:attribute name="face" type="xs:unsignedByte" use="required" />
+                        <xs:attribute name="prob" type="xs:decimal" use="required" />
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element maxOccurs="unbounded" name="blockontop">
+                      <xs:complexType>
+                        <xs:attribute name="blockname" type="xs:string" use="required" />
+                        <xs:attribute name="prob" type="xs:decimal" use="required" />
+                        <xs:attribute name="rotatemax" type="xs:unsignedByte" use="optional" />
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="name" type="xs:string" use="required" />
+                  <xs:attribute name="poimapcolor" type="xs:string" use="required" />
+                  <xs:attribute name="blockname" type="xs:string" use="optional" />
+                  <xs:attribute name="blockbelow" type="xs:string" use="optional" />
+                  <xs:attribute name="yposfill" type="xs:unsignedByte" use="optional" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

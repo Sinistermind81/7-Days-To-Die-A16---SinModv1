@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="blocks">
+    <xs:complexType mixed="true">
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" name="block">
+          <xs:complexType mixed="true">
+            <xs:sequence>
+              <xs:choice maxOccurs="unbounded">
+                <xs:element maxOccurs="unbounded" name="property">
+                  <xs:complexType>
+                    <xs:sequence minOccurs="0">
+                      <xs:element maxOccurs="unbounded" name="property">
+                        <xs:complexType>
+                          <xs:attribute name="name" type="xs:string" use="required" />
+                          <xs:attribute name="value" type="xs:string" use="required" />
+                          <xs:attribute name="param1" type="xs:unsignedByte" use="optional" />
+                          <xs:attribute name="param2" type="xs:string" use="optional" />
+                        </xs:complexType>
+                      </xs:element>
+                    </xs:sequence>
+                    <xs:attribute name="name" type="xs:string" use="optional" />
+                    <xs:attribute name="value" type="xs:string" use="optional" />
+                    <xs:attribute name="param1" type="xs:string" use="optional" />
+                    <xs:attribute name="class" type="xs:string" use="optional" />
+                  </xs:complexType>
+                </xs:element>
+                <xs:element maxOccurs="unbounded" name="drop">
+                  <xs:complexType>
+                    <xs:attribute name="event" type="xs:string" use="required" />
+                    <xs:attribute name="name" type="xs:string" use="optional" />
+                    <xs:attribute name="count" type="xs:string" use="required" />
+                    <xs:attribute name="tool_category" type="xs:string" use="optional" />
+                    <xs:attribute name="prob" type="xs:decimal" use="optional" />
+                    <xs:attribute name="stick_chance" type="xs:decimal" use="optional" />
+                  </xs:complexType>
+                </xs:element>
+              </xs:choice>
+            </xs:sequence>
+            <xs:attribute name="id" type="xs:unsignedShort" use="required" />
+            <xs:attribute name="name" type="xs:string" use="required" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

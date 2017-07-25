@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="utility_ai">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="ai_packages">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element maxOccurs="unbounded" name="ai_package">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element maxOccurs="unbounded" name="action">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="task">
+                            <xs:complexType>
+                              <xs:attribute name="class" type="xs:string" use="required" />
+                              <xs:attribute name="run" type="xs:boolean" use="optional" />
+                              <xs:attribute name="action_index" type="xs:unsignedByte" use="optional" />
+                              <xs:attribute name="max_distance" type="xs:unsignedByte" use="optional" />
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element minOccurs="0" maxOccurs="unbounded" name="consideration">
+                            <xs:complexType>
+                              <xs:attribute name="class" type="xs:string" use="required" />
+                              <xs:attribute name="type" type="xs:string" use="optional" />
+                              <xs:attribute name="min" type="xs:unsignedByte" use="optional" />
+                              <xs:attribute name="max" type="xs:unsignedByte" use="optional" />
+                              <xs:attribute name="flip_y" type="xs:boolean" use="optional" />
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="name" type="xs:string" use="required" />
+                        <xs:attribute name="weight" type="xs:unsignedByte" use="required" />
+                        <xs:attribute name="distance" type="xs:unsignedByte" use="optional" />
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="name" type="xs:string" use="required" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
