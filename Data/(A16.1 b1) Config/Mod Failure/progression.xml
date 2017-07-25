@@ -390,7 +390,7 @@
 		</effect>
 	</action_skill>
   <perk name="Pistol Magazine Extention" icon="pistol" description_key="Learn to increase the magazine size of Pistols." title_key=" Pistol Magazine Extention" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="firearms">
-    <requirement perk_level="1" required_skill_name="Pistols" required_skill_level="65" />
+    <requirement perk_level="1" required_skill_name="Pistols" required_skill_level="50" />
     <recipe name="pistolExtClip" unlock_level="1" />
   </perk>
 	<perk name="The Outlaw" icon="pistol" description_key="theOutlawDesc" title_key="theOutlaw" max_level="5" skill_point_cost_multiplier="1.43" skill_point_cost_per_level="5" group="firearms">
@@ -432,7 +432,7 @@
 		</effect>
 	</action_skill>
   <perk name="Shotgun Magazine Extention" icon="shotgun" description_key="Learn to increase the magazine size of Shotguns." title_key="Shotgun Magazine Extention" max_level="1" skill_point_cost_multiplier="1" skill_point_cost_per_level="3" group="firearms">
-    <requirement perk_level="1" required_skill_name="Shotguns" required_skill_level="65" />
+    <requirement perk_level="1" required_skill_name="Shotguns" required_skill_level="50" />
     <recipe name="ShotgunExtClip" unlock_level="1" />
   </perk>
   	<perk name="Boom Stick" icon="shotgun" description_key="boomStickDesc" title_key="boomStick" max_level="5" skill_point_cost_multiplier="1.43" skill_point_cost_per_level="5" group="firearms">
@@ -474,11 +474,11 @@
 		</effect>
 	</action_skill>
     <perk name="Sniper Magazine Extention" icon="rifle" description_key="Learn to increase the magazine size of Sniper Rifles." title_key="Sniper Rifle Magazine Extention" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="firearms">
-    <requirement perk_level="1" required_skill_name="Rifles" required_skill_level="65" />
+    <requirement perk_level="1" required_skill_name="Rifles" required_skill_level="50" />
     <recipe name="SniperExtClip" unlock_level="1" />
   </perk>
     <perk name="MP5 Magazine Extention" icon="rifle" description_key="Learn to increase the magazine size of MP5s." title_key="MP5 Magazine Extention" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="firearms">
-    <requirement perk_level="1" required_skill_name="Rifles" required_skill_level="65" />
+    <requirement perk_level="1" required_skill_name="Rifles" required_skill_level="50" />
     <recipe name="mp5ExtClip" unlock_level="1" />
   </perk>
   <perk name="Better Lead Than Dead" icon="rifle" description_key="betterLeadThanDeadDesc" title_key="betterLeadThanDead" max_level="5" skill_point_cost_multiplier="1.43" skill_point_cost_per_level="5" group="firearms">
@@ -844,7 +844,13 @@
 		</effect>
 	</perk>
 
-	<perk name="electricBasicsPerk" icon="electric_power" description_key="electricBasicsDesc" title_key="electricBasicsName" max_level="2" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="science">
+  <perk name="Biohazard Weapons" icon="ui_game_symbol_radiation" description="Radioactive Biohazard Weapondry" title="Biohazard Weapons" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="science">
+    <requirement skill_level="8" required_skill_name="craftSkillScience" required_skill_level="8"/>
+    <recipe name="gunbioLauncher" unlock_level="8"/>
+    <recipe name="bioTank" unlock_level="8"/>
+  </perk>
+  
+  <perk name="electricBasicsPerk" icon="electric_power" description_key="electricBasicsDesc" title_key="electricBasicsName" max_level="2" skill_point_cost_multiplier="0" skill_point_cost_per_level="3" group="science">
 		<requirement skill_level="1" required_skill_name="craftSkillScience" required_skill_level="1"/>
 		<recipe name="wireTool" unlock_level="1"/>
 		<recipe name="electricwirerelay" unlock_level="1"/>

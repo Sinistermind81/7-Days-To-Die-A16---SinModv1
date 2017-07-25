@@ -4196,7 +4196,7 @@
 	</archetype>
   <!--SinMod-->
 
-  <archetype name="zombieMidget" male="false" hair_color="81,70,70" eye_color="144,146,147" skin_color="255,255,255" type="Zombie" stance="Like" voice_set="trader">
+  <archetype name="zombieMidget" male="false" hair_color="81,70,70" eye_color="144,146,147" skin_color="255,255,255" type="Player" stance="Like" voice_set="trader">
     <base_mesh_parts>
       <part slot="head" layer="base" mesh="female_asian_face">
         <texture name="female_head_asian" color="255,255,255"/>
@@ -5289,7 +5289,7 @@
       <gene name="breastSize" value="0.005"/>
     </dna>
   </archetype>
-  <archetype name="zombieClown" male="true" hair_color="227,15,15" eye_color="239,3,3" skin_color="223,170,26" type="Zombie" stance="Like" voice_set="trader">
+  <archetype name="zombieClown" male="true" hair_color="227,15,15" eye_color="239,3,3" skin_color="223,170,26" type="Player" stance="Like" voice_set="trader">
     <base_mesh_parts>
       <part slot="head" layer="base" mesh="male_base_face">
         <texture name="male_head_zombie" color="skin"/>
