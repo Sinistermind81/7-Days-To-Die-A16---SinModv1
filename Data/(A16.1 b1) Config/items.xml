@@ -1184,6 +1184,17 @@ Mesh files no longer used:
     <!--use_action class="LiftUpTerrain" delay="1" use_time="..." gain_health="-5"gain_stamina="-20" gain_food="0" gain_water="10" gain_sickness="15" condition_raycast_block="77,78,79,80" sound_start="player_drinking" /-->
   </item>
 
+  <item id="71" name="handBoss">
+    <property name="Extends" value="handMaster" />
+    <property name="CreativeMode" value="None"/>
+    <property class="Action0">
+      <property name="DamageEntity" value="40" />
+      <property name="DamageBlock" value="200" />
+      <property name="Buff" value="bleeding,infection,stunned" />
+      <property name="Buff_chance" value="0.3,0.8,0.4" />
+    </property>
+  </item>
+  
   <item id="76" name="handZombie">
     <property name="Extends" value="handMaster"/>
     <property name="CreativeMode" value="None"/>
@@ -1212,7 +1223,7 @@ Mesh files no longer used:
     <property class="Action0">
       <property name="Class" value="Melee"/>
       <property name="Sphere" value="0.4"/>
-      <property name="DamageEntity" value="12"/>
+      <property name="DamageEntity" value="15"/>
       <property name="DamageBlock" value="2"/>
       <property name="Buff" value="burningSmall,infection,stunned"/>
       <property name="Buff_chance" value="0.5,0.07,0.4"/>
@@ -9836,6 +9847,13 @@ Mesh files no longer used:
     <property name="EconomicValue" value="5"/>
     <property name="EconomicBundleSize" value="1"/>
     <property name="SellableToTrader" value="false"/>
+    <property class="Action1">
+      <property name="Class" value="Repair" />
+      <property name="Delay" value="0.4" />
+      <property name="Upgrade_hit_offset" value="-2" />
+      <property name="Sound_start" value="UseActions/repair_block" />
+      <property name="Allowed_upgrade_items" value="casinoCoin" />
+    </property>
   </item>
 
   <item id="1436" name="solarCell">
@@ -10512,8 +10530,156 @@ Mesh files no longer used:
       <property name="Accuracy" value=".8,0.01" />
       <property name="DegradationMax" value="1500,9000" />
     </property>
-  </item>  
-
+  </item>
+  <item id="1605" name="gunbioLauncher">
+    <property name="Meshfile" value="Items/Weapons/Ranged/RocketLauncher/rocketlauncherPrefab"/>
+    <property name="CustomIcon" value="gunbioLauncher" />
+    <property name="Material" value="metal"/>
+    <property name="RepairTools" value="repairKit"/>
+    <property name="HoldType" value="10"/>
+    <property name="SoundIdle" value="hulkvomitwarning"/>
+    <property name="DegradationBreaksAfter" value="true"/>
+    <property name="SoundJammed" value="weapon_jam"/>
+    <property name="TintColor" value="0,255,0"/>
+    <property name="CrosshairOnAim" value="false"/>
+    <property name="CrosshairUpAfterShot" value="true"/>
+    <property class="Parts">
+      <property name="Stock" value="partsbioLauncher_stock"/>
+      <property name="Receiver" value="partsbioLauncher_receiver"/>
+      <property name="Pump" value="partsbioLauncher_parts"/>
+      <property name="Barrel" value="partsbioLauncher_barrel"/>
+    </property>
+    <property name="Sound_Sight_In" value="launcher_sight_in"/>
+    <property name="Sound_Sight_Out" value="launcher_sight_out"/>
+    <property class="Action0">
+      <property name="Class" value="Launcher"/>
+      <property name="Delay" value="0.1"/>
+      <property name="Auto_fire" value="true"/>
+      <property name="Crosshair_min_distance" value="29"/>
+      <property name="Crosshair_max_distance" value="34"/>
+      <property name="Magazine_size" value="60"/>
+      <property name="Single_magazine_usage" value="false"/>
+      <property name="Magazine_items" value="bioTank"/>
+      <property name="Rays_spread" value="0.095"/>
+      <property name="Reload_time" value="4.1"/>
+      <property name="Bullet_icon" value="uzi"/>
+      <property name="Sound_start" value="hulkvomitattack"/>
+      <property name="Sound_repeat" value="hulkvomitattack"/>
+      <property name="Sound_end" value="Weapons/Ranged/MP5/mp5_fire_end"/>
+      <property name="Sound_empty" value="weapon_empty"/>
+      <property name="Sound_reload" value="Auger_Reload"/>
+      <property name="Particles_muzzle_fire" value="rocketLauncherFire"/>
+      <property name="Particles_muzzle_smoke" value="nozzlesmoke_m136"/>
+    </property>
+    <property class="Action1">
+      <property name="Class" value="Zoom"/>
+      <property name="Zoom_max_out" value="40"/>
+      <property name="Zoom_max_in" value="40"/>
+    </property>
+    <property name="Group" value="Ammo/Weapons"/>
+    <property name="CraftingSkillGroup" value="craftSkillGuns"/>
+    <property name="RepairExpMultiplier" value="10.8"/>
+  </item>
+  <item id="1619" name="gunDart">
+    <property name="DescriptionKey" value="gunDartDesc"/>
+    <property name="Meshfile" value="Items/Weapons/Ranged/Pistol/PistolPrefab" />
+    <property name="Material" value="metal" />
+    <property name="HoldType" value="1" />
+    <property name="Stacknumber" value="1" />
+    <property name="RepairTools" value="repairKit" />
+    <property name="Degradation" value="175" param1="false" />
+    <property name="DegradationBreaksAfter" value="false" />
+    <property name="SoundJammed" value="Weapons/weapon_jam" />
+    <property name="Attachments" value="flashlight02" />
+    <property class="Action0">
+      <property name="Class" value="Ranged" />
+      <property name="Delay" value="0.15" />
+      <property name="Range" value="120" />
+      <property name="Magazine_size" value="1" />
+      <property name="Magazine_items" value="steelDart,HealingDart,InfectionDart,ChemicalDart" />
+      <property name="Magazine_item_ray_counts" value="1, 1, 1, 1" />
+      <property name="Magazine_item_ray_spreads" value="0, 0, 0, 0" />
+      <property name="Reload_time" value="2" />
+      <property name="Bullet_icon" value="pistol" />
+      <property name="Sound_start" value="Weapons/Ranged/Pistol/pistol_fire" />
+      <property name="Sound_repeat" value="" />
+      <property name="Sound_end" value="" />
+      <property name="DamageBonus.head" value="3" />
+      <property name="Sound_empty" value="Weapons/weapon_empty" />
+      <property name="Sound_reload" value="Weapons/Ranged/Pistol/pistol_reload" />
+      <property name="Particles_muzzle_fire" value="nozzleflash" />
+      <property name="Particles_muzzle_smoke" value="nozzlesmoke" />
+    </property>
+    <property class="Action1">
+      <property name="Class" value="Zoom" />
+      <property name="Zoom_max_out" value="35" />
+      <property name="Zoom_max_in" value="35" />
+    </property>
+    <property name="LightSource" value="lightSource" />
+    <property name="ActivateObject" value="Attachments/flashlight/lightSource" />
+    <property name="AttachmentFlashlight" value="flashlight02" />
+    <property name="Group" value="Ammo/Weapons" />
+    <property name="ActionSkillGroup" value="Science"/>
+    <property class="Preview">
+      <property name="Zoom" value="14" />
+      <property name="Pos" value="0.1,-0.1" />
+      <property name="Rot" value="0,-45,0" />
+    </property>
+    <property class="Attributes">
+      <property name="EntityDamage" value="3,3" />
+    </property>
+  </item>
+  <item id="1620" name="partsbioLauncher_stock">
+    <property name="Extends" value="partsMaster"/>
+    <property name="TintColor" value="0,255,0"/>
+    <property name="DescriptionKey" value="partsRocketLauncherGroupDesc"/>
+    <property name="PartType" value="Stock"/>
+    <property name="Weight" value="35"/>
+    <property class="Attributes">
+      <property name="DegradationRate" value="5,5"/>
+      <property name="DegradationMax" value="5000,10000"/>
+    </property>
+    <property name="EconomicValue" value="1500"/>
+  </item>
+  <item id="1621" name="partsbioLauncher_receiver">
+    <property name="Extends" value="partsMaster"/>
+    <property name="TintColor" value="0,255,0"/>
+    <property name="DescriptionKey" value="partsRocketLauncherGroupDesc"/>
+    <property name="PartType" value="Receiver"/>
+    <property name="Weight" value="35"/>
+    <property class="Attributes">
+      <!-- <property name="FalloffRange" value="40,70"/> -->
+      <property name="DegradationMax" value="5000,10000"/>
+    </property>
+    <property name="EconomicValue" value="1500"/>
+  </item>
+  <item id="1622" name="partsbioLauncher_parts">
+    <property name="Extends" value="partsMaster"/>
+    <property name="TintColor" value="0,255,0"/>
+    <property name="DescriptionKey" value="partsRocketLauncherGroupDesc"/>
+    <property name="PartType" value="Pump"/>
+    <property name="Weight" value="20"/>
+    <property class="Attributes">
+      <!-- <property name="Accuracy" value="1,0.01"/> -->
+      <property name="DegradationMax" value="5000,10000"/>
+    </property>
+    <property name="EconomicValue" value="1500"/>
+  </item>
+  <item id="1623" name="partsbioLauncher_barrel">
+    <property name="Extends" value="partsMaster"/>
+    <property name="TintColor" value="0,255,0"/>
+    <property name="DescriptionKey" value="partsRocketLauncherGroupDesc"/>
+    <property name="PartType" value="Barrel"/>
+    <property name="Weight" value="45"/>
+    <property class="Attributes">
+      <property name="EntityDamage" value="0,2"/>
+      <property name="EntityDamage" value="0,2"/>
+      <!-- xxx is this working? -->
+      <property name="DegradationMax" value="5000,10000"/>
+    </property>
+    <property name="EconomicValue" value="1500"/>
+  </item>
+  
   <item id="1635" name="9mmBulletHP">
     <property name="Extends" value="9mmBullet" />
     <property name="CustomIcon" value="bullet9mmHP"/>
@@ -10556,6 +10722,44 @@ Mesh files no longer used:
       <property name="ApplyBuff" value="1,1" param1="burningSmall" />
     </property>
   </item>
+  <item id="1639" name="bioTank">
+    <property name="Meshfile" value="Items/Weapons/Ranged/Vomit/vomitBulbPrefab"/>
+    <property name="HandMeshfile" value="Items/Weapons/Ranged/RocketLauncher/rocketHandPrefab"/>
+    <property name="Material" value="organic"/>
+    <property name="HoldType" value="3"/>
+    <property name="Stacknumber" value="1000"/>
+    <!-- STK explosives -->
+    <property name="EconomicValue" value="0"/>
+    <!-- STK explosives -->
+    <property class="Action1">
+      <property name="Class" value="Projectile"/>
+      <!-- STK explosives -->
+      <property name="Explosion.BlockDamage" value="0"/>
+      <property name="Explosion.EntityDamage" value="0"/>
+      <property name="Explosion.ParticleIndex" value="7"/>
+      <property name="Explosion.RadiusBlocks" value="0"/>
+      <property name="Explosion.RadiusEntities" value="0"/>
+      <property name="Explosion.RadiusBuffs" value="0"/>
+      <!-- int, default is same as RadiusBlocks -->
+      <property name="Explosion.BlastPower" value="0"/>
+      <property name="Explosion.DamageBonus.stone" value="0"/>
+      <property name="Explosion.DamageBonus.metal" value="0"/>
+      <property name="Explosion.DamageBonus.earth" value="0"/>
+      <property name="Explosion.DamageBonus.water" value="0"/>
+      <property name="Explosion.DamageBonus.wood" value="0"/>
+      <property name="FuseTime" value="20000"/>
+      <!-- theoretically redundant but I don't want to experiment on this -->
+      <!-- which Prefab/particle is used -->
+      <property name="Velocity" value="20"/>
+      <property name="FlyTime" value=".9"/>
+      <property name="LifeTime" value="8"/>
+      <property name="Buff" value="radiation" />
+    </property>
+    <property name="CraftingSkillGroup" value="craftSkillScience"/>
+    <property name="Group" value="Ammo/Weapons"/>
+
+  </item>
+
   <item id="1641" name="762mmBulletHP">
     <property name="Extends" value="762mmBullet" />
     <property name="CustomIcon" value="bullet762mmHP"/>
@@ -10618,7 +10822,241 @@ Mesh files no longer used:
     <property name="DescriptionKey" value="HollowTipDesc"/>
     <!-- Test to see if this is still needed <property name="Weight" value="5" /> -->
   </item>
-
+  <item id="1646" name="HealingDart">
+    <property name="DescriptionKey" value="HealingDartDesc"/>
+    <property name="Meshfile" value="Items/Weapons/Melee/Knives/boneShivPrefab" />
+    <property name="Material" value="Mplastics" />
+    <property name="Weight" value="1" />
+    <property name="HoldType" value="1" />
+    <property name="Stacknumber" value="500" />
+    <property name="Group" value="Ammo/Weapons" />
+    <property class="Action0">
+      <property name="Class" value="UseOther" />
+      <property name="Delay" value="1.0" />
+      <property name="Use_time" value="..." />
+      <property name="Gain_health" value="10" />
+      <property name="Gain_food" value="0" />
+      <property name="Gain_water" value="0" />
+      <property name="Sound_start" value="UseActions/player_bandage" />
+    </property>
+    <property class="Action1">
+      <property name="Class" value="Eat" />
+      <property name="Delay" value="1.0" />
+      <property name="Use_time" value="..." />
+      <property name="Gain_health" value="10" />
+      <property name="Gain_food" value="0" />
+      <property name="Gain_water" value="0" />
+      <property name="Sound_start" value="UseActions/player_bandage" />
+    </property>
+    <property class="Preview">
+      <property name="Zoom" value="18" />
+      <property name="Pos" value="0.1,0" />
+      <property name="Rot" value="10,-45,0" />
+    </property>
+    <property class="Attributes">
+      <property name="GetQualityFromWeapon" value="true" />
+      <property name="ApplyBuff" value="1,1" param1="firstAid" />
+    </property>
+  </item>
+  <item id="1647" name="healingAgent">
+    <property name="DescriptionKey" value="healingAgentDesc"/>
+    <property name="Meshfile" value="Items/Health/painkillersPrefab" />
+    <property name="Material" value="Mplastics" />
+    <property name="Weight" value="1" />
+    <property name="HoldType" value="16" />
+    <property name="Group" value="Medicine" />
+    <property name="Stacknumber" value="200" />
+    <property class="Action1">
+      <property name="Class" value="Eat" />
+      <property name="Delay" value="1.0" />
+      <property name="Use_time" value="..." />
+      <property name="Gain_health" value="5" />
+      <property name="Gain_food" value="0" />
+      <property name="Gain_water" value="0" />
+      <property name="Sound_start" value="UseActions/player_painkillers" />
+      <property name="Debuff" value="bleeding,burning" />
+      <property name="Buff" value="firstAid" />
+    </property>
+    <property class="Preview">
+      <property name="Zoom" value="35" />
+      <property name="Pos" value="0,-0.05" />
+      <property name="Rot" value="90,45,0" />
+    </property>
+    <property name="CraftingSkillGroup" value="Science"/>
+  </item>
+  <item id="1648" name="InfectionDart">
+    <property name="DescriptionKey" value="InfectionDartDesc"/>
+    <property name="Meshfile" value="Items/Weapons/Melee/Knives/boneShivPrefab" />
+    <property name="HoldType" value="1" />
+    <property name="Stacknumber" value="500" />
+    <property name="Material" value="Mplastics" />
+    <property name="Weight" value="1" />
+    <property name="Group" value="Ammo/Weapons" />
+    <property class="Preview">
+      <property name="Zoom" value="18" />
+      <property name="Pos" value="0.1,0" />
+      <property name="Rot" value="10,-45,0" />
+    </property>
+    <property class="Attributes">
+      <property name="GetQualityFromWeapon" value="true" />
+      <property name="EntityDamage" value="1,3" />
+      <property name="ApplyBuff" value="1,1" param1="infection" />
+    </property>
+  </item>
+  <item id="1649" name="infectionAgent">
+    <property name="DescriptionKey" value="infectionAgentDesc"/>
+    <property name="Meshfile" value="Items/Misc/sackPrefab" />
+    <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+    <property name="Material" value="organic" />
+    <property name="HoldType" value="3" />
+    <property name="Stacknumber" value="50" />
+    <property name="Group" value="Chemicals" />
+    <property class="Preview">
+      <property name="Zoom" value="28" />
+      <property name="Pos" value="0,-0.05" />
+      <property name="Rot" value="90,45,0" />
+    </property>
+    <property name="CraftingSkillGroup" value="Science"/>
+  </item>
+  <item id="1650" name="ChemicalDart">
+    <property name="DescriptionKey" value="ChemicalDartDesc"/>
+    <property name="Meshfile" value="Items/Weapons/Melee/Knives/boneShivPrefab" />
+    <property name="Material" value="Mplastics" />
+    <property name="Weight" value="1" />
+    <property name="HoldType" value="1" />
+    <property name="Stacknumber" value="500" />
+    <property name="Group" value="Ammo/Weapons" />
+    <property class="Preview">
+      <property name="Zoom" value="18" />
+      <property name="Pos" value="0.1,0" />
+      <property name="Rot" value="10,-45,0" />
+    </property>
+    <property name="Group" value="Chemicals" />
+    <property class="Attributes">
+      <property name="GetQualityFromWeapon" value="true" />
+      <property name="EntityDamage" value="15,18" />
+      <property name="ApplyBuff" value="1,1" param1="AcidSplash" />
+    </property>
+  </item>
+  <item id="1651" name="chemicalAgent">
+    <property name="DescriptionKey" value="chemicalAgentDesc"/>
+    <property name="Meshfile" value="Items/Misc/sackPrefab" />
+    <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+    <property name="Material" value="organic" />
+    <property name="HoldType" value="3" />
+    <property name="Stacknumber" value="50" />
+    <property name="Group" value="Chemicals" />
+    <property class="Preview">
+      <property name="Zoom" value="28" />
+      <property name="Pos" value="0,-0.05" />
+      <property name="Rot" value="90,45,0" />
+    </property>
+    <property name="CraftingSkillGroup" value="Science"/>
+  </item>
+  <item id="1695" name="hoodPurple">
+    <property name="Extends" value="clothHat" />
+    <property name="CustomIcon" value="clothHat" />
+    <property name="CustomIconTint" value="7800D4" />
+    <property class="UMA">
+      <property name="Overlay0Tint" value="51, 0, 102" />
+    </property>
+  </item>
+  <item id="1696" name="hoodRed">
+    <property name="Extends" value="clothHat" />
+    <property name="CustomIcon" value="clothHat" />
+    <property name="CustomIconTint" value="E30000" />
+    <property class="UMA">
+      <property name="Overlay0Tint" value="204, 0, 0" />
+    </property>
+  </item>
+  <item id="1697" name="hoodGreen">
+    <property name="Extends" value="clothHat" />
+    <property name="CustomIcon" value="clothHat" />
+    <property name="CustomIconTint" value="009612" />
+    <property class="UMA">
+      <property name="Overlay0Tint" value="51, 102, 0" />
+    </property>
+  </item>
+  <item id="1698" name="hoodBlue">
+    <property name="Extends" value="clothHat" />
+    <property name="CustomIcon" value="clothHat" />
+    <property name="CustomIconTint" value="1432DE" />
+    <property class="UMA">
+      <property name="Overlay0Tint" value="0, 51, 204" />
+    </property>
+  </item>
+  <item id="1699" name="hoodBrown">
+    <property name="Extends" value="clothHat" />
+    <property name="CustomIcon" value="clothHat" />
+    <property name="CustomIconTint" value="846954" />
+    <property class="UMA">
+      <property name="Overlay0Tint" value="102, 51, 0" />
+    </property>
+  </item>
+  <item id="1700" name="hoodBlack">
+    <property name="Extends" value="clothHat" />
+    <property name="CustomIcon" value="clothHat" />
+    <property name="CustomIconTint" value="575757" />
+    <property class="UMA">
+      <property name="Overlay0Tint" value="0, 0, 0" />
+    </property>
+  </item>
+  <item id="1701" name="footballHelmetRed">
+    <property name="Extends" value="footballHelmet" />
+    <property name="CustomIcon" value="footballHelmet" />
+    <property name="CustomIconTint" value="E01616" />
+    <property class="UMA">
+      <property name="Overlay0Tint" value="204, 0, 0" />
+    </property>
+  </item>
+  <item id="1702" name="footballHelmetGreen">
+    <property name="Extends" value="footballHelmet" />
+    <property name="CustomIcon" value="footballHelmet" />
+    <property name="CustomIconTint" value="00CC0E" />
+    <property class="UMA">
+      <property name="Overlay0Tint" value="51, 102, 0" />
+    </property>
+  </item>
+  <item id="1703" name="footballHelmetBlack">
+    <property name="Extends" value="footballHelmet" />
+    <property name="CustomIcon" value="footballHelmet" />
+    <property name="CustomIconTint" value="404040" />
+    <property class="UMA">
+      <property name="Overlay0Tint" value="0, 0, 0" />
+    </property>
+  </item>
+  <item id="1704" name="footballHelmetBlue">
+    <property name="CustomIcon" value="footballHelmet" />
+    <property name="CustomIconTint" value="2530A8" />
+    <property name="Extends" value="footballHelmet" />
+    <property class="UMA">
+      <property name="Overlay0Tint" value="0, 51, 204" />
+    </property>
+  </item>
+  <item id="1705" name="footballHelmetLime">
+    <property name="Extends" value="footballHelmet" />
+    <property name="CustomIcon" value="footballHelmet" />
+    <property name="CustomIconTint" value="102, 102, 0" />
+    <property class="UMA">
+      <property name="Overlay0Tint" value="102, 102, 0" />
+    </property>
+  </item>
+  <item id="1706" name="bandanaCamo">
+    <property name="Extends" value="bandana" />
+    <property class="UMA">
+      <property name="Mesh" value="gear_bandana" />
+      <property name="Overlay0" value="gear_kevlar_helmet" />
+      <property name="Layer" value="1" />
+      <property name="UISlot" value="Face" />
+    </property>
+  </item>
+  <item id="1707" name="hoodCamo">
+    <property name="Extends" value="clothHat" />
+    <property class="UMA">
+      <property name="Overlay0" value="gear_kevlar_helmet" />
+    </property>
+  </item>
+  
   <!--SinMod Steel Armor Add-on-->
   <item id="1708" name="steelBoots">
     <property name="Extends" value="ironBoots" />
@@ -10752,7 +11190,163 @@ Mesh files no longer used:
       <property name="Overlay0Tint" value="51, 51, 51" />
     </property>
   </item>
-
+  <item id="1720" name="winterBoots">
+    <property name="CustomIcon" value="hazmatBoots" />
+    <property name="CustomIconTint" value="402F13" />
+    <property name="Extends" value="hazmatBoots" />
+    <property name="DescriptionKey" value=""/>
+    <property name="Insulation" value="15"/>
+    <property name="Waterproof" value="0.2"/>
+    <property class="Attributes">
+      <property name="ConcussiveProtection" value="0.05, 0.2" />
+      <property name="PunctureProtection" value="0.05, 0.2" />
+      <property name="FireProtection" value="0.05, 0.2" />
+      <property name="RadiationProtection" value="0.05, 0.2" />
+      <property name="DegradationMax" value="40,600" />
+    </property>
+    <property class="UMA">
+      <property name="Overlay1Tints" value="402F13" />
+    </property>
+  </item>
+  <item id="1721" name="winterPants">
+    <property name="CustomIcon" value="hazmatPants" />
+    <property name="CustomIconTint" value="402F13" />
+    <property name="Extends" value="hazmatPants" />
+    <property name="DescriptionKey" value=""/>
+    <property name="Insulation" value="20"/>
+    <property name="Waterproof" value="0.2"/>
+    <property class="Attributes">
+      <property name="ConcussiveProtection" value="0.05, 0.2" />
+      <property name="PunctureProtection" value="0.05, 0.2" />
+      <property name="FireProtection" value="0.05, 0.2" />
+      <property name="RadiationProtection" value="0.05, 0.2" />
+      <property name="DegradationMax" value="40,600" />
+    </property>
+    <property class="UMA">
+      <property name="Overlay0Tint" value="51, 51, 102" />
+    </property>
+  </item>
+  <item id="1723" name="winterShirt">
+    <property name="CustomIcon" value="hazmatShirt" />
+    <property name="CustomIconTint" value="402F13" />
+    <property name="Extends" value="hazmatShirt" />
+    <property name="DescriptionKey" value=""/>
+    <property name="Insulation" value="20"/>
+    <property name="Waterproof" value="0.2"/>
+    <property class="Attributes">
+      <property name="ConcussiveProtection" value="0.05, 0.2" />
+      <property name="PunctureProtection" value="0.05, 0.2" />
+      <property name="FireProtection" value="0.05, 0.2" />
+      <property name="RadiationProtection" value="0.05, 0.2" />
+      <property name="DegradationMax" value="40,600" />
+    </property>
+    <property class="UMA">
+      <property name="Overlay0Tint" value="51, 51, 102" />
+    </property>
+  </item>
+  <item id="1724" name="winterGloves">
+    <property name="CustomIcon" value="hazmatGloves" />
+    <property name="CustomIconTint" value="402F13" />
+    <property name="Extends" value="hazmatGloves" />
+    <property name="DescriptionKey" value=""/>
+    <property name="Insulation" value="10"/>
+    <property name="Waterproof" value="0.2"/>
+    <property class="Attributes">
+      <property name="ConcussiveProtection" value="0.2, 0.4" />
+      <property name="PunctureProtection" value="0.1, 0.3" />
+    </property>
+    <property class="UMA">
+      <property name="Overlay1Tints" value="402F13" />
+    </property>
+  </item>
+  <item id="1730" name="coolGloves">
+    <property name="Extends" value="clothBoots" />
+    <property name="Weight" value="20" />
+    <property name="Insulation" value="-10"/>
+    <property name="DescriptionKey" value="coolGlovesDesc"/>
+    <property name="FuelValue" value="1" />
+    <property name="EquipSlot" value="Hands" />
+    <property name="CustomIcon" value="militaryGloves" />
+    <property name="CustomIconTint" value="828285" />
+    <property class="UMA">
+      <property name="Overlay0Tint" value="51, 51, 51" />
+      <property name="Mesh" value="armor_kevlar_gloves" />
+      <property name="Overlay0" value="armor_kevlar_gloves" />
+      <property name="Layer" value="0" />
+      <property name="UISlot" value="Gloves" />
+    </property>
+  </item>
+  <item id="1731" name="kickzBoots">
+    <property name="Extends" value="runningShoes" />
+    <property name="DescriptionKey" value="kickzBootsDesc"/>
+    <property name="Insulation" value="-10"/>
+    <property name="CustomIcon" value="runningShoes" />
+    <property name="CustomIconTint" value="0033FF" />
+    <property class="UMA">
+      <property name="Overlay0Tint" value="0, 51, 204" />
+    </property>
+  </item>
+  <!-- Helmet Light Mod -->
+  <item id="1750" name="ironHelmetLight">
+    <property name="Extends" value="ironHelmet" />
+    <property name="DescriptionKey" value="HelmetLightDesc"/>
+    <property name="Class" value="ItemClassToggle" />
+    <property name="ActivateObject" value="miningHelmetLightSource(Clone)" />
+    <property name="LightSource" value="Entities/Lighting/miningHelmetLightSource" />
+    <property name="CustomIcon" value="ironHelmet" />
+    <property name="Meshfile" value="Items/Clothing/Head/MiningHelmetPrefab" />
+  </item>
+  <item id="1751" name="militaryHelmetLight">
+    <property name="Extends" value="militaryHelmet" />
+    <property name="DescriptionKey" value="HelmetLightDesc"/>
+    <property name="Class" value="ItemClassToggle" />
+    <property name="ActivateObject" value="miningHelmetLightSource(Clone)" />
+    <property name="LightSource" value="Entities/Lighting/miningHelmetLightSource" />
+    <property name="Meshfile" value="Items/Clothing/Head/MiningHelmetPrefab" />
+  </item>
+  <item id="1752" name="swatHelmetLight">
+    <property name="Extends" value="swatHelmet" />
+    <property name="DescriptionKey" value="HelmetLightDesc"/>
+    <property name="Class" value="ItemClassToggle" />
+    <property name="ActivateObject" value="miningHelmetLightSource(Clone)" />
+    <property name="LightSource" value="Entities/Lighting/miningHelmetLightSource" />
+    <property name="Meshfile" value="Items/Clothing/Head/MiningHelmetPrefab" />
+  </item>
+  <item id="1753" name="scrapHelmetLight">
+    <property name="Extends" value="scrapHelmet" />
+    <property name="DescriptionKey" value="HelmetLightDesc"/>
+    <property name="Class" value="ItemClassToggle" />
+    <property name="ActivateObject" value="miningHelmetLightSource(Clone)" />
+    <property name="LightSource" value="Entities/Lighting/miningHelmetLightSource" />
+    <property name="CustomIcon" value="scrapHelmet" />
+    <property name="Meshfile" value="Items/Clothing/Head/MiningHelmetPrefab" />
+  </item>
+  <item id="1754" name="steelHelmetLight">
+    <property name="Extends" value="steelHelmet" />
+    <property name="DescriptionKey" value="HelmetLightDesc"/>
+    <property name="Class" value="ItemClassToggle" />
+    <property name="ActivateObject" value="miningHelmetLightSource(Clone)" />
+    <property name="LightSource" value="Entities/Lighting/miningHelmetLightSource" />
+    <property name="CustomIcon" value="scrapHelmet" />
+    <property name="CustomIconTint" value="696B67" />
+    <property name="Meshfile" value="Items/Clothing/Head/MiningHelmetPrefab" />
+  </item>
+  <item id="1755" name="ledAviatorGoggles">
+    <property name="Extends" value="aviatorGoggles" />
+    <property name="DescriptionKey" value="LEDHelmetDesc"/>
+    <property name="Class" value="ItemClassToggle" />
+    <property name="ActivateObject" value="miningHelmetLightSource(Clone)" />
+    <property name="LightSource" value="Entities/Lighting/miningHelmetLightSource" />
+    <property name="Meshfile" value="Items/Clothing/Head/MiningHelmetPrefab" />
+  </item>
+  <item id="1756" name="ledGoggles">
+    <property name="Extends" value="goggles" />
+    <property name="DescriptionKey" value="LEDHelmetDesc"/>
+    <property name="Class" value="ItemClassToggle" />
+    <property name="ActivateObject" value="miningHelmetLightSource(Clone)" />
+    <property name="LightSource" value="Entities/Lighting/miningHelmetLightSource" />
+    <property name="Meshfile" value="Items/Clothing/Head/MiningHelmetPrefab" />
+  </item>
   <!--SinMod Expanded Food-->
   <item id="1770" name="bowl">
     <property name="DescriptionKey" value="bowlDesc"/>
@@ -11984,6 +12578,47 @@ Mesh files no longer used:
       <property name="Rot" value="90,45,0" />
     </property>
   </item>
+  <item id="1952" name="chemicalAgent">
+    <property name="DescriptionKey" value="chemicalAgentDesc"/>
+    <property name="Meshfile" value="Items/Misc/sackPrefab" />
+    <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+    <property name="Material" value="organic" />
+    <property name="HoldType" value="3" />
+    <property name="Stacknumber" value="50" />
+    <property name="Group" value="Chemicals" />
+    <property class="Preview">
+      <property name="Zoom" value="28" />
+      <property name="Pos" value="0,-0.05" />
+      <property name="Rot" value="90,45,0" />
+    </property>
+    <property name="CraftingSkillGroup" value="Science"/>
+  </item>
+  <item id="1958" name="healingAgent">
+    <property name="DescriptionKey" value="healingAgentDesc"/>
+    <property name="Meshfile" value="Items/Health/painkillersPrefab" />
+    <property name="Material" value="Mplastics" />
+    <property name="Weight" value="1" />
+    <property name="HoldType" value="16" />
+    <property name="Group" value="Medicine" />
+    <property name="Stacknumber" value="200" />
+    <property class="Action1">
+      <property name="Class" value="Eat" />
+      <property name="Delay" value="1.0" />
+      <property name="Use_time" value="..." />
+      <property name="Gain_health" value="5" />
+      <property name="Gain_food" value="0" />
+      <property name="Gain_water" value="0" />
+      <property name="Sound_start" value="UseActions/player_painkillers" />
+      <property name="Debuff" value="bleeding,burning" />
+      <property name="Buff" value="firstAid" />
+    </property>
+    <property class="Preview">
+      <property name="Zoom" value="35" />
+      <property name="Pos" value="0,-0.05" />
+      <property name="Rot" value="90,45,0" />
+    </property>
+    <property name="CraftingSkillGroup" value="Science"/>
+  </item>
   <item id="1959" name="tantalizingMagazine">
     <property name="DescriptionKey" value="tantalizingMagazineDesc"/>
     <property name="Meshfile" value="Items/Misc/Book" />
@@ -12048,7 +12683,6 @@ Mesh files no longer used:
     </property>
     <property name="Group" value="Food/Cooking" />
   </item>
-
 
   <!--SinMod Extra Parts-->
   <item id="1963" name="gearMechanism">
@@ -12203,8 +12837,33 @@ Mesh files no longer used:
     <property name="FuelValue" value="5" />
     <property name="Group" value="Resources" />
   </item>
- 
-
+  
+  <item id="1975" name="waterFilter">
+    <property name="DescriptionKey" value="waterFilterDesc"/>
+    <property name="Meshfile" value="Items/Misc/sackPrefab" />
+    <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+    <property name="Material" value="organic" />
+    <property name="HoldType" value="3" />
+    <property name="Stacknumber" value="10" />
+    <property class="Preview">
+      <property name="Zoom" value="28" />
+      <property name="Pos" value="0,-0.05" />
+      <property name="Rot" value="90,45,0" />
+    </property>
+  </item>
+  <item id="1976" name="clayBucket">
+    <property name="DescriptionKey" value="clayBucketDesc"/>
+    <property name="Meshfile" value="Items/Misc/sackPrefab" />
+    <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+    <property name="Material" value="organic" />
+    <property name="HoldType" value="3" />
+    <property name="Stacknumber" value="10" />
+    <property class="Preview">
+      <property name="Zoom" value="28" />
+      <property name="Pos" value="0,-0.05" />
+      <property name="Rot" value="90,45,0" />
+    </property>
+  </item>
   <item id="1989" name="soap">
     <property name="DescriptionKey" value="soapDesc"/>
     <property name="Meshfile" value="Items/Misc/sackPrefab" />
@@ -12442,7 +13101,6 @@ Mesh files no longer used:
       <property name="Skills_to_gain" value="Lockpicks" />
     </property>
   </item>
-  
   <item id="2054" name="recipebookAnimalTraps">
     <property name="DescriptionKey" value="recipebookAnimalTrapsDesc"/>
     <property name="Extends" value="challengeQuestMaster" />
@@ -14222,6 +14880,29 @@ Mesh files no longer used:
     </property>
   </item>
 
+  <!--SinMod Vip Perks-->
+  <item id="2325" name="vipBeer">
+    <property name="Meshfile" value="Items/Food/bottledBeerPrefab"/>"
+    <property name="Material" value="glass"/>
+    <property name="HoldType" value="3"/>
+    <property name="Weight" value="10"/>
+    <property name="Stacknumber" value="1"/>
+    <!-- STK drink -->
+    <property name="EconomicValue" value="0"/>
+    <property class="Action1">
+      <property name="Class" value="Eat"/>
+      <property name="Delay" value="120"/>
+      <property name="Use_time" value="..."/>
+      <property name="Gain_health" value="0"/>
+      <property name="Gain_stamina" value="0"/>
+      <property name="Gain_food" value="50"/>
+      <property name="Gain_water" value="50"/>
+      <property name="Sound_start" value="player_drinking"/>
+      <property name="Buff" value="highlife"/>
+    </property>
+    <property name="Group" value="Food/Cooking"/>
+  </item>
+
   <!--SinMod Class Preks-->
   <item id="2400" name="perkSurvivor">
     <property name="Extends" value="questMaster" />
@@ -14408,7 +15089,6 @@ Mesh files no longer used:
       <property name="QuestGiven" value="challenge_anklebitters" />
     </property>
   </item>
-
   <item id="2623" name="challengeLightThemUp">
     <property name="Extends" value="challengeQuestMaster" />
     <property name="CustomIconTint" value="781B8F" />
@@ -14786,11 +15466,13 @@ Mesh files no longer used:
       <property name="DamageBonus.glass" value="25" />
       <property name="SupportHarvesting" value="true" />
       <property name="UseMeleeCrosshair" value="true" />
+      <property name="ToolCategory.harvestingTools" value="2" param1="1"/>
+      <property name="ToolCategory.Butcher" value="0" param1="20"/>
       <property name="ActionExp" value="1" />
     </property>
     <property name="Group" value="Tools/Traps" />
     <property name="ActionSkillGroup" value="Mining Tools"/>
-    <property name="CraftingSkillGroup" value="Science"/>
+    <property name="CraftingSkillGroup" value="craftSkillScience"/>
     <property class="Attributes">
       <property name="FalloffRange" value="2.35,2.35" />
       <property name="DegradationRate" value="5,5" />
@@ -14811,5 +15493,395 @@ Mesh files no longer used:
     </property>
   </item>
 
+  <!--SinMod Ultimate Champion-->
+  <item id="3100" name="UltimateChampionVoucher">
+    <property name="DescriptionKey" value="UltimateChampionVoucherDesc"/>
+    <property name="CustomIcon" value="UCW" />
+    <property name="Meshfile" value="Items/Misc/paper" />
+    <property name="HoldType" value="21" />
+    <property name="Material" value="Survivor Notes" />
+    <property name="Weight" value="1" />
+    <property name="Stacknumber" value="500" />
+    <property name="FuelValue" value="20" />
+    <property name="Group" value="Champion" />
+  </item>
+  
+  <item id="3101" name="UltimateChampTier1">
+    <property name="DescriptionKey" value="UltimateChampTier1Desc"/>
+    <property name="CustomIcon" value="UCT1" />
+    <property name="Meshfile" value="Items/Misc/paper" />
+    <property name="HoldType" value="21" />
+    <property name="Material" value="Survivor Notes" />
+    <property name="Weight" value="5" />
+    <property name="Stacknumber" value="500" />
+    <property name="FuelValue" value="20" />
+    <property name="Group" value="Champion" />
+    <property class="Action1">
+      <property name="Class" value="Quest" />
+      <property name="QuestGiven" value="UltimateChampTier1" />
+      <property name="Delay" value="0" />
+    </property>
+  </item>
+  <item id="3102" name="UltimateChampTier2">
+    <property name="DescriptionKey" value="UltimateChampTier2Desc"/>
+    <property name="CustomIcon" value="UCT2" />
+    <property name="Meshfile" value="Items/Misc/paper" />
+    <property name="HoldType" value="21" />
+    <property name="Material" value="Survivor Notes" />
+    <property name="Weight" value="5" />
+    <property name="Stacknumber" value="500" />
+    <property name="FuelValue" value="20" />
+    <property name="Group" value="Champion" />
+    <property class="Action1">
+      <property name="Class" value="Quest" />
+      <property name="QuestGiven" value="UltimateChampTier2" />
+      <property name="Delay" value="0" />
+    </property>
+  </item>
+  <item id="3103" name="UltimateChampTier3">
+    <property name="DescriptionKey" value="UltimateChampTier3Desc"/>
+    <property name="CustomIcon" value="UCT3" />
+    <property name="Meshfile" value="Items/Misc/paper" />
+    <property name="HoldType" value="21" />
+    <property name="Material" value="Survivor Notes" />
+    <property name="Weight" value="5" />
+    <property name="Stacknumber" value="500" />
+    <property name="FuelValue" value="20" />
+    <property name="Group" value="Champion" />
+    <property class="Action1">
+      <property name="Class" value="Quest" />
+      <property name="QuestGiven" value="UltimateChampTier3" />
+      <property name="Delay" value="0" />
+    </property>
+  </item>
+  <item id="3104" name="UltimateChampTier4">
+    <property name="DescriptionKey" value="UltimateChampTier4Desc"/>
+    <property name="CustomIcon" value="UCT4" />
+    <property name="Meshfile" value="Items/Misc/paper" />
+    <property name="HoldType" value="21" />
+    <property name="Material" value="Survivor Notes" />
+    <property name="Weight" value="5" />
+    <property name="Stacknumber" value="500" />
+    <property name="FuelValue" value="20" />
+    <property name="Group" value="Champion" />
+    <property class="Action1">
+      <property name="Class" value="Quest" />
+      <property name="QuestGiven" value="UltimateChampTier4" />
+      <property name="Delay" value="0" />
+    </property>
+  </item>
+  <item id="3105" name="UltimateChampTier5">
+    <property name="DescriptionKey" value="UltimateChampTier5Desc"/>
+    <property name="CustomIcon" value="UCT5" />
+    <property name="Meshfile" value="Items/Misc/paper" />
+    <property name="HoldType" value="21" />
+    <property name="Material" value="Survivor Notes" />
+    <property name="Weight" value="5" />
+    <property name="Stacknumber" value="500" />
+    <property name="FuelValue" value="20" />
+    <property name="Group" value="Champion" />
+    <property class="Action1">
+      <property name="Class" value="Quest" />
+      <property name="QuestGiven" value="UltimateChampTier5" />
+      <property name="Delay" value="0" />
+    </property>
+  </item>
+
+  <item id="3106" name="GunChampVoucher">
+    <property name="DescriptionKey" value="GunChampDesc"/>
+    <property name="CustomIcon" value="UCGS" />
+    <property name="Meshfile" value="Items/Misc/paper" />
+    <property name="HoldType" value="21" />
+    <property name="Material" value="Survivor Notes" />
+    <property name="Weight" value="1" />
+    <property name="Stacknumber" value="500" />
+    <property name="FuelValue" value="20" />
+    <property name="Group" value="Champion" />
+  </item>
+  <item id="3107" name="AmmoChampVoucher">
+    <property name="DescriptionKey" value="AmmoChampDesc"/>
+    <property name="CustomIcon" value="UCAS" />
+    <property name="Meshfile" value="Items/Misc/paper" />
+    <property name="HoldType" value="21" />
+    <property name="Material" value="Survivor Notes" />
+    <property name="Weight" value="1" />
+    <property name="Stacknumber" value="500" />
+    <property name="FuelValue" value="20" />
+    <property name="Group" value="Champion" />
+  </item>
+  
+  <item id="3110" name="AK47Voucher">
+    <property name="DescriptionKey" value="AK47VoucherDesc"/>
+    <property name="CustomIcon" value="UCAK" />
+    <property name="Meshfile" value="Items/Misc/paper" />
+    <property name="HoldType" value="21" />
+    <property name="Material" value="Survivor Notes" />
+    <property name="Weight" value="5" />
+    <property name="Stacknumber" value="500" />
+    <property name="FuelValue" value="20" />
+    <property name="Group" value="Champion" />
+    <property class="Action1">
+      <property name="Class" value="Quest" />
+      <property name="QuestGiven" value="AK47Voucher" />
+      <property name="Delay" value="0" />
+    </property>
+  </item>
+  <item id="3111" name="SniperRifleVoucher">
+    <property name="DescriptionKey" value="SniperRifleVoucherDesc"/>
+    <property name="CustomIcon" value="UCSR" />
+    <property name="Meshfile" value="Items/Misc/paper" />
+    <property name="HoldType" value="21" />
+    <property name="Material" value="Survivor Notes" />
+    <property name="Weight" value="5" />
+    <property name="Stacknumber" value="500" />
+    <property name="FuelValue" value="20" />
+    <property name="Group" value="Champion" />
+    <property class="Action1">
+      <property name="Class" value="Quest" />
+      <property name="QuestGiven" value="SniperRifleVoucher" />
+      <property name="Delay" value="0" />
+    </property>
+  </item>
+  <item id="3112" name="44MagnumVoucher">
+    <property name="DescriptionKey" value="44MagnumVoucherDesc"/>
+    <property name="CustomIcon" value="UC44" />
+    <property name="Meshfile" value="Items/Misc/paper" />
+    <property name="HoldType" value="21" />
+    <property name="Material" value="Survivor Notes" />
+    <property name="Weight" value="5" />
+    <property name="Stacknumber" value="500" />
+    <property name="FuelValue" value="20" />
+    <property name="Group" value="Champion" />
+    <property class="Action1">
+      <property name="Class" value="Quest" />
+      <property name="QuestGiven" value="44MagnumVoucher" />
+      <property name="Delay" value="0" />
+    </property>
+  </item>
+  <item id="3113" name="PistolVoucher">
+    <property name="DescriptionKey" value="PistolVoucherDesc"/>
+    <property name="CustomIcon" value="UCP" />
+    <property name="Meshfile" value="Items/Misc/paper" />
+    <property name="HoldType" value="21" />
+    <property name="Material" value="Survivor Notes" />
+    <property name="Weight" value="5" />
+    <property name="Stacknumber" value="500" />
+    <property name="FuelValue" value="20" />
+    <property name="Group" value="Champion" />
+    <property class="Action1">
+      <property name="Class" value="Quest" />
+      <property name="QuestGiven" value="PistolVoucher" />
+      <property name="Delay" value="0" />
+    </property>
+  </item>
+  <item id="3114" name="AugerVoucher">
+    <property name="DescriptionKey" value="AugerVoucherDesc"/>
+    <property name="CustomIcon" value="UCA" />
+    <property name="Meshfile" value="Items/Misc/paper" />
+    <property name="HoldType" value="21" />
+    <property name="Material" value="Survivor Notes" />
+    <property name="Weight" value="5" />
+    <property name="Stacknumber" value="500" />
+    <property name="FuelValue" value="20" />
+    <property name="Group" value="Champion" />
+    <property class="Action1">
+      <property name="Class" value="Quest" />
+      <property name="QuestGiven" value="AugerVoucher" />
+      <property name="Delay" value="0" />
+    </property>
+  </item>
+  <item id="3115" name="CompoundBowVoucher">
+    <property name="DescriptionKey" value="CompoundBowVoucherDesc"/>
+    <property name="CustomIcon" value="UCCC" />
+    <property name="Meshfile" value="Items/Misc/paper" />
+    <property name="HoldType" value="21" />
+    <property name="Material" value="Survivor Notes" />
+    <property name="Weight" value="5" />
+    <property name="Stacknumber" value="500" />
+    <property name="FuelValue" value="20" />
+    <property name="Group" value="Champion" />
+    <property class="Action1">
+      <property name="Class" value="Quest" />
+      <property name="QuestGiven" value="CompoundBowVoucher" />
+      <property name="Delay" value="0" />
+    </property>
+  </item>
+  <item id="3116" name="ChainsawVoucher">
+    <property name="DescriptionKey" value="ChainsawVoucherDesc"/>
+    <property name="CustomIcon" value="UCCS" />
+    <property name="Meshfile" value="Items/Misc/paper" />
+    <property name="HoldType" value="21" />
+    <property name="Material" value="Survivor Notes" />
+    <property name="Weight" value="5" />
+    <property name="Stacknumber" value="500" />
+    <property name="FuelValue" value="20" />
+    <property name="Group" value="Champion" />
+    <property class="Action1">
+      <property name="Class" value="Quest" />
+      <property name="QuestGiven" value="ChainsawVoucher" />
+      <property name="Delay" value="0" />
+    </property>
+  </item>
+  <item id="3117" name="HuntingRifleVoucher">
+    <property name="DescriptionKey" value="HuntingRifleVoucherDesc"/>
+    <property name="CustomIcon" value="UCHR" />
+    <property name="Meshfile" value="Items/Misc/paper" />
+    <property name="HoldType" value="21" />
+    <property name="Material" value="Survivor Notes" />
+    <property name="Weight" value="5" />
+    <property name="Stacknumber" value="500" />
+    <property name="FuelValue" value="20" />
+    <property name="Group" value="Champion" />
+    <property class="Action1">
+      <property name="Class" value="Quest" />
+      <property name="QuestGiven" value="HuntingRifleVoucher" />
+      <property name="Delay" value="0" />
+    </property>
+  </item>
+  <item id="3119" name="SMGVoucher">
+    <property name="DescriptionKey" value="SMGVoucherDesc"/>
+    <property name="CustomIcon" value="UCMP5" />
+    <property name="Meshfile" value="Items/Misc/paper" />
+    <property name="HoldType" value="21" />
+    <property name="Material" value="Survivor Notes" />
+    <property name="Weight" value="5" />
+    <property name="Stacknumber" value="500" />
+    <property name="FuelValue" value="20" />
+    <property name="Group" value="Champion" />
+    <property class="Action1">
+      <property name="Class" value="Quest" />
+      <property name="QuestGiven" value="SMGVoucher" />
+      <property name="Delay" value="0" />
+    </property>
+  </item>
+  <item id="3120" name="ShotgunVoucher">
+    <property name="DescriptionKey" value="ShotgunVoucherDesc"/>
+    <property name="CustomIcon" value="UCPS" />
+    <property name="Meshfile" value="Items/Misc/paper" />
+    <property name="HoldType" value="21" />
+    <property name="Material" value="Survivor Notes" />
+    <property name="Weight" value="5" />
+    <property name="Stacknumber" value="500" />
+    <property name="FuelValue" value="20" />
+    <property name="Group" value="Champion" />
+    <property class="Action1">
+      <property name="Class" value="Quest" />
+      <property name="QuestGiven" value="ShotgunVoucher" />
+      <property name="Delay" value="0" />
+    </property>
+  </item>
+  <item id="3122" name="SawwedoffShotgunVoucher">
+    <property name="DescriptionKey" value="SawwedoffShotgunVoucherDesc"/>
+    <property name="CustomIcon" value="UCPSS" />
+    <property name="Meshfile" value="Items/Misc/paper" />
+    <property name="HoldType" value="21" />
+    <property name="Material" value="Survivor Notes" />
+    <property name="Weight" value="5" />
+    <property name="Stacknumber" value="500" />
+    <property name="FuelValue" value="20" />
+    <property name="Group" value="Champion" />
+    <property class="Action1">
+      <property name="Class" value="Quest" />
+      <property name="QuestGiven" value="SawwedoffShotgunVoucher" />
+      <property name="Delay" value="0" />
+    </property>
+  </item>
+
+  <item id="3123" name="762mmAmmoVoucher">
+    <property name="DescriptionKey" value="762mmAmmoVoucherDesc"/>
+    <property name="CustomIcon" value="UC762" />
+    <property name="Meshfile" value="Items/Misc/paper" />
+    <property name="HoldType" value="21" />
+    <property name="Material" value="Survivor Notes" />
+    <property name="Weight" value="5" />
+    <property name="Stacknumber" value="500" />
+    <property name="FuelValue" value="20" />
+    <property name="Group" value="Champion" />
+    <property class="Action1">
+      <property name="Class" value="Quest" />
+      <property name="QuestGiven" value="762mmAmmoVoucher" />
+      <property name="Delay" value="0" />
+    </property>
+  </item>
+  <item id="3124" name="9mmAmmoVoucher">
+    <property name="DescriptionKey" value="9mmAmmoVoucherDesc"/>
+    <property name="CustomIcon" value="UC9" />
+    <property name="Meshfile" value="Items/Misc/paper" />
+    <property name="HoldType" value="21" />
+    <property name="Material" value="Survivor Notes" />
+    <property name="Weight" value="5" />
+    <property name="Stacknumber" value="500" />
+    <property name="FuelValue" value="20" />
+    <property name="Group" value="Champion" />
+    <property class="Action1">
+      <property name="Class" value="Quest" />
+      <property name="QuestGiven" value="9mmAmmoVoucher" />
+      <property name="Delay" value="0" />
+    </property>
+  </item>
+  <item id="3126" name="steelArrowVoucher">
+    <property name="DescriptionKey" value="SteelboltsVoucherDesc"/>
+    <property name="CustomIcon" value="UCSB" />
+    <property name="Meshfile" value="Items/Misc/paper" />
+    <property name="HoldType" value="21" />
+    <property name="Material" value="Survivor Notes" />
+    <property name="Weight" value="5" />
+    <property name="Stacknumber" value="500" />
+    <property name="FuelValue" value="20" />
+    <property name="Group" value="Champion" />
+    <property class="Action1">
+      <property name="Class" value="Quest" />
+      <property name="QuestGiven" value="steelArrowVoucher" />
+      <property name="Delay" value="0" />
+    </property>
+  </item>
+  <item id="3127" name="44AmmoVoucher">
+    <property name="DescriptionKey" value="44AmmoVoucherDesc"/>
+    <property name="CustomIcon" value="UC44M" />
+    <property name="Meshfile" value="Items/Misc/paper" />
+    <property name="HoldType" value="21" />
+    <property name="Material" value="Survivor Notes" />
+    <property name="Weight" value="5" />
+    <property name="Stacknumber" value="500" />
+    <property name="FuelValue" value="20" />
+    <property name="Group" value="Champion" />
+    <property class="Action1">
+      <property name="Class" value="Quest" />
+      <property name="QuestGiven" value="44AmmoVoucher" />
+      <property name="Delay" value="0" />
+    </property>
+  </item>
+  <item id="3128" name="GasVoucher">
+    <property name="DescriptionKey" value="GasVoucherDesc"/>
+    <property name="CustomIcon" value="UCG" />
+    <property name="Meshfile" value="Items/Misc/paper" />
+    <property name="HoldType" value="21" />
+    <property name="Material" value="Survivor Notes" />
+    <property name="Weight" value="5" />
+    <property name="Stacknumber" value="500" />
+    <property name="FuelValue" value="20" />
+    <property name="Group" value="Champion" />
+    <property class="Action1">
+      <property name="Class" value="Quest" />
+      <property name="QuestGiven" value="GasVoucher" />
+      <property name="Delay" value="0" />
+    </property>
+  </item>
+  <item id="3129" name="ShotgunShellVoucher">
+    <property name="DescriptionKey" value="ShotgunShellVoucherDesc"/>
+    <property name="CustomIcon" value="UCS" />
+    <property name="Meshfile" value="Items/Misc/paper" />
+    <property name="HoldType" value="21" />
+    <property name="Material" value="Survivor Notes" />
+    <property name="Weight" value="5" />
+    <property name="Stacknumber" value="500" />
+    <property name="FuelValue" value="20" />
+    <property name="Group" value="Champion" />
+    <property class="Action1">
+      <property name="Class" value="Quest" />
+      <property name="QuestGiven" value="ShotgunAmmoVoucher" />
+      <property name="Delay" value="0" />
+    </property>
+  </item>
 
 </items>

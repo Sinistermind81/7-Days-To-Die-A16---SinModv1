@@ -1270,6 +1270,12 @@ workstations
 	<!-- Rented - Vending Machine -->
 	<trader_info id="5" reset_interval="-1" override_buy_markup="1.0" override_sell_markup="1.0" allow_sell="false" rentable="true" rent_cost="2500" rent_time="30" />
 
+  <trader_info id="6" reset_interval="1" override_buy_markup="0" allow_sell="false" min_inventory="10" max_inventory="50" min_items_swapped="6" max_items_swapped="13">
+    <trader_items count="50">
+      <item name="vipBeer"/>
+    </trader_items>
+  </trader_info>
+
   <!-- Merchant Delivery Box -->
   <trader_info id="20" reset_interval="2" override_buy_markup="2.5" allow_sell="false" min_inventory="6" max_inventory="13" min_items_swapped="6" max_items_swapped="13">
     <trader_items count="10">
@@ -1298,6 +1304,13 @@ workstations
   <trader_info id="21" reset_interval="2" override_buy_markup="1.0" allow_sell="false" min_inventory="6" max_inventory="13" min_items_swapped="6" max_items_swapped="13">
     <trader_items count="10">
       <item group="questChallenge" count="1"/>
+    </trader_items>
+  </trader_info>
+  
+  <!--SinMod Gas Pump-->
+  <trader_info id="22" reset_interval="13" override_buy_markup="20" allow_sell="false" min_inventory="10" max_inventory="10" min_items_swapped="1" max_items_swapped="10">
+    <trader_items count="10">
+      <item name="gasCan" count="10000"/>
     </trader_items>
   </trader_info>
 

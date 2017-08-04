@@ -2293,10 +2293,6 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
     <ingredient name="unit_clay" count="1"/>
   </recipe>
 
-  <recipe name="plantedYucca1" count="1" craft_time="1">
-    <ingredient name="foodYuccaFruit" count="1"/>
-  </recipe>
-
   <recipe name="looseBoardsTrapBlock1x1" count="1">
     <!-- trap -->
     <ingredient name="nail" count="5"/>
@@ -2724,6 +2720,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
     <ingredient name="ProfessionSelection" count="1" />
   </recipe>
 
+  <!--SinMod Generic Ammo Box-->
   <recipe name="ammoSupply9mm" count="1" >
     <ingredient name="genericAmmoBox" count="1"/>
   </recipe>
@@ -2764,6 +2761,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
   <recipe name="plumbingKit" count="1">
     <ingredient name="ductTape" count="5"/>
     <ingredient name="shortMetalPipe" count="10"/>
+    <ingredient name="waterFilter" count="1"/>
   </recipe>
 
   <!-- Expanded Farming Mod -->
@@ -2780,7 +2778,6 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
     <ingredient name="Orange" count="1" />
   </recipe>
   <recipe name="plantedYucca1" count="1" craft_time="1">
-    <!--farmAlt1<recipe name="plantedYucca1" count="1">farmAlt2-->
     <ingredient name="foodYuccaFruit" count="1"/>
   </recipe>
 
@@ -2828,7 +2825,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
     <ingredient name="seedPack" count="1"/>
   </recipe>
 
-  <!--SinMod Expanded Food-->
+  <!--SinMod Food Expansion-->
   <recipe name="stripsClingwrap" count="7">
     <ingredient name="Clingwrap" count="1" />
   </recipe>
@@ -2871,7 +2868,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
     <ingredient name="bowlWater" count="1" />
     <ingredient name="Apple" count="3" />
   </recipe>
-    <recipe name="appleCider" count="1" craft_area="chemistryStation">
+  <recipe name="appleCider" count="1" craft_area="chemistryStation">
     <ingredient name="Apple" count="2" />
     <ingredient name="emptyJar" count="1" />
   </recipe>
@@ -2948,7 +2945,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
   <recipe name="warmsoupChunkyBeef" count="1" craft_area="campfire" craft_tool="cookingPot">
     <ingredient name="soupChunkyBeef" count="1" />
   </recipe>
-<recipe name="warmsoupChicken" count="1" craft_area="campfire" craft_tool="cookingPot">
+  <recipe name="warmsoupChicken" count="1" craft_area="campfire" craft_tool="cookingPot">
     <ingredient name="soupChicken" count="1" />
   </recipe>
   <recipe name="warmsoupLamb" count="1" craft_area="campfire" craft_tool="cookingPot">
@@ -3059,6 +3056,26 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
     <ingredient name="bowlWater" count="1" />
   </recipe>
   
+  <!--SinMod ScrapIron Tools-->
+  <recipe name="scrapIronAxe" count="1">
+    <ingredient name="scrapIron" count="10"/>
+    <ingredient name="yuccaFibers" count="2"/>
+    <ingredient name="wood" count="5"/>
+  </recipe>
+  <recipe name="scrapIronPickaxe" count="1">
+    <ingredient name="scrapIron" count="15"/>
+    <ingredient name="wood" count="20"/>
+  </recipe>
+  <recipe name="scrapIronShovel" count="1">
+    <ingredient name="scrapIron" count="15"/>
+    <ingredient name="wood" count="20"/>
+  </recipe>
+  <recipe name="scrapIronShiv" count="1">
+    <ingredient name="scrapIron" count="3"/>
+    <ingredient name="ductTape" count="1"/>
+  </recipe>
+  
+  <!--SinMod Weapons Expansion-->
   <recipe name="SniperExtMag" count="1"  craft_area="assembly">
     <ingredient name="flashlight02" count="0" />
     <ingredient name="partsSniperRifle_barrel" count="1" />
@@ -3088,6 +3105,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
     <ingredient name="partsPistol_grip" count="1" />
   </recipe>
 
+  <!--SinMod Ammo Expansion-->
   <recipe name="HollowTip" count="1" craft_area="forge" craft_tool="anvil" material_based="true">
     <ingredient name="unit_lead" count="1"/>
     <ingredient name="unit_clay" count="1"/>
@@ -3132,13 +3150,139 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
     <ingredient name="gunPowder" count="2"/>
     <ingredient name="paper" count="1"/>
   </recipe>
+  <recipe name="bioTank" count="25" craft_area="chemistryStation">
+    <ingredient name="rottingFlesh" count="25"/>
+  </recipe>
+  
+  <recipe name="HealingDart" count="25">
+    <ingredient name="steelDart" count="25" />
+    <ingredient name="healingAgent" count="1" />
+  </recipe>
+  <recipe name="healingAgent" count="1">
+    <ingredient name="painkillers" count="10" />
+    <ingredient name="bottledWater" count="1"/>
+  </recipe>
+  <recipe name="ChemicalDart" count="1" craft_time="2">
+    <ingredient name="steelDart" count="25"/>
+    <ingredient name="chemicalAgent" count="1"/>
+  </recipe>
+  <recipe name="chemicalAgent" count="1" craft_area="chemistryStation" craft_time="50">
+    <ingredient name="carBattery" count="1"/>
+      <ingredient name="bottledWater" count="1"/>
+  </recipe> 
+  <recipe name="InfectionDart" count="25">
+    <ingredient name="steelDart" count="25"/>
+    <ingredient name="infectionAgent" count="1"/>
+  </recipe>
+  <recipe name="infectionAgent" count="1" craft_area="chemistryStation" craft_time="50">
+    <ingredient name="rottingFlesh" count="5"/>
+      <ingredient name="bottledWater" count="1"/>
+  </recipe>
+    
+  <!--SinMod Traps Expansion-->
+  <recipe name="trapAdhesive" count="1">
+    <ingredient name="wood" count="10"/>
+    <ingredient name="glue" count="4"/>
+  </recipe>
+  <recipe name="trapFire" count="2">
+    <ingredient name="forgedSteel" count="8" />
+    <ingredient name="cookingGrill" count="1" />
+    <ingredient name="gasCan" count="1" />
+  </recipe>
+
+  <recipe name="charcoalChips" count="1" craft_area="campfire" craft_tool="cookingPot">
+    <ingredient name="wood" count="3"/>
+  </recipe>
+  <recipe name="clayBucket" count="1" craft_area="campfire">
+    <ingredient name="clayLump" count="30"/>
+  </recipe>
+  <recipe name="waterFilter" count="1">
+    <ingredient name="clayBucket" count="1" />
+    <ingredient name="crushedSand" count="50"/>
+    <ingredient name="charcoalChips" count="50"/>
+  </recipe>
   <recipe name="Lockpick" count="1" craft_time="20">
-    <ingredient name="scrapIron" count="25"/>
+    <ingredient name="scrapIron" count="20"/>
   </recipe>
   <recipe name="survivorNoteCollection" count="1" craft_time="0.5">
     <ingredient name="survivorNotes" count="5"/>
   </recipe>
-  <!-- Ammo Conversions -->
+
+  <!--SinMod Ultimate Champion-->
+  <recipe name="UltimateChampionVoucher" count="1"  craft_time="0.5">
+    <wildcard_forge_category />
+  </recipe>
+  <recipe name="UltimateChampTier1" count="1" craft_time="0.5">
+    <ingredient name="UltimateChampionVoucher" count="1"/>
+  </recipe>
+  <recipe name="UltimateChampTier2" count="1" craft_time="0.5">
+    <ingredient name="UltimateChampionVoucher" count="2"/>
+  </recipe>
+  <recipe name="UltimateChampTier3" count="1" craft_time="0.5">
+    <ingredient name="UltimateChampionVoucher" count="3"/>
+  </recipe>
+  <recipe name="UltimateChampTier4" count="1" craft_time="0.5">
+    <ingredient name="UltimateChampionVoucher" count="4"/>
+  </recipe>
+  <recipe name="UltimateChampTier5" count="1" craft_time="0.5">
+    <ingredient name="UltimateChampionVoucher" count="5"/>
+  </recipe>
+
+  <recipe name="AK47Voucher" count="1" craft_time="0.5">
+    <ingredient name="GunChampVoucher" count="1"/>
+  </recipe>
+  <recipe name="SniperRifleVoucher" count="1" craft_time="0.5">
+    <ingredient name="GunChampVoucher" count="1"/>
+  </recipe>
+  <recipe name="44MagnumVoucher" count="1" craft_time="0.5">
+    <ingredient name="GunChampVoucher" count="1"/>
+  </recipe>
+  <recipe name="PistolVoucher" count="1" craft_time="0.5">
+    <ingredient name="GunChampVoucher" count="1"/>
+  </recipe>
+  <recipe name="AugerVoucher" count="1" craft_time="0.5">
+    <ingredient name="GunChampVoucher" count="1"/>
+  </recipe>
+  <recipe name="CompoundBowVoucher" count="1" craft_time="0.5">
+    <ingredient name="GunChampVoucher" count="1"/>
+  </recipe>
+  <recipe name="ChainsawVoucher" count="1" craft_time="0.5">
+    <ingredient name="GunChampVoucher" count="1"/>
+  </recipe>
+  <recipe name="HuntingRifleVoucher" count="1" craft_time="0.5">
+    <ingredient name="GunChampVoucher" count="1"/>
+  </recipe>
+  <recipe name="SMGVoucher" count="1" craft_time="0.5">
+    <ingredient name="GunChampVoucher" count="1"/>
+  </recipe>
+  <recipe name="ShotgunVoucher" count="1" craft_time="0.5">
+    <ingredient name="GunChampVoucher" count="1"/>
+  </recipe>
+  <recipe name="SawwedoffShotgunVoucher" count="1" craft_time="0.5">
+    <ingredient name="GunChampVoucher" count="1"/>
+  </recipe>
+
+  <recipe name="762mmAmmoVoucher" count="1" craft_time="0.5">
+    <ingredient name="AmmoChampVoucher" count="1"/>
+  </recipe>
+  <recipe name="9mmAmmoVoucher" count="1" craft_time="0.5">
+    <ingredient name="AmmoChampVoucher" count="1"/>
+  </recipe>
+  <recipe name="steelArrowVoucher" count="1" craft_time="0.5">
+    <ingredient name="AmmoChampVoucher" count="1"/>
+  </recipe>
+  <recipe name="44AmmoVoucher" count="1" craft_time="0.5">
+    <ingredient name="AmmoChampVoucher" count="1"/>
+  </recipe>
+  <recipe name="GasVoucher" count="1" craft_time="0.5">
+    <ingredient name="AmmoChampVoucher" count="1"/>
+  </recipe>
+  <recipe name="ShotgunShellVoucher" count="1" craft_time="0.5">
+    <ingredient name="AmmoChampVoucher" count="1"/>
+  </recipe>
+  
+  
+  <!--SinMod Ammo Dismantle -->
   <recipe name="dismantle9mmBullets" count="1" craft_time = "5" craft_exp_gain="0">
     <ingredient name="9mmBullet" count="10"/>
   </recipe>

@@ -651,4 +651,9 @@ This requires a 50+ food bar:
     <modify id="2" stat="wellness" amount=".6" rate="60" />
   </buff>
   
+  <buff id="highlife" duration="60" name="High Life" stack="reset" description="" icon="ui_game_symbol_run">
+    <modify id="0" stat="speedmodifier" modifyMaxValue="-0.5"/>
+    <modify id="1" stat="speedmodifier" modifyValue="-0.5"/>
+  </buff>
+  
 </buffs>

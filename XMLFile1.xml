@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<block id="657" name="cntVendingMachine">
+  <property name="Group" value="Science"/>
+  <property name="DescriptionKey" value="cntVendingMachineGroupDesc"/>
+  <property name="Material" value="Mmetal_medium"/>
+  <property name="LightOpacity" value="0"/>
+  <property name="StabilitySupport" value="false"/>
+  <!-- build restriction -->
+  <property name="Class" value="VendingMachine"/>
+  <property name="Shape" value="ModelEntity"/>
+  <property name="Model" value="Entities/LootContainers/vending_machine_playerPrefab"/>
+  <property name="MultiBlockDim" value="1,2,1"/>
+  <property name="ImposterExchange" value="imposterBlock" param1="143"/>
+  <property name="OnlySimpleRotations" value="true"/>
+  <property name="Place" value="TowardsPlacerInverted"/>
+  <property class="RepairItems">
+    <property name="forgedIron" value="5"/>
+  </property>
+  <property name="TraderID" value="3"/>
+  <property name="EconomicValue" value="2000"/>
+  <property name="Buff" value="shockedBuff"/>
+  <drop event="Destroy" count="0"/>
+</block>
+
+<block id="1978" name="sleeperSit">
+  <property name="Class" value="Sleeper"/>
+  <property name="CreativeMode" value="Dev"/>
+  <property name="DescriptionKey" value="sleeperGroupDesc"/>
+  <property name="Shape" value="ModelEntity"/>
+  <property name="Model" value="Entities/Zombies/SleeperPoses/idleSit"/>
+  <property name="Pose" value="0"/>
+  <property name="Material" value="organic"/>
+  <property name="LookIdentity" value="0,0,1"/>
+</block>
+
+<block id="1986" name="sleeperIdle">
+  <property name="Extends" value="sleeperSit"/>
+  <property name="ExcludeWalkType" value="4"/>
+  <property name="CreativeMode" value="Dev"/>
+  <property name="Model" value="Entities/Zombies/SleeperPoses/idleSleep"/>
+  <property name="Pose" value="5"/>
+  <property name="LookIdentity" value="0,0,1"/>
+</block>
+
+<block id="1979" name="sleeperBack">
+  <property name="Extends" value="sleeperSit"/>
+  <property name="CreativeMode" value="Dev"/>
+  <property name="Model" value="Entities/Zombies/SleeperPoses/idleBack"/>
+  <property name="Pose" value="1"/>
+  <property name="LookIdentity" value="0,0,1"/>
+</block>
+
+<entity_class name="sc_General">
+  <property name="Mesh" value="SupplyCrate/SupplyCrateEntityPrefab"/>
+  <property name="ModelType" value="SupplyCrate"/>
+  <property name="HasRagdoll" value="false"/>
+  <property name="Prefab" value="SupplyCrate"/>
+  <property name="Class" value="EntitySupplyCrate"/>
+  <property name="Parent" value="SupplyCrates"/>
+  <property name="Faction" value="none"/>
+  <property name="MaxHealth" value="200"/>
+  <property name="Weight" value="100"/>
+  <property name="SurfaceCategory" value="wood"/>
+  <property name="ParticleOnDeath" value="supply_crate_gib_Prefab"/>
+  <property name="LootListAlive" value="34"/>
+  <property name="LootListAliveMP" value="34"/>
+  <property name="IsEnemyEntity" value="false"/>
+  <property name="SoundParachuteOpen" value="SupplyDrops/Parachute_Opens"/>
+  <property name="SoundLanding" value="SupplyDrops/Supply_Crate_Land"/>
+  <property name="TimeStayAfterDeath" value="0"/>
+  <!-- If set this entity shows on the map -->
+  <property name="MapIcon" value="map_supply_crate"/>
+</entity_class>
+
+
+<block id="1914" name="metalTrussingRamp">
+  <property name="Extends" value="metalTrussingBlock"/>
+  <property name="Shape" value="New"/>
+  <property name="Model" value="ramp"/>
+</block>
+<block id="1915" name="spawnTrader">
+  <property name="Extends" value="metalTrussingRamp" param1="DescriptionKey"/>
+  <property name="CustomIcon" value="metalTrussingRamp"/>
+  <property name="CreativeMode" value="Dev"/>
+  <property name="Class" value="SpawnEntity"/>
+  <property name="SpawnClass" value="npcTraderJoel,npcTraderRekt,npcTraderHugh,npcTraderBob,npcTraderJimmy"/>
+</block>
+
+<!-- Donor Crate -->
+<entity_class name="DonorCrate">
+  <property name="Mesh" value="SupplyCrate/SupplyCrateEntityPrefab"/>
+  <property name="ModelType" value="SupplyCrate"/>
+  <property name="HasRagdoll" value="false"/>
+  <property name="Prefab" value="SupplyCrate"/>
+  <property name="Class" value="EntitySupplyCrate"/>
+  <property name="Parent" value="SupplyCrates"/>
+  <property name="Faction" value="none"/>
+  <property name="MaxHealth" value="200"/>
+  <property name="Weight" value="100"/>
+  <property name="SurfaceCategory" value="wood"/>
+  <property name="ParticleOnDeath" value="supply_crate_gib_Prefab"/>
+  <property name="LootListAlive" value="103"/>
+  <property name="LootListAliveMP" value="103"/>
+  <property name="IsEnemyEntity" value="false"/>
+  <property name="SoundParachuteOpen" value="SupplyDrops/Parachute_Opens"/>
+  <property name="SoundLanding" value="SupplyDrops/Supply_Crate_Land"/>
+  <property name="TimeStayAfterDeath" value="0"/>
+  <!-- If set this entity shows on the map -->
+  <property name="MapIcon" value="map_supply_crate"/>
+</entity_class>

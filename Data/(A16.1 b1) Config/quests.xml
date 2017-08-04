@@ -1289,4 +1289,96 @@ repeatable="true" category_key="challenge" difficulty="easy">
     <objective type="ZombieKill" id="ZombieFemaleFatUMA" value="3" />
     <reward type="SkillPoints" value="1" />
   </quest>
+  <!--SinMod Ultimate Warrior-->
+  <quest id="UltimateChampTier1" name="UltimateChampTier1" subtitle="I'm a Winner" description="Congradulations!!! You have select a Tier 1 Prize!!!\n\nCompete in more sever events for your chance to win even more vouchers!!!!" offer="Congradulations!!! You have selected a Tier 1 Prize!!!\n\nCompete in more sever events for your chance to win even more vouchers!!!!\n\nYou will be rewarded 5 skill points for your Tier 1 prize"
+	icon="ui_game_symbol_knife" repeatable="true" category_key="challenge" difficulty="easy">
+    <reward type="SkillPoints" value="5" />
+  </quest>
+  <quest id="UltimateChampTier2" name="UltimateChampTier2" subtitle="I'm a Winner" description="Congradulations!!! You have select a Tier 1 Prize!!!\n\nCompete in more server events for your chance to win even more vouchers!!!!!!!!" offer="Congradulations!!! You have selected a Tier 2 Prize!!!\n\nCompete in more server events for your chance to win even more vouchers!!!!!!!!!\n\nYou will be rewarded 10 skill points for your Tier 2 prize"
+    icon="ui_game_symbol_knife" repeatable="true" category_key="challenge" difficulty="easy">
+    <reward type="SkillPoints" value="10" />
+  </quest>
+  <quest id="UltimateChampTier3" name="UltimateChampTier3" subtitle="I'm a Winner" description="Congradulations!!! You have select a Tier 1 Prize!!!\n\nCompete in more sever events for your chance to win even more vouchers!!!!" offer="Congradulations!!! You have selected a Tier 3 Prize!!!\n\nCompete in more server events for your chance to win even more vouchers!!!!!!!!!\n\nYou will be rewarded 15 skill points for your Tier 3 prize"
+    icon="ui_game_symbol_knife" repeatable="true" category_key="challenge" difficulty="easy">
+    <reward type="SkillPoints" value="15" />
+  </quest>
+  <quest id="UltimateChampTier4" name="UltimateChampTier4" subtitle="I'm a Winner" description="Congradulations!!! You have select a Tier 1 Prize!!!\n\nCompete in more sever events for your chance to win even more vouchers!!!!" offer="Congradulations!!! You have selected a Tier 4 Prize!!!\n\nCompete in more server events for your chance to win even more vouchers!!!!!!!!!\n\nYou will be rewarded 20 skill points for your Tier 4 prize"
+    icon="ui_game_symbol_knife" repeatable="true" category_key="challenge" difficulty="easy">
+    <reward type="SkillPoints" value="20" />
+  </quest>
+  <quest id="UltimateChampTier5" name="UltimateChampTier5" subtitle="I'm a Winner" description="Congradulations!!! You have select a Tier 1 Prize!!!\n\nCompete in more sever events for your chance to win even more vouchers!!!!" offer="Congradulations!!! You have select a Tier 5 Prize!!!\nCompete in more server events for your chance to win even more vouchers!!!!!!!!\n.You will be rewarded your choice of weapon and ammo for your Tier 5 prize"
+    icon="ui_game_symbol_knife" repeatable="true" category_key="challenge" difficulty="easy">
+    <reward type="Item" id="GunChampVoucher" />
+    <reward type="Item" id="AmmoChampVoucher" />
+  </quest>
+
+  <quest id="AK47Voucher" name="AK47Voucher" subtitle="Tier 5 Champion" description="Congradulations!!! You have selected the AK 47 click accept and check your bag" offer="Congradulations!!! You have selected the AK 47 click accept and check your bag"
+	icon="ui_game_symbol_knife" repeatable="true" category_key="challenge" difficulty="easy">
+    <reward type="Item" id="gunAK47" value="600" />
+  </quest>
+  <quest id="SniperRifleVoucher" name="SniperRifleVoucher" subtitle="Tier 5 Champion" description="Congradulations!!! You have selected the Sniper Rifle click accept and check your bag" offer="Congradulations!!! You have selected the Sniper Rifle click accept and check your bag"
+    icon="ui_game_symbol_knife" repeatable="true" category_key="challenge" difficulty="easy">
+    <reward type="Item" id="gunSniperRifle" value="600" />
+  </quest>
+  <quest id="44MagnumVoucher" name="44MagnumVoucher" subtitle="Tier 5 Champion" description="Congradulations!!! You have selected the 44 Magnum click accept and check your bag" offer="Congradulations!!! You have selected the 44 Magnum click accept and check your bag"
+    icon="ui_game_symbol_knife" repeatable="true" category_key="challenge" difficulty="easy">
+    <reward type="Item" id="gun44Magnum" value="600" />
+  </quest>
+  <quest id="PistolVoucher" name="PistolVoucher" subtitle="Tier 5 Champion" description="Congradulations!!! You have selected the Pistol click accept and check your bag" offer="Congradulations!!! You have selected the Pistol click accept and check your bag"
+    icon="ui_game_symbol_knife" repeatable="true" category_key="challenge" difficulty="easy">
+    <reward type="Item" id="gunPistol" value="600" />
+  </quest>
+  <quest id="AugerVoucher" name="AugerVoucher" subtitle="Tier 5 Champion" description="Congradulations!!! You have selected the Auger click accept and check your bag" offer="Congradulations!!! You have selected the Auger click accept and check your bage"
+    icon="ui_game_symbol_knife" repeatable="true" category_key="challenge" difficulty="easy">
+    <reward type="Item" id="auger" value="600" />
+  </quest>
+  <quest id="CompoundBowVoucher" name="CompoundBowVoucher" subtitle="Tier 5 Champion" description="Congradulations!!! You have selected the Compound Bow click accept and check your bag" offer="Congradulations!!! You have selected the Compound Bow click accept and check your bag"
+	icon="ui_game_symbol_knife" repeatable="true" category_key="challenge" difficulty="easy">
+    <reward type="Item" id="compoundBow" value="600" />
+  </quest>
+  <quest id="ChainsawVoucher" name="ChainsawVoucher" subtitle="Tier 5 Champion" description="Congradulations!!! You have selected the Chainsaw click accept and check your bag" offer="Congradulations!!! You have selected the Chainsaw click accept and check your bag"
+    icon="ui_game_symbol_knife" repeatable="true" category_key="challenge" difficulty="easy">
+    <reward type="Item" id="chainsaw" value="600" />
+  </quest>
+  <quest id="HuntingRifleVoucher" name="HuntingRifleVoucher" subtitle="Tier 5 Champion" description="Congradulations!!! You have selected the Hunting Rifle click accept and check your bag!" offer="Congradulations!!! You have selected the Hunting Rifle click accept and check your bag"
+    icon="ui_game_symbol_knife" repeatable="true" category_key="challenge" difficulty="easy">
+    <reward type="Item" id="gunHuntingRifle" value="600" />
+  </quest>
+  <quest id="SMGVoucher" name="SMGVoucher" subtitle="Tier 5 Champion" description="Congradulations!!! You have selected the SMG click accept and check your bag" offer="Congradulations!!! You have selected the SMG click accept and check your bag"
+    icon="ui_game_symbol_knife" repeatable="true" category_key="challenge" difficulty="easy">
+    <reward type="Item" id="gunMP5" value="600" />
+  </quest>
+  <quest id="ShotgunVoucher" name="ShotgunVoucher" subtitle="Tier 5 Champion" description="Congradulations!!! You have selected the Shotgun click accept and check your bag" offer="Congradulations!!! You have selected the Shotgun click accept and check your bag"
+    icon="ui_game_symbol_knife" repeatable="true" category_key="challenge" difficulty="easy">
+    <reward type="Item" id="gunPumpShotgun" value="600" />
+  </quest>
+  <quest id="SawwedoffShotgunVoucher" name="SawwedoffShotgunVoucher" subtitle="Tier 5 Champion" description="Congradulations!!! You have selected the Sawwed-off Shotgun click accept and check your bag" offer="Congradulations!!! You have selected the Sawwed-off Shotgun click accept and check your bag"
+    icon="ui_game_symbol_knife" repeatable="true" category_key="challenge" difficulty="easy">
+    <reward type="Item" id="gunSawedOffPumpShotgun" value="600" />
+  </quest>
+
+  <quest id="762mmAmmoVoucher" name="762mmAmmoVoucher" subtitle="Tier 5 Champion" description="Congradulations!!! You have selected the 762mm Ammo click accept and check your bag" offer="Congradulations!!! You have selected the 762mm Ammo click accept and check your bag"
+    icon="ui_game_symbol_knife" repeatable="true" category_key="challenge" difficulty="easy">
+    <reward type="Item" id="762mmBullet" value="500" />
+  </quest>
+  <quest id="9mmAmmoVoucher" name="9mmAmmoVoucher" subtitle="Tier 5 Champion" description="Congradulations!!! You have selected the 9mm Ammo click accept and check your bag" offer="Congradulations!!! You have selected the 9mm Ammo click accept and check your bag"
+	icon="ui_game_symbol_knife" repeatable="true" category_key="challenge" difficulty="easy">
+    <reward type="Item" id="9mmBullet" value="500" />
+  </quest>
+  <quest id="steelArrowVoucher" name="steelArrowVoucher" subtitle="Tier 5 Champion" description="Congradulations!!! You have selected the Steel Arrows click accept and check your bag" offer="Congradulations!!! You have selected the Steel Arrows click accept and check your bag"
+    icon="ui_game_symbol_knife" repeatable="true" category_key="challenge" difficulty="easy">
+    <reward type="Item" id="steelArrow" value="500" />
+  </quest>
+  <quest id="44AmmoVoucher" name="44AmmoVoucher" subtitle="Tier 5 Champion" description="Congradulations!!! You have selected the 44 Ammo click accept and check your bag" offer="Congradulations!!! You have selected the 44Ammo click accept and check your bag"
+    icon="ui_game_symbol_knife" repeatable="true" category_key="challenge" difficulty="easy">
+    <reward type="Item" id="44MagBullet" value="500" />
+  </quest>
+  <quest id="GasVoucher" name="GasVoucher" subtitle="Tier 5 Champion" description="Congradulations!!! You have selected the Gas click accept and check your bag" offer="Congradulations!!! You have selected the Gas click accept and check your bag"
+    icon="ui_game_symbol_knife" repeatable="true" category_key="challenge" difficulty="easy">
+    <reward type="Item" id="gasCan" value="2500" />
+  </quest>
+  <quest id="ShotgunAmmoVoucher" name="ShotgunAmmoVoucher" subtitle="Tier 5 Champion" description="Congradulations!!! You have selected the Shotgun Ammo click accept and check your bag" offer="Congradulations!!! You have selected the Shotgun Ammo click accept and check your bag"
+    icon="ui_game_symbol_knife" repeatable="true" category_key="challenge" difficulty="easy">
+    <reward type="Item" id="shotgunShell" value="500" />
+  </quest>
 </quests>

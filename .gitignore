@@ -249,6 +249,7 @@ ModelManifest.xml
 /Data/(A16.1 b1) Config/Mod Failure
 Schematics
 SinMod-A16v1
+Comparefile
 
 # ignore file type
 *.rar
@@ -258,3 +259,4 @@ SinMod-A16v1
 7 Days To Die (A16) - SinMod.csproj
 7 Days To Die (A16) - SinMod.sln
 *App.config
+/Data/Config
