@@ -9837,8 +9837,10 @@ Mesh files no longer used:
   </item>
 
   <item id="1435" name="casinoCoin">
+    <property name="Degradation" value="200" param1="true" />
     <property name="Meshfile" value="Items/Misc/casino_coinPrefab"/>
-    <property name="Material" value="organic"/>
+    <property name="Material" value="brass"/>
+    <property name="Weight" value="1" />
     <property name="HoldType" value="21"/>
     <property name="Stacknumber" value="20000"/>
     <!-- STK resource -->
