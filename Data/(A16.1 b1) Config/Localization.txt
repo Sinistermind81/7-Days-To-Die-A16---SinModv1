@@ -111,7 +111,7 @@ goDayLengthDesc,UI,Menu,EnChanged KgNone,How long it takes for 24 hours to pass 
 lblCategoryScavenging,UI,Tooltip,EnChanged KgNone,Scavenging/Trading,Glanage,Plünderung,,Carroñar
 itemTooltipFocusedOne,UI,Use Prompt,EnChanged KgNone,<{0}> Collect: {1},<{0}> pour récupérer {1},<{0}> Sammle {1},,<{0}> Recoge {1}
 itemTooltipFocusedSeveral,UI,Use Prompt,EnChanged KgNone,<{0}> Collect: {2} of {1},<{0}> pour récupérer {1} sur {2},<{0}> Sammle {2} von: {1},,<{0}> Recoge {2} de {1}
-cannotBreatheTooltip,buffs,Buff,EnNone FrNone GrNone KgNone SpNone,,,,,
+cannotBreatheTooltip,buffs,Buff,EnChanged,You cannot breathe.,,,,
 freshAirDesc,buffs,Buff,EnNone FrNone GrNone KgNone SpNone,,,,,
 freshAirTooltip,buffs,Buff,EnNone FrNone GrNone KgNone SpNone,,,,,
 InstantSickDrunk,buffs,Buff,EnNone FrNone GrNone KgNone SpNone,,,,,
@@ -978,9 +978,9 @@ drunkDesc,buffs,Buff,KgNone,You are drunk.,Vous êtes ivre.,Du bist betrunken.,,
 drunkTooltip,buffs,Buff,KgNone,You are drunk. There may be a duration but you can't figure it out.,"Vous êtes ivre. Les effets ont une durée limitée, mais vous ne la connaissez pas.","Du bist betrunken. Dies hält vielleicht eine gewisse Zeit an, aber du kannst nicht rauskriegen, wie lange.",,"Estás borracho. Puede que solo sea durante un rato, pero no sabes cuánto durará."
 dysentery,buffs,Buff,KgNone,Dysentery 1,Dysenterie 1,Dysenterie 1,,Disentería 1
 dysentery2,buffs,Buff,KgNone,Dysentery 2,Dysenterie 2,Dysenterie 2,,Disentería 2
-dysentery2Desc,buffs,Buff,KgNone,You feel nauseated and have bloody diarrhea. Use antibiotics to cure the sickness.,Vous avez la nausée et souffrez d'une diarrhée sanglante. Utilisez des antibiotiques pour vous soigner.,"Dir ist übel und du hast blutigen Durchfall. Benutze Antibiotika, um die Krankheit zu heilen.",,Tienes náuseas y diarrea con sangre. Usa antibióticos para curar la enfermedad.
+dysentery2Desc,buffs,Buff,EnChanged,You feel nauseated and have bloody diarrhea. Use antibiotics to cure the sickness... or die.,Vous avez la nausée et souffrez d'une diarrhée sanglante. Utilisez des antibiotiques pour vous soigner.,"Dir ist übel und du hast blutigen Durchfall. Benutze Antibiotika, um die Krankheit zu heilen.",,Tienes náuseas y diarrea con sangre. Usa antibióticos para curar la enfermedad.
 dysentery2Tooltip,buffs,Buff,KgNone,You feel nauseated and have bloody diarrhea. Use antibiotics to cure the sickness.,Vous avez la nausée et souffrez d'une diarrhée sanglante. Utilisez des antibiotiques pour vous soigner.,"Dir ist übel und du hast blutigen Durchfall. Benutze Antibiotika, um die Krankheit zu heilen.",,Tienes náuseas y diarrea con sangre. Usa antibióticos para curar la enfermedad.
-dysenteryDesc,buffs,Buff,KgNone,You feel sick to your stomach and have diarrhea. Goldenrod tea may help.,Vous avez envie de vomir et la diarrhée. Boire du thé de gerbe d'or pourrait vous aider.,Dir ist übel und du hast Durchfall. Goldrutentee könnte helfen.,,Te duele la barriga y tienes diarrea. El té de vara de oro puede ayudarte.
+dysenteryDesc,buffs,Buff,EnChanged,You feel sick to your stomach and have diarrhea. Goldenrod tea may help. Dysentery is fatal if left untreated.,Vous avez envie de vomir et la diarrhée. Boire du thé de gerbe d'or pourrait vous aider.,Dir ist übel und du hast Durchfall. Goldrutentee könnte helfen.,,Te duele la barriga y tienes diarrea. El té de vara de oro puede ayudarte.
 dysenteryTooltip,buffs,Buff,KgNone,You feel sick to your stomach and have diarrhea. Goldenrod tea may help.,Vous avez envie de vomir et la diarrhée. Boire du thé de gerbe d'or pourrait vous aider.,Dir ist übel und du hast Durchfall. Goldrutentee könnte helfen.,,Te duele la barriga y tienes diarrea. El té de vara de oro puede ayudarte.
 firstAid,buffs,Buff,KgNone,First Aid,Premiers soins,Erste Hilfe,,Primeros auxilios
 firstAidDesc,buffs,Buff,KgNone,You applied a first aid bandage and are now healing.,Vous avez utilisé un bandage médical et êtes en train de guérir.,Du hast einen Erste-Hilfe-Verband eingesetzt und wirst jetzt geheilt.,,Te colocaste un vendaje de primeros auxilios y te estás curando.
@@ -1436,7 +1436,7 @@ canDogfoodDesc,items,Food,KgNone,You always wished for the life of a dog. Enjoy!
 canHam,items,Food,KgNone,Can of Ham,Conserve de jambon,Dosenfleisch,,Lata de jamón
 canHamDesc,items,Food,KgNone,A can of high quality Shamway ham the number 1 maker of meat-like products. The lunch of champions.,"Conserve de jambon de très bonne qualité de la marque Shamway, le top du top des ersatz de viande. Le déjeuner des champions.","Eine Dose mit Qualitätsschinken von Shamway, dem Marktführer in der Sparte fleischähnliche Produkte. Ein Mahl für Champions.",,"Una lata de jamón Shamway de alta calidad, del productor número 1 de productos cárnicos. El almuerzo de los campeones."
 canLamb,items,Food,KgNone,Lamb Rations,Rations d'agneau,Lamm-Ration,,Porción de cordero
-canLambDesc,items,Food,KgNone,Lamb rations are great when the world has ended and your on the lamb.,Les rations d'agneau sont parfaites pour ceux qui sont loin d'être doux comme des agneaux pendant l'apocalypse.,"Lamm-Rationen sind toll, wenn die Welt untergegangen ist und du das Weite suchst.",,Las porciones de cordero son geniales cuando el mundo se ha acabado y estás a la fuga.
+canLambDesc,items,Food,KgNone,Lamb rations are great when the world has ended and you're on the lamb.,Les rations d'agneau sont parfaites pour ceux qui sont loin d'être doux comme des agneaux pendant l'apocalypse.,"Lamm-Rationen sind toll, wenn die Welt untergegangen ist und du das Weite suchst.",,Las porciones de cordero son geniales cuando el mundo se ha acabado y estás a la fuga.
 canMiso,items,Food,KgNone,Can of Miso,Conserve de miso,Dose Misosuppe,,Lata de miso
 canMisoDesc,items,Food,KgNone,It's time to soup it up with some Miso soup mmm mmm good.,C'est l'heure de la soupe miso. Miam miam.,"Eine leckere Misosuppe ist jetzt angesagt. Mmmmm, lecker.",,"Es hora de tomar algo de sopa de miso. ¡Mmm, deliciosa!"
 canMurkyWater,items,Food,KgNone,Can of Murky Water,Conserve d'eau trouble,Konserve mit trübem Wasser,,Lata de agua turbia
@@ -4581,6 +4581,7 @@ xuiDebugMenuPhysicsActive,,,New,Physics Active,,,,
 xuiDebugMenuTickingActive,,,New,Ticking Active,,,,
 xuiDebugMenuDirectorNodes,,,New,Director Nodes,,,,
 xuiDebugMenuShowStability,,,New,Show Stability,,,,
+xuiDebugMenuShowStabilityGlue,,,New,Show Stability Glue,,,,
 xuiDebugMenuDecorations,,,New,Decorations,,,,
 xuiDebugMenuEntityTasks,,,New,Entity Tasks,,,,
 xuiDebugMenuShowLightPerf,,,New,Show Light Perf.,,,,
@@ -4889,6 +4890,22 @@ flagstoneWedgeTipStairs,blocks,Block,New,Flagstone Wedge Tip Stairs,,,,
 macheteBlade,items,Part,New,Machete Blade,,Machetenklinge,,
 macheteBladeDesc,items,Part,New,Used for crafting a machete.,,Wird gebraucht um eine Machete herzustellen.,,
 teInUse,UI,Misc,New,Currently In Use,Currently In Use,Currently In Use,,
+ttCantPickupInUse,UI,Tooltip,New,This cannot be picked up while it is in use.,,,,
+woodFrameHalf,blocks,Block,New,Wood Frame 1/2 Block,,,,
+solidWoodFrameHalf,blocks,Block,New,Solid Wood Frame 1/2 Block,,,,
+rWoodHalf,blocks,Block,New,Reinforced Wood 1/2 Block,,,,
+rWoodMetalHalf,blocks,Block,New,Reinforced Wood 1/2 Block,,,,
+scrapIronFrameHalf,blocks,Block,New,Scrap Iron Frame 1/2 Block,,,,
+solidScrapIronFrameHalf,blocks,Block,New,Solid Scrap Iron 1/2 Block,,,,
+scrapIronHalf,blocks,Block,New,Scrap Iron 1/2 Block,,,,
+rScrapIronHalf,blocks,Block,New,Reinforced Scrap Iron 1/2 Block,,,,
+xuiExpires,UI,Menu,New,Expires,,,,
+inpActGuiLeftclick,UI,Controls Dialog,,UI primary click,,,,
+inpActGuiRightclick,UI,Controls Dialog,,UI secondary click,,,,
+ttBedrollGone,UI,Tooltip,New,Your bedroll is gone,,Dein Schlafsack ist verschwunden,,
+extinguishFireBuffName,buffs,Buff,New,Extinguish Fire,,Lösche Feuer,,
+extinguishFireBuffDesc,buffs,Buff,New,If you happen to be on fire then this will put out the fire and prevent another while the buff remains active.,,Solltest Du in Flammen stehen dann löscht dies das Feuer und verhindert ein neues solange der Effekt aktiv ist.,,
+DroppedLootContainer,entityclasses,Entity Info,New,Dropped Loot,,,,
 
 Admin_superWrench,items,Item Melee,,Admin Super Wrench,,
 Admin_SuperDigger,items,Item Melee,,Admin Super Digger,,

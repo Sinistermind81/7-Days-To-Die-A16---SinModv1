@@ -176,7 +176,8 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
 
 <buff id="MetabolizeBeer" buffif="beers greater 0" debuffif="beers less 1" actions="increment(beers, -1, 100t, 0, 0);min(beers, 0)"/>
 
-<buff id="Buzzed" mutex="Hangover,Drunk,SickDrunk,AlcoholPoisoning" duration="0" buffif="beers greater 0" debuffif="beers less 1" causes="beer,grainAlcohol"
+  <!-- base stamina regen = 0.4 /s -->
+  <buff id="Buzzed" mutex="Hangover,Drunk,SickDrunk,AlcoholPoisoning" duration="0" buffif="beers greater 0" debuffif="beers less 1" causes="beer,grainAlcohol"
 	type="staminaup" icon="ui_game_symbol_beer" name_key="beerBuzz" description_key="beerBuzzDesc" tooltip_key="beerBuzzTooltip">
 	<modify id="0" stat="stamina" amount="2" rate="1"/>
 </buff>
@@ -214,6 +215,7 @@ The "MetabolizeBeer" buff will slowly reduce the beer variable.
 	<modify id="1" stat="health" amount="-1" rate="1" type="bleeding"/>
 </buff>
 
+  <!-- base stamina regen = 0.4 /s -->
 <buff id="CoffeeStaminaBoost" duration="180" stack="extend" type="staminaup" icon="ui_game_symbol_coffee"
 	name_key="caffeineBuzz" description_key="caffeineBuzzDesc" tooltip_key="caffeineBuzzTooltip" causes="coffee">
 	<modify id="0" stat="stamina" amount="2" rate="1"/>

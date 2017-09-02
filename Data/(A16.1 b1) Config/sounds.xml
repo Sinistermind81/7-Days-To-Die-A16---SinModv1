@@ -1145,8 +1145,6 @@
     <MaxRepeatRate name="0.01"/>
   </SoundDataNode>
 
-
-
   <SoundDataNode name="vulturealert"> <AudioSource name="Sounds/AudioSource_Creatures"/>
 	<Noise ID="2" range="7" volume="11" time="4" muffled_when_crouched="0.5"/>
 	<AudioClip ClipName="Sounds/Animals/Vulture/vulturealert1"/>

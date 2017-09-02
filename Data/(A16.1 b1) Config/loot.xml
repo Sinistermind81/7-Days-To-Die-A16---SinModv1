@@ -1022,9 +1022,9 @@
 <lootgroup name="weaponsMilitaryGuns+ammo">
 	<item group="weaponsMilitaryParts"/>
 	<item group="weaponsMP5+ammo" prob="0.15"/>
-	<item group="weaponsSniperRifle+ammo" prob="0.15"/>
-	<item group="weaponsRocketLauncher+ammo" prob="0.05"/>
-  <item group="weaponsak47+ammo" prob="0.05" />
+	<item group="weaponsAK47+ammo" prob="0.15"/>
+	<item group="weaponsSniperRifle+ammo" prob="0.05"/>
+  <item group="weaponsRocketLauncher+ammo" prob="0.05" />
 </lootgroup>
 
   <lootgroup name="specialAmmo">

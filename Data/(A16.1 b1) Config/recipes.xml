@@ -621,7 +621,6 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
     <ingredient name="mechanicalParts" count="2"/>
     <ingredient name="electricParts" count="8"/>
     <ingredient name="electronicParts" count="2"/>
-    <ingredient name="electricalWires" count="4"/>
   </recipe>
 
   <recipe name="cntFridgeBottom" count="1" craft_area="workbench">
@@ -630,7 +629,6 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
     <ingredient name="mechanicalParts" count="1"/>
     <ingredient name="electricParts" count="4"/>
     <ingredient name="electronicParts" count="1"/>
-    <ingredient name="electricalWires" count="4"/>
   </recipe>
 
   <recipe name="cntFridgeTop" count="1" craft_area="workbench">
@@ -639,7 +637,6 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
     <ingredient name="mechanicalParts" count="1"/>
     <ingredient name="electricParts" count="4"/>
     <ingredient name="electronicParts" count="1"/>
-    <ingredient name="electricalWires" count="1"/>
   </recipe>
 
   <recipe name="cntMailBox01" count="1">
@@ -963,7 +960,6 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
     <ingredient name="electricParts" count="3"/>
     <ingredient name="ductTape" count="4"/>
     <ingredient name="scrapPlastics" count="4"/>
-    <ingredient name="electricalWires" count="2"/>
   </recipe>
 
   <recipe name="explodingCrossbowBolt" count="1" craft_area="workbench">
@@ -1666,7 +1662,6 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
     <ingredient name="headlight" count="1"/>
     <ingredient name="electricParts" count="5"/>
     <ingredient name="shortMetalPipe" count="2"/>
-    <ingredient name="electricalWires" count="3"/>
   </recipe>
 
   <recipe name="minibikeSeat" count="1" craft_area="workbench">
@@ -1904,7 +1899,6 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
     <ingredient name="electricParts" count="8"/>
     <ingredient name="ductTape" count="5"/>
     <ingredient name="scrapPlastics" count="4"/>
-    <ingredient name="electricalWires" count="1"/>
   </recipe>
 
   <recipe name="scrapHelmet" count="1">

@@ -113,6 +113,7 @@ Mesh files no longer used:
     <property name="Meshfile" value="Items/Weapons/Melee/Club/Club_Wood_BarbedPrefab"/>
     <property name="RepairTools" value="forgedIron"/>
     <property name="EconomicValue" value="192"/>
+    <property name="SellableToTrader" value="true"/>
     <property class="Action0">
       <!-- AttackAction -->
       <property name="Stamina_usage" value="6.5"/>
@@ -137,6 +138,7 @@ Mesh files no longer used:
     <property name="Meshfile" value="Items/Weapons/Melee/Club/Club_Wood_SpikedPrefab"/>
     <property name="RepairTools" value="forgedIron"/>
     <property name="EconomicValue" value="300"/>
+    <property name="SellableToTrader" value="true"/>
     <property class="Action0">
       <!-- AttackAction -->
       <property name="Stamina_usage" value="8.5"/>
@@ -1375,6 +1377,19 @@ Mesh files no longer used:
     </property>
   </item>
 
+  <item id="89" name="handZombieBurningCrawler">
+    <property name="Extends" value="handMaster"/>
+    <property name="CreativeMode" value="None"/>
+    <property name="HoldType" value="24"/>
+    <property class="Action0">
+      <property name="DamageEntity" value="8"/>
+      <property name="DamageBlock" value="2"/>
+      <property name="Delay" value="2.0"/>
+      <property name="Buff" value="sprainedLeg,infection,burningSmall"/>
+      <property name="Buff_chance" value="0.2,0.025,0.5"/>
+    </property>
+  </item>
+  
   <item id="90" name="handZombieFeral">
     <property name="Extends" value="handZombie"/>
     <property name="CreativeMode" value="None"/>
@@ -6918,7 +6933,7 @@ Mesh files no longer used:
       <property name="Gain_stamina" value="30"/>
       <property name="Gain_wellness" value="0.1"/>
       <property name="Sound_start" value="player_drinking"/>
-      <property name="Buff" value="yuccaJuiceCooling"/>
+      <property name="Buff" value="yuccaJuiceCooling,extinguishFireBuff"/>
       <property name="Create_item" value="emptyJar"/>
     </property>
     <property name="Group" value="Food/Cooking"/>
@@ -7631,7 +7646,7 @@ Mesh files no longer used:
       <property name="Gain_sickness" value="15"/>
       <property name="Gain_wellness" value="-0.1"/>
       <property name="Sound_start" value="player_drinking"/>
-      <property name="Buff" value="dysentery"/>
+      <property name="Buff" value="dysentery,extinguishFireBuff"/>
       <property name="Buff_chance" value="0.5"/>
       <property name="Debuff" value="burningSmall,burning,burningMolotov"/>
       <property name="Create_item" value="canEmpty"/>
@@ -7656,7 +7671,7 @@ Mesh files no longer used:
       <property name="Gain_food" value="0"/>
       <property name="Gain_water" value="20"/>
       <property name="Sound_start" value="player_drinking"/>
-      <property name="Debuff" value="burningSmall,burning,burningMolotov"/>
+      <property name="Buff" value="extinguishFireBuff"/>
       <property name="Create_item" value="canEmpty"/>
     </property>
     <property name="Group" value="Food/Cooking"/>
@@ -10027,7 +10042,7 @@ Mesh files no longer used:
 
   <item id="1464" name="unit_stone">
     <property name="Extends" value="unit_iron"/>
-    <property name="CustomIcon" value="cobblestones"/>
+    <property name="CustomIcon" value="rockSmall"/>
     <property name="Material" value="stone"/>
     <property name="CreativeMode" value="None" />
   </item>
