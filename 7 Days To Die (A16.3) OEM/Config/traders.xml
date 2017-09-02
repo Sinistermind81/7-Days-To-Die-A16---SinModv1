@@ -290,13 +290,13 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="rocketLauncherSchematic"/>
 		</trader_item_group>
 
-    <trader_item_group name="weaponsCompoundBowParts">
-      <item name="partsCompoundBow_body"/>
-      <item name="partsCompoundBow_grip"/>
-      <item name="partsCompoundBow_parts"/>
-      <item name="partsCompoundBow_string"/>
-    </trader_item_group>
-    
+		<trader_item_group name="weaponsCompoundBowParts">
+			<item name="partsCompoundBow_body"/>
+			<item name="partsCompoundBow_grip"/>
+			<item name="partsCompoundBow_parts"/>
+			<item name="partsCompoundBow_string"/>
+		</trader_item_group>
+
 		<trader_item_group name="weaponsMelee">
 			<item name="clubIron"/>
 			<item name="clubBarbed" prob="0.7"/>
@@ -436,13 +436,13 @@ quality_mod: adjusts the price range of all items with a quality level.
 		<trader_item_group name="weaponsMixedParts">
 			<item group="weaponsCommonParts" prob="3"/>
 			<item group="weaponsMilitaryParts" prob="1"/>
-      <item group="weaponsCompoundBowParts" prob="1"/>
+			<item group="weaponsCompoundBowParts" prob="1"/>
 		</trader_item_group>
 
 		<trader_item_group name="weaponsGunsMixed">
 			<item group="weaponsGunsCommon" prob="3"/>
 			<item group="weaponsGunsMilitary" prob="1"/>
-      <item name="compoundBow" prob="0.15"/>
+			<item name="compoundBow" prob="0.15"/>
 		</trader_item_group>
 
 		<trader_item_group name="ammo">
@@ -750,7 +750,6 @@ quality_mod: adjusts the price range of all items with a quality level.
 		<trader_item_group name="stashOnlyItemsLow" count="1">
 			<item name="beerBook" count="1"/>
 			<item name="plantedHop1" count="1,5"/>
-			<item name="solarCell" count="1"/>
 			<item name="batterybankSchematic" count="1" prob="0.5"/>
 			<item name="autoTurret" count="1,2" prob="0.5"/>
 			<item name="shotgunTurret" count="1,2" prob="0.7"/>
@@ -759,296 +758,12 @@ quality_mod: adjusts the price range of all items with a quality level.
 		<trader_item_group name="stashOnlyItemsHigh" count="1">
 			<item name="beerBook" count="1"/>
 			<item name="plantedHop1" count="2,8"/>
-			<item name="solarbank" count="1"/>
 			<item name="solarCell" count="1,2"/>
 			<item name="batterybankSchematic" count="1" prob="0.5"/>
 			<item name="autoTurret" count="1,2" prob="0.5"/>
 			<item name="shotgunTurret" count="1,3" prob="0.7"/>
 		</trader_item_group>
 
-    <!--SinMod Shopping Center-->
-    <trader_item_group name="leatherGear" count="all">
-      <!--Leather Red -->
-      <item name="leatherHoodRed"/>
-      <item name="leatherJacketRed"/>
-      <item name="leatherPantsRed"/>
-      <item name="leatherBootsRed"/>
-      <item name="leatherGlovesRed"/>
-      <!--Leather Blue -->
-      <item name="leatherHoodBlue"/>
-      <item name="leatherJacketBlue"/>
-      <item name="leatherPantsBlue"/>
-      <item name="leatherBootsBlue"/>
-      <item name="leatherGlovesBlue"/>
-      <!--Leather Green -->
-      <item name="leatherHoodGreen"/>
-      <item name="leatherJacketGreen"/>
-      <item name="leatherPantsGreen"/>
-      <item name="leatherBootsGreen"/>
-      <item name="leatherGlovesGreen"/>
-      <!--Leather Purple -->
-      <item name="leatherHoodPurple"/>
-      <item name="leatherJacketPurple"/>
-      <item name="leatherPantsPurple"/>
-      <item name="leatherBootsPurple"/>
-      <item name="leatherGlovesPurple"/>
-      <!--Leather Yellow -->
-      <item name="leatherHoodYellow"/>
-      <item name="leatherJacketYellow"/>
-      <item name="leatherPantsYellow"/>
-      <item name="leatherBootsYellow"/>
-      <item name="leatherGlovesYellow"/>
-      <!--Leather Orange -->
-      <item name="leatherHoodOrange"/>
-      <item name="leatherJacketOrange"/>
-      <item name="leatherPantsOrange"/>
-      <item name="leatherBootsOrange"/>
-      <item name="leatherGlovesOrange"/>
-      <!--Leather Black -->
-      <item name="leatherJacketBlack"/>
-      <item name="leatherPantsBlack"/>
-      <item name="leatherBootsBlack"/>
-      <item name="leatherGlovesBlack"/>
-    </trader_item_group>
-
-    <trader_item_group name="ironGear" count="all">
-      <item name="ironHelmetRed"/>
-      <item name="ironChestArmorRed"/>
-      <item name="ironLegArmorRed"/>
-      <item name="ironBootsRed"/>
-      <item name="ironGlovesRed"/>
-      <!--Iron Blue -->
-      <item name="ironHelmetBlue"/>
-      <item name="ironChestArmorBlue"/>
-      <item name="ironLegArmorBlue"/>
-      <item name="ironBootsBlue"/>
-      <item name="ironGlovesBlue"/>
-      <!--Iron Green -->
-      <item name="ironHelmetGreen"/>
-      <item name="ironChestArmorGreen"/>
-      <item name="ironLegArmorGreen"/>
-      <item name="ironBootsGreen"/>
-      <item name="ironGlovesGreen"/>
-      <!--Iron Purple -->
-      <item name="ironHelmetPurple"/>
-      <item name="ironChestArmorPurple"/>
-      <item name="ironLegArmorPurple"/>
-      <item name="ironBootsPurple"/>
-      <item name="ironGlovesPurple"/>
-      <!--Iron Lime -->
-      <item name="ironHelmetLime"/>
-      <item name="ironChestArmorLime"/>
-      <item name="ironLegArmorLime"/>
-      <item name="ironBootsLime"/>
-      <item name="ironGlovesLime"/>
-      <!--Iron Orange -->
-      <item name="ironHelmetOrange"/>
-      <item name="ironChestArmorOrange"/>
-      <item name="ironLegArmorOrange"/>
-      <item name="ironBootsOrange"/>
-      <item name="ironGlovesOrange"/>
-      <!--Iron Black -->
-      <item name="ironHelmetBlack"/>
-      <item name="ironChestArmorBlack"/>
-      <item name="ironLegArmorBlack"/>
-      <item name="ironBootsBlack"/>
-      <item name="ironGlovesBlack"/>
-    </trader_item_group>
-
-    <trader_item_group name="scrapGear" count="all">
-      <!--Scrap Red -->
-      <item name="scrapHelmetRed"/>
-      <item name="scrapChestArmorRed"/>
-      <item name="scrapLegArmorRed"/>
-      <item name="scrapBootsRed"/>
-      <item name="scrapGlovesRed"/>
-      <!--Scrap Blue -->
-      <item name="scrapHelmetBlue"/>
-      <item name="scrapChestArmorBlue"/>
-      <item name="scrapLegArmorBlue"/>
-      <item name="scrapBootsBlue"/>
-      <item name="scrapGlovesBlue"/>
-      <!--Scrap Green -->
-      <item name="scrapHelmetGreen"/>
-      <item name="scrapChestArmorGreen"/>
-      <item name="scrapLegArmorGreen"/>
-      <item name="scrapBootsGreen"/>
-      <item name="scrapGlovesGreen"/>
-      <!--Scrap Purple -->
-      <item name="scrapHelmetPurple"/>
-      <item name="scrapChestArmorPurple"/>
-      <item name="scrapLegArmorPurple"/>
-      <item name="scrapBootsPurple"/>
-      <item name="scrapGlovesPurple"/>
-      <!--Scrap Lime -->
-      <item name="scrapHelmetLime"/>
-      <item name="scrapChestArmorLime"/>
-      <item name="scrapLegArmorLime"/>
-      <item name="scrapBootsLime"/>
-      <item name="scrapGlovesLime"/>
-      <!--Scrap Orange -->
-      <item name="scrapHelmetOrange"/>
-      <item name="scrapChestArmorOrange"/>
-      <item name="scrapLegArmorOrange"/>
-      <item name="scrapBootsOrange"/>
-      <item name="scrapGlovesOrange"/>
-      <!--Scrap Black -->
-      <item name="scrapHelmetBlack"/>
-      <item name="scrapChestArmorBlack"/>
-      <item name="scrapLegArmorBlack"/>
-      <item name="scrapBootsBlack"/>
-      <item name="scrapGlovesBlack"/>
-    </trader_item_group>
-
-    <trader_item_group name="clothGear" count="all">
-      <!--Cloth Red -->
-      <item name="clothHatRed"/>
-      <item name="clothJacketRed"/>
-      <item name="clothPantsRed"/>
-      <item name="clothBootsRed"/>
-      <item name="clothGlovesRed"/>
-      <!--Cloth Blue -->
-      <item name="clothHatBlue"/>
-      <item name="clothJacketBlue"/>
-      <item name="clothPantsBlue"/>
-      <item name="clothBootsBlue"/>
-      <item name="clothGlovesBlue"/>
-      <!--Cloth Green -->
-      <item name="clothHatGreen"/>
-      <item name="clothJacketGreen"/>
-      <item name="clothPantsGreen"/>
-      <item name="clothBootsGreen"/>
-      <item name="clothGlovesGreen"/>
-      <!--Cloth Purple -->
-      <item name="clothHatPurple"/>
-      <item name="clothJacketPurple"/>
-      <item name="clothPantsPurple"/>
-      <item name="clothBootsPurple"/>
-      <item name="clothGlovesPurple"/>
-      <!--Cloth Lime -->
-      <item name="clothHatLime"/>
-      <item name="clothJacketLime"/>
-      <item name="clothPantsLime"/>
-      <item name="clothBootsLime"/>
-      <item name="clothGlovesLime"/>
-      <!--Cloth Orange -->
-      <item name="clothHatOrange"/>
-      <item name="clothJacketOrange"/>
-      <item name="clothPantsOrange"/>
-      <item name="clothBootsOrange"/>
-      <item name="clothGlovesOrange"/>
-      <!--Cloth Black -->
-      <item name="clothHatBlack"/>
-      <item name="clothJacketBlack"/>
-      <item name="clothPantsBlack"/>
-      <item name="clothBootsBlack"/>
-      <item name="clothGlovesBlack"/>
-    </trader_item_group>
-
-    <trader_item_group name="hideGear" count="all">
-      <!--Hide Red -->
-      <item name="animalHideHoodRed"/>
-      <item name="animalHideChestArmorRed"/>
-      <item name="animalHideLegArmorRed"/>
-      <item name="animalHideBootsRed"/>
-      <item name="animalHideGlovesRed"/>
-      <!--Hide Blue -->
-      <item name="animalHideHoodBlue"/>
-      <item name="animalHideChestArmorBlue"/>
-      <item name="animalHideLegArmorBlue"/>
-      <item name="animalHideBootsBlue"/>
-      <item name="animalHideGlovesBlue"/>
-      <!--Hide Green -->
-      <item name="animalHideHoodGreen"/>
-      <item name="animalHideChestArmorGreen"/>
-      <item name="animalHideLegArmorGreen"/>
-      <item name="animalHideBootsGreen"/>
-      <item name="animalHideGlovesGreen"/>
-      <!--Hide Purple -->
-      <item name="animalHideHoodPurple"/>
-      <item name="animalHideChestArmorPurple"/>
-      <item name="animalHideLegArmorPurple"/>
-      <item name="animalHideBootsPurple"/>
-      <item name="animalHideGlovesPurple"/>
-      <!--Hide Lime-->
-      <item name="animalHideHoodLime"/>
-      <item name="animalHideChestArmorLime"/>
-      <item name="animalHideLegArmorLime"/>
-      <item name="animalHideBootsLime"/>
-      <item name="animalHideGlovesLime"/>
-      <!--Hide Orange -->
-      <item name="animalHideHoodOrange"/>
-      <item name="animalHideChestArmorOrange"/>
-      <item name="animalHideLegArmorOrange"/>
-      <item name="animalHideBootsOrange"/>
-      <item name="animalHideGlovesOrange"/>
-      <!--Hide Black -->
-      <item name="animalHideHoodBlack"/>
-      <item name="animalHideChestArmorBlack"/>
-      <item name="animalHideLegArmorBlack"/>
-      <item name="animalHideBootsBlack"/>
-      <item name="animalHideGlovesBlack"/>
-    </trader_item_group>
-
-    <trader_item_group name="jacketGear" count="all">
-      <!--Leather Duster Red -->
-      <item name="leatherDusterRed"/>
-      <!--Leather Duster Blue -->
-      <item name="leatherDusterBlue"/>
-      <!--Leather Duster Green -->
-      <item name="leatherDusterGreen"/>
-      <!--Leather Duster Purple -->
-      <item name="leatherDusterPurple"/>
-      <!--Leather Duster Lime-->
-      <item name="leatherDusterLime"/>
-      <!--Leather Duster Orange -->
-      <item name="leatherDusterOrange"/>
-    </trader_item_group>
-
-    <trader_item_group name="steelGear" count="all">
-      <!--Steel Red -->
-      <item name="steelHelmetRed"/>
-      <item name="steelChestplateRed"/>
-      <item name="steelLegsRed"/>
-      <item name="steelBootsRed"/>
-      <item name="steelGlovesRed"/>
-      <!--Steel Blue -->
-      <item name="steelHelmetBlue"/>
-      <item name="steelChestplateBlue"/>
-      <item name="steelLegsBlue"/>
-      <item name="steelBootsBlue"/>
-      <item name="steelGlovesBlue"/>
-      <!--Steel Green -->
-      <item name="steelHelmetGreen"/>
-      <item name="steelChestplateGreen"/>
-      <item name="steelLegsGreen"/>
-      <item name="steelBootsGreen"/>
-      <item name="steelGlovesGreen"/>
-      <!--Steel Purple -->
-      <item name="steelHelmetPurple"/>
-      <item name="steelChestplatePurple"/>
-      <item name="steelLegsPurple"/>
-      <item name="steelBootsPurple"/>
-      <item name="steelGlovesPurple"/>
-      <!--Steel Lime-->
-      <item name="steelHelmetLime"/>
-      <item name="steelChestplateLime"/>
-      <item name="steelLegsLime"/>
-      <item name="steelBootsLime"/>
-      <item name="steelGlovesLime"/>
-      <!--Steel Orange -->
-      <item name="steelHelmetOrange"/>
-      <item name="steelChestplateOrange"/>
-      <item name="steelLegsOrange"/>
-      <item name="steelBootsOrange"/>
-      <item name="steelGlovesOrange"/>
-      <!--Steel Black -->
-      <item name="steelHelmetBlack"/>
-      <item name="steelChestplateBlack"/>
-      <item name="steelLegsBlack"/>
-      <item name="steelBootsBlack"/>
-      <item name="steelGlovesBlack"/>
-    </trader_item_group>
 	</trader_item_groups>
 
 <!-- = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
@@ -1279,84 +994,4 @@ workstations
 	<!-- Rented - Vending Machine -->
 	<trader_info id="5" reset_interval="-1" override_buy_markup="1.0" override_sell_markup="1.0" allow_sell="false" rentable="true" rent_cost="2500" rent_time="30" />
 
-  <trader_info id="6" reset_interval="1" override_buy_markup="0" allow_sell="false" min_inventory="10" max_inventory="50" min_items_swapped="6" max_items_swapped="13">
-    <trader_items count="50">
-      <item name="vipBeer"/>
-    </trader_items>
-  </trader_info>
-
-  <!-- Merchant Delivery Box -->
-  <trader_info id="20" reset_interval="2" override_buy_markup="2.5" allow_sell="false" min_inventory="6" max_inventory="13" min_items_swapped="6" max_items_swapped="13">
-    <trader_items count="10">
-      <item name="bottledWater" count="1,2"/>
-      <item name="goldenRodTea" count="1,2"/>
-      <item name="redTea" count="1,2"/>
-      <item name="beer" count="1,2"/>
-      <item name="canSoup" count="1,2"/>
-      <item group="traderAlways"/>
-      <item group="traderGeneral" count="4,8"/>
-      <item group="generalResources" count="9,14"/>
-      <item group="constructionSupplies" count="2,8"/>
-      <item group="tools" count="0,2"/>
-      <item group="weaponsCommonParts" count="0,3"/>
-      <item group="weaponsMilitaryParts" count="1"/>
-      <item group="weaponsGunsCommon" count="1" prob="0.3"/>
-      <item group="weaponsGunsMilitary" count="1" prob="0.1"/>
-      <item group="ammo" count="2,3" prob="0.4"/>
-      <item group="heavyArmor" count="1" prob="0.4"/>
-      <item group="banditArmor" count="1" prob="0.1"/>
-      <item name="miningHelmet" prob="0.5"/>
-    </trader_items>
-  </trader_info>
-
-  <!-- Quest Board -->
-  <trader_info id="21" reset_interval="2" override_buy_markup="1.0" allow_sell="false" min_inventory="6" max_inventory="13" min_items_swapped="6" max_items_swapped="13">
-    <trader_items count="10">
-      <item group="questChallenge" count="1"/>
-    </trader_items>
-  </trader_info>
-  
-  <!--SinMod Gas Pump-->
-  <trader_info id="22" reset_interval="13" override_buy_markup="20" allow_sell="false" min_inventory="10" max_inventory="10" min_items_swapped="1" max_items_swapped="10">
-    <trader_items count="10">
-      <item name="gasCan" count="10000"/>
-    </trader_items>
-  </trader_info>
-
-  <!--SinMod Shopping Center-->
-  <trader_info id="25" reset_interval="5" override_buy_markup="5" allow_sell="false" min_inventory="6" max_inventory="50" min_items_swapped="6" max_items_swapped="25">
-    <trader_items count="20">
-      <item group="leatherGear" count="1"/>
-    </trader_items>
-  </trader_info>
-  <trader_info id="26" reset_interval="5" override_buy_markup="5" allow_sell="false" min_inventory="6" max_inventory="50" min_items_swapped="6" max_items_swapped="25">
-    <trader_items count="20">
-      <item group="clothGear" count="1"/>
-    </trader_items>
-  </trader_info>
-  <trader_info id="27" reset_interval="5" override_buy_markup="5" allow_sell="false" min_inventory="6" max_inventory="50" min_items_swapped="6" max_items_swapped="25">
-    <trader_items count="20">
-      <item group="hideGear" count="1"/>
-    </trader_items>
-  </trader_info>
-  <trader_info id="28" reset_interval="5" override_buy_markup="5" allow_sell="false" min_inventory="6" max_inventory="50" min_items_swapped="6" max_items_swapped="25">
-    <trader_items count="20">
-      <item group="ironGear" count="1"/>
-    </trader_items>
-  </trader_info>
-  <trader_info id="29" reset_interval="5" override_buy_markup="5" allow_sell="false" min_inventory="6" max_inventory="50" min_items_swapped="6" max_items_swapped="25">
-    <trader_items count="20">
-      <item group="scrapGear" count="1"/>
-    </trader_items>
-  </trader_info>
-  <trader_info id="30" reset_interval="5" override_buy_markup="5" allow_sell="false" min_inventory="6" max_inventory="50" min_items_swapped="6" max_items_swapped="25">
-    <trader_items count="20">
-      <item group="steelGear" count="1"/>
-    </trader_items>
-  </trader_info>
-  <trader_info id="31" reset_interval="5" override_buy_markup="5" allow_sell="false" min_inventory="6" max_inventory="50" min_items_swapped="6" max_items_swapped="25">
-    <trader_items count="10">
-      <item group="jacketGear" count="1"/>
-    </trader_items>
-  </trader_info>
 </traders>

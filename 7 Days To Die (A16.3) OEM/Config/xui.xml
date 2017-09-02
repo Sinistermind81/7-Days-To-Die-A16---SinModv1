@@ -60,16 +60,7 @@
 			<window name="windowOutput" />
 			<window name="windowNonPagingHeader" />
 		</window_group>
-
-    <window_group name="workstation_workstationOven" controller="XUiC_WorkstationWindowGroup">
-      <window name="windowCraftingList"/>
-      <window name="craftingInfoPanel"/>
-      <window name="windowCraftingQueue"/>
-      <window name="windowToolsCampfire" />
-      <window name="windowOutput" />
-      <window name="windowNonPagingHeader" />
-    </window_group>
-    
+		
 		<window_group name="looting" left_panel_valign_top="false" controller="XUiC_LootWindowGroup">
 			<window name="windowLooting"/>
 			<window name="windowNonPagingHeader" />
@@ -92,7 +83,6 @@
 		
 		<window_group name="compass" actionSet="false">
 			<window name="windowCompass" />
-      <window name="version" anchor="RightTop" />
 		</window_group>
 		
 		<window_group name="toolTip" actionSet="false">
@@ -138,8 +128,7 @@
 			<window name="mapArea" />
 			<window name="mapTracking" />
 			<window name="mapInvites" />
-      <window name="mapCords" />
-    </window_group>
+		</window_group>
 		
 		<window_group name="players">
 			<window name="players" />
