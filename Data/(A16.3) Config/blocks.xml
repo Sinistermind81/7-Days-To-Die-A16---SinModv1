@@ -4324,12 +4324,6 @@ group desc for stuff like metal siding
     <property name="Group" value="Building"/>
     <property name="DescriptionKey" value="metalTrussingBlockDesc"/>
     <property name="EconomicValue" value="20"/>
-    <property class="UpgradeBlock">
-      <property name="ToBlock" value="pouredConcreteBlock"/>
-      <property name="Item" value="concreteMix"/>
-      <property name="ItemCount" value="10"/>
-      <property name="UpgradeHitCount" value="4"/>
-    </property>
   </block>
 
   <block id="386" name="pouredConcreteHalf">
@@ -5023,8 +5017,7 @@ group desc for stuff like metal siding
     <property name="TraderID" value="22" />
     <property name="Buff" value="shockedBuff"/>
   </block>
-
-  <!--1 Free-->
+  
 
   <block id="442" name="cntVIPVendingMachine">
     <property name="Class" value="VendingMachine"/>
@@ -5043,7 +5036,6 @@ group desc for stuff like metal siding
 
   <block id="443" name="CarRespawner-AirBlockStage">
     <property name="CustomIcon" value="AdminDonotUse" />
-    <property name="CreativeMode" value="Dev"/>
     <property name="Class" value="PlantGrowing" />
     <property name="Material" value="airEnhanced" />
     <property name="Shape" value="Invisible" />
@@ -5060,7 +5052,6 @@ group desc for stuff like metal siding
   
   <block id="444" name="boulderairstage">
     <property name="CustomIcon" value="AdminDonotUse" />
-    <property name="CreativeMode" value="Dev"/>
     <property name="Class" value="PlantGrowing" />
     <property name="Material" value="airEnhanced" />
     <property name="Shape" value="Invisible" />

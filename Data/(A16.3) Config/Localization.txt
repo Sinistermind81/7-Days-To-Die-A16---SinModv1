@@ -5496,7 +5496,6 @@ steelLegsBlack,items,Item Clothes,,Steel Leg Armor (Black),,
 steelBootsBlack,items,Item Clothes,,Steel Boots (Black),,
 steelGlovesBlack,items,Item Clothes,,Steel Gloves (Black),,
 
-
 recipebookSinks,items,Item Book,,Plumbing 101,,
 recipebookSinksDesc,items,Item Book,,This book teaches you how to craft working sinks.,,
 recipebookSecurity2,items,Item Book,,Security Measures,,
@@ -5636,7 +5635,6 @@ bulletTumblerDesc,items,Item Tool,,"This tool can be used within the Armory to c
 shotgunShellCasing,items,Item Tool,,Shotgun Shell Casing,,
 shotgunShellCasingDesc,items,Item Tool,,"These casings can be used to craft shotgun shells.",,
 
-
 cntZombie,blocks,Loot Container,,Zombie Loot,,
 cntZombieFeral,blocks,Loot Container,,Feral Zombie Loot,,
 cntZombieMoe,blocks,Loot Container,,Bloated Zombie Loot,,
@@ -5737,27 +5735,34 @@ BugoutKeyDesc,items,Item Tool,,Use this to unlock your chosen bugout bag.,,
 ProfessionSelection,items,Item Tool,,Profession Selection,,
 ProfessionSelectionDesc,items,Item Tool,,Craft this item into the Profession you wish to start as.,,
 
-
 classHunterDesc,blocks,Block Building,,"Hunter's start off with a rifle and knowledge in rifles, traps and leatherworking.",,
 classHunterDesc2,blocks,Block Building,,"Hunter's start off with a bow and skills in leather tanning, archery, animal traps and a hunting knife.",,
+
 classBuilderDesc,blocks,Block Building,,"Builder's start off with a supply of wood, woodframes and a pistol.  They start with skills in carpentry, tool smithing and construction.",,
 classBuilderDesc2,blocks,Block Building,,"Builder's start off with a supply of wood, woodframes and a pistol. They start with skills in quicker crafting, tool smithing, hammer, workbench and construction tools.",,
+
 classRiflemanDesc,blocks,Block Building,,"The Rifleman starts off with a bolt rifle. He has superior skill in rifles.",,
+
 classVeteranDesc,blocks,Block Building,,"The Veteran starts off with army clothes and a SMG.",,
 classVeteranDesc2,blocks,Block Building,,"The Veteran starts off with army clothes and an Assault Rifle. Has superior skill in rifles and gun smithing.",,
+
 classBruiserDesc,blocks,Block Building,,"The Bruiser starts off with a spiked club and a sawed off shotgun. Skilled with melee weapons and shotguns for up-close encounters.",,
+
 classGunmanDesc,blocks,Block Building,,"The Gunman starts off with a 44Magnum and skill in pistols.",,
+
 classMinerDesc,blocks,Block Building,,"The Miner starts off with an pickaxe and pistol. Skilled in masonry, mining tools and blacksmithing.",,
 classMinerDesc2,blocks,Block Building,,"The Miner starts off with a pickaxe and pistol. Skilled in mining tools, armor smithing and auger.",,
+
 classSurvivorDesc,blocks,Block Building,,"The survivor starts off with a crossbow and more food supplies. Skilled in archery, scavenging and tool smithing.",,
 classSurvivorDesc2,blocks,Block Building,,"The survivor starts off with an iron crossbow and more food supplies. Skilled in archery, lockpicks, scavenging and tool smithing.",,
+
 classMedicDesc,blocks,Block Building,,"The medic starts off with extra medical supplies and a pistol. Skilled in medicine and science.",,
 classMedicDesc2,blocks,Block Building,,"The medic starts off with extra medical supplies and a pistol. Skilled in medicine, science and first aid.",,
+
 classWildcardDesc,blocks,Block Building,,"The wildcard class starts with only skill points and no specifically tailored gear. You can then build this class to match your preferences.",,
 
 clubBurning,items,Item Melee,,Burning Club,,
 clubBurningDesc,items,Item Melee,,A wooden club set on fire at a campfire. Won't last long but useful for a primitive weapon.,,
-
 
 legendaryClubSpiked,items,Item Melee,,Legendary Spiked Club,,
 legendaryClubSpikedDesc,items,Item Melee,,If the stories are to be believed this weapon was once used by Kalrath during his quest that lead to the great zombie purge in Northen York.,,
@@ -5773,7 +5778,6 @@ legendaryWrench,items,Item Melee,,Legendary Wrench,,
 legendaryWrenchDesc,items,Item Melee,,"The name Freeman is carved into the handle. You have a feeling this wrench has been used very unconventionally if the blood stains are any indication",,
 legendaryChainsaw,items,Item Tool,,Legendary Chainsaw,,
 legendaryChainsawDesc,items,Item Tool,,"The remains of flesh hanging from the chain make it clear what this chainsaw was used for. The disturbing thing is that the flesh looks too fresh to be from the undead.",,
-
 
 trapSteelSpikeDesc,blocks,Traps,,"Steel spike traps can damage, cripple, even kill enemies and last longer than their wooden variants. Can be upgraded further with gascans.",,
 trapSteelFireSpikeDesc,blocks,Traps,,"These steel spike traps have been fueled with gasoline and set up to ignite anyone or anything that comes into contact with them.",,
@@ -5816,8 +5820,6 @@ expMiscCrafting,items,Item,,Experience - Misc Crafting,,
 flagstoneCNRRound,blocks,Block,,Flagstone Round Corner,,
 cobblestoneCNRRound,blocks,Block,,Cobblestone Round Corner,,
 
-
-
 butcherKnife,items,Item,,Butcher's Knife,,
 butcherKnifeDesc,items,Item,,This knife is great for harvesting meat from animals.,,
 skinningKnife,items,Item,,Skinning Knife,,
@@ -5855,18 +5857,6 @@ gardenToolsTitle,progression,Skill,,Garden Tools,,
 gardenToolsDesc,progression,Skill,,Gardening takes less stamina.,,
 
 barterTitle,progression,Skill,,Bartering,,
-
-lokiStew,items,Item Food,,Loki's Meat Stew,,
-lokiStewDesc,items,Item Food,,"Crafted with care and consideration, without letting any go to waste, this stew is delicious".,,
-lokiWater,items,Item Food,,Loki's Filtered Water,,
-lokiWaterDesc,items,Item Food,,"This water has been filtered for taste and purity. Because even if you boil it water from a toilet still tastes like shit.",,
-coldlokiWater,items,Item Food,,Cold Filtered Water,,
-moleSandwich,items,Item Food,,Mole Sandwich,,
-moleSandwichDesc,items,Item Food,,"You're not really considering eating this filth, are you?",,
-
-lokiBow,items,Item,,Loki Bow,,
-lokiBowDesc,items,Item,,More durable than your average wooden bow. Good for hunting and killing zombies. Uses arrows for ammunition. Hold reload to use alternate ammo.,,
-
 
 
 perkClassDesc,items,Item,,Read this to gain skills relevant to your class.,,
@@ -5941,21 +5931,6 @@ speedBoostTooltip,buffs,Buff,,"Andale, Andale! Arriba, arriba!",,
 
 kickzBoots,items,Item Clothes,,Kickz Boots,,
 kickzBootsDesc,items,Item Clothes,,"These Kickz brand shoes were tailored to let you stay cool and were designed for activities that revolve around kicking of spheres.",,
-
-
-decorSteelDesc,blocks,Block,,These steel blocks can been painted to give them another texture. Use spray paint to change the texture.,,
-decorSteel,blocks,Block,,Decor Steel,,
-decorSteelWood,blocks,Block,,Decor Steel - Wood,,
-decorSteelRWood,blocks,Block,,Decor Steel - Reinforced Wood,,
-decorSteelRWoodMetal,blocks,Block,,Decor Steel - Metal Reinforced Wood,,
-decorSteelScrapIron,blocks,Block,,Decor Steel - Scrap Iron,,
-decorSteelCobblestone,blocks,Block,,Decor Steel - Cobblestone,,
-decorSteelFlagstone,blocks,Block,,Decor Steel - Flagstone,,
-decorSteelConcrete,blocks,Block,,Decor Steel - Concrete,,
-decorSteelRConcrete,blocks,Block,,Decor Steel - Reinforced Concrete,,
-decorSteelConcreteBricks,blocks,Block,,Decor Steel - Concrete Bricks,,
-decorSteelBricks,blocks,Block,,Decor Steel - Bricks,,
-decorSteelDarkConcrete,blocks,Block,,Decor Steel - Black Concrete,,
 
 peculiarTaste,buffs,Buff,,Peculiar Taste,,
 peculiarTasteDesc,buffs,Buff,,"You're not sure what you just ate but it didn't taste like chicken.",,

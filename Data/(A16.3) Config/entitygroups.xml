@@ -190,7 +190,7 @@
 		<entity name="zombieFatCop" />
     <entity name="zombieHulk" />
     <entity name="zombieBrute" />
-  </entitygroup>
+	</entitygroup>
 
 	<entitygroup name="ZombiesFeral">
 		<entity name="zombieWightFeral" />

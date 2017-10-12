@@ -24,10 +24,6 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
     <wildcard_forge_category />
   </recipe>
   
-  <recipe name="animalHide" count="1" tooltip="ttScrapMetalBrass">
-    <wildcard_forge_category />
-  </recipe>
-  
   <recipe name="brokenGlass" count="1" tooltip="ttScrapMetalBrass" >
     <wildcard_forge_category />
   </recipe>
@@ -625,6 +621,30 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
     <ingredient name="mechanicalParts" count="5"/>
   </recipe>
 
+  <recipe name="cntFridge" count="1" craft_area="workbench">
+    <ingredient name="forgedIron" count="10"/>
+    <ingredient name="shortMetalPipe" count="2"/>
+    <ingredient name="mechanicalParts" count="2"/>
+    <ingredient name="electricParts" count="8"/>
+    <ingredient name="electronicParts" count="2"/>
+  </recipe>
+
+  <recipe name="cntFridgeBottom" count="1" craft_area="workbench">
+    <ingredient name="forgedIron" count="4"/>
+    <ingredient name="shortMetalPipe" count="2"/>
+    <ingredient name="mechanicalParts" count="1"/>
+    <ingredient name="electricParts" count="4"/>
+    <ingredient name="electronicParts" count="1"/>
+  </recipe>
+
+  <recipe name="cntFridgeTop" count="1" craft_area="workbench">
+    <ingredient name="forgedIron" count="4"/>
+    <ingredient name="shortMetalPipe" count="2"/>
+    <ingredient name="mechanicalParts" count="1"/>
+    <ingredient name="electricParts" count="4"/>
+    <ingredient name="electronicParts" count="1"/>
+  </recipe>
+
   <recipe name="cntMailBox01" count="1">
     <ingredient name="forgedIron" count="2"/>
     <ingredient name="wood" count="3"/>
@@ -775,6 +795,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
     <ingredient name="clayLump" count="50"/>
     <ingredient name="rockSmall" count="50"/>
   </recipe>
+  
   <recipe name="cobblestones" count="1">
     <ingredient name="clayLump" count="1"/>
     <ingredient name="rockSmall" count="1"/>
@@ -1465,13 +1486,13 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
     <ingredient name="corn" count="5"/>
     <ingredient name="bowlWater" count="1"/>
   </recipe>
-
+  
   <recipe name="meatStew" count="1" craft_area="campfire" craft_tool="cookingPot">
     <ingredient name="rawMeat" count="5"/>
     <ingredient name="assortedVegetables" count="10"/>
     <ingredient name="bowlWater" count="1"/>
   </recipe>
-  
+
   <recipe name="metalReinforcedWoodDrawBridge" count="1" craft_area="workbench">
     <ingredient name="forgedIron" count="100"/>
     <ingredient name="wood" count="1000"/>
@@ -1651,6 +1672,11 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
     <ingredient name="unit_clay" count="20"/>
   </recipe>
 
+  <recipe name="moldyBread" count="1" craft_area="chemistryStation">
+    <ingredient name="shamSandwich" count="10"/>
+    <ingredient name="bottledRiverWater" count="1"/>
+  </recipe>
+
   <recipe name="partsHandlebars" count="1" craft_area="workbench">
     <ingredient name="ductTape" count="2"/>
     <ingredient name="leather" count="2"/>
@@ -1692,6 +1718,11 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 
   <recipe name="oil" count="1" craft_area="chemistryStation">
     <ingredient name="oilShale" count="24"/>
+    <ingredient name="canEmpty" count="1"/>
+  </recipe>
+  
+  <recipe name="oil" count="1" craft_area="chemistryStation">
+    <ingredient name="oilShale" count="24"/>
     <ingredient name="emptyJar" count="1"/>
   </recipe>
 
@@ -1710,7 +1741,13 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
     <ingredient name="nail" count="10"/>
     <ingredient name="wood" count="6"/>
   </recipe>
- 
+
+  <recipe name="paper" count="10" craft_area="chemistryStation">
+    <ingredient name="wood" count="10"/>
+    <ingredient name="glue" count="1"/>
+    <ingredient name="bottledRiverWater" count="1"/>
+  </recipe>
+  
   <recipe name="paintTool" count="1">
     <ingredient name="wood" count="2"/>
     <ingredient name="animalHide" count="1"/>
@@ -2102,7 +2139,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
     <ingredient name="coal" count="1"/>
     <ingredient name="wood" count="1"/>
   </recipe>
-
+  
   <recipe name="torch" count="1">
     <ingredient name="animalFat" count="1"/>
     <ingredient name="cloth" count="1"/>
@@ -2308,10 +2345,6 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
     <ingredient name="unit_clay" count="1"/>
   </recipe>
 
-  <recipe name="plantedYucca1" count="1" craft_time="1">
-    <ingredient name="foodYuccaFruit" count="1"/>
-  </recipe>
-  
   <recipe name="looseBoardsTrapBlock1x1" count="1">
     <!-- trap -->
     <ingredient name="nail" count="5"/>
@@ -2728,7 +2761,88 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
   </recipe>
 
   <!--SinMod Begins Here-->
-  <!-- Expanded Food Mod -->
+ 
+
+
+
+  
+  
+
+  <!-- Expanded Farming Mod -->
+  <recipe name="plantedWheat1" count="1" >
+    <ingredient name="Wheat" count="1" />
+  </recipe>
+  <recipe name="plantedGrape1" count="1" >
+    <ingredient name="Grapes" count="1" />
+  </recipe>
+  <recipe name="plantedApple1" count="1" >
+    <ingredient name="Apple" count="1" />
+  </recipe>
+  <recipe name="plantedOrange1" count="1" >
+    <ingredient name="Orange" count="1" />
+  </recipe>
+  <recipe name="plantedYucca1" count="1" craft_time="1">
+    <ingredient name="foodYuccaFruit" count="1"/>
+  </recipe>
+
+  <!-- Seed Pack -->
+  <recipe name="plantedYucca1" count="1" >
+    <ingredient name="seedPack" count="1" />
+  </recipe>
+  <recipe name="plantedAloe1" count="1" >
+    <ingredient name="seedPack" count="1" />
+  </recipe>
+  <recipe name="plantedChrysanthemum1" count="1" >
+    <ingredient name="seedPack" count="1" />
+  </recipe>
+  <recipe name="plantedWheat1" count="1" >
+    <ingredient name="seedPack" count="1" />
+  </recipe>
+  <recipe name="plantedGrape1" count="1" >
+    <ingredient name="seedPack" count="1" />
+  </recipe>
+  <recipe name="plantedHop1" count="1" >
+    <ingredient name="seedPack" count="1" />
+  </recipe>
+  <recipe name="plantedApple1" count="1" >
+    <ingredient name="seedPack" count="1" />
+  </recipe>
+  <recipe name="plantedOrange1" count="1" >
+    <ingredient name="seedPack" count="1" />
+  </recipe>
+  <recipe name="plantedBlueberry1" count="1">
+    <ingredient name="seedPack" count="1"/>
+  </recipe>
+  <recipe name="plantedCorn1" count="1">
+    <ingredient name="seedPack" count="1"/>
+  </recipe>
+  <recipe name="plantedCotton1" count="1">
+    <ingredient name="seedPack" count="1"/>
+  </recipe>
+  <recipe name="plantedGoldenrod1" count="1">
+    <ingredient name="seedPack" count="1"/>
+  </recipe>
+  <recipe name="plantedPotato1" count="1">
+    <ingredient name="seedPack" count="1"/>
+  </recipe>
+  <recipe name="plantedMushroom1" count="1">
+    <ingredient name="seedPack" count="1"/>
+  </recipe>
+
+  <!--SinMod Food Expansion-->
+  <recipe name="stripsClingwrap" count="7">
+    <ingredient name="Clingwrap" count="1" />
+  </recipe>
+  <recipe name="rawMeat" count="1">
+    <ingredient name="sealedMeat" count="1" />
+  </recipe>
+  <recipe name="sealedMeat" count="1" craft_time="0.1">
+    <ingredient name="rawMeat" count="1" />
+    <ingredient name="stripsClingwrap" count="1" />
+  </recipe>
+  <recipe name="flour" count="1">
+    <ingredient name="Wheat" count="5"/>
+  </recipe>
   <recipe name="bowl" count="1" craft_area="campfire">
     <ingredient name="clayLump" count="3"/>
   </recipe>
@@ -2754,12 +2868,16 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
   </recipe>
   <recipe name="applePie" count="1" craft_area="campfire" craft_tool="cookingPot">
     <ingredient name="egg" count="1" />
-    <ingredient name="flour" count="1" />
+    <ingredient name="dough" count="1" />
     <ingredient name="bowlWater" count="1" />
     <ingredient name="Apple" count="3" />
   </recipe>
   <recipe name="appleCider" count="1" craft_area="chemistryStation">
     <ingredient name="Apple" count="2" />
+    <ingredient name="emptyJar" count="1" />
+  </recipe>
+  <recipe name="orangeJuice" count="1" craft_area="chemistryStation">
+    <ingredient name="Orange" count="2" />
     <ingredient name="emptyJar" count="1" />
   </recipe>
   <recipe name="blueberryJam" count="1">
@@ -2768,10 +2886,6 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
   </recipe>
   <recipe name="canMeatStew" count="1">
     <ingredient name="meatStew" count="1" />
-    <ingredient name="canEmpty" count="1" />
-  </recipe>
-  <recipe name="canLokiStew" count="1" >
-    <ingredient name="lokiStew" count="1" />
     <ingredient name="canEmpty" count="1" />
   </recipe>
   <recipe name="canVegetableStew" count="1">
@@ -2866,10 +2980,6 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
   <recipe name="bowlWater" count="1" craft_area="campfire" craft_tool="cookingPot">
     <ingredient name="bowlMurkyWater" count="1"/>
   </recipe>
-  <!--    <recipe name="bowlWater" count="1">
-        <ingredient name="snowHarvested" count="1" />
-        <ingredient name="bowl" count="1" />
-    </recipe>	-->
   <recipe name="soupMushroom" count="1" craft_area="campfire" craft_tool="cookingPot">
     <ingredient name="bowlWater" count="1"/>
     <ingredient name="mushrooms" count="3" />
@@ -2949,227 +3059,24 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
     <ingredient name="ramenNoodles" count="1" />
     <ingredient name="bowlWater" count="1" />
   </recipe>
-  <recipe name="fishPie" count="1" craft_area="campfire" craft_tool="cookingPot">
-    <ingredient name="egg" count="1" />
-    <ingredient name="flour" count="1" />
-    <ingredient name="bowlWater" count="1" />
-    <ingredient name="canSalmon" count="2" />
-  </recipe>
-  <recipe name="orangeJuice" count="1" craft_area="chemistryStation">
-    <ingredient name="Orange" count="2" />
-    <ingredient name="emptyJar" count="1" />
-  </recipe>
   
-  <!-- Expanded Farming Mod -->
-  <recipe name="seedWheat" count="1" >
-    <ingredient name="Wheat" count="1" />
-  </recipe>
-  <recipe name="seedGrape" count="1" >
-    <ingredient name="Grapes" count="1" />
-  </recipe>
-  <recipe name="seedApple" count="1" >
-    <ingredient name="Apple" count="1" />
-  </recipe>
-  <recipe name="seedOrange" count="1" >
-    <ingredient name="Orange" count="1" />
-  </recipe>
-  <!-- Seed Pack -->
-  <recipe name="plantedYucca1" count="1" >
-    <ingredient name="seedPack" count="1" />
-  </recipe>
-  <recipe name="plantedAloe1" count="1" >
-    <ingredient name="seedPack" count="1" />
-  </recipe>
-  <recipe name="plantedChrysanthemum1" count="1" >
-    <ingredient name="seedPack" count="1" />
-  </recipe>
-  <recipe name="plantedWheat1" count="1" >
-    <ingredient name="seedPack" count="1" />
-  </recipe>
-  <recipe name="plantedGrape1" count="1" >
-    <ingredient name="seedPack" count="1" />
-  </recipe>
-  <recipe name="plantedHop1" count="1" >
-    <ingredient name="seedPack" count="1" />
-  </recipe>
-  <recipe name="plantedApple1" count="1" >
-    <ingredient name="seedPack" count="1" />
-  </recipe>
-  <recipe name="plantedOrange1" count="1" >
-    <ingredient name="seedPack" count="1" />
-  </recipe>
-  <recipe name="plantedBlueberry1" count="1">
-    <ingredient name="seedPack" count="1"/>
-  </recipe>
-  <recipe name="plantedCorn1" count="1">
-    <ingredient name="seedPack" count="1"/>
-  </recipe>
-  <recipe name="plantedCotton1" count="1">
-    <ingredient name="seedPack" count="1"/>
-  </recipe>
-  <recipe name="plantedGoldenrod1" count="1">
-    <ingredient name="seedPack" count="1"/>
-  </recipe>
-  <recipe name="plantedPotato1" count="1">
-    <ingredient name="seedPack" count="1"/>
-  </recipe>
-  <recipe name="plantedMushroom1" count="1">
-    <ingredient name="seedPack" count="1"/>
-  </recipe>
-
-  <!-- Expanded Player Storage Mod -->
-  <recipe name="cntEPSMunitionsBox" count="1" craft_area="workbench">
-    <ingredient name="forgedIron" count="6" />
-  </recipe>
-  <recipe name="cntEPSCardboardBox" count="1" craft_area="workbench">
-    <ingredient name="paper" count="16" />
-    <ingredient name="ductTape" count="1" />
-  </recipe>
-  <recipe name="cntEPSFileCabinet" count="1" craft_area="workbench">
-    <ingredient name="forgedIron" count="10" />
-  </recipe>
-  <recipe name="cntEPSLockers" count="1" craft_area="workbench">
-    <ingredient name="forgedIron" count="2" />
-  </recipe>
-  <recipe name="cntEPSFridge" count="1" craft_area="workbench">
-    <ingredient name="forgedIron" count="10"/>
-    <ingredient name="shortMetalPipe" count="2"/>
-    <ingredient name="electricParts" count="8"/>
-    <ingredient name="electronicParts" count="2"/>
-  </recipe>
-  <recipe name="cntEPSFridgeBottom" count="1" craft_area="workbench">
-    <ingredient name="forgedIron" count="4"/>
-    <ingredient name="shortMetalPipe" count="2"/>
-    <ingredient name="electricParts" count="4"/>
-    <ingredient name="electronicParts" count="1"/>
-  </recipe>
-  <recipe name="cntEPSFridgeTop" count="1" craft_area="workbench">
-    <ingredient name="forgedIron" count="4"/>
-    <ingredient name="shortMetalPipe" count="2"/>
-    <ingredient name="electricParts" count="4"/>
-    <ingredient name="electronicParts" count="1"/>
-  </recipe>
-  <recipe name="cntEPSBookcase" count="1" craft_area="workbench">
-    <ingredient name="wood" count="10"  />
-  </recipe>
-  <recipe name="cntEPSMedicineCabinet" count="1" craft_area="workbench">
-    <ingredient name="wood" count="8"  />
-  </recipe>
-  <recipe name="cntEPSPillCase" count="1" craft_area="workbench">
-    <ingredient name="wood" count="8"  />
-  </recipe>
-  <recipe name="cntEPSBeerCooler" count="1" craft_area="workbench">
-    <ingredient name="forgedIron" count="4"/>
-    <ingredient name="shortMetalPipe" count="3"/>
-    <ingredient name="electricParts" count="5"/>
-    <ingredient name="electronicParts" count="1"/>
-  </recipe>
-  <recipe name="cntEPSWallSafe" count="1" craft_area="workbench">
-    <ingredient name="forgedIron" count="10"/>
-    <ingredient name="spring" count="2"/>
-  </recipe>
-  <recipe name="cntEPSCoffin" count="1" craft_area="workbench">
-    <ingredient name="wood" count="10"  />
-  </recipe>
-  <recipe name="cntEPSGasPump" count="1" craft_area="workbench">
-    <ingredient name="forgedIron" count="15" />
-    <ingredient name="shortMetalPipe" count="5" />
-  </recipe>
-  <recipe name="cntEPSDrawer" count="1" craft_area="workbench">
-    <ingredient name="forgedIron" count="10"/>
-    <ingredient name="spring" count="2"/>
-  </recipe>
-
-  <!-- Misc Recipes Mod -->
-  <recipe name="butcherKnife" count="1">
-    <ingredient name="forgedIron" count="8"/>
-    <ingredient name="wood" count="8"/>
-  </recipe>
-  <recipe name="skinningKnife" count="1">
-    <ingredient name="forgedIron" count="8"/>
-    <ingredient name="wood" count="8"/>
-  </recipe>
-  <recipe name="steelPolish" count="1" craft_area="chemistryStation" craft_time="150">
-    <ingredient name="oil" count="5"/>
-  </recipe>
-  <recipe name="mysteryMeatCrafted" count="1" craft_area="campfire" craft_tool="cookingGrill">
-    <ingredient name="rottingFlesh" count="4"/>
-  </recipe>
-  <recipe name="cntGarbageDisposalEmpty" count="1" craft_area="workbench" >
+  <!--SinMod ScrapIron Tools-->
+  <recipe name="scrapIronAxe" count="1">
     <ingredient name="scrapIron" count="10"/>
+    <ingredient name="yuccaFibers" count="2"/>
+    <ingredient name="wood" count="5"/>
   </recipe>
-  <recipe name="trashbag" count="1" craft_area="workbench" >
-    <ingredient name="paper" count="5"/>
-  </recipe>
-  <recipe name="paper" count="1" craft_area="workbench" craft_tool="paperRack">
-    <ingredient name="fiberPulp" count="1"/>
-  </recipe>
-  <recipe name="fiberPulp" count="1" craft_area="campfire" craft_tool="bowlWater">
-    <ingredient name="yuccaFibers" count="20"/>
-  </recipe>
-  <recipe name="bowlWater" count="1" >
-    <ingredient name="bottledWater" count="1" />
-    <ingredient name="bowl" count="1" />
-  </recipe>
-  <recipe name="bottledWater" count="1" >
-    <ingredient name="bowlWater" count="1" />
-    <ingredient name="emptyJar" count="1" />
-  </recipe>
-  <recipe name="Syringe" count="1" >
-    <ingredient name="scrapPlastics" count="1"/>
-  </recipe>
-  <recipe name="Lockpick" count="1" craft_time="20">
-    <ingredient name="scrapIron" count="5"/>
-  </recipe>
-  <recipe name="charcoalChips" count="1" craft_area="campfire" craft_tool="cookingPot">
-    <ingredient name="wood" count="3"/>
-  </recipe>
-  <recipe name="moldyBread" count="2" >
-    <ingredient name="shamSandwich" count="1" />
-  </recipe>
-  <recipe name="moldyBread" count="4" >
-    <ingredient name="moleSandwich" count="1" />
-  </recipe>
-  <recipe name="fuelLog" count="1" craft_area="chemistryStation" craft_time="10">
+  <recipe name="scrapIronPickaxe" count="1">
+    <ingredient name="scrapIron" count="15"/>
     <ingredient name="wood" count="20"/>
-    <ingredient name="tallow" count="1" />
   </recipe>
-  <recipe name="oil" count="1" craft_area="chemistryStation">
-    <ingredient name="emptyJar" count="1"  />
-    <ingredient name="oilShale" count="10"/>
+  <recipe name="scrapIronShovel" count="1">
+    <ingredient name="scrapIron" count="15"/>
+    <ingredient name="wood" count="20"/>
   </recipe>
-  <recipe name="medicalSplint" count="1">
-    <ingredient name="firstAidBandage" count="2" />
-    <ingredient name="wood" count="2"/>
-    <ingredient name="cloth" count="2"/>
-  </recipe>
-  <recipe name="disinfectantBandage" count="1">
-    <ingredient name="cloth" count="2" />
-    <ingredient name="Peroxide" count="1" />
-  </recipe>
-  <recipe name="maniacPowder" count="1" craft_area="chemistryStation">
-    <ingredient name="potassiumNitratePowder" count="1" />
-    <ingredient name="painkillers" count="1" />
-    <ingredient name="mushrooms" count="1" />
-    <ingredient name="goldenrodPlant" count="1" />
-  </recipe>
-  <recipe name="minersTNT" count="1">
-    <ingredient name="yuccaFibers" count="1" />
-    <ingredient name="paper" count="10"/>
-    <ingredient name="gunPowder" count="30"/>
-  </recipe>
-  <recipe name="stripsClingwrap" count="7">
-    <ingredient name="Clingwrap" count="1" />
-  </recipe>
-  <recipe name="rawMeat" count="1">
-    <ingredient name="sealedMeat" count="1" />
-  </recipe>
-  <recipe name="sealedMeat" count="1" craft_time="0.1">
-    <ingredient name="rawMeat" count="1" />
-    <ingredient name="stripsClingwrap" count="1" />
-  </recipe>
-  <recipe name="flour" count="1">
-    <ingredient name="Wheat" count="5"/>
+  <recipe name="scrapIronShiv" count="1">
+    <ingredient name="scrapIron" count="3"/>
+    <ingredient name="ductTape" count="1"/>
   </recipe>
   
   <!--SinMod Working Stove and Sink-->
@@ -3192,7 +3099,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
     <ingredient name="plumbingKit" count="1" />
   </recipe>
   <recipe name="ovenKit" count="1">
-    <ingredient name="electricParts" count="5"/>
+    <ingredient name="electricalWires" count="5"/>
     <ingredient name="cookingGrill" count="2" />
     <ingredient name="shortMetalPipe" count="6"/>
   </recipe>
@@ -3201,7 +3108,6 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
     <ingredient name="shortMetalPipe" count="10"/>
     <ingredient name="waterFilter" count="1"/>
   </recipe>
-  
   <!-- Helmet Light Mod -->
   <recipe name="ironHelmetLight" count="1">
     <ingredient name="ductTape" count="1" />
@@ -3249,7 +3155,8 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
     <ingredient name="leather" count="5"/>
     <ingredient name="forgedSteel" count="7"/>
   </recipe>
-
+  
+  <!--SinMod Weapons Expansion-->
   <!-- Weapon Mods -->
   <recipe name="gunPistolSilenced" count="1"  craft_area="assembly">
     <ingredient name="flashlight02" count="0" />
@@ -3392,40 +3299,39 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
     <ingredient name="wood" count="1" />
     <ingredient name="candle" count="1" />
   </recipe>
-
-  <!-- Expanded Ammunition Types -->
-  <!-- WARNING : blunderbussAmmoShredder replaces a Blunderbuss ammo, remove them from this file. -->
-  <recipe name="blunderbussAmmoShredder" count="1">
-    <ingredient name="scrapIron" count="1"/>
-    <ingredient name="gunPowder" count="1"/>
-    <ingredient name="paper" count="1"/>
+  
+  <!--SinMod Ammo Expansion-->
+  recipe name="blunderbussAmmoShredder" count="1">
+  <ingredient name="scrapIron" count="1"/>
+  <ingredient name="gunPowder" count="1"/>
+  <ingredient name="paper" count="1"/>
   </recipe>
   <recipe name="HollowTip" count="1" craft_area="forge" craft_tool="anvil" material_based="true">
     <ingredient name="unit_lead" count="1"/>
     <ingredient name="unit_clay" count="1"/>
   </recipe>
   <recipe name="44MagBulletHP" count="1" craft_area="workbench">
-    <ingredient name="HollowTip" count="1" />
+    <ingredient name="HollowTip" count="1"/>
     <ingredient name="gunPowder" count="3"/>
     <ingredient name="bulletCasing" count="1"/>
   </recipe>
   <recipe name="44MagBulletINC" count="1" craft_area="workbench">
-    <ingredient name="HollowTip" count="1" />
+    <ingredient name="HollowTip" count="1"/>
     <ingredient name="gunPowder" count="3"/>
     <ingredient name="bulletCasing" count="1"/>
   </recipe>
   <recipe name="762mmBulletHP" count="1" craft_area="workbench">
-    <ingredient name="HollowTip" count="1" />
+    <ingredient name="HollowTip" count="1"/>
     <ingredient name="gunPowder" count="3"/>
     <ingredient name="bulletCasing" count="1"/>
   </recipe>
   <recipe name="762mmBulletINC" count="1" craft_area="workbench">
-    <ingredient name="HollowTip" count="1" />
+    <ingredient name="HollowTip" count="1"/>
     <ingredient name="gunPowder" count="3"/>
     <ingredient name="bulletCasing" count="1"/>
   </recipe>
   <recipe name="9mmBulletHP" count="1" craft_area="workbench">
-    <ingredient name="HollowTip" count="1" />
+    <ingredient name="HollowTip" count="1"/>
     <ingredient name="gunPowder" count="1"/>
     <ingredient name="bulletCasing" count="1"/>
   </recipe>
@@ -3443,7 +3349,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
     <ingredient name="buckshot" count="1"/>
     <ingredient name="gunPowder" count="2"/>
     <ingredient name="paper" count="1"/>
-  </recipe>
+  </recipe>  
   <recipe name="HealingDart" count="25">
     <ingredient name="steelDart" count="25" />
     <ingredient name="healingAgent" count="1" />
@@ -3458,20 +3364,20 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
   </recipe>
   <recipe name="chemicalAgent" count="1" craft_area="chemistryStation" craft_time="50">
     <ingredient name="carBattery" count="1"/>
-    <ingredient name="bottledWater" count="1"/>
-  </recipe>
+      <ingredient name="bottledWater" count="1"/>
+  </recipe> 
   <recipe name="InfectionDart" count="25">
     <ingredient name="steelDart" count="25"/>
     <ingredient name="infectionAgent" count="1"/>
   </recipe>
   <recipe name="infectionAgent" count="1" craft_area="chemistryStation" craft_time="50">
     <ingredient name="rottingFlesh" count="5"/>
-    <ingredient name="bottledWater" count="1"/>
+      <ingredient name="bottledWater" count="1"/>
   </recipe>
   <recipe name="bioTank" count="25" craft_area="chemistryStation">
     <ingredient name="rottingFlesh" count="25"/>
   </recipe>
-  
+
   <!-- Expanded Weapons and Tools Mod -->
   <recipe name="gunBoltRifle" count="1" craft_area="assembly">
     <ingredient name="flashlight02" count="0"/>
@@ -3540,60 +3446,53 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
     <ingredient name="survivorNotes" count="5"/>
   </recipe>
 
-  <!-- Classes Mod -->
-  <recipe name="Class - Hunter (Locked)" count="1">
-    <ingredient name="classSelection" count="1" />
+  <!--SinMod Classes Mod -->
+  <recipe name="Hunter Class" count="1">
+    <ingredient name="ProfessionSelection" count="1" />
   </recipe>
-  <recipe name="Class - Builder (Locked)" count="1">
-    <ingredient name="classSelection" count="1" />
+  <recipe name="Builder Class" count="1">
+    <ingredient name="ProfessionSelection" count="1" />
   </recipe>
-  <recipe name="Class - Veteran (Locked)" count="1">
-    <ingredient name="classSelection" count="1" />
+  <recipe name="Gunman Class" count="1">
+    <ingredient name="ProfessionSelection" count="1" />
   </recipe>
-  <recipe name="Class - Bruiser (Locked)" count="1">
-    <ingredient name="classSelection" count="1" />
+  <recipe name="Veteran Class" count="1">
+    <ingredient name="ProfessionSelection" count="1" />
   </recipe>
-  <recipe name="Class - Gunman (Locked)" count="1">
-    <ingredient name="classSelection" count="1" />
+  <recipe name="Miner Class" count="1">
+    <ingredient name="ProfessionSelection" count="1" />
   </recipe>
-  <recipe name="Class - Miner (Locked)" count="1">
-    <ingredient name="classSelection" count="1" />
+  <recipe name="Survivor Class" count="1">
+    <ingredient name="ProfessionSelection" count="1" />
   </recipe>
-  <recipe name="Class - Survivor (Locked)" count="1">
-    <ingredient name="classSelection" count="1" />
+  <recipe name="Bruiser Class" count="1">
+    <ingredient name="ProfessionSelection" count="1" />
   </recipe>
-  <recipe name="Class - Medic (Locked)" count="1">
-    <ingredient name="classSelection" count="1" />
+  <recipe name="Medic Class" count="1">
+    <ingredient name="ProfessionSelection" count="1" />
   </recipe>
-  <recipe name="Class - Wildcard (Locked)" count="1">
-    <ingredient name="classSelection" count="1" />
+  <recipe name="Wildcard Class" count="1">
+    <ingredient name="ProfessionSelection" count="1" />
   </recipe>
-
-  <!-- Workstations Mod -->
-  <recipe name="workstationMerchant" count="1" craft_area="workbench" craft_time="3200">
-    <ingredient name="wood" count="20"/>
-    <ingredient name="scrapIron" count="20"/>
-  </recipe>
-  <recipe name="workstationQuest" count="1" craft_area="workbench" craft_time="3200">
-    <ingredient name="wood" count="50"/>
-  </recipe>
-  <recipe name="paperRack" count="1" >
-    <ingredient name="wood" count="10"/>
-    <ingredient name="yuccaFibers" count="10"/>
-    <ingredient name="cloth" count="2"/>
-    <ingredient name="glassCTRSheet" count="1"/>
-  </recipe>
-  <recipe name="waterFilter" count="1">
-    <ingredient name="clayBucket" count="1" />
-    <ingredient name="crushedSand" count="50"/>
-    <!--	<ingredient name="gravel" count="50"/> -->
-    <ingredient name="charcoalChips" count="50"/>
+  
+   <recipe name="charcoalChips" count="1" craft_area="campfire" craft_tool="cookingPot">
+    <ingredient name="wood" count="3"/>
   </recipe>
   <recipe name="clayBucket" count="1" craft_area="campfire">
     <ingredient name="clayLump" count="30"/>
   </recipe>
+  <recipe name="waterFilter" count="1">
+    <ingredient name="clayBucket" count="1" />
+    <ingredient name="crushedSand" count="50"/>
+    <ingredient name="charcoalChips" count="50"/>
+  </recipe>
+  
+  
+  <recipe name="survivorNoteCollection" count="1" craft_time="0.5">
+    <ingredient name="survivorNotes" count="5"/>
+  </recipe>
 
-  <!-- Ammo Conversion -->
+  <!--SinMod Ammo Dismantle -->
   <recipe name="dismantle9mmBullets" count="1" craft_time = "5" craft_exp_gain="0">
     <ingredient name="9mmBullet" count="10"/>
   </recipe>
@@ -3619,7 +3518,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
   <recipe name="dismantleShotgunShells30" count="1" craft_time = "5" craft_exp_gain="0">
     <ingredient name="shotgunShell" count="30"/>
   </recipe>
-
+  
   <recipe name="ammoSupply9mm" count="1" >
     <ingredient name="genericAmmoBox" count="1"/>
   </recipe>
@@ -3679,7 +3578,6 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
   <recipe name="cntDumpster" count="1" craft_area="workbench">
     <ingredient name="forgedIron" count="25"/>
   </recipe>
-  
   <!--SinMod Ultimate Champion-->
   <recipe name="UltimateChampionVoucher" count="1"  craft_time="0.5">
     <wildcard_forge_category />
@@ -3752,4 +3650,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
   <recipe name="ShotgunShellVoucher" count="1" craft_time="0.5">
     <ingredient name="AmmoChampVoucher" count="1"/>
   </recipe>
+  
+  
+  
 </recipes>
