@@ -4505,7 +4505,7 @@ woodPillar50,blocks,Block,New,Wood Pillar 50,,,,
 concreteTerrain,blocks,Terrain,New,Concrete Terrain (POI),,,,
 terrainFiller,blocks,Terrain,New,Terrain Filler (POI),,,,
 dressShoesBlack,items,Clothes,New,Black Dress Shoes,,,,
-gunPistolSilenced,items,Gun,New,Silenced Pistol,,,,
+
 gunJustDie,items,Tool,New,Admin: Just Die,,,,
 gunSuperDigger,items,Tool,New,Admin: Super Digger,,,,
 superWrench,items,Tool,New,Admin: Super Wrench,,,,
@@ -5221,8 +5221,7 @@ recipebookGlassDesc,items,Item Book,,"This book teaches you how to craft blocks 
 recipebookMetal,items,Item Book,,Metal Working 101,,
 recipebookMetalDesc,items,Item Book,,This book teaches you how to craft blocks made out of metal and iron.,,
 
-recipebookPottery,items,Item Book,,Pottery,,
-recipebookPotteryDesc,items,Item Book,,This book examines the various uses of clay.,,
+
 schematicFireaxe,items,Item Book,,Fireaxe Schematic,,
 schematicFireaxeDesc,items,Item Book,,This schematic teaches you how to craft a fireaxe.,,
 schematicPickaxe,items,Item Book,,Pickaxe Schematic,,
@@ -5231,8 +5230,6 @@ schematicGardenTools,items,Item Book,,Garden Tools Schematic,,
 schematicGardenToolsDesc,items,Item Book,,"This schematic teaches you how to craft a shovel, hoe and weed cleaver.",,
 skillbookMedical,items,Item Book,,Dr. Health MD,,
 skillbookMedicalDesc,items,Item Book,,"This medical book has a few missing pages but if you study enough of them you're sure you can learn some handy health remedies.",,
-recipebookAnimalTraps,items,Item Book,,Animal Trapping,,
-recipebookAnimalTrapsDesc,items,Item Book,,This book adds to your animal trapping skill which will eventually let you how to make animal snares and chicken coops.,,
 recipebookElectronics,items,Item Book,,Tesla Electronics,,
 recipebookElectronicsDesc,items,Item Book,,This book teaches you how to craft working electrical lights in the Decor Artisan Station.,,
 skillbookChemistry,items,Item Book,,Chemistry 101,,
@@ -5245,11 +5242,6 @@ schematicForge,items,Item Book,,Forge Schematic,,
 schematicForgeDesc,items,Item Book,,This schematic teaches you how to craft a Forge.,,
 schematicOven,items,Item Book,,Oven Schematic,,
 schematicOvenDesc,items,Item Book,,This book teaches you how to craft a working oven.,,
-
-recipebookSinks,items,Item Book,,Plumbing 101,,
-recipebookSinksDesc,items,Item Book,,This book adds to your knowledge of plumbing. If you learn enough you will be able to craft or repair sinks for clean water.,,
-recipebookSecurity2,items,Item Book,,Security Measures,,
-recipebookSecurity2Desc,items,Item Book,,"This book teaches you how to create gear mechanisms for hidden doors and bridges.",,
 
 
 leatherHoodRed,items,Item Clothes,,Leather Hood (Red),,
@@ -6093,17 +6085,11 @@ skillbookCrossbow,items,Item Book,,"Crossbow Book",,
 skillbookCrossbowDesc,items,Item Book,,"These book explains the history and origin of the medieval crossbow.",,
 chainsawSchematicDesc2,items,Book,KgNone,"Pages from chainsaw manual. Most are covered in oil or torn but if you'll eventually be able to assemble a chainsaw.",Apprenez à assembler et réparer les tronçonneuses en lisant ce schéma.,"In diesem Bauplan erfährst du, wie Kettensägen zusammengesetzt und repariert werden.",,Lee este esquema para aprender a armar y reparar motosierras.
 augerSchematicDesc2,items,Book,KgNone,"Pages from an auger manual. Most are illegible but if you read enough you'll eventually be able to assemble an auger.",Apprenez à assembler et réparer les foreuses en lisant ce schéma.,"In diesem Bauplan erfährst du, wie Erdbohrer zusammengesetzt und repariert werden.",,Lee este esquema para aprender a reparar y armar taladros.
-recipebookNailgun,items,Item Book,,"Nailgun Schematics",,
-recipebookNailgunDesc,items,Item Book,,"Pages from an nailgun manual. Most are illegible but if you read enough you'll eventually be able to assemble a nailgun.",,
 minibikesForDumbshitsDesc2,items,Book,KgNone,"Pages from an minibike manual. Most are illegible from oil stains but if you read enough you'll learn something. Maybe.",Même les demeurés finis peuvent construire une mini-moto en suivant les étapes présentées dans ce guide... Vroum... Vroum !,"Selbst komplette Vollidioten können ein Taschenmotorrad bauen, wenn sie dieser einfachen Anleitung folgen … Brumm, brumm!",,"Hasta el más idiota puede construir una minimoto si sigue los pasos de esta sencilla guía. ¡Brum, brum!"
 skillbookBlades,items,Item Book,,"Halloween: The Myers Experience",,
 skillbookBladesDesc,items,Item Book,,"A horror story that sold many Kirk masks.",,
-recipebookSecurity,items,Item Book,,Security Measures,,
-recipebookSecurityDesc,items,Item Book,,"Reading this will give you levels in Security which will eventually let you craft gun safes, vault doors and drawbridges.",,
 skillbookForgedArmor,items,Item Book,,Armorsmith,,
 skillbookForgedArmorDesc,items,Item Book,,"You're pretty sure this book was never meant to be taken seriously, given that it speaks of magic defenses, but there could be some practical real-world applications some of it's contents.",,
-recipebookGardenTools,items,Item Book,,"Garden Tools Schematics",,
-recipebookGardenToolsDesc,items,Item Book,,"These schematics will teach you how to perform proper maintenance on various garden shed tools.",,
 skillbookAxes,items,Item Book,,Paul Bunyan Adventures,,
 skillbookAxesDesc,items,Item Book,,"This story follows the adventures of Paul Bunyan and his fabled ox.",,
 skillbookKnight,items,Item Book,,The Knight,,
@@ -6112,9 +6098,6 @@ skillbookMining,items,Item Book,,Mining Engineering,,
 skillbookMiningDesc,items,Item Book,,"An educational book that explains various mining techniques.",,
 skillbookHunter,items,Item Book,,Turok Comic,,
 skillbookHunterDesc,items,Item Book,,"This comic book fantasy follows the adventures of a indian tribe as they fight for survival in a world full of dangerous beasts.",,
-skillbookMedical,items,Item Book,,Dr. Health MD,,
-skillbookMedicalDesc,items,Item Book,,"This medical book will teach you how to make various medical items.",,
-
 
 simpleForge,blocks,Station,,Simple Forge,,
 simpleForgeDesc,blocks,Station,,"Used to smelt metals into tools and weapons. Unlock more recipes by adding an anvil, calipers or tool and die set. The Simple forge has a limited number of recipes compared to the normal forge in order to help improve performance.",,
@@ -6228,3 +6211,15 @@ logCabinBlock,blocks,Block,KgNone,Log Cabin Wood Block,Bloc de bois de cabane en
 
 compoundBowDesc2,items,Gun,New,A compound bow does more damage and can use flaming arrows in addition to plain ones. Can be re-assembled and repaired if you level high enough in Archery.,,"Ein Compoundbogen verschiesst neben herkömmlichen Pfeilen auch Feuerpfeile. Kann zusammengesetzt und repariert werden, wenn du das Buch „Compoundbogen“ gelesen hast.",,
 streetLightPlayer,blocks,Electricity,New,Street Light,,,,
+
+Fishing Rod,items,Item,,Fishing Rod,,
+fishingRodDesc,items,Item,,Fishing Rod used to catch fish from water sources.
+
+Fishing Rod Full,items,Item,,Fishing Rod Full,,
+fishingRodfullDesc,items,Item,,Fishing Rod with fish on line use livewell to get fish.
+
+Raw Fish,items,Item,,Raw Fish,,
+rawfishDesc,items,Item,,Raw fish caught by fishing rod.
+
+Livewell,items,Item,,Livewell,,
+livewellDesc,items,Item,,Used to remove fish from fishing rod.

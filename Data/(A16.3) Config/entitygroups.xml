@@ -21,7 +21,8 @@
 		<entity name="zombieNurse" prob="0.3" />
 		<entity name="zombieSteveCrawler" />
 		<entity name="zombieFatHawaiian" prob="0.3" />
-	</entitygroup>
+    <entity name="zombieTrucker" prob="0.3"/>
+   </entitygroup>
 
 	<entitygroup name="ZombiesNight">
 		<entity name="zombieSpider"/>

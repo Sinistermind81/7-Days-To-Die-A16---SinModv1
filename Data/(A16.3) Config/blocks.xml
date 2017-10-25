@@ -5065,6 +5065,24 @@ group desc for stuff like metal siding
     <property name="PlantGrowing.FertileLevel" value="0" />
     <property name="PlantGrowing.IsRandom" value="false" />
   </block>
+
+  <block id="445" name="Livewell">
+    <property name="Material" value="organic"/>
+    <property name="MaxDamage" value="5"/>
+    <property name="StabilitySupport" value="false"/>
+    <!-- build restriction -->
+    <property name="Shape" value="Ext3dModel"/>
+    <property name="Mesh" value="models"/>
+    <property name="Model" value="LootContainers/cooler" param1="main_mesh"/>
+    <property class="RepairItems">
+      <property name="scrapPlastics" value="10"/>
+    </property>
+    <drop event="Harvest" name="Raw Fish" count="1" prob="0.25" tool_category="Fishing"/>
+    <drop event="Destroy" count="0"/>
+    <property name="Group" value="Decor/Miscellaneous"/>
+    <property name="DescriptionKey" value="livewellDesc"/>
+    <!-- disassemble value -->
+  </block>
   <!--
 kind of free
 

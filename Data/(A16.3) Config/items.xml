@@ -363,6 +363,7 @@ Mesh files no longer used:
       <property name="DamageBonus.leaves" value="25"/>
       <property name="DamageBonus.organic" value="10"/>
       <property name="ToolCategory.Butcher" value="1" param1="10"/>
+      <property name="ToolCategory.Fishing" value="1"/>
       <property name="Sound_harvesting" value="open_animal" param1="organic" />
     </property>
     <property class="Attributes">
@@ -1203,6 +1204,7 @@ Mesh files no longer used:
       <property name="DamageBonus.organic" value="5"/>
       <property name="ToolCategory.harvestingTools" value="1.5" param1="1"/>
       <property name="ToolCategory.Pluck" value="1"/>
+      <property name="ToolCategory.Fishing" value="1" param1="10"/>
     </property>
     <property class="Action1">
       <!-- UseAction -->
@@ -16442,5 +16444,69 @@ Mesh files no longer used:
       <property name="QuestGiven" value="ShotgunAmmoVoucher" />
       <property name="Delay" value="0" />
     </property>
+  </item>
+
+  <item id="3130" name="Raw Fish">
+    <property name="Meshfile" value="Items/Misc/parcelPrefab"/>
+    <property name="Material" value="organic"/>
+    <property name="HoldType" value="31"/>
+    <property name="Stacknumber" value="10"/>
+    <property name="EconomicValue" value="10"/>
+    <property name="CraftingIngredientTime" value="15"/>
+    <property class="Action1">
+      <!-- UseAction -->
+      <property name="Class" value="Eat"/>
+      <property name="Delay" value="1.0"/>
+      <property name="Use_time" value="..."/>
+      <property name="Gain_health" value="2"/>
+      <property name="Gain_food" value="5"/>
+      <property name="Gain_water" value="0"/>
+      <property name="Gain_stamina" value="0"/>
+      <property name="Gain_sickness" value="30"/>
+      <property name="Buff" value="foodPoisoning"/>
+      <property name="Buff_chance" value="0.5"/>
+      <property name="Sound_start" value="player_eating"/>
+    </property>
+    <property name="DescriptionKey" value="rawfishDesc"/>
+    <property name="Smell" value="ExLargeSmell"/>
+    <property name="Group" value="Food/Cooking"/>
+  </item>
+  <item id="3131" name="Fishing Rod">
+    <property name="Meshfile" value="Items/Tools/stone_shovelPrefab"/>
+    <property name="Material" value="Mplastics"/>
+    <property name="HoldType" value="18"/>
+    <property name="EconomicValue" value="500"/>
+    <property name="EconomicBundleSize" value="1"/>
+    <property name="SellableToTrader" value="false"/>
+    <property class="Action0">
+      <!-- UseAction -->
+      <property name="Class" value="ExchangeItem"/>
+      <property name="Delay" value="1.8"/>
+      <property name="Range" value="2.4"/>
+      <property name="Sphere" value="0.2"/>
+      <property name="Change_item_to" value="Fishing Rod Full"/>
+      <property name="Focused_blockname_1" value="water"/>
+      <property name="Focused_blockname_2" value="waterMoving"/>
+      <property name="Focused_blockname_3" value="waterStaticBucket"/>
+      <property name="Focused_blockname_4" value="waterMovingBucket"/>
+      <property name="Focused_blockname_5" value="waterSource8"/>
+      <property name="Sound_start" value="SlowSwoosh"/>
+    </property>
+    <property name="Group" value="Tools/Traps,Basics"/>
+    <property name="DescriptionKey" value="fishingRodDesc"/>
+  </item>
+  <item id="3132" name="Fishing Rod Full">
+    <property name="Meshfile" value="Items/Tools/stone_shovelPrefab"/>
+    <property name="Material" value="Mplastics"/>
+    <property name="HoldType" value="18"/>
+    <property class="Action1">
+      <!-- UseAction -->
+      <property name="Class" value="PlaceAsBlock"/>
+      <property name="Delay" value="0.5"/>
+      <property name="Blockname" value="Livewell"/>
+      <property name="Change_item_to" value="Fishing Rod"/>
+      <property name="Sound_start" value="bucketplace_water"/>
+    </property>
+    <property name="Group" value="Tools/Traps,Basics"/>
   </item>
 </items>

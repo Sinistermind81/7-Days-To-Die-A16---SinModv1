@@ -262,8 +262,7 @@
 	<property name="ChestExplosionDamageMultiplier" value=".85"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
-  <!--
-  <entity_class name="zombieBehemoth" extends="zombieTemplateMale">
+<entity_class name="zombieBehemoth" extends="zombieTemplateMale">
 	<property name="Prefab" value="NPC4m"/>
 	<property name="SoundRandom" value="Enemies/Base_Zombie_Male2/zombiemale2roam"/>
 	<property name="SoundAlert" value="Enemies/Base_Zombie_Male2/zombiemale2alert"/>
@@ -285,7 +284,6 @@
 	<property name="HandItem" value="handZombieBehemoth"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
--->
 
 <!-- Missing: zombieBehemothRadiated -->
 <!-- Missing: zombieBehemothFeral -->
