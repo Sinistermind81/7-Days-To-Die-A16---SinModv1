@@ -59,6 +59,7 @@ tbnsew:
     <!-- default=true -->
     <drop event="Harvest" name="rockSmall" count="25" tool_category="harvestingTools"/>
     <drop event="Harvest" name="ironFragment" count="2" tool_category="harvestingTools"/>
+
     <drop event="Destroy" name="rockSmall" count="10"/>
     <drop event="Destroy" name="ironFragment" count="2" />
     <drop event="Fall" name="rockSmall" count="50" prob="0.23" stick_chance="0"/>
@@ -1178,6 +1179,7 @@ group desc for stuff like metal siding
       <property name="ItemCount" value="10"/>
       <property name="UpgradeHitCount" value="4"/>
     </property>
+    <property name="CustomUpgradeSound" value="place_block_concrete"/>
     <drop event="Harvest" name="clayLump" count="6"/>
     <drop event="Harvest" name="rockSmall" count="6"/>
     <drop event="Destroy" count="0"/>
@@ -1431,6 +1433,7 @@ group desc for stuff like metal siding
       <property name="ItemCount" value="10"/>
       <property name="UpgradeHitCount" value="4"/>
     </property>
+    <property name="CustomUpgradeSound" value="place_block_concrete"/>
     <property name="EconomicValue" value="8"/>
     <property name="EconomicBundleSize" value="20"/>
   </block>
@@ -1476,6 +1479,7 @@ group desc for stuff like metal siding
       <property name="ItemCount" value="10"/>
       <property name="UpgradeHitCount" value="4"/>
     </property>
+    <property name="CustomUpgradeSound" value="place_block_concrete"/>
     <drop event="Harvest" name="scrapIron" count="17"/>
     <drop event="Destroy" count="0"/>
     <drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
@@ -1508,6 +1512,7 @@ group desc for stuff like metal siding
       <property name="UpgradeHitCount" value="4"/>
     </property>
     <property name="CustomUpgradeSound" value="place_block_concrete"/>
+    <!-- <property name="CustomUpgradeSound" value="place_block_wood"/> -->
     <property class="RepairItems">
       <property name="forgedIron" value="1"/>
     </property>
@@ -2894,7 +2899,6 @@ group desc for stuff like metal siding
     <property name="Shape" value="ModelEntity"/>
     <property name="Model" value="Entities/Plants/potato_plant_harvestPrefab"/>
     <property name="Collide" value="melee"/>
-    <property name="DowngradeBlock" value="plantedPotato1"/>
     <drop event="Harvest" name="potato" count="1"/>
   </block>
 
@@ -2945,6 +2949,8 @@ group desc for stuff like metal siding
     <property name="Tag" value="Gore"/>
     <property name="IsTerrainDecoration" value="true"/>
     <property name="FallDamage" value="false"/>
+    <property name="LootList" value="1"/>
+    <!-- dummy loot list, will be overridden by the animal that died -->
     <!-- WILL NOT WORK WITH GORE ANY MORE
 	<property name="UpgradeRated.ToBlock" value="air"/-->
     <!-- 1=min, 15=max NOTE: 1 tick is approximately a 1 to 2 minute real-time interval. -->
@@ -3665,12 +3671,6 @@ group desc for stuff like metal siding
     <property name="LootList" value="16"/>
     <drop event="Destroy" name="scrapIron" count="5" prob="1"/>
     <property name="EconomicValue" value="40"/>
-    <property class="UpgradeBlock">
-      <property name="ToBlock" value="cntGarbageDisposalEmpty"/>
-      <property name="Item" value="trashbag"/>
-      <property name="ItemCount" value="1"/>
-      <property name="UpgradeHitCount" value="1"/>
-    </property>
   </block>
 
   <block id="336" name="cntBin">
@@ -4562,12 +4562,6 @@ group desc for stuff like metal siding
     <property name="Group" value="Building"/>
     <property name="EconomicValue" value="160"/>
     <property name="ActivationDistance" value="14"/>
-    <property class="UpgradeBlock">
-      <property name="ToBlock" value="woodFrameBlock"/>
-      <property name="Item" value="Admin Tool"/>
-      <property name="ItemCount" value="0"/>
-      <property name="UpgradeHitCount" value="1"/>
-    </property>
   </block>
 
   <block id="408" name="trapSpikesNew">
@@ -4769,7 +4763,7 @@ group desc for stuff like metal siding
     <property name="HeatMapFrequency" value="25"/>
     <property name="ActiveRadiusEffects" value="+heatSource(3)"/>
     <property class="Workstation">
-      <property name="Modules" value="tools,output,fuel,input"/>
+      <property name="Modules" value="output,fuel,input"/>
     </property>
     <property class="RepairItems">
       <property name="forgedIron" value="10"/>
@@ -5006,7 +5000,6 @@ group desc for stuff like metal siding
 
   <block id="440" name="workingGasPump">
     <property name="Extends" value="cntGasPump" />
-    <property name="CreativeMode" value="Dev"/>
     <property name="CustomIcon" value="AdminGasPump"/>
     <property name="MaxDamage" value="20000000" />
     <property name="StabilitySupport" value="false" />
@@ -5018,6 +5011,16 @@ group desc for stuff like metal siding
     <property name="Buff" value="shockedBuff"/>
   </block>
   
+  <block id="441" name="workingTrader">
+    <property name="Class" value="VendingMachine"/>
+    <property name="DescriptionKey" value="customTraderDesc"/>
+    <property name="Shape" value="ModelEntity"/>
+    <property name="Model" value="Entities/Zombies/SleeperPoses/idleSleep"/>
+    <property name="Pose" value="5"/>
+    <property name="Material" value="organic"/>
+    <property name="LookIdentity" value="0,0,1"/>
+    <property name="TraderID" value="1"/>
+  </block>
 
   <block id="442" name="cntVIPVendingMachine">
     <property name="Class" value="VendingMachine"/>
@@ -5064,24 +5067,6 @@ group desc for stuff like metal siding
     <!-- amount of days for respawn 60 equals 1 day-->
     <property name="PlantGrowing.FertileLevel" value="0" />
     <property name="PlantGrowing.IsRandom" value="false" />
-  </block>
-
-  <block id="445" name="Livewell">
-    <property name="Material" value="organic"/>
-    <property name="MaxDamage" value="5"/>
-    <property name="StabilitySupport" value="false"/>
-    <!-- build restriction -->
-    <property name="Shape" value="Ext3dModel"/>
-    <property name="Mesh" value="models"/>
-    <property name="Model" value="LootContainers/cooler" param1="main_mesh"/>
-    <property class="RepairItems">
-      <property name="scrapPlastics" value="10"/>
-    </property>
-    <drop event="Harvest" name="Raw Fish" count="1" prob="0.25" tool_category="Fishing"/>
-    <drop event="Destroy" count="0"/>
-    <property name="Group" value="Decor/Miscellaneous"/>
-    <property name="DescriptionKey" value="livewellDesc"/>
-    <!-- disassemble value -->
   </block>
   <!--
 kind of free
@@ -6312,6 +6297,7 @@ kind of free
     <drop event="Harvest" name="wood" count="185" tool_category="harvestingTools"/>
     <drop event="Destroy" name="wood" count="90" prob="1" />
     <property name="ParticleOnDeath" value="treeGib_burnt_55m"/>
+    <drop event="Destroy" name="treePlantedMountainPine1m" count="1"/>
   </block>
 
   <block id="566" name="treeBirch10m">
@@ -6502,6 +6488,7 @@ kind of free
     <drop event="Harvest" name="wood" count="50" tool_category="harvestingTools"/>
     <drop event="Destroy" name="wood" count="25" prob="1" />
     <property name="ParticleOnDeath" value="treeGib_dead_01"/>
+    <drop event="Destroy" name="treePlantedMaple1m" count="1"/>
   </block>
 
   <block id="582" name="treeDeadTree02">
@@ -6514,6 +6501,7 @@ kind of free
     <drop event="Harvest" name="wood" count="50" tool_category="harvestingTools"/>
     <drop event="Destroy" name="wood" count="25" prob="1" />
     <property name="ParticleOnDeath" value="treeGib_dead_02"/>
+    <drop event="Destroy" name="treePlantedMaple1m" count="1"/>
   </block>
   <!-- 3 Free -->
 
@@ -6527,6 +6515,7 @@ kind of free
     <drop event="Destroy" name="wood" count="25" prob="1" />
     <property name="FallOver" value="true"/>
     <property name="ParticleOnDeath" value="treeGib_winter_small"/>
+    <drop event="Destroy" name="treePlantedWinterPine1m" count="1"/>
   </block>
 
   <block id="587" name="treeWinterPine01">
@@ -7419,6 +7408,7 @@ kind of free
       <property name="forgedIron" value="5"/>
     </property>
     <property name="TraderID" value="3"/>
+    <property name="Stacknumber" value="10"/>
     <property name="EconomicValue" value="2000"/>
     <property name="Buff" value="shockedBuff"/>
     <drop event="Destroy" count="0"/>
@@ -8538,6 +8528,7 @@ kind of free
     <drop event="Destroy" name="spring" count="4,12" prob="1" tool_category="Disassemble"/>
     <drop event="Destroy" name="mechanicalParts" count="4,20" prob="1" tool_category="Disassemble"/>
     <drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+    <property name="Stacknumber" value="1"/>
     <property name="DescriptionKey" value="drawBridgeGroupDesc"/>
     <property name="ActivationDistance" value="14"/>
     <!-- This is how far away you can PLACE the block and how far away you can ACTIVATE it -->
@@ -12341,7 +12332,7 @@ kind of free
     <property class="UpgradeBlock">
       <property name="ToBlock" value="plainWoodWindowPlug"/>
       <property name="Item" value="wood"/>
-      <property name="ItemCount" value="10"/>
+      <property name="ItemCount" value="410"/>
       <property name="UpgradeHitCount" value="4"/>
     </property>
     <property name="CustomUpgradeSound" value="place_block_wood"/>
@@ -12349,28 +12340,16 @@ kind of free
   </block>
 
   <block id="1201" name="window03Broke2">
-    <property name="Material" value="glass"/>
-    <property name="LightOpacity" value="0"/>
-    <property name="Shape" value="Ext3dModel"/>
-    <property name="Texture" value="293"/>
-    <property name="Mesh" value="models"/>
+    <property name="Extends" value="window03Broke1" param1="DowngradeBlock"/>
     <property name="Model" value="Buildings/window03_broke2" param1="main_mesh"/>
-    <property name="Place" value="TowardsPlacer"/>
     <property name="Collide" value="movement,melee,rocket"/>
     <!-- -rocket -->
-    <property class="UpgradeBlock">
-      <property name="ToBlock" value="plainWoodWindowPlug"/>
-      <property name="Item" value="wood"/>
-      <property name="ItemCount" value="10"/>
-      <property name="UpgradeHitCount" value="4"/>
-    </property>
-    <property name="CustomUpgradeSound" value="place_block_wood"/>
-    <drop event="Destroy" count="0"/>
   </block>
 
   <block id="1202" name="window03Broke3">
     <property name="Extends" value="window03Broke2"/>
     <property name="Model" value="Buildings/window03_broke3" param1="main_mesh"/>
+    <drop event="Destroy" count="0"/>
   </block>
 
   <block id="1203" name="window03Broke4">
@@ -12395,6 +12374,12 @@ kind of free
   <block id="1205" name="window03Frame">
     <property name="Extends" value="window03Broke2"/>
     <property name="Model" value="Buildings/window03_frame" param1="main_mesh"/>
+    <property name="Material" value="wood_regular"/>
+    <property name="MaxDamage" value="100"/>
+    <property class="RepairItems">
+      <property name="wood" value="2"/>
+    </property>
+    <drop event="Destroy" count="0"/>
   </block>
 
   <block id="1206" name="glassIndustrial02CTRPlate">
@@ -16616,11 +16601,11 @@ kind of free
     <drop event="Harvest" name="electricalWires" count="0,4" too_category="Disassemble"/>
     <drop event="Harvest" name="scrapIron" count="10,40" prob="1"/>
     <drop event="Destroy" count="0"/>
-
+    <property name="Stacknumber" value="10"/>
     <property name="EconomicValue" value="3000"/>
     <property name="EconomicBundleSize" value="1"/>
     <property name="ImposterExchange" value="imposterBlock" param1="109"/>
-    <property name="Group" value="Science"/>
+    <property name="Group" value="Tools/Traps,Science"/>
     <property name="PickupJournalEntry" value="cameraTip"/>
   </block>
 
@@ -16655,7 +16640,6 @@ kind of free
 
   <!--Admin Lobby Blocks-->
   <block id="1680" name="Admin_concreteRamp">
-    <property name="CreativeMode" value="Dev"/>
     <property name="Extends" value="concreteMaster"/>
     <property name="CustomIcon" value="Admin_ConcreteRamp"/>
     <property name="Shape" value="New"/>
@@ -16675,7 +16659,6 @@ kind of free
   </block>
 
   <block id="1681" name="Admin_concreteBlock">
-    <property name="CreativeMode" value="Dev"/>
     <property name="Extends" value="concreteMaster"/>
     <property name="CustomIcon" value="Admin_ConcreteBlock"/>
     <property name="MaxDamage" value="2000000000" />
@@ -16693,7 +16676,6 @@ kind of free
   </block>
 
   <block id="1682" name="Admin_concreteCNRRound">
-    <property name="CreativeMode" value="Dev"/>
     <property name="Extends" value="concreteMaster"/>
     <property name="CustomIcon" value="Admin_ConcreteCNRRound"/>
     <property name="Shape" value="New"/>
@@ -16712,7 +16694,6 @@ kind of free
   </block>
 
   <block id="1683" name="Admin_concreteCNRRoundTop">
-    <property name="CreativeMode" value="Dev"/>
     <property name="Extends" value="concreteCNRRound"/>
     <property name="CustomIcon" value="Admin_ConcreteCNRRoundTop"/>
     <property name="Model" value="corner_rounded"/>
@@ -16730,7 +16711,6 @@ kind of free
   </block>
 
   <block id="1684" name="Admin_concreteStairs25">
-    <property name="CreativeMode" value="Dev"/>
     <property name="Extends" value="concreteMaster"/>
     <property name="CustomIcon" value="Admin_ConcreteStairs25"/>
     <property name="Shape" value="New"/>
@@ -16753,7 +16733,6 @@ kind of free
   </block>
 
   <block id="1685" name="Admin_concretePillar100">
-    <property name="CreativeMode" value="Dev"/>
     <property name="Extends" value="concreteMaster"/>
     <property name="CustomIcon" value="Admin_ConcretePillar100"/>
     <property name="Shape" value="New"/>
@@ -16774,7 +16753,6 @@ kind of free
   </block>
 
   <block id="1686" name="Admin_concretePillar50">
-    <property name="CreativeMode" value="Dev"/>
     <property name="Extends" value="concreteMaster"/>
     <property name="CustomIcon" value="Admin_ConcretePillar50"/>
     <property name="Shape" value="New"/>
@@ -16796,7 +16774,6 @@ kind of free
   </block>
 
   <block id="1687" name="Admin_concreteArch">
-    <property name="CreativeMode" value="Dev"/>
     <property name="Extends" value="concreteMaster"/>
     <property name="CustomIcon" value="Admin_ConcreteArch"/>
     <property name="Shape" value="New"/>
@@ -16816,7 +16793,6 @@ kind of free
   </block>
 
   <block id="1688" name="Admin_concreteStairs25CornerCNR">
-    <property name="CreativeMode" value="Dev"/>
     <property name="Extends" value="concreteMaster"/>
     <property name="CustomIcon" value="Admin_ConcreteStairs25CornerCNR"/>
     <property name="Shape" value="New"/>
@@ -16837,7 +16813,6 @@ kind of free
   </block>
 
   <block id="1689" name="Admin_concretePyramid">
-    <property name="CreativeMode" value="Dev"/>
     <property name="Extends" value="concreteMaster"/>
     <property name="CustomIcon" value="Admin_ConcretePyramid"/>
     <property name="Shape" value="New"/>
@@ -16856,7 +16831,6 @@ kind of free
   </block>
 
   <block id="1664" name="Admin_concreteCNRInside">
-    <property name="CreativeMode" value="Dev"/>
     <property name="Extends" value="concreteMaster"/>
     <property name="CustomIcon" value="Admin_ConcreteCNRInside"/>
     <property name="Shape" value="New"/>
@@ -16871,7 +16845,6 @@ kind of free
   </block>
 
   <block id="1665" name="Admin_concreteCNRFull">
-    <property name="CreativeMode" value="Dev"/>
     <property name="Extends" value="concreteMaster"/>
     <property name="CustomIcon" value="Admin_ConcreteCNRFull"/>
     <property name="Shape" value="New"/>
@@ -16886,7 +16859,6 @@ kind of free
   </block>
 
   <block id="1667" name="Admin_houseFrontDoor">
-    <property name="CreativeMode" value="Dev"/>
     <property name="DescriptionKey" value="doorGroupDesc"/>
     <property name="Class" value="DoorSecure"/>
     <property name="Material" value="wood_regular"/>
@@ -16930,7 +16902,6 @@ kind of free
   </block>
 
   <block id="1670" name="Admin_glassBulletproofPlateCurved">
-    <property name="CreativeMode" value="Dev"/>
     <property name="Extends" value="glassBulletproofMaster"/>
     <property name="Model" value="plate_corner_round_1m"/>
     <property class="RepairItems">
@@ -16946,7 +16917,6 @@ kind of free
   </block>
 
   <block id="1671" name="Admin_glassBulletproofPlate">
-    <property name="CreativeMode" value="Dev"/>
     <property name="Extends" value="glassBulletproofMaster"/>
     <property name="Model" value="plate_glass"/>
     <property name="Place" value="TowardsPlacerInverted"/>
@@ -16963,7 +16933,6 @@ kind of free
   </block>
 
   <block id="1676" name="Admin_ironBars">
-    <property name="CreativeMode" value="Dev"/>
     <property name="Extends" value="ironBarsCentered"/>
     <property name="Material" value="MrConcrete"/>
     <property name="Model" value="iron_bars"/>
@@ -16979,7 +16948,6 @@ kind of free
 
 
   <block id="1694" name="Admin_adhesiveTrap">
-    <property name="CreativeMode" value="Dev"/>
     <property name="Extends" value="radiated"/>
     <property name="Material" value="MbarbedFence" />
     <property name="CustomIcon" value="Admin_ConcreteBlock"/>
@@ -16994,7 +16962,6 @@ kind of free
   </block>
 
   <block id="1695" name="Admin_shockBlock">
-    <property name="CreativeMode" value="Dev"/>
     <property name="Extends" value="concreteMaster"/>
     <property name="CustomIcon" value="Admin_ConcreteBlock"/>
     <property name="MaxDamage" value="2000000000" />
@@ -17084,49 +17051,42 @@ kind of free
 
   <!--SinMod Shoppingcenter-->
   <block id="1700" name="shoppingLeather">
-    <property name="CreativeMode" value="Dev"/>
     <property name="Extends" value="cntVendingMachine" />
     <property name="MaxDamage" value="2000000" />
     <property name="TraderID" value="25" />
   </block>
 
   <block id="1701" name="shoppingCloth">
-    <property name="CreativeMode" value="Dev"/>
     <property name="Extends" value="cntVendingMachine" />
     <property name="MaxDamage" value="2000000" />
     <property name="TraderID" value="26" />
   </block>
 
   <block id="1702" name="shoppingHide">
-    <property name="CreativeMode" value="Dev"/>
     <property name="Extends" value="cntVendingMachine" />
     <property name="MaxDamage" value="2000000" />
     <property name="TraderID" value="27" />
   </block>
 
   <block id="1703" name="shoppingIron">
-    <property name="CreativeMode" value="Dev"/>
     <property name="Extends" value="cntVendingMachine" />
     <property name="MaxDamage" value="2000000" />
     <property name="TraderID" value="28" />
   </block>
 
   <block id="1704" name="shoppingScrap">
-    <property name="CreativeMode" value="Dev"/>
     <property name="Extends" value="cntVendingMachine" />
     <property name="MaxDamage" value="2000000" />
     <property name="TraderID" value="29" />
   </block>
 
   <block id="1705" name="shoppingSteel">
-    <property name="CreativeMode" value="Dev"/>
     <property name="Extends" value="cntVendingMachine" />
     <property name="MaxDamage" value="2000000" />
     <property name="TraderID" value="30" />
   </block>
 
   <block id="1706" name="shoppingJacket">
-    <property name="CreativeMode" value="Dev"/>
     <property name="Extends" value="cntVendingMachine" />
     <property name="MaxDamage" value="2000000" />
     <property name="TraderID" value="31" />
@@ -17148,7 +17108,6 @@ kind of free
   </block>
   <block id="1716" name="plantedApple2">
     <property name="Class" value="PlantGrowing" />
-    <property name="CreativeMode" value="Dev"/>
     <property name="Material" value="leaves" />
     <property name="Shape" value="ModelEntity" />
     <property name="Texture" value="292" />
@@ -17165,7 +17124,6 @@ kind of free
   </block>
   <block id="1717" name="plantedApple3">
     <property name="Material" value="wood" />
-    <property name="CreativeMode" value="Dev"/>
     <property name="Place" value="Door" />
     <property name="Shape" value="ModelEntity" />
     <property name="Texture" value="116" />
@@ -17183,7 +17141,6 @@ kind of free
   </block>
   <block id="1718" name="plantedAppleEmpty">
     <property name="Class" value="PlantGrowing" />
-    <property name="CreativeMode" value="Dev"/>
     <property name="Material" value="wood" />
     <property name="Place" value="Door" />
     <property name="Shape" value="ModelEntity" />
@@ -17225,7 +17182,6 @@ kind of free
   </block>
   <block id="1720" name="plantedWheat2">
     <property name="Class" value="CropsGrown" />
-    <property name="CreativeMode" value="Dev"/>
     <property name="Material" value="plants" />
     <property name="Shape" value="Grass" />
     <property name="Mesh" value="grass" />
@@ -17261,7 +17217,6 @@ kind of free
   </block>
   <block id="1722" name="plantedGrape2">
     <property name="Class" value="CropsGrown" />
-    <property name="CreativeMode" value="Dev"/>
     <property name="Material" value="plants" />
     <property name="Shape" value="ModelEntity" />
     <property name="Texture" value="241" />
@@ -17299,7 +17254,6 @@ kind of free
   </block>
   <block id="1725" name="plantedOrange2">
     <property name="Class" value="PlantGrowing" />
-    <property name="CreativeMode" value="Dev"/>
     <property name="Material" value="leaves" />
     <property name="Shape" value="ModelEntity" />
     <property name="Texture" value="292" />
@@ -17316,7 +17270,6 @@ kind of free
   </block>
   <block id="1726" name="plantedOrange3">
     <property name="Material" value="wood" />
-    <property name="CreativeMode" value="Dev"/>
     <property name="Place" value="Door" />
     <property name="Shape" value="ModelEntity" />
     <property name="Texture" value="116" />
@@ -17334,7 +17287,6 @@ kind of free
   </block>
   <block id="1727" name="plantedOrangeEmpty">
     <property name="Class" value="PlantGrowing" />
-    <property name="CreativeMode" value="Dev"/>
     <property name="Material" value="wood" />
     <property name="Place" value="Door" />
     <property name="Shape" value="ModelEntity" />
@@ -17849,6 +17801,7 @@ kind of free
 
   <block id="1926" name="cntVendingMachineTrader">
     <property name="Extends" value="cntVendingMachine"/>
+    <property name="CreativeMode" value="Dev" />
     <property name="Model" value="Entities/LootContainers/vending_machine_traderPrefab"/>
     <property name="TraderID" value="5"/>
   </block>

@@ -498,7 +498,6 @@
     <item name="challengeTakingNote"/>
     <item name="challengeSurvivorJournal"/>
     <item name="challengeLockpick"/>
-    <item name="challengeKickz"/>
     <item name="challengeJock"/>
     <item name="challengeWalmart"/>
   </lootgroup>
@@ -575,16 +574,6 @@
 	<item name="bandanaBrown"/>
 	<item name="bandanaGreen"/>
 	<item name="bandanaRed"/>
-  <item name="bandanaCamo"/>
-</lootgroup>
-
-<lootgroup name="denimShortsPantsAll">
-  <item name="denimShortsPants"/>
-  <item name="denimShortsPantsRed"/>
-  <item name="denimShortsPantsBrown"/>
-  <item name="denimShortsPantsGreen"/>
-  <item name="denimShortsPantsBlue"/>
-  <item name="denimShortsPantsBlack"/>
 </lootgroup>
 
 <lootgroup name="suitAll">
@@ -599,7 +588,6 @@
 	<item name="brownDenimPants"/>
 	<item name="redDenimPants"/>
 	<item name="armyPants"/>
-  <item group="denimShortsPantsAll"/>
 </lootgroup>
 
 <lootgroup name="skirtsAll">
@@ -609,6 +597,15 @@
 	<item name="skirtGreen"/>
 	<item name="skirtBlue"/>
 	<item name="skirtBlack"/>
+</lootgroup>
+
+<lootgroup name="denimShortsPantsAll">
+	<item name="denimShortsPants"/>
+	<item name="denimShortsPantsRed"/>
+	<item name="denimShortsPantsBrown"/>
+	<item name="denimShortsPantsGreen"/>
+	<item name="denimShortsPantsBlue"/>
+	<item name="denimShortsPantsBlack"/>
 </lootgroup>
 
 <lootgroup name="pufferCoatAll">
@@ -694,12 +691,19 @@
 <lootgroup name="cowboyHatAll">
 	<item name="cowboyHat"/>
 	<item name="blackCowboyHat"/>
-  <item name="pimpHat"/>
-  <item name="rangerHat"/>
 </lootgroup>
 
 <lootgroup name="overallsAll">
 	<item name="overalls"/>
+</lootgroup>
+
+<lootgroup name="hazmatGear">
+	<item name="hazmatBoots"/>
+	<item name="hazmatPants"/>
+	<item name="hazmatShirt"/>
+	<item name="hazmatGloves"/>
+	<item name="hazmatMask"/>
+	<item name="militaryFiber" count="1,5" prob="2"/>
 </lootgroup>
 
   <lootgroup name="hoodsAll">
@@ -722,15 +726,6 @@
     <item name="footballHelmetLime"/>
   </lootgroup>
 
-  <lootgroup name="hazmatGear">
-    <item name="hazmatBoots"/>
-    <item name="hazmatPants"/>
-    <item name="hazmatShirt"/>
-    <item name="hazmatGloves"/>
-    <item name="hazmatMask"/>
-    <item name="militaryFiber" count="1,5" prob="2"/>
-  </lootgroup>
-  
   <lootgroup name="banditArmor">
 	<item name="heavyBanditGloves"/>
 	<item name="heavyBanditGasmask"/>
@@ -756,7 +751,7 @@
 	<item name="gunPistol" count="1"/>
 </lootgroup>
 
-<lootgroup name="toiletLoot" count="1" loot_quality_template="baseTemplate">
+<lootgroup name="toiletLoot" count="1">
 	<item group="weaponsPistol+ammo" count="1" prob="0.05"/>
 	<item name="bottledRiverWater" count="1,2" prob="0.55"/>
 	<item name="turd" count="1,2" prob="0.3"/>
@@ -784,13 +779,14 @@
 	<item name="9mmBullet" count="5,24"/>
 </lootgroup>
 
-  <lootgroup name="rifles">
-    <item name="gunBoltRifle" prob="0.65"/>
-    <item name="gunHuntingRifle" prob="0.35"/>
+
+  <lootgroup name="weaponsAK47+ammo" count="all">
+    <item name="gunAK47"/>
+    <item name="762mmBullet" count="15,26"/>
   </lootgroup>
-  
-<lootgroup name="weaponsHuntingRifle+ammo" count="all">
-	<item group="rifles"/>
+
+  <lootgroup name="weaponsHuntingRifle+ammo" count="all">
+	<item name="gunHuntingRifle" prob="0.65"/>
 	<item name="762mmBullet" count="5,15"/>
 </lootgroup>
 
@@ -804,30 +800,21 @@
 	<item name="762mmBullet" count="5,15"/>
 </lootgroup>
 
-<lootgroup name="weaponsCompoundBowParts" loot_quality_template="treasureTemplate">
-  <!-- weaponPartsTemplate -->
+<lootgroup name="weaponsCompoundBowParts" loot_quality_template="treasureTemplate"> <!-- weaponPartsTemplate -->
 	<item name="partsCompoundBow_body"/>
 	<item name="partsCompoundBow_grip"/>
 	<item name="partsCompoundBow_parts"/>
 	<item name="partsCompoundBow_string"/>
 </lootgroup>
 
-  <lootgroup name="weaponsMagnumParts" loot_quality_template="treasureTemplate">
-    <!-- weaponPartsTemplate -->
-    <item name="parts44Magnum_cylinder"/>
-    <item name="parts44Magnum_frame"/>
-    <item name="parts44Magnum_grip"/>
-    <item name="parts44Magnum_parts"/>
-  </lootgroup>
-  
-  <lootgroup name="gunmods">
-    <item name="gunChoke"/>
-    <item name="gunSilencer"/>
-    <item name="gunScope"/>
-  </lootgroup>
+<lootgroup name="weaponsMagnumParts" loot_quality_template="treasureTemplate"> <!-- weaponPartsTemplate -->
+	<item name="parts44Magnum_cylinder"/>
+	<item name="parts44Magnum_frame"/>
+	<item name="parts44Magnum_grip"/>
+	<item name="parts44Magnum_parts"/>
+</lootgroup>
 
-<lootgroup name="weaponsCommonParts" loot_quality_template="treasureTemplate">
-  <!-- weaponPartsTemplate -->
+<lootgroup name="weaponsCommonParts" loot_quality_template="treasureTemplate"> <!-- weaponPartsTemplate -->
 	<item name="partsPistol_barrel"/>
 	<item name="partsPistol_parts"/>
 	<item name="partsPistol_receiver"/>
@@ -842,21 +829,17 @@
 	<item name="partsHuntingRifle_stock"/>
 	<item name="partsHuntingRifle_receiver"/>
 	<item name="partsHuntingRifle_parts"/>
-  <item name="partsBoltRifle_parts"/>
   <item name="Mag_Extender"/>
 </lootgroup>
 
-<lootgroup name="weaponsHuntingRifleParts" loot_quality_template="treasureTemplate">
-  <!-- weaponPartsTemplate -->
+<lootgroup name="weaponsHuntingRifleParts" loot_quality_template="treasureTemplate"> <!-- weaponPartsTemplate -->
 	<item name="partsHuntingRifle_barrel"/>
 	<item name="partsHuntingRifle_stock"/>
 	<item name="partsHuntingRifle_receiver"/>
 	<item name="partsHuntingRifle_parts"/>
-  <item name="partsBoltRifle_parts"/>
 </lootgroup>
 
-<lootgroup name="weaponsMilitaryParts" loot_quality_template="treasureTemplate"> 
-  <!-- weaponPartsTemplate -->
+<lootgroup name="weaponsMilitaryParts" loot_quality_template="treasureTemplate"> <!-- weaponPartsTemplate -->
 	<item name="partsMP5_barrel"/>
 	<item name="partsMP5_stock"/>
 	<item name="partsMP5_receiver"/>
@@ -877,7 +860,6 @@
 	<item name="smgSchematics"/>
 	<item name="ak47Schematic"/>
 	<item name="rocketLauncherSchematic"/>
-  <item group="gunmods"/>
   <item name="Mag_Extender"/>
 </lootgroup>
 
@@ -932,16 +914,14 @@
 	<item name="ironCrossbowBolt" count="10,30"/>
 </lootgroup>
 
-<lootgroup name="nailgunParts" count="1" loot_quality_template="treasureTemplate">
-  <!-- weaponPartsTemplate -->
+<lootgroup name="nailgunParts" count="1" loot_quality_template="treasureTemplate"> <!-- weaponPartsTemplate -->
 	<item name="partsNailgun_frame"/>
 	<item name="partsNailgun_receiver"/>
 	<item name="partsNailgun_parts"/>
 	<item name="partsNailgun_battery"/>
 </lootgroup>
 
-<lootgroup name="motorToolParts" count="1" loot_quality_template="treasureTemplate"> 
-  <!-- weaponPartsTemplate -->
+<lootgroup name="motorToolParts" count="1" loot_quality_template="treasureTemplate"> <!-- weaponPartsTemplate -->
 	<item name="partsChainsaw_blade"/>
 	<item name="partsChainsaw_parts"/>
 	<item name="partsAuger_blade"/>
@@ -962,35 +942,6 @@
 	<item name="gasCan"/>
 </lootgroup>
 
-  <lootgroup name="skillBooks" count="1">
-    <item name="skillbookAthletics"/>
-    <item name="skillbookBuilding"/>
-    <item name="skillbookBarter"/>
-    <item name="skillbookTools"/>
-    <item name="skillbookBlunt"/>
-    <item name="skillbookRogue"/>
-    <item name="skillbookWasteland"/>
-    <item name="skillbookBlacksmith"/>
-    <item name="skillbookMedical"/>
-    <item name="skillbookGunsmoke"/>
-    <item name="skillbookRifles"/>
-    <item name="skillbookShotguns"/>
-    <item name="skillbookArchery"/>
-    <item name="skillbookBlades"/>
-    <item name="skillbookKnight"/>
-    <item name="skillbookMining"/>
-    <item name="skillbookHunter"/>
-  </lootgroup>
-
-  <lootgroup name="loosePaper" count="1">
-    <item group="questChallenge" prob="0.025"/>
-    <item group="ValmodQuests" prob="0.02"/>
-    <item name="paper" count="10,25" prob="0.85"/>
-    <item name="survivorNotes" count="1" prob="0.05"/>
-    <item name="questItemBook" count="1" prob="0.05"/>
-    <item group="skillBooks" prob="0.005"/>
-  </lootgroup>
-  
 <lootgroup name="commonBooks" count="1">
   <item name="paper" count="10,25" prob="20"/>
 	<item name="crossbowSchematic"/>
@@ -1008,10 +959,6 @@
 	<item name="scrapChestArmorSchematic" prob="0.7"/>
 	<item name="scrapHelmetSchematic" prob="0.7"/>
 	<item name="scrapGlovesSchematic" prob="0.7"/>
-  <item group="skillBooks" />
-  <item name="skillbookLockpick"/>
-  <item name="recipebookAnimalTraps"/>
-  <item name="recipebookPottery"/>
 	<!-- <item name="ammunitionNationBook"/>NO LONGER USED
 	<item name="sawedoffPumpShotgunSchematic"/>
 	<item name="wrenchSchematic"/>
@@ -1023,7 +970,7 @@
 </lootgroup>
 
 <lootgroup name="rareBooks" count="1">
-  <item name="batterybankSchematic"/>
+    <item name="batterybankSchematic"/>
 	<item name="ak47Schematic"/>
 	<item name="augerSchematic"/>
 	<item name="chainsawSchematic"/>
@@ -1060,33 +1007,21 @@
 </lootgroup>
 
 <lootgroup name="paintMagazines" count="1">
-	<item name="paintMagazineDecorations"/> 
-  <!-- traders -->
-	<item name="paintMagazineFaux"/> 
-  <!-- cntBookcase -->
-	<item name="paintMagazineMasonry"/> 
-  <!-- workingStiffs -->
-	<item name="paintMagazineMetal"/> 
-  <!-- garage -->
-	<item name="paintMagazineWallCoverings"/> 
-  <!-- nightstands -->
-	<item name="paintMagazineWoodAndRoofing"/> 
-  <!-- lumberjacks -->
+	<item name="paintMagazineDecorations"/> <!-- traders -->
+	<item name="paintMagazineFaux"/> <!-- cntBookcase -->
+	<item name="paintMagazineMasonry"/> <!-- workingStiffs -->
+	<item name="paintMagazineMetal"/> <!-- garage -->
+	<item name="paintMagazineWallCoverings"/> <!-- nightstands -->
+	<item name="paintMagazineWoodAndRoofing"/> <!-- lumberjacks -->
 </lootgroup>
 
 <lootgroup name="books" count="1">
 	<item name="paper" count="10,25" prob="0.66"/>
 	<item group="commonBooks" prob="0.33"/>
 	<item group="paintMagazines" prob="0.03"/>
-	<item group="rareBooks" loot_prob_template="rareBookTemplate"/> 
-  <!-- .2 => 1.0 -->
+	<item group="rareBooks" loot_prob_template="rareBookTemplate"/> <!-- .2 => 1.0 -->
 </lootgroup>
 
-  <lootgroup name="weaponsAK47+ammo" count="all">
-    <item name="gunAK47"/>
-    <item name="762mmBullet" count="5,18"/>
-  </lootgroup>
-  
 <lootgroup name="weaponsMilitaryGuns+ammo">
 	<item group="weaponsMilitaryParts" prob="0.15"/>
 	<item group="weaponsMP5+ammo" prob="0.15"/>
@@ -1139,7 +1074,6 @@
 <lootgroup name="cannedfood">
 	<item name="canBeef"/>
 	<item name="canCatfood"/>
-  <item name="canPetfood"/>
 	<item name="canChicken"/>
 	<item name="canChili"/>
 	<item name="canDogfood"/>
@@ -1220,7 +1154,6 @@
     <item group="seeds" />
     <item name="electricParts" count="1,2" prob=".05"/>
     <item name="potassiumNitratePowder" count="2,6" prob=".15"/>
-    <item name="paint" count="5,20" prob="0.15"/>
   </lootgroup>
 
   <lootgroup name="cupboardFood">
@@ -1238,14 +1171,10 @@
 	<item name="paint" count="5,20" prob="0.15"/>
 </lootgroup>
 
-<lootgroup name="rareOres"> 
-  <!-- 907 average -->
-	<item name="silverNugget" count="1,4"/> 
-  <!-- 250 -->
-	<item name="goldNugget" count="1,3" prob="0.3"/> 
-  <!-- 700 -->
-	<item name="rawDiamond" count="1,2" prob="0.1"/> 
-  <!-- 1500 -->
+<lootgroup name="rareOres"> <!-- 907 average -->
+	<item name="silverNugget" count="1,4"/> <!-- 250 -->
+	<item name="goldNugget" count="1,3" prob="0.3"/> <!-- 700 -->
+	<item name="rawDiamond" count="1,2" prob="0.1"/> <!-- 1500 -->
 </lootgroup>
 
   <lootgroup name="junkScrap">
@@ -1360,7 +1289,6 @@
 	<item group="skullCapAll"/>
 	<item group="ballCapAll"/>
 	<item group="pressboyCapAll"/>
-  <item group="hoodsAll"/>
 	<item name="clothHat"/>
 	<item name="footballHelmet"/>
 </lootgroup>
@@ -1394,13 +1322,9 @@
     <item group="sweatshirtAll"/>
     <item group="tshirtAll"/>
     <item group="hoodedSweatshirtAll"/>
-    <item group="suitAll" prob="0.2"/>
-    <item group="flannelShirtAll"/>
   </lootgroup>
 
   <lootgroup name="clothes">
-    <item group="denimShortsPantsAll"/>
-    <item name="leatherDusterBlack" prob="0.2"/>
     <item group="topsGroup"/>
     <item group="pantsAll"/>
     <item group="bandanaAll"/>
@@ -1431,11 +1355,11 @@
 	<item name="shades"/>
 	<item name="leatherDuster"/>
 	<item name="leatherDusterBlack" prob="0.2"/>
-  <item name="winterBoots"/>
-  <item name="winterPants"/>
-  <item name="winterShirt"/>
-  <item name="winterGloves"/>
-  <item name="woolScarf"/>
+  <!--<item name="winterBoots"/>
+    <item name="winterPants"/>
+    <item name="winterShirt"/>
+    <item name="winterGloves"/>
+    <item name="woolScarf"/>-->
 </lootgroup>
 
 <lootgroup name="lightArmor">
@@ -1565,7 +1489,6 @@
     <item name="skillbookMining"/>
     <item name="recipebookSinks"/>
     <item name="recipebookOven"/>
-    <item name="paintMagazineMasonry" prob="0.4"/>
   </lootgroup>
 
   <lootgroup name="workingStiffsTools" count="1">
@@ -1579,9 +1502,12 @@
 
   <lootgroup name="workingStiffsResources">
     <item name="woodFrameBlock" count="10,30"/>
-	  <item name="rebarFrameBlock" count="10,20"/>  
+	  <item name="rebarFrameBlock" count="10,20"/>
+    <item name="nail" count="10,40"/>
     <item name="wood" count="50,250"/>
+    <item name="anvil" count="1"/>
     <item name="ironDoor1_v1"/>
+    <item name="sledgehammer"/>
     <item name="forgedIron" count="3,4" prob="0.05"/>
     <item name="forgedSteel" count="3,4" prob="0.05"/>
   </lootgroup>
@@ -1685,12 +1611,10 @@
     <item name="huntingKnife" prob="0.2"/>
     <item name="gunPowder" count="20,50" prob="0.15"/>
     <item group="camoClothes" prob="0.15"/>
-    <item group="ledGroup" prob="0.1"/>
     <item group="huntingGoodsAmmo" prob="0.1"/>
     <item name="flashlight02" prob="0.1"/>
     <item name="firstAidKit" prob="0.1"/>
     <item name="bedroll" prob="0.1"/>
-    <item name="nightvisionGoggles"/>
   </lootgroup>
   
 <lootgroup name="sportingGoods" count="1">
@@ -1745,7 +1669,6 @@
 	<item name="beer"/>
 	<item name="megaCrush" prob="0.045"/>
   <item name="drinkEnergy"/>
-  <item name="waterPurified"/>
 </lootgroup>
 
   <lootgroup name="carFood" count="1">
@@ -1805,10 +1728,10 @@
   </lootgroup>
   
   <lootgroup name="backpacks">
-    <item group="weaponsCommonParts" prob="0.6"/>
+    <item group="weaponsCommonParts"/>
     <item group="cupboard"/>
     <item group="weaponsBasicGuns+ammo" prob="0.5"/>
-    <item group="weaponsMelee" prob="0.5"/>
+    <item group="melee" prob="0.5"/>
     <item group="Armor" prob="0.5"/>
     <item name="flashlight02" prob="0.3"/>
     <item group="backpacksQuestGroup" prob="0.05"/>
@@ -1854,8 +1777,7 @@
 	<item name="fireaxeIron" prob="2"/>
 	<item group="rareTools"/>
 	<item name="grainAlcohol"/>
-	<item name="forgedIron" count="1,4" prob="0.01272"/>
-  <!-- together 0.5% -->
+	<item name="forgedIron" count="1,4" prob="0.01272"/> <!-- together 0.5% -->
 	<item name="forgedSteel" count="1,4" prob="0.00848"/>
 	<item group="weaponsCompoundBowParts" prob="0.05"/>
 	<item name="compoundBow" prob="0.03"/>
@@ -1915,8 +1837,8 @@
 	<item name="bandage"/>
 	<item name="vitamins"/>
   <item group="MedicineTier2"/>
-  <item group="questChallenge" count="1" prob="0.073"/>
-	<item group="treasureMaps" count="1" prob="0.092"/>
+  <item group="questChallenge" count="1" prob="0.056"/>
+	<item group="treasureMaps" count="1" prob="0.084"/>
 </lootgroup>
 
 <lootgroup name="minibikeParts">
@@ -2260,7 +2182,6 @@
   </lootgroup>
   <lootgroup name="SupplyPistolGroup">
     <item name="gunPistol"/>
-    <item name="gunPistolSilenced" prob="0.25"/>
   </lootgroup>
   <lootgroup name="SupplyPistol" count="all">
     <item name="9mmBullet" count="5,20"/>
@@ -2269,7 +2190,6 @@
   </lootgroup>
   <lootgroup name="SupplyRifleGroup">
     <item name="gunHuntingRifle"/>
-    <item name="gunBoltRifle"/>
   </lootgroup>
   <lootgroup name="SupplyRifle" count="all">
     <item group="SupplyRifleGroup"/>
@@ -2302,7 +2222,6 @@
   </lootgroup>
   <lootgroup name="SupplySniperGroup">
     <item name="gunSniperRifle"/>
-    <item name="gunSniperSilenced" prob="0.05"/>
   </lootgroup>
   <lootgroup name="SupplySniper" count="all">
     <item group="SupplySniperGroup"/>
@@ -2393,7 +2312,6 @@
   </lootgroup>
   <lootcontainer id="35" count="1" size="4,3" sound_open="UseActions/open_stump" sound_close="UseActions/close_stump" loot_quality_template="baseTemplate">
     <item group="StumpGroup" prob="0.4"/>
-    <item group="empty" prob="0.54"/>
     <item name="flashlight02" prob="0.06" />
     <item group="militaryAmmo" count="1" prob="0.1"/>
     <item group="ammo" count="1,2" prob="0.2"/>
@@ -2467,7 +2385,6 @@
 	<item group="weaponsMilitaryGuns+ammo" prob="0.35"/>
 	<item group="militaryAmmo" prob="1"/>
 	<item group="militaryArmor" prob="0.1"/>
-  <item name="genericAmmoBox" prob="0.5"/>
 </lootcontainer>
 
 <!-- player dropped backpacks, they only destroy on close when they are empty -->
@@ -2487,9 +2404,7 @@
   </lootgroup>
   <lootcontainer id="42" count="2,5" size="10,5" sound_open="UseActions/open_safe" sound_close="UseActions/close_safe" open_time="1" loot_quality_template="baseTemplate">
     <item group="weaponsBasicGuns+ammo" prob="0.3"/>
-    <item name="oldCash" count="10,45" prob="0.03"/>
     <item group="ammo" prob="0.45"/>
-    <item group="gunmods" prob="0.05"/>
     <item group="gunsafeArmor" prob="0.1"/>
     <item group="gunsafeMisc" prob="0.1"/>
   </lootcontainer>

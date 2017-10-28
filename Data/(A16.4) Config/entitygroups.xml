@@ -21,8 +21,7 @@
 		<entity name="zombieNurse" prob="0.3" />
 		<entity name="zombieSteveCrawler" />
 		<entity name="zombieFatHawaiian" prob="0.3" />
-    <entity name="zombieTrucker" prob="0.3"/>
-   </entitygroup>
+	</entitygroup>
 
 	<entitygroup name="ZombiesNight">
 		<entity name="zombieSpider"/>
@@ -189,8 +188,6 @@
 
 	<entitygroup name="ZombiesBoss">
 		<entity name="zombieFatCop" />
-    <entity name="zombieHulk" />
-    <entity name="zombieBrute" />
 	</entitygroup>
 
 	<entitygroup name="ZombiesFeral">

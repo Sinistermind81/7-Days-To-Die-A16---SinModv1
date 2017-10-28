@@ -226,12 +226,11 @@ icon="ui_game_symbol_hammer" category_key="quest" offer_key="quest_BasicSurvival
 		repeatable="true" category_key="challenge" offer_key="challenge_imalumberjackandimokay_offer" difficulty="hard">
 
     <objective type="Time" value="900" optional="true" />
-    <objective type="ZombieKill" id="zombieSnow,zombieSnowFeral,ZombieLumberjack" value="3" />
+    <objective type="ZombieKill" id="zombieSnow,zombieSnowFeral" value="3" />
 
     <requirement type="Group" id="requirementGroupFireaxe" value="OR">
       <requirement type="Holding" id="fireaxeIron" />
       <requirement type="Holding" id="fireaxeSteel" />
-      <requirement type="Holding" id="legendaryFireaxe" />
     </requirement>
 
     <reward type="SkillPoints" value="2" />
@@ -653,36 +652,33 @@ World's End!!!." difficulty="hard">
   <!--SinMod Class Quests -->
   <!-- Miner -->
   <quest id="challenge_miner1" group_name_key="quest_miner" name="Miner Quest 1/3" subtitle="Mining Challenge 1" description="Bust some rocks" icon="ui_game_symbol_forge"
-		repeatable="false" category_key="challenge" offer="So we hear you want to be a miner.  A real miner knows how to bust some rocks.  Go break some boulders and show us you can handle the job." difficulty="easy">
-    <objective type="FetchKeep" id="rockSmall" value="300" />
-    <objective type="FetchKeep" id="ironFragment" value="150" />
-    <objective type="FetchKeep" id="scrapLead" value="100" />
-    <objective type="FetchKeep" id="coal" value="100" />
-    <objective type="FetchKeep" id="potassiumNitratePowder" value="100" />
-    <reward type="Skill" id="Mining Tools" value="1" />
+		repeatable="false" category_key="quest" offer="So we hear you want to be a miner.  A real miner knows how to bust some rocks.  Go break some boulders and show us you can handle the job." difficulty="easy">
+    <objective type="FetchKeep" id="rockSmall" value="150" />
+    <objective type="FetchKeep" id="ironFragment" value="50" />
+    <reward type="Skill" id="Mining Tools" value="5" />
     <reward type="Item" id="dynamite" value="5" />
     <reward type="Quest" id="challenge_miner2" />
   </quest>
 
   <quest id="challenge_miner2" group_name_key="quest_miner" name="Miner Quest 2/3" subtitle="Mining Challenge 2" description="Keep breaking those rocks" icon="ui_game_symbol_forge"
-  repeatable="false" category_key="challenge" offer="You did ok breaking those rocks, now lets see how well you can find ore buried in the ground.  That TNT should help you get started." difficulty="medium">
+  repeatable="false" category_key="quest" offer="You did ok breaking those rocks, now lets see how well you can find ore buried in the ground.  That TNT should help you get started." difficulty="medium">
     <objective type="FetchKeep" id="rockSmall" value="300" />
     <objective type="FetchKeep" id="ironFragment" value="150" />
     <objective type="FetchKeep" id="scrapLead" value="100" />
     <objective type="FetchKeep" id="coal" value="100" />
     <objective type="FetchKeep" id="potassiumNitratePowder" value="100" />
-    <reward type="Skill" id="Mining Tools" value="1" />
+    <reward type="Skill" id="Mining Tools" value="5" />
     <reward type="Item" id="pickaxeIron" value="300" />
 
     <reward type="Quest" id="challenge_miner3" />
   </quest>
 
   <quest id="challenge_miner3" group_name_key="quest_miner" name="Miner Quest 3/3" subtitle="Mining Challenge 3" description="Almost done, now make some cobblestone" icon="ui_game_symbol_forge"
-  repeatable="false" category_key="challenge" offer="A miner knows how to work with stone.  Cobblestone will provide great protection.  Go make us a bunch and show us how its done." difficulty="hard">
+  repeatable="false" category_key="quest" offer="A miner knows how to work with stone.  Cobblestone will provide great protection.  Go make us a bunch and show us how its done." difficulty="hard">
     <objective type="FetchKeep" id="rockSmall" value="1000" />
     <objective type="FetchKeep" id="clayLump" value="1000" />
     <objective type="Craft" id="cobblestones" value="200" />
-    <reward type="Skill" id="Mining Tools" value="1" />
+    <reward type="Skill" id="Mining Tools" value="5" />
     <reward type="Item" id="pickaxeSteel" value="300-400" />
   </quest>
 
@@ -690,12 +686,11 @@ World's End!!!." difficulty="hard">
   <quest id="challenge_hunter1" group_name_key="quest_hunter" name="Hunter Quest 1/3" subtitle="Hunter Challenge 1" description="Go kill some animals" icon="ui_game_symbol_archery"
 		repeatable="false" category_key="challenge" offer="A real hunter knows how to track and kill his prey.  Go show us you have what it takes." difficulty="easy">
     <requirement type="Group" id="requirementGroupRifle" value="OR">
-      <requirement type="Holding" id="gunBoltRifle" />
       <requirement type="Holding" id="gunHuntingRifle" />
     </requirement>
-    <objective type="AnimalKill" value="20"  />
-    <reward type="Skill" id="Blade Weapons" value="2" />
-    <reward type="Item" id="762mmBullet" value="20" />
+    <objective type="AnimalKill" value="5"  />
+    <reward type="Skill" id="Blade Weapons" value="1" />
+    <reward type="Item" id="762mmBullet" value="15" />
     <reward type="Quest" id="challenge_hunter2" />
   </quest>
 
@@ -713,67 +708,26 @@ World's End!!!." difficulty="hard">
   <quest id="challenge_hunter3" group_name_key="quest_hunter" name="Hunter Quest 3/3" subtitle="Hunter Challenge 3" description="Go kill some animals" icon="ui_game_symbol_archery"
 		repeatable="false" category_key="challenge" offer="So you got some talent.  Lets see if you can manage to accomplish this task.  " difficulty="Hard">
     <requirement type="Group" id="requirementGroupRifle" value="OR">
-      <requirement type="Holding" id="gunBoltRifle" />
       <requirement type="Holding" id="gunHuntingRifle" />
     </requirement>
     <objective type="AnimalKill" value="25"  />
     <reward type="Skill" id="Blade Weapons" value="2" />
     <reward type="Item" id="762mmBullet" value="40" />
-    <reward type="Quest" id="challenge_animaltrap" />
   </quest>
 
-  <quest id="challenge_animaltrap" group_name_key="quest_hunter" name="Animal Trapping Quest" subtitle="Animal Trapping Challenge" description="Before you can craft an animal snare you're going to need some wood, fiber and some animal feed. Ensure you have everything before moving on." icon="ui_game_symbol_archery"
-		repeatable="false" category_key="challenge" offer="Follow these steps to learn how to craft animal snares and chicken coops." difficulty="easy">
-    <action type="TrackQuest" />
-    <objective type="FetchKeep" id="wood" value="5" />
-    <objective type="FetchKeep" id="yuccaFibers" value="6" />
-    <objective type="Craft" id="animalFeed" value="2" />
-    <reward type="Recipe" id="animalSnare" />
-    <reward type="Quest" id="challenge_animaltrap2" />
-  </quest>
-
-  <quest id="challenge_animaltrap2" group_name_key="quest_hunter" name="Animal Trapping Quest 2/4" subtitle="Animal Trapping Challenge"
-	description="Now that you have the required ingredients buid and place your first animal snare. Be sure to place your snare outdoors with sunlight and grass to ensure you catch a critter!" icon="ui_game_symbol_archery"
-		repeatable="false" category_key="challenge" difficulty="easy">
-    <action type="TrackQuest" />
-    <objective type="Craft" id="animalSnare" value="1" />
-    <objective type="BlockPlace" id="animalSnare" value="1" />
-    <reward type="Item" id="animalFeed" value="10" />
-    <reward type="Quest" id="challenge_animaltrap3" />
-  </quest>
-
-  <quest id="challenge_animaltrap3" group_name_key="quest_hunter" name="Animal Trapping Quest 3/4" subtitle="Animal Trapping Challenge"
-	description="Good job, you placed your first snare! You're well on your way to being a regular Elmer Fudd! Now come back in a few days to see if catches anything. Next lets craft a chicken coop. Gather the required ingredients." icon="ui_game_symbol_archery"
-		repeatable="false" category_key="challenge" difficulty="easy">
-    <action type="TrackQuest" />
-    <objective type="FetchKeep" id="wood" value="10" />
-    <objective type="FetchKeep" id="yuccaFibers" value="15" />
-    <objective type="Craft" id="animalFeed" value="10" />
-    <reward type="Recipe" id="chickenCoop" />
-    <reward type="Quest" id="challenge_animaltrap4" />
-  </quest>
-
-  <quest id="challenge_animaltrap4" group_name_key="quest_hunter" name="Animal Trapping Quest 4/4" subtitle="Animal Trapping Challenge"
-	description="Great! Chicken coops are handy for catching chikens for either their meat or for chicken nests. Place the chicken coop down outside under the sun to attract a chicken and then break the coop. This will give you some meat from killing the chicken, but you will lose your coop. If you leave the coop alone and return in a few days it will spawn a chicken nest ontop that you can loot for eggs and feathers. As long as you don't destroy the coop this can be a good renewable source of feathers and eggs!" icon="ui_game_symbol_archery"
-		repeatable="true" category_key="challenge" difficulty="easy">
-    <action type="TrackQuest" />
-    <objective type="Craft" id="chickenCoop" value="1" />
-    <objective type="BlockPlace" id="chickenCoop" value="1" />
-  </quest>
 
   <!-- Builder -->
-  <quest id="challenge_builder1" group_name_key="quest_builder" name="Builder Quest 1/3" subtitle="Builder Challenge 1" description_key="Gather some wood" icon="ui_game_symbol_hammer"
+  <quest id="challenge_builder1" group_name_key="quest_builder" name_key="Builder Quest 1/3" subtitle_key="Builder Challenge 1" description_key="Gather some wood" icon="ui_game_symbol_hammer"
 		repeatable="false" category_key="challenge" offer="A builder works with wood, you will get to know it well by the time you are done." difficulty="easy">
-    <objective type="FetchKeep" id="wood" value="3000" />
-    <reward type="Skill" id="craftSkillMiscellaneous" value="3" />
-    <reward type="Item" id="fireaxeIron" value="250" />
+    <objective type="FetchKeep" id="wood" value="1000" />
+    <reward type="Skill" id="Miscellaneous Crafting" value="1" />
     <reward type="Quest" id="challenge_builder2" />
   </quest>
 
   <quest id="challenge_builder2" group_name_key="quest_builder" name="Builder Quest 2/3" subtitle="Builder Challenge 2" description="Gather some wood" icon="ui_game_symbol_hammer"
 		repeatable="false" category_key="challenge" offer="You need to live, breathe, sleep wood.  Keep cutting those tree's down.  " difficulty="Medium">
     <objective type="FetchKeep" id="wood" value="3000" />
-    <reward type="Skill" id="craftSkillMiscellaneous" value="3" />
+    <reward type="Skill" id="Miscellaneous Crafting" value="3" />
     <reward type="Item" id="sledgehammer" value="250" />
     <reward type="Quest" id="challenge_builder3" />
   </quest>
@@ -783,7 +737,7 @@ World's End!!!." difficulty="hard">
 
     <objective type="FetchKeep" id="wood" value="5000" />
     <reward type="Item" id="clawHammer" value="300" />
-    <reward type="Skill" id="craftSkillMiscellaneous" value="5" />
+    <reward type="Skill" id="Miscellaneous Crafting" value="5" />
   </quest>
 
   <!-- Gunman -->
@@ -793,7 +747,7 @@ World's End!!!." difficulty="hard">
       <requirement type="Holding" id="gun44Magnum" />
       <requirement type="Holding" id="gunPistol" />
     </requirement>
-    <objective type="ZombieKill" value="30" />
+    <objective type="ZombieKill" value="25" />
     <reward type="Item" id="44MagBullet" value="50" />
     <reward type="Skill" id="Pistols" value="1" />
     <reward type="Quest" id="challenge_gunman2" />
@@ -830,7 +784,7 @@ repeatable="false" category_key="challenge" offer="You've survived IED's and MRE
       <requirement type="Holding" id="gunAK47" />
       <requirement type="Holding" id="gunMP5" />
     </requirement>
-    <objective type="ZombieKill" value="30" />
+    <objective type="ZombieKill" value="25" />
     <reward type="Item" id="762mmBullet" value="50" />
     <reward type="Skill" id="Rifles" value="1" />
     <reward type="Quest" id="challenge_veteran2" />
@@ -865,14 +819,12 @@ repeatable="false" category_key="challenge" offer="You've survived IED's and MRE
   <quest id="challenge_survivor1" group_name_key="quest_survivor" name="Survivor Quest 1/3" subtitle="Survivor Challenge 1" description="Thin out some zombies." icon="ui_game_symbol_campfire"
 		repeatable="false" category_key="challenge" offer="A survivor knows how to be silent when needed.  Go kill some zombies without being heard." difficulty="easy">
     <requirement type="Group" id="requirementGroupBowCrossbow" value="OR">
-      <requirement type="Holding" id="compoundBow" />
       <requirement type="Holding" id="woodenBow" />
       <requirement type="Holding" id="crossbow" />
-      <requirement type="Holding" id="ironCrossbow" />
-      <requirement type="Holding" id="crossbowRepeater" />
+      <requirement type="Holding" id="compoundBow" />
     </requirement>
-    <objective type="ZombieKill" value="30" />
-    <reward type="Item" id="ironCrossbowBolt" value="50" />
+    <objective type="ZombieKill" value="25" />
+    <reward type="Item" id="ironCrossbowBolt" value="35" />
     <reward type="Skill" id="Archery" value="1" />
     <reward type="Quest" id="challenge_survivor2" />
   </quest>
@@ -883,8 +835,6 @@ repeatable="false" category_key="challenge" offer="You've survived IED's and MRE
       <requirement type="Holding" id="woodenBow" />
       <requirement type="Holding" id="crossbow" />
       <requirement type="Holding" id="compoundBow" />
-      <requirement type="Holding" id="ironCrossbow" />
-      <requirement type="Holding" id="crossbowRepeater" />
     </requirement>
     <objective type="ZombieKill" value="50" />
 
@@ -899,8 +849,6 @@ repeatable="false" category_key="challenge" offer="You've survived IED's and MRE
       <requirement type="Holding" id="woodenBow" />
       <requirement type="Holding" id="crossbow" />
       <requirement type="Holding" id="compoundBow" />
-      <requirement type="Holding" id="ironCrossbow" />
-      <requirement type="Holding" id="crossbowRepeater" />
     </requirement>
     <objective type="ZombieKill" value="100" />
     <reward type="Item" id="ironCrossbowBolt" value="170" />
@@ -915,11 +863,10 @@ repeatable="false" category_key="challenge" offer="You've survived IED's and MRE
       <requirement type="Holding" id="clubIron" />
       <requirement type="Holding" id="clubBarbed" />
       <requirement type="Holding" id="clubSpiked" />
-      <requirement type="Holding" id="clubBurning" />
       <requirement type="Holding" id="legendaryClubSpiked" />
     </requirement>
 
-    <objective type="ZombieKill" value="30" />
+    <objective type="ZombieKill" value="25" />
     <reward type="Item" id="painkillers" value="2" />
     <reward type="Item" id="firstAidBandage" value="2" />
     <reward type="Skill" id="Blade Weapons" value="1" />
@@ -934,7 +881,6 @@ repeatable="false" category_key="challenge" offer="You've survived IED's and MRE
       <requirement type="Holding" id="clubIron" />
       <requirement type="Holding" id="clubBarbed" />
       <requirement type="Holding" id="clubSpiked" />
-      <requirement type="Holding" id="clubBurning" />
       <requirement type="Holding" id="legendaryClubSpiked" />
     </requirement>
     <objective type="ZombieKill" value="50" />
@@ -953,7 +899,6 @@ repeatable="false" category_key="challenge" offer="You've survived IED's and MRE
       <requirement type="Holding" id="clubIron" />
       <requirement type="Holding" id="clubBarbed" />
       <requirement type="Holding" id="clubSpiked" />
-      <requirement type="Holding" id="clubBurning" />
       <requirement type="Holding" id="legendaryClubSpiked" />
     </requirement>
     <objective type="ZombieKill" value="100" />
@@ -969,8 +914,6 @@ repeatable="false" category_key="challenge" offer="You've survived IED's and MRE
       repeatable="false" category_key="challenge" offer="The apocalypse sucks, medicine is more valuable then gold.  Go craft some meds" difficulty="easy">
     <objective type="Craft" id="bandage" value="10" />
     <objective type="Craft" id="firstAidBandage" value="10" />
-    <objective type="Craft" id="firstAidKit" value="3" />
-    <objective type="Craft" id="disinfectantBandage" value="5" />
     <reward type="Skill" id="craftSkillScience" value="1" />
     <reward type="Skill" id="Medicine" value="1" />
     <reward type="Quest" id="challenge_medic2" />
@@ -1263,130 +1206,88 @@ repeatable="true" category_key="challenge" difficulty="easy">
     <reward type="Item" id="casinoCoin" value="200" />
     <reward type="Item" id="cigar" value="1" />
     <reward type="SkillPoints" value="1" />
-  </quest>  
-  <quest id="challenge_sticky" name="Sticky Pages" subtitle="Collect 10 Tantalizing Magazines" description="Loot through dressers and find 10 'tantalizing' magazines for Sticky-Fingered Pete. Just don't shake his hand after." icon="ui_game_symbol_radiation"
+  </quest>  <quest id="challenge_sticky" name="Sticky Pages" subtitle="Collect 10 Tantalizing Magazines" description="Loot through dressers and find 10 'tantalizing' magazines for Sticky-Fingered Pete. Just don't shake his hand after." icon="ui_game_symbol_radiation"
       repeatable="false" category_key="challenge" offer="Collect 10 Tantalizing Magazines" difficulty="easy">
     <objective type="Fetch" id="tantalizingMagazine" value="10" />
     <reward type="Skill" id="Athletics" value="3" />
-  </quest>  
-  <quest id="challenge_bigbadbosses" group_name_key="quest_bigbadbosses" name="Big Bad Bosses Quest" subtitle="Zombie Boss Challenge" description="Who's the boss now?" icon="ui_game_symbol_zombie"
+  </quest>  <quest id="challenge_bigbadbosses" group_name_key="quest_bigbadbosses" name="Big Bad Bosses Quest" subtitle="Zombie Boss Challenge" description="Who's the boss now?" icon="ui_game_symbol_zombie"
 		repeatable="true" category_key="challenge" offer="Slay three of the zombie bosses." difficulty="Hard">
     <action type="TrackQuest" />
-    <objective type="ZombieKill" id="zombieFatCop" value="1" />
-    <objective type="ZombieKill" id="zombieWightFeral" value="1" />
+    <objective type="ZombieKill" id="fatzombiecop" value="1" />
+    <objective type="ZombieKill" id="zombieferal" value="1" />
     <objective type="ZombieKill" id="ZombieBrute" value="1" />
     <reward type="Item" id="genericAmmoBox" value="3" />
     <reward type="SkillPoints" value="1" />
-  </quest>  
-<quest id="challenge_anklebitters" group_name_key="quest_anklebitters" name="Ankle Bitters Quest" subtitle="Ankle Bitting Challenge" description="Whats that nibbling at your heel?" icon="ui_game_symbol_zombie"
-		repeatable="true" category_key="challenge" offer="Slaughter 15 ravager zombies." difficulty="medium">
+  </quest>  <quest id="challenge_anklebitters" group_name_key="quest_anklebitters" name="Ankle Bitters Quest" subtitle="Ankle Bitting Challenge" description="Whats that nibbling at your heel?" icon="ui_game_symbol_zombie"
+		repeatable="true" category_key="challenge" offer="Slaughter 10 feral ravager zombies." difficulty="medium">
     <action type="TrackQuest" />
-    <objective type="ZombieKill" id="ZombieRavager" value="15" />
+    <objective type="ZombieKill" id="Feral Ravager" value="10" />
     <reward type="SkillPoints" value="1" />
-  </quest>  
-  <quest id="challenge_lightthemup" name="Light'Em Up" subtitle="Kill 30 zombies with a burning club." description="Light up a wooden club in a campfire and use it to kill 30 zombies." icon="ui_game_symbol_club"
+  </quest>  <quest id="challenge_lightthemup" name="Light'Em Up" subtitle="Kill 30 zombies with a burning club." description="Light up a wooden club in a campfire and use it to kill 30 zombies." icon="ui_game_symbol_club"
 		repeatable="true" category_key="challenge" offer="Kill 30 zombies with a burning club. You can craft a burning club by right-clicking a campfire with a wooden club." difficulty="Medium">
     <action type="TrackQuest" />
     <requirement type="Holding" id="clubBurning" />
     <objective type="ZombieKill" value="30" />
     <reward type="Skill" id="Blunt Weapons" value="3" />
-  </quest>
- <quest id="challenge_dogeatdog" name="Dog Eat Dog" subtitle="Kill 3 Dogs with Bare Hands." description="Using nothing but your fists kill three zombie dogs." icon="ui_game_symbol_zombie"
+  </quest>  <quest id="challenge_dogeatdog" name="Dog Eat Dog" subtitle="Kill 3 Dogs with Bare Hands." description="Using nothing but your fists kill three zombie dogs." icon="ui_game_symbol_zombie"
 		repeatable="true" category_key="challenge" offer="Kill 3 zombie dogs bare hand." difficulty="Hard">
     <objective type="Time" value="1500" optional="true" />
-    <objective type="ZombieKill" id="animalZombieDog" value="3" />
+    <objective type="ZombieKill" id="zombiedog" value="3" />
     <requirement type="Holding" id="" />
     <reward type="SkillPoints" value="1" />
     <reward type="SkillPoints" value="1" optional="true" />
-  </quest> 
-  <quest id="challenge_feedthemole" name="Feed the Mole" subtitle="Feed the Mole" description="Gather some raw meat and water." icon="ui_game_symbol_fork"
+  </quest>  <quest id="challenge_feedthemole" name="Feed the Mole" subtitle="Feed the Mole" description="Gather some raw meat and water." icon="ui_game_symbol_fork"
 		repeatable="true" category_key="challenge" offer="Joel is hungry and needs a day's worth of food. Fetch him some and he might reward you." difficulty="easy">
     <action type="TrackQuest" />
     <objective type="Fetch" id="rawMeat" value="50" />
     <reward type="Skill" id="Athletics" value="3" />
     <reward type="Item" id="butcherKnife" value="300" />
     <reward type="Item" id="mealDinner" value="3" />
-  </quest>  
-  <quest id="challenge_takingnote" name="Taking Notes 1/3" subtitle="Taking Notes" description="Go out and survive by killing some zombies and take note of your experiences." icon="ui_game_symbol_zombie"
+  </quest>  <quest id="challenge_takingnote" name="Taking Notes 1/3" subtitle="Taking Notes" description="Go out and survive by killing some zombies and take note of your experiences." icon="ui_game_symbol_zombie"
 		repeatable="true" category_key="challenge" offer="Kill 10 zombies." difficulty="easy">
     <objective type="ZombieKill" value="10" />
     <reward type="SkillPoints" value="1" />
     <reward type="Quest" id="challenge_takingnote2" />
-  </quest> 
-  <quest id="challenge_takingnote2" name="Taking Notes 2/3" subtitle="Taking Notes" description="Go out and survive by killing some zombies and take note of your experiences." icon="ui_game_symbol_zombie"
+  </quest>  <quest id="challenge_takingnote2" name="Taking Notes 2/3" subtitle="Taking Notes" description="Go out and survive by killing some zombies and take note of your experiences." icon="ui_game_symbol_zombie"
 		repeatable="true" category_key="challenge" offer="Kill 10 zombies." difficulty="easy">
     <objective type="ZombieKill" value="10" />
     <reward type="SkillPoints" value="1" />
     <reward type="Quest" id="challenge_takingnote3" />
-  </quest> 
-  <quest id="challenge_takingnote3" name="Taking Notes 3/3" subtitle="Taking Notes" description="Go out and survive by killing some zombies and take note of your experiences." icon="ui_game_symbol_zombie"
+  </quest>  <quest id="challenge_takingnote3" name="Taking Notes 3/3" subtitle="Taking Notes" description="Go out and survive by killing some zombies and take note of your experiences." icon="ui_game_symbol_zombie"
 		repeatable="true" category_key="challenge" offer="Kill 10 zombies." difficulty="easy">
     <objective type="ZombieKill" value="10" />
     <reward type="SkillPoints" value="1" />
-  </quest> 
-  <quest id="challenge_journal" name="Survivor's Journal 1/2" subtitle="Gather the missing pages" description="You found a page from a survivor's journal that hints at leading to a special stash. If you had the other pieces you might be able to find out more." icon="ui_game_symbol_treasure"
+  </quest>  <quest id="challenge_journal" name="Survivor's Journal 1/2" subtitle="Gather the missing pages" description="You found a page from a survivor's journal that hints at leading to a special stash. If you had the other pieces you might be able to find out more." icon="ui_game_symbol_treasure"
       repeatable="true" category_key="challenge" offer="You found a page from a survivor's journal that hints at leading to a special stash. If you had the other pieces you might be able to find out more." difficulty="easy">
     <objective type="Fetch" id="challengeSurvivorJournal" value="5" />
     <reward type="Item" id="survivorCombination" value="1" />
     <reward type="Quest" id="challenge_journal2" />
-  </quest> 
-  <quest id="challenge_journal2" name="Survivor's Journal 2/2" subtitle="Find the locked briefase." description="The journal pages you found gave you a combination and indicated that whoever owned this journal left a prized stash of goods in a suspicious stump. Find the briefase and unlock it with the combination to see what treasure was left behind." icon="ui_game_symbol_treasure"
+  </quest>  <quest id="challenge_journal2" name="Survivor's Journal 2/2" subtitle="Find the locked briefase." description="The journal pages you found gave you a combination and indicated that whoever owned this journal left a prized stash of goods in a suspicious stump. Find the briefase and unlock it with the combination to see what treasure was left behind." icon="ui_game_symbol_treasure"
       repeatable="true" category_key="challenge" offer="" difficulty="hard">
     <objective type="FetchKeep" id="cntSurvivorsBreifcase" value="1" />
     <objective type="BlockPlace" id="cntSurvivorsBreifcase" value="1" />
     <objective type="BlockUpgrade" id="cntSurvivorsBreifcase" value="1" />
-  </quest> 
-  <quest id="challenge_lockpick" name="Breaking and Enterng" subtitle="Crack the lock on three gun safes." description="Using the lockpicks given to you go break into three locked gunsafes." icon="ui_game_symbol_treasure"
+  </quest>  <quest id="challenge_lockpick" name="Breaking and Enterng" subtitle="Crack the lock on three gun safes." description="Using the lockpicks given to you go break into three locked gunsafes." icon="ui_game_symbol_treasure"
       repeatable="true" category_key="challenge" offer="Using the lockpicks given to you go break into three locked gunsafes" difficulty="easy">
     <reward type="Quest" id="challenge_lockpick2" />
     <reward type="Item" id="Lockpick" value="10" />
-  </quest> 
-  <quest id="challenge_lockpick2" name="Breaking and Enterng" subtitle="Crack the lock on three gun safes." description="Using the lockpicks given to you go break into three locked gunsafes." icon="ui_game_symbol_treasure"
+  </quest>  <quest id="challenge_lockpick2" name="Breaking and Enterng" subtitle="Crack the lock on three gun safes." description="Using the lockpicks given to you go break into three locked gunsafes." icon="ui_game_symbol_treasure"
       repeatable="true" category_key="challenge" offer="" difficulty="easy">
     <objective type="BlockUpgrade" id="cntGunSafe" value="3" />
-    <reward type="SkillPoints" value="1" />
-    <reward type="Skill" id="Scavenging" value="2" />
-  </quest> 
-  
-  <quest id="challenge_jock" group_name_key="quest_jock" name="Jock Hunt" subtitle="Jock Hunt" description="Search football stadiums to find and kill 5 football jocks." icon="ui_game_symbol_zombie"
+    <reward type="SkillPoints" value="2" />
+  </quest>  <quest id="challenge_jock" group_name_key="quest_jock" name="Jock Hunt" subtitle="Jock Hunt" description="Search football stadiums to find and kill 5 football jocks." icon="ui_game_symbol_zombie"
 		repeatable="true" category_key="challenge" offer="Find and kill 5 football jocks." difficulty="easy">
     <action type="TrackQuest" />
     <objective type="ZombieKill" id="ZombieFootballPlayer" value="5" />
     <reward type="SkillPoints" value="1" />
     <reward type="Skill" id="Athletics" value="1" />
     <reward type="Item" id="footballHelmet" value="400" />
-  </quest>  
-  <quest id="challenge_walmart" group_name_key="quest_walmart" name="Walmart Shoppers" subtitle="Walmart Shoppers" description="Find and kill three fat male and female zombies." icon="ui_game_symbol_zombie"
+  </quest>    <quest id="challenge_walmart" group_name_key="quest_walmart" name="Walmart Shoppers" subtitle="Walmart Shoppers" description="Find and kill three fat male and female zombies." icon="ui_game_symbol_zombie"
 		repeatable="true" category_key="challenge" offer="Kill 6 Fat Zombies." difficulty="medium">
     <action type="TrackQuest" />
     <objective type="ZombieKill" id="zombieMoe" value="3" />
-    <objective type="ZombieKill" id="zombieFatHawaiian" value="3" />
+    <objective type="ZombieKill" id="ZombieFemaleFatUMA" value="3" />
     <reward type="SkillPoints" value="1" />
-  </quest>
-
-  <quest id="challenge_Kickz" group_name_key="quest_Kickz" name="Kickz' Quest 1/2" subtitle="Kickz' Challenge" description="Fleet of Foot" icon="ui_game_symbol_campfire"
- repeatable="false" category_key="challenge" offer="The slow have no place in this world. Get a pair of 'Kickz' (tm) sports shoes for extra fast looting runs." difficulty="easy">
-    <objective type="FetchKeep" id="kickzBoots" value="1" />
-    <objective type="Wear" id="kickzBoots" />
-    <reward type="Skill" id="Athletics" value="1" />
-    <reward type="Quest" id="challenge_Kickz3" />
-  </quest>
-
-  <quest id="challenge_Kickz2" name="Kickz' Quest 2/3" subtitle="Off to the races" description="Well, see if they fit, already." icon="ui_game_symbol_campfire"
-  repeatable="false" category_key="challenge" offer="Baby got new shoes." difficulty="easy">
-    <objective type="Wear" id="kickzBoots" />
-    <reward type="Item" id="speedPill" value="5" />
-    <reward type="Quest" id="challenge_Kickz3" />
-    <reward type="Skill" id="Athletics" value="1" />
-  </quest>
-
-  <quest id="challenge_Kickz3" name="Kickz' Quest 2/2" subtitle="Chemical Boosts" description="Sometimes even the best athletes need a little chemical boost. Gather some potassium, painkillers, mushrooms and goldenrod to get a special drug." icon="ui_game_symbol_campfire"
-  repeatable="false" category_key="challenge" offer="maniacpowder" difficulty="easy">
-    <objective type="Fetch" id="potassiumNitratePowder" value="1" />
-    <objective type="Fetch" id="painkillers" value="1" />
-    <objective type="Fetch" id="mushrooms" value="1" />
-    <objective type="Fetch" id="goldenrodPlant" value="1" />
-    <reward type="Item" id="maniacPowder" value="1" />
   </quest>
   <!--SinMod Ultimate Warrior-->
   <quest id="UltimateChampTier1" name="UltimateChampTier1" subtitle="I'm a Winner" description="Congradulations!!! You have select a Tier 1 Prize!!!\n\nCompete in more sever events for your chance to win even more vouchers!!!!" offer="Congradulations!!! You have selected a Tier 1 Prize!!!\n\nCompete in more sever events for your chance to win even more vouchers!!!!\n\nYou will be rewarded 5 skill points for your Tier 1 prize"

@@ -4315,7 +4315,7 @@
       <gene name="breastSize" value="3"/>
     </dna>
   </archetype>
-  <archetype name="Rockagie" male="false" hair_color="16,16,16" eye_color="25,207,28" skin_color="155,134,134" type="Player" stance="Like" voice_set="trader">
+    <archetype name="Rockagie" male="false" hair_color="16,16,16" eye_color="25,207,28" skin_color="155,134,134" type="Player" stance="Like" voice_set="trader">
     <base_mesh_parts>
       <part slot="head" layer="base" mesh="female_base_face">
         <texture name="female_michonne_head" color="skin"/>
