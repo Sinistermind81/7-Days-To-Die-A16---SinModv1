@@ -2207,7 +2207,7 @@
   </entity_class>
 
   <!--SinMod Custom UMA Zombies-->
-  <entity_class name="zombieClown" extends="zombieUMATemplateMale" >
+  <!--<entity_class name="zombieClown" extends="zombieUMATemplateMale" >
     <property name="Archetype" value="zombieClown"/>
     <property name="MaxHealth" value="500" />
     <property name="ExperienceGain" value="2509"/>
@@ -2224,8 +2224,8 @@
     <property name="ExperienceGain" value="1039"/>
     <property name="LootListOnDeath" value="84"/>
     <drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
-  </entity_class>
-  <entity_class name="zombieBaby" extends="zombieUMATemplateMale">
+  </entity_class>-->
+  <!--<entity_class name="zombieBaby" extends="zombieUMATemplateMale">
     <property name="Archetype" value="zombieBaby"/>
     <property name="MaxHealth" value="400"/>
     <property name="ExperienceGain" value="2091"/>
@@ -2244,8 +2244,8 @@
     <property name="NightApproachSpeed" value="0.75"/>
     <property name="CanClimbVertical" value="false" />
     <property name="LootListOnDeath" value="38" />
-  </entity_class>
-  <entity_class name="zombieBloated" extends="zombieMoe">
+  </entity_class>-->
+ <!--<entity_class name="zombieBloated" extends="zombieMoe">
     <property name="WalkType"  value="2" />
     <property name="LootListOnDeath"  value="38" />
     <property name="ExperienceGain" value="1556"/>
@@ -2262,8 +2262,8 @@
     <property name="LegCrippleThreshold" value="0"/>
     <property name="KnockdownProneDamageThreshold" value="0"/>
     <property name="KnockdownKneelDamageThreshold" value="0"/>
-  </entity_class>
-  <entity_class name="zombieTrucker" extends="zombieUMATemplateMale" >
+  </entity_class>-->
+  <!--<entity_class name="zombieTrucker" extends="zombieUMATemplateMale" >
     <property name="Archetype" value="zombieTrucker"/>
     <property name="SoundRandom" value="Enemies/Base_Zombie_Male2/zombiemale2roam" />
     <property name="SoundAlert" value="Enemies/Base_Zombie_Male2/zombiemale2alert" />
@@ -2280,7 +2280,6 @@
     <property name="HandItem" value="handZombieStrong" />
     <property name="HeadDismemberBonusChance" value="0.08"/>
     <property name="HeadDismemberThreshold" value="0"/>
-    <!-- if the total damage exceeds that value, there is a chance for dismemberment /> -->
     <property name="LowerLegDismemberThreshold" value="0"/>
     <property name="UpperLegDismemberThreshold" value="0"/>
     <property name="LowerArmDismemberThreshold" value="0"/>
@@ -2289,8 +2288,8 @@
     <property name="LegCrippleThreshold" value="0"/>
     <property name="KnockdownProneDamageThreshold" value="0"/>
     <property name="KnockdownKneelDamageThreshold" value="0"/>
-  </entity_class>
-  <entity_class name="zombieRusher" extends="zombieUMATemplateMale" >
+  </entity_class>-->
+  <!--<entity_class name="zombieRusher" extends="zombieUMATemplateMale" >
     <property name="Archetype" value="zombieCharred"/>
     <property name="WalkType" value="7" />
     <property name="SoundRandom" value="Enemies/Burnt_Zombie/zombieburntroam" />
@@ -2309,10 +2308,10 @@
     <property name="NightWanderSpeed"   value="0.3" />
     <property name="NightApproachSpeed" value="1.1" />
     <property name="PanicSpeed"         value="0.4" />
-  </entity_class>
+  </entity_class>-->
   
   <!--SinMod Boss Zombies-->
-  <entity_class name="zombieHulk" extends="zombieUMATemplateMale" >
+  <!--<entity_class name="zombieHulk" extends="zombieUMATemplateMale" >
     <property name="Archetype" value="zombieHulk"/>
     <property name="WalkType" value="2" />
     <property name="ApproachSpeed" value="1.35" />
@@ -2360,7 +2359,7 @@
     <property name="NightApproachSpeed" value="0.8" />
     <property name="PanicSpeed"         value="0.55" />
     <property name="CanClimbLadders"     value="false" />
-  </entity_class>
+  </entity_class>-->
   
 </entity_classes>
 <!-- Radiated, harder to decap

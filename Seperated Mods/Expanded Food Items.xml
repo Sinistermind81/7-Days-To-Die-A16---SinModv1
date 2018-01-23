@@ -1,0 +1,2166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <!--Expanded Food Mod -->
+  <item id="1770" name="bowl">
+    <property name="DescriptionKey" value="bowlDesc"/>
+    <property name="Meshfile" value="Items/Crafting/clay_bowl" />
+    <property name="Material" value="organic" />
+    <property name="HoldType" value="3" />
+    <property name="Group" value="Resources" />
+    <property name="Stacknumber" value="50" />
+    <property class="Action0">
+      <property name="Class" value="ExchangeItem" />
+      <property name="Delay" value="1.0" />
+      <property name="Change_item_to" value="bowlWater" />
+      <property name="Focused_blockname_1" value="workingCabinetSink" />
+      <property name="Focused_blockname_2" value="workingGranitSink" />
+      <property name="Sound_start" value="UseActions/bucketfill_water" />
+    </property>
+    <property class="Action1">
+      <property name="Class" value="ExchangeItem" />
+      <property name="Delay" value="1.0" />
+      <property name="Change_item_to" value="bowlMurkyWater" />
+      <property name="Do_block_action" value="deplete1" />
+      <property name="Focused_blockname_1" value="water" />
+      <property name="Focused_blockname_2" value="waterMoving" />
+      <property name="Focused_blockname_3" value="waterStaticBucket" />
+      <property name="Focused_blockname_4" value="waterMovingBucket" />
+      <property name="Focused_blockname_5" value="waterSource8" />
+      <property name="Sound_start" value="UseActions/bucketfill_water" />
+    </property>
+    <property class="Preview">
+      <property name="Zoom" value="30" />
+      <property name="Pos" value="0,-0.03" />
+      <property name="Rot" value="90,45,0" />
+    </property>
+  </item>
+  <item id="1771" name="bowlMurkyWater">
+    <property name="Meshfile" value="Items/Crafting/clay_bowl" />
+    <property name="DescriptionKey" value="bowlMurkyDesc"/>
+    <property name="Material" value="organic" />
+    <property name="HoldType" value="3" />
+    <property name="Weight" value="12" />
+    <property name="Group" value="Food/Cooking" />
+    <property name="Stacknumber" value="50" />
+    <property name="CraftingIngredientTime" value="20" />
+    <property class="Action1">
+      <property name="Class" value="Eat" />
+      <property name="Delay" value="1" />
+      <property name="Use_time" value="..." />
+      <property name="Gain_health" value="0" />
+      <property name="Gain_stamina" value="5" />
+      <property name="Gain_food" value="0" />
+      <property name="Gain_water" value="15" />
+      <property name="Gain_sickness" value="15" />
+      <property name="Gain_wellness" value="-0.1" />
+      <property name="Sound_start" value="UseActions/player_drinking" />
+      <property name="Create_item" value="bowl" />
+      <property name="Buff" value="dysentery" />
+      <property name="Buff_chance" value="0.5" />
+    </property>
+    <property class="Preview">
+      <property name="Zoom" value="30" />
+      <property name="Pos" value="0,-0.03" />
+      <property name="Rot" value="90,45,0" />
+    </property>
+  </item>
+  <item id="1772" name="bowlWater">
+    <property name="DescriptionKey" value="bowlWaterDesc"/>
+    <property name="Meshfile" value="Items/Crafting/clay_bowl" />
+    <property name="DescriptionKey" value="bowlWaterDesc"/>
+    <property name="Material" value="organic" />
+    <property name="HoldType" value="3" />
+    <property name="Weight" value="12" />
+    <property name="Group" value="Food/Cooking" />
+    <property name="CraftingIngredientTime" value="15" />
+    <property name="Stacknumber" value="50" />
+    <property class="Action1">
+      <property name="Class" value="Eat" />
+      <property name="Delay" value="1" />
+      <property name="Use_time" value="..." />
+      <property name="Gain_health" value="0" />
+      <property name="Gain_stamina" value="20" />
+      <property name="Gain_food" value="0" />
+      <property name="Gain_water" value="20" />
+      <property name="Sound_start" value="UseActions/player_drinking" />
+      <property name="Create_item" value="bowl" />
+    </property>
+    <property class="Preview">
+      <property name="Zoom" value="30" />
+      <property name="Pos" value="0,-0.03" />
+      <property name="Rot" value="90,45,0" />
+    </property>
+  </item>
+  <item id="1773" name="blueberryJam">
+    <property name="Meshfile" value="Items/Food/bottled_waterPrefab" />
+    <property name="DescriptionKey" value="blueberryJamDesc"/>
+    <property name="Material" value="glass" />
+    <property name="HoldType" value="3" />
+    <property name="Weight" value="12" />
+    <property name="Group" value="Food/Cooking" />
+    <property name="Stacknumber" value="50" />
+    <property class="Action1">
+      <property name="Class" value="Eat" />
+      <property name="Delay" value="1" />
+      <property name="Use_time" value="..." />
+      <property name="Gain_health" value="0" />
+      <property name="Gain_stamina" value="20" />
+      <property name="Gain_food" value="12" />
+      <property name="Gain_water" value="12" />
+      <property name="Sound_start" value="UseActions/player_eating" />
+      <property name="Create_item" value="emptyJar" />
+    </property>
+    <property class="Preview">
+      <property name="Zoom" value="23" />
+      <property name="Pos" value="0.18,-0.15" />
+      <property name="Rot" value="0,-45,0" />
+    </property>
+  </item>
+  <item id="1774" name="canChunkyMeatStew">
+    <property name="Extends" value="canBeef" />
+    <property name="Meshfile" value="Items/Food/can_beefPrefab" />
+    <property name="DescriptionKey" value="cannedFoodDesc"/>
+    <property class="Action1">
+      <property name="Gain_health" value="5" />
+      <property name="Gain_food" value="50" />
+      <property name="Gain_water" value="0" />
+      <property name="Gain_wellness" value="1" />
+    </property>
+  </item>
+  <item id="1775" name="canMeatStew">
+    <property name="Extends" value="canBeef" />
+    <property name="DescriptionKey" value="cannedFoodDesc"/>
+    <property class="Action1">
+      <property name="Gain_health" value="3" />
+      <property name="Gain_food" value="20" />
+      <property name="Gain_water" value="0" />
+      <property name="Gain_wellness" value="0.4" />
+    </property>
+  </item>
+  <item id="1776" name="canVegetableStew">
+    <property name="Extends" value="canBeef" />
+    <property name="DescriptionKey" value="cannedFoodDesc"/>
+    <property class="Action1">
+      <property name="Gain_health" value="5" />
+      <property name="Gain_food" value="7" />
+      <property name="Gain_water" value="0" />
+    </property>
+  </item>
+  <item id="1777" name="stewChunkyMeat">
+    <property name="Extends" value="meatStew" />
+    <property name="DescriptionKey" value="stewChunkyMeatDesc"/>
+    <property class="Action1">
+      <property name="Gain_health" value="1" />
+      <property name="Gain_food" value="50" />
+      <property name="Gain_wellness" value="1" />
+    </property>
+  </item>
+  <item id="1778" name="bowlFruit">
+    <property name="Meshfile" value="Items/Food/venison_stewPrefab" />
+    <property name="DescriptionKey" value="bowlFruitDesc"/>
+    <property name="Material" value="organic" />
+    <property name="HoldType" value="23" />
+    <property name="Group" value="Food/Cooking" />
+    <property class="Action1">
+      <property name="Class" value="Eat" />
+      <property name="Delay" value="1.0" />
+      <property name="Use_time" value="..." />
+      <property name="Gain_health" value="5" />
+      <property name="Gain_food" value="15" />
+      <property name="Gain_water" value="20" />
+      <property name="Gain_stamina" value="20" />
+      <property name="Gain_wellness" value="2" />
+      <property name="Create_item" value="bowl" />
+      <property name="Sound_start" value="UseActions/player_eating" />
+    </property>
+    <property name="Group" value="Food/Cooking" />
+    <property class="Preview">
+      <property name="Zoom" value="30" />
+      <property name="Pos" value="0,-0.03" />
+      <property name="Rot" value="90,45,0" />
+    </property>
+  </item>
+  <item id="1779" name="cornbreadJam">
+    <property name="Extends" value="cornBread" />
+    <property name="DescriptionKey" value="cornbreadJamDesc"/>
+    <property class="Action1">
+      <property name="Gain_food" value="6" />
+      <property name="Gain_wellness" value="0.5" />
+    </property>
+  </item>
+  <item id="1780" name="soupChunkyBeef">
+    <property name="CraftingIngredientTime" value="15" />
+    <property name="Meshfile" value="Items/Food/venison_stewPrefab" />
+    <property name="DescriptionKey" value="soupDesc"/>
+    <property name="Material" value="organic" />
+    <property name="HoldType" value="23" />
+    <property name="Group" value="Food/Cooking" />
+    <property name="Stacknumber" value="50" />
+    <property class="Action1">
+      <property name="Class" value="Eat" />
+      <property name="Delay" value="1.0" />
+      <property name="Use_time" value="..." />
+      <property name="Gain_health" value="20" />
+      <property name="Gain_food" value="30" />
+      <property name="Gain_water" value="3" />
+      <property name="Create_item" value="bowl" />
+      <property name="Sound_start" value="UseActions/player_drinking" />
+    </property>
+    <property name="Smell" value="largeSmell" />
+    <property name="Group" value="Food/Cooking" />
+    <property class="Preview">
+      <property name="Zoom" value="30" />
+      <property name="Pos" value="0,-0.03" />
+      <property name="Rot" value="90,45,0" />
+    </property>
+  </item>
+  <item id="1781" name="soupChicken">
+    <property name="Extends" value="soupChunkyBeef" />
+  </item>
+  <item id="1782" name="soupLamb">
+    <property name="Extends" value="soupChunkyBeef" />
+  </item>
+  <item id="1783" name="bowlChili">
+    <property name="Extends" value="soupChunkyBeef" />
+    <property class="Action1">
+      <property name="Gain_health" value="10" />
+      <property name="Gain_food" value="20" />
+      <property name="Gain_water" value="-10" />
+      <property name="Gain_gas" value="30" />
+    </property>
+  </item>
+  <item id="1784" name="bowlMiso">
+    <property name="Extends" value="soupChunkyBeef" />
+    <property class="Action1">
+      <property name="Gain_health" value="2" />
+      <property name="Gain_food" value="10" />
+      <property name="Gain_water" value="20" />
+    </property>
+  </item>
+  <item id="1785" name="soupPea">
+    <property name="Extends" value="soupChunkyBeef" />
+    <property class="Action1">
+      <property name="Gain_health" value="0" />
+      <property name="Gain_food" value="10" />
+    </property>
+  </item>
+  <item id="1786" name="bowlPasta">
+    <property name="Extends" value="soupChunkyBeef" />
+    <property class="Action1">
+      <property name="Gain_health" value="0" />
+      <property name="Gain_food" value="14" />
+      <property name="Gain_water" value="0" />
+    </property>
+  </item>
+  <item id="1787" name="bowlSoup">
+    <property name="Extends" value="soupChunkyBeef" />
+    <property class="Action1">
+      <property name="Gain_health" value="2" />
+      <property name="Gain_food" value="10" />
+      <property name="Gain_water" value="20" />
+    </property>
+  </item>
+  <item id="1788" name="bowlStock">
+    <property name="Extends" value="soupChunkyBeef" />
+    <property class="Action1">
+      <property name="Gain_health" value="2" />
+      <property name="Gain_food" value="10" />
+      <property name="Gain_water" value="20" />
+    </property>
+  </item>
+  <item id="1789" name="creamedCorn">
+    <property name="CraftingIngredientTime" value="15" />
+    <property name="Meshfile" value="Items/Food/venison_stewPrefab" />
+    <property name="Material" value="organic" />
+    <property name="HoldType" value="23" />
+    <property name="Group" value="Food/Cooking" />
+    <property name="Stacknumber" value="50" />
+    <property class="Action1">
+      <property name="Class" value="Eat" />
+      <property name="Delay" value="1.0" />
+      <property name="Use_time" value="..." />
+      <property name="Gain_health" value="5" />
+      <property name="Gain_food" value="6" />
+      <property name="Gain_water" value="20" />
+      <property name="Gain_stamina" value="4" />
+      <property name="Gain_wellness" value="0.16" />
+      <property name="Create_item" value="bowl" />
+      <property name="Sound_start" value="UseActions/player_drinking" />
+    </property>
+    <property name="Smell" value="smallSmell" />
+    <property name="Group" value="Food/Cooking" />
+    <property class="Preview">
+      <property name="Zoom" value="30" />
+      <property name="Pos" value="0,-0.03" />
+      <property name="Rot" value="90,45,0" />
+    </property>
+  </item>
+  <item id="1790" name="soupMushroom">
+    <property name="CraftingIngredientTime" value="15" />
+    <property name="Meshfile" value="Items/Food/venison_stewPrefab" />
+    <property name="Material" value="organic" />
+    <property name="HoldType" value="23" />
+    <property name="Group" value="Food/Cooking" />
+    <property name="Stacknumber" value="50" />
+    <property class="Action1">
+      <property name="Class" value="Eat" />
+      <property name="Delay" value="1.0" />
+      <property name="Use_time" value="..." />
+      <property name="Gain_food" value="15" />
+      <property name="Gain_water" value="20" />
+      <property name="Gain_wellness" value="0.5" />
+      <property name="Create_item" value="bowl" />
+      <property name="Sound_start" value="UseActions/player_drinking" />
+    </property>
+    <property name="Smell" value="smallSmell" />
+    <property name="Group" value="Food/Cooking" />
+    <property class="Preview">
+      <property name="Zoom" value="30" />
+      <property name="Pos" value="0,-0.03" />
+      <property name="Rot" value="90,45,0" />
+    </property>
+  </item>
+  <item id="1791" name="Mead">
+    <property name="Extends" value="beer" />
+    <property name="DescriptionKey" value="MeadDesc"/>
+    <property class="Action1">
+      <property name="Gain_stamina" value="25" />
+      <property name="Gain_wellness" value="0.2" />
+    </property>
+  </item>
+  <item id="1792" name="meadBlueberry">
+    <property name="Extends" value="beer" />
+    <property name="DescriptionKey" value="meadBlueberryDesc"/>
+    <property class="Action1">
+      <property name="Gain_stamina" value="26" />
+      <property name="Gain_wellness" value="0.3" />
+      <property name="Gain_water" value="5" />
+    </property>
+  </item>
+  <item id="1793" name="warmsoupChunkyBeef">
+    <property name="Extends" value="soupChunkyBeef" />
+    <property name="DescriptionKey" value="warmBowlDesc"/>
+    <property class="Action1">
+      <property name="Gain_health" value="23" />
+      <property name="Gain_food" value="35" />
+      <property name="Gain_water" value="6" />
+      <property name="Gain_wellness" value="1" />
+      <property name="Buff" value="stewWarming" />
+    </property>
+    <property name="Smell" value="exLargeSmell" />
+  </item>
+  <item id="1794" name="warmsoupChicken">
+    <property name="Extends" value="soupChunkyBeef" />
+    <property name="DescriptionKey" value="warmBowlDesc"/>
+    <property class="Action1">
+      <property name="Gain_health" value="25" />
+      <property name="Gain_food" value="33" />
+      <property name="Gain_water" value="3" />
+      <property name="Gain_wellness" value="1" />
+      <property name="Buff" value="stewWarming" />
+    </property>
+    <property name="Smell" value="exLargeSmell" />
+  </item>
+  <item id="1795" name="warmsoupLamb">
+    <property name="Extends" value="soupChunkyBeef" />
+    <property name="DescriptionKey" value="warmBowlDesc"/>
+    <property class="Action1">
+      <property name="Gain_health" value="13" />
+      <property name="Gain_food" value="33" />
+      <property name="Gain_water" value="5" />
+      <property name="Gain_wellness" value="1" />
+      <property name="Buff" value="stewWarming" />
+    </property>
+    <property name="Smell" value="exLargeSmell" />
+  </item>
+  <item id="1796" name="warmbowlChili">
+    <property name="Extends" value="soupChunkyBeef" />
+    <property name="DescriptionKey" value="warmBowlDesc"/>
+    <property class="Action1">
+      <property name="Gain_health" value="13" />
+      <property name="Gain_food" value="23" />
+      <property name="Gain_water" value="-13" />
+      <property name="Gain_gas" value="33" />
+      <property name="Gain_wellness" value="1" />
+      <property name="Buff" value="stewWarming" />
+    </property>
+    <property name="Smell" value="exLargeSmell" />
+  </item>
+  <item id="1797" name="warmbowlMiso">
+    <property name="Extends" value="soupChunkyBeef" />
+    <property name="DescriptionKey" value="warmBowlDesc"/>
+    <property class="Action1">
+      <property name="Gain_health" value="2" />
+      <property name="Gain_food" value="13" />
+      <property name="Gain_water" value="20" />
+      <property name="Buff" value="stewWarming" />
+    </property>
+    <property name="Smell" value="largeSmell" />
+  </item>
+  <item id="1798" name="warmsoupPea">
+    <property name="Extends" value="soupChunkyBeef" />
+    <property name="DescriptionKey" value="warmBowlDesc"/>
+    <property class="Action1">
+      <property name="Gain_health" value="0" />
+      <property name="Gain_food" value="13" />
+      <property name="Gain_wellness" value="1" />
+      <property name="Buff" value="stewWarming" />
+    </property>
+    <property name="Smell" value="smallSmell" />
+  </item>
+  <item id="1799" name="warmbowlPasta">
+    <property name="Extends" value="soupChunkyBeef" />
+    <property name="DescriptionKey" value="warmBowlDesc"/>
+    <property class="Action1">
+      <property name="Gain_health" value="0" />
+      <property name="Gain_food" value="18" />
+      <property name="Gain_water" value="0" />
+      <property name="Gain_wellness" value="1" />
+      <property name="Buff" value="stewWarming" />
+    </property>
+    <property name="Smell" value="exLargeSmell" />
+  </item>
+  <item id="1800" name="warmbowlSoup">
+    <property name="Extends" value="soupChunkyBeef" />
+    <property name="DescriptionKey" value="warmBowlDesc"/>
+    <property class="Action1">
+      <property name="Gain_health" value="5" />
+      <property name="Gain_food" value="13" />
+      <property name="Gain_water" value="23" />
+      <property name="Gain_wellness" value="1" />
+      <property name="Buff" value="stewWarming" />
+    </property>
+    <property name="Smell" value="exLargeSmell" />
+  </item>
+  <item id="1801" name="warmbowlStock">
+    <property name="Extends" value="soupChunkyBeef" />
+    <property name="DescriptionKey" value="warmBowlDesc"/>
+    <property class="Action1">
+      <property name="Gain_health" value="5" />
+      <property name="Gain_food" value="13" />
+      <property name="Gain_water" value="23" />
+      <property name="Gain_wellness" value="1" />
+      <property name="Buff" value="stewWarming" />
+    </property>
+    <property name="Smell" value="exLargeSmell" />
+  </item>
+  <item id="1802" name="honeyHam">
+    <property name="Extends" value="boiledMeat" />
+    <property class="Action1">
+      <property name="Gain_food" value="22" />
+      <property name="Gain_wellness" value="1" />
+    </property>
+    <property name="Smell" value="mediumSmell" />
+  </item>
+  <item id="1803" name="scrambledEggs">
+    <property name="CraftingIngredientTime" value="3" />
+    <property name="Meshfile" value="Items/Misc/parcelPrefab" />
+    <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+    <property name="Material" value="organic" />
+    <property name="HoldType" value="31" />
+    <property name="Stacknumber" value="50" />
+    <property class="Action1">
+      <property name="Class" value="Eat" />
+      <property name="Delay" value="1.0" />
+      <property name="Use_time" value="..." />
+      <property name="Gain_health" value="1" />
+      <property name="Gain_food" value="10" />
+      <property name="Gain_water" value="0" />
+      <property name="Buff" value="eatFood_3_Trigger" />
+      <property name="Gain_wellness" value="0.4" />
+      <property name="Sound_start" value="UseActions/player_eating" />
+    </property>
+    <property name="Group" value="Food/Cooking" />
+  </item>
+  <item id="1804" name="Omelet">
+    <property name="Meshfile" value="Items/Food/blueberry_pie" />
+    <property name="Material" value="organic" />
+    <property name="HoldType" value="23" />
+    <property name="Stacknumber" value="50" />
+    <property class="Action1">
+      <property name="Class" value="Eat" />
+      <property name="Delay" value="1.0" />
+      <property name="Use_time" value="..." />
+      <property name="Gain_health" value="2" />
+      <property name="Gain_food" value="23" />
+      <property name="Gain_water" value="1" />
+      <property name="Buff" value="eatFood_3_Trigger" />
+      <property name="Gain_wellness" value="0.4" />
+      <property name="Sound_start" value="UseActions/player_eating" />
+    </property>
+    <property name="Group" value="Food/Cooking" />
+    <property name="Smell" value="smallSmell" />
+  </item>
+  <item id="1805" name="drinkEnergy">
+    <property name="Extends" value="foodHoney" />
+    <property name="DescriptionKey" value="drinkEnergyDesc"/>
+    <property class="Action0">
+      <property name="Class" value="ExchangeItem" />
+      <property name="Delay" value="1.0" />
+      <property name="Change_item_to" value="colddrinkEnergy" />
+      <property name="Focused_blockname_1" value="cntFridgeTop" />
+      <property name="Focused_blockname_2" value="cntFridgeBottom" />
+      <property name="Focused_blockname_3" value="cntEPSFridgeBottom" />
+      <property name="Focused_blockname_4" value="cntEPSFridgeTop" />
+      <property name="Focused_blockname_5" value="cntEPSBeerCooler" />
+      <property name="Focused_blockname_6" value="cntBeerCooler" />
+      <property name="Focused_blockname_7" value="cntCooler" />
+      <property name="Focused_blockname_8" value="cntFridge" />
+      <property name="Focused_blockname_9" value="cntEPSFridge" />
+      <property name="Sound_start" value="UseActions/bucketfill_water" />
+    </property>
+    <property class="Action1">
+      <property name="Class" value="Eat" />
+      <property name="Delay" value="1" />
+      <property name="Use_time" value="..." />
+      <property name="Gain_health" value="3" />
+      <property name="Gain_food" value="0" />
+      <property name="Gain_water" value="5" />
+      <property name="Gain_stamina" value="40" />
+      <property name="Gain_wellness" value="0.7" />
+      <property name="Gain_water" value="25" />
+      <property name="Buff" value="energyDrink" />
+      <property name="Debuff" value="dysentery" />
+    </property>
+  </item>
+  <item id="1806" name="baconEggSandwich">
+    <property name="Meshfile" value="Items/Misc/parcelPrefab" />
+    <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+    <property name="Material" value="organic" />
+    <property name="HoldType" value="21" />
+    <property name="Group" value="Food/Cooking" />
+    <property name="Stacknumber" value="50" />
+    <property class="Action1">
+      <property name="Class" value="Eat" />
+      <property name="Delay" value="1.0" />
+      <property name="Gain_health" value="3" />
+      <property name="Gain_food" value="25" />
+      <property name="Gain_wellness" value="1.8" />
+      <property name="Sound_start" value="UseActions/player_eating" />
+    </property>
+    <property name="Group" value="Food/Cooking" />
+    <property class="Preview">
+      <property name="Zoom" value="25" />
+      <property name="Pos" value="0,-0.05" />
+      <property name="Rot" value="90,45,0" />
+    </property>
+  </item>
+  <item id="1807" name="Apple">
+    <property name="CustomIcon" value="apple" />
+    <property name="Meshfile" value="Items/Misc/parcel" />
+    <property name="Material" value="organic" />
+    <property name="HoldType" value="15" />
+    <property name="CraftingIngredientTime" value="5" />
+    <property name="Stacknumber" value="50" />
+    <property class="Action1">
+      <property name="Class" value="Eat" />
+      <property name="Delay" value="1.0" />
+      <property name="Use_time" value="..." />
+      <property name="Gain_health" value="0" />
+      <property name="Gain_food" value="3" />
+      <property name="Gain_water" value="0" />
+      <property name="Sound_start" value="UseActions/player_eating" />
+    </property>
+    <property name="Group" value="Food/Cooking" />
+  </item>
+  <item id="1808" name="applePie">
+    <property name="Extends" value="blueberryPie" />
+    <property class="Action1">
+      <property name="Gain_food" value="15" />
+    </property>
+  </item>
+  <item id="1809" name="appleCider">
+    <property name="Extends" value="beer" />
+    <property name="DescriptionKey" value="appleCiderDesc"/>
+    <property class="Action1">
+      <property name="Gain_food" value="0" />
+      <property name="Gain_water" value="5" />
+      <property name="Gain_stamina" value="20" />
+      <property name="Gain_wellness" value="0" />
+      <property name="Create_item" value="emptyJar" />
+      <property name="Buff" value="DrinkBeer" />
+    </property>
+  </item>
+  <item id="1810" name="grillSteak">
+    <property name="Extends" value="grilledMeat" />
+    <property class="Action1">
+      <property name="Gain_food" value="23" />
+    </property>
+    <property name="Smell" value="exLargeSmell" />
+  </item>
+  <item id="1811" name="Bread">
+    <property name="Meshfile" value="Items/Misc/parcelPrefab" />
+    <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+    <property name="Material" value="organic" />
+    <property name="HoldType" value="15" />
+    <property name="Stacknumber" value="50" />
+    <!-- STK food -->
+    <property class="Action1">
+      <property name="Class" value="Eat" />
+      <property name="Delay" value="1.0" />
+      <property name="Use_time" value="..." />
+      <property name="Gain_health" value="0" />
+      <property name="Gain_food" value="5" />
+      <property name="Gain_water" value="0" />
+      <property name="Gain_wellness" value="0.4" />
+      <property name="Sound_start" value="UseActions/player_eating" />
+    </property>
+    <property name="Group" value="Food/Cooking" />
+  </item>
+  <item id="1812" name="Hamburger">
+    <property name="Meshfile" value="Items/Misc/parcelPrefab" />
+    <property name="Material" value="organic" />
+    <property name="HoldType" value="31" />
+    <property name="Stacknumber" value="50" />
+    <!-- STK food -->
+    <property class="Action1">
+      <property name="Class" value="Eat" />
+      <property name="Delay" value="2.1" />
+      <property name="Use_time" value="..." />
+      <property name="Gain_health" value="2" />
+      <property name="Gain_food" value="20" />
+      <property name="Gain_water" value="-1" />
+      <property name="Gain_wellness" value="0.5" />
+      <property name="Sound_start" value="UseActions/player_eating" />
+    </property>
+    <property name="Smell" value="exLargeSmell" />
+    <property name="Group" value="Food/Cooking" />
+  </item>
+  <item id="1813" name="Grapes">
+    <property name="Meshfile" value="Items/Food/blueberriesPrefab" />
+    <property name="Material" value="organic" />
+    <property name="HoldType" value="23" />
+    <property name="Stacknumber" value="500" />
+    <!-- STK resource -->
+    <property name="CraftingIngredientTime" value="5" />
+    <property class="Action1">
+      <property name="Class" value="Eat" />
+      <property name="Delay" value="1.0" />
+      <property name="Use_time" value="..." />
+      <property name="Gain_health" value="0" />
+      <property name="Gain_food" value="1" />
+      <property name="Gain_water" value="1" />
+      <property name="Gain_wellness" value="0" />
+      <property name="Sound_start" value="UseActions/player_eating" />
+    </property>
+    <property name="DropScale" value="4" />
+    <property name="Group" value="Food/Cooking" />
+  </item>
+  <item id="1814" name="assortedVegetables">
+    <property name="Meshfile" value="Items/Food/blueberriesPrefab" />
+    <property name="Material" value="assortedVegetables" />
+    <property name="HoldType" value="23" />
+    <property name="Stacknumber" value="500" />
+    <!-- STK resource -->
+    <property name="CraftingIngredientTime" value="5" />
+    <property name="Weight" value="5" />
+    <property class="Action1">
+      <property name="Class" value="Eat" />
+      <property name="Delay" value="1.0" />
+      <property name="Use_time" value="..." />
+      <property name="Gain_health" value="0" />
+      <property name="Gain_food" value="1" />
+      <property name="Gain_water" value="1" />
+      <property name="Gain_wellness" value="0" />
+      <property name="Sound_start" value="UseActions/player_eating" />
+    </property>
+    <property name="DropScale" value="4" />
+    <property name="Group" value="Food/Cooking" />
+  </item>
+  <item id="1815" name="biscuit">
+    <property name="Extends" value="cornBread" />
+    <property class="Action1">
+      <property name="Gain_health" value="1" />
+      <property name="Gain_food" value="10" />
+    </property>
+  </item>
+  <item id="1816" name="mealBreakfast">
+    <property name="Meshfile" value="Items/Misc/parcelPrefab" />
+    <property name="Material" value="organic" />
+    <property name="HoldType" value="31" />
+    <property name="Stacknumber" value="50" />
+    <!-- STK food -->
+    <property class="Action1">
+      <property name="Class" value="Eat" />
+      <property name="Delay" value="1.0" />
+      <property name="Use_time" value="..." />
+      <property name="Gain_health" value="10" />
+      <property name="Gain_food" value="38" />
+      <property name="Gain_water" value="5" />
+      <property name="Gain_wellness" value="2" />
+      <property name="Sound_start" value="UseActions/player_eating" />
+      <property name="Create_item" value="dinnerPlate" />
+    </property>
+    <property name="Smell" value="exLargeSmell" />
+    <property name="Group" value="Food/Cooking" />
+  </item>
+  <item id="1817" name="mealDinner">
+    <property name="Meshfile" value="Items/Misc/parcelPrefab" />
+    <property name="Material" value="organic" />
+    <property name="HoldType" value="31" />
+    <property name="Stacknumber" value="50" />
+    <!-- STK food -->
+    <property class="Action1">
+      <property name="Class" value="Eat" />
+      <property name="Delay" value="1.0" />
+      <property name="Use_time" value="..." />
+      <property name="Gain_health" value="10" />
+      <property name="Gain_food" value="40" />
+      <property name="Gain_water" value="5" />
+      <property name="Gain_wellness" value="2" />
+      <property name="Sound_start" value="UseActions/player_eating" />
+      <property name="Create_item" value="dinnerPlate" />
+    </property>
+    <property name="Smell" value="exLargeSmell" />
+    <property name="Group" value="Food/Cooking" />
+  </item>
+  <item id="1818" name="Wheat">
+    <property name="Meshfile" value="Items/Misc/parcel" />
+    <property name="Material" value="organic" />
+    <property name="HoldType" value="15" />
+    <property name="CraftingIngredientTime" value="8" />
+    <property name="Stacknumber" value="500" />
+    <!-- STK food -->
+    <property class="Action1">
+      <property name="Class" value="Eat" />
+      <property name="Delay" value="1.0" />
+      <property name="Use_time" value="..." />
+      <property name="Gain_health" value="0" />
+      <property name="Gain_food" value="3" />
+      <property name="Gain_water" value="0" />
+      <property name="Sound_start" value="UseActions/player_eating" />
+    </property>
+    <property name="Group" value="Food/Cooking" />
+  </item>
+  <item id="1822" name="coldbottledWater">
+    <property name="CustomIcon" value="bottledWater" />
+    <property name="Extends" value="bottledWater" />
+    <property class="Action0">
+      <property name="Class" value="ExchangeItem" />
+      <property name="Delay" value="1.0" />
+      <property name="Change_item_to" value="bottledWater" />
+      <property name="Focused_blockname_1" value="campfire" />
+      <property name="Focused_blockname_2" value="campfire" />
+      <property name="Focused_blockname_3" value="campfire" />
+      <property name="Focused_blockname_4" value="campfire" />
+      <property name="Focused_blockname_5" value="campfire" />
+      <property name="Focused_blockname_6" value="campfire" />
+      <property name="Focused_blockname_7" value="campfire" />
+      <property name="Focused_blockname_8" value="campfire" />
+      <property name="Focused_blockname_9" value="campfire" />
+      <property name="Sound_start" value="UseActions/bucketfill_water" />
+    </property>
+    <property class="Action1">
+      <property name="Buff" value="yuccaJuiceCooling" />
+    </property>
+    <property name="DescriptionKey" value="coldDrinkDesc"/>
+  </item>
+  <item id="1823" name="coldgoldenRodTea">
+    <property name="CustomIcon" value="goldenRodTea" />
+    <property name="Extends" value="goldenRodTea" />
+    <property class="Action1">
+      <property name="Buff" value="yuccaJuiceCooling" />
+    </property>
+    <property name="DescriptionKey" value="coldDrinkDesc"/>
+  </item>
+  <item id="1824" name="coldredTea">
+    <property name="CustomIcon" value="redTea" />
+    <property name="Extends" value="redTea" />
+    <property class="Action1">
+      <property name="Buff" value="yuccaJuiceCooling" />
+    </property>
+    <property name="DescriptionKey" value="coldDrinkDesc"/>
+  </item>
+  <item id="1825" name="coldcoffee">
+    <property name="CustomIcon" value="coffee" />
+    <property name="Extends" value="coffee" />
+    <property class="Action1">
+      <property name="Buff" value="yuccaJuiceCooling" />
+    </property>
+    <property name="DescriptionKey" value="coldDrinkDesc"/>
+  </item>
+  <item id="1826" name="colddrinkEnergy">
+    <property name="CustomIcon" value="drinkEnergy" />
+    <property name="Extends" value="drinkEnergy" />
+    <property class="Action1">
+      <property name="Buff" value="yuccaJuiceCooling" />
+    </property>
+    <property name="DescriptionKey" value="coldDrinkDesc"/>
+  </item>
+  <item id="1827" name="waterPurified">
+    <property name="Meshfile" value="Items/Food/honeyPrefab" />
+    <property name="DescriptionKey" value="waterPurifiedDesc"/>
+    <property name="Material" value="glass" />
+    <property name="HoldType" value="3" />
+    <property name="Group" value="Food/Cooking" />
+    <property name="Stacknumber" value="50" />
+    <!-- STK food -->
+    <property class="Action0">
+      <property name="Class" value="ExchangeItem" />
+      <property name="Delay" value="1.0" />
+      <property name="Change_item_to" value="coldwaterPurified" />
+      <property name="Focused_blockname_1" value="cntFridgeTop" />
+      <property name="Focused_blockname_2" value="cntFridgeBottom" />
+      <property name="Focused_blockname_3" value="cntEPSFridgeBottom" />
+      <property name="Focused_blockname_4" value="cntEPSFridgeTop" />
+      <property name="Focused_blockname_5" value="cntEPSBeerCooler" />
+      <property name="Focused_blockname_6" value="cntBeerCooler" />
+      <property name="Focused_blockname_7" value="cntCooler" />
+      <property name="Focused_blockname_8" value="cntFridge" />
+      <property name="Focused_blockname_9" value="cntEPSFridge" />
+      <property name="Sound_start" value="UseActions/bucketfill_water" />
+    </property>
+    <property class="Action1">
+      <property name="Class" value="Eat" />
+      <property name="Delay" value="1" />
+      <property name="Use_time" value="..." />
+      <property name="Gain_health" value="5" />
+      <property name="Gain_stamina" value="30" />
+      <property name="Gain_wellness" value="0.3" />
+      <property name="Gain_water" value="20" />
+      <property name="Sound_start" value="UseActions/player_drinking" />
+      <property name="Create_item" value="emptyJar" />
+      <property name="Debuff" value="dysentery" />
+    </property>
+    <property class="Preview">
+      <property name="Zoom" value="23" />
+      <property name="Pos" value="0.18,-0.15" />
+      <property name="Rot" value="0,-45,0" />
+    </property>
+  </item>
+  <item id="1828" name="coldwaterPurified">
+    <property name="CustomIcon" value="waterPurified" />
+    <property name="Extends" value="waterPurified" />
+    <property class="Action1">
+      <property name="Buff" value="yuccaJuiceCooling" />
+    </property>
+    <property name="DescriptionKey" value="coldDrinkDesc"/>
+  </item>
+  <item id="1839" name="flour">
+    <property name="DescriptionKey" value="flourDesc"/>
+    <property name="Meshfile" value="Items/Misc/sackPrefab" />
+    <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+    <property name="Material" value="organic" />
+    <property name="HoldType" value="3" />
+    <property name="Stacknumber" value="500" />
+    <property class="Preview">
+      <property name="Zoom" value="28" />
+      <property name="Pos" value="0,-0.05" />
+      <property name="Rot" value="90,45,0" />
+    </property>
+    <property name="Group" value="Resources" />
+  </item>
+  <item id="1840" name="dinnerPlate">
+    <property name="DescriptionKey" value="dinnerPlateDesc"/>
+    <property name="Meshfile" value="Items/Misc/sackPrefab" />
+    <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+    <property name="Material" value="organic" />
+    <property name="HoldType" value="3" />
+    <property name="Stacknumber" value="50" />
+    <property class="Preview">
+      <property name="Zoom" value="28" />
+      <property name="Pos" value="0,-0.05" />
+      <property name="Rot" value="90,45,0" />
+    </property>
+    <property name="Group" value="Resources" />
+  </item>
+  <item id="1841" name="biscuitJam">
+    <property name="Extends" value="cornBread" />
+    <property class="Action1">
+      <property name="Gain_health" value="1" />
+      <property name="Gain_food" value="13" />
+    </property>
+  </item>
+  <item id="1842" name="steakSandwich">
+    <property name="Meshfile" value="Items/Misc/parcelPrefab" />
+    <property name="Material" value="organic" />
+    <property name="HoldType" value="31" />
+    <property name="Stacknumber" value="50" />
+    <!-- STK food -->
+    <property class="Action1">
+      <property name="Class" value="Eat" />
+      <property name="Delay" value="2.1" />
+      <property name="Use_time" value="..." />
+      <property name="Gain_health" value="2" />
+      <property name="Gain_food" value="25" />
+      <property name="Gain_water" value="-1" />
+      <property name="Gain_wellness" value="0.5" />
+      <property name="Sound_start" value="UseActions/player_eating" />
+    </property>
+    <property name="Smell" value="exLargeSmell" />
+    <property name="Group" value="Food/Cooking" />
+  </item>
+  <item id="1843" name="militaryRation">
+    <property name="DescriptionKey" value="militaryRationDesc"/>
+    <property name="Meshfile" value="Items/Misc/parcelPrefab" />
+    <property name="Material" value="organic" />
+    <property name="HoldType" value="31" />
+    <property name="Stacknumber" value="50" />
+    <!-- STK food -->
+    <property class="Action1">
+      <property name="Class" value="Eat" />
+      <property name="Delay" value="2.1" />
+      <property name="Use_time" value="..." />
+      <property name="Gain_health" value="2" />
+      <property name="Gain_food" value="25" />
+      <property name="Gain_water" value="10" />
+      <property name="Gain_wellness" value="0.5" />
+      <property name="Sound_start" value="UseActions/player_eating" />
+    </property>
+    <property name="Group" value="Food/Cooking" />
+  </item>
+  <item id="1844" name="lokiMeat">
+    <property name="DescriptionKey" value="lokiMeatDesc"/>
+    <property name="Meshfile" value="Items/Food/meat_venisonPrefab" />
+    <property name="Material" value="organic" />
+    <property name="HoldType" value="3" />
+    <property name="Stacknumber" value="50" />
+    <!-- STK food -->
+    <property name="CraftingIngredientTime" value="15" />
+    <property name="EconomicValue" value="90" />
+    <property class="Action1">
+      <property name="Class" value="Eat" />
+      <property name="Delay" value="1.0" />
+      <property name="Use_time" value="..." />
+      <property name="Gain_health" value="2" />
+      <property name="Gain_food" value="20" />
+      <property name="Gain_water" value="0" />
+      <property name="Gain_stamina" value="0" />
+      <property name="Gain_wellness" value="0.3" />
+      <property name="Sound_start" value="UseActions/player_eating" />
+    </property>
+    <property name="Smell" value="ExLargeSmell" />
+    <property name="Group" value="Food/Cooking" />
+  </item>
+  <item id="1845" name="tunaSandwich">
+    <property name="Meshfile" value="Items/Misc/parcelPrefab" />
+    <property name="Material" value="organic" />
+    <property name="HoldType" value="31" />
+    <property name="Stacknumber" value="50" />
+    <!-- STK food -->
+    <property class="Action1">
+      <property name="Class" value="Eat" />
+      <property name="Delay" value="2.1" />
+      <property name="Use_time" value="..." />
+      <property name="Gain_health" value="2" />
+      <property name="Gain_food" value="17" />
+      <property name="Gain_water" value="0" />
+      <property name="Gain_wellness" value="0.4" />
+      <property name="Sound_start" value="UseActions/player_eating" />
+    </property>
+    <property name="Group" value="Food/Cooking" />
+  </item>
+  <item id="1846" name="mysteryMeat">
+    <property name="Extends" value="rottingFlesh" />
+    <property name="DescriptionKey" value="mysteryMeatDesc"/>
+    <property name="CustomIcon" value="rottingFlesh" />
+    <property class="Action1">
+      <property name="Gain_health" value="-5" />
+      <property name="Gain_food" value="20" />
+      <property name="Gain_water" value="-5" />
+      <property name="Gain_stamina" value="-10" />
+      <property name="Gain_sickness" value="20" />
+      <property name="Buff" value="peculiarTaste" />
+      <property name="Buff_chance" value="1" />
+    </property>
+  </item>
+  <item id="1847" name="bagChips">
+    <property name="Extends" value="cornBread" />
+    <property name="DescriptionKey" value="bagChipsDesc"/>
+    <property name="Meshfile" value="Items/Misc/parcelPrefab" />
+    <property class="Action1">
+      <property name="Gain_food" value="5" />
+      <property name="Gain_water" value="-5" />
+      <property name="Gain_wellness" value="0" />
+    </property>
+  </item>
+  <item id="1848" name="bagChipsHot">
+    <property name="Extends" value="cornBread" />
+    <property name="DescriptionKey" value="bagChipsHotDesc"/>
+    <property name="Meshfile" value="Items/Misc/parcelPrefab" />
+    <property class="Action1">
+      <property name="Gain_food" value="5" />
+      <property name="Gain_water" value="-10" />
+      <property name="Gain_wellness" value="0" />
+    </property>
+  </item>
+  <item id="1849" name="candybar">
+    <property name="Extends" value="cornBread" />
+    <property name="DescriptionKey" value="candybarDesc"/>
+    <property name="Meshfile" value="Items/Misc/parcelPrefab" />
+    <property class="Action1">
+      <property name="Gain_food" value="5" />
+      <property name="Gain_water" value="0" />
+      <property name="Gain_wellness" value="0" />
+    </property>
+  </item>
+  <item id="1850" name="ramenNoodles">
+    <property name="Extends" value="cornBread" />
+    <property name="DescriptionKey" value="ramenNoodlesDesc"/>
+    <property name="Meshfile" value="Items/Misc/parcelPrefab" />
+    <property class="Action1">
+      <property name="Gain_food" value="5" />
+      <property name="Gain_water" value="-5" />
+      <property name="Gain_wellness" value="0" />
+    </property>
+  </item>
+  <item id="1851" name="bowlRamenNoodles">
+    <property name="Meshfile" value="Items/Food/venison_stewPrefab" />
+    <property name="DescriptionKey" value="bowlRamenNoodles"/>
+    <property name="Material" value="organic" />
+    <property name="HoldType" value="23" />
+    <property name="Group" value="Food/Cooking" />
+    <property name="Stacknumber" value="50" />
+    <property class="Action1">
+      <property name="Class" value="Eat" />
+      <property name="Delay" value="1.0" />
+      <property name="Use_time" value="..." />
+      <property name="Gain_health" value="0" />
+      <property name="Gain_food" value="14" />
+      <property name="Gain_water" value="3" />
+      <property name="Create_item" value="bowl" />
+      <property name="Sound_start" value="UseActions/player_drinking" />
+    </property>
+    <property name="Group" value="Food/Cooking" />
+    <property class="Preview">
+      <property name="Zoom" value="30" />
+      <property name="Pos" value="0,-0.03" />
+      <property name="Rot" value="90,45,0" />
+    </property>
+  </item>
+  <item id="1852" name="fishPie">
+    <property name="Extends" value="blueberryPie" />
+    <property class="Action1">
+      <property name="Gain_food" value="15" />
+    </property>
+  </item>
+  <item id="1853" name="canLokiStew">
+    <property name="Extends" value="canBeef" />
+    <property name="DescriptionKey" value="cannedFoodDesc"/>
+    <property class="Action1">
+      <property name="Gain_health" value="3" />
+      <property name="Gain_food" value="35" />
+      <property name="Gain_water" value="0" />
+    </property>
+  </item>
+  <item id="1854" name="canPetfood">
+    <property name="Extends" value="canBeef" />
+    <property name="DescriptionKey" value="canPetfoodDesc"/>
+    <property name="Meshfile" value="Items/Food/can_dogfoodPrefab" />
+    <property class="Action1">
+      <property name="Class" value="Eat" />
+      <property name="Delay" value="2.0" />
+      <property name="Use_time" value="..." />
+      <property name="Gain_health" value="2" />
+      <property name="Gain_food" value="5" />
+      <property name="Gain_water" value="-2" />
+      <property name="Gain_gas" value="0" />
+      <property name="Sound_start" value="UseActions/player_eating" />
+      <property name="Create_item" value="canEmpty" />
+    </property>
+    <property name="Group" value="Food/Cooking" />
+  </item>
+  <item id="1855" name="canUnlabeled">
+    <property name="Meshfile" value="Items/Food/can_misoPrefab" />
+    <property name="Material" value="metal" />
+    <property name="Weight" value="5" />
+    <property name="EconomicValue" value="60" />
+    <property name="HoldType" value="3" />
+    <property name="Stacknumber" value="50" />
+    <!-- STK food -->
+    <property class="Action1">
+      <property name="Class" value="Eat" />
+      <property name="Delay" value="1.0" />
+      <property name="Use_time" value="..." />
+      <property name="Gain_health" value="0" />
+      <property name="Gain_food" value="5" />
+      <property name="Gain_water" value="0" />
+      <property name="Sound_start" value="UseActions/player_eating" />
+      <property name="Create_item" value="canEmpty" />
+      <property name="Buff" value="randomFood1,randomFood2,randomFood3,randomWater1,randomWater2,foodPoisoning" />
+      <property name="Buff_chance" value="0.2,0.7,0.3,0.3,0.2,0.08" />
+    </property>
+    <property name="Group" value="Food/Cooking" />
+  </item>
+  <item id="1856" name="mysteryMeatCrafted">
+    <property name="Meshfile" value="Items/Food/meat_rabbit" />
+    <property name="Material" value="organic" />
+    <property name="HoldType" value="21" />
+    <property name="Stacknumber" value="100" />
+    <!-- STK food -->
+    <property name="EconomicValue" value="5" />
+    <property name="EconomicBundleSize" value="1" />
+    <property name="SellableToTrader" value="false" />
+    <property name="CustomIcon" value="rottingFlesh" />
+    <property class="Action1">
+      <property name="Class" value="Eat" />
+      <property name="Delay" value="1.0" />
+      <property name="Use_time" value="..." />
+      <property name="Gain_health" value="-5" />
+      <property name="Gain_food" value="20" />
+      <property name="Gain_water" value="-5" />
+      <property name="Gain_stamina" value="-15" />
+      <property name="Gain_sickness" value="10" />
+      <property name="Sound_start" value="UseActions/player_eating" />
+    </property>
+    <property name="Group" value="Food/Cooking" />
+  </item>
+<item id="700" name="foodHoney">
+	<property name="Meshfile" value="Items/Food/honeyPrefab"/>
+	<property name="Material" value="organic"/>
+	<property name="EconomicValue" value="80"/>
+	<property name="HoldType" value="3"/>
+	<property name="Stacknumber" value="50"/> <!-- STK food -->
+	<property class="Action1">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Use_time" value="..."/>
+		<property name="Gain_health" value="0"/>
+		<property name="Gain_food" value="5"/>
+		<property name="Buff" value="eatFood_4_Trigger"/>
+		<property name="Gain_water" value="0"/>
+		<property name="Gain_stamina" value="40"/>
+		<property name="Gain_wellness" value="0.4"/>
+		<property name="Sound_start" value="player_drinking"/>
+		<property name="Debuff" value="infection"/>
+		<property name="Create_item" value="emptyJar"/>
+	</property>
+	<property name="Group" value="Food/Cooking"/>
+</item>
+
+<item id="701" name="foodYuccaFruit">
+	<property name="Meshfile" value="Items/Food/fruit_yucca"/>
+	<property name="Material" value="plants"/>
+	<property name="HoldType" value="14"/>
+	<property name="Stacknumber" value="50"/> <!-- STK food -->
+	<property name="EconomicValue" value="5"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property class="Action1">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Use_time" value="..."/>
+		<property name="Gain_health" value="0"/>
+		<property name="Gain_food" value="3"/>
+		<property name="Buff" value="eatFood_2_Trigger"/>
+		<property name="Gain_water" value="0"/>
+		<property name="Gain_stamina" value="10"/>
+		<property name="Sound_start" value="player_eating"/>
+	</property>
+	<property name="Group" value="Food/Cooking"/> <!-- ,Medicine -->
+</item>
+
+
+<item id="702" name="foodYuccaJuice">
+	<property name="Meshfile" value="Items/Food/yucca_juicePrefab"/>
+	<property name="Material" value="organic"/>
+	<property name="HoldType" value="3"/>
+	<property name="Stacknumber" value="50"/> <!-- STK drink -->
+	<property name="EconomicValue" value="36"/>
+	<property class="Action1">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Use_time" value="..."/>
+		<property name="Gain_health" value="0"/>
+		<property name="Gain_water" value="15"/>
+		<property name="Gain_food" value="0"/>
+		<property name="Gain_stamina" value="30"/>
+		<property name="Gain_wellness" value="0.1"/>
+		<property name="Sound_start" value="player_drinking"/>
+		<property name="Buff" value="yuccaJuiceCooling,extinguishFireBuff"/>
+		<property name="Create_item" value="emptyJar"/>
+	</property>
+	<property name="Group" value="Food/Cooking"/>
+</item>
+
+<item id="706" name="canBeef">
+	<property name="Meshfile" value="Items/Food/can_beefPrefab"/>
+	<property name="Material" value="metal"/>
+	<property name="Weight" value="5"/>
+	<property name="EconomicValue" value="60"/>
+	<property name="HoldType" value="3"/>
+	<property name="Stacknumber" value="50"/> <!-- STK food -->
+	<property class="Action1">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Use_time" value="..."/>
+		<property name="Gain_health" value="0"/>
+		<property name="Gain_food" value="15"/>
+		<property name="Buff" value="eatFood_8_Trigger"/>
+		<property name="Gain_water" value="-10"/>
+		<property name="Sound_start" value="player_eating"/>
+		<property name="Create_item" value="canEmpty"/>
+	</property>
+	<property name="Group" value="Food/Cooking"/>
+</item>
+
+<item id="708" name="canChicken">
+	<property name="Extends" value="canBeef"/>
+	<property name="Meshfile" value="Items/Food/can_ChickenPrefab"/>
+</item>
+
+<item id="709" name="canLamb">
+	<property name="Extends" value="canBeef"/>
+	<property name="Meshfile" value="Items/Food/can_LambPrefab"/>
+</item>
+
+<item id="711" name="canCatfood">
+	<property name="Extends" value="canBeef"/>
+	<property name="EconomicValue" value="20"/>
+	<property name="Meshfile" value="Items/Food/can_catfoodPrefab"/>
+	<property class="Action1">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="2.0"/>
+		<property name="Use_time" value="..."/>
+		<property name="Gain_food" value="5"/>
+		<property name="Buff" value="eatFood_3_Trigger"/>
+		<property name="Gain_water" value="-2"/>
+		<property name="Gain_gas" value="0"/>
+		<property name="Sound_start" value="player_eating"/>
+		<property name="Create_item" value="canEmpty"/>
+	</property>
+	<property name="Group" value="Food/Cooking"/>
+</item>
+
+<item id="712" name="canDogfood">
+	<property name="Extends" value="canCatfood"/>
+	<property name="Meshfile" value="Items/Food/can_dogfoodPrefab"/>
+	<property class="Action1">
+		<property name="Gain_food" value="5"/>
+		<property name="Buff" value="eatFood_3_Trigger"/>
+		<property name="Gain_water" value="-2"/>
+		<property name="Gain_gas" value="0"/>
+	</property>
+</item>
+
+<item id="713" name="canChili">
+	<property name="Extends" value="canCatfood"/>
+	<property name="Meshfile" value="Items/Food/can_chiliPrefab"/>
+	<property class="Action1">
+		<property name="Gain_food" value="10"/>
+		<property name="Buff" value="eatFood_5_Trigger"/>
+		<property name="Gain_water" value="-5"/>
+		<property name="Gain_gas" value="0"/>
+	</property>
+</item>
+
+<item id="714" name="canMiso">
+	<property name="Extends" value="canCatfood"/>
+	<property name="EconomicValue" value="80"/>
+	<property name="Meshfile" value="Items/Food/can_misoPrefab"/>
+	<property class="Action1">
+		<property name="Gain_food" value="5"/>
+		<property name="Buff" value="eatFood_3_Trigger"/>
+		<property name="Gain_water" value="10"/>
+	</property>
+</item>
+
+<item id="715" name="canPasta">
+	<property name="Extends" value="canMiso"/>
+	<property name="Meshfile" value="Items/Food/can_pastaPrefab"/>
+	<property class="Action1">
+		<property name="Gain_food" value="7"/>
+		<property name="Buff" value="eatFood_4_Trigger"/>
+		<property name="Gain_water" value="0"/>
+	</property>
+</item>
+
+<item id="716" name="canPeas">
+	<property name="Extends" value="canMiso"/>
+	<property name="Meshfile" value="Items/Food/can_peasPrefab"/>
+	<property class="Action1">
+		<property name="Gain_food" value="5"/>
+		<property name="Buff" value="eatFood_3_Trigger"/>
+		<property name="Gain_water" value="0"/>
+	</property>
+</item>
+
+<item id="717" name="canPears">
+	<property name="Extends" value="canMiso"/>
+	<property name="Meshfile" value="Items/Food/can_pearsPrefab"/>
+	<property class="Action1">
+		<property name="Gain_food" value="5"/>
+		<property name="Buff" value="eatFood_3_Trigger"/>
+		<property name="Gain_water" value="10"/>
+	</property>
+</item>
+
+<item id="718" name="canSoup">
+	<property name="Extends" value="canMiso"/>
+	<property name="Meshfile" value="Items/Food/can_soupPrefab"/>
+	<property class="Action1">
+		<property name="Gain_food" value="5"/>
+		<property name="Buff" value="eatFood_3_Trigger"/>
+		<property name="Gain_water" value="10"/>
+	</property>
+</item>
+
+<item id="719" name="canStock">
+	<property name="Extends" value="canMiso"/>
+	<property name="Meshfile" value="Items/Food/can_stockPrefab"/>
+	<property class="Action1">
+		<property name="Gain_food" value="5"/>
+		<property name="Buff" value="eatFood_3_Trigger"/>
+		<property name="Gain_water" value="10"/>
+	</property>
+</item>
+
+<item id="720" name="canTuna">
+	<property name="Extends" value="canMiso"/>
+	<property name="Meshfile" value="Items/Food/can_tunaPrefab"/>
+	<property class="Action1">
+		<property name="Gain_food" value="5"/>
+		<property name="Buff" value="eatFood_3_Trigger"/>
+		<property name="Gain_water" value="-2"/>
+	</property>
+</item>
+
+<item id="723" name="canHam">
+	<property name="Meshfile" value="Items/Food/can_hamPrefab"/>
+	<property name="Material" value="metal"/>
+	<property name="Weight" value="5"/>
+	<property name="EconomicValue" value="80"/>
+	<property name="HoldType" value="22"/>
+	<property name="Stacknumber" value="50"/> <!-- STK food -->
+	<property class="Action1">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="2.0"/>
+		<property name="Use_time" value="..."/>
+		<property name="Gain_health" value="0"/>
+		<property name="Gain_food" value="7"/>
+		<property name="Buff" value="eatFood_4_Trigger"/>
+		<property name="Gain_water" value="-5"/>
+		<property name="Sound_start" value="player_eating"/>
+		<property name="Create_item" value="canEmpty"/>
+	</property>
+	<property name="Group" value="Food/Cooking"/>
+</item>
+
+<item id="724" name="canSalmon">
+	<property name="Extends" value="canHam"/>
+	<property name="Meshfile" value="Items/Food/can_salmonPrefab"/>
+	<property class="Action1">
+		<property name="Gain_food" value="5"/>
+		<property name="Buff" value="eatFood_3_Trigger"/>
+	</property>
+</item>
+
+<item id="725" name="snowberryExtract">
+	<property name="Extends" value="aloeCream"/>
+	<property name="CustomIcon" value="aloeCream"/>
+	<property name="CustomIconTint" value="9f9fff"/>
+	<property name="EconomicValue" value="50"/>
+	<property name="CraftingIngredientTime" value="20"/>
+	<property class="Action1">
+		<property name="Delay" value="1.5"/>
+		<property name="Gain_health" value="-10"/>
+		<property name="Gain_stamina" value="-20"/>
+		<property name="Gain_wellness" value="-1"/>
+		<property name="Buff" value="eatSnowberryExtractTrigger"/>
+	</property>
+	<property name="Group" value="Science"/>
+</item>
+
+<item id="727" name="corn">
+	<property name="Meshfile" value="Items/Food/vegetable_corn"/>
+	<property name="Material" value="assortedVegetables"/>	<property name="Weight" value="5"/>
+	<property name="HoldType" value="15"/>
+	<property name="Stacknumber" value="500"/> <!-- STK resource -->
+	<property name="EconomicValue" value="10"/>
+	<property name="EconomicBundleSize" value="5"/>
+	<property name="CraftingIngredientTime" value="5"/>
+	<property class="Action1">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Use_time" value="..."/>
+		<property name="Gain_health" value="0"/>
+		<property name="Gain_food" value="1"/>
+		<property name="Buff" value="eatFood_1_Trigger"/>
+		<property name="Gain_water" value="0"/>
+		<property name="Sound_start" value="player_eating"/>
+	</property>
+	<property name="Group" value="Food/Cooking"/>
+</item>
+
+<item id="728" name="cornOnTheCob">
+	<property name="Meshfile" value="Items/Food/corn_cooked"/>
+	<property name="Material" value="organic"/>
+	<property name="HoldType" value="15"/>
+	<property name="Stacknumber" value="50"/> <!-- STK food -->
+	<property name="EconomicValue" value="32"/>
+	<property class="Action1">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Use_time" value="..."/>
+		<property name="Gain_health" value="0"/>
+		<property name="Gain_food" value="3"/>
+		<property name="Buff" value="eatFood_2_Trigger"/>
+		<property name="Gain_water" value="0"/>
+		<property name="Gain_stamina" value="2"/>
+		<property name="Gain_wellness" value="0.08"/>
+		<property name="Sound_start" value="player_eating"/>
+		<!-- jar from cooking food <property name="Create_item" value="emptyJar"/> -->
+	</property>
+	<property name="Group" value="Food/Cooking"/>
+</item>
+
+<item id="729" name="cornMeal">
+	<property name="Meshfile" value="Items/Food/cornmealPrefab"/>
+	<property name="Material" value="organic"/>
+	<property name="HoldType" value="21"/>
+	<property name="Stacknumber" value="500"/> <!-- STK resource -->
+	<property name="EconomicValue" value="11"/>
+	<property name="EconomicBundleSize" value="5"/>
+	<property name="CraftingIngredientTime" value="10"/>
+	<property class="Action1">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Use_time" value="..."/>
+		<property name="Gain_health" value="0"/>
+		<property name="Gain_food" value="2"/>
+		<property name="Buff" value="eatFood_1_Trigger"/>
+		<property name="Gain_water" value="-10"/>
+		<property name="Sound_start" value="player_eating"/>
+	</property>
+	<property name="Group" value="Resources,Food/Cooking"/>
+</item>
+
+<item id="730" name="cornBread">
+	<property name="Meshfile" value="Items/Misc/parcelPrefab"/>
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+	<property name="HoldType" value="31"/>
+	<property name="Material" value="organic"/>
+	<property name="Stacknumber" value="50"/> <!-- STK food -->
+	<property name="EconomicValue" value="32"/>
+	<property class="Action1">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Use_time" value="..."/>
+		<property name="Gain_health" value="0"/>
+		<property name="Gain_food" value="5"/>
+		<property name="Buff" value="eatFood_3_Trigger"/>
+		<property name="Gain_water" value="0"/>
+		<property name="Gain_wellness" value="0.4"/>
+		<property name="Sound_start" value="player_eating"/>
+		<!-- jar from cooking food <property name="Create_item" value="emptyJar"/> -->
+	</property>
+	<property name="Group" value="Food/Cooking"/>
+</item>
+
+<item id="731" name="moldyBread">
+	<property name="Meshfile" value="Items/Misc/parcelPrefab"/>
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+	<property name="HoldType" value="31"/>
+	<property name="Material" value="organic"/>
+	<property name="Stacknumber" value="50"/> <!-- STK food -->
+	<property name="EconomicValue" value="5"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property class="Action1">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Use_time" value="..."/>
+		<property name="Gain_health" value="0"/>
+		<property name="Gain_food" value="10"/>
+		<property name="Buff" value="foodPoisoning,eatFood_3_Trigger"/>
+		<property name="Buff_chance" value="0.6,1"/>
+		<property name="Gain_water" value="0"/>
+		<property name="Gain_sickness" value="30"/>
+		<property name="Sound_start" value="player_eating"/>
+	</property>
+	<property name="CraftingSkillGroup" value="craftSkillScience"/>
+	<property name="CraftingIngredientTime" value="60"/>
+	<property name="CraftingIngredientExp" value="3"/>
+	<property name="Group" value="Food/Cooking"/>
+</item>
+
+<item id="732" name="shamSandwich">
+	<property name="Meshfile" value="Items/Misc/parcelPrefab"/>
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+	<property name="HoldType" value="31"/>
+	<property name="Material" value="organic"/>
+	<property name="Stacknumber" value="50"/> <!-- STK food -->
+	<property name="EconomicValue" value="5"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="CraftingIngredientTime" value="30"/>
+	<property class="Action1">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Use_time" value="..."/>
+		<property name="Gain_health" value="0"/>
+		<property name="Gain_food" value="15"/>
+		<property name="Buff" value="foodPoisoning,eatFood_4_Trigger"/>
+		<property name="Buff_chance" value="0.6,1"/>
+		<property name="Sound_start" value="player_eating"/>
+	</property>
+	<property name="Group" value="Food/Cooking"/>
+</item>
+
+<item id="735" name="rawMeat">
+	<property name="Meshfile" value="Items/Misc/raw_meatPrefab"/>
+	<property name="Material" value="organic"/>
+	<property name="HoldType" value="3"/>
+	<property name="Stacknumber" value="50"/> <!-- STK food -->
+	<property name="EconomicValue" value="20"/>
+	<property name="CraftingIngredientTime" value="15"/>
+	<property class="Action1">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Use_time" value="..."/>
+		<property name="Gain_health" value="0"/>
+		<property name="Gain_food" value="10"/>
+		<property name="Buff" value="foodPoisoning,eatFood_3_Trigger"/>
+		<property name="Buff_chance" value="0.4,1"/>
+		<property name="Gain_water" value="0"/>
+		<property name="Gain_stamina" value="0"/>
+		<property name="Gain_sickness" value="30"/>
+		<property name="Sound_start" value="player_eating"/>
+	</property>
+	<property name="Smell" value="ExLargeSmell"/>
+	<property name="Group" value="Food/Cooking"/>
+</item>
+
+<item id="736" name="rottingFlesh">
+	<property name="Meshfile" value="Items/Food/meat_rabbit"/>
+	<property name="Material" value="organic"/>
+	<property name="HoldType" value="21"/>
+	<property name="Stacknumber" value="100"/> <!-- STK food -->
+	<property name="EconomicValue" value="5"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property class="Action1">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Use_time" value="..."/>
+		<property name="Gain_health" value="0"/>
+		<property name="Gain_food" value="10"/>
+		<property name="Buff" value="foodPoisoning"/>
+		<property name="Gain_water" value="-5"/>
+		<property name="Gain_stamina" value="-20"/>
+		<property name="Gain_sickness" value="30"/>
+		<property name="Sound_start" value="player_eating"/>
+	</property>
+	<property name="CraftingIngredientExp" value="0"/>
+	<property name="CraftingIngredientTime" value="95"/>
+	<property name="Group" value="Food/Cooking"/>
+</item>
+
+<item id="737" name="charredMeat">
+	<property name="Meshfile" value="Items/Misc/parcelPrefab"/>
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+	<property name="HoldType" value="31"/>
+	<property name="Material" value="organic"/>
+	<property name="Stacknumber" value="50"/> <!-- STK food -->
+	<property name="EconomicValue" value="22"/>
+	<property class="Action1">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="2.1"/>
+		<property name="Use_time" value="..."/>
+		<property name="Gain_health" value="0"/>
+		<property name="Gain_food" value="10"/>
+		<property name="Buff" value="eatFood_9_Trigger"/>
+		<property name="Gain_water" value="-5"/>
+		<property name="Gain_wellness" value="0.65"/>
+		<property name="Sound_start" value="player_eating"/>
+	</property>
+	<property name="Smell" value="largeSmell"/>
+	<property name="Group" value="Food/Cooking"/>
+</item>
+
+<item id="738" name="grilledMeat">
+	<property name="Meshfile" value="Items/Misc/parcelPrefab"/>
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+	<property name="HoldType" value="31"/>
+	<property name="Material" value="organic"/>
+	<property name="Stacknumber" value="50"/> <!-- STK food -->
+	<property name="EconomicValue" value="24"/>
+	<property class="Action1">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="2.1"/>
+		<property name="Use_time" value="..."/>
+		<property name="Gain_health" value="0"/>
+		<property name="Gain_food" value="16"/>
+		<property name="Buff" value="eatFood_14_Trigger"/>
+		<property name="Gain_water" value="-3"/>
+		<property name="Gain_wellness" value="1.35"/>
+		<property name="Sound_start" value="player_eating"/>
+	</property>
+	<property name="Smell" value="mediumSmell"/>
+	<property name="Group" value="Food/Cooking"/>
+</item>
+
+<item id="739" name="boiledMeat">
+	<property name="Meshfile" value="Items/Misc/parcelPrefab"/>
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+	<property name="HoldType" value="31"/>
+	<property name="Material" value="organic"/>
+	<property name="Stacknumber" value="50"/> <!-- STK food -->
+	<property name="EconomicValue" value="52"/>
+	<property class="Action1">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="2.1"/>
+		<property name="Use_time" value="..."/>
+		<property name="Gain_health" value="0"/>
+		<property name="Gain_food" value="12"/>
+		<property name="Buff" value="eatFood_9_Trigger"/>
+		<property name="Gain_water" value="0"/>
+		<property name="Gain_wellness" value="0.675"/>
+		<property name="Sound_start" value="player_eating"/>
+		<!-- jar from cooking food <property name="Create_item" value="emptyJar"/> -->
+	</property>
+	<property name="Smell" value="smallSmell"/>
+	<property name="Group" value="Food/Cooking"/>
+</item>
+
+<item id="740" name="meatStew">
+	<!-- <property name="HandMeshfile" value="Items/Food/venison_stewHandPrefab"/> -->
+	<property name="Meshfile" value="Items/Food/venison_stewPrefab"/>
+	<property name="Material" value="organic"/>
+	<property name="HoldType" value="23"/>
+	<property name="Stacknumber" value="50"/> <!-- STK food -->
+	<property name="EconomicValue" value="200"/>
+	<property class="Action1">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Use_time" value="..."/>
+		<property name="Gain_health" value="0"/>
+		<property name="Gain_food" value="60"/>
+		<property name="Gain_water" value="0"/>
+		<property name="Gain_wellness" value="6"/>
+		<property name="Sound_start" value="player_drinking"/>
+		<!-- jar from cooking food <property name="Create_item" value="emptyJar"/> -->
+		<property name="Buff" value="stewWarming,eatFood_78_Trigger"/>
+		<property name="Create_item" value="bowl" />
+	</property>
+	<property name="Smell" value="exLargeSmell"/>
+	<property name="Group" value="Food/Cooking"/>
+</item>
+
+
+<item id="750" name="potato">
+	<property name="Meshfile" value="Items/Food/vegetable_potatoPrefab"/>
+	<property name="Material" value="assortedVegetables"/>	<property name="Weight" value="5"/>
+	<property name="HoldType" value="3"/>
+	<property name="Stacknumber" value="500"/> <!-- STK resource -->
+	<property name="EconomicValue" value="10"/>
+	<property name="EconomicBundleSize" value="5"/>
+	<property name="CraftingIngredientTime" value="10"/>
+	<!-- 14 is large round hold -->
+	<property class="Action1">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Use_time" value="..."/>
+		<property name="Gain_health" value="0"/>
+		<property name="Gain_food" value="2"/>
+		<property name="Buff" value="eatFood_1_Trigger"/>
+		<property name="Gain_water" value="0"/>
+		<property name="Gain_wellness" value="0"/>
+		<property name="Sound_start" value="player_eating"/>
+	</property>
+	<property name="Group" value="Food/Cooking"/>
+</item>
+
+<item id="751" name="blueberries">
+	<property name="Meshfile" value="Items/Food/blueberriesPrefab"/>
+	<property name="Material" value="plants"/>
+	<property name="HoldType" value="23"/>
+	<property name="Stacknumber" value="500"/> <!-- STK resource -->
+	<property name="EconomicValue" value="10"/>
+	<property name="EconomicBundleSize" value="5"/>
+	<property name="CraftingIngredientTime" value="8"/>
+	<property class="Action1">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Use_time" value="..."/>
+		<property name="Gain_health" value="0"/>
+		<property name="Gain_food" value="1"/>
+		<property name="Buff" value="eatFood_1_Trigger"/>
+		<property name="Gain_water" value="1"/>
+		<property name="Gain_wellness" value="0"/>
+		<property name="Sound_start" value="player_eating"/>
+	</property>
+	<property name="DropScale" value="4"/>
+	<property name="Group" value="Food/Cooking"/>
+</item>
+
+<item id="752" name="egg">
+	<property name="Meshfile" value="Items/Food/eggPrefab"/>
+	<property name="Material" value="organic"/>
+	<property name="HoldType" value="23"/>
+	<property name="Stacknumber" value="500"/> <!-- STK resource -->
+	<property name="EconomicValue" value="20"/>
+	<property class="Action1">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Use_time" value="..."/>
+		<property name="Gain_health" value="0"/>
+		<property name="Gain_food" value="3"/>
+		<property name="Buff" value="foodPoisoning,eatFood_1_Trigger"/>
+		<property name="Buff_chance" value="0.4,1"/>
+		<property name="Gain_water" value="0"/>
+		<property name="Gain_stamina" value="-8"/>
+		<property name="Gain_sickness" value="30"/>
+		<property name="Sound_start" value="player_eating"/>
+	</property>
+	<property name="Group" value="Food/Cooking"/>
+</item>
+
+<item id="753" name="eggboiled">
+	<property name="Meshfile" value="Items/Food/eggPrefab"/>
+	<property name="Material" value="organic"/>
+	<property name="HoldType" value="23"/>
+	<property name="Stacknumber" value="50"/> <!-- STK food -->
+	<property name="EconomicValue" value="30"/>
+	<property class="Action1">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="2.0"/>
+		<property name="Use_time" value="..."/>
+		<property name="Gain_health" value="0"/>
+		<property name="Gain_food" value="4"/>
+		<property name="Buff" value="eatFood_3_Trigger"/>
+		<property name="Gain_water" value="0"/>
+		<property name="Gain_stamina" value="0"/>
+		<property name="Gain_wellness" value="0.32"/>
+		<property name="Sound_start" value="player_eating"/>
+		<!-- jar from cooking food <property name="Create_item" value="emptyJar"/> -->
+	</property>
+	<property name="Group" value="Food/Cooking"/>
+</item>
+
+<item id="754" name="blueberryPie">
+	<property name="Meshfile" value="Items/Food/blueberry_piePrefab"/>
+	<property name="Material" value="organic"/>
+	<property name="HoldType" value="23"/>
+	<property name="Stacknumber" value="50"/> <!-- STK food -->
+	<property name="EconomicValue" value="60"/>
+	<property class="Action1">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Use_time" value="..."/>
+		<property name="Gain_health" value="0"/>
+		<property name="Gain_food" value="10"/>
+		<property name="Buff" value="eatFood_9_Trigger"/>
+		<property name="Gain_water" value="0"/>
+		<property name="Gain_wellness" value="0.8"/>
+		<property name="Sound_start" value="player_eating"/>
+		<!-- jar from cooking food <property name="Create_item" value="emptyJar"/> -->
+		<property name="Create_item" value="bowl" />
+	</property>
+	<property name="Group" value="Food/Cooking"/>
+</item>
+
+<item id="755" name="bakedPotato">
+	<property name="Meshfile" value="Items/Food/vegetable_potato_bakedPrefab"/>
+	<property name="Material" value="organic"/>
+	<property name="HoldType" value="15"/>
+	<property name="Stacknumber" value="50"/> <!-- STK food -->
+	<property name="EconomicValue" value="8"/>
+	<property name="EconomicBundleSize" value="2"/>
+	<property class="Action1">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Use_time" value="..."/>
+		<property name="Gain_health" value="0"/>
+		<property name="Gain_food" value="4"/>
+		<property name="Buff" value="eatFood_2_Trigger"/>
+		<property name="Gain_water" value="0"/>
+		<property name="Gain_wellness" value="0"/>
+		<property name="Sound_start" value="player_eating"/>
+	</property>
+	<property name="Group" value="Food/Cooking"/>
+</item>
+
+<item id="756" name="baconAndEggs">
+	<property name="Meshfile" value="Items/Misc/parcelPrefab"/>
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+	<property name="HoldType" value="31"/>
+	<property name="Material" value="organic"/>
+	<property name="Stacknumber" value="50"/> <!-- STK food -->
+	<property name="EconomicValue" value="64"/>
+	<property class="Action1">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="2.1"/>
+		<property name="Use_time" value="..."/>
+		<property name="Gain_health" value="0"/>
+		<property name="Gain_food" value="16"/>
+		<property name="Buff" value="eatFood_15_Trigger"/>
+		<property name="Gain_wellness" value="1.35"/>
+		<property name="Sound_start" value="player_eating"/>
+	</property>
+	<property name="Smell" value="largeSmell"/>
+	<property name="Group" value="Food/Cooking"/>
+</item>
+
+<item id="757" name="mushrooms">
+	<property name="Meshfile" value="Items/Misc/parcelPrefab"/>
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+	<property name="HoldType" value="31"/>
+	<property name="Material" value="plants"/>
+	<property name="Stacknumber" value="500"/> <!-- STK resource -->
+	<property name="EconomicValue" value="12"/>
+	<property name="EconomicBundleSize" value="5"/>
+	<property name="CraftingIngredientTime" value="5"/>
+	<property class="Action1">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Use_time" value="..."/>
+		<property name="Gain_health" value="0"/>
+		<property name="Gain_food" value="5"/>
+		<property name="Buff" value="eatFood_3_Trigger"/>
+		<property name="Gain_water" value="1"/>
+		<property name="Gain_wellness" value="0"/>
+		<property name="Sound_start" value="player_eating"/>
+	</property>
+	<property name="DropScale" value="4"/>
+	<property name="Group" value="Food/Cooking"/>
+</item>
+
+<item id="758" name="vegetableStew">
+	<property name="Meshfile" value="Items/Food/venison_stewPrefab"/>
+	<property name="Material" value="organic"/>
+	<property name="HoldType" value="23"/>
+	<property name="Stacknumber" value="50"/> <!-- STK food -->
+	<property name="EconomicValue" value="65"/>
+	<property class="Action1">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Use_time" value="..."/>
+		<property name="Gain_health" value="0"/>
+		<property name="Gain_food" value="21"/>
+		<property name="Gain_water" value="0"/>
+		<property name="Gain_wellness" value="0.5"/>
+		<property name="Sound_start" value="player_drinking"/>
+		<property name="Buff" value="stewWarming,eatFood_12_Trigger"/>
+		<!-- jar from cooking food <property name="Create_item" value="emptyJar"/> -->
+		<property name="Create_item" value="bowl" />
+	</property>
+	<property name="Group" value="Food/Cooking"/>
+</item>
+
+<item id="775" name="canMurkyWater">
+	<property name="Meshfile" value="Items/Food/can_empty"/>
+	<property name="Material" value="metal"/>
+	<property name="Weight" value="5"/>
+	<property name="HoldType" value="14"/>
+	<property name="Stacknumber" value="50"/> <!-- STK resource -->
+	<property name="EconomicValue" value="5"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="CraftingIngredientTime" value="10"/>
+	<property class="Action1">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1"/>
+		<property name="Use_time" value="..."/>
+		<property name="Gain_health" value="0"/>
+		<property name="Gain_stamina" value="5"/>
+		<property name="Gain_food" value="0"/>
+		<property name="Gain_water" value="15"/>
+		<property name="Gain_sickness" value="15"/>
+		<property name="Gain_wellness" value="-0.1"/>
+		<property name="Sound_start" value="player_drinking"/>
+		<property name="Buff" value="dysentery,extinguishFireBuff"/>
+		<property name="Buff_chance" value="0.5,1"/>
+		<property name="Create_item" value="canEmpty"/>
+	</property>
+	<property name="Group" value="Food/Cooking"/>
+</item>
+
+<item id="776" name="canBoiledWater">
+	<property name="Meshfile" value="Items/Food/can_empty"/>
+	<property name="Material" value="metal"/>
+	<property name="Weight" value="5"/>
+	<property name="HoldType" value="14"/>
+	<property name="Stacknumber" value="50"/>
+	<property name="EconomicValue" value="8"/>
+	<property name="CraftingIngredientTime" value="10"/>
+	<property class="Action1">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1"/>
+		<property name="Use_time" value="..."/>
+		<property name="Gain_health" value="0"/>
+		<property name="Gain_stamina" value="20"/>
+		<property name="Gain_food" value="0"/>
+		<property name="Gain_water" value="20"/>
+		<property name="Sound_start" value="player_drinking"/>
+		<property name="Buff" value="extinguishFireBuff"/>
+		<property name="Create_item" value="canEmpty"/>
+	</property>
+	<property name="Group" value="Food/Cooking"/>
+</item>
+
+<item id="779" name="bottledRiverWater">
+	<property name="Meshfile" value="Items/Food/bottledRiverWaterPrefab"/>
+	<property name="Material" value="glass"/>
+	<property name="HoldType" value="3"/>
+	<property name="Stacknumber" value="500"/> <!-- STK resource -->
+	<property name="Weight" value="10"/>
+	<property name="EconomicValue" value="5"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="CraftingIngredientTime" value="10"/>
+	<property class="Action1">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1"/>
+		<property name="Use_time" value="..."/>
+		<property name="Gain_health" value="0"/>
+		<property name="Gain_stamina" value="5"/>
+		<property name="Gain_food" value="0"/>
+		<property name="Gain_water" value="15"/>
+		<property name="Gain_sickness" value="15"/>
+		<property name="Gain_wellness" value="-0.1"/>
+		<property name="Sound_start" value="player_drinking"/>
+		<property name="Buff" value="dysentery,extinguishFireBuff"/>
+		<property name="Buff_chance" value="0.5,1"/>
+		<property name="Create_item" value="emptyJar"/>
+	</property>
+	<property name="Group" value="Food/Cooking"/>
+</item>
+
+<item id="780" name="bottledWater">
+	<property name="Meshfile" value="Items/Food/bottled_waterPrefab"/>
+	<property name="Material" value="glass"/>
+	<property name="HoldType" value="3"/>
+	<property name="Stacknumber" value="50"/> <!-- STK drink -->
+	<property name="Weight" value="10"/>
+	<property name="EconomicValue" value="30"/>
+	<property name="CraftingIngredientTime" value="15"/>
+		<property class="Action0">
+			<property name="Class" value="ExchangeItem"/>
+			<property name="Delay" value="1.0"/>
+			<property name="Change_item_to" value="coldbottledWater"/>
+			<property name="Focused_blockname_1" value="cntFridgeTop"/>
+			<property name="Focused_blockname_2" value="cntFridgeBottom"/>
+			<property name="Focused_blockname_3" value="cntEPSFridgeBottom"/>
+			<property name="Focused_blockname_4" value="cntEPSFridgeTop"/>
+			<property name="Focused_blockname_5" value="cntEPSBeerCooler"/>
+			<property name="Focused_blockname_6" value="cntBeerCooler"/>
+			<property name="Focused_blockname_7" value="cntCooler"/>
+			<property name="Focused_blockname_8" value="cntFridge"/>
+			<property name="Focused_blockname_9" value="cntEPSFridge"/>
+			<property name="Sound_start" value="bucketfill_water"/>
+		</property>
+	<property class="Action1">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1"/>
+		<property name="Use_time" value="..."/>
+		<property name="Gain_health" value="0"/>
+		<property name="Gain_stamina" value="20"/>
+		<property name="Gain_food" value="0"/>
+		<property name="Gain_water" value="20"/>
+		<property name="Sound_start" value="player_drinking"/>
+		<property name="Buff" value="extinguishFireBuff"/>
+		<property name="Create_item" value="emptyJar"/>
+	</property>
+	<property name="Group" value="Food/Cooking"/>
+</item>
+
+<item id="781" name="snowberryJuice">
+	<property name="Extends" value="bottledWater"/>
+	<property name="CustomIcon" value="grainAlcohol"/>
+	<property name="CustomIconTint" value="9f9fff"/>
+	<property name="EconomicValue" value="100"/>
+	<property name="CraftingIngredientTime" value="5"/>
+	<property class="Action1">
+		<property name="Delay" value="1.5"/>
+		<property name="Gain_stamina" value="10"/>
+		<property name="Gain_food" value="0"/>
+		<property name="Gain_water" value="10"/>
+		<property name="Buff" value="eatsnowberryJuiceTrigger,extinguishFireBuff"/>
+	</property>
+	<property name="Group" value="Science"/>
+</item>
+
+<item id="782" name="goldenRodTea">
+	<property name="Meshfile" value="Items/Food/goldenrod_teaPrefab"/>
+	<property name="Material" value="glass"/>
+	<property name="HoldType" value="3"/>
+	<property name="Weight" value="10"/>
+	<property name="Stacknumber" value="50"/> <!-- STK drink -->
+	<property name="EconomicValue" value="34"/>
+		<property class="Action0">
+			<property name="Class" value="ExchangeItem"/>
+			<property name="Delay" value="1.0"/>
+			<property name="Change_item_to" value="coldgoldenRodTea"/>
+			<property name="Focused_blockname_1" value="cntFridgeTop"/>
+			<property name="Focused_blockname_2" value="cntFridgeBottom"/>
+			<property name="Focused_blockname_3" value="cntEPSFridgeBottom"/>
+			<property name="Focused_blockname_4" value="cntEPSFridgeTop"/>
+			<property name="Focused_blockname_5" value="cntEPSBeerCooler"/>
+			<property name="Focused_blockname_6" value="cntBeerCooler"/>
+			<property name="Focused_blockname_7" value="cntCooler"/>
+			<property name="Focused_blockname_8" value="cntFridge"/>
+			<property name="Focused_blockname_9" value="cntEPSFridge"/>
+			<property name="Sound_start" value="bucketfill_water"/>
+		</property>
+	<property class="Action1">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Use_time" value="..."/>
+		<property name="Gain_food" value="0"/>
+		<property name="Gain_water" value="20"/>
+		<property name="Gain_stamina" value="40"/>
+		<property name="Gain_wellness" value="0.2"/>
+		<property name="Sound_start" value="player_drinking"/>
+		<property name="Buff" value="extinguishFireBuff"/>
+		<property name="Debuff" value="dysentery"/>
+		<property name="Create_item" value="emptyJar"/>
+	</property>
+	<property name="Group" value="Food/Cooking"/>
+</item>
+
+<item id="783" name="redTea">
+	<property name="Meshfile" value="Items/Food/redTeaPrefab"/>
+	<property name="Material" value="glass"/>
+	<property name="HoldType" value="3"/>
+	<property name="Weight" value="10"/>
+	<property name="Stacknumber" value="50"/> <!-- STK drink -->
+	<property name="EconomicValue" value="36"/>
+		<property class="Action0">
+			<property name="Class" value="ExchangeItem"/>
+			<property name="Delay" value="1.0"/>
+			<property name="Change_item_to" value="coldredTea"/>
+			<property name="Focused_blockname_1" value="cntFridgeTop"/>
+			<property name="Focused_blockname_2" value="cntFridgeBottom"/>
+			<property name="Focused_blockname_3" value="cntEPSFridgeBottom"/>
+			<property name="Focused_blockname_4" value="cntEPSFridgeTop"/>
+			<property name="Focused_blockname_5" value="cntEPSBeerCooler"/>
+			<property name="Focused_blockname_6" value="cntBeerCooler"/>
+			<property name="Focused_blockname_7" value="cntCooler"/>
+			<property name="Focused_blockname_8" value="cntFridge"/>
+			<property name="Focused_blockname_9" value="cntEPSFridge"/>
+			<property name="Sound_start" value="bucketfill_water"/>
+		</property>
+	<property class="Action1">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Use_time" value="..."/>
+		<property name="Gain_food" value="0"/>
+		<property name="Gain_water" value="20"/>
+		<property name="Gain_stamina" value="40"/>
+		<property name="Gain_wellness" value="0.2"/>
+		<property name="Sound_start" value="player_drinking"/>
+		<property name="Buff" value="redTeaCooling,extinguishFireBuff"/>
+		<property name="Debuff" value="dysentery"/>
+		<property name="Create_item" value="emptyJar"/>
+	</property>
+	<property name="Group" value="Food/Cooking"/>
+</item>
+
+<item id="784" name="yuccaCocktail"> <!-- yucca yuice/drink/thing -->
+	<property name="Extends" value="redTea"/>
+	<property name="CreativeMode" value="Dev"/> <!-- not done, yet -->
+	<property name="CustomIcon" value="redTea"/>
+	<property name="CustomIconTint" value="8fffff"/>
+</item>
+
+  <item id="1367" name="canEmpty">
+	<property name="Meshfile" value="Items/Food/can_empty"/>
+	<property name="Material" value="metal"/>
+	<property name="Weight" value="5"/>
+	<property name="HoldType" value="14"/>
+	<property name="Stacknumber" value="500"/>
+	<property name="EconomicValue" value="5"/>
+	<property name="CraftingIngredientTime" value="9"/>
+	<!-- DTD-610TL Animation for throwing does not work properly.
+	<property class="Action0">
+		<property name="Class" value="ThrowAway"/>
+		<property name="Delay" value="0.8"/>
+		<property name="Throw_strength_default" value="0.8"/>
+		<property name="Throw_strength_max" value="2.5"/>
+		<property name="Max_strain_time" value="2.1"/>
+		<property name="Sound_start" value="swoosh"/>
+	</property>
+	-->
+	<property class="Action1"> <!-- UseAction -->
+		<property name="Class" value="ExchangeItem"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Change_item_to" value="canMurkyWater"/>
+		<property name="Do_block_action" value="deplete1"/>
+		<property name="Focused_blockname_1" value="water"/>
+		<property name="Focused_blockname_2" value="waterMoving"/>
+		<property name="Focused_blockname_3" value="waterStaticBucket"/>
+		<property name="Focused_blockname_4" value="waterMovingBucket"/>
+		<property name="Focused_blockname_5" value="waterSource8"/>
+		<property name="Sound_start" value="bucketfill_water"/>
+	</property>
+	<property name="Group" value="Resources"/>
+</item>
+
+<item id="1368" name="emptyJar">
+	<property name="Meshfile" value="Items/Food/emptyJarPrefab"/>
+	<property name="Material" value="glass"/>
+	<property name="HoldType" value="3"/>
+	<property name="Stacknumber" value="500"/> <!-- STK resource -->
+	<property name="Weight" value="10"/>
+	<property name="EconomicValue" value="6"/>
+	<property name="CraftingIngredientTime" value="9"/>
+		<property class="Action0">
+			<!-- UseAction -->
+			<property name="Class" value="ExchangeItem"/>
+			<property name="Delay" value="1.0"/>
+			<property name="Change_item_to" value="bottledWater"/>
+			<property name="Focused_blockname_1" value="workingCabinetSink"/>
+			<property name="Focused_blockname_2" value="workingGranitSink"/>
+			<property name="Sound_start" value="bucketfill_water"/>
+		</property>
+	<property class="Action1"> <!-- UseAction -->
+		<property name="Class" value="ExchangeItem"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Change_item_to" value="bottledRiverWater"/>
+		<property name="Do_block_action" value="deplete1"/>
+		<property name="Focused_blockname_1" value="water"/>
+		<property name="Focused_blockname_2" value="waterMoving"/>
+		<property name="Focused_blockname_3" value="waterStaticBucket"/>
+		<property name="Focused_blockname_4" value="waterMovingBucket"/>
+		<property name="Focused_blockname_5" value="waterSource8"/>
+		<property name="Sound_start" value="bucketfill_water"/>
+	</property>
+	<property name="Group" value="Resources"/>
+</item>
+
+<item id="1370" name="bucket">
+	<property name="Meshfile" value="Items/Crafting/Metal/IronBucket"/>
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+	<property name="Material" value="metal"/>
+	<property name="HoldType" value="34"/>
+	<property name="Stacknumber" value="1"/>
+	<property name="EconomicValue" value="84"/>
+	<property class="Action0"> <!-- AttackAction -->
+		<property name="Class" value="BailLiquid"/>
+		<property name="Delay" value="0.35"/>
+		<property name="Sound_start" value="bucketbail_water"/>
+	</property>
+	<property class="Action1"> <!-- UseAction -->
+		<property name="Class" value="ExchangeItem"/>
+		<property name="Delay" value="0.35"/>
+		<property name="Change_item_to" value="bucketWater"/>
+		<property name="Do_block_action" value="deplete3"/>
+		<property name="Focused_blockname_1" value="water"/>
+		<property name="Focused_blockname_2" value="waterMoving"/>
+		<property name="Focused_blockname_3" value="waterStaticBucket"/>
+		<property name="Focused_blockname_4" value="waterMovingBucket"/>
+		<property name="Focused_blockname_5" value="waterSource8"/>
+		<property name="Sound_start" value="bucketfill_water"/>
+	</property>
+	<property name="Group" value="Tools/Traps"/>
+</item>
+
+<item id="1371" name="bucketWater">
+	<property name="Meshfile" value="Items/Crafting/Metal/IronBucketWaterPrefab"/>
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+	<property name="Material" value="metal"/>
+	<property name="HoldType" value="34"/>
+	<property name="Stacknumber" value="1"/>
+	<property name="EconomicValue" value="88"/>
+	<property class="Action1"> <!-- UseAction -->
+		<property name="Class" value="PlaceAsBlock"/>
+		<property name="Delay" value="0.5"/>
+		<property name="Blockname" value="waterMovingBucket"/>
+		<property name="Change_item_to" value="bucket"/>
+		<property name="Sound_start" value="bucketplace_water"/>
+	</property>
+	<property name="Group" value="Tools/Traps"/>
+</item>
+
+</Items>

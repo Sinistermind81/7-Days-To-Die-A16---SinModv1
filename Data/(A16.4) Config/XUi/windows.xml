@@ -1,6 +1,6 @@
 <windows>
   <window name="version">
-    <texture name="SinMod" depth="0" size="63,45" texture="@http://www.worldsendpve.com/SinMod/SinModUI/SinModUILogo.png" material="Materials/Transparent Colored" pos="-160,-6" />
+    <texture name="SinMod" depth="0" size="63,45" texture="@https://merqsquad.com/wp-content/uploads/2018/01/SinModUILogo.png" material="Materials/Transparent Colored" pos="-160,-6" />
     <label name="SMX" depth="0" size="53,35" text="SinMod v1" font_size="20" effect="outline" color="[white]" justify="center" pos="-220,-15" overflow="resizeheight" />
   </window>
   
@@ -386,7 +386,7 @@
     <rect name="contentCraftingInfo" height="381" depth="1" pos="0,-46" >
       <sprite depth="8" name="backgroundMain" sprite="menu_empty3px" pos="0,0" width="603" height="381" color="[black]" type="sliced" fillcenter="false" />
       <sprite color="[mediumGrey]" type="sliced" />
-      <texture depth="9" name="ToolBeltBackground" texture="@http://www.worldsendpve.com/SinMod/SinModUI/SinModInspect.png" material="Materials/Transparent Colored"/>
+      <texture depth="9" name="ToolBeltBackground" texture="@https://merqsquad.com/wp-content/uploads/2018/01/SinModInventory.png" material="Materials/Transparent Colored"/>
     </rect>
   </window>
 
@@ -478,7 +478,7 @@
     <panel name="content" width="100%" height="303" depth="0" pos="0,-46" disableautobackground="true">
       <!-- <sprite name="background" color="[black]" type="sliced" globalopacity="true"/> -->
       <sprite depth="8" name="backgroundMain" sprite="menu_empty3px" pos="0,0" width="603" height="303" color="[black]" type="sliced" fillcenter="false" on_press="true" />
-      <texture depth="9" name="ToolBeltBackground" texture="@http://www.worldsendpve.com/SinMod/SinModUI/SinModInventory.png" material="Materials/Transparent Colored"/>
+      <texture depth="9" name="ToolBeltBackground" texture="@https://merqsquad.com/wp-content/uploads/2018/01/SinModInventory.png" material="Materials/Transparent Colored"/>
       <grid depth="1" name="inventory" rows="4" cols="8" pos="3,-3" cell_width="75" cell_height="75" controller="Backpack" repeat_content="true" >
         <item_stack name="0"/>
       </grid>
@@ -696,7 +696,7 @@
   <window name="CharacterFrameWindow" width="327" height="704" panel="Left" controller="CharacterFrameWindow" defaultcolor="[white]" hoveredcolor="[selectedColor]" cursor_area="true" >
     <!--#$-IGS END.-$#-->
     <panel name="SinModInfo" height="704" width="150" pos="-149,-46">
-      <texture depth="1" name="ToolBeltBackground" texture="@http://www.worldsendpve.com/SinMod/SinModUI/PanelinfoUI.png" material="Materials/Transparent Colored"/>
+      <texture depth="1" name="ToolBeltBackground" texture="@https://merqsquad.com/wp-content/uploads/2018/01/PanelinfoUI.png" material="Materials/Transparent Colored"/>
     </panel>
     <panel name="header" height="43" depth="1" backgroundspritename="ui_game_panel_header">
       
@@ -715,7 +715,7 @@
         <!-- <sprite depth="1" color="[lightGrey]" type="sliced" pos="3,-3" width="381" height="739" />
 				<sprite depth="1" color="[darkGrey]" type="sliced" width="304" height="697" pos="6,-5"/> -->
         <!-- PLAYER IMAGE -->
-        <texture depth="1" name="ToolBeltBackground" texture="@http://www.worldsendpve.com/SinMod/SinModUI/characterBG3.png" material="Materials/Transparent Colored"/>
+        <texture depth="1" name="ToolBeltBackground" texture="@https://merqsquad.com/wp-content/uploads/2018/01/characterBG3.png" material="Materials/Transparent Colored"/>
         <texture depth="2" name="playerPreview" material="Materials/Transparent Colored" size="255,702" globalopacity="false"/>
 
         <rect pos="3,-3">

@@ -1,0 +1,1675 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <item id="40" name="gunPistol">
+    <property name="Meshfile" value="Items/Weapons/Ranged/Pistol/PistolPrefab"/>
+    <property name="Material" value="metal"/>
+    <property name="RepairTools" value="repairKit"/>
+    <property name="HoldType" value="1"/>
+    <property name="DegradationBreaksAfter" value="false"/>
+    <property name="SoundJammed" value="weapon_jam"/>
+    <property name="Attachments" value="flashlight02"/>
+    <property name="CrosshairOnAim" value="false"/>
+    <!-- aimTest -->
+    <property name="CrosshairUpAfterShot" value="true"/>
+    <!-- aimTest -->
+    <property class="Parts">
+      <property name="Stock" value="partsPistol_grip"/>
+      <property name="Receiver" value="partsPistol_receiver"/>
+      <property name="Pump" value="partsPistol_parts"/>
+      <property name="Barrel" value="partsPistol_barrel"/>
+    </property>
+    <property name="Sound_Sight_In" value="pistol_sight_in"/>
+    <property name="Sound_Sight_Out" value="pistol_sight_out"/>
+    <property class="Action0">
+      <!-- AttackAction -->
+      <property name="Class" value="Ranged"/>
+      <property name="Delay" value="0.2"/>
+      <property name="Crosshair_min_distance" value="5"/>
+      <!-- 5 -->
+      <property name="Crosshair_max_distance" value="6"/>
+      <!-- 6 -->
+      <property name="Magazine_size" value="15"/>
+      <property name="Magazine_items" value="9mmBullet, 9mmBulletHP, 9mmBulletINC, Unload"/>
+      <property name="Magazine_item_ray_counts" value="1, 1, 1"/>
+      <property name="Magazine_item_ray_spreads" value="0.85, 0.85, 0.85"/>
+      <!-- .85 -->
+      <property name="Reload_time" value="2"/>
+      <property name="Bullet_icon" value="pistol"/>
+      <property name="Sound_start" value="Pistol_Fire"/>
+      <property name="Sound_repeat" value=""/>
+      <property name="Sound_end" value=""/>
+      <property name="Sound_empty" value="weapon_empty"/>
+      <property name="Sound_reload" value="pistol_reload"/>
+      <property name="Particles_muzzle_fire" value="nozzleflash"/>
+      <property name="Particles_muzzle_smoke" value="nozzlesmoke"/>
+      <property name="DamageBonus.head" value="6"/>
+      <property name="DamageBonus.wood" value="3"/>
+      <property name="DamageBonus.earth" value="0.4"/>
+      <property name="DamageBonus.glass" value="1"/>
+      <property name="ActionExp" value="3"/>
+    </property>
+    <property class="Action1">
+      <!-- UseAction -->
+      <property name="Class" value="Zoom"/>
+      <property name="Zoom_max_out" value="35"/>
+      <property name="Zoom_max_in" value="35"/>
+    </property>
+    <property name="LightSource" value="lightSource"/>
+    <!-- Start: Needed for the attachment flashlight -->
+    <property name="ActivateObject" value="Attachments/flashlight/lightSource"/>
+    <property name="AttachmentFlashlight" value="flashlight02"/>
+    <!-- End: Needed for the attachment flashlight -->
+    <property name="Group" value="Ammo/Weapons"/>
+    <property name="ActionSkillGroup" value="Pistols"/>
+    <property name="CraftingSkillGroup" value="craftSkillGuns"/>
+    <property name="RepairExpMultiplier" value="10.8"/>
+    <property name="LightValue" value="0.45"/>
+    <property class="Attributes">
+      <property name="BlockDamage" value="1,1"/>
+    </property>
+  </item>
+
+  <item id="41" name="gunPistolSilencedDev">
+    <property name="CreativeMode" value="Dev"/>
+    <property name="CustomIcon" value="gunPistol"/>
+    <property name="CustomIconTint" value="a0a0ff"/>
+    <property name="Meshfile" value="Items/Weapons/Ranged/Pistol/PistolPrefab"/>
+    <property name="Material" value="metal"/>
+    <property name="Weight" value="50"/>
+    <property name="RepairTools" value="repairKit"/>
+    <property name="HoldType" value="1"/>
+    <property name="DegradationBreaksAfter" value="false"/>
+    <property name="SoundJammed" value="weapon_jam"/>
+    <property name="CrosshairOnAim" value="false"/>
+    <!-- aimTest -->
+    <property name="CrosshairUpAfterShot" value="true"/>
+    <!-- aimTest -->
+    <property class="Action0">
+      <property name="Class" value="Ranged"/>
+      <property name="Delay" value="0.3"/>
+      <property name="Crosshair_min_distance" value="5"/>
+      <!-- 5 -->
+      <property name="Crosshair_max_distance" value="6"/>
+      <!-- 6 -->
+      <property name="Magazine_size" value="15"/>
+      <property name="Magazine_items" value="9mmBullet"/>
+      <property name="Magazine_item_ray_counts" value="1"/>
+      <property name="Magazine_item_ray_spreads" value="0.85"/>
+      <!-- .85 -->
+      <property name="Reload_time" value="2"/>
+      <property name="Bullet_icon" value="pistol"/>
+      <property name="Sound_start" value="Pistol_Fire"/>
+      <property name="Sound_repeat" value=""/>
+      <property name="Sound_end" value=""/>
+      <property name="Sound_empty" value="weapon_empty"/>
+      <property name="Sound_reload" value="pistol_reload"/>
+      <property name="Particles_muzzle_fire" value="nozzleflash"/>
+      <property name="Particles_muzzle_smoke" value="nozzlesmoke"/>
+      <property name="DamageBonus.head" value="6"/>
+      <property name="DamageBonus.wood" value="3"/>
+      <property name="DamageBonus.earth" value="0.4"/>
+      <property name="DamageBonus.glass" value="1"/>
+    </property>
+    <property class="Action1">
+      <property name="Class" value="Zoom"/>
+      <property name="Zoom_max_out" value="35"/>
+      <property name="Zoom_max_in" value="35"/>
+    </property>
+    <property class="Attributes">
+      <property name="FalloffRange" value="22,50"/>
+      <property name="Accuracy" value="1,0.01"/>
+      <property name="EntityDamage" value="13,19"/>
+      <property name="BlockDamage" value="7,13"/>
+      <property name="DegradationRate" value="10,10"/>
+      <property name="DegradationMax" value="2000,5000"/>
+    </property>
+    <property name="Group" value="Ammo/Weapons"/>
+    <property name="ActionSkillGroup" value="Pistols"/>
+    <property name="CraftingSkillGroup" value="Pistols"/>
+    <property name="RepairExpMultiplier" value="10.8"/>
+    <property name="LightValue" value="0.45"/>
+    <property name="DescriptionKey" value="devOnlyGroupDesc"/>
+  </item>
+
+  <item id="42" name="gun44Magnum">
+    <property name="Meshfile" value="Items/Weapons/Ranged/Magnums/44MagnumPrefab"/>
+    <property name="Material" value="metal"/>
+    <property name="RepairTools" value="repairKit"/>
+    <property name="HoldType" value="44"/>
+    <property name="DegradationBreaksAfter" value="false"/>
+    <property name="SoundJammed" value="weapon_jam"/>
+    <property name="Attachments" value="flashlight02"/>
+    <property name="CrosshairOnAim" value="false"/>
+    <!-- aimTest -->
+    <property name="CrosshairUpAfterShot" value="true"/>
+    <!-- aimTest -->
+    <property class="Parts">
+      <property name="Stock" value="parts44Magnum_grip"/>
+      <property name="Receiver" value="parts44Magnum_cylinder"/>
+      <property name="Pump" value="parts44Magnum_parts"/>
+      <property name="Barrel" value="parts44Magnum_frame"/>
+    </property>
+    <property name="Sound_Sight_In" value="revolver_sight_in"/>
+    <property name="Sound_Sight_Out" value="revolver_sight_out"/>
+    <property class="Action0">
+      <!-- AttackAction -->
+      <property name="Class" value="Ranged"/>
+      <property name="Delay" value="0.34"/>
+      <property name="Crosshair_min_distance" value="7"/>
+      <!-- 7 -->
+      <property name="Crosshair_max_distance" value="9"/>
+      <!-- 9 -->
+      <property name="Magazine_size" value="6"/>
+      <property name="Magazine_items" value="44MagBullet, 44MagBulletHP, 44MagBulletINC, Unload"/>
+      <property name="Magazine_item_ray_counts" value="1, 1, 1"/>
+      <property name="Magazine_item_ray_spreads" value="0.87, 0.87, 0.87"/>
+      <property name="Reload_time" value="4"/>
+      <property name="Bullet_icon" value="pistol"/>
+      <property name="Sound_start" value="44magnum_fire"/>
+      <property name="Sound_repeat" value=""/>
+      <property name="Sound_end" value=""/>
+      <property name="Sound_empty" value="weapon_empty"/>
+      <property name="Sound_reload" value="44magnum_reload"/>
+      <property name="Particles_muzzle_fire" value="nozzleflash"/>
+      <property name="Particles_muzzle_smoke" value="nozzlesmoke"/>
+      <property name="DamageBonus.head" value="4"/>
+      <property name="DamageBonus.wood" value="4"/>
+      <property name="DamageBonus.earth" value="0.2"/>
+      <property name="DamageBonus.glass" value="1"/>
+      <property name="ActionExp" value="3"/>
+    </property>
+    <property class="Action1">
+      <!-- UseAction -->
+      <property name="Class" value="Zoom"/>
+      <property name="Zoom_max_out" value="35"/>
+      <property name="Zoom_max_in" value="35"/>
+    </property>
+    <property name="LightSource" value="lightSource"/>
+    <!-- Start: Needed for the attachment flashlight -->
+    <property name="ActivateObject" value="Attachments/flashlight/lightSource"/>
+    <property name="AttachmentFlashlight" value="flashlight02"/>
+    <!-- End: Needed for the attachment flashlight -->
+    <property name="Group" value="Ammo/Weapons"/>
+    <property name="ActionSkillGroup" value="Pistols"/>
+    <property name="CraftingSkillGroup" value="craftSkillGuns"/>
+    <property name="RepairExpMultiplier" value="10.8"/>
+    <property name="LightValue" value="0.45"/>
+    <property class="Attributes">
+      <property name="BlockDamage" value="1,1"/>
+    </property>
+  </item>
+
+  <item id="44" name="gunSawedOffPumpShotgun">
+    <property name="Meshfile" value="Items/Weapons/Ranged/SawedOffPumpShotgun/SawedOffPumpShotgunPrefab"/>
+    <property name="Material" value="metal"/>
+    <property name="RepairTools" value="repairKit"/>
+    <property name="HoldType" value="5"/>
+    <property name="DegradationBreaksAfter" value="false"/>
+    <property name="SoundJammed" value="weapon_jam"/>
+    <property name="Attachments" value="flashlight02"/>
+    <property name="CrosshairOnAim" value="false"/>
+    <!-- aimTest -->
+    <property name="CrosshairUpAfterShot" value="true"/>
+    <!-- aimTest -->
+    <property name="Sound_Sight_In" value="rifle_sight_in"/>
+    <property name="Sound_Sight_Out" value="rifle_sight_out"/>
+    <property class="Parts">
+      <property name="Stock" value="partsPumpShotgun_stockShort"/>
+      <property name="Receiver" value="partsPumpShotgun_receiver"/>
+      <property name="Pump" value="partsPumpShotgun_parts"/>
+      <property name="Barrel" value="partsPumpShotgun_barrelShort"/>
+    </property>
+    <property class="Action0">
+      <!-- AttackAction -->
+      <property name="Class" value="Ranged"/>
+      <property name="Delay" value="0.8"/>
+      <property name="Crosshair_min_distance" value="41"/>
+      <!-- 41 -->
+      <property name="Crosshair_max_distance" value="49"/>
+      <!-- 49 -->
+      <property name="Magazine_size" value="8"/>
+      <property name="Magazine_items" value="shotgunShell, shotgunShellINC, SiegeShell, lokiShell, Unload"/>
+      <property name="Magazine_item_ray_counts" value="9, 9, 9, 9"/>
+      <property name="Magazine_item_ray_spreads" value="0.74, 0.74, 0.74, 0.74"/>
+      <property name="Reload_time" value="2.6"/>
+      <property name="Bullet_icon" value="uzi"/>
+      <property name="Sound_start" value="sawed_off_shotgun_fire"/>
+      <property name="Sound_repeat" value=""/>
+      <property name="Sound_end" value=""/>
+      <property name="Sound_empty" value="weapon_empty"/>
+      <property name="Sound_reload" value="shotgun_reload"/>
+      <property name="Particles_muzzle_fire" value="nozzleflash_shotgun"/>
+      <property name="Particles_muzzle_smoke" value="nozzlesmokeuzi"/>
+      <property name="DamageBonus.head" value="3"/>
+      <property name="DamageBonus.glass" value="1"/>
+      <property name="DamageBonus.wood" value="2"/>
+      <property name="DamageBonus.earth" value="0.2"/>
+      <property name="Buff" value="shotgunWound"/>
+      <property name="Buff_chance" value="1.0"/>
+      <property name="ActionExp" value="3"/>
+    </property>
+    <property class="Action1">
+      <!-- UseAction -->
+      <property name="Class" value="Zoom"/>
+      <property name="Zoom_max_out" value="40"/>
+      <property name="Zoom_max_in" value="40"/>
+    </property>
+    <property name="LightSource" value="lightSource"/>
+    <!-- Start: Needed for the attachment flashlight -->
+    <property name="ActivateObject" value="Attachments/flashlight/lightSource"/>
+    <property name="AttachmentFlashlight" value="flashlight02"/>
+    <!-- End: Needed for the attachment flashlight -->
+    <property name="Group" value="Ammo/Weapons"/>
+    <property name="ActionSkillGroup" value="Shotguns"/>
+    <property name="CraftingSkillGroup" value="craftSkillGuns"/>
+    <property name="RepairExpMultiplier" value="10.8"/>
+    <property name="LightValue" value="0.45"/>
+    <property class="Attributes">
+      <property name="BlockDamage" value="1,1"/>
+    </property>
+  </item>
+
+  <item id="45" name="gunPumpShotgun">
+    <property name="Meshfile" value="Items/Weapons/Ranged/SawedOffPumpShotgun/PumpShotgunPrefab"/>
+    <property name="Material" value="metal"/>
+    <property name="RepairTools" value="repairKit"/>
+    <property name="HoldType" value="5"/>
+    <property name="DegradationBreaksAfter" value="false"/>
+    <property name="SoundJammed" value="weapon_jam"/>
+    <property name="Attachments" value="flashlight02"/>
+    <property name="CrosshairOnAim" value="false"/>
+    <!-- aimTest -->
+    <property name="CrosshairUpAfterShot" value="true"/>
+    <!-- aimTest -->
+    <property name="Sound_Sight_In" value="rifle_sight_in"/>
+    <property name="Sound_Sight_Out" value="rifle_sight_out"/>
+    <property class="Parts">
+      <property name="Stock" value="partsPumpShotgun_stock"/>
+      <property name="Receiver" value="partsPumpShotgun_receiver"/>
+      <property name="Pump" value="partsPumpShotgun_parts"/>
+      <property name="Barrel" value="partsPumpShotgun_barrel"/>
+    </property>
+    <property class="Action0">
+      <!-- AttackAction -->
+      <property name="Class" value="Ranged"/>
+      <property name="Delay" value="0.8"/>
+      <property name="Crosshair_min_distance" value="23"/>
+      <!-- 23 -->
+      <property name="Crosshair_max_distance" value="28"/>
+      <!-- 28 -->
+      <property name="Magazine_size" value="8"/>
+      <property name="Magazine_items" value="shotgunShell, shotgunSlug, shotgunShellINC, lokiShell, Unload"/>
+      <property name="Magazine_item_ray_counts" value="8, 1, 8, 8"/>
+      <property name="Magazine_item_ray_spreads" value="0.835, 0.605, 0.835, 0.835"/>
+      <property name="Reload_time" value="2.6"/>
+      <property name="Bullet_icon" value="uzi"/>
+      <property name="Sound_start" value="pump_shotgun_fire"/>
+      <property name="Sound_repeat" value=""/>
+      <property name="Sound_end" value=""/>
+      <property name="Sound_empty" value="weapon_empty"/>
+      <property name="Sound_reload" value="shotgun_reload"/>
+      <property name="Particles_muzzle_fire" value="nozzleflash_shotgun"/>
+      <property name="Particles_muzzle_smoke" value="nozzlesmokeuzi"/>
+      <property name="DamageBonus.head" value="3"/>
+      <property name="DamageBonus.glass" value="1"/>
+      <property name="DamageBonus.wood" value="2"/>
+      <property name="DamageBonus.earth" value="0.2"/>
+      <property name="Buff" value="shotgunWound"/>
+      <property name="Buff_chance" value="1.0"/>
+      <property name="ActionExp" value="3"/>
+    </property>
+    <property class="Action1">
+      <!-- UseAction -->
+      <property name="Class" value="Zoom"/>
+      <property name="Zoom_max_out" value="40"/>
+      <property name="Zoom_max_in" value="40"/>
+    </property>
+    <property name="LightSource" value="lightSource"/>
+    <!-- Start: Needed for the attachment flashlight -->
+    <property name="ActivateObject" value="Attachments/flashlight/lightSource"/>
+    <property name="AttachmentFlashlight" value="flashlight02"/>
+    <!-- End: Needed for the attachment flashlight -->
+    <property name="Group" value="Ammo/Weapons"/>
+    <property name="ActionSkillGroup" value="Shotguns"/>
+    <property name="CraftingSkillGroup" value="craftSkillGuns"/>
+    <property name="RepairExpMultiplier" value="10.8"/>
+    <property name="PickupJournalEntry" value="alternateAmmoTip"/>
+    <property name="LightValue" value="0.45"/>
+    <property class="Attributes">
+      <property name="BlockDamage" value="1,1"/>
+    </property>
+  </item>
+
+  <item id="47" name="gunMP5">
+    <property name="Meshfile" value="Items/Weapons/Ranged/MP5/MP5Prefab"/>
+    <property name="Material" value="metal"/>
+    <property name="RepairTools" value="repairKit"/>
+    <property name="HoldType" value="6"/>
+    <property name="DegradationBreaksAfter" value="false"/>
+    <property name="SoundJammed" value="weapon_jam"/>
+    <property name="Attachments" value="flashlight02"/>
+    <property name="TintColor" value="255,255,255"/>
+    <property name="CrosshairOnAim" value="false"/>
+    <!-- aimTest -->
+    <property name="CrosshairUpAfterShot" value="true"/>
+    <!-- aimTest -->
+    <property class="Parts">
+      <property name="Stock" value="partsMP5_stock"/>
+      <property name="Receiver" value="partsMP5_receiver"/>
+      <property name="Pump" value="partsMP5_parts"/>
+      <property name="Barrel" value="partsMP5_barrel"/>
+    </property>
+    <property name="Sound_Sight_In" value="smg_sight_in"/>
+    <property name="Sound_Sight_Out" value="smg_sight_out"/>
+    <property class="Action0">
+      <!-- AttackAction -->
+      <property name="Class" value="Ranged"/>
+      <property name="Delay" value="0.150"/>
+      <property name="Auto_fire" value="true"/>
+      <property name="Crosshair_min_distance" value="7"/>
+      <!-- 7 -->
+      <property name="Crosshair_max_distance" value="9"/>
+      <!-- 9 -->
+      <property name="Magazine_size" value="30"/>
+      <property name="Magazine_items" value="9mmBullet, 9mmBulletHP, 9mmBulletINC, Unload"/>
+      <property name="Magazine_item_ray_counts" value="1, 1, 1"/>
+      <property name="Magazine_item_ray_spreads" value="0, 0, 0"/>
+      <property name="Reload_time" value="4.1"/>
+      <property name="Bullet_icon" value="uzi"/>
+      <property name="Sound_start" value="mp5_fire_start"/>
+      <property name="Sound_repeat" value="Weapons/Ranged/MP5/mp5_fire_lp"/>
+      <property name="Sound_end" value="Weapons/Ranged/MP5/mp5_fire_end"/>
+      <property name="Sound_empty" value="weapon_empty"/>
+      <property name="Sound_reload" value="mp5_reload"/>
+      <property name="Horde_meter_rate" value="2.5"/>
+      <property name="Horde_meter_distance" value="20"/>
+      <property name="Particles_muzzle_fire" value="nozzleflashuzi"/>
+      <property name="Particles_muzzle_smoke" value="nozzlesmokeuzi"/>
+      <property name="DamageBonus.head" value="4"/>
+      <property name="DamageBonus.wood" value="5"/>
+      <property name="DamageBonus.earth" value="0.2"/>
+      <property name="DamageBonus.glass" value="1"/>
+      <property name="Buff" value="critGunMP5"/>
+      <property name="Buff_chance" value="0.1"/>
+      <property name="ActionExp" value="3"/>
+    </property>
+    <property class="Action1">
+      <!-- UseAction -->
+      <property name="Class" value="Zoom"/>
+      <property name="Zoom_max_out" value="35"/>
+      <property name="Zoom_max_in" value="35"/>
+    </property>
+    <property name="LightSource" value="lightSource"/>
+    <!-- Start: Needed for the attachment flashlight -->
+    <property name="ActivateObject" value="Attachments/flashlight/lightSource"/>
+    <property name="AttachmentFlashlight" value="flashlight02"/>
+    <!-- End: Needed for the attachment flashlight -->
+    <property name="Group" value="Ammo/Weapons"/>
+    <property name="ActionSkillGroup" value="Rifles"/>
+    <property name="CraftingSkillGroup" value="craftSkillGuns"/>
+    <property name="RepairExpMultiplier" value="10.8"/>
+    <property name="LightValue" value="0.45"/>
+    <property class="Attributes">
+      <property name="BlockDamage" value="1,1"/>
+    </property>
+  </item>
+
+  <item id="48" name="gunAK47">
+    <property name="Meshfile" value="Items/Weapons/Ranged/ak47/ak47Prefab"/>
+    <property name="Material" value="metal"/>
+    <property name="RepairTools" value="repairKit"/>
+    <property name="HoldType" value="48"/>
+    <property name="DegradationBreaksAfter" value="false"/>
+    <property name="SoundJammed" value="weapon_jam"/>
+    <property name="Attachments" value="flashlight02"/>
+    <property name="CrosshairOnAim" value="false"/>
+    <!-- aimTest -->
+    <property name="CrosshairUpAfterShot" value="true"/>
+    <!-- aimTest -->
+    <property class="Parts">
+      <property name="Stock" value="partsAK47_stock"/>
+      <property name="Receiver" value="partsAK47_receiver"/>
+      <property name="Pump" value="partsAK47_parts"/>
+      <property name="Barrel" value="partsAK47_barrel"/>
+    </property>
+    <property name="Sound_Sight_In" value="rifle_sight_in"/>
+    <property name="Sound_Sight_Out" value="rifle_sight_out"/>
+    <property class="Action0">
+      <!-- AttackAction -->
+      <property name="Class" value="Ranged"/>
+      <property name="Delay" value="0.150"/>
+      <property name="Auto_fire" value="true"/>
+      <property name="Crosshair_min_distance" value="13"/>
+      <!-- 13 -->
+      <property name="Crosshair_max_distance" value="16"/>
+      <!-- 16 -->
+      <property name="Magazine_size" value="30"/>
+      <property name="Magazine_items" value="762mmBullet, 762mmBulletHP, 762mmBulletINC, Unload"/>
+      <property name="Magazine_item_ray_counts" value="1, 1, 1"/>
+      <property name="Magazine_item_ray_spreads" value="0, 0, 0"/>
+      <property name="Reload_time" value="3.9"/>
+      <property name="Bullet_icon" value="uzi"/>
+      <property name="Sound_start" value="ak47_fire_start"/>
+      <property name="Sound_repeat" value="Weapons/Ranged/AK47/ak47_fire_lp"/>
+      <property name="Sound_end" value="Weapons/Ranged/AK47/ak47_fire_end"/>
+      <property name="Sound_empty" value="weapon_empty"/>
+      <property name="Sound_reload" value="ak47_reload"/>
+      <property name="Horde_meter_rate" value="2.5"/>
+      <property name="Horde_meter_distance" value="20"/>
+      <property name="Particles_muzzle_fire" value="nozzleflash_ak"/>
+      <property name="Particles_muzzle_smoke" value="nozzlesmokeuzi"/>
+      <property name="DamageBonus.head" value="3"/>
+      <property name="DamageBonus.wood" value="5"/>
+      <property name="DamageBonus.earth" value="0.2"/>
+      <property name="DamageBonus.glass" value="1"/>
+      <property name="Buff" value="critGunAK47"/>
+      <property name="Buff_chance" value="0.1"/>
+      <property name="ActionExp" value="1"/>
+    </property>
+    <property class="Action1">
+      <!-- UseAction -->
+      <property name="Class" value="Zoom"/>
+      <property name="Zoom_max_out" value="35"/>
+      <property name="Zoom_max_in" value="35"/>
+    </property>
+    <property name="LightSource" value="lightSource"/>
+    <!-- Start: Needed for the attachment flashlight -->
+    <property name="ActivateObject" value="Attachments/flashlight/lightSource"/>
+    <property name="AttachmentFlashlight" value="flashlight02"/>
+    <!-- End: Needed for the attachment flashlight -->
+    <property name="Group" value="Ammo/Weapons"/>
+    <property name="ActionSkillGroup" value="Rifles"/>
+    <property name="CraftingSkillGroup" value="craftSkillGuns"/>
+    <property name="RepairExpMultiplier" value="10.8"/>
+    <property name="LightValue" value="0.45"/>
+    <property class="Attributes">
+      <property name="BlockDamage" value="1,1"/>
+    </property>
+  </item>
+
+  <item id="50" name="gunHuntingRifle">
+    <property name="Meshfile" value="Items/Weapons/Ranged/HuntingRifle/HuntingRiflePrefab"/>
+    <property name="Material" value="metal"/>
+    <property name="RepairTools" value="repairKit"/>
+    <property name="HoldType" value="30"/>
+    <property name="DegradationBreaksAfter" value="false"/>
+    <property name="SoundJammed" value="ItemNeedsRepair"/>
+    <property name="FuelValue" value="32"/>
+    <property name="Attachments" value="flashlight02"/>
+    <property name="CrosshairOnAim" value="false"/>
+    <!-- aimTest -->
+    <property name="CrosshairUpAfterShot" value="true"/>
+    <!-- aimTest -->
+    <property class="Parts">
+      <property name="Stock" value="partsHuntingRifle_stock"/>
+      <property name="Receiver" value="partsHuntingRifle_receiver"/>
+      <property name="Pump" value="partsHuntingRifle_parts"/>
+      <property name="Barrel" value="partsHuntingRifle_barrel"/>
+    </property>
+    <property name="Sound_Sight_In" value="rifle_sight_in"/>
+    <property name="Sound_Sight_Out" value="rifle_sight_out"/>
+    <property class="Action0">
+      <!-- AttackAction -->
+      <property name="Class" value="Ranged"/>
+      <property name="Delay" value="0.5"/>
+      <property name="Crosshair_min_distance" value="30"/>
+      <!-- 30 -->
+      <property name="Crosshair_max_distance" value="36"/>
+      <!-- 36 -->
+      <property name="Magazine_size" value="8"/>
+      <property name="Magazine_items" value="762mmBullet, 762mmBulletHP, 762mmBulletINC, Unload"/>
+      <property name="Magazine_item_ray_counts" value="1, 1, 1"/>
+      <property name="Magazine_item_ray_spreads" value="0, 0, 0"/>
+      <property name="Reload_time" value="2.66"/>
+      <property name="Bullet_icon" value="uzi"/>
+      <property name="Sound_start" value="hunting_rifle_fire"/>
+      <property name="Sound_repeat" value=""/>
+      <property name="Sound_end" value=""/>
+      <property name="Sound_empty" value="weapon_empty"/>
+      <property name="Sound_reload" value="hunting_rifle_reload"/>
+      <property name="Particles_muzzle_fire" value="nozzleflashuzi"/>
+      <property name="Particles_muzzle_smoke" value="nozzlesmokeuzi"/>
+      <property name="DamageBonus.head" value="6"/>
+      <property name="DamageBonus.wood" value="5"/>
+      <property name="DamageBonus.earth" value="0.2"/>
+      <property name="DamageBonus.glass" value="1"/>
+      <property name="ActionExp" value="3"/>
+    </property>
+    <property class="Action1">
+      <!-- UseAction -->
+      <property name="Class" value="Zoom"/>
+      <property name="Zoom_max_out" value="35"/>
+      <property name="Zoom_max_in" value="35"/>
+    </property>
+    <property name="LightSource" value="lightSource"/>
+    <!-- Start: Needed for the attachment flashlight -->
+    <property name="ActivateObject" value="Attachments/flashlight/lightSource"/>
+    <property name="AttachmentFlashlight" value="flashlight02"/>
+    <!-- End: Needed for the attachment flashlight -->
+    <property name="Group" value="Ammo/Weapons"/>
+    <property name="ActionSkillGroup" value="Rifles"/>
+    <property name="CraftingSkillGroup" value="craftSkillGuns"/>
+    <property name="RepairExpMultiplier" value="10.8"/>
+    <property name="LightValue" value="0.45"/>
+    <property class="Attributes">
+      <property name="BlockDamage" value="1,1"/>
+    </property>
+  </item>
+
+  <item id="51" name="gunSniperRifle">
+    <property name="Meshfile" value="Items/Weapons/Ranged/SniperRifle/sniperRiflePrefab"/>
+    <property name="Material" value="metal"/>
+    <property name="RepairTools" value="repairKit"/>
+    <property name="HoldType" value="11"/>
+    <property name="DegradationBreaksAfter" value="false"/>
+    <property name="SoundJammed" value="weapon_jam"/>
+    <property name="Attachments" value="flashlight02"/>
+    <property name="CrosshairOnAim" value="false"/>
+    <!-- aimTest -->
+    <property name="CrosshairUpAfterShot" value="true"/>
+    <!-- aimTest -->
+    <property class="Parts">
+      <property name="Stock" value="partsSniperRifle_stock"/>
+      <property name="Receiver" value="partsSniperRifle_receiver"/>
+      <property name="Pump" value="partsSniperRifle_parts"/>
+      <property name="Barrel" value="partsSniperRifle_barrel"/>
+    </property>
+    <property name="Sound_Sight_In" value="rifle_sight_in"/>
+    <property name="Sound_Sight_Out" value="rifle_sight_out"/>
+    <property class="Action0">
+      <!-- AttackAction -->
+      <property name="Class" value="Ranged"/>
+      <property name="Delay" value="0.5"/>
+      <property name="Crosshair_min_distance" value="45"/>
+      <!-- 45 -->
+      <property name="Crosshair_max_distance" value="54"/>
+      <!-- 54 -->
+      <property name="Magazine_size" value="5"/>
+      <property name="Magazine_items" value="762mmBullet, 762mmBulletHP, 762mmBulletINC, Unload"/>
+      <property name="Magazine_item_ray_counts" value="1, 1, 1"/>
+      <property name="Magazine_item_ray_spreads" value="0, 0, 0"/>
+      <property name="Reload_time" value="2.5"/>
+      <property name="Bullet_icon" value="uzi"/>
+      <property name="Sound_start" value="sniperrifle_fire"/>
+      <property name="Sound_repeat" value=""/>
+      <property name="Sound_end" value=""/>
+      <property name="Sound_empty" value="weapon_empty"/>
+      <property name="Sound_reload" value="sniperrifle_reload"/>
+      <property name="Particles_muzzle_fire" value="nozzleflashuzi"/>
+      <property name="Particles_muzzle_smoke" value="nozzlesmokeuzi"/>
+      <property name="DamageBonus.head" value="9"/>
+      <property name="DamageBonus.wood" value="5"/>
+      <property name="DamageBonus.earth" value="0.2"/>
+      <property name="DamageBonus.glass" value="1"/>
+      <property name="ActionExp" value="3"/>
+    </property>
+    <property class="Action1">
+      <!-- UseAction -->
+      <property name="Class" value="Zoom"/>
+      <property name="Zoom_overlay" value="Items/Weapons/HUD/sniper_zoom_overlay"/>
+      <property name="Zoom_max_out" value="40"/>
+      <property name="Zoom_max_in" value="15"/>
+    </property>
+    <property name="LightSource" value="lightSource"/>
+    <!-- Start: Needed for the attachment flashlight -->
+    <property name="ActivateObject" value="Attachments/flashlight/lightSource"/>
+    <property name="AttachmentFlashlight" value="flashlight02"/>
+    <!-- End: Needed for the attachment flashlight -->
+    <property name="Group" value="Ammo/Weapons"/>
+    <property name="ActionSkillGroup" value="Rifles"/>
+    <property name="CraftingSkillGroup" value="craftSkillGuns"/>
+    <property name="RepairExpMultiplier" value="10.8"/>
+    <property name="LightValue" value="0.45"/>
+    <property class="Attributes">
+      <property name="BlockDamage" value="1,1"/>
+    </property>
+  </item>
+
+  <item id="54" name="gunRocketLauncher">
+    <property name="Meshfile" value="Items/Weapons/Ranged/RocketLauncher/rocketlauncherPrefab"/>
+    <property name="Material" value="metal"/>
+    <property name="RepairTools" value="repairKit"/>
+    <property name="HoldType" value="10"/>
+    <property name="DegradationBreaksAfter" value="false"/>
+    <property name="SoundJammed" value="weapon_jam"/>
+    <property name="CrosshairOnAim" value="false"/>
+    <!-- aimTest -->
+    <property name="CrosshairUpAfterShot" value="true"/>
+    <!-- aimTest -->
+    <property class="Parts">
+      <property name="Stock" value="partsRocketLauncher_stock"/>
+      <property name="Receiver" value="partsRocketLauncher_receiver"/>
+      <property name="Pump" value="partsRocketLauncher_parts"/>
+      <property name="Barrel" value="partsRocketLauncher_barrel"/>
+    </property>
+    <property name="Sound_Sight_In" value="launcher_sight_in"/>
+    <property name="Sound_Sight_Out" value="launcher_sight_out"/>
+    <property class="Action0">
+      <!-- AttackAction -->
+      <property name="Class" value="Launcher"/>
+      <property name="Delay" value="0.8"/>
+      <property name="Crosshair_min_distance" value="29"/>
+      <property name="Crosshair_max_distance" value="34"/>
+      <!-- <property name="Range" value="200"/> -->
+      <property name="Magazine_size" value="1"/>
+      <property name="Magazine_items" value="rocket, Unload"/>
+      <property name="Rays_spread" value="0.095"/>
+      <property name="Reload_time" value="2"/>
+      <property name="Bullet_icon" value="uzi"/>
+      <property name="Sound_start" value="m136_fire"/>
+      <property name="Sound_repeat" value=""/>
+      <property name="Sound_end" value=""/>
+      <property name="Sound_empty" value="weapon_empty"/>
+      <property name="Sound_reload" value="m136_reload"/>
+      <property name="Particles_muzzle_fire" value="rocketLauncherFire"/>
+      <property name="Particles_muzzle_smoke" value="nozzlesmoke_m136"/>
+    </property>
+    <property class="Action1">
+      <!-- UseAction -->
+      <property name="Class" value="Zoom"/>
+      <property name="Zoom_max_out" value="40"/>
+      <property name="Zoom_max_in" value="40"/>
+    </property>
+    <property name="Group" value="Ammo/Weapons"/>
+    <property name="CraftingSkillGroup" value="craftSkillGuns"/>
+    <property name="RepairExpMultiplier" value="10.8"/>
+  </item>
+
+  <item id="55" name="blunderbuss">
+    <property name="Meshfile" value="Items/Weapons/Ranged/blunderbuss/blunderbussPrefab"/>
+    <property name="Material" value="metal"/>
+    <property name="RepairTools" value="repairKit"/>
+    <property name="EconomicValue" value="460"/>
+    <property name="HoldType" value="39"/>
+    <property name="DegradationBreaksAfter" value="false"/>
+    <property name="SoundJammed" value="weapon_jam"/>
+    <property name="CrosshairOnAim" value="false"/>
+    <!-- aimTest -->
+    <property name="CrosshairUpAfterShot" value="true"/>
+    <!-- aimTest -->
+    <property name="Sound_Sight_In" value="rifle_sight_in"/>
+    <property name="Sound_Sight_Out" value="rifle_sight_out"/>
+    <property class="Action0">
+      <!-- AttackAction -->
+      <property name="Class" value="Ranged"/>
+      <property name="Delay" value="0.8"/>
+      <!-- <property name="Range" value="40"/> -->
+      <property name="Crosshair_min_distance" value="41"/>
+      <!-- 41 -->
+      <property name="Crosshair_max_distance" value="49"/>
+      <!-- 49 -->
+      <property name="Magazine_size" value="1"/>
+      <property name="Magazine_items" value="blunderbussAmmo, blunderbussAmmoShredder, Unload"/>
+      <property name="Magazine_item_ray_counts" value="10, 10"/>
+      <property name="Magazine_item_ray_spreads" value="0.74, 0.74"/>
+      <property name="Reload_time" value="3.9"/>
+      <property name="Bullet_icon" value="uzi"/>
+      <property name="Sound_start" value="blunderbuss_fire"/>
+      <property name="Sound_repeat" value=""/>
+      <property name="Sound_end" value=""/>
+      <property name="Sound_empty" value="weapon_empty"/>
+      <property name="Sound_reload" value="blunderbuss_reload"/>
+      <property name="Particles_muzzle_fire" value="nozzleflash_shotgun"/>
+      <property name="Particles_muzzle_smoke" value="nozzlesmokeuzi"/>
+      <property name="DamageBonus.head" value="3"/>
+      <property name="DamageBonus.wood" value="2.5"/>
+      <property name="DamageBonus.glass" value="1"/>
+      <property name="DamageBonus.earth" value="0.2"/>
+      <property name="Buff" value="shotgunWound"/>
+      <property name="Buff_chance" value="1.0"/>
+    </property>
+    <property class="Action1">
+      <!-- UseAction -->
+      <property name="Class" value="Zoom"/>
+      <property name="Zoom_max_out" value="40"/>
+      <property name="Zoom_max_in" value="40"/>
+    </property>
+    <property name="Group" value="Ammo/Weapons"/>
+    <property class="Attributes">
+      <property name="EntityDamage" value="25,32"/>
+      <property name="BlockDamage" value="1.6,5"/>
+      <!-- <property name="Accuracy" value="1,0.1"/> -->
+      <property name="FalloffRange" value="15,25"/>
+      <property name="DegradationMax" value="800,3200"/>
+      <property name="DegradationRate" value="10,10"/>
+    </property>
+    <property name="Group" value="Ammo/Weapons"/>
+    <property name="ActionSkillGroup" value="Shotguns"/>
+    <property name="CraftingSkillGroup" value="craftSkillGuns"/>
+    <property name="RepairExpMultiplier" value="10.8"/>
+  </item>
+
+  
+  <!--Ammo-->
+  <item id="150" name="9mmBullet">
+    <property name="Meshfile" value="Items/Weapons/Ranged/Pistol/9mm_bulletPrefab"/>
+    <property name="Material" value="brass"/>
+    <property name="HoldType" value="21"/>
+    <property name="Stacknumber" value="500"/>
+    <!-- STK ammo -->
+    <property name="CraftingSkillGroup" value="craftSkillGuns"/>
+    <property name="EconomicValue" value="14"/>
+    <property name="Group" value="Ammo/Weapons"/>
+  </item>
+
+  <!-- In my world an MP5 uses 9x19 Parabellum.
+<item id="151" name="10mmBullet">
+	<property name="Meshfile" value="Items/Weapons/Ranged/Pistol/10mm_bulletPrefab"/>
+	<property name="Material" value="brass"/>
+	<property name="HoldType" value="21"/>
+	<property name="Stacknumber" value="500"/>
+	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
+	<property name="EconomicValue" value="17"/>
+	<property name="Group" value="Ammo/Weapons"/>
+</item>
+-->
+
+  <item id="152" name="44MagBullet">
+    <property name="Meshfile" value="Items/Weapons/Ranged/Magnums/44_roundPrefab"/>
+    <property name="Material" value="brass"/>
+    <property name="HoldType" value="21"/>
+    <property name="Stacknumber" value="500"/>
+    <!-- STK ammo -->
+    <property name="Group" value="Ammo/Weapons"/>
+    <property name="CraftingSkillGroup" value="craftSkillGuns"/>
+    <property name="EconomicValue" value="19"/>
+  </item>
+
+  <item id="153" name="762mmBullet">
+    <property name="Meshfile" value="Items/Weapons/Ranged/HuntingRifle/762mm_bulletPrefab"/>
+    <property name="Material" value="brass"/>
+    <property name="HoldType" value="21"/>
+    <property name="Stacknumber" value="500"/>
+    <!-- STK ammo -->
+    <property name="CraftingSkillGroup" value="craftSkillGuns"/>
+    <property name="EconomicValue" value="19"/>
+    <property name="Group" value="Ammo/Weapons"/>
+  </item>
+
+  <item id="156" name="shotgunShell">
+    <property name="Meshfile" value="Items/Weapons/Ranged/SawedOffPumpShotgun/shotgunShellPrefab"/>
+    <property name="Material" value="lead"/>
+    <property name="HoldType" value="21"/>
+    <property name="Stacknumber" value="250"/>
+    <!-- STK ammo -->
+    <property name="DropScale" value="4"/>
+    <property name="EconomicValue" value="17"/>
+    <property class="Attributes">
+      <property name="GetQualityFromWeapon" value="true"/>
+      <property name="EntityDamage" value="6,10"/>
+      <property name="BlockDamage" value="5.4,13.5"/>
+    </property>
+    <property name="CraftingSkillGroup" value="craftSkillGuns"/>
+    <property name="Group" value="Ammo/Weapons"/>
+  </item>
+
+  <item id="157" name="shotgunSlug">
+    <property name="Meshfile" value="Items/Weapons/Ranged/SawedOffPumpShotgun/shotgunShellPrefab"/>
+    <property name="Material" value="brass"/>
+    <property name="HoldType" value="21"/>
+    <property name="Stacknumber" value="128"/>
+    <!-- STK ammo -->
+    <property name="EconomicValue" value="56"/>
+    <property class="Attributes">
+      <property name="GetQualityFromWeapon" value="true"/>
+      <property name="EntityDamage" value="100,150"/>
+      <property name="BlockDamage" value="100,150"/>
+    </property>
+    <property name="CraftingSkillGroup" value="craftSkillGuns"/>
+    <property name="Group" value="Ammo/Weapons"/>
+  </item>
+
+  <item id="159" name="rocket">
+    <property name="Meshfile" value="Items/Weapons/Ranged/RocketLauncher/rocketPrefab"/>
+    <property name="HandMeshfile" value="Items/Weapons/Ranged/RocketLauncher/rocketHandPrefab"/>
+    <property name="Material" value="metal"/>
+    <property name="HoldType" value="3"/>
+    <property name="Stacknumber" value="40"/>
+    <!-- STK explosives -->
+    <property name="EconomicValue" value="588"/>
+    <property class="Attributes">
+      <property name="GetQualityFromWeapon" value="true"/>
+      <property name="EntityDamage" value="250,500"/>
+      <property name="BlockDamage" value="50,200"/>
+      <!-- this is not working yet, it uses damage from Action1 -->
+    </property>
+    <property class="Action1">
+      <property name="Class" value="Projectile"/>
+      <property name="Explosion.ParticleIndex" value="4"/>
+      <!-- which Prefab/particle is used -->
+      <property name="Explosion.RadiusBlocks" value="5"/>
+      <!-- damage radius for blocks -->
+      <property name="Explosion.BlockDamage" value="500"/>
+      <!-- damage for blocks in the center of the explosion -->
+      <property name="Explosion.RadiusEntities" value="5"/>
+      <!-- damage radius for entities -->
+      <property name="Explosion.EntityDamage" value="350"/>
+      <!-- damage for entities in the center of the explosion. Zombies take 2x this damage. -->
+      <property name="Velocity" value="50"/>
+      <property name="FlyTime" value="1.2"/>
+      <property name="LifeTime" value="8"/>
+    </property>
+    <property name="CraftingSkillGroup" value="craftSkillScience"/>
+    <property name="Group" value="Ammo/Weapons"/>
+  </item>
+
+  <item id="160" name="blunderbussAmmo">
+    <property name="Meshfile" value="Items/Misc/sackPrefab"/>
+    <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+    <property name="Material" value="paper"/>
+    <property name="HoldType" value="45"/>
+    <property name="Stacknumber" value="250"/>
+    <!-- STK ammo -->
+    <property name="DropScale" value="4"/>
+    <property name="Group" value="Ammo/Weapons"/>
+    <property name="EconomicValue" value="6"/>
+    <property name="CraftingSkillGroup" value="craftSkillGuns"/>
+  </item>
+
+  <item id="161" name="gasCan">
+    <property name="Meshfile" value="Items/Misc/sackPrefab"/>
+    <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+    <property name="HoldType" value="45"/>
+    <property name="Material" value="MFuelBarrel"/>
+    <property name="Stacknumber" value="1000"/>
+    <!-- STK resource -->
+    <property name="FuelValue" value="2"/>
+    <property name="EconomicValue" value="83"/>
+    <!-- oil barrel 500 -->
+    <property name="EconomicBundleSize" value="100"/>
+    <property name="CraftingSkillGroup" value="craftSkillScience"/>
+    <property name="Group" value="Resources,Chemicals"/>
+    <property name="RepairAmount" value="100"/>
+  </item>
+
+  <item id="164" name="arrow">
+    <property name="Meshfile" value="Items/Weapons/Ranged/Bows/WoodenBow/Arrow"/>
+    <property name="DropMeshfile" value="Items/Misc/arrow_dropped"/>
+    <property name="HandMeshfile" value="Items/Misc/arrow_hand"/>
+    <property name="HoldType" value="32"/>
+    <property name="Material" value="wood"/>
+    <property name="Stacknumber" value="500"/>
+    <!-- STK ammo -->
+    <property name="FuelValue" value="8"/>
+    <property name="EconomicValue" value="12"/>
+    <property name="EconomicBundleSize" value="5"/>
+    <property class="Action1">
+      <property name="Class" value="Projectile"/>
+      <property name="Explosion.ParticleIndex" value="0"/>
+      <!-- no expl. -->
+      <property name="Velocity" value="47"/>
+      <property name="FlyTime" value="0"/>
+      <property name="Gravity" value="-4.7"/>
+      <property name="LifeTime" value="12"/>
+      <property name="DamageBonus.head" value="5"/>
+      <property name="DamageBonus.body" value="0.8"/>
+      <property name="DamageBonus.glass" value="1"/>
+      <property name="DamageBonus.wood" value="0.1"/>
+      <property name="DamageBonus.earth" value="0"/>
+      <property name="DamageBonus.metal" value="0"/>
+      <property name="DamageBonus.cloth" value="0"/>
+      <property name="ActionExp" value="3"/>
+    </property>
+    <property name="Group" value="Ammo/Weapons,Basics"/>
+    <property class="Attributes">
+      <property name="GetQualityFromWeapon" value="true"/>
+      <property name="EntityDamage" value="18,30"/>
+      <property name="BlockDamage" value="1,3"/>
+      <property name="ApplyBuff" value="0.25,0.25" param1="arrowCriticalBleedout"/>
+    </property>
+    <property name="CraftingSkillGroup" value="craftSkillWeapons"/>
+  </item>
+
+  <item id="165" name="ironArrow">
+    <property name="Extends" value="arrow"/>
+    <property name="Material" value="metal"/>
+    <property name="EconomicValue" value="25"/>
+    <property name="EconomicBundleSize" value="5"/>
+    <property class="Action1">
+      <property name="Velocity" value="55"/>
+      <property name="Gravity" value="-4"/>
+      <property name="LifeTime" value="12"/>
+      <property name="ActionExp" value="5"/>
+    </property>
+    <property name="Group" value="Ammo/Weapons"/>
+    <property class="Attributes">
+      <property name="EntityDamage" value="20,35"/>
+      <property name="BlockDamage" value="3,5"/>
+      <property name="ApplyBuff" value="0.35,0.35" param1="arrowCriticalBleedout"/>
+    </property>
+  </item>
+
+  <item id="166" name="steelArrow">
+    <property name="Extends" value="ironArrow"/>
+    <property name="EconomicValue" value="57"/>
+    <property name="EconomicBundleSize" value="5"/>
+    <property class="Action1">
+      <property name="Velocity" value="75"/>
+      <property name="Gravity" value="-4"/>
+      <property name="LifeTime" value="12"/>
+      <property name="ActionExp" value="8"/>
+    </property>
+    <property class="Attributes">
+      <property name="EntityDamage" value="20,45"/>
+      <property name="BlockDamage" value="5,8"/>
+      <property name="ApplyBuff" value="0.5,0.5" param1="arrowCriticalBleedout"/>
+    </property>
+  </item>
+
+  <item id="167" name="flamingArrow">
+    <property name="Extends" value="ironArrow"/>
+    <property name="Meshfile" value="Items/Weapons/Ranged/Bows/WoodenBow/flamingArrowPrefab"/>
+    <property name="DropMeshfile" value="Items/Misc/arrow_flaming_dropped"/>
+    <property name="HandMeshfile" value="Items/Misc/arrow_flaming_hand"/>
+    <property name="UsableUnderwater" value="false"/>
+    <property name="FuelValue" value="12"/>
+    <property name="EconomicValue" value="44"/>
+    <property name="EconomicBundleSize" value="1"/>
+    <property class="Action1">
+      <property name="Velocity" value="55"/>
+      <property name="Gravity" value="-6"/>
+      <property name="LifeTime" value="12"/>
+      <property name="DamageBonus.wood" value="2"/>
+      <property name="ActionExp" value="10"/>
+    </property>
+    <property class="Attributes">
+      <property name="EntityDamage" value="20,45"/>
+      <property name="BlockDamage" value="6,11"/>
+      <property name="ApplyBuff" value="1,1" param1="burning"/>
+    </property>
+  </item>
+
+  <!-- <item id="170" name="crossbowBolt">
+	<property name="Meshfile" value="Items/Weapons/Ranged/Bows/Crossbow/crossbowBoltStonePrefab"/>
+	<property name="DropMeshfile" value="Items/Misc/crossbow_bolt_dropped_stonePrefab"/>
+	<property name="HandMeshfile" value="Items/Misc/crossbow_bolt_hand_stonePrefab"/>
+	<property name="HoldType" value="32"/>
+	<property name="Material" value="wood"/>
+	<property name="Stacknumber" value="250"/>
+	<property name="FuelValue" value="8"/>
+	<property name="EconomicValue" value="11"/>
+	<property name="EconomicBundleSize" value="5"/>
+	<property class="Action1">
+		<property name="Class" value="Projectile"/>
+		<property name="Buff" value="arrowCriticalBleedout"/>
+		<property name="Buff_chance" value="0.5"/>
+		<property name="Explosion.ParticleIndex" value="0"/>
+		<property name="Velocity" value="75"/>
+		<property name="FlyTime" value="0.25"/>
+		<property name="LifeTime" value="17"/>
+		<property name="DamageBonus.head" value="5"/>
+		<property name="DamageBonus.glass" value="1"/>
+		<property name="DamageBonus.earth" value="0"/>
+		<property name="DamageBonus.metal" value="0"/>
+		<property name="DamageBonus.cloth" value="0"/>
+	</property>
+	<property class="Attributes">
+		<property name="GetQualityFromWeapon" value="true"/>
+		<property name="EntityDamage" value="25,45"/>
+		<property name="BlockDamage" value="1,5"/>
+	</property>
+	<property name="CraftingSkillGroup" value="craftSkillWeapons"/>
+	<property name="Group" value="Ammo/Weapons"/>
+</item> -->
+
+  <item id="171" name="ironCrossbowBolt">
+    <property name="Meshfile" value="Items/Weapons/Ranged/Bows/Crossbow/crossbowBoltPrefab"/>
+    <property name="DropMeshfile" value="Items/Misc/crossbow_bolt_droppedPrefab"/>
+    <property name="HandMeshfile" value="Items/Misc/crossbow_bolt_handPrefab"/>
+    <property name="HoldType" value="32"/>
+    <property name="Material" value="metal"/>
+    <property name="Stacknumber" value="500"/>
+    <!-- STK ammo -->
+    <property name="FuelValue" value="8"/>
+    <property name="EconomicValue" value="25"/>
+    <property name="EconomicBundleSize" value="5"/>
+    <property class="Action1">
+      <property name="Class" value="Projectile"/>
+      <property name="Explosion.ParticleIndex" value="0"/>
+      <!-- no expl. -->
+      <property name="Velocity" value="80"/>
+      <property name="FlyTime" value="0"/>
+      <property name="Gravity" value="-4"/>
+      <property name="LifeTime" value="12"/>
+      <property name="DamageBonus.head" value="5"/>
+      <property name="DamageBonus.body" value="0.8"/>
+      <property name="DamageBonus.glass" value="1"/>
+      <property name="DamageBonus.wood" value="0.1"/>
+      <property name="DamageBonus.earth" value="0"/>
+      <property name="DamageBonus.metal" value="0"/>
+      <property name="DamageBonus.cloth" value="0"/>
+      <property name="ActionExp" value="5"/>
+    </property>
+    <property class="Attributes">
+      <property name="GetQualityFromWeapon" value="true"/>
+      <property name="EntityDamage" value="25,50"/>
+      <property name="BlockDamage" value="6,10"/>
+      <property name="ApplyBuff" value="0.35,0.35" param1="arrowCriticalBleedout"/>
+    </property>
+    <property name="Group" value="Ammo/Weapons"/>
+    <property name="CraftingSkillGroup" value="craftSkillWeapons"/>
+  </item>
+
+  <item id="172" name="steelCrossbowBolt">
+    <property name="Extends" value="ironCrossbowBolt"/>
+    <property name="Meshfile" value="Items/Weapons/Ranged/Bows/Crossbow/crossbowBoltSteelPrefab"/>
+    <property name="DropMeshfile" value="Items/Misc/crossbow_bolt_dropped_steelPrefab"/>
+    <property name="HandMeshfile" value="Items/Misc/crossbow_bolt_hand_steelPrefab"/>
+    <property name="EconomicValue" value="57"/>
+    <property name="EconomicBundleSize" value="5"/>
+    <property class="Action1">
+      <property name="Velocity" value="85"/>
+      <property name="Gravity" value="-4"/>
+      <property name="LifeTime" value="12"/>
+      <property name="ActionExp" value="8"/>
+    </property>
+    <property class="Attributes">
+      <property name="EntityDamage" value="25,55"/>
+      <property name="BlockDamage" value="6,11"/>
+      <property name="ApplyBuff" value="0.5,0.5" param1="arrowCriticalBleedout"/>
+    </property>
+  </item>
+
+  <item id="173" name="explodingCrossbowBolt">
+    <property name="Extends" value="ironCrossbowBolt"/>
+    <property name="Meshfile" value="Items/Weapons/Ranged/Bows/Crossbow/crossbowBoltExplosivePrefab"/>
+    <property name="DropMeshfile" value="Items/Misc/crossbow_bolt_dropped_explosivePrefab"/>
+    <property name="HandMeshfile" value="Items/Misc/crossbow_bolt_hand_explosivePrefab"/>
+    <property name="FuelValue" value="12"/>
+    <property name="EconomicValue" value="80"/>
+    <property name="EconomicBundleSize" value="1"/>
+    <property class="Action1">
+      <property name="Explosion.ParticleIndex" value="0"/>
+      <!-- no expl. -->
+      <property name="Velocity" value="65"/>
+      <property name="Gravity" value="-6"/>
+      <property name="LifeTime" value="12"/>
+      <property name="Explosion.BlockDamage" value="10"/>
+      <property name="Explosion.EntityDamage" value="80"/>
+      <property name="Explosion.ParticleIndex" value="1"/>
+      <property name="Explosion.RadiusBlocks" value="3"/>
+      <property name="Explosion.RadiusEntities" value="4"/>
+      <property name="Explosion.DamageBonus.stone" value="0.3"/>
+      <property name="Explosion.DamageBonus.metal" value="0.1"/>
+      <property name="Explosion.DamageBonus.earth" value="0"/>
+      <!-- should work? -->
+      <property name="Explosion.DamageBonus.wood" value="0.5"/>
+      <property name="Explosion.DamageBonus.water" value="0"/>
+      <property name="DamageBonus.body" value="1"/>
+      <property name="ActionExp" value="10"/>
+    </property>
+    <property class="Attributes">
+      <property name="EntityDamage" value="30,55"/>
+      <property name="BlockDamage" value="6,11"/>
+      <property name="ApplyBuff" value="0,0" param1="arrowCriticalBleedout"/>
+    </property>
+    <property name="CraftingSkillGroup" value="craftSkillScience"/>
+  </item>
+  <!-- Valmod Starts -->
+  <!-- Weapons -->
+  <item id="1600" name="gunSilencer">
+    <property name="Extends" value="partsMaster" />
+    <property name="DescriptionKey" value="partsSilencerDesc"/>
+    <property name="PartType" value="Stock" />
+    <property name="Weight" value="10" />
+    <property class="Attributes">
+      <property name="DegradationRate" value="10,10" />
+      <property name="DegradationMax" value="700,4000" />
+    </property>
+    <property name="EconomicValue" value="3000" />
+  </item>
+  <item id="1601" name="gunChoke">
+    <property name="Extends" value="partsPumpShotgun_barrel" />
+    <property name="DescriptionKey" value="partsChokeDesc"/>
+    <property class="Attributes">
+      <property name="Accuracy" value="1, 0.01" />
+    </property>
+    <property name="EconomicValue" value="3000" />
+  </item>
+  <item id="1602" name="gunScope">
+    <property name="Extends" value="partsSniperRifle_receiver" />
+    <property name="DescriptionKey" value="partsScopeDesc"/>
+    <property class="Attributes">
+      <property name="FalloffRange" value="70,250" />
+    </property>
+    <property name="EconomicValue" value="3000" />
+  </item>
+  <item id="1603" name="gunPistolSilenced">
+    <property name="Extends" value="gunPistol" />
+    <property name="DescriptionKey" value="gunPistolSilencedDesc"/>
+    <property class="Parts">
+      <property name="Stock" value="gunSilencer" />
+    </property>
+    <property class="Action0">
+      <property name="Sound_start" value="bullethitcloth" />
+    </property>
+  </item>
+  <item id="1604" name="gun44MagnumSilenced">
+    <property name="Extends" value="gun44Magnum" />
+    <property name="DescriptionKey" value="gun44MagnumSilencedDesc"/>
+    <property class="Parts">
+      <property name="Stock" value="gunSilencer" />
+    </property>
+    <property class="Action0">
+      <property name="Sound_start" value="bullethitcloth" />
+    </property>
+  </item>
+  <item id="1605" name="gunBoomstick">
+    <property name="Extends" value="gunSawedOffPumpShotgun" />
+    <property name="DescriptionKey" value="gunBoomstickDesc"/>
+    <property class="Parts">
+      <property name="Stock" value="partsPumpShotgun_stockShort" />
+      <property name="Receiver" value="partsPumpShotgun_parts" />
+      <property name="Pump" value="partsPumpShotgun_receiver" />
+      <property name="Barrel" value="partsPumpShotgun_barrelShort" />
+    </property>
+    <property class="Action0">
+      <property name="Magazine_size" value="2" />
+    </property>
+    <property class="Action1">
+      <property name="Class" value="Ranged" />
+      <property name="Delay" value="0.8" />
+      <property name="Range" value="100" />
+      <property name="Crosshair_min_distance" value="30" />
+      <property name="Crosshair_max_distance" value="50" />
+      <property name="Magazine_size" value="2" />
+      <property name="Magazine_items" value="shotgunShell, shotgunShellINC, SiegeShell, lokiShell, Unload" />
+      <property name="Magazine_item_ray_counts" value="9, 9, 9, 9" />
+      <property name="Magazine_item_ray_spreads" value="0.9, 0.9, 0.9, 0.9" />
+      <property name="Reload_time" value="2.6" />
+      <property name="Bullet_icon" value="uzi" />
+      <property name="Sound_start" value="Weapons/Ranged/SawedOffPumpShotgun/sawed_off_shotgun_fire" />
+      <property name="Sound_repeat" value="" />
+      <property name="Sound_end" value="" />
+      <property name="Sound_empty" value="Weapons/weapon_empty" />
+      <property name="Sound_reload" value="Weapons/Ranged/SawedOffPumpShotgun/shotgun_reload" />
+      <property name="Particles_muzzle_fire" value="nozzleflash_shotgun" />
+      <property name="Particles_muzzle_smoke" value="nozzlesmokeuzi" />
+      <property name="DamageBonus.head" value="3" />
+      <property name="DamageBonus.glass" value="25" />
+      <property name="DamageBonus.wood" value="2" />
+      <property name="DamageBonus.plants" value="4" />
+      <property name="DamageBonus.earth" value=".2" />
+      <property name="Buff" value="shotgunWound" />
+      <property name="Buff_chance" value=".8" />
+    </property>
+    <property class="Attributes">
+      <property name="EntityDamage" value="10,20" />
+      <property name="BlockDamage" value="15,33" />
+    </property>
+  </item>
+  <item id="1606" name="gunMP5Silenced">
+    <property name="Extends" value="gunMP5" />
+    <property name="DescriptionKey" value="gunMP5SilencedDesc"/>
+    <property class="Parts">
+      <property name="Pump" value="gunSilencer" />
+    </property>
+    <property class="Action0">
+      <property name="Sound_start" value="bullethitcloth" />
+      <property name="Sound_repeat" value="bullethitcloth" />
+      <property name="Sound_end" value="weapon_empt" />
+    </property>
+  </item>
+  <item id="1607" name="gunSniperSilenced">
+    <property name="CustomIcon" value="SilencedSniper" />
+    <property name="Extends" value="gunSniperRifle" />
+    <property name="DescriptionKey" value="gunSniperSilencedDesc"/>
+    <property class="Parts">
+      <property name="Stock" value="gunSilencer" />
+    </property>
+    <property class="Action0">
+      <property name="Sound_start" value="bullethitcloth" />
+    </property>
+  </item>
+  <item id="1608" name="gunPumpShotgunChoked">
+    <property name="Extends" value="gunPumpShotgun" />
+    <property name="DescriptionKey" value="gunPumpShotgunChokedDesc"/>
+    <property class="Parts">
+      <property name="Barrel" value="gunChoke" />
+    </property>
+    <property class="Action0">
+      <property name="Magazine_item_ray_spreads" value="0.55, 0.20, 0.55" />
+    </property>
+  </item>
+  <item id="1609" name="gunHuntingRifleSilenced">
+    <property name="Extends" value="gunHuntingRifle" />
+    <property name="DescriptionKey" value="gunHuntingRifleSilencedDesc"/>
+    <property class="Parts">
+      <property name="Stock" value="gunSilencer" />
+    </property>
+    <property class="Action0">
+      <property name="Sound_start" value="bullethitcloth" />
+    </property>
+  </item>
+  <item id="1610" name="gunBoltRifle">
+    <property name="Extends" value="gunHuntingRifle" />
+    <property name="DescriptionKey" value="gunBoltRifleDesc"/>
+    <property class="Parts">
+      <property name="Pump" value="partsBoltRifle_parts" />
+    </property>
+    <property class="Action0">
+      <property name="Magazine_size" value="1" />
+      <property name="DamageBonus.head" value="7" />
+    </property>
+    <property class="Action1">
+      <!-- UseAction -->
+      <property name="Class" value="Zoom" />
+      <property name="Zoom_overlay" value="Items/Weapons/HUD/sniper_zoom_overlay" />
+      <property name="Zoom_max_out" value="40" />
+      <property name="Zoom_max_in" value="30" />
+    </property>
+  </item>
+  <item id="1611" name="gunBoltRifleSilenced">
+    <property name="Extends" value="gunBoltRifle" />
+    <property name="DescriptionKey" value="gunBoltRifleSilencedDesc"/>
+    <property class="Parts">
+      <property name="Stock" value="gunSilencer" />
+    </property>
+    <property class="Action0">
+      <property name="Sound_start" value="bullethitcloth" />
+    </property>
+  </item>
+  <item id="1612" name="gunAK47Silenced">
+    <property name="CustomIcon" value="gunAK47" />
+    <property name="Extends" value="gunAK47" />
+    <property name="DescriptionKey" value="gunAK47SilencedDesc"/>
+    <property class="Parts">
+      <property name="Stock" value="gunSilencer" />
+    </property>
+    <property class="Action0">
+      <property name="Sound_start" value="bullethitcloth" />
+      <property name="Sound_repeat" value="bullethitcloth" />
+      <property name="Sound_end" value="weapon_empt" />
+    </property>
+  </item>
+  <item id="1613" name="gunSniperRifleHPScope">
+    <property name="CustomIcon" value="gunSniperRifle" />
+    <property name="Extends" value="gunSniperRifle" />
+    <property name="DescriptionKey" value="gunSniperRifleHPScopeDesc"/>
+    <property class="Parts">
+      <property name="Receiver" value="gunScope" />
+    </property>
+    <property class="Action0">
+      <property name="Range" value="300" />
+    </property>
+    <property class="Action1">
+      <property name="Class" value="Zoom" />
+      <property name="Zoom_overlay" value="Items/Weapons/HUD/sniper_zoom_overlay" />
+      <property name="Zoom_max_out" value="40" />
+      <property name="Zoom_max_in" value="10" />
+    </property>
+  </item>
+  <item id="1614" name="gunSniperRifleHPScopeSilenced">
+    <property name="CustomIcon" value="SilencedSniper" />
+    <property name="Extends" value="gunSniperRifleHPScope" />
+    <property name="DescriptionKey" value="gunSniperRifleHPScopeSilencedDesc"/>
+    <property class="Parts">
+      <property name="Stock" value="gunSilencer" />
+      <property name="Receiver" value="gunScope" />
+    </property>
+    <property class="Action0">
+      <property name="Sound_start" value="bullethitcloth" />
+    </property>
+  </item>
+  <item id="1615" name="partsBoltRifle_parts">
+    <property name="CustomIcon" value="partsPistol_parts" />
+    <property name="Extends" value="partsHuntingRifle_parts" />
+    <property name="DescriptionKey" value="partsBoltRiflePartsDesc"/>
+  </item>
+  <item id="1616" name="ironCrossbow">
+    <property name="Extends" value="crossbow" />
+    <property name="RepairTools" value="forgedIron" />
+    <property name="DescriptionKey" value="ironCrossbowDesc"/>
+    <property name="RepairTools" value="wood" />
+    <property name="FuelValue" value="40" />
+    <property class="Action0">
+      <property name="Range" value="220" />
+    </property>
+    <property class="Attributes">
+      <property name="EntityDamage" value="5,10" />
+      <property name="DegradationRate" value="1,1" />
+      <property name="DegradationMax" value="50,650" />
+    </property>
+  </item>
+  <item id="1617" name="ironBow">
+    <property name="Extends" value="woodenBow" />
+    <property name="RepairTools" value="forgedIron" />
+    <property name="DescriptionKey" value="ironBowDesc"/>
+    <property class="Attributes">
+      <property name="EntityDamage" value="5,10" />
+      <property name="DegradationRate" value="1,1" />
+      <property name="DegradationMax" value="100,850" />
+    </property>
+  </item>
+  <item id="1618" name="combatAxe">
+    <property name="CustomIcon" value="combatAxe" />
+    <property name="Extends" value="fireaxeSteel" />
+    <property name="DescriptionKey" value="combatAxeDesc"/>
+    <property name="FuelValue" value="16" />
+    <property class="Action0">
+      <!-- AttackAction -->
+      <property name="Class" value="Melee" />
+      <property name="Delay" value="1.1" />
+      <property name="Range" value="2" />
+      <property name="Sphere" value="0.1" />
+      <property name="Block_range" value="3" />
+      <property name="DamageEntity" value="20" />
+      <property name="DamageBlock" value="1" />
+      <property name="Sound_start" value="swoosh" />
+      <property name="Stamina_usage" value="7" />
+      <property name="DamageBonus.wood" value="1" />
+      <property name="DamageBonus.head" value="8" />
+      <property name="DamageBonus.glass" value="25" />
+      <property name="DamageBonus.stone" value=".25" />
+      <property name="DamageBonus.metal" value=".25" />
+      <property name="DamageBonus.earth" value=".25" />
+      <property name="ToolCategory.Butcher" value="0.55" />
+      <property name="ToolCategory.Lumberjack" value="0" />
+    </property>
+    <property class="Attributes">
+      <property name="EntityDamage" value="15,35" />
+      <property name="BlockDamage" value="6,35" />
+      <property name="DegradationMax" value="400,1200" />
+      <property name="DegradationRate" value="1,1" />
+    </property>
+    <property name="ActionSkillGroup" value="Blade Weapons"/>
+    <property name="CraftingSkillGroup" value="craftSkillWeapons"/>
+  </item>
+  <item id="1619" name="Tranquilizer">
+    <property name="DescriptionKey" value="TranquilizerDesc"/>
+    <property name="Meshfile" value="Items/Weapons/Ranged/Pistol/PistolPrefab" />
+    <property name="Material" value="metal" />
+    <property name="HoldType" value="1" />
+    <property name="Stacknumber" value="1" />
+    <property name="RepairTools" value="repairKit" />
+    <property name="Degradation" value="175" param1="false" />
+    <property name="DegradationBreaksAfter" value="false" />
+    <property name="SoundJammed" value="Weapons/weapon_jam" />
+    <property name="Attachments" value="flashlight02" />
+    <property name="Weight" value="10" />
+    <property name="EconomicValue" value="500" />
+    <property class="Action0">
+      <property name="Class" value="Ranged" />
+      <property name="Delay" value="0.15" />
+      <property name="Range" value="120" />
+      <property name="Magazine_size" value="1" />
+      <property name="Magazine_items" value="HealingDart,InfectionDart,ChemicalDart" />
+      <property name="Magazine_item_ray_counts" value="1, 1, 1" />
+      <property name="Magazine_item_ray_spreads" value="0, 0, 0" />
+      <property name="Reload_time" value="2" />
+      <property name="Bullet_icon" value="pistol" />
+      <property name="Sound_start" value="Weapons/Ranged/Pistol/pistol_fire" />
+      <property name="Sound_repeat" value="" />
+      <property name="Sound_end" value="" />
+      <property name="DamageBonus.head" value="3" />
+      <property name="Sound_empty" value="Weapons/weapon_empty" />
+      <property name="Sound_reload" value="Weapons/Ranged/Pistol/pistol_reload" />
+      <property name="Particles_muzzle_fire" value="nozzleflash" />
+      <property name="Particles_muzzle_smoke" value="nozzlesmoke" />
+    </property>
+    <property class="Action1">
+      <property name="Class" value="Zoom" />
+      <property name="Zoom_max_out" value="35" />
+      <property name="Zoom_max_in" value="35" />
+    </property>
+    <property name="LightSource" value="lightSource" />
+    <property name="ActivateObject" value="Attachments/flashlight/lightSource" />
+    <property name="AttachmentFlashlight" value="flashlight02" />
+    <property name="Group" value="Ammo/Weapons" />
+    <property name="ActionSkillGroup" value="Science"/>
+    <property class="Preview">
+      <property name="Zoom" value="14" />
+      <property name="Pos" value="0.1,-0.1" />
+      <property name="Rot" value="0,-45,0" />
+    </property>
+    <property class="Attributes">
+      <property name="EntityDamage" value="3,3" />
+    </property>
+  </item>
+  <item id="1620" name="HealingDart">
+    <property name="DescriptionKey" value="HealingDartDesc"/>
+    <property name="Meshfile" value="Items/Weapons/Melee/Knives/boneShivPrefab" />
+    <property name="Material" value="Mplastics" />
+    <property name="Weight" value="1" />
+    <property name="HoldType" value="1" />
+    <property name="Stacknumber" value="500" />
+    <property name="Group" value="Ammo/Weapons" />
+    <property class="Action0">
+      <property name="Class" value="UseOther" />
+      <property name="Delay" value="1.0" />
+      <property name="Use_time" value="..." />
+      <property name="Gain_health" value="10" />
+      <property name="Gain_food" value="0" />
+      <property name="Gain_water" value="0" />
+      <property name="Sound_start" value="UseActions/player_bandage" />
+    </property>
+    <property class="Action1">
+      <property name="Class" value="Eat" />
+      <property name="Delay" value="1.0" />
+      <property name="Use_time" value="..." />
+      <property name="Gain_health" value="10" />
+      <property name="Gain_food" value="0" />
+      <property name="Gain_water" value="0" />
+      <property name="Sound_start" value="UseActions/player_bandage" />
+    </property>
+    <property class="Preview">
+      <property name="Zoom" value="18" />
+      <property name="Pos" value="0.1,0" />
+      <property name="Rot" value="10,-45,0" />
+    </property>
+    <property class="Attributes">
+      <property name="GetQualityFromWeapon" value="true" />
+      <property name="ApplyBuff" value="1,1" param1="firstAid" />
+    </property>
+  </item>
+  <item id="1621" name="InfectionDart">
+    <property name="DescriptionKey" value="InfectionDartDesc"/>
+    <property name="Meshfile" value="Items/Weapons/Melee/Knives/boneShivPrefab" />
+    <property name="HoldType" value="1" />
+    <property name="Stacknumber" value="500" />
+    <property name="Material" value="Mplastics" />
+    <property name="Weight" value="1" />
+    <property name="Group" value="Ammo/Weapons" />
+    <property class="Preview">
+      <property name="Zoom" value="18" />
+      <property name="Pos" value="0.1,0" />
+      <property name="Rot" value="10,-45,0" />
+    </property>
+    <property class="Attributes">
+      <property name="GetQualityFromWeapon" value="true" />
+      <property name="EntityDamage" value="1,3" />
+      <property name="ApplyBuff" value="1,1" param1="infection" />
+    </property>
+  </item>
+  <item id="1622" name="ChemicalDart">
+    <property name="DescriptionKey" value="ChemicalDartDesc"/>
+    <property name="Meshfile" value="Items/Weapons/Melee/Knives/boneShivPrefab" />
+    <property name="Material" value="Mplastics" />
+    <property name="Weight" value="1" />
+    <property name="HoldType" value="1" />
+    <property name="Stacknumber" value="500" />
+    <property name="Group" value="Ammo/Weapons" />
+    <property class="Preview">
+      <property name="Zoom" value="18" />
+      <property name="Pos" value="0.1,0" />
+      <property name="Rot" value="10,-45,0" />
+    </property>
+    <property name="Group" value="Chemicals" />
+    <property class="Attributes">
+      <property name="GetQualityFromWeapon" value="true" />
+      <property name="EntityDamage" value="15,18" />
+      <property name="ApplyBuff" value="1,1" param1="AcidSplash" />
+    </property>
+  </item>
+  <item id="1623" name="clubBurning">
+    <property name="Class" value="ItemClassTorch" />
+    <property name="Meshfile" value="Items/Tools/torchPrefab" />
+    <property name="DropMeshfile" value="Items/Misc/torch_droppedPrefab" />
+    <property name="Material" value="organic" />
+    <property name="HoldType" value="2" />
+    <property name="Degradation" value="125" param1="true" />
+    <property name="SoundDestroy" value="wooddestroy1" />
+    <property name="Stacknumber" value="1" />
+    <property name="FuelValue" value="24" />
+    <property name="SoundIdle" value="Weapons/Melee/Torch/torch_lp" />
+    <property class="Action0">
+      <property name="Class" value="Melee" />
+      <property name="Delay" value="1.17" />
+      <property name="Range" value="2.5" />
+      <property name="Sphere" value="0.1" />
+      <property name="DamageEntity" value="12" />
+      <property name="DamageBlock" value="4" />
+      <property name="Sound_start" value="Weapons/Melee/Torch/torch_swoosh" />
+      <property name="Stamina_usage" value="6" />
+      <property name="Buff" value="burning" />
+      <property name="Buff_chance" value="0.6" />
+      <property name="DamageBonus.head" value="4" />
+      <property name="DamageBonus.glass" value="25" />
+      <property name="DamageBonus.snow" value="10" />
+      <property name="ActionExp" value="5" />
+      <property name="ActionExpBonusMultiplier" value="5" />
+    </property>
+    <property name="CritChance" value=".10" />
+    <property name="Group" value="Ammo/Weapons,Basics" />
+    <property name="DescriptionKey" value="clubBurningDesc"/>
+    <property name="ActionSkillGroup" value="Blunt Weapons"/>
+    <property name="CraftingSkillGroup" value="craftSkillWeapons"/>
+    <property class="Preview">
+      <property name="Zoom" value="8" />
+      <property name="Pos" value="-0.1,-0.7" />
+    </property>
+  </item>
+  <item id="1624" name="crossbowRepeater">
+    <property name="Extends" value="crossbow" />
+    <property name="DescriptionKey" value="crossbowRepeaterDesc"/>
+    <property class="Action0">
+      <property name="Magazine_size" value="3" />
+    </property>
+  </item>
+
+  <!-- Expanded Ammunition Types -->
+  <item id="1635" name="9mmBulletHP">
+    <property name="Extends" value="9mmBullet" />
+    <property name="DescriptionKey" value="BulletHPDesc"/>
+    <property class="Attributes">
+      <property name="GetQualityFromWeapon" value="true" />
+      <property name="EntityDamage" value="10,10" />
+      <property name="BlockDamage" value="4,5" />
+      <property name="ApplyBuff" value="0.7,0.7" param1="stunned" />
+    </property>
+  </item>
+  <item id="1636" name="9mmBulletINC">
+    <property name="Extends" value="9mmBullet" />
+    <property name="DescriptionKey" value="BulletINCDesc"/>
+    <property class="Attributes">
+      <property name="GetQualityFromWeapon" value="true" />
+      <property name="BlockDamage" value="5,7" />
+      <property name="ApplyBuff" value="1,1" param1="burningSmall" />
+    </property>
+  </item>
+  <item id="1637" name="44MagBulletHP">
+    <property name="Extends" value="44MagBullet" />
+    <property name="DescriptionKey" value="BulletHPDesc"/>
+    <property class="Attributes">
+      <property name="GetQualityFromWeapon" value="true" />
+      <property name="EntityDamage" value="10,12" />
+      <property name="BlockDamage" value="5,7" />
+      <property name="ApplyBuff" value="0.7,0.7" param1="stunned" />
+    </property>
+  </item>
+  <item id="1638" name="44MagBulletINC">
+    <property name="Extends" value="44MagBullet" />
+    <property name="DescriptionKey" value="BulletINCDesc"/>
+    <property class="Attributes">
+      <property name="GetQualityFromWeapon" value="true" />
+      <property name="BlockDamage" value="5,7" />
+      <property name="ApplyBuff" value="1,1" param1="burningSmall" />
+    </property>
+  </item>
+  <item id="1641" name="762mmBulletHP">
+    <property name="Extends" value="762mmBullet" />
+    <property name="DescriptionKey" value="BulletHPDesc"/>
+    <property class="Attributes">
+      <property name="GetQualityFromWeapon" value="true" />
+      <property name="EntityDamage" value="10,12" />
+      <property name="BlockDamage" value="5,7" />
+      <property name="ApplyBuff" value="0.7,0.7" param1="stunned" />
+    </property>
+  </item>
+  <item id="1642" name="762mmBulletINC">
+    <property name="Extends" value="762mmBullet" />
+    <property name="DescriptionKey" value="BulletINCDesc"/>
+    <property class="Attributes">
+      <property name="GetQualityFromWeapon" value="true" />
+      <property name="BlockDamage" value="5,7" />
+      <property name="ApplyBuff" value="1,1" param1="burningSmall" />
+    </property>
+  </item>
+  <item id="1643" name="SiegeShell">
+    <property name="Meshfile" value="Items/Weapons/Ranged/SawedOffPumpShotgun/shotgunShellPrefab" />
+    <property name="Material" value="lead" />
+    <property name="HoldType" value="21" />
+    <property name="Stacknumber" value="250" />
+    <!-- STK ammo -->
+    <property name="DropScale" value="4" />
+    <property name="Group" value="Ammo/Weapons" />
+    <property name="DescriptionKey" value="SiegeShellDesc"/>
+    <property class="Attributes">
+      <property name="GetQualityFromWeapon" value="true" />
+      <property name="EntityDamage" value="3.6,9" />
+      <property name="BlockDamage" value="30,40" />
+      <property name="DamageBonus.wood" value="25" />
+    </property>
+    <property name="CraftingSkillGroup" value="craftSkillGuns"/>
+  </item>
+  <item id="1644" name="shotgunShellINC">
+    <property name="Meshfile" value="Items/Weapons/Ranged/SawedOffPumpShotgun/shotgunShellPrefab" />
+    <property name="Material" value="lead" />
+    <property name="HoldType" value="21" />
+    <property name="Stacknumber" value="250" />
+    <!-- STK ammo -->
+    <property name="DropScale" value="4" />
+    <property name="Group" value="Ammo/Weapons" />
+    <property name="DescriptionKey" value="ShotgunShellINCDesc"/>
+    <property class="Attributes">
+      <property name="GetQualityFromWeapon" value="true" />
+      <property name="EntityDamage" value="7,15" />
+      <property name="BlockDamage" value="14,17" />
+      <property name="ApplyBuff" value="1,1" param1="burningSmall" />
+    </property>
+    <property name="CraftingSkillGroup" value="craftSkillGuns"/>
+  </item>
+  <item id="1645" name="blunderbussAmmoShredder">
+    <property name="Extends" value="blunderbussAmmo" />
+    <property name="DescriptionKey" value="BlunderbussShredderDesc"/>
+    <property class="Attributes">
+      <property name="GetQualityFromWeapon" value="true" />
+      <property name="EntityDamage" value="8,12" />
+      <property name="ApplyBuff" value="1,1" param1="bleeding" />
+    </property>
+  </item>
+  <item id="1646" name="HollowTip">
+    <property name="Extends" value="bulletTip" />
+    <property name="DescriptionKey" value="HollowTipDesc"/>
+    <!-- Test to see if this is still needed <property name="Weight" value="5" /> -->
+  </item>
+
+  <item id="1652" name="lokiShell">
+    <property name="Meshfile" value="Items/Weapons/Ranged/SawedOffPumpShotgun/shotgunShellPrefab" />
+    <property name="Material" value="lead" />
+    <property name="HoldType" value="21" />
+    <property name="Stacknumber" value="250" />
+    <!-- STK ammo -->
+    <property name="DropScale" value="4" />
+    <property name="Group" value="Ammo/Weapons" />
+    <property name="DescriptionKey" value="lokiShellDesc"/>
+    <property class="Attributes">
+      <property name="GetQualityFromWeapon" value="true" />
+      <property name="EntityDamage" value="4,10" />
+      <property name="BlockDamage" value="14,17" />
+      <property name="ApplyBuff" value="1,1" param1="AcidSplash" />
+    </property>
+    <property name="CraftingSkillGroup" value="Science"/>
+  </item>
+
+</Items>
