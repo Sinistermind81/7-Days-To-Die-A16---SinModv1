@@ -3338,4 +3338,64 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
   <recipe name="dismantleShotgunShells30" count="1" craft_time = "5" craft_exp_gain="0">
     <ingredient name="shotgunShell" count="30"/>
   </recipe>
+
+   <!--Sinmod Fishing-->
+  <recipe name="Boiled Fish" count="1" scrapable="False" craft_area="campfire" craft_tool="cookingPot" >
+    <ingredient name="Raw Fish" count="1"/>
+    <ingredient name="bottledWater" count="1"/>
+  </recipe>
+
+  <recipe name="Fish Stew" count="1" scrapable="False" craft_area="campfire" craft_tool="cookingPot" >
+    <ingredient name="bottledWater" count="1"/>
+    <ingredient name="Raw Fish" count="1"/>
+    <ingredient name="potato" count="1"/>
+    <ingredient name="corn" count="1"/>
+  </recipe>
+
+  <recipe name="Grilled Fish" count="1" scrapable="False" craft_area="campfire" craft_tool="cookingGrill" >
+    <ingredient name="Raw Fish" count="1"/>
+  </recipe>
+
+  <recipe name="Charred Fish" count="1" scrapable="False" craft_area="campfire">
+    <ingredient name="Raw Fish" count="1"/>
+  </recipe>
+
+  <recipe name="Fishing Pole" count="1" scrapable="False" >
+    <ingredient name="fishingWeight" count="1"/>
+    <ingredient name="wood" count="10"/>
+    <ingredient name="scrapIron" count="5"/>
+    <ingredient name="Bait" count="3" />
+  </recipe>
+
+  <recipe name="Fishing Pole" count="1" scrapable="False" >
+    <ingredient name="Unbaited Fishing Pole" count="1" />
+    <ingredient name="Bait" count="3" />
+  </recipe>
+
+  <recipe name="fishingWeight" count="1" scrapable="True" >
+    <ingredient name="scrapLead" count="20"/>
+  </recipe>
+
+  <recipe name="Bait" count="3" scrapable="False" >
+    <ingredient name="rawMeat" count="1"/>
+  </recipe>
+
+  <recipe name="Bait" count="3" scrapable="False">
+    <ingredient name="moldyBread" count="1"/>
+  </recipe>
+
+  <recipe name="Bait" count="3" scrapable="False" >
+    <ingredient name="Raw Fish" count="1"/>
+  </recipe>
+
+  <recipe name="Baited Fishing Trap" count="1" scrapable="False" >
+    <ingredient name="Fishing Trap" count="1" />
+    <ingredient name="Bait" count="3" />
+  </recipe>
+
+  <recipe name="Fishing Trap" count="1" scrapable="False" craft_area="forge" craft_tool="anvil" material_based="true">
+    <ingredient name="unit_clay" count="100"/>
+    <ingredient name="unit_iron" count="500"/>
+  </recipe>
+  
 </recipes>

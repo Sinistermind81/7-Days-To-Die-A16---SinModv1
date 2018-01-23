@@ -17091,8 +17091,43 @@ kind of free
     <property name="MaxDamage" value="2000000" />
     <property name="TraderID" value="31" />
   </block>
+  
+  
 
   <!--SinMod Farming-->
+  <block id="1713" name="Fishing Catch">
+    <property name="Group" value="Fishing" />
+    <property name="CustomIcon" value="rawMeat" />
+    <property name="CustomIconTint" value="7EB2D8" />
+    <property name="Material" value="organic" />
+    <property name="Shape" value="ModelEntity" />
+    <property name="Model" value="Entities/Gore/animal_remainsPrefab" />
+    <property name="Texture" value="22" />
+    <property name="Place" value="TowardsPlacer" />
+    <drop event="Harvest" name="Raw Fish" count="2" prob="1.0" />
+    <drop event="Harvest" name="Bait" count="1" prob=".5" />
+    <drop event="Harvest" name="Raw Fish" count="5" prob="1.0" tool_category="Butcher"/>
+    <drop event="Harvest" name="Bait" count="3" prob="1.0" tool_category="Butcher"/>
+    <drop event="Destroy" name="Unbaited Fishing Pole" count="1" prob="1.0" />
+  </block>
+
+  <block id="1714" name="Full Fishing Trap">
+    <property name="CustomIcon" value="Fishing_Trap" />
+    <property name="Material" value="organic" />
+    <property name="Shape" value="CubeCutoutBackFaces" />
+    <property name="Mesh" value="cutout" />
+    <property name="Texture" value="289" />
+    <property name="Collide" value="movement,rocket,melee" />
+    <drop event="Harvest" name="Raw Fish" count="2,5" prob="1.0" />
+    <drop event="Harvest" name="Bait" count="0,3" prob=".5" />
+    <drop event="Harvest" name="Raw Fish" count="9,12" prob="1.0" tool_category="Butcher"/>
+    <drop event="Harvest" name="Bait" count="6,9" prob="1.0" tool_category="Butcher"/>
+    <drop event="Destroy" name="Fishing Trap" count="1" prob="0.9" />
+    <drop event="Destroy" name="wornBoots" count="1" prob=".02" />
+    <drop event="Destroy" name="canEmpty" count="1,5" prob=".1" />
+    <property name="Group" value="Fishing" />
+  </block>
+  
   <block id="1715" name="plantedApple1">
     <property name="Class" value="UpgradeRated" />
     <property name="CustomIcon" value="seedApple"/>

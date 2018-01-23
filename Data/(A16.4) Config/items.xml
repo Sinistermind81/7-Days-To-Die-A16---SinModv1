@@ -8453,6 +8453,294 @@ Mesh files no longer used:
     </property>
   </item>
 
+  <item id="1070" name="Fishing Pole">
+    <property name="CustomIcon" value="Fishing_Pole" />
+    <property name="HoldType" value="2" />
+    <property name="Stacknumber" value="1" />
+    <property name="RepairTools" value="wood" />
+    <property name="Meshfile" value="Items/Weapons/Melee/Club/Club_Wood_Refined" />
+    <property name="Material" value="organic" />
+    <property name="SoundDestroy" value="wooddestroy1" />
+    <property name="FuelValue" value="4" />
+    <property class="Action0">
+      <!-- AttackAction -->
+      <property name="Class" value="Melee" />
+      <property name="Delay" value="0.8" />
+      <property name="Range" value="2.1" />
+      <property name="Sphere" value="0.1" />
+      <property name="Sound_start" value="swoosh" />
+      <property name="Stamina_usage" value="3" />
+      <property name="DamageBonus.head" value="2" />
+      <property name="DamageBonus.glass" value="25" />
+      <property name="DamageBonus.stone" value=".5" />
+      <property name="DamageBonus.concrete" value=".5" />
+      <property name="DamageBonus.metal" value=".5" />
+      <property name="DamageBonus.earth" value=".5" />
+    </property>
+    <property class="Action1">
+      <property name="Class" value="ExchangeItem" />
+      <property name="Delay" value="1.0" />
+      <property name="Change_item_to" value="Fishing Catch" />
+      <property name="Focused_blockname_1" value="water" />
+      <property name="Focused_blockname_2" value="waterMoving" />
+      <property name="Focused_blockname_3" value="waterStaticBucket" />
+      <property name="Focused_blockname_4" value="waterMovingBucket" />
+      <property name="Focused_blockname_5" value="waterSource8" />
+      <property name="Sound_start" value="UseActions/bucketfill_water" />
+    </property>
+    <property class="Attributes">
+      <property name="EntityDamage" value="3" />
+      <property name="BlockDamage" value="1" />
+    </property>
+    <property name="Group" value="Tools/Traps" />
+    <property class="Preview">
+      <property name="Zoom" value="8" />
+      <property name="Pos" value="-0.1,-0.7" />
+    </property>
+    <property name="ActionSkillGroup" value="Construction Tools"/>
+    <property name="CraftingSkillGroup" value="Tool Smithing"/>
+  </item>
+
+  <item id="1071" name="Fish Stew">
+    <property name="Meshfile" value="Items/Food/venison_stew" />
+    <property name="CustomIcon" value="meatStew" />
+    <property name="CustomIconTint" value="7EB2D8" />
+    <property name="Material" value="organic" />
+    <property name="HoldType" value="23" />
+    <property class="Action1">
+      <!-- UseAction -->
+      <property name="Class" value="Eat" />
+      <property name="Delay" value="1.0" />
+      <property name="Use_time" value="..." />
+      <property name="Gain_health" value="5" />
+      <property name="Gain_food" value="20" />
+      <property name="Gain_water" value="0" />
+      <property name="Gain_wellness" value="1.6" />
+      <property name="Sound_start" value="UseActions/player_drinking" />
+    </property>
+    <property name="Smell" value="exLargeSmell" />
+    <property name="Group" value="Food/Cooking" />
+    <property class="Preview">
+      <property name="Zoom" value="30" />
+      <property name="Pos" value="0,-0.03" />
+      <property name="Rot" value="90,45,0" />
+    </property>
+  </item>
+
+  <item id="1072" name="Charred Fish">
+    <property name="Meshfile" value="Items/Misc/parcel" />
+    <property name="CustomIcon" value="charredMeat" />
+    <property name="CustomIconTint" value="7EB2D8" />
+    <property name="Material" value="organic" />
+    <property name="HoldType" value="31" />
+    <property class="Action1">
+      <!-- UseAction -->
+      <property name="Class" value="Eat" />
+      <property name="Delay" value="2.1" />
+      <property name="Use_time" value="..." />
+      <property name="Gain_health" value="2" />
+      <property name="Gain_food" value="10" />
+      <property name="Gain_water" value="-5" />
+      <property name="Gain_wellness" value="0.8" />
+      <property name="Sound_start" value="UseActions/player_eating" />
+    </property>
+    <property name="Smell" value="largeSmell" />
+    <property name="Group" value="Food/Cooking" />
+    <property class="Preview">
+      <property name="Zoom" value="5" />
+      <property name="Pos" value="0,-1" />
+      <property name="Rot" value="90,45,0" />
+    </property>
+  </item>
+
+  <item id="1073" name="Grilled Fish">
+    <property name="Meshfile" value="Items/Misc/parcel" />
+    <property name="CustomIcon" value="grilledMeat" />
+    <property name="CustomIconTint" value="7EB2D8" />
+    <property name="Material" value="organic" />
+    <property name="HoldType" value="31" />
+    <property class="Action1">
+      <!-- UseAction -->
+      <property name="Class" value="Eat" />
+      <property name="Delay" value="2.1" />
+      <property name="Use_time" value="..." />
+      <property name="Gain_health" value="2" />
+      <property name="Gain_food" value="10" />
+      <property name="Gain_water" value="-2" />
+      <property name="Gain_wellness" value="0.8" />
+      <property name="Sound_start" value="UseActions/player_eating" />
+    </property>
+    <property name="Smell" value="mediumSmell" />
+    <property name="Group" value="Food/Cooking" />
+    <property class="Preview">
+      <property name="Zoom" value="5" />
+      <property name="Pos" value="0,-1" />
+      <property name="Rot" value="90,45,0" />
+    </property>
+  </item>
+
+  <item id="1074" name="Boiled Fish">
+    <property name="Meshfile" value="Items/Misc/parcel" />
+    <property name="CustomIcon" value="boiledMeat" />
+    <property name="CustomIconTint" value="7EB2D8" />
+    <property name="Material" value="organic" />
+    <property name="HoldType" value="31" />
+    <property class="Action1">
+      <!-- UseAction -->
+      <property name="Class" value="Eat" />
+      <property name="Delay" value="2.1" />
+      <property name="Use_time" value="..." />
+      <property name="Gain_health" value="2" />
+      <property name="Gain_food" value="10" />
+      <property name="Gain_water" value="0" />
+      <property name="Gain_wellness" value="0.8" />
+      <property name="Sound_start" value="UseActions/player_eating" />
+    </property>
+    <property name="Smell" value="smallSmell" />
+    <property name="Group" value="Food/Cooking" />
+    <property class="Preview">
+      <property name="Zoom" value="5" />
+      <property name="Pos" value="0,-1" />
+      <property name="Rot" value="90,45,0" />
+    </property>
+  </item>
+
+  <item id="1075" name="Raw Fish">
+    <property name="Meshfile" value="Items/Misc/parcel" />
+    <property name="CustomIcon" value="rawMeat" />
+    <property name="CustomIconTint" value="7EB2D8" />
+    <property name="Material" value="organic" />
+    <property name="HoldType" value="7" />
+    <property name="CraftingIngredientTime" value="15" />
+    <property class="Action1">
+      <!-- UseAction -->
+      <property name="Class" value="Eat" />
+      <property name="Delay" value="1.0" />
+      <property name="Use_time" value="..." />
+      <property name="Gain_health" value="2" />
+      <property name="Gain_food" value="10" />
+      <property name="Gain_water" value="0" />
+      <property name="Gain_stamina" value="0" />
+      <property name="Gain_sickness" value="30" />
+      <property name="Buff" value="foodPoisoning" />
+      <property name="Sound_start" value="UseActions/player_eating" />
+    </property>
+    <property name="Smell" value="ExLargeSmell" />
+    <property name="Group" value="Food/Cooking" />
+    <property class="Preview">
+      <property name="Zoom" value="5" />
+      <property name="Pos" value="0,-1" />
+      <property name="Rot" value="90,45,0" />
+    </property>
+  </item>
+
+  <item id="1076" name="Bait">
+    <property name="Meshfile" value="Items/Crafting/clay" />" />
+    <property name="CustomIcon" value="bucket" />
+    <property name="CustomIconTint" value="7EB2D8" />
+    <property name="Material" value="organic" />
+    <property name="HoldType" value="7" />
+    <property name="CraftingIngredientTime" value="2" />
+    <property class="Action1">
+      <!-- UseAction -->
+      <property name="Class" value="Eat" />
+      <property name="Delay" value="1.0" />
+      <property name="Use_time" value="..." />
+      <property name="Gain_health" value="2" />
+      <property name="Gain_food" value="10" />
+      <property name="Gain_water" value="0" />
+      <property name="Gain_stamina" value="0" />
+      <property name="Gain_sickness" value="30" />
+      <property name="Buff" value="foodPoisoning" />
+      <property name="Sound_start" value="UseActions/player_eating" />
+    </property>
+    <property name="Smell" value="smallSmell" />
+    <property name="Group" value="Food/Cooking" />
+    <property class="Preview">
+      <property name="Zoom" value="5" />
+      <property name="Pos" value="0,-1" />
+      <property name="Rot" value="90,45,0" />
+    </property>
+  </item>
+
+  <item id="1077" name="Unbaited Fishing Pole">
+    <property name="CustomIcon" value="Fishing_Pole1" />
+    <property name="HoldType" value="2" />
+    <property name="Stacknumber" value="1" />
+    <property name="RepairTools" value="wood" />
+    <property name="Meshfile" value="Items/Weapons/Melee/Club/Club_Wood_Refined" />
+    <property name="Material" value="organic" />
+    <property name="SoundDestroy" value="wooddestroy1" />
+    <property name="FuelValue" value="4" />
+    <property class="Action0">
+      <!-- AttackAction -->
+      <property name="Class" value="Melee" />
+      <property name="Delay" value="0.8" />
+      <property name="Range" value="2.1" />
+      <property name="Sphere" value="0.1" />
+      <property name="Sound_start" value="swoosh" />
+      <property name="Stamina_usage" value="3" />
+      <property name="DamageBonus.head" value="2" />
+      <property name="DamageBonus.glass" value="25" />
+      <property name="DamageBonus.stone" value=".5" />
+      <property name="DamageBonus.concrete" value=".5" />
+      <property name="DamageBonus.metal" value=".5" />
+      <property name="DamageBonus.earth" value=".5" />
+    </property>
+    <property class="Attributes">
+      <property name="EntityDamage" value="3" />
+      <property name="BlockDamage" value="1" />
+    </property>
+    <property name="Group" value="Tools/Traps" />
+    <property class="Preview">
+      <property name="Zoom" value="8" />
+      <property name="Pos" value="-0.1,-0.7" />
+    </property>
+    <property name="ActionSkillGroup" value="Construction Tools"/>
+    <property name="CraftingSkillGroup" value="Tool Smithing"/>
+  </item>
+  <item id="1078" name="Fishing Trap">
+    <property name="CustomIcon" value="Fishing_Trap1" />
+    <property name="HoldType" value="21" />
+    <property name="Stacknumber" value="1" />
+    <property name="Material" value="metal" />
+    <property name="Meshfile" value="Items/Crafting/radiator" />
+    <property name="SoundDestroy" value="metaldestroy1" />
+    <property name="Group" value="Tools/Traps" />
+    <property class="Preview">
+      <property name="Zoom" value="8" />
+      <property name="Pos" value="-0.1,-0.7" />
+    </property>
+    <property name="ActionSkillGroup" value="Construction Tools"/>
+    <property name="CraftingSkillGroup" value="Tool Smithing"/>
+  </item>
+  <item id="1079" name="Baited Fishing Trap">
+    <property name="CustomIcon" value="Fishing_Trap" />
+    <property name="HoldType" value="21" />
+    <property name="Stacknumber" value="1" />
+    <property name="Material" value="metal" />
+    <property name="Meshfile" value="Items/Crafting/radiator" />
+    <property name="SoundDestroy" value="metaldestroy1" />
+    <property name="Group" value="Tools/Traps" />
+    <property class="Action1">
+      <property name="Class" value="ExchangeItem" />
+      <property name="Delay" value="1.0" />
+      <property name="Change_item_to" value="Full Fishing Trap" />
+      <property name="Focused_blockname_1" value="water" />
+      <property name="Focused_blockname_2" value="waterMoving" />
+      <property name="Focused_blockname_3" value="waterStaticBucket" />
+      <property name="Focused_blockname_4" value="waterMovingBucket" />
+      <property name="Focused_blockname_5" value="waterSource8" />
+      <property name="Sound_start" value="UseActions/bucketfill_water" />
+    </property>
+    <property class="Preview">
+      <property name="Zoom" value="8" />
+      <property name="Pos" value="-0.1,-0.7" />
+    </property>
+    <property name="ActionSkillGroup" value="Construction Tools"/>
+    <property name="CraftingSkillGroup" value="Tool Smithing"/>
+  </item>
+  
   <!-- * * * * * * * * * * quests * * * * * * * * * * -->
 
   <item id="1150" name="questMaster">
